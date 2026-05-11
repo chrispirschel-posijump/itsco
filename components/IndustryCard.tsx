@@ -28,7 +28,7 @@ export default function IndustryCard({ slug, title, description, href }: Industr
         <p className="text-sm text-[#555] leading-relaxed mt-1">
           {description}
         </p>
-        <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-[#CA3C27] uppercase tracking-[0.08em]">
+        <div className="mt-3 flex items-center gap-1 text-xs font-semibold text-[#404040] uppercase tracking-[0.08em] group-hover:text-[#CA3C27] transition-[color] duration-200">
           Learn more
           <ArrowRight
             size={11}

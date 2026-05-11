@@ -27,12 +27,12 @@ export default function CTAButton({
   const isExternal = resolvedHref.startsWith("http");
 
   const base =
-    "group inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg transition-[background-color,color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]";
+    "group inline-flex items-center gap-2 px-7 py-3.5 text-base font-semibold rounded-lg transition-[background-color,color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-cta active:scale-[0.98]";
 
   const styles =
     variant === "primary"
-      ? `${base} bg-[#CA3C27] text-white hover:bg-[#B4311E]`
-      : `${base} bg-transparent text-[#CA3C27] border border-[#CA3C27] hover:bg-[#CA3C27]/10`;
+      ? `${base} bg-itsco-cta text-white hover:bg-itsco-cta-hover`
+      : `${base} bg-transparent text-itsco-cta border border-itsco-cta hover:bg-itsco-cta/10`;
 
   return (
     <a

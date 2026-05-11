@@ -563,29 +563,38 @@ export default function HomePage() {
       <TestimonialsSection />
 
       {/* CHAPTER 3 — Where you go next */}
-      {/* 7 — DARK  — AI Readiness (Variant C) */}
+      {/* 7 — DARK  — AI Readiness (Variant C). The wrapper restores brand red
+          for this section's CTAs even when an outer theme override (e.g.
+          /demo-oat) sets --color-itsco-cta to a different value. */}
       <FadeUp>
-        <HeroSection
-          eyebrow="AI Readiness Assessment"
-          heading="What's Your Strategy for AI Adoption?"
-          subheading="Over 72% of businesses are integrating AI into their operations. Companies that fail to adapt to the AI revolution risk falling behind."
-          imagePosition="none"
-          stat="72%"
-          statLabel="of businesses are integrating AI into operations"
-          statColor="#ffffff"
-          background="radial-gradient(ellipse at top left, #3a1208 0%, #1e0a06 50%, #0f0f0f 100%)"
-          clip={false}
-          orbs="dark"
-          primaryCTA={{
-            label: 'Book a Free Consultation',
-            utmSuffix: 'homepage-ai',
+        <div
+          style={{
+            ['--color-itsco-cta' as string]: '#CA3C27',
+            ['--color-itsco-cta-hover' as string]: '#B4311E',
           }}
-          secondaryCTA={{
-            label: 'Get an AI Readiness Assessment',
-            href: '/ai-readiness-assessment/',
-            variant: 'secondary',
-          }}
-        />
+        >
+          <HeroSection
+            eyebrow="AI Readiness Assessment"
+            heading="What's Your Strategy for AI Adoption?"
+            subheading="Over 72% of businesses are integrating AI into their operations. Companies that fail to adapt to the AI revolution risk falling behind."
+            imagePosition="none"
+            stat="72%"
+            statLabel="of businesses are integrating AI into operations"
+            statColor="#ffffff"
+            background="radial-gradient(ellipse at top left, #3a1208 0%, #1e0a06 50%, #0f0f0f 100%)"
+            clip={false}
+            orbs="dark"
+            primaryCTA={{
+              label: 'Book a Free Consultation',
+              utmSuffix: 'homepage-ai',
+            }}
+            secondaryCTA={{
+              label: 'Get an AI Readiness Assessment',
+              href: '/ai-readiness-assessment/',
+              variant: 'secondary',
+            }}
+          />
+        </div>
       </FadeUp>
 
       {/* 7 — LIGHT — Industries */}

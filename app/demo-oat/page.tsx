@@ -9,11 +9,13 @@ export const metadata: Metadata = {
 };
 
 const oatOverrides = {
-  "--color-itsco-paper": "#F0EDE0",
-  "--color-itsco-paper-deep": "#F0EDE0",
-  "--color-itsco-blush": "#F0EDE0",
-  "--color-itsco-card": "#E8E6DC",
-  backgroundColor: "#F0EDE0",
+  "--color-itsco-paper": "#F5F3EA",
+  "--color-itsco-paper-deep": "#F5F3EA",
+  "--color-itsco-blush": "#F5F3EA",
+  "--color-itsco-card": "#F0EADA",
+  "--color-itsco-cta": "#111111",
+  "--color-itsco-cta-hover": "#333333",
+  backgroundColor: "#F5F3EA",
 } as CSSProperties;
 
 export default function DemoOatPage() {

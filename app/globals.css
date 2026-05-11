@@ -11,6 +11,8 @@
   --color-itsco-paper-deep: #F4F1EB;
   --color-itsco-blush: #FDF5F3;
   --color-itsco-card: #FFFFFF;
+  --color-itsco-cta: #CA3C27;
+  --color-itsco-cta-hover: #B4311E;
 
   --font-sans: var(--font-montserrat), 'Montserrat', sans-serif;
   --font-heading: var(--font-montserrat), 'Montserrat', sans-serif;
