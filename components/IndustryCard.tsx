@@ -13,7 +13,7 @@ export default function IndustryCard({ slug, title, description, href }: Industr
   return (
     <Link
       href={href}
-      className="group flex flex-row items-start gap-4 bg-white rounded-2xl p-6 border border-[#EBEBEB] shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-0.5 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
+      className="group flex flex-row items-start gap-4 bg-itsco-card rounded-2xl p-6 border border-[#EBEBEB] shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-0.5 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
     >
       {/* Dark icon container */}
       <div className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center flex-shrink-0 mt-0.5">

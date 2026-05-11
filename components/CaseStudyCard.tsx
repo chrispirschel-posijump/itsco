@@ -26,7 +26,7 @@ export default function CaseStudyCard({
   return (
     <Link
       href={href}
-      className="group flex flex-col h-full bg-white border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.99] relative overflow-hidden"
+      className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.99] relative overflow-hidden"
     >
       {/* Industry image at top */}
       {image && (

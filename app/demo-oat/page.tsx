@@ -12,6 +12,7 @@ const oatOverrides = {
   "--color-itsco-paper": "#F0EDE0",
   "--color-itsco-paper-deep": "#F0EDE0",
   "--color-itsco-blush": "#F0EDE0",
+  "--color-itsco-card": "#E8E6DC",
   backgroundColor: "#F0EDE0",
 } as CSSProperties;
 

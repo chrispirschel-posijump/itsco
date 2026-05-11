@@ -13,7 +13,7 @@ export default function ServiceCard({ slug, title, description, href }: ServiceC
   return (
     <Link
       href={href}
-      className="group flex flex-col bg-white rounded-2xl p-7 border border-[#EBEBEB] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
+      className="group flex flex-col bg-itsco-card rounded-2xl p-7 border border-[#EBEBEB] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
     >
       {/* Icon container */}
       <div className="w-12 h-12 rounded-xl bg-[#F2F2F2] flex items-center justify-center mb-5 flex-shrink-0">
