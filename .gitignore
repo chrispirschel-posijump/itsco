@@ -36,6 +36,12 @@ yarn-error.log*
 # vercel
 .vercel
 
+# netlify
+.netlify
+
+# raw video originals — only the stitched hero-loop in /public/videos/ deploys
+/source-videos/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

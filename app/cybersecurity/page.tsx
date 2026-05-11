@@ -1,0 +1,659 @@
+import type { Metadata } from 'next'
+import Image from 'next/image'
+import Link from 'next/link'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
+import BookingCTA from '@/components/BookingCTA'
+import ServiceCard from '@/components/ServiceCard'
+import CTAButton from '@/components/CTAButton'
+import SpotlightBlock from '@/components/SpotlightBlock'
+import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
+import BackgroundOrbs from '@/components/BackgroundOrbs'
+import {
+  ShieldCheck,
+  Activity,
+  Wrench,
+  FileSearch,
+  GraduationCap,
+  UserCog,
+  ArrowRight,
+} from 'lucide-react'
+
+export const metadata: Metadata = {
+  title: 'Managed Security Services Provider | MSSP | ITSco',
+  description: 'ITSco delivers managed cybersecurity services including SIEM, SOC, MDR, firewall management, and compliance support. 24/7 monitoring. Trusted since 1996. Book a free consultation.',
+  alternates: { canonical: 'https://www.itsco.com/cybersecurity/' },
+  openGraph: {
+    title: 'Managed Security Services Provider | MSSP | ITSco',
+    description: 'Managed cybersecurity services with SIEM, SOC, MDR, and 24/7 monitoring. Trusted since 1996.',
+    url: 'https://www.itsco.com/cybersecurity/',
+    siteName: 'ITSco',
+    locale: 'en_US',
+    type: 'website',
+  },
+}
+
+const serviceJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Service',
+  name: 'Managed Cybersecurity Services',
+  provider: {
+    '@type': 'Organization',
+    name: 'ITSco',
+    url: 'https://www.itsco.com/',
+  },
+  description: 'Managed Security Services Provider (MSSP) offering SIEM, SOC, MDR, firewall management, vulnerability management, security assessments, penetration testing, and virtual CISO services for businesses across NC, SC, and VA.',
+  areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
+  url: 'https://www.itsco.com/cybersecurity/',
+}
+
+const FAQ_CALENDLY = 'https://calendly.com/msavino-itsco/30-minute-free-consultation-with-itsco?utm_source=website&utm_medium=cta&utm_campaign=cybersecurity-faq'
+
+const FAQS = [
+  {
+    question: "What's included in ITSco's managed cybersecurity services?",
+    answerText:
+      "Our flagship MSSP offering includes a fully hosted, redundant SIEM platform, behavioral and anomalous activity monitoring, customized detection rules, integrated global threat database, daily SOC reviews, automated 24/7 notifications, monthly threat activity reports, incident investigation, and pre-built compliance reports for PCI, HIPAA, and GLBA standards.",
+  },
+  {
+    question: "How is managed cybersecurity pricing structured?",
+    answerText:
+      "We've been doing this long enough to know that no two companies are the same. To give you the most cost-effective, comprehensive approach, we recommend scheduling a free consultation to discuss your needs. See the ROI of managed IT services for the four dimensions we measure every quarter.",
+  },
+  {
+    question: "What's the difference between an MSSP and just running a firewall?",
+    answerText:
+      "A firewall is a single tool. An MSSP is a full security operations program: 24/7 monitoring, SIEM platform, behavioral analytics, threat intelligence, vulnerability management, and incident response. The average SMB breach costs between $120K and $1.2M. Managed security services run a fraction of that monthly and prevent the breach in the first place.",
+  },
+  {
+    question: "How fast does ITSco respond to a security incident?",
+    answerText:
+      "Our SOC reviews threats daily and our automated notifications run 24/7. Critical events trigger immediate engineer-led investigation and containment, with a documented incident response process that includes compliance assistance for affected clients.",
+  },
+]
+
+const faqJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: FAQS.map((f) => ({
+    '@type': 'Question',
+    name: f.question,
+    acceptedAnswer: {
+      '@type': 'Answer',
+      text: f.answerText,
+    },
+  })),
+}
+
+// ── Hero ────────────────────────────────────────────────────────────────────
+
+function Hero() {
+  return (
+    <section className="relative bg-itsco-paper min-h-screen flex flex-col overflow-hidden">
+      <BackgroundOrbs variant="light" />
+
+      <div className="absolute right-0 top-0 bottom-0 w-[52%] hidden lg:block">
+        <Image
+          src="/images/hero/services/aleksei-zhivilov-A6M3aowKR6I-unsplash.jpg"
+          alt="ITSco security operations center monitoring threats around the clock"
+          fill
+          priority
+          className="object-cover object-center"
+          sizes="52vw"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-itsco-paper via-itsco-paper/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-itsco-paper/40 via-transparent to-transparent" />
+      </div>
+
+      <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
+        <div className="lg:max-w-[55%]">
+          <FadeUp>
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+              Cybersecurity
+            </p>
+          </FadeUp>
+          <FadeUp delay={100}>
+            <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+              Cybersecurity{" "}
+              <span
+                className="bg-clip-text text-transparent"
+                style={{ backgroundImage: "linear-gradient(to right, #6B1F12 0%, #CA3C27 55%, #F26340 100%)" }}
+              >
+                Solutions.
+              </span>
+            </h1>
+          </FadeUp>
+          <FadeUp delay={200}>
+            <p className="text-lg text-[#404040] leading-relaxed max-w-[44ch] mb-10">
+              ITSco provides cybersecurity services designed to detect threats, reduce vulnerabilities, and maintain compliance. Security failures can jeopardize your company's future. We offer comprehensive strategies integrating multiple security disciplines.
+            </p>
+          </FadeUp>
+          <FadeUp delay={300}>
+            <div className="flex flex-wrap gap-4">
+              <CTAButton
+                label="Book a Free Consultation"
+                utmSuffix="cybersecurity-hero"
+                className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]"
+              />
+              <CTAButton
+                label="Discover the ROI"
+                href="/maximize-roi-with-managed-it-services/"
+                variant="secondary"
+                className="px-8 py-4 rounded-xl text-base"
+              />
+            </div>
+          </FadeUp>
+        </div>
+
+        {/* Mobile image */}
+        <div className="mt-12 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_8px_32px_rgba(0,0,0,0.12)] lg:hidden">
+          <Image
+            src="/images/hero/services/aleksei-zhivilov-A6M3aowKR6I-unsplash.jpg"
+            alt="ITSco security operations team"
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── Intro section ──────────────────────────────────────────────────────────
+
+function IntroSection() {
+  return (
+    <section className="bg-itsco-paper">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
+        <FadeUp>
+          <div className="max-w-3xl mx-auto text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+              The Promise
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8">
+              Detect threats. Reduce vulnerabilities. <span className="text-[#CA3C27]">Maintain compliance.</span>
+            </h2>
+            <p className="text-lg text-[#404040] leading-relaxed">
+              ITSco is the managed security services provider businesses trust to protect their network, their endpoints, and their data. Serving Raleigh, Durham, and the Southeast since 1996. We integrate multiple security disciplines into one accountable program.
+            </p>
+          </div>
+        </FadeUp>
+      </div>
+    </section>
+  )
+}
+
+// ── MSSP Spotlight (flagship offering) ──────────────────────────────────────
+
+const MSSP_CAPABILITIES = [
+  'Fully hosted, redundant SIEM platform',
+  'Behavioral and anomalous activity monitoring',
+  'Customized detection rules with ongoing tuning',
+  'Integrated global threat database',
+  'Daily SOC reviews by security analysts',
+  'Automated 24x7 notifications',
+  'Monthly threat activity reports',
+  'Incident investigation and compliance assistance',
+  'Pre-built compliance reports (PCI, HIPAA, GLBA)',
+]
+
+function MSSPSpotlight() {
+  return (
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, #FDF5F3 100%)' }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="max-w-2xl mb-16">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              Flagship Offering
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+              Managed Security Services Provider <span className="text-[#CA3C27]">(MSSP).</span>
+            </h2>
+          </div>
+        </FadeUp>
+
+        <FadeUp>
+          <SpotlightBlock
+            title="Advanced detection across your environment. On a subscription, not a capital line."
+            description="ITSco's flagship offering provides advanced security tools and services that detect suspicious activity anywhere in your environment. Critical devices monitored 24x7 without requiring capital investment in traditional solutions."
+            image="/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg"
+            imageAlt="ITSco security analysts reviewing real-time threat dashboards"
+            side="right"
+          />
+        </FadeUp>
+
+        {/* MSSP Capabilities list */}
+        <FadeUp delay={150}>
+          <div className="mt-16 lg:mt-20 pt-12 border-t border-[#EBEBEB]/60">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#888] mb-8 text-center">
+              Inside the MSSP Program
+            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 max-w-5xl mx-auto">
+              {MSSP_CAPABILITIES.map((cap) => (
+                <div key={cap} className="flex gap-3 items-start">
+                  <ShieldCheck size={16} className="text-[#CA3C27] mt-1 flex-shrink-0" />
+                  <p className="text-sm text-[#404040] leading-relaxed">{cap}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </FadeUp>
+      </div>
+    </section>
+  )
+}
+
+// ── Other security services — 6 cards ──────────────────────────────────────
+
+const OTHER_SERVICES = [
+  {
+    icon: ShieldCheck,
+    title: 'Vulnerability Management',
+    description: 'Security engineers create comprehensive vulnerability management processes using cloud-based technologies, prioritizing remediation by severity and risk level.',
+  },
+  {
+    icon: Activity,
+    title: 'Managed Firewall Services',
+    description: 'Includes deployment, configuration, monitoring, device updates, and threat detection management.',
+  },
+  {
+    icon: FileSearch,
+    title: 'Security Assessments',
+    description: 'Regulatory compliance assessments (PCI DSS, HIPAA, GDPR), risk assessments using NIST and CIS frameworks, web application vulnerability assessments, and OWASP Top 10 testing.',
+  },
+  {
+    icon: Wrench,
+    title: 'Remediation Services',
+    description: 'Addresses critical vulnerabilities through analysis, prioritization, and remediation.',
+  },
+  {
+    icon: GraduationCap,
+    title: 'Security Awareness Training',
+    description: 'Web-based employee training on cyber-attack prevention and phishing simulations.',
+  },
+  {
+    icon: UserCog,
+    title: 'Virtual CISO',
+    description: 'Cost-effective C-level security leadership providing policy development, compliance guidance, and incident response planning.',
+  },
+]
+
+function OtherServicesSection() {
+  return (
+    <section style={{ background: '#FDF5F3' }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              The Full Stack
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+              Six more security services <span className="text-[#CA3C27]">working alongside MSSP.</span>
+            </h2>
+          </div>
+        </FadeUp>
+
+        <StaggerChildren stagger={80} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+          {OTHER_SERVICES.map((s) => {
+            const Icon = s.icon
+            return (
+              <div
+                key={s.title}
+                className="h-full flex flex-col bg-white border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
+              >
+                <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
+                  <Icon size={24} className="text-[#CA3C27]" />
+                </div>
+                <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3">
+                  {s.title}
+                </h3>
+                <p className="text-sm text-[#555] leading-relaxed flex-1">
+                  {s.description}
+                </p>
+              </div>
+            )
+          })}
+        </StaggerChildren>
+      </div>
+    </section>
+  )
+}
+
+// ── Sub-services drill-down — 12 services in 3 grouped sections ────────────
+
+const SUB_SERVICE_GROUPS = [
+  {
+    label: 'Detection & Response',
+    items: [
+      { number: '01', title: 'Fully Managed Cybersecurity', description: 'End-to-end defense covering monitoring, detection, response, and recovery, managed by certified specialists.', href: '/fully-managed-cybersecurity/' },
+      { number: '02', title: 'Managed SOC',                 description: '24/7 security operations center providing real-time threat monitoring and rapid incident response.', href: '/managed-soc/' },
+      { number: '03', title: 'SIEM Services',               description: 'Hosted, redundant Security Information and Event Management platform with customized detection rules.', href: '/siem-services/' },
+      { number: '04', title: 'MDR Monitoring & Response',   description: 'Managed Detection and Response with active threat hunting and engineer-led containment.', href: '/mdr-monitoring-and-response/' },
+      { number: '05', title: 'Network & Endpoint Security', description: 'Multi-layered defense protecting network traffic, devices, and endpoints from intrusion.', href: '/network-security/' },
+    ],
+  },
+  {
+    label: 'Prevention',
+    items: [
+      { number: '06', title: 'Managed Firewall + IDS/IPS', description: 'Configured, monitored firewalls with intrusion detection and prevention, plus device updates.', href: '/managed-firewall/' },
+      { number: '07', title: 'Email Security',             description: 'Multi-layered defense against phishing, spoofing, malware, and business email compromise.', href: '/email-security/' },
+      { number: '08', title: 'Zero Trust Security',        description: 'Identity-first security model where no user or device is trusted by default.', href: '/zero-trust-security/' },
+    ],
+  },
+  {
+    label: 'Assessment & Compliance',
+    items: [
+      { number: '09', title: 'Cyber Risk Assessment',          description: 'Comprehensive evaluation of vulnerabilities, threats, and remediation priorities.', href: '/cyber-risk-assessment/' },
+      { number: '10', title: 'Penetration Testing',            description: 'Controlled attack simulations to surface weaknesses before adversaries do.', href: '/penetration-testing-services/' },
+      { number: '11', title: 'Security Audits & Compliance',   description: 'Audit support and gap analyses for PCI DSS, HIPAA, GDPR, NIST, and CIS frameworks.', href: '/security-audits-compliance/' },
+      { number: '12', title: 'Compliance Management',          description: 'Ongoing compliance posture management as regulations evolve.', href: '/compliance-management/' },
+    ],
+  },
+]
+
+function SubServicesSection() {
+  return (
+    <section style={{ background: 'linear-gradient(180deg, #FDF5F3 0%, var(--color-itsco-paper) 100%)' }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-16 border-b border-[#EBEBEB]">
+            <div className="max-w-xl">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+                Explore the Program
+              </p>
+              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+                Twelve services. <span className="text-[#CA3C27]">Three disciplines.</span>
+              </h2>
+            </div>
+            <p className="text-sm text-[#888] leading-relaxed max-w-[36ch] md:text-right">
+              Each cybersecurity capability is its own service. Click any line for the deep dive.
+            </p>
+          </div>
+        </FadeUp>
+
+        <div className="space-y-12">
+          {SUB_SERVICE_GROUPS.map((group) => (
+            <FadeUp key={group.label}>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-2">
+                  {group.label}
+                </p>
+                <div className="divide-y divide-[#EBEBEB] border-t border-[#EBEBEB]/60">
+                  {group.items.map((s) => (
+                    <Link
+                      key={s.number}
+                      href={s.href}
+                      className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-white/60 transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
+                    >
+                      <span className="text-xs font-bold tabular-nums text-[#CCCCCC] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
+                        {s.number}
+                      </span>
+                      <h3 className="text-xl md:text-2xl font-semibold text-[#111111]/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-[#111111] transition-[color] duration-200">
+                        {s.title}
+                      </h3>
+                      <p className="text-sm text-[#888] leading-relaxed lg:flex-1 lg:px-10 group-hover:text-[#555] transition-[color] duration-200">
+                        {s.description}
+                      </p>
+                      <ArrowRight
+                        size={16}
+                        className="hidden lg:block flex-shrink-0 text-[#CCCCCC] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
+                      />
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            </FadeUp>
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── Mid-page CTA ───────────────────────────────────────────────────────────
+
+function MidCTA() {
+  return (
+    <section className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
+        <div>
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+            Pressure Test Your Defenses
+          </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">
+            One conversation. A clear picture of where your security stands today.
+          </h2>
+        </div>
+        <div className="flex-shrink-0">
+          <CTAButton
+            utmSuffix="cybersecurity-mid"
+            label="Book a Free Consultation"
+            className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── Testimonial + client logos ─────────────────────────────────────────────
+
+const CLIENTS = [
+  { src: '/images/clients/emergeortho.png',           alt: 'EmergeOrtho' },
+  { src: '/images/clients/SRN-vertical-300x300-1.jpg', alt: 'Southern Rehabilitation Network' },
+  { src: '/images/clients/CBRE-Group-logo.jpg',        alt: 'CBRE' },
+  { src: '/images/clients/Phononic_Logo_RGB-scaled.jpg', alt: 'Phononic' },
+  { src: '/images/clients/cambrex-vector-logo.jpg',    alt: 'Cambrex' },
+  { src: '/images/clients/NCACC_screen_seal_color.png', alt: 'NC Association of County Commissioners' },
+  { src: '/images/clients/2021-LOGO-Forty540.jpg',     alt: 'Forty540' },
+]
+
+function TestimonialSection() {
+  return (
+    <section className="bg-itsco-paper">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="max-w-3xl mx-auto text-center">
+            <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-6" />
+            <p className="text-2xl md:text-3xl font-medium text-[#111111] leading-[1.5] mb-6">
+              &ldquo;Our relationship has sustained because ITSco's core values match ours. They have integrity, they care about their customers, and they deliver a quality product. The solutions they have built for us are high performance, reliable, and delivered on-time and on-budget.&rdquo;
+            </p>
+            <p className="text-sm text-[#888]">
+              <span className="font-semibold text-[#404040]">Joe Whitney</span>
+              <span className="mx-2 text-[#CCCCCC]">&middot;</span>
+              Director, Plant IT Operations, Hospira
+            </p>
+          </div>
+        </FadeUp>
+
+        {/* Client logos */}
+        <FadeUp delay={150}>
+          <div className="mt-20 pt-12 border-t border-[#EBEBEB]">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#BBBBBB] mb-8 text-center">
+              Trusted by businesses across NC, SC &amp; VA
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:flex-nowrap">
+              {CLIENTS.map((c) => (
+                <div key={c.alt} className="relative h-10 w-32 grayscale opacity-70 mix-blend-multiply hover:opacity-100 hover:grayscale-0 transition-[opacity,filter] duration-300">
+                  <Image src={c.src} alt={c.alt} fill className="object-contain" sizes="112px" />
+                </div>
+              ))}
+            </div>
+          </div>
+        </FadeUp>
+      </div>
+    </section>
+  )
+}
+
+// ── FAQ section ────────────────────────────────────────────────────────────
+
+function FAQSection() {
+  return (
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-paper-deep) 12%, var(--color-itsco-paper-deep) 88%, var(--color-itsco-paper) 100%)' }}>
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              FAQs
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+              Frequently asked <span className="text-[#CA3C27]">questions.</span>
+            </h2>
+          </div>
+        </FadeUp>
+
+        <StaggerChildren stagger={80} className="divide-y divide-[#EBEBEB] max-w-4xl">
+          {/* Q1 */}
+          <div className="py-7">
+            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              {FAQS[0].question}
+            </h3>
+            <p className="text-base text-[#404040] leading-relaxed">
+              {FAQS[0].answerText}
+            </p>
+          </div>
+
+          {/* Q2 — has inline links */}
+          <div className="py-7">
+            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              {FAQS[1].question}
+            </h3>
+            <p className="text-base text-[#404040] leading-relaxed">
+              We&apos;ve been doing this long enough to know that no two companies are the same. To give you the most cost-effective, comprehensive approach, we recommend{" "}
+              <a
+                href={FAQ_CALENDLY}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+              >
+                scheduling a free consultation
+              </a>{" "}
+              to discuss your needs. See the{" "}
+              <Link
+                href="/maximize-roi-with-managed-it-services/"
+                className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+              >
+                ROI of managed IT services
+              </Link>{" "}
+              for the four dimensions we measure every quarter.
+            </p>
+          </div>
+
+          {/* Q3 */}
+          <div className="py-7">
+            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              {FAQS[2].question}
+            </h3>
+            <p className="text-base text-[#404040] leading-relaxed">
+              {FAQS[2].answerText}
+            </p>
+          </div>
+
+          {/* Q4 */}
+          <div className="py-7">
+            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              {FAQS[3].question}
+            </h3>
+            <p className="text-base text-[#404040] leading-relaxed">
+              {FAQS[3].answerText}
+            </p>
+          </div>
+        </StaggerChildren>
+      </div>
+    </section>
+  )
+}
+
+// ── Related services ───────────────────────────────────────────────────────
+
+function RelatedServices() {
+  return (
+    <section className="bg-itsco-paper">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="max-w-2xl mb-14">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              Related Services
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+              Explore more from <span className="text-[#CA3C27]">ITSco.</span>
+            </h2>
+          </div>
+        </FadeUp>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <ServiceCard
+            slug="managed-it-services"
+            title="Managed IT Services"
+            description="Proactive monitoring, helpdesk, and network management. Predictable monthly cost. No in-house IT department required."
+            href="/managed-it-services/"
+          />
+          <ServiceCard
+            slug="cloud-services"
+            title="Cloud Services"
+            description="Managed cloud, migration strategy, and Azure and AWS support that scales your infrastructure with your business."
+            href="/cloud-services/"
+          />
+          <ServiceCard
+            slug="vcio-vcto-vciso-services"
+            title="Strategy & Consulting"
+            description="vCIO, vCTO, and vCISO engagements that align your technology roadmap with your business goals."
+            href="/it-management-consulting/"
+          />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+// ── Page ──────────────────────────────────────────────────────────────────────
+
+export default function CybersecurityPage() {
+  return (
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <Nav variant="light" />
+
+      {/* Chapter 1 — Identity */}
+      <Hero />
+      <IntroSection />
+
+      {/* Chapter 2 — What's Inside */}
+      <MSSPSpotlight />
+      <OtherServicesSection />
+
+      {/* Drill-down to all 12 sub-services, grouped by discipline */}
+      <SubServicesSection />
+
+      {/* Mid CTA — inflection point */}
+      <MidCTA />
+
+      {/* Chapter 3 — Proof */}
+      <TestimonialSection />
+
+      {/* Chapter 4 — FAQ + Related + Action */}
+      <FAQSection />
+      <RelatedServices />
+
+      <FadeUp>
+        <BookingCTA
+          utmSuffix="cybersecurity-bottom"
+          backgroundImage="/images/supporting/services/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"
+        />
+      </FadeUp>
+
+      <Footer />
+    </>
+  )
+}
