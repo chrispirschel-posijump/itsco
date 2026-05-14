@@ -7,12 +7,12 @@
   --color-itsco-dark-ui: #323333;
   --color-itsco-body: #404040;
   --color-itsco-off-white: #FAFAFA;
-  --color-itsco-paper: #F8F6F2;
-  --color-itsco-paper-deep: #F4F1EB;
-  --color-itsco-blush: #FDF5F3;
-  --color-itsco-card: #FFFFFF;
-  --color-itsco-cta: #CA3C27;
-  --color-itsco-cta-hover: #B4311E;
+  --color-itsco-paper: #F5F3EA;
+  --color-itsco-paper-deep: #F5F3EA;
+  --color-itsco-blush: #F5F3EA;
+  --color-itsco-card: #F0EADA;
+  --color-itsco-cta: #111111;
+  --color-itsco-cta-hover: #333333;
 
   --font-sans: var(--font-montserrat), 'Montserrat', sans-serif;
   --font-heading: var(--font-montserrat), 'Montserrat', sans-serif;
@@ -20,7 +20,7 @@
 }
 
 body {
-  background: #F8F6F2;
+  background: var(--color-itsco-paper);
   color: #404040;
   font-family: var(--font-montserrat), 'Montserrat', sans-serif;
 }

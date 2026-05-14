@@ -103,7 +103,7 @@ function Hero() {
 
 function PositioningSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, #FDF5F3 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-blush) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
@@ -114,7 +114,7 @@ function PositioningSection() {
               We don't just advise. We <span className="text-[#CA3C27]">build it, secure it, manage it,</span> and prove it works.
             </h2>
             <p className="text-lg text-[#404040] leading-relaxed">
-              Clinical organizations need three things in one partner: someone who can advise, someone who can operate, and someone who knows healthcare compliance cold. Most firms do one. ITSco does all three.
+              ITSco helps clinical organizations deploy AI across their operations — safely, compliantly, and with documented ROI. We provide the fractional Chief AI Officer your leadership needs, the private AI infrastructure your compliance team requires, and the managed operations your IT team cannot do alone — all under one retainer.
             </p>
           </div>
         </FadeUp>
@@ -145,7 +145,7 @@ const SUPPORTING_PROPS = [
 
 function ValuePropsSection() {
   return (
-    <section style={{ background: '#FDF5F3' }}>
+    <section style={{ background: 'var(--color-itsco-blush)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16 mx-auto text-center">
@@ -197,7 +197,7 @@ function ValuePropsSection() {
         {/* Three supporting cards */}
         <FadeUp>
           <div className="pt-12 border-t border-[#EBEBEB]/60">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#888] mb-8 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#555] mb-8 text-center">
               Plus the operational backbone
             </p>
           </div>
@@ -208,7 +208,7 @@ function ValuePropsSection() {
             return (
               <div
                 key={v.title}
-                className="h-full flex flex-col bg-white border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
+                className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
                   <Icon size={24} className="text-[#CA3C27]" />
@@ -264,6 +264,12 @@ const COMPARISON_ROWS: { capability: string; mspr: CompCell; advisory: CompCell;
     itsco:    { label: 'Yes',               tone: 'positive' },
   },
   {
+    capability: 'MCP / Agentic AI Operations',
+    mspr:     { label: 'No',  tone: 'negative' },
+    advisory: { label: 'No',  tone: 'negative' },
+    itsco:    { label: 'Yes', tone: 'positive' },
+  },
+  {
     capability: 'Documented ROI Tracking',
     mspr:     { label: 'No',     tone: 'negative' },
     advisory: { label: 'Varies', tone: 'neutral'  },
@@ -279,13 +285,13 @@ const COMPARISON_ROWS: { capability: string; mspr: CompCell; advisory: CompCell;
 
 function CellIcon({ tone }: { tone: CompCell['tone'] }) {
   if (tone === 'positive') return <Check size={14} className="text-[#CA3C27] flex-shrink-0" />
-  if (tone === 'neutral') return <Minus size={14} className="text-[#888] flex-shrink-0" />
-  return <X size={14} className="text-[#BBBBBB] flex-shrink-0" />
+  if (tone === 'neutral') return <Minus size={14} className="text-[#555] flex-shrink-0" />
+  return <X size={14} className="text-[#555] flex-shrink-0" />
 }
 
 function ComparisonSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, #FDF5F3 0%, var(--color-itsco-paper) 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-blush) 0%, var(--color-itsco-paper) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
@@ -302,43 +308,43 @@ function ComparisonSection() {
         </FadeUp>
 
         <FadeUp delay={150}>
-          <div className="bg-white border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
-            {/* Header row */}
-            <div className="grid grid-cols-2 md:grid-cols-4 border-b border-[#EBEBEB] bg-[#FAFAFA]">
-              <div className="px-6 py-4 md:py-5 col-span-2 md:col-span-1">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#888]">What You Need</p>
+          <div className="bg-itsco-paper border border-black/20 rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
+            {/* Header row — order: Capability (dark) · ITSco (highlight) · Traditional MSPs · Big 4 */}
+            <div className="grid grid-cols-2 md:grid-cols-4 border-b border-black/20">
+              <div className="px-6 py-4 md:py-5 col-span-2 md:col-span-1 bg-[#111111]">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-white">What You Need</p>
               </div>
-              <div className="px-6 py-4 md:py-5 border-t md:border-t-0 md:border-l border-[#EBEBEB]">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#888]">Traditional MSPs</p>
-              </div>
-              <div className="px-6 py-4 md:py-5 border-l border-[#EBEBEB]">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#888]">Big 4 / Advisory</p>
-              </div>
-              <div className="col-span-2 md:col-span-1 px-6 py-4 md:py-5 border-t md:border-t-0 md:border-l border-[#EBEBEB] bg-[#FDF5F3]/40">
+              <div className="col-span-2 md:col-span-1 px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20 bg-itsco-card">
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#CA3C27]">ITSco</p>
+              </div>
+              <div className="px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#111111]">Traditional MSPs</p>
+              </div>
+              <div className="px-6 py-4 md:py-5">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#111111]">Big 4 / Advisory</p>
               </div>
             </div>
 
-            {/* Rows — desktop 4-col, mobile collapses to 2-col with stacked itsco row */}
+            {/* Rows — desktop: 4-col Capability·ITSco·MSPs·Big4. Mobile: Capability (full) → ITSco (full, highlight) → MSPs|Big4 */}
             {COMPARISON_ROWS.map((row, i) => (
               <div
                 key={row.capability}
-                className={`grid grid-cols-2 md:grid-cols-4 ${i < COMPARISON_ROWS.length - 1 ? 'border-b border-[#EBEBEB]' : ''}`}
+                className={`grid grid-cols-2 md:grid-cols-4 ${i < COMPARISON_ROWS.length - 1 ? 'border-b border-black/20' : ''}`}
               >
-                <div className="px-6 py-5 col-span-2 md:col-span-1">
-                  <p className="text-sm font-semibold text-[#111111]">{row.capability}</p>
+                <div className="px-6 py-5 col-span-2 md:col-span-1 bg-[#111111]">
+                  <p className="text-sm font-bold uppercase tracking-[0.1em] text-white leading-snug">{row.capability}</p>
                 </div>
-                <div className="px-6 py-5 border-t md:border-t-0 md:border-l border-[#EBEBEB] flex items-center gap-2">
-                  <CellIcon tone={row.mspr.tone} />
-                  <p className="text-sm text-[#888]">{row.mspr.label}</p>
-                </div>
-                <div className="px-6 py-5 border-l border-[#EBEBEB] flex items-center gap-2">
-                  <CellIcon tone={row.advisory.tone} />
-                  <p className="text-sm text-[#888]">{row.advisory.label}</p>
-                </div>
-                <div className="px-6 py-5 col-span-2 md:col-span-1 border-t md:border-t-0 md:border-l border-[#EBEBEB] bg-[#FDF5F3]/40 flex items-center gap-2">
+                <div className="px-6 py-5 col-span-2 md:col-span-1 border-t md:border-t-0 border-black/20 bg-itsco-card flex items-center gap-2">
                   <CellIcon tone={row.itsco.tone} />
                   <p className="text-sm font-medium text-[#404040]">{row.itsco.label}</p>
+                </div>
+                <div className="px-6 py-5 border-t md:border-t-0 border-black/20 flex items-center gap-2">
+                  <CellIcon tone={row.mspr.tone} />
+                  <p className="text-sm text-[#404040]">{row.mspr.label}</p>
+                </div>
+                <div className="px-6 py-5 flex items-center gap-2">
+                  <CellIcon tone={row.advisory.tone} />
+                  <p className="text-sm text-[#404040]">{row.advisory.label}</p>
                 </div>
               </div>
             ))}
@@ -376,6 +382,13 @@ const TIERS = [
     description: 'Fully embedded AI operations covering governance, ROI tracking, and continuous improvement. Includes the ClinicalAI Compliance Platform.',
     bestFor: 'Mature organizations operating AI across multiple workflows who need governance and board-level ROI accountability.',
   },
+  {
+    number: '+',
+    name: 'ClinicalAI Compliance Platform',
+    label: 'Add-on module · Available from Tier 2',
+    description: 'Continuous HIPAA AI compliance governance, risk management, and audit readiness — managed as a service. Covers AI policy lifecycle, BAA management for every AI vendor, NIST AI RMF alignment, and tamper-evident audit trails ready for an OCR inquiry.',
+    bestFor: 'Healthcare organizations that need defensible AI compliance documentation — continuously, not just at audit time.',
+  },
 ]
 
 function TiersSection() {
@@ -388,7 +401,7 @@ function TiersSection() {
               How We Engage
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              Four tiers. <span className="text-[#CA3C27]">Built for where you are.</span>
+              Four tiers and one platform. <span className="text-[#CA3C27]">Built for where you are.</span>
             </h2>
             <p className="text-base md:text-lg text-[#404040] leading-relaxed">
               Pick the entry point that matches your readiness. We design every engagement to grow with you.
@@ -399,12 +412,24 @@ function TiersSection() {
         <FadeUp>
           <NumberedManifesto
             items={TIERS.map((t) => ({
+              number: t.number,
               eyebrow: t.label,
               title: t.name,
               description: t.description,
               meta: `Best for: ${t.bestFor}`,
             }))}
           />
+        </FadeUp>
+
+        <FadeUp delay={100}>
+          <div className="mt-16 max-w-3xl mx-auto border-l-2 border-[#CA3C27] pl-6 py-2">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+              Why this matters
+            </p>
+            <p className="text-base text-[#404040] leading-relaxed italic">
+              OCR is actively investigating AI-related HIPAA violations. FDA is expanding AI/ML regulation for clinical decision support. Payers are beginning to require AI governance documentation. The Compliance Platform keeps you defensible — continuously, not just at audit time.
+            </p>
+          </div>
         </FadeUp>
       </div>
     </section>
@@ -418,42 +443,42 @@ function ROIProofSection() {
     <section className="bg-itsco-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 md:pb-28 lg:pb-32">
         <FadeUp>
-          <div className="bg-[#FAFAFA] border border-[#EBEBEB] rounded-2xl p-10 md:p-14 max-w-5xl mx-auto shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+          <div className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)] border border-white/10 rounded-2xl p-10 md:p-14 max-w-5xl mx-auto shadow-[0_8px_24px_rgba(0,0,0,0.18)]">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3 text-center">
               The Outcomes
             </p>
-            <h3 className="text-2xl md:text-3xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-10 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white leading-[1.15] tracking-tight mb-10 text-center">
               ROI tracked from day one.
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6">
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-extrabold text-[#111111] leading-none tracking-tight mb-3 whitespace-nowrap">
+                <p className="text-4xl md:text-5xl font-extrabold text-white leading-none tracking-tight mb-3 whitespace-nowrap">
                   30&ndash;40%
                 </p>
-                <p className="text-sm text-[#888] leading-snug">reduction in time-to-chart with AI-assisted documentation</p>
+                <p className="text-sm text-white/60 leading-snug">reduction in time-to-chart with AI-assisted documentation</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-extrabold text-[#111111] leading-none tracking-tight mb-3 whitespace-nowrap">
+                <p className="text-4xl md:text-5xl font-extrabold text-white leading-none tracking-tight mb-3 whitespace-nowrap">
                   $150&ndash;220K
                 </p>
-                <p className="text-sm text-[#888] leading-snug">annualized labor cost avoidance for a 100-person clinical organization</p>
+                <p className="text-sm text-white/60 leading-snug">annualized labor cost avoidance for a 100-person clinical organization</p>
               </div>
               <div className="text-center">
-                <p className="text-4xl md:text-5xl font-extrabold text-[#111111] leading-none tracking-tight mb-3 whitespace-nowrap">
+                <p className="text-4xl md:text-5xl font-extrabold text-white leading-none tracking-tight mb-3 whitespace-nowrap">
                   3&ndash;5x
                 </p>
-                <p className="text-sm text-[#888] leading-snug">target ROI on engagement fees within 18 months</p>
+                <p className="text-sm text-white/60 leading-snug">target ROI on engagement fees within 18 months</p>
               </div>
             </div>
 
-            <div className="mt-12 pt-12 border-t border-[#EBEBEB] max-w-3xl mx-auto text-center">
+            <div className="mt-12 pt-12 border-t border-white/10 max-w-3xl mx-auto text-center">
               <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-6" />
-              <p className="text-lg md:text-xl text-[#111111] leading-[1.5] font-medium mb-6">
+              <p className="text-lg md:text-xl text-white leading-[1.5] font-medium mb-6">
                 &ldquo;ITSco has provided our technical support for the past 22 years. They are reliable, honest, and have been a true partner through all our growth.&rdquo;
               </p>
-              <p className="text-sm text-[#888]">
-                <span className="font-semibold text-[#404040]">Chris Adkins</span>
-                <span className="mx-2 text-[#CCCCCC]">&middot;</span>
+              <p className="text-sm text-white/60">
+                <span className="font-semibold text-white/85">Chris Adkins</span>
+                <span className="mx-2 text-white/30">&middot;</span>
                 Chief Administrative Officer, EmergeOrtho
               </p>
             </div>
@@ -468,7 +493,13 @@ function ROIProofSection() {
 
 function MidCTA() {
   return (
-    <section className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
+    <section
+      className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]"
+      style={{
+        ['--color-itsco-cta' as string]: '#CA3C27',
+        ['--color-itsco-cta-hover' as string]: '#B4311E',
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">

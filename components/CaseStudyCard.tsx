@@ -68,7 +68,7 @@ export default function CaseStudyCard({
               {stat}
             </p>
             {statLabel && (
-              <p className="text-xs text-[#888] mt-1.5 leading-snug">{statLabel}</p>
+              <p className="text-xs text-[#555] mt-1.5 leading-snug">{statLabel}</p>
             )}
           </div>
         )}

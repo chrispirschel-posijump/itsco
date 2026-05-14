@@ -49,7 +49,7 @@ export default function TestimonialBlock({
                 &ldquo;{quote}&rdquo;
               </blockquote>
 
-              <div className="mt-6 text-sm text-[#888]">
+              <div className="mt-6 text-sm text-[#555]">
                 <span className="font-semibold text-[#111111]">{name}</span>
                 {" · "}
                 {title}, {company}

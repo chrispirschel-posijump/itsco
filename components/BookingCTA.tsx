@@ -10,7 +10,13 @@ interface BookingCTAProps {
 
 export default function BookingCTA({ utmSuffix, image, imageAlt, backgroundImage }: BookingCTAProps) {
   return (
-    <section className="relative bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)] overflow-hidden">
+    <section
+      className="relative bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)] overflow-hidden"
+      style={{
+        ['--color-itsco-cta' as string]: '#CA3C27',
+        ['--color-itsco-cta-hover' as string]: '#B4311E',
+      }}
+    >
       {backgroundImage && (
         <>
           <Image

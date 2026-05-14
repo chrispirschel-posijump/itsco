@@ -169,7 +169,7 @@ function HomeHero() {
                   suffix={s.suffix}
                   className="text-2xl md:text-3xl font-extrabold text-[#111111] leading-none tracking-tight whitespace-nowrap"
                 />
-                <span className="text-xs text-[#888] leading-snug">{s.label}</span>
+                <span className="text-xs text-[#555] leading-snug">{s.label}</span>
               </div>
             ))}
           </div>
@@ -195,7 +195,7 @@ function ClientLogosBand() {
   return (
     <FadeUp>
       <div className="mt-20 pt-12 border-t border-[#EBEBEB]">
-        <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#BBBBBB] mb-8 text-center">
+        <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#555] mb-8 text-center">
           Trusted by businesses across NC, SC &amp; VA
         </p>
         <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:flex-nowrap">
@@ -279,7 +279,7 @@ function ServicesSection() {
               href={s.href}
               className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-black/[0.04] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
             >
-              <span className="text-xs font-bold tabular-nums text-[#CCCCCC] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <span className="text-xs font-bold tabular-nums text-[#999] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
                 {s.number}
               </span>
               <h3 className="text-xl md:text-2xl font-semibold text-[#111111]/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-[#111111] transition-[color] duration-200">
@@ -290,7 +290,7 @@ function ServicesSection() {
               </p>
               <ArrowRight
                 size={16}
-                className="hidden lg:block flex-shrink-0 text-[#CCCCCC] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
+                className="hidden lg:block flex-shrink-0 text-[#999] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
               />
             </Link>
           ))}

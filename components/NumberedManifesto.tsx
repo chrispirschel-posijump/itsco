@@ -28,7 +28,7 @@ export default function NumberedManifesto({ items }: NumberedManifestoProps) {
         >
           {/* Numeral */}
           <div className="md:col-span-3 lg:col-span-2">
-            <span className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-[#CCCCCC] leading-none tracking-tight tabular-nums block">
+            <span className="text-6xl md:text-7xl lg:text-8xl font-extrabold text-[#999] leading-none tracking-tight tabular-nums block">
               {item.number ?? `0${i + 1}`}
             </span>
           </div>
@@ -47,7 +47,7 @@ export default function NumberedManifesto({ items }: NumberedManifestoProps) {
               {item.description}
             </p>
             {item.meta && (
-              <p className="text-sm text-[#888] mt-4 max-w-3xl">{item.meta}</p>
+              <p className="text-sm text-[#555] mt-4 max-w-3xl">{item.meta}</p>
             )}
           </div>
         </div>

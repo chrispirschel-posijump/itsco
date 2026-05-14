@@ -91,7 +91,7 @@ function Hero() {
 
           {/* 4-stat callout */}
           <FadeUp delay={400}>
-            <div className="mt-14 bg-white border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] grid grid-cols-2 md:grid-cols-4 divide-x divide-[#EBEBEB] overflow-hidden">
+            <div className="mt-14 bg-itsco-card border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] grid grid-cols-2 md:grid-cols-4 divide-x divide-[#EBEBEB] overflow-hidden">
               {HERO_STATS.map((s) => (
                 <div key={s.label} className="px-5 md:px-6 py-7 text-left">
                   <CountUp
@@ -103,7 +103,7 @@ function Hero() {
                   <p className="text-xs text-[#555] leading-snug mb-2">
                     {s.label}
                   </p>
-                  <p className="text-[10px] uppercase tracking-[0.1em] text-[#BBBBBB]">
+                  <p className="text-[10px] uppercase tracking-[0.1em] text-[#555]">
                     {s.source}
                   </p>
                 </div>
@@ -148,7 +148,7 @@ const GAPS = [
 
 function GovernanceGaps() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, #FDF5F3 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-blush) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14 mx-auto text-center">
@@ -167,7 +167,7 @@ function GovernanceGaps() {
             return (
               <div
                 key={g.title}
-                className="h-full flex flex-col bg-white border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
+                className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
                   <Icon size={24} className="text-[#CA3C27]" />
@@ -222,7 +222,7 @@ const FRAMEWORK = [
 
 function FrameworkSection() {
   return (
-    <section id="framework" style={{ background: '#FDF5F3' }}>
+    <section id="framework" style={{ background: 'var(--color-itsco-blush)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-10 mx-auto text-center">
@@ -247,7 +247,7 @@ function FrameworkSection() {
               className="object-cover"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FDF5F3]/30 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
           </div>
         </FadeUp>
 
@@ -257,13 +257,13 @@ function FrameworkSection() {
             return (
               <div
                 key={l.layer}
-                className="h-full bg-white border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] flex flex-col"
+                className="h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] flex flex-col"
               >
                 <div className="flex items-start justify-between mb-5">
                   <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center">
                     <Icon size={22} className="text-white" />
                   </div>
-                  <span className="text-xs font-bold tabular-nums text-[#CCCCCC]">{l.layer}</span>
+                  <span className="text-xs font-bold tabular-nums text-[#999]">{l.layer}</span>
                 </div>
                 <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#CA3C27] mb-2">
                   {l.name}
@@ -295,7 +295,7 @@ const COMPARISON = [
 
 function ComparisonSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, #FDF5F3 0%, var(--color-itsco-paper) 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-blush) 0%, var(--color-itsco-paper) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
@@ -312,17 +312,17 @@ function ComparisonSection() {
         </FadeUp>
 
         <FadeUp delay={150}>
-          <div className="bg-white border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
+          <div className="bg-itsco-paper border border-black/20 rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
             {/* Header row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 border-b border-[#EBEBEB] bg-[#FAFAFA]">
-              <div className="px-6 py-4 md:py-5">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#888]">Capability</p>
+            <div className="grid grid-cols-1 md:grid-cols-3 border-b border-black/20">
+              <div className="px-6 py-4 md:py-5 bg-[#111111]">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-white">Capability</p>
               </div>
-              <div className="px-6 py-4 md:py-5 border-t md:border-t-0 md:border-l border-[#EBEBEB] flex items-center gap-2">
-                <X size={14} className="text-[#888] flex-shrink-0" />
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#888]">Block-Everything Approach</p>
+              <div className="px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20 bg-[#CCCCCC] flex items-center gap-2">
+                <X size={14} className="text-[#111111] flex-shrink-0" />
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#111111]">Block-Everything Approach</p>
               </div>
-              <div className="px-6 py-4 md:py-5 border-t md:border-t-0 md:border-l border-[#EBEBEB] flex items-center gap-2">
+              <div className="px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20 bg-itsco-card flex items-center gap-2">
                 <Check size={14} className="text-[#CA3C27] flex-shrink-0" />
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#CA3C27]">ITSco AI Governance</p>
               </div>
@@ -332,15 +332,15 @@ function ComparisonSection() {
             {COMPARISON.map((row, i) => (
               <div
                 key={row.capability}
-                className={`grid grid-cols-1 md:grid-cols-3 ${i < COMPARISON.length - 1 ? 'border-b border-[#EBEBEB]' : ''}`}
+                className={`grid grid-cols-1 md:grid-cols-3 ${i < COMPARISON.length - 1 ? 'border-b border-black/20' : ''}`}
               >
-                <div className="px-6 py-5 md:py-6">
-                  <p className="text-sm font-semibold text-[#111111]">{row.capability}</p>
+                <div className="px-6 py-5 md:py-6 bg-[#111111]">
+                  <p className="text-sm font-bold uppercase tracking-[0.1em] text-white leading-snug">{row.capability}</p>
                 </div>
-                <div className="px-6 py-5 md:py-6 border-t md:border-t-0 md:border-l border-[#EBEBEB]">
-                  <p className="text-sm text-[#888] leading-relaxed">{row.blocking}</p>
+                <div className="px-6 py-5 md:py-6 border-t md:border-t-0 border-black/20">
+                  <p className="text-sm text-[#404040] leading-relaxed">{row.blocking}</p>
                 </div>
-                <div className="px-6 py-5 md:py-6 border-t md:border-t-0 md:border-l border-[#EBEBEB] bg-[#FDF5F3]/40">
+                <div className="px-6 py-5 md:py-6 border-t md:border-t-0 border-black/20 bg-itsco-card">
                   <p className="text-sm text-[#404040] leading-relaxed">{row.itsco}</p>
                 </div>
               </div>
@@ -366,20 +366,20 @@ function OutcomeStats() {
     <section className="bg-itsco-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 md:pb-28">
         <FadeUp>
-          <div className="bg-[#FAFAFA] border border-[#EBEBEB] rounded-2xl p-10 md:p-14 max-w-5xl mx-auto shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+          <div className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)] border border-white/10 rounded-2xl p-10 md:p-14 max-w-5xl mx-auto shadow-[0_8px_24px_rgba(0,0,0,0.18)]">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3 text-center">
               Outcomes You Can Measure
             </p>
-            <h3 className="text-2xl md:text-3xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-10 text-center">
+            <h3 className="text-2xl md:text-3xl font-bold text-white leading-[1.15] tracking-tight mb-10 text-center">
               What ITSco AI Governance delivers.
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-6">
               {OUTCOMES.map((o) => (
                 <div key={o.stat} className="text-center">
-                  <p className="text-4xl md:text-5xl font-extrabold text-[#111111] leading-none tracking-tight mb-3">
+                  <p className="text-4xl md:text-5xl font-extrabold text-white leading-none tracking-tight mb-3">
                     {o.stat}
                   </p>
-                  <p className="text-sm text-[#888] leading-snug">{o.label}</p>
+                  <p className="text-sm text-white/60 leading-snug">{o.label}</p>
                 </div>
               ))}
             </div>
@@ -394,7 +394,13 @@ function OutcomeStats() {
 
 function MidCTA() {
   return (
-    <section className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
+    <section
+      className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]"
+      style={{
+        ['--color-itsco-cta' as string]: '#CA3C27',
+        ['--color-itsco-cta-hover' as string]: '#B4311E',
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">

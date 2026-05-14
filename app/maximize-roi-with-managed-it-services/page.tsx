@@ -91,7 +91,7 @@ function Hero() {
 
           {/* 4-stat callout */}
           <FadeUp delay={400}>
-            <div className="mt-14 bg-white border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] grid grid-cols-2 md:grid-cols-4 divide-x divide-[#EBEBEB] overflow-hidden">
+            <div className="mt-14 bg-itsco-card border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] grid grid-cols-2 md:grid-cols-4 divide-x divide-[#EBEBEB] overflow-hidden">
               {HERO_STATS.map((s) => (
                 <div key={s.label} className="px-5 md:px-6 py-7 text-left">
                   <CountUp
@@ -103,7 +103,7 @@ function Hero() {
                   <p className="text-xs text-[#555] leading-snug mb-2">
                     {s.label}
                   </p>
-                  <p className="text-[10px] uppercase tracking-[0.1em] text-[#BBBBBB]">
+                  <p className="text-[10px] uppercase tracking-[0.1em] text-[#555]">
                     {s.source}
                   </p>
                 </div>
@@ -143,7 +143,7 @@ const DIMENSIONS = [
 
 function DimensionsSection() {
   return (
-    <section id="dimensions" style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, #FDF5F3 100%)' }}>
+    <section id="dimensions" style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-blush) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14 mx-auto text-center">
@@ -162,13 +162,13 @@ function DimensionsSection() {
             return (
               <div
                 key={d.title}
-                className="h-full flex flex-col bg-white border border-[#EBEBEB] rounded-2xl p-7 md:p-8 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
+                className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 md:p-8 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
                 <div className="flex items-start justify-between mb-5">
                   <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center flex-shrink-0">
                     <Icon size={24} className="text-[#CA3C27]" />
                   </div>
-                  <span className="text-xs font-bold tabular-nums text-[#CCCCCC]">0{i + 1}</span>
+                  <span className="text-xs font-bold tabular-nums text-[#999]">0{i + 1}</span>
                 </div>
                 <h3 className="text-xl font-semibold text-[#111111] leading-snug mb-3">
                   {d.title}
@@ -200,7 +200,7 @@ const QBR_METRICS = [
 
 function QBRSection() {
   return (
-    <section style={{ background: '#FDF5F3' }}>
+    <section style={{ background: 'var(--color-itsco-blush)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-10 mx-auto text-center">
@@ -225,14 +225,14 @@ function QBRSection() {
               className="object-cover"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FDF5F3]/30 via-transparent to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-transparent" />
           </div>
         </FadeUp>
 
         <FadeUp delay={150}>
-          <div className="bg-white border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] max-w-5xl mx-auto overflow-hidden">
+          <div className="bg-itsco-card border border-[#EBEBEB] rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] max-w-5xl mx-auto overflow-hidden">
             {/* Header */}
-            <div className="px-7 md:px-10 py-6 border-b border-[#EBEBEB] bg-[#FAFAFA] flex flex-col md:flex-row md:items-center md:justify-between gap-3">
+            <div className="px-7 md:px-10 py-6 border-b border-black/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
               <div>
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#CA3C27] mb-1">
                   Sample Q3 Report
@@ -240,7 +240,7 @@ function QBRSection() {
                 <p className="text-sm text-[#404040]">Documented results delivered to a real client this quarter</p>
               </div>
               <div className="text-right">
-                <p className="text-xs uppercase tracking-[0.1em] text-[#888]">Net ROI this period</p>
+                <p className="text-xs uppercase tracking-[0.1em] text-[#555]">Net ROI this period</p>
                 <p className="text-3xl md:text-4xl font-extrabold text-[#111111] leading-none tracking-tight">271%</p>
               </div>
             </div>
@@ -250,7 +250,7 @@ function QBRSection() {
               <div className="divide-y divide-[#EBEBEB]">
                 {QBR_METRICS.slice(0, 4).map((row) => (
                   <div key={row.metric} className="px-7 md:px-10 py-5 flex items-center justify-between gap-4">
-                    <p className="text-xs uppercase tracking-[0.08em] font-bold text-[#888]">{row.metric}</p>
+                    <p className="text-xs uppercase tracking-[0.08em] font-bold text-[#555]">{row.metric}</p>
                     <p className="text-sm font-semibold text-[#111111] text-right">{row.result}</p>
                   </div>
                 ))}
@@ -258,7 +258,7 @@ function QBRSection() {
               <div className="divide-y divide-[#EBEBEB]">
                 {QBR_METRICS.slice(4, 8).map((row) => (
                   <div key={row.metric} className="px-7 md:px-10 py-5 flex items-center justify-between gap-4">
-                    <p className="text-xs uppercase tracking-[0.08em] font-bold text-[#888]">{row.metric}</p>
+                    <p className="text-xs uppercase tracking-[0.08em] font-bold text-[#555]">{row.metric}</p>
                     <p className="text-sm font-semibold text-[#111111] text-right">{row.result}</p>
                   </div>
                 ))}
@@ -284,7 +284,7 @@ const BASELINE_METRICS = [
 
 function BaselineSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, #FDF5F3 0%, var(--color-itsco-paper) 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-blush) 0%, var(--color-itsco-paper) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
@@ -320,7 +320,13 @@ function BaselineSection() {
 
 function MidCTA() {
   return (
-    <section className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
+    <section
+      className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]"
+      style={{
+        ['--color-itsco-cta' as string]: '#CA3C27',
+        ['--color-itsco-cta-hover' as string]: '#B4311E',
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
@@ -396,7 +402,7 @@ function EfficiencySection() {
           {EFFICIENCY.map((e) => (
             <div
               key={e.title}
-              className="h-full flex flex-col bg-[#FAFAFA] border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+              className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
               <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#CA3C27] mb-3">
                 {e.title}
@@ -428,7 +434,7 @@ const QUESTIONS = [
 
 function QuestionsSection() {
   return (
-    <section style={{ background: '#FAFAFA' }}>
+    <section style={{ background: 'var(--color-itsco-paper)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mb-14">

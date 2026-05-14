@@ -68,7 +68,7 @@ export default function TestimonialsRotator({
                   <blockquote className="text-base md:text-lg text-[#111111] leading-[1.6] font-medium mb-6 flex-1">
                     &ldquo;{t.quote}&rdquo;
                   </blockquote>
-                  <figcaption className="text-sm text-[#888] leading-snug">
+                  <figcaption className="text-sm text-[#555] leading-snug">
                     <span className="block font-semibold text-[#404040]">{t.name}</span>
                     <span className="block">{t.title}, {t.company}</span>
                   </figcaption>

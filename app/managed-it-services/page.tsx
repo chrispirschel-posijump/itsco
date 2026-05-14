@@ -233,7 +233,7 @@ const FEATURES = [
 
 function FeaturesSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, #FDF5F3 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-blush) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
@@ -252,7 +252,7 @@ function FeaturesSection() {
             return (
               <div
                 key={f.title}
-                className="h-full flex flex-col bg-white border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
+                className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
                   <Icon size={24} className="text-[#CA3C27]" />
@@ -304,7 +304,7 @@ const ADVANTAGES = [
 
 function AdvantagesSection() {
   return (
-    <section style={{ background: '#FDF5F3' }}>
+    <section style={{ background: 'var(--color-itsco-blush)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
@@ -323,7 +323,7 @@ function AdvantagesSection() {
             return (
               <div
                 key={a.title}
-                className="h-full flex flex-col bg-white border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+                className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
               >
                 <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center mb-5 flex-shrink-0">
                   <Icon size={22} className="text-white" />
@@ -392,7 +392,7 @@ const SUB_SERVICES = [
 
 function SubServicesSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, #FDF5F3 0%, var(--color-itsco-paper) 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-blush) 0%, var(--color-itsco-paper) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-16 border-b border-[#EBEBEB]">
@@ -404,7 +404,7 @@ function SubServicesSection() {
                 Drill into <span className="text-[#CA3C27]">any capability.</span>
               </h2>
             </div>
-            <p className="text-sm text-[#888] leading-relaxed max-w-[36ch] md:text-right">
+            <p className="text-sm text-[#555] leading-relaxed max-w-[36ch] md:text-right">
               Each part of your managed IT program is its own service. Click any line for the deep dive.
             </p>
           </div>
@@ -415,20 +415,20 @@ function SubServicesSection() {
             <Link
               key={s.number}
               href={s.href}
-              className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-white/60 transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
+              className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-black/[0.04] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
             >
-              <span className="text-xs font-bold tabular-nums text-[#CCCCCC] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <span className="text-xs font-bold tabular-nums text-[#999] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
                 {s.number}
               </span>
               <h3 className="text-xl md:text-2xl font-semibold text-[#111111]/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-[#111111] transition-[color] duration-200">
                 {s.title}
               </h3>
-              <p className="text-sm text-[#888] leading-relaxed lg:flex-1 lg:px-10 group-hover:text-[#555] transition-[color] duration-200">
+              <p className="text-sm text-[#555] leading-relaxed lg:flex-1 lg:px-10 group-hover:text-[#555] transition-[color] duration-200">
                 {s.description}
               </p>
               <ArrowRight
                 size={16}
-                className="hidden lg:block flex-shrink-0 text-[#CCCCCC] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
+                className="hidden lg:block flex-shrink-0 text-[#999] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
               />
             </Link>
           ))}
@@ -442,7 +442,13 @@ function SubServicesSection() {
 
 function MidCTA() {
   return (
-    <section className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
+    <section
+      className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]"
+      style={{
+        ['--color-itsco-cta' as string]: '#CA3C27',
+        ['--color-itsco-cta-hover' as string]: '#B4311E',
+      }}
+    >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
@@ -478,7 +484,7 @@ const CLIENTS = [
 
 function TestimonialSection() {
   return (
-    <section style={{ background: 'linear-gradient(180deg, #FDF5F3 0%, var(--color-itsco-paper) 100%)' }}>
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-blush) 0%, var(--color-itsco-paper) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
@@ -486,9 +492,9 @@ function TestimonialSection() {
             <p className="text-2xl md:text-3xl font-medium text-[#111111] leading-[1.5] mb-6">
               &ldquo;ITSco is always there for us when we need them, and they have helped build up our IT infrastructure with robust resources that fit our security and everyday needs. We look forward to working with them for decades to come.&rdquo;
             </p>
-            <p className="text-sm text-[#888]">
+            <p className="text-sm text-[#555]">
               <span className="font-semibold text-[#404040]">Marlene Fulp</span>
-              <span className="mx-2 text-[#CCCCCC]">&middot;</span>
+              <span className="mx-2 text-[#999]">&middot;</span>
               Assistant Administrator, Piedmont Triad Anesthesia
             </p>
           </div>
@@ -497,7 +503,7 @@ function TestimonialSection() {
         {/* Client logos */}
         <FadeUp delay={150}>
           <div className="mt-20 pt-12 border-t border-[#EBEBEB]">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#BBBBBB] mb-8 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#555] mb-8 text-center">
               Trusted by businesses across NC, SC &amp; VA
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:flex-nowrap">
@@ -616,18 +622,24 @@ function RelatedServices() {
             title="Cybersecurity & MSSP"
             description="24/7 SOC monitoring, MDR, firewall management, and compliance programs that reduce your risk exposure before threats become incidents."
             href="/cybersecurity/"
+            image="/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg"
+            imageAlt="Security operations engineers reviewing code on multiple monitors"
           />
           <ServiceCard
             slug="cloud-services"
             title="Cloud Services"
             description="Managed cloud, migration strategy, and Azure and AWS support that scales your infrastructure with your business."
             href="/cloud-services/"
+            image="/images/supporting/services/annie-spratt-sggw4-qDD54-unsplash-1024x702.jpg"
+            imageAlt="Team collaborating around laptops in a modern workspace"
           />
           <ServiceCard
             slug="vcio-vcto-vciso-services"
             title="Strategy & Consulting"
             description="vCIO, vCTO, and vCISO engagements that align your technology roadmap with your business goals."
             href="/it-management-consulting/"
+            image="/images/supporting/services/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"
+            imageAlt="Modern boardroom with floor-to-ceiling windows"
           />
         </div>
       </div>
