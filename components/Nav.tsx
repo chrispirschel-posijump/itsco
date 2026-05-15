@@ -398,13 +398,9 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
 
           {/* Nav items */}
           <div className="flex-1 overflow-y-auto px-6 py-6">
-            {NAV_ITEMS.map((item) => {
-              // On mobile, Services renders as a direct link to the hub page —
-              // sub-hubs are reached by visiting /services/ and tapping a card.
-              const flatOnMobile = item.label === "Services";
-              return (
+            {NAV_ITEMS.map((item) => (
               <div key={item.label}>
-                {item.children && !flatOnMobile ? (
+                {item.children ? (
                   <>
                     <button
                       className="w-full flex items-center justify-between py-3 min-h-[48px] text-2xl font-bold text-white hover:text-white/70 transition-colors duration-200"
@@ -445,8 +441,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
                   </Link>
                 )}
               </div>
-              );
-            })}
+            ))}
           </div>
 
           {/* Bottom CTA */}
