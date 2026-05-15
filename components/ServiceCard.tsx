@@ -34,8 +34,8 @@ export default function ServiceCard({ slug, title, description, href, image, ima
 
       <div className="flex flex-col p-7 flex-1">
         {!image && (
-          <div className="w-12 h-12 rounded-xl bg-[#F2F2F2] flex items-center justify-center mb-5 flex-shrink-0">
-            <DynamicIcon slug={slug} size={24} className="text-[#404040]" />
+          <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
+            <DynamicIcon slug={slug} size={24} className="text-[#CA3C27]" />
           </div>
         )}
 

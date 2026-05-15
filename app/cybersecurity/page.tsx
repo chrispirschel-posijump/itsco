@@ -448,13 +448,13 @@ function MidCTA() {
 // ── Testimonial + client logos ─────────────────────────────────────────────
 
 const CLIENTS = [
-  { src: '/images/clients/emergeortho.png',           alt: 'EmergeOrtho' },
-  { src: '/images/clients/SRN-vertical-300x300-1.jpg', alt: 'Southern Rehabilitation Network' },
-  { src: '/images/clients/CBRE-Group-logo.jpg',        alt: 'CBRE' },
-  { src: '/images/clients/Phononic_Logo_RGB-scaled.jpg', alt: 'Phononic' },
-  { src: '/images/clients/cambrex-vector-logo.jpg',    alt: 'Cambrex' },
+  { src: '/images/clients/EmergeOrtho_LogoVert_MD_1_.png', alt: 'EmergeOrtho' },
+  { src: '/images/clients/SRN%20logo.png', alt: 'Southern Rehabilitation Network' },
+  { src: '/images/clients/cbre-group-logo-11530967007p4cuy93fps_1.png', alt: 'CBRE' },
+  { src: '/images/clients/phononic-logo.svg', alt: 'Phononic' },
+  { src: '/images/clients/cambrex_logo.png', alt: 'Cambrex' },
   { src: '/images/clients/NCACC_screen_seal_color.png', alt: 'NC Association of County Commissioners' },
-  { src: '/images/clients/2021-LOGO-Forty540.jpg',     alt: 'Forty540' },
+  { src: '/images/clients/forty540logo.png', alt: 'Forty540' },
 ]
 
 function TestimonialSection() {
@@ -483,8 +483,8 @@ function TestimonialSection() {
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-6 lg:flex-nowrap">
               {CLIENTS.map((c) => (
-                <div key={c.alt} className="relative h-10 w-32 grayscale opacity-70 mix-blend-multiply hover:opacity-100 hover:grayscale-0 transition-[opacity,filter] duration-300">
-                  <Image src={c.src} alt={c.alt} fill className="object-contain" sizes="112px" />
+                <div key={c.alt} className="relative h-16 w-52 grayscale opacity-70 mix-blend-multiply hover:opacity-100 hover:grayscale-0 transition-[opacity,filter] duration-300">
+                  <Image src={c.src} alt={c.alt} fill className="object-contain" sizes="208px" />
                 </div>
               ))}
             </div>
