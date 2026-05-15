@@ -254,11 +254,11 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
   const [scrolled, setScrolled] = useState(false);
-  const navRef = useRef<HTMLElement>(null);
+  const headerRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
-      if (navRef.current && !navRef.current.contains(e.target as Node)) {
+      if (headerRef.current && !headerRef.current.contains(e.target as Node)) {
         setActiveDropdown(null);
         setMobileOpen(false);
       }
@@ -282,6 +282,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
 
   return (
     <header
+      ref={headerRef}
       className={`w-full fixed top-0 left-0 right-0 z-40 transition-[background-color,backdrop-filter] duration-300 ${
         scrolled
           ? "bg-[#111111]/90 backdrop-blur-md"
@@ -289,7 +290,6 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
       }`}
     >
       <nav
-        ref={navRef}
         className="max-w-7xl mx-auto px-6 lg:px-12 h-16 flex items-center justify-between gap-8"
       >
         {/* Logo — left */}
@@ -398,9 +398,13 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
 
           {/* Nav items */}
           <div className="flex-1 overflow-y-auto px-6 py-6">
-            {NAV_ITEMS.map((item) => (
+            {NAV_ITEMS.map((item) => {
+              // On mobile, Services renders as a direct link to the hub page —
+              // sub-hubs are reached by visiting /services/ and tapping a card.
+              const flatOnMobile = item.label === "Services";
+              return (
               <div key={item.label}>
-                {item.children ? (
+                {item.children && !flatOnMobile ? (
                   <>
                     <button
                       className="w-full flex items-center justify-between py-3 min-h-[48px] text-2xl font-bold text-white hover:text-white/70 transition-colors duration-200"
@@ -441,7 +445,8 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
                   </Link>
                 )}
               </div>
-            ))}
+              );
+            })}
           </div>
 
           {/* Bottom CTA */}
