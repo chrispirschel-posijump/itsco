@@ -41,7 +41,7 @@ const serviceJsonLd = {
 
 function Hero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col overflow-hidden bg-itsco-paper">
+    <section className="relative min-h-screen flex flex-col overflow-hidden bg-itsco-paper">
       <Image
         src="/images/hero/industries/national-cancer-institute-X9Iq79PFif4-unsplash.jpg"
         alt="Healthcare professionals in a modern medical facility"

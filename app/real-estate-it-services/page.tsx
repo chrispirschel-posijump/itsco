@@ -50,7 +50,7 @@ const PILLAR_BACKGROUNDS = [
 
 function Hero() {
   return (
-    <section className="relative bg-itsco-paper min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative bg-itsco-paper min-h-screen flex items-center overflow-hidden">
       <BackgroundOrbs variant="light" />
 
       <div className="absolute left-0 top-0 bottom-0 w-[52%] hidden lg:block">

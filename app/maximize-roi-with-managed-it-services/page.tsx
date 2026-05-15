@@ -47,7 +47,7 @@ const HERO_STATS: { value: number; decimals: boolean; prefix: string; suffix: st
 
 function Hero() {
   return (
-    <section className="relative bg-itsco-paper min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative bg-itsco-paper min-h-screen flex items-center overflow-hidden">
       <BackgroundOrbs variant="light" />
 
       <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-12 py-32 pt-44">
