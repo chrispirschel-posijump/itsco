@@ -107,7 +107,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-itsco-paper/40 via-transparent to-transparent" />
       </div>
 
-      <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
+      <div className="relative flex-1 lg:flex lg:items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[55%]">
           <FadeUp>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
