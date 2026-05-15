@@ -87,8 +87,8 @@ export const PILLARS = [
     headlineLead: 'A legal workspace,',
     headlineAccent: 'fine-tuned for productivity.',
     paragraphs: [SOURCE_PARAGRAPHS[14], SOURCE_PARAGRAPHS[15], SOURCE_PARAGRAPHS[16]],
-    image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
-    imageAlt: 'Legal team reviewing case files in a modern office',
+    image: '/images/hero/consulting/pexels-divinetechygirl-1181305.jpg',
+    imageAlt: 'Legal professionals working on laptops in a modern conference room',
     imageSide: 'right' as const,
   },
   {
@@ -114,8 +114,8 @@ export const PILLARS = [
     headlineLead: "Don't just practice law —",
     headlineAccent: 'revolutionize it.',
     paragraphs: [SOURCE_PARAGRAPHS[26], SOURCE_PARAGRAPHS[27], SOURCE_PARAGRAPHS[28]],
-    image: '/images/supporting/industries/nappy-heGTlwA705U-unsplash.jpg',
-    imageAlt: 'Legal professional reviewing documents in a private office',
+    image: '/images/hero/services/pexels-olly-3763998.jpg',
+    imageAlt: 'Senior attorney considering a strategic decision in a modern office',
     imageSide: 'left' as const,
   },
 ]
