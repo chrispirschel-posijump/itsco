@@ -33,6 +33,20 @@ const redirects = [
     permanent:   true,
     // Note: flatten from deeply nested path
   },
+  {
+    source:      '/it-asset-management-services',
+    destination: '/asset-lifecycle-management/',
+    permanent:   true,
+    // Note: near-duplicate of asset-lifecycle-management with no GSC data —
+    // consolidated to avoid keyword cannibalization (INVENTORY: "Template only").
+  },
+  {
+    source:      '/cyber-security-consulting',
+    destination: '/cybersecurity-consulting-services/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — consolidated to the canonical
+    // /cybersecurity-consulting-services/ page.
+  },
 
   // ── 2. MICRO-GEO CLEANUP ─────────────────────────────────────────────────
   // Thin local pages with awkward URLs and zero/minimal traffic.

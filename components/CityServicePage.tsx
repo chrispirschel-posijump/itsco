@@ -6,6 +6,7 @@ import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
 import CTAButton from '@/components/CTAButton'
 import DynamicIcon from '@/components/DynamicIcon'
+import FullBleedHero from '@/components/FullBleedHero'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import ClientLogosBand from '@/components/ClientLogosBand'
 import TestimonialsRotator from '@/components/TestimonialsRotator'
@@ -14,6 +15,8 @@ import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 
 export interface CityServiceContent {
   meta: { title: string; description: string; canonical: string }
+  // 'panel' (default) = light right-image hero; 'fullbleed' = dark full-bleed hero.
+  heroVariant?: 'panel' | 'fullbleed'
   hero: {
     eyebrow: string
     headlineLead: string
@@ -516,9 +519,17 @@ export default function CityServicePage({ content }: { content: CityServiceConte
           dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
         />
       ))}
-      <Nav variant="light" />
+      <Nav variant={content.heroVariant === 'fullbleed' ? 'dark' : 'light'} />
       <main>
-        <Hero content={content} />
+        {content.heroVariant === 'fullbleed' ? (
+          <FullBleedHero
+            {...content.hero}
+            image={content.heroImage}
+            secondary={{ label: 'See our capabilities', href: '#capabilities' }}
+          />
+        ) : (
+          <Hero content={content} />
+        )}
         <Capabilities content={content} />
         <ClientLogosBand variant="section" />
         <Positioning content={content} />

@@ -11,6 +11,7 @@ export const CONTENT: CityServiceContent = {
       'ITSco delivers IT helpdesk and service desk support in Raleigh, NC — real-time monitoring, remote and on-site troubleshooting, and sub-hour response. Book a free consultation.',
     canonical: 'https://www.itsco.com/raleigh-it-helpdesk/',
   },
+  heroVariant: 'fullbleed',
   hero: {
     eyebrow: 'IT Helpdesk · Raleigh, NC',
     headlineLead: 'IT helpdesk support in Raleigh that',
