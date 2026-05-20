@@ -149,7 +149,7 @@ const NAV_ITEMS = [
   },
   {
     label: "About",
-    href: "/about/",
+    href: "/about-us/",
     children: [
       { label: "About ITSco", href: "/about-us/" },
       { label: "Meet the Team", href: "/about-us/meet-the-team/" },

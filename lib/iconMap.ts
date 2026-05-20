@@ -131,5 +131,29 @@ export const iconMap: Record<string, string> = {
   'partners':                                   'Handshake',
   'contact-us':                                 'Phone',
   'request-our-pricing-guide':                  'FileText',
+  'value-integrity':                            'Handshake',
+  'value-team':                                 'Users',
+  'value-results':                              'Trophy',
+
+  // ── City service-page capabilities ───────────────────────────────────────────
+  'remote-monitoring':                          'Activity',
+  'cyber-security-management':                  'ShieldCheck',
+  'help-desk-services':                         'Headphones',
+  'advanced-engineering':                       'Cog',
+  'custom-slas':                                'FileCheck',
+  'preventative-maintenance':                   'Wrench',
+  'cloud-computing':                            'Cloud',
+  'it-automation':                              'Workflow',
+  'disaster-recovery':                          'LifeBuoy',
+  'network-security-services':                  'Lock',
+  'vulnerability-management':                   'ShieldAlert',
+  'it-project-management':                      'ClipboardList',
+
+  // ── City cyber-security-page capabilities ────────────────────────────────────
+  'cyber-threat-solutions':                     'ShieldCheck',
+  'security-architecture':                      'Network',
+  'security-awareness-training':                'GraduationCap',
+  'risk-management':                            'TriangleAlert',
+  'strategic-security-consulting':              'Compass',
 
 };

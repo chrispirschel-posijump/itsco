@@ -22,13 +22,13 @@ const redirects = [
   // Old content is preserved — only the URL structure changes.
 
   {
-    source:      '/services/itad/',
+    source:      '/services/itad',
     destination: '/itad/',
     permanent:   true,
     // Note: flatten from nested /services/managed-it-services/itad/ path
   },
   {
-    source:      '/services/managed-it-services/asset-lifecycle-management/',
+    source:      '/services/managed-it-services/asset-lifecycle-management',
     destination: '/asset-lifecycle-management/',
     permanent:   true,
     // Note: flatten from deeply nested path
@@ -39,82 +39,94 @@ const redirects = [
   // Redirected to the nearest active city page to consolidate authority.
 
   {
-    source:      '/it-solutions-company-managed-it-services-chapel-hill/',
+    source:      '/it-solutions-company-managed-it-services-chapel-hill',
     destination: '/managed-it-services-chapel-hill/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-garner/',
+    source:      '/it-solutions-company-managed-it-services-garner',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-fayetteville/',
+    source:      '/it-solutions-company-managed-it-services-fayetteville',
     destination: '/managed-it-services-fayetteville/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-erwin/',
+    source:      '/it-solutions-company-managed-it-services-erwin',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-morrisville/',
+    source:      '/it-solutions-company-managed-it-services-morrisville',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-graham/',
+    source:      '/it-solutions-company-managed-it-services-graham',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-mebane/',
+    source:      '/it-solutions-company-managed-it-services-mebane',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-knightdale/',
+    source:      '/it-solutions-company-managed-it-services-knightdale',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-butner/',
+    source:      '/it-solutions-company-managed-it-services-butner',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-bathesda/',
+    source:      '/it-solutions-company-managed-it-services-bathesda',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-carpenter/',
+    source:      '/it-solutions-company-managed-it-services-carpenter',
     destination: '/managed-it-services-raleigh/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-cary/',
+    source:      '/it-solutions-company-managed-it-services-cary',
     destination: '/managed-it-services-cary/',
     permanent:   true,
   },
   {
-    source:      '/it-solutions-company-managed-it-services-apex/',
-    destination: '/managed-it-services-raleigh/',
+    source:      '/it-solutions-company-managed-it-services-apex',
+    destination: '/managed-it-services-apex/',
     permanent:   true,
-    // Note: 2 clicks — monitor post-launch
   },
   {
-    source:      '/it-solutions-company-managed-it-services-burlington/',
+    source:      '/it-solutions-company-managed-it-services-burlington',
     destination: '/managed-it-services-burlington/',
     permanent:   true,
-    // Note: 1 click remaining
   },
   {
-    source:      '/it-solutions-company-managed-it-services-hillsborough/',
-    destination: '/managed-it-services-raleigh/',
+    source:      '/it-solutions-company-managed-it-services-hillsborough',
+    destination: '/managed-it-services-hillsborough/',
     permanent:   true,
-    // Note: 2 clicks — monitor post-launch
+  },
+  {
+    source:      '/it-solutions-company-managed-it-services-rocky-mount',
+    destination: '/managed-it-services-rocky-mount/',
+    permanent:   true,
+  },
+
+  // Nav-only stub: /about/ never had a published page, but the nav and
+  // some internal links pointed at it. Redirect to the canonical About hub.
+  // Source has no trailing slash because Next.js strips it (308) before
+  // evaluating redirects(), so the rule must match the post-strip path.
+  {
+    source:      '/about',
+    destination: '/about-us/',
+    permanent:   true,
   },
 
 ]

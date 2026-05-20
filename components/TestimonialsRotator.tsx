@@ -10,7 +10,7 @@ export interface Testimonial {
 }
 
 interface TestimonialsRotatorProps {
-  testimonials: Testimonial[];
+  testimonials: readonly Testimonial[];
   visible?: number;
   intervalMs?: number;
 }
