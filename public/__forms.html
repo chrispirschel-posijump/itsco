@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--
+  Static form definition for Netlify Forms build-time detection.
+  The live form is a React client component (components/ContactForm.tsx)
+  that posts here. Netlify scans this file at build to register the form.
+-->
+<html>
+  <head><title>Netlify form detection</title></head>
+  <body>
+    <form name="contact" data-netlify="true" data-netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="email" name="email" />
+      <input type="text" name="company" />
+      <input type="tel" name="phone" />
+      <textarea name="message"></textarea>
+      <input type="text" name="bot-field" />
+    </form>
+  </body>
+</html>

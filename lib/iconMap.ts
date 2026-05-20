@@ -86,8 +86,10 @@ export const iconMap: Record<string, string> = {
 
   // ── AI & Automation ─────────────────────────────────────────────────────────
   'ai-automation':                              'Brain',
+  'ai-governance':                              'ShieldCheck',
   'ai-readiness-assessment':                    'Brain',
   'ai-strategy-consulting':                     'Lightbulb',
+  'healthcare-ai-services':                     'HeartPulse',
   'process-automation':                         'Workflow',
   'roi-calculator':                             'Calculator',
   'compare-msps':                               'BarChart2',
@@ -95,7 +97,7 @@ export const iconMap: Record<string, string> = {
   // ── Industries — by vertical ────────────────────────────────────────────────
   'healthcare-managed-it-services':             'Stethoscope',
   'custom-it-network-services-healthcare-institutions': 'Stethoscope',
-  'pharma-med-tech-it-services':                'Flask',
+  'pharma-med-tech-it-services':                'FlaskConical',
   'banking-and-financial-services-it':          'Landmark',
   'legal-and-law-firm-it-services':             'Scale',
   'accounting-firm-it-services':                'Receipt',
