@@ -101,7 +101,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-itsco-paper/40 via-transparent to-transparent" />
       </div>
 
-      <div className="relative flex-1 lg:flex lg:items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
+      <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[55%]">
           <FadeUp>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
@@ -109,7 +109,7 @@ function Hero() {
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8 break-words">
               Cloud that works{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -141,18 +141,6 @@ function Hero() {
               />
             </div>
           </FadeUp>
-        </div>
-
-        <div className="mt-12 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_8px_32px_rgba(0,0,0,0.12)] lg:hidden">
-          <Image
-            src={HERO_IMAGE}
-            alt="ITSco-managed cloud data center infrastructure"
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>
       </div>
     </section>

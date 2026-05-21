@@ -55,7 +55,7 @@ export default function FullBleedHero({
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-white leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-white leading-[1.05] tracking-tight mb-8 break-words">
               {headlineLead}{' '}
               <span
                 className="bg-clip-text text-transparent"

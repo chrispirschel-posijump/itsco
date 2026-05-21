@@ -107,7 +107,7 @@ function Hero() {
         <div className="absolute inset-0 bg-gradient-to-t from-itsco-paper/40 via-transparent to-transparent" />
       </div>
 
-      <div className="relative flex-1 lg:flex lg:items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
+      <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[55%]">
           <FadeUp>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
@@ -145,19 +145,6 @@ function Hero() {
               />
             </div>
           </FadeUp>
-        </div>
-
-        {/* Mobile image */}
-        <div className="mt-12 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_8px_32px_rgba(0,0,0,0.12)] lg:hidden">
-          <Image
-            src="/images/hero/services/ed-hardie-xG02JzIBf7o-unsplash.jpg"
-            alt="ITSco engineering team monitoring client IT systems"
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
         </div>
       </div>
     </section>
