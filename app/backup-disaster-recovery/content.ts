@@ -69,6 +69,7 @@ export const CONTENT: ServiceSubContent = {
     },
   ],
   outcomes: {
+    tone: 'risk',
     eyebrow: 'The Risk',
     headlineLead: 'The high cost of inadequate',
     headlineAccent: 'backup and disaster recovery.',

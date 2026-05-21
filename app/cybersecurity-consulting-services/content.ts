@@ -54,6 +54,7 @@ export const CONTENT: ServiceSubContent = {
     headlineLead: 'The risk of',
     headlineAccent: 'going it alone.',
     paragraphs: [S[9]],
+    tone: 'risk',
     bullets: [S[10], S[11], S[12], S[13], S[14]],
     image: {
       src: '/images/hero/consulting/pexels-divinetechygirl-1181335.jpg',

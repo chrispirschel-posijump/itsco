@@ -47,6 +47,90 @@ const redirects = [
     // Note: INVENTORY "Redirect only" — consolidated to the canonical
     // /cybersecurity-consulting-services/ page.
   },
+  {
+    source:      '/cloud-consulting',
+    destination: '/cloud-consulting-services/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — consolidated to /cloud-consulting-services/.
+  },
+  {
+    source:      '/virtualization',
+    destination: '/virtualization-services/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — /virtualization-services/ is canonical.
+  },
+  {
+    source:      '/microsoft-azure-services-1',
+    destination: '/microsoft-azure-services/',
+    permanent:   true,
+    // Note: duplicate/test page — consolidated to /microsoft-azure-services/.
+  },
+  {
+    source:      '/services-for-the-microsoft-suite',
+    destination: '/microsoft-solutions/',
+    permanent:   true,
+    // Note: INVENTORY URL rename — Microsoft pillar moved to /microsoft-solutions/.
+  },
+  {
+    source:      '/share-point-services',
+    destination: '/microsoft-sharepoint-services/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — 20 clicks; consolidated to the canonical page.
+  },
+  {
+    source:      '/skype-for-business-services',
+    destination: '/microsoft-teams-services/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — Skype for Business retired; Teams is the successor.
+  },
+  {
+    source:      '/microsoft-teams-services-1',
+    destination: '/microsoft-teams-services/',
+    permanent:   true,
+    // Note: duplicate/test page — consolidated to /microsoft-teams-services/.
+  },
+  {
+    source:      '/microsoft-365-services-1',
+    destination: '/microsoft-365-services/',
+    permanent:   true,
+    // Note: duplicate/test page — consolidated to /microsoft-365-services/.
+  },
+  {
+    source:      '/microsoft-exchange-services-1',
+    destination: '/microsoft-exchange-services/',
+    permanent:   true,
+    // Note: duplicate/test page — consolidated to /microsoft-exchange-services/.
+  },
+  {
+    source:      '/vcio-services',
+    destination: '/vcio-vcto-vciso-services/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — 11.7k impr; consolidated to the combined page.
+  },
+  {
+    source:      '/it-audits-and-assessments',
+    destination: '/it-assessments-strategies/',
+    permanent:   true,
+    // Note: INVENTORY "Template only", flagged as overlapping it-assessments-strategies.
+  },
+  {
+    source:      '/it-strategy-services',
+    destination: '/it-roadmap-planning/',
+    permanent:   true,
+    // Note: INVENTORY "Template only", flagged as overlapping it-roadmap-planning.
+  },
+  {
+    source:      '/services/itad',
+    destination: '/itad/',
+    permanent:   true,
+    // Note: INVENTORY "Flatten URL" — ITAD moved out of the /services/ path.
+  },
+  {
+    source:      '/voip-services',
+    destination: '/voip-unified-communications/',
+    permanent:   true,
+    // Note: INVENTORY "Redirect only" — consolidated to /voip-unified-communications/.
+  },
 
   // ── 2. MICRO-GEO CLEANUP ─────────────────────────────────────────────────
   // Thin local pages with awkward URLs and zero/minimal traffic.

@@ -57,6 +57,7 @@ export const CONTENT: ServiceSubContent = {
     { slug: 'full-service-network', title: 'Full-Service Capabilities', description: S[6] },
   ],
   outcomes: {
+    tone: 'risk',
     eyebrow: 'The Challenge',
     headlineLead: 'The challenges of',
     headlineAccent: 'in-house network management.',

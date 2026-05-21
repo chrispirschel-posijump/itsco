@@ -38,6 +38,8 @@ export interface ServiceSubContent {
     headlineAccent: string
     paragraphs: readonly string[]
     bullets?: readonly string[]
+    // 'risk' = muted caution marker on bullets; default 'payoff' = red check.
+    tone?: 'risk' | 'payoff'
     image: { src: string; alt: string }
   }
   related: {
@@ -77,13 +79,7 @@ export function serviceBreadcrumbJsonLd(content: ServiceSubContent) {
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-      {
-        '@type': 'ListItem',
-        position: 2,
-        name: 'Managed IT Services',
-        item: 'https://www.itsco.com/managed-it-services/',
-      },
-      { '@type': 'ListItem', position: 3, name: pageName, item: content.meta.canonical },
+      { '@type': 'ListItem', position: 2, name: pageName, item: content.meta.canonical },
     ],
   }
 }
@@ -188,6 +184,7 @@ function Capabilities({ content }: { content: ServiceSubContent }) {
 function Outcomes({ content }: { content: ServiceSubContent }) {
   if (!content.outcomes) return null
   const { outcomes } = content
+  const isRisk = outcomes.tone === 'risk'
   return (
     <section style={{ background: 'var(--color-itsco-blush)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
@@ -222,7 +219,11 @@ function Outcomes({ content }: { content: ServiceSubContent }) {
               <ul className="mt-6 space-y-3">
                 {outcomes.bullets.map((b) => (
                   <li key={b} className="flex items-start gap-3 text-base text-[#404040] leading-relaxed">
-                    <Check size={20} className="text-[#CA3C27] flex-shrink-0 mt-0.5" />
+                    {isRisk ? (
+                      <span className="w-2.5 h-2.5 rounded-full border-2 border-[#CA3C27] flex-shrink-0 mt-2" />
+                    ) : (
+                      <Check size={20} className="text-[#CA3C27] flex-shrink-0 mt-0.5" />
+                    )}
                     <span>{b}</span>
                   </li>
                 ))}

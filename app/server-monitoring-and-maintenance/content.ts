@@ -74,6 +74,7 @@ export const CONTENT: ServiceSubContent = {
     },
   ],
   outcomes: {
+    tone: 'risk',
     eyebrow: 'The Risk',
     headlineLead: 'The risks of',
     headlineAccent: 'poor server management.',

@@ -53,6 +53,7 @@ export const CONTENT: ServiceSubContent = {
     headlineLead: 'Ignoring security audits',
     headlineAccent: 'can be costly.',
     paragraphs: [],
+    tone: 'risk',
     bullets: [S[9], S[10], S[11], S[12]],
     image: {
       src: '/images/supporting/industries/scott-graham-5fNmWej4tAA-unsplash.jpg',
