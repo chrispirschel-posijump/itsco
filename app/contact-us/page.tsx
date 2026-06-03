@@ -39,9 +39,15 @@ const CONTACT_METHODS = [
   { icon: Printer, label: 'Fax', value: '(919) 674-0045', href: null },
   {
     icon: MapPin,
-    label: 'Business Office',
+    label: 'Durham Office',
     value: '4601 Creekstone Drive, Suite 102, Durham, NC 27703',
     href: 'https://maps.app.goo.gl/2CwvVh9KFAzDy3wt6',
+  },
+  {
+    icon: MapPin,
+    label: 'Raleigh Office',
+    value: '8480 Honeycutt Rd #200-V700, Raleigh, NC 27615',
+    href: 'https://www.google.com/maps?q=8480+Honeycutt+Rd+Raleigh+NC+27615',
   },
   { icon: Clock, label: 'Hours', value: 'Monday–Friday, 9:00 AM – 5:00 PM EST', href: null },
 ]

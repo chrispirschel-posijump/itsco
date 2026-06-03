@@ -12,6 +12,7 @@ export const CONTENT: CityServiceContent = {
     canonical: 'https://www.itsco.com/raleigh-it-helpdesk/',
   },
   heroVariant: 'fullbleed',
+  officeLocation: 'raleigh',
   hero: {
     eyebrow: 'IT Helpdesk · Raleigh, NC',
     headlineLead: 'IT helpdesk support in Raleigh that',

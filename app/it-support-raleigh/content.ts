@@ -11,6 +11,7 @@ export const CONTENT: CityServiceContent = {
       'ITSco delivers IT support in Raleigh, NC — 24/7 monitoring, help desk, cybersecurity, and cloud — with flexible, predictable pricing. Book a free consultation.',
     canonical: 'https://www.itsco.com/it-support-raleigh/',
   },
+  officeLocation: 'raleigh',
   hero: {
     eyebrow: 'IT Support · Raleigh, NC',
     headlineLead: 'Raleigh IT support that',

@@ -11,6 +11,7 @@ export const CONTENT: CityServiceContent = {
       'ITSco delivers IT consulting in Raleigh, NC — IT strategy, cloud, cybersecurity, and network solutions that align technology with your business goals. Book a free consultation.',
     canonical: 'https://www.itsco.com/raleigh-it-consulting/',
   },
+  officeLocation: 'raleigh',
   hero: {
     eyebrow: 'IT Consulting · Raleigh, NC',
     headlineLead: 'IT consulting in Raleigh that',

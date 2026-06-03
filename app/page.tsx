@@ -419,7 +419,7 @@ function IndustriesSection() {
           {[
             <IndustryCard key="hc" slug="healthcare-managed-it-services" title="Healthcare" description="HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. EmergeOrtho trusts ITSco across 14 locations." href="/healthcare-managed-it-services/" />,
             <IndustryCard key="lg" slug="legal-and-law-firm-it-services" title="Legal" description="Secure, reliable IT for law firms that can't afford downtime or data breaches. Built with the confidentiality standards your practice requires." href="/legal-and-law-firm-it-services/" />,
-            <IndustryCard key="bf" slug="banking-and-financial-services-it" title="Banking & Financial Services" description="SOC 2, PCI-DSS, and FFIEC-aligned managed IT and cybersecurity for banks, credit unions, RIAs, and private equity firms in the Southeast." href="/banking-and-financial-services-it/" />,
+            <IndustryCard key="bf" slug="financial-services-it" title="Financial Services" description="SOC 2, PCI-DSS, and FFIEC-aligned managed IT and cybersecurity for banks, credit unions, RIAs, and private equity firms in the Southeast." href="/financial-services-it/" />,
             <IndustryCard key="mf" slug="manufacturing-it" title="Manufacturing" description="OT/IT convergence, plant floor connectivity, ERP support, and network security engineered for manufacturers who can't afford unplanned downtime." href="/manufacturing-it/" />,
           ]}
         </StaggerChildren>

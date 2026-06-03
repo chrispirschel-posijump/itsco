@@ -11,6 +11,7 @@ import TestimonialsRotator from '@/components/TestimonialsRotator'
 import { TESTIMONIALS } from '@/lib/testimonials'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 import { META, HERO, INTRO, TEAM, PHILOSOPHY, SERVICE_AREA, TRUSTED_SOURCE } from './content'
+import LeaderCard from './LeaderCard'
 
 const CALENDLY_BASE =
   'https://calendly.com/msavino-itsco/30-minute-free-consultation-with-itsco'
@@ -133,33 +134,15 @@ function TeamGrid() {
           </div>
         </FadeUp>
 
-        <StaggerChildren stagger={120} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <StaggerChildren stagger={120} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
           {TEAM.map((member) => (
-            <div
+            <LeaderCard
               key={member.name}
-              className="bg-itsco-card border border-[#EBEBEB] rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
-            >
-              <div className="relative aspect-[9/10] bg-[#111111]/5">
-                <Image
-                  src={member.image}
-                  alt={`${member.name}, ${member.title} at ITSco`}
-                  fill
-                  className="object-cover object-center"
-                  sizes="(max-width: 768px) 100vw, 50vw"
-                />
-              </div>
-              <div className="p-7">
-                <h3 className="text-2xl font-bold text-[#111111] tracking-tight">{member.name}</h3>
-                <p className="text-sm font-semibold uppercase tracking-[0.1em] text-[#CA3C27] mt-1 mb-5">
-                  {member.title}
-                </p>
-                <div className="space-y-3">
-                  {member.bio.map((p, i) => (
-                    <p key={i} className="text-base text-[#404040] leading-relaxed">{p}</p>
-                  ))}
-                </div>
-              </div>
-            </div>
+              name={member.name}
+              title={member.title}
+              image={member.image}
+              bio={member.bio}
+            />
           ))}
         </StaggerChildren>
       </div>

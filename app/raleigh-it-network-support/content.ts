@@ -11,6 +11,7 @@ export const CONTENT: CityServiceContent = {
       'ITSco delivers IT network support in Raleigh, NC — network design, monitoring, security, and cloud networking that maximize uptime and reduce risk. Book a free consultation.',
     canonical: 'https://www.itsco.com/raleigh-it-network-support/',
   },
+  officeLocation: 'raleigh',
   hero: {
     eyebrow: 'IT Network Support · Raleigh, NC',
     headlineLead: 'IT network support in Raleigh that',

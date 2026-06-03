@@ -11,6 +11,7 @@ export const CONTENT: CityServiceContent = {
       'ITSco delivers IT outsourcing in Raleigh, NC — executive consulting, cloud, security, network engineering, and compliance that maximize your IT ROI. Book a free consultation.',
     canonical: 'https://www.itsco.com/raleigh-it-outsourcing/',
   },
+  officeLocation: 'raleigh',
   hero: {
     eyebrow: 'IT Outsourcing · Raleigh, NC',
     headlineLead: 'IT outsourcing in Raleigh that',

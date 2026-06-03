@@ -28,10 +28,10 @@ const INDUSTRIES = [
     href: '/pharma-med-tech-it-services/',
   },
   {
-    slug: 'banking-and-financial-services-it',
-    title: 'Banking & Financial Services',
+    slug: 'financial-services-it',
+    title: 'Financial Services',
     description: 'SOC 2, PCI-DSS, and FFIEC-aligned IT for banks, credit unions, and financial firms.',
-    href: '/banking-and-financial-services-it/',
+    href: '/financial-services-it/',
   },
   {
     slug: 'legal-and-law-firm-it-services',
@@ -58,34 +58,10 @@ const INDUSTRIES = [
     href: '/professional-it-services/',
   },
   {
-    slug: 'construction-it-services',
-    title: 'Construction',
-    description: 'Mobile-ready IT and connectivity for job sites, field teams, and the back office.',
-    href: '/construction-it-services/',
-  },
-  {
     slug: 'non-profit-it-services',
     title: 'Non-Profit',
     description: 'Cost-effective, mission-focused managed IT and security for non-profit organizations.',
     href: '/non-profit-it-services/',
-  },
-  {
-    slug: 'transportation-logistics-it-services',
-    title: 'Transportation & Logistics',
-    description: 'Resilient IT and connectivity for fleets, warehouses, and distribution operations.',
-    href: '/transportation-logistics-it-services/',
-  },
-  {
-    slug: 'real-estate-it-services',
-    title: 'Real Estate',
-    description: 'Secure, mobile IT for brokerages, property managers, and real estate firms.',
-    href: '/real-estate-it-services/',
-  },
-  {
-    slug: 'marketing-it-services',
-    title: 'Marketing',
-    description: 'Fast, reliable IT and cloud collaboration for marketing and creative agencies.',
-    href: '/marketing-it-services/',
   },
 ]
 

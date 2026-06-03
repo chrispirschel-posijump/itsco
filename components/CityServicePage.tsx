@@ -17,6 +17,8 @@ export interface CityServiceContent {
   meta: { title: string; description: string; canonical: string }
   // 'panel' (default) = light right-image hero; 'fullbleed' = dark full-bleed hero.
   heroVariant?: 'panel' | 'fullbleed'
+  // 'durham' (default) shows the Durham HQ; 'raleigh' shows the Raleigh office.
+  officeLocation?: 'durham' | 'raleigh'
   hero: {
     eyebrow: string
     headlineLead: string
@@ -57,8 +59,8 @@ export interface CityServiceContent {
   bookingUtm: string
 }
 
-// ITSco's business listing — constant across every city page.
-const OFFICE = {
+// ITSco offices — Durham is the default; Raleigh-targeted pages opt in via content.officeLocation.
+const OFFICE_DURHAM = {
   eyebrow: 'Locally based',
   headlineLead: 'A genuine local partner —',
   headlineAccent: 'on-site when you need us.',
@@ -67,6 +69,21 @@ const OFFICE = {
   mapEmbedSrc:
     'https://www.google.com/maps?q=4601+Creekstone+Drive+Suite+102+Durham+NC+27703&output=embed',
   mapLink: 'https://maps.app.goo.gl/2CwvVh9KFAzDy3wt6',
+}
+
+const OFFICE_RALEIGH = {
+  eyebrow: 'Locally based',
+  headlineLead: 'A genuine local partner —',
+  headlineAccent: 'on-site when you need us.',
+  body: 'ITSco serves Raleigh and the Triangle from our Raleigh office, with on-site and remote engineers covering North Carolina, South Carolina, and Virginia. Being local means faster response times and a partner who truly knows your market.',
+  address: '8480 Honeycutt Rd #200-V700, Raleigh, NC 27615',
+  mapEmbedSrc:
+    'https://www.google.com/maps?q=8480+Honeycutt+Rd+Raleigh+NC+27615&output=embed',
+  mapLink: 'https://www.google.com/maps?q=8480+Honeycutt+Rd+Raleigh+NC+27615',
+}
+
+function officeFor(content: CityServiceContent) {
+  return content.officeLocation === 'raleigh' ? OFFICE_RALEIGH : OFFICE_DURHAM
 }
 
 export function cityFaqJsonLd(content: CityServiceContent) {
@@ -96,14 +113,23 @@ export function cityLocalBusinessJsonLd(content: CityServiceContent) {
     telephone: '+1-919-674-0044',
     foundingDate: '1996',
     priceRange: '$$',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '4601 Creekstone Drive, Suite 102',
-      addressLocality: 'Durham',
-      addressRegion: 'NC',
-      postalCode: '27703',
-      addressCountry: 'US',
-    },
+    address: content.officeLocation === 'raleigh'
+      ? {
+          '@type': 'PostalAddress',
+          streetAddress: '8480 Honeycutt Rd #200-V700',
+          addressLocality: 'Raleigh',
+          addressRegion: 'NC',
+          postalCode: '27615',
+          addressCountry: 'US',
+        }
+      : {
+          '@type': 'PostalAddress',
+          streetAddress: '4601 Creekstone Drive, Suite 102',
+          addressLocality: 'Durham',
+          addressRegion: 'NC',
+          postalCode: '27703',
+          addressCountry: 'US',
+        },
     areaServed: [
       { '@type': 'State', name: 'North Carolina' },
       { '@type': 'State', name: 'South Carolina' },
@@ -440,20 +466,21 @@ function MidCta({ content }: { content: CityServiceContent }) {
   )
 }
 
-function OfficeLocation() {
+function OfficeLocation({ content }: { content: CityServiceContent }) {
+  const office = officeFor(content)
   return (
     <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-blush) 100%)' }}>
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="lg:col-span-5">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
-              {OFFICE.eyebrow}
+              {office.eyebrow}
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
-              {OFFICE.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{OFFICE.headlineAccent}</span>
+              {office.headlineLead}{' '}
+              <span className="text-[#CA3C27]">{office.headlineAccent}</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-8">{OFFICE.body}</p>
+            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-8">{office.body}</p>
             <div className="flex items-start gap-3">
               <div className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center flex-shrink-0">
                 <MapPin size={18} className="text-white" />
@@ -463,12 +490,12 @@ function OfficeLocation() {
                   Business office
                 </p>
                 <a
-                  href={OFFICE.mapLink}
+                  href={office.mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-base font-semibold text-[#111111] hover:text-[#CA3C27] transition-colors duration-200"
                 >
-                  {OFFICE.address}
+                  {office.address}
                 </a>
               </div>
             </div>
@@ -477,8 +504,8 @@ function OfficeLocation() {
           <FadeUp delay={100} className="lg:col-span-7">
             <div className="relative aspect-[4/3] lg:aspect-[5/4] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)] border border-[#EBEBEB]">
               <iframe
-                src={OFFICE.mapEmbedSrc}
-                title={`Google Maps — ${OFFICE.address}`}
+                src={office.mapEmbedSrc}
+                title={`Google Maps — ${office.address}`}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
                 className="absolute inset-0 w-full h-full border-0"
@@ -531,7 +558,7 @@ export default function CityServicePage({ content }: { content: CityServiceConte
         <MidCta content={content} />
         <RelatedServices content={content} />
         <Faqs content={content} />
-        <OfficeLocation />
+        <OfficeLocation content={content} />
         <BookingCTA utmSuffix={content.bookingUtm} />
       </main>
       <Footer />

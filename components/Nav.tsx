@@ -24,7 +24,7 @@ const NAV_ITEMS = [
         ],
       },
       {
-        label: "Cybersecurity",
+        label: "Cybersecurity & Compliance",
         href: "/cybersecurity/",
         children: [
           { label: "Fully Managed Cybersecurity", href: "/fully-managed-cybersecurity/" },
@@ -41,6 +41,7 @@ const NAV_ITEMS = [
           { label: "Cloud Cybersecurity", href: "/cloud-cybersecurity/" },
           { label: "Zero Trust Security", href: "/zero-trust-security/" },
           { label: "Security Audits & Compliance", href: "/security-audits-compliance/" },
+          { label: "Compliance as a Service", href: "/compliance-as-a-service/" },
           { label: "Cybersecurity Consulting", href: "/cybersecurity-consulting-services/" },
         ],
       },
@@ -65,7 +66,7 @@ const NAV_ITEMS = [
         label: "Strategy & Consulting",
         href: "/it-management-consulting/",
         children: [
-          { label: "vCIO / vCTO / vCISO", href: "/vcio-vcto-vciso-services/" },
+          { label: "vCIO / vCTO / vCISO / vCAIO", href: "/vcio-vcto-vciso-services/" },
           { label: "Fractional CTO Services", href: "/fractional-cto-services/" },
           { label: "IT Roadmap Planning", href: "/it-roadmap-planning/" },
           { label: "IT Assessments & Strategies", href: "/it-assessments-strategies/" },
@@ -109,16 +110,12 @@ const NAV_ITEMS = [
     children: [
       { label: "Healthcare IT", href: "/healthcare-managed-it-services/" },
       { label: "Pharma & Med Tech", href: "/pharma-med-tech-it-services/" },
-      { label: "Banking & Financial Services", href: "/banking-and-financial-services-it/" },
+      { label: "Financial Services", href: "/financial-services-it/" },
       { label: "Legal & Law Firms", href: "/legal-and-law-firm-it-services/" },
       { label: "Accounting Firms", href: "/accounting-firm-it-services/" },
       { label: "Manufacturing", href: "/manufacturing-it/" },
       { label: "Professional Services", href: "/professional-it-services/" },
-      { label: "Construction", href: "/construction-it-services/" },
       { label: "Non-Profit", href: "/non-profit-it-services/" },
-      { label: "Transportation & Logistics", href: "/transportation-logistics-it-services/" },
-      { label: "Real Estate", href: "/real-estate-it-services/" },
-      { label: "Marketing", href: "/marketing-it-services/" },
       {
         label: "By Size",
         href: "/it-services-by-industry/",

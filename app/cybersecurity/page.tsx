@@ -336,7 +336,7 @@ const SUB_SERVICE_GROUPS = [
       { number: '09', title: 'Cyber Risk Assessment',          description: 'Comprehensive evaluation of vulnerabilities, threats, and remediation priorities.', href: '/cyber-risk-assessment/' },
       { number: '10', title: 'Penetration Testing',            description: 'Controlled attack simulations to surface weaknesses before adversaries do.', href: '/penetration-testing-services/' },
       { number: '11', title: 'Security Audits & Compliance',   description: 'Audit support and gap analyses for PCI DSS, HIPAA, GDPR, NIST, and CIS frameworks.', href: '/security-audits-compliance/' },
-      { number: '12', title: 'Compliance Management',          description: 'Ongoing compliance posture management as regulations evolve.', href: '/compliance-management/' },
+      { number: '12', title: 'Compliance as a Service',         description: 'Continuous compliance posture management between audits — not just before them.', href: '/compliance-as-a-service/' },
     ],
   },
 ]

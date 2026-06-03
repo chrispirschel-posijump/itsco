@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const SERVICES_LINKS = [
   { label: "Managed IT Services", href: "/managed-it-services/" },
-  { label: "Cybersecurity", href: "/cybersecurity/" },
+  { label: "Cybersecurity & Compliance", href: "/cybersecurity/" },
   { label: "Cloud Services", href: "/cloud-services/" },
   { label: "Strategy & Consulting", href: "/it-management-consulting/" },
   { label: "Microsoft Solutions", href: "/microsoft-solutions/" },
@@ -12,13 +12,12 @@ const SERVICES_LINKS = [
 
 const INDUSTRIES_LINKS = [
   { label: "Healthcare", href: "/healthcare-managed-it-services/" },
-  { label: "Banking & Finance", href: "/banking-and-financial-services-it/" },
+  { label: "Financial Services", href: "/financial-services-it/" },
   { label: "Legal", href: "/legal-and-law-firm-it-services/" },
   { label: "Manufacturing", href: "/manufacturing-it/" },
   { label: "Education", href: "/education-it-services/" },
   { label: "Government", href: "/government-it-services/" },
   { label: "Non-Profit", href: "/non-profit-it-services/" },
-  { label: "Construction", href: "/construction-it-services/" },
 ];
 
 const LOCAL_LINKS = [
@@ -99,7 +98,10 @@ export default function Footer() {
             <span className="hidden sm:inline text-white/20">|</span>
             <span>(919) 674-0044 Support &nbsp;·&nbsp; (919) 249-9556 Sales</span>
             <span className="hidden sm:inline text-white/20">|</span>
-            <span>4601 Creekstone Drive, Suite 102, Durham, NC 27703</span>
+            <span className="flex flex-col leading-snug">
+              <span>Durham: 4601 Creekstone Drive, Suite 102, Durham, NC 27703</span>
+              <span>Raleigh: 8480 Honeycutt Rd #200-V700, Raleigh, NC 27615</span>
+            </span>
           </div>
           <div className="flex items-center gap-5">
             <Link href="/privacy-policy/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] rounded-sm active:opacity-70">

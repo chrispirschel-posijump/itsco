@@ -310,7 +310,7 @@ function AdvantagesSection() {
 const SUB_SERVICES = [
   {
     number: '01',
-    title: 'vCIO, vCTO & vCISO Services',
+    title: 'vCIO, vCTO, vCISO & vCAIO Services',
     description: 'Virtual C-level IT leadership that aligns technology with business strategy.',
     href: '/vcio-vcto-vciso-services/',
   },

@@ -8,12 +8,12 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'vCIO, vCTO & vCISO Services | Virtual IT Leadership | ITSco',
+    title: 'vCIO, vCTO, vCISO & vCAIO Services | Virtual IT Leadership | ITSco',
     description:
-      'ITSco virtual executive services — vCIO, vCTO, and vCISO leadership that aligns IT with business goals, without the cost of a full-time hire. Book a free consultation.',
+      'ITSco virtual executive services — vCIO, vCTO, vCISO, and vCAIO leadership that aligns IT and AI with business goals, without the cost of a full-time hire. Book a free consultation.',
     canonical: 'https://www.itsco.com/vcio-vcto-vciso-services/',
   },
-  serviceName: 'vCIO, vCTO & vCISO Services',
+  serviceName: 'vCIO, vCTO, vCISO & vCAIO Services',
   hero: {
     eyebrow: 'Strategy · Virtual IT Leadership',
     headlineLead: 'Strategic IT leadership,',
@@ -57,6 +57,11 @@ export const CONTENT: ServiceSubContent = {
       title: 'Virtual CISO (vCISO)',
       description: 'Mitigate cyber risks and ensure compliance with expert cybersecurity leadership.',
     },
+    {
+      slug: 'vcaio-leadership',
+      title: 'Virtual CAIO (vCAIO)',
+      description: 'Practical AI strategy, deployment oversight, and governance — executive AI leadership without a full-time hire.',
+    },
   ],
   outcomes: {
     eyebrow: 'The Risk',
@@ -84,6 +89,12 @@ export const CONTENT: ServiceSubContent = {
         label: 'IT Roadmap Planning',
         href: '/it-roadmap-planning/',
         description: 'A prioritized, costed technology roadmap aligned to your business goals.',
+      },
+      {
+        slug: 'ai-strategy-consulting',
+        label: 'AI Strategy Consulting',
+        href: '/ai-strategy-consulting/',
+        description: 'Practical AI direction and roadmaps that turn AI investments into business outcomes.',
       },
       {
         slug: 'it-management-consulting',

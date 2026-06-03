@@ -43,22 +43,16 @@ export const TEAM = [
     ],
   },
   {
-    name: 'George',
+    name: 'George Terrone',
     title: 'Founder',
     image: '/images/team/ls_george4.webp',
     bio: [SOURCE_PARAGRAPHS[10], SOURCE_PARAGRAPHS[11]],
   },
   {
-    name: 'Greg',
+    name: 'Greg Wassil',
     title: 'CTO & Co-Founder',
     image: '/images/team/ls_greg4.webp',
     bio: [SOURCE_PARAGRAPHS[4], SOURCE_PARAGRAPHS[5], SOURCE_PARAGRAPHS[6]],
-  },
-  {
-    name: 'Jared',
-    title: 'CIO',
-    image: '/images/team/ls_jared4.webp',
-    bio: [SOURCE_PARAGRAPHS[7], SOURCE_PARAGRAPHS[8], SOURCE_PARAGRAPHS[9]],
   },
 ]
 
