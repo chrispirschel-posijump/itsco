@@ -33,8 +33,8 @@ const CASE_STUDIES = [
     title: 'Unlocking Business Opportunities Through IT Innovation',
     description:
       'Southern Rehabilitation Network (SRN), a long-time customer for whom we provide managed services, needed a major update to its computing infrastructure and cybersecurity practices to support its bid for a critical contract with the State of North Carolina.',
-    image: '/images/case-studies/healthcare.jpg',
-    imageAlt: 'Healthcare provider environment',
+    image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
+    imageAlt: 'Healthcare provider with tablet — IT modernization',
     href: '/case-studies/southern-rehabilitation-network/',
   },
   {

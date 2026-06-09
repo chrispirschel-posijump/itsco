@@ -325,13 +325,24 @@ function CaseStudiesSection() {
               Engineering excellence, <span className="text-[#CA3C27]">delivered.</span>
             </h2>
             <p className="text-base md:text-lg text-[#404040] leading-relaxed">
-              Three engagements that show what ITSco does best: complex infrastructure, secured and scaled. On time. On budget.
+              Four engagements that show what ITSco does best: complex infrastructure, secured and scaled. On time. On budget.
             </p>
           </div>
         </FadeUp>
 
-        <StaggerChildren stagger={120} className="grid grid-cols-1 md:grid-cols-3 gap-5">
+        <StaggerChildren stagger={120} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
           {[
+            <CaseStudyCard
+              key="emergeortho"
+              category="Healthcare"
+              title="Transforming Mobile MRI Services Through Remote Operations"
+              description="Remote-scanning hubs unlocked 40 extra hours of MRI capacity per truck per week and cut labor costs 30–40% across EmergeOrtho's 17-site imaging network."
+              stat="40 hrs"
+              statLabel="extra MRI capacity per week, per truck"
+              image="/images/case-studies/healthcare.jpg"
+              imageAlt="Healthcare imaging environment — remote MRI operations"
+              href="/case-studies/emerge-ortho-mobile-mri-remote-operations/"
+            />,
             <CaseStudyCard
               key="oil"
               category="Energy"
@@ -345,7 +356,7 @@ function CaseStudiesSection() {
             />,
             <CaseStudyCard
               key="bank"
-              category="Banking"
+              category="Financial Services"
               title="Helping a $27B Business Upgrade Network Management"
               description="Using automation to enhance the security, manageability, and scalability of a network infrastructure that supports thousands of employees across hundreds of offices."
               stat="2,800"
@@ -361,8 +372,8 @@ function CaseStudiesSection() {
               description="Design and implementation of a modernized computing infrastructure helped Southern Rehabilitation Network streamline business, improve security, and qualify for state contracts."
               stat="14"
               statLabel="locations supported"
-              image="/images/case-studies/healthcare.jpg"
-              imageAlt="Healthcare facility powered by modern IT infrastructure"
+              image="/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg"
+              imageAlt="Healthcare provider with tablet — IT modernization"
               href="/case-studies/southern-rehabilitation-network/"
             />,
           ]}

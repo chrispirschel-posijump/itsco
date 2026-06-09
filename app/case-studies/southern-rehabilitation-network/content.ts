@@ -23,8 +23,8 @@ export const CONTENT: CaseStudyContent = {
     eyebrow: 'Case Study · Healthcare',
     title: 'Unlocking Business Opportunities Through IT Innovation',
     image: {
-      src: '/images/case-studies/healthcare.jpg',
-      alt: 'Healthcare provider workspace — modernization and cybersecurity',
+      src: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
+      alt: 'Healthcare provider reviewing patient records on a tablet — IT modernization and cybersecurity',
     },
     utmSuffix: 'srn-it-innovation-hero',
   },

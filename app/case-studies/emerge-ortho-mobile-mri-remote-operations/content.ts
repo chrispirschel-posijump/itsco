@@ -151,8 +151,8 @@ export const CONTENT: CaseStudyContent = {
       title: 'Unlocking Business Opportunities Through IT Innovation',
       description:
         'Southern Rehabilitation Network secured a critical State of North Carolina contract after a cybersecurity and infrastructure modernization led by ITSco.',
-      image: '/images/case-studies/healthcare.jpg',
-      imageAlt: 'Healthcare provider environment',
+      image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
+      imageAlt: 'Healthcare provider with tablet — IT modernization',
       href: '/case-studies/southern-rehabilitation-network/',
     },
     {
