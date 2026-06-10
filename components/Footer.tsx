@@ -35,7 +35,7 @@ const COMPANY_LINKS = [
   { label: "About ITSco", href: "/about-us/" },
   { label: "Our Process", href: "/process/" },
   { label: "Partners", href: "/partners/" },
-  { label: "Resource Center", href: "/resource-center/" },
+  { label: "Resource Center", href: "/resources/" },
   { label: "Blog", href: "/blog/" },
   { label: "Case Studies", href: "/case-studies/" },
   { label: "Contact Us", href: "/contact-us/" },

@@ -244,6 +244,15 @@ const redirects = [
     permanent:   true,
   },
 
+  // The Footer historically linked to "/resource-center/", but the
+  // resources hub lives at /resources/. Consolidating at one URL
+  // preserves equity rather than splitting it across two hubs.
+  {
+    source:      '/resource-center',
+    destination: '/resources/',
+    permanent:   true,
+  },
+
 ]
 
 /**
