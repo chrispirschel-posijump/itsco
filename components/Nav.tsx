@@ -118,7 +118,7 @@ const NAV_ITEMS = [
       { label: "Non-Profit", href: "/non-profit-it-services/" },
       {
         label: "By Size",
-        href: "/it-services-by-industry/",
+        href: "/industries/",
         children: [
           { label: "Small Business", href: "/small-business/" },
           { label: "Mid-Sized Business", href: "/mid-sized-business/" },

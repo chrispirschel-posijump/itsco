@@ -235,6 +235,15 @@ const redirects = [
     permanent:   true,
   },
 
+  // The legacy /it-services-by-industry/ page no longer exists as a
+  // distinct stub — its role is filled by the /industries/ hub, which
+  // covers both the vertical industries and the by-size pages.
+  {
+    source:      '/it-services-by-industry',
+    destination: '/industries/',
+    permanent:   true,
+  },
+
 ]
 
 /**
