@@ -227,6 +227,14 @@ const redirects = [
     permanent:   true,
   },
 
+  // Industries rename — "Banking & Financial Services" -> "Financial Services"
+  // (stakeholder request). Preserve any organic equity from the legacy URL.
+  {
+    source:      '/banking-and-financial-services-it',
+    destination: '/financial-services-it/',
+    permanent:   true,
+  },
+
 ]
 
 /**
