@@ -322,6 +322,80 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       "Ten network security threats most likely to cause real business damage today — phishing, ransomware, credential theft, supply chain, IoT, shadow IT — and the defenses that work.",
     heroImage: '/images/hero/blog/shamin-haky-RIk-i9rXPao-unsplash.jpg',
   },
+
+  // ─── Final cluster (rewrite batch — June 2026) ───────────────────────────
+  {
+    slug: 'ultimate-it-strategic-planning-guide',
+    title: 'The Ultimate IT Strategic Planning Guide for Business Leaders',
+    category: 'Business Insights',
+    excerpt:
+      'Pillar guide to IT strategic planning — the 7 components of a real plan, how to do it without an internal CIO, the cadence that works, and the common pitfalls that derail it.',
+    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+  },
+  {
+    slug: 'how-much-does-it-services-cost',
+    title: 'How Much Do IT Services Cost? A Transparent 2026 Pricing Guide',
+    category: 'Managed IT',
+    excerpt:
+      'Transparent 2026 pricing ranges for managed IT services, helpdesk, security, and project work — what drives cost, what is included, and how to compare proposals without being misled.',
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
+  {
+    slug: 'what-is-it-procurement',
+    title: 'What Is IT Procurement? A Practical Guide for Business Leaders',
+    category: 'Managed IT',
+    excerpt:
+      'IT procurement explained — the full lifecycle, common mistakes, and how to do it well in a growing business that does not have a dedicated procurement function.',
+    heroImage: '/images/hero/blog/claudio-schwarz-08dyHxddcKc-unsplash.jpg',
+  },
+  {
+    slug: 'it-help-desk-best-practices',
+    title: '10 IT Help Desk Best Practices That Actually Move the Needle',
+    category: 'Managed IT',
+    excerpt:
+      "Ten help desk practices that consistently produce better user experience, faster resolution, and lower total cost — plus the anti-patterns that produce the opposite.",
+    heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
+  },
+  {
+    slug: '7-eye-opening-ai-trends-every-business-should-prepare-for-in-2025-and-beyond',
+    title: '7 Eye-Opening AI Trends Every Business Should Prepare For in 2026 and Beyond',
+    category: 'AI',
+    excerpt:
+      'Seven AI trends shaping business in 2026 — from pilots-to-production to AI governance to data quality as the real competitive advantage. With what to do about each one.',
+    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+  },
+  {
+    slug: 'real-world-examples-of-how-ai-helps-businesses-compete',
+    title: '6 Real-World Examples of How AI Helps Businesses Compete',
+    category: 'AI',
+    excerpt:
+      'Six concrete examples of how businesses are using AI to compete more effectively — customer support, sales, document processing, software development, operations, and cybersecurity.',
+    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+  },
+  {
+    slug: 'the-black-box-is-dead-why-business-leaders-can-no-longer-sit-on-the-sidelines',
+    title: 'The Black Box Is Dead: Why Business Leaders Can No Longer Sit on the Sidelines of AI',
+    category: 'AI',
+    excerpt:
+      "Why AI has become an executive-level responsibility — not a delegated technical one — and what business leaders specifically need to do about it.",
+    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+  },
+  {
+    slug: '6-reasons-healthcare-organizations-need-strong-it-network-services-now-more-than-ever',
+    title: '6 Reasons Healthcare Organizations Need Strong IT Network Services Now More Than Ever',
+    category: 'Business Insights',
+    excerpt:
+      'Six reasons strong IT network services are non-negotiable for healthcare organizations — from patient care reliability to HIPAA compliance to telehealth quality.',
+    heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
+  },
+  {
+    slug: 'durham-industries',
+    title: 'The 7 Industries Driving Durham, NC: A Local Economy Overview',
+    category: 'Business Insights',
+    excerpt:
+      "The seven industries powering Durham's economy — life sciences, healthcare, higher education, tech, financial services, professional services, manufacturing — and what each means for local businesses.",
+    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+  },
 ]
 
 export function getPost(slug: string): BlogPost | undefined {

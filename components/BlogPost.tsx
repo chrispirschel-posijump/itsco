@@ -33,6 +33,11 @@ const TOPIC_CTA: Record<string, { text: string; href: string; label: string }> =
     href: '/services/',
     label: 'Explore Our Services',
   },
+  AI: {
+    text: 'Ready to make AI a measurable advantage?',
+    href: '/ai-automation/',
+    label: 'Explore AI Services',
+  },
 }
 
 export function blogJsonLd(post: BlogPostMeta) {
