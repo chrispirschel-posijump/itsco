@@ -114,6 +114,88 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'Eight ways cybersecurity training strengthens your defenses — because your employees are your first line of defense.',
     heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
   },
+
+  // ─── MSP cluster (rewrite batch — June 2026) ──────────────────────────────
+  {
+    slug: 'what-are-managed-it-services',
+    title: 'What Are Managed IT Services? A Practical Guide for Business Leaders',
+    category: 'Managed IT',
+    excerpt:
+      'A plain-English answer to what managed IT services are, what they include, and what a CEO, COO, or CFO should expect to get for the money.',
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
+  {
+    slug: 'how-to-choose-a-managed-services-provider',
+    title: 'How to Choose a Managed Services Provider: 10 Questions That Separate Good MSPs From Bad Ones',
+    category: 'Managed IT',
+    excerpt:
+      "Ten questions to ask every MSP you evaluate — separating the providers worth working with from the ones to walk away from.",
+    heroImage: '/images/hero/blog/claudio-schwarz-08dyHxddcKc-unsplash.jpg',
+  },
+  {
+    slug: 'benefits-of-managed-it-services',
+    title: '9 Real Benefits of Managed IT Services for Growing Businesses',
+    category: 'Managed IT',
+    excerpt:
+      "Nine concrete, measurable improvements businesses get from a competent managed IT services engagement — and how to evaluate each one.",
+    heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
+  },
+  {
+    slug: 'why-use-managed-it-services',
+    title: 'Why Use Managed IT Services? The Business Case in 7 Points',
+    category: 'Managed IT',
+    excerpt:
+      "The business case for managed IT services in seven plain-English points — and when an MSP is probably NOT the right fit.",
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
+  {
+    slug: 'break-fix-vs-managed-services',
+    title: 'Break-Fix vs. Managed Services: Which IT Support Model Actually Costs Less?',
+    category: 'Managed IT',
+    excerpt:
+      'Break-fix vs managed services — the math, the operating model, and where break-fix still makes sense vs where it costs you money.',
+    heroImage: '/images/hero/blog/claudio-schwarz-08dyHxddcKc-unsplash.jpg',
+  },
+  {
+    slug: 'managed-services-vs-professional-services',
+    title: 'Managed Services vs. Professional Services: What\'s the Difference?',
+    category: 'Managed IT',
+    excerpt:
+      'Managed services are an ongoing subscription. Professional services are defined projects. Why the distinction matters and how they work together.',
+    heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
+  },
+  {
+    slug: '7-ways-businesses-can-maximize-roi-with-their-managed-services-provider',
+    title: '7 Ways Businesses Can Maximize ROI With Their Managed Services Provider',
+    category: 'Managed IT',
+    excerpt:
+      "Seven concrete habits that consistently separate high-ROI managed services engagements from average ones — practical things any business can do.",
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
+  {
+    slug: 'common-misconceptions-about-the-value-of-managed-service-providers',
+    title: '6 Common Misconceptions About the Value of Managed Service Providers',
+    category: 'Managed IT',
+    excerpt:
+      'Six outdated misconceptions about MSPs that lead business leaders to evaluate them based on what was true in 2014, not what they deliver today.',
+    heroImage: '/images/hero/blog/claudio-schwarz-08dyHxddcKc-unsplash.jpg',
+  },
+  {
+    slug: 'managed-it-services-challenges',
+    title: '7 Real Challenges of Managed IT Services (And How to Navigate Them)',
+    category: 'Managed IT',
+    excerpt:
+      "An honest look at the friction in managed IT services engagements — what to expect, why it happens, and how to navigate each challenge.",
+    heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
+  },
+  {
+    slug: 'helpdesk-vs-it-support',
+    title: 'Helpdesk vs. IT Support: The Difference and Why It Matters',
+    category: 'Managed IT',
+    excerpt:
+      'A helpdesk responds to problems. IT support prevents and responds to problems. Why the distinction matters when you are buying either one.',
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
 ]
 
 export function getPost(slug: string): BlogPost | undefined {

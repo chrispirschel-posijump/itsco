@@ -253,6 +253,31 @@ const redirects = [
     permanent:   true,
   },
 
+  // Off-topic / superseded legacy blog posts. INVENTORY tagged each
+  // "Cut / redirect — Off-topic" or "Old, low value". 301 to /blog/
+  // so any residual external links land on the blog index instead of
+  // a 404. The legacy WordPress posts should be deleted from CMS too.
+  {
+    source:      '/blog/should-students-learn-how-to-code',
+    destination: '/blog/',
+    permanent:   true,
+  },
+  {
+    source:      '/blog/selenium-vs-human-testing',
+    destination: '/blog/',
+    permanent:   true,
+  },
+  {
+    source:      '/blog/missing-icon-overlays-office-365-one-drive',
+    destination: '/blog/',
+    permanent:   true,
+  },
+  {
+    source:      '/blog/microsoft-removes-storage-limit-for-cloud-365',
+    destination: '/blog/',
+    permanent:   true,
+  },
+
 ]
 
 /**
