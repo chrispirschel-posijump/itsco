@@ -196,6 +196,56 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'A helpdesk responds to problems. IT support prevents and responds to problems. Why the distinction matters when you are buying either one.',
     heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
   },
+
+  // ─── Cloud cluster (rewrite batch — June 2026) ────────────────────────────
+  {
+    slug: 'cloud-migration-strategy',
+    title: 'How to Build a Cloud Migration Strategy That Actually Delivers ROI',
+    category: 'Cloud',
+    excerpt:
+      'A real cloud migration strategy connects target architecture to business outcomes — what the six components are, the pitfalls that sink most migrations, and what good looks like.',
+    heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
+  },
+  {
+    slug: 'cloud-migration-steps',
+    title: 'The 7 Essential Cloud Migration Steps (And the Order That Matters)',
+    category: 'Cloud',
+    excerpt:
+      "The seven steps every successful cloud migration follows — assess, define, design, plan, prepare, execute, optimize — and what goes wrong if you skip any of them.",
+    heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
+  },
+  {
+    slug: 'cloud-computing-service-models',
+    title: 'Cloud Computing Service Models: IaaS, PaaS, and SaaS Explained',
+    category: 'Cloud',
+    excerpt:
+      "IaaS, PaaS, SaaS, FaaS, CaaS, DaaS — what each cloud computing service model actually means, when each fits, and how hybrid and multi-cloud patterns work.",
+    heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
+  },
+  {
+    slug: 'what-is-cloud-security',
+    title: 'What Is Cloud Security? A Plain-English Guide for Business Leaders',
+    category: 'Cloud',
+    excerpt:
+      "Cloud security explained without jargon — the shared responsibility model, the six core components of a cloud security program, and where most breaches actually happen.",
+    heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
+  },
+  {
+    slug: 'cloud-security-threats',
+    title: '8 Cloud Security Threats Every Business Should Be Defending Against',
+    category: 'Cloud',
+    excerpt:
+      'The eight cloud security threats most likely to cause real business damage — misconfiguration, identity compromise, API risk, data exposure, and more — with the defenses for each.',
+    heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
+  },
+  {
+    slug: 'why-cloud-computing-is-important',
+    title: 'Why Cloud Computing Is Important for Business: 8 Concrete Reasons',
+    category: 'Cloud',
+    excerpt:
+      "Eight specific reasons cloud computing matters for business — each tied to a measurable outcome rather than a vague benefit — plus where cloud is NOT the right answer.",
+    heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
+  },
 ]
 
 export function getPost(slug: string): BlogPost | undefined {

@@ -25,8 +25,8 @@ const TOPIC_CTA: Record<string, { text: string; href: string; label: string }> =
   },
   Cloud: {
     text: 'Planning a move to the cloud?',
-    href: '/services/',
-    label: 'Explore Our Services',
+    href: '/cloud-services/',
+    label: 'Explore Cloud Services',
   },
   'Business Insights': {
     text: 'Want to make IT a business advantage?',
