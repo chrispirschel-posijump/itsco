@@ -288,6 +288,40 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'The IT support tier model explained — what work belongs at each tier, what staffing model produces good outcomes, and why the structure matters when buying IT support.',
     heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
   },
+
+  // ─── Cybersecurity cluster (rewrite batch — June 2026) ────────────────────
+  {
+    slug: 'cyber-security-work-from-home',
+    title: 'Cyber Security for Work From Home: A Practical Guide for Businesses',
+    category: 'Cybersecurity',
+    excerpt:
+      'The cybersecurity risks specific to remote work — home networks, personal devices, distracted phishing — and the controls that defend against them without making remote work painful.',
+    heroImage: '/images/hero/blog/redd-francisco-5U_28ojjgms-unsplash.jpg',
+  },
+  {
+    slug: 'encryption-benefits',
+    title: '8 Real Benefits of Data Encryption for Business',
+    category: 'Cybersecurity',
+    excerpt:
+      "Eight specific business benefits of data encryption — from neutralizing lost laptops to lowering cyber insurance premiums — plus what encryption does and doesn't protect against.",
+    heroImage: '/images/hero/blog/shamin-haky-RIk-i9rXPao-unsplash.jpg',
+  },
+  {
+    slug: 'risks-of-byod',
+    title: '7 Real Risks of BYOD (And How to Manage Them Without Killing Productivity)',
+    category: 'Cybersecurity',
+    excerpt:
+      "Seven concrete BYOD security risks every business should know — and the practical controls that close them while keeping BYOD workable for the people doing the work.",
+    heroImage: '/images/hero/blog/redd-francisco-5U_28ojjgms-unsplash.jpg',
+  },
+  {
+    slug: 'network-security-threats-and-vulnerabilities',
+    title: '10 Network Security Threats and Vulnerabilities Every Business Should Know About',
+    category: 'Cybersecurity',
+    excerpt:
+      "Ten network security threats most likely to cause real business damage today — phishing, ransomware, credential theft, supply chain, IoT, shadow IT — and the defenses that work.",
+    heroImage: '/images/hero/blog/shamin-haky-RIk-i9rXPao-unsplash.jpg',
+  },
 ]
 
 export function getPost(slug: string): BlogPost | undefined {
