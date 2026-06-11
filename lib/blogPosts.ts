@@ -246,6 +246,48 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       "Eight specific reasons cloud computing matters for business — each tied to a measurable outcome rather than a vague benefit — plus where cloud is NOT the right answer.",
     heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
   },
+
+  // ─── Outsourcing & Support cluster (rewrite batch — June 2026) ────────────
+  {
+    slug: 'ultimate-outsourcing-guide',
+    title: 'The Ultimate IT Outsourcing Guide for Business Leaders',
+    category: 'Managed IT',
+    excerpt:
+      'Pillar guide to IT outsourcing — the models, the math, when it makes sense (and when it does not), how to evaluate providers, and the playbook for a successful engagement.',
+    heroImage: '/images/hero/blog/claudio-schwarz-08dyHxddcKc-unsplash.jpg',
+  },
+  {
+    slug: 'benefits-of-it-outsourcing',
+    title: '8 Benefits of IT Outsourcing for Growing Businesses',
+    category: 'Managed IT',
+    excerpt:
+      'Eight specific, measurable benefits businesses realize from a competent IT outsourcing engagement — each tied to a business outcome you can defend at a board meeting.',
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
+  {
+    slug: 'benefits-of-remote-it-support',
+    title: "7 Benefits of Remote IT Support for Today's Distributed Workforce",
+    category: 'Managed IT',
+    excerpt:
+      'Seven specific benefits of remote IT support for distributed and hybrid teams — and what good remote IT support actually looks like in practice.',
+    heroImage: '/images/hero/blog/pexels-edmond-dantes-8068258.jpg',
+  },
+  {
+    slug: 'network-outsourcing',
+    title: 'Network Outsourcing: When It Makes Sense and How to Do It Right',
+    category: 'Managed IT',
+    excerpt:
+      'When network outsourcing makes sense, what a good engagement delivers, and how to evaluate providers without ending up in a relationship that creates more problems.',
+    heroImage: '/images/hero/blog/claudio-schwarz-08dyHxddcKc-unsplash.jpg',
+  },
+  {
+    slug: 'what-is-the-difference-between-it-support-tiers',
+    title: 'IT Support Tiers Explained: Tier 1, Tier 2, Tier 3, and Beyond',
+    category: 'Managed IT',
+    excerpt:
+      'The IT support tier model explained — what work belongs at each tier, what staffing model produces good outcomes, and why the structure matters when buying IT support.',
+    heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
+  },
 ]
 
 export function getPost(slug: string): BlogPost | undefined {
