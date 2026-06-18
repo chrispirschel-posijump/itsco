@@ -20,12 +20,12 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Managed Security Services Provider | MSSP | ITSco',
-  description: 'ITSco delivers managed cybersecurity services including SIEM, SOC, MDR, firewall management, and compliance support. 24/7 monitoring. Trusted since 1996. Book a free consultation.',
+  title: 'Cybersecurity & Compliance | Managed Security Services Provider | ITSco',
+  description: 'ITSco delivers Cybersecurity & Compliance services — SIEM, SOC, MDR, firewall management, and continuous compliance posture (SOC 2, HIPAA, PCI, NIST 800-171). 24/7 monitoring. Trusted since 1996. Book a free consultation.',
   alternates: { canonical: 'https://www.itsco.com/cybersecurity/' },
   openGraph: {
-    title: 'Managed Security Services Provider | MSSP | ITSco',
-    description: 'Managed cybersecurity services with SIEM, SOC, MDR, and 24/7 monitoring. Trusted since 1996.',
+    title: 'Cybersecurity & Compliance | Managed Security Services Provider | ITSco',
+    description: 'Cybersecurity & Compliance services — SIEM, SOC, MDR, 24/7 monitoring, and continuous compliance posture. Trusted since 1996.',
     url: 'https://www.itsco.com/cybersecurity/',
     siteName: 'ITSco',
     locale: 'en_US',
@@ -36,15 +36,25 @@ export const metadata: Metadata = {
 const serviceJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Service',
-  name: 'Managed Cybersecurity Services',
+  name: 'Cybersecurity & Compliance Services',
   provider: {
     '@type': 'Organization',
     name: 'ITSco',
     url: 'https://www.itsco.com/',
   },
-  description: 'Managed Security Services Provider (MSSP) offering SIEM, SOC, MDR, firewall management, vulnerability management, security assessments, penetration testing, and virtual CISO services for businesses across NC, SC, and VA.',
+  description: 'Cybersecurity & Compliance — Managed Security Services Provider (MSSP) offering SIEM, SOC, MDR, firewall management, vulnerability management, security assessments, penetration testing, virtual CISO services, and continuous compliance posture management (SOC 2, HIPAA, PCI DSS, NIST 800-171) for businesses across NC, SC, and VA.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
   url: 'https://www.itsco.com/cybersecurity/',
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+    { '@type': 'ListItem', position: 3, name: 'Cybersecurity & Compliance', item: 'https://www.itsco.com/cybersecurity/' },
+  ],
 }
 
 const FAQ_CALENDLY = 'https://calendly.com/msavino-itsco/30-minute-free-consultation-with-itsco?utm_source=website&utm_medium=cta&utm_campaign=cybersecurity-faq'
@@ -109,23 +119,23 @@ function Hero() {
         <div className="lg:max-w-[55%]">
           <FadeUp>
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
-              Cybersecurity
+              Cybersecurity &amp; Compliance
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
-              Cybersecurity{" "}
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8 break-words">
+              Cybersecurity &amp; Compliance,{" "}
               <span
                 className="bg-clip-text text-transparent"
                 style={{ backgroundImage: "linear-gradient(to right, #6B1F12 0%, #CA3C27 55%, #F26340 100%)" }}
               >
-                Solutions.
+                done together.
               </span>
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
             <p className="text-lg text-[#404040] leading-relaxed max-w-[44ch] mb-10">
-              ITSco provides cybersecurity services designed to detect threats, reduce vulnerabilities, and maintain compliance. Security failures can jeopardize your company's future. We offer comprehensive strategies integrating multiple security disciplines.
+              Detection, threat defense, and continuous compliance posture — run as one program. ITSco delivers 24/7 SOC monitoring, MDR, and the controls auditors expect for SOC 2, HIPAA, PCI DSS, and NIST 800-171. Security and compliance are not separate workstreams. We treat them as one.
             </p>
           </FadeUp>
           <FadeUp delay={300}>
@@ -621,6 +631,10 @@ export default function CybersecurityPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Nav variant="light" />
 

@@ -41,14 +41,7 @@ const AI_SERVICES = [
     title: 'Microsoft Copilot',
     description:
       'Deploy, secure, and govern Microsoft Copilot to boost everyday productivity across your team — without compromising data security.',
-    href: '/microsoft-copilot-implementation/',
-  },
-  {
-    slug: 'process-automation',
-    title: 'Process Automation',
-    description:
-      'Automate routine workflows to reduce errors, cut operational costs, and free your team for higher-value work.',
-    href: '/process-automation/',
+    href: '/microsoft-copilot/',
   },
   {
     slug: 'healthcare-ai-services',

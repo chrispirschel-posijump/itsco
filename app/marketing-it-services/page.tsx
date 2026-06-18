@@ -24,10 +24,15 @@ import {
   FAQ_INLINE_CTA_LABEL,
 } from './content'
 
+// Orphan page — removed from Nav, Footer, and the /industries/ hub by
+// stakeholder request. Kept on disk in case it's revived later. Noindex
+// prevents accidental indexing once the global robots gate is flipped at
+// launch, and the sitemap excludes it.
 export const metadata: Metadata = {
   title: META.title,
   description: META.description,
   alternates: { canonical: META.canonical },
+  robots: { index: false, follow: false },
 }
 
 type FaqAnswerItem = string | { items: readonly string[] }

@@ -10,10 +10,15 @@ import DynamicIcon from '@/components/DynamicIcon'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 
+// Orphan page — removed from Nav, Footer, and the /industries/ hub by
+// stakeholder request. Kept on disk in case it's revived later. Noindex
+// prevents accidental indexing once the global robots gate is flipped at
+// launch, and the sitemap excludes it.
 export const metadata: Metadata = {
   title: 'IT Services for Construction Companies | ITSco',
   description: 'Managed IT, cybersecurity, cloud, and 24/7 helpdesk for construction companies. Predictable cost, minimal downtime, project-ready.',
   alternates: { canonical: 'https://www.itsco.com/construction-it-services/' },
+  robots: { index: false, follow: false },
 }
 
 // ── Capabilities — Comprehensive Construction IT Solutions ─────────────────

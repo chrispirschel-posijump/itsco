@@ -15,8 +15,8 @@ const INDUSTRIES_LINKS = [
   { label: "Financial Services", href: "/financial-services-it/" },
   { label: "Legal", href: "/legal-and-law-firm-it-services/" },
   { label: "Manufacturing", href: "/manufacturing-it/" },
-  { label: "Education", href: "/education-it-services/" },
-  { label: "Government", href: "/government-it-services/" },
+  { label: "Accounting Firms", href: "/accounting-firm-it-services/" },
+  { label: "Professional Services", href: "/professional-it-services/" },
   { label: "Non-Profit", href: "/non-profit-it-services/" },
 ];
 
