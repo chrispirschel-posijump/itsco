@@ -419,6 +419,20 @@ export default function AIReadinessAssessmentPage() {
           }),
         }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+              { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation/' },
+              { '@type': 'ListItem', position: 3, name: 'AI Readiness Assessment', item: META.canonical },
+            ],
+          }),
+        }}
+      />
     </>
   )
 }

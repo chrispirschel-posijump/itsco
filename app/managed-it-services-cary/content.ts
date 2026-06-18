@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity monitoring for a Cary business',
     },
   },
+  citySlug: 'cary',
   bookingUtm: 'managed-it-cary-bottom',
 }

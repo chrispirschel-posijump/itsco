@@ -14,6 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cybersecurity-consulting-services/',
   },
   serviceName: 'Cybersecurity Consulting',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Consulting',
     headlineLead: 'Cybersecurity consulting',

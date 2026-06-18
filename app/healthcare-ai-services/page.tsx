@@ -37,6 +37,16 @@ const serviceJsonLd = {
   url: 'https://www.itsco.com/healthcare-ai-services/',
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation/' },
+    { '@type': 'ListItem', position: 3, name: 'Healthcare AI Services', item: 'https://www.itsco.com/healthcare-ai-services/' },
+  ],
+}
+
 // ── Hero — Variant B lite, full-bleed healthcare image with light wash ──────
 
 function Hero() {
@@ -529,6 +539,10 @@ export default function HealthcareAIServicesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Nav variant="light" />
 

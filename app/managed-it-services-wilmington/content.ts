@@ -6,9 +6,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in Wilmington, NC | ITSco',
+    title: 'Managed IT Services in Wilmington, NC | IT Solutions Provider | ITSco',
     description:
-      'ITSco delivers managed IT services in Wilmington, NC — monitoring, security, help desk, and cloud — that align IT spending with your business goals. Book a free consultation.',
+      'ITSco is the Wilmington IT solutions provider businesses trust — managed IT, security, help desk, and cloud aligned with your business goals. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-wilmington/',
   },
   hero: {
@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity specialist monitoring systems',
     },
   },
+  citySlug: 'wilmington',
   bookingUtm: 'managed-it-wilmington-bottom',
 }

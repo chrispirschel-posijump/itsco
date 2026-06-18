@@ -181,9 +181,36 @@ function BySize() {
   )
 }
 
+const industriesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'Industries We Serve',
+  url: 'https://www.itsco.com/industries/',
+  description:
+    'Industry-specific IT services for healthcare, legal, financial services, manufacturing, accounting, professional services, non-profits, and more.',
+  about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://www.itsco.com/industries/' },
+  ],
+}
+
 export default function IndustriesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(industriesJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Nav variant="light" />
       <main>
         <Hero />

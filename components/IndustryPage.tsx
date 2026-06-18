@@ -409,11 +409,29 @@ export default function IndustryPage({ content }: { content: IndustryContent }) 
     })),
   }
 
+  // BreadcrumbList: Home → Industries → <this industry>. The visible page name
+  // is the first segment of meta.title (before " | ") — already the human-
+  // readable industry label on every IndustryPage today.
+  const industryName = content.meta.title.split(' | ')[0]
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+      { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://www.itsco.com/industries/' },
+      { '@type': 'ListItem', position: 3, name: industryName, item: content.meta.canonical },
+    ],
+  }
+
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Nav variant="light" />
       <Hero content={content} />

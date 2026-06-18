@@ -70,5 +70,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'IT security consultant reviewing systems',
     },
   },
+  citySlug: 'raleigh',
   bookingUtm: 'it-consulting-raleigh-bottom',
 }

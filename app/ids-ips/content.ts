@@ -15,6 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/ids-ips/',
   },
   serviceName: 'Intrusion Detection & Prevention (IDS/IPS)',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · IDS/IPS',
     headlineLead: 'Intrusion detection and prevention',

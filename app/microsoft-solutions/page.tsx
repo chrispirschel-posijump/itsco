@@ -48,6 +48,16 @@ const serviceJsonLd = {
   url: 'https://www.itsco.com/microsoft-solutions/',
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+    { '@type': 'ListItem', position: 3, name: 'Microsoft Solutions', item: 'https://www.itsco.com/microsoft-solutions/' },
+  ],
+}
+
 const FAQS = [
   {
     question: 'Is ITSco a Microsoft-certified partner?',
@@ -548,6 +558,7 @@ export default function MicrosoftSolutionsPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Nav variant="light" />
       <main>
         <Hero />

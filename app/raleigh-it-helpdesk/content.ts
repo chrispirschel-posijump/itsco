@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Raleigh, North Carolina cityscape',
     },
   },
+  citySlug: 'raleigh',
   bookingUtm: 'it-helpdesk-raleigh-bottom',
 }

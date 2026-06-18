@@ -139,10 +139,51 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
       headlineAccent: c.securityAccent ?? 'an evolving threat landscape.',
       paragraphs: [
         `Ransomware, phishing, and data breaches are a constant and evolving threat to businesses of every size. Improving your cybersecurity defenses needs to be an ongoing priority — not an afterthought.`,
-        `Partner with ITSco to design and deploy a layered, proactive defense strategy that helps keep your ${c.name} business secure. None of our managed services clients has ever experienced a serious security breach.`,
+        `Partner with ITSco to design and deploy a layered, proactive defense strategy that helps keep your ${c.name} business secure across North Carolina, South Carolina, and Virginia. None of our managed services clients has ever experienced a serious security breach.`,
       ],
       image: c.securityImage,
     },
+    // Default "Related services" block — links templated city pages out to the
+    // four ITSco service pillars + the ROI hub. Without this, templated city
+    // pages render no internal-services links at the bottom, hurting site-wide
+    // internal link equity. Per-city content files can override by setting
+    // `related` directly.
+    related: {
+      heading: `More IT services available in ${c.name} and across North Carolina`,
+      links: [
+        {
+          slug: 'managed-it-services',
+          label: 'Managed IT Services',
+          href: '/managed-it-services/',
+          description:
+            'Predictable, fixed-rate IT management with proactive monitoring, helpdesk, and 24/7 cybersecurity — sized for businesses across NC, SC, and VA.',
+        },
+        {
+          slug: 'cybersecurity',
+          label: 'Cybersecurity & Compliance',
+          href: '/cybersecurity/',
+          description:
+            'Managed SOC, MDR, firewall, vulnerability management, and continuous compliance (SOC 2, HIPAA, PCI DSS, NIST 800-171) as one program.',
+        },
+        {
+          slug: 'cloud-services',
+          label: 'Cloud Services',
+          href: '/cloud-services/',
+          description:
+            'Cloud strategy, migration, and managed cloud across Azure, AWS, and hybrid — with FinOps and identity wrapped in.',
+        },
+        {
+          slug: 'maximize-roi',
+          label: 'Maximize IT ROI',
+          href: '/maximize-roi-with-managed-it-services/',
+          description:
+            'See how ITSco measures the ROI of managed IT services across four dimensions — and what to expect from your engagement.',
+        },
+      ],
+    },
+    // City slug for the nearby-cities block. lib/nearbyCities.ts maps the
+    // adjacency; pages without an entry there render no nearby-cities section.
+    citySlug: c.slug,
     bookingUtm: `${utm}-bottom`,
   }
 }

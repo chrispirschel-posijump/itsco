@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/siem-services/',
   },
   serviceName: 'SIEM Services',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · SIEM',
     headlineLead: 'SIEM that turns noise',

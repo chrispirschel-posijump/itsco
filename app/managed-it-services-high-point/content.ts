@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity monitoring for a High Point business',
     },
   },
+  citySlug: 'high-point',
   bookingUtm: 'managed-it-high-point-bottom',
 }

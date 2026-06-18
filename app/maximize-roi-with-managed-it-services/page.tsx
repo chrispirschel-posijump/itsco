@@ -36,6 +36,16 @@ const serviceJsonLd = {
   url: 'https://www.itsco.com/maximize-roi-with-managed-it-services/',
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+    { '@type': 'ListItem', position: 3, name: 'Maximize IT ROI', item: 'https://www.itsco.com/maximize-roi-with-managed-it-services/' },
+  ],
+}
+
 // ── Hero ────────────────────────────────────────────────────────────────────
 
 const HERO_STATS: { value: number; decimals: boolean; prefix: string; suffix: string; label: string; source: string }[] = [
@@ -481,6 +491,10 @@ export default function MaximizeROIPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Nav variant="light" />
 

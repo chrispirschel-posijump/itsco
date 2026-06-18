@@ -36,6 +36,16 @@ const serviceJsonLd = {
   url: 'https://www.itsco.com/ai-governance/',
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation/' },
+    { '@type': 'ListItem', position: 3, name: 'AI Governance', item: 'https://www.itsco.com/ai-governance/' },
+  ],
+}
+
 // ── Hero stats ───────────────────────────────────────────────────────────────
 
 const HERO_STATS: { value: number; decimals: boolean; prefix: string; suffix: string; label: string; source: string }[] = [
@@ -470,6 +480,10 @@ export default function AIGovernancePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Nav variant="light" />
 

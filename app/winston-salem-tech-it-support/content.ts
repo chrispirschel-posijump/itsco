@@ -68,5 +68,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Tech support monitoring for a Winston-Salem business',
     },
   },
+  citySlug: 'winston-salem',
   bookingUtm: 'tech-support-winston-salem-bottom',
 }

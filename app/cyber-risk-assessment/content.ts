@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cyber-risk-assessment/',
   },
   serviceName: 'Cyber Risk Assessment',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Risk Assessment',
     headlineLead: 'Cyber risk assessment —',

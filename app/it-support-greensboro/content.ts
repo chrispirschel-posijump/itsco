@@ -68,5 +68,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Downtown Greensboro, North Carolina',
     },
   },
+  citySlug: 'greensboro',
   bookingUtm: 'it-support-greensboro-bottom',
 }

@@ -15,6 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/mdr-monitoring-and-response/',
   },
   serviceName: 'Managed Detection & Response (MDR)',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · MDR',
     headlineLead: 'Managed detection and response',

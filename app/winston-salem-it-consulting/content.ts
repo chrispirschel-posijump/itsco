@@ -6,9 +6,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'IT Consulting in Winston-Salem, NC | ITSco',
+    title: 'IT Consulting in Winston-Salem, NC | IT Consulting Company | ITSco',
     description:
-      'ITSco delivers IT consulting in Winston-Salem, NC — IT strategy, cloud, cybersecurity, and network solutions that unlock the full potential of your IT. Book a free consultation.',
+      'ITSco is the Winston-Salem IT consulting company businesses trust — IT strategy, cloud, cybersecurity, and network solutions that unlock the full potential of your IT. Book a free consultation.',
     canonical: 'https://www.itsco.com/winston-salem-it-consulting/',
   },
   hero: {
@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'IT security consultant reviewing systems',
     },
   },
+  citySlug: 'winston-salem',
   bookingUtm: 'it-consulting-winston-salem-bottom',
 }

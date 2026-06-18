@@ -15,6 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-soc/',
   },
   serviceName: 'Managed SOC',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Managed SOC',
     headlineLead: 'A security operations center',

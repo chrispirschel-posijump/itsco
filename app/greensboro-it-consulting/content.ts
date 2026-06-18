@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'IT security consultant reviewing systems',
     },
   },
+  citySlug: 'greensboro',
   bookingUtm: 'it-consulting-greensboro-bottom',
 }

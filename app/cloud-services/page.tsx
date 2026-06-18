@@ -48,6 +48,16 @@ const serviceJsonLd = {
   url: 'https://www.itsco.com/cloud-services/',
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+    { '@type': 'ListItem', position: 3, name: 'Cloud Services', item: 'https://www.itsco.com/cloud-services/' },
+  ],
+}
+
 const FAQS = [
   {
     question: 'What cloud platforms does ITSco work with?',
@@ -571,6 +581,7 @@ export default function CloudServicesPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Nav variant="light" />
       <main>
         <Hero />

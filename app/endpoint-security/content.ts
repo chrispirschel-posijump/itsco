@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/endpoint-security/',
   },
   serviceName: 'Endpoint Security',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Endpoint Security',
     headlineLead: 'Endpoint security for every device',

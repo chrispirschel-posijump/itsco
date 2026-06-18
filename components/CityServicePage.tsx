@@ -11,6 +11,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import ClientLogosBand from '@/components/ClientLogosBand'
 import TestimonialsRotator from '@/components/TestimonialsRotator'
 import { TESTIMONIALS } from '@/lib/testimonials'
+import { getNearbyCities } from '@/lib/nearbyCities'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 
 export interface CityServiceContent {
@@ -54,6 +55,14 @@ export interface CityServiceContent {
     heading: string
     links: ReadonlyArray<{ slug: string; label: string; href: string; description: string }>
   }
+  // Optional city slug — drives the "Nearby cities" links section. Look up
+  // the canonical slug list in lib/nearbyCities.ts (raleigh, durham, cary,
+  // apex, hillsborough, etc.). If omitted, the Nearby Cities block won't
+  // render. `nearbyHrefBuilder` lets pages override the link target — e.g.
+  // a cyber-security city page can build hrefs that point at sibling
+  // cyber-security pages where they exist.
+  citySlug?: string
+  nearbyHrefBuilder?: (slug: string) => string
   faqHeading?: { eyebrow: string; headlineLead: string; headlineAccent: string }
   faqs?: ReadonlyArray<{ question: string; answer: readonly string[] }>
   bookingUtm: string
@@ -100,7 +109,36 @@ export function cityFaqJsonLd(content: CityServiceContent) {
   }
 }
 
+// Approximate office geocoordinates. Used for LocalBusiness `geo` JSON-LD.
+// These are good enough for Google Local results; verified with the embedded
+// Maps URLs in OFFICE_DURHAM / OFFICE_RALEIGH above.
+const DURHAM_GEO = { latitude: 35.9135, longitude: -78.8772 }
+const RALEIGH_GEO = { latitude: 35.8848, longitude: -78.6383 }
+
+// Standard ITSco business hours. Surfaced via openingHoursSpecification so
+// Google can render "Open now / Closes 5 PM" in local-pack results.
+const STANDARD_OPENING_HOURS = [
+  {
+    '@type': 'OpeningHoursSpecification',
+    dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+    opens: '09:00',
+    closes: '17:00',
+  },
+]
+
+// External profile URLs for `sameAs`. Add Google Business Profile, LinkedIn,
+// Facebook, etc. URLs as they're confirmed. Schema.org allows empty array, so
+// declaring it now lets us drop URLs in without touching this file.
+//
+// TODO: populate with confirmed URLs:
+//   - Google Business Profile (Durham + Raleigh)
+//   - LinkedIn company page
+//   - Facebook business page
+//   - MSP Alliance member listing (Cyber Verify Level 2)
+const SAME_AS_PROFILES: readonly string[] = []
+
 export function cityLocalBusinessJsonLd(content: CityServiceContent) {
+  const isRaleigh = content.officeLocation === 'raleigh'
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
@@ -109,11 +147,13 @@ export function cityLocalBusinessJsonLd(content: CityServiceContent) {
     description: content.meta.description,
     url: content.meta.canonical,
     logo: 'https://www.itsco.com/images/itsco-logo.svg',
+    // TODO before launch: replace with an actual office photo (1200x630 ideal).
+    // Google prefers a real photo over a logo here for local-pack results.
     image: 'https://www.itsco.com/images/itsco-logo.svg',
     telephone: '+1-919-674-0044',
     foundingDate: '1996',
     priceRange: '$$',
-    address: content.officeLocation === 'raleigh'
+    address: isRaleigh
       ? {
           '@type': 'PostalAddress',
           streetAddress: '8480 Honeycutt Rd #200-V700',
@@ -130,11 +170,17 @@ export function cityLocalBusinessJsonLd(content: CityServiceContent) {
           postalCode: '27703',
           addressCountry: 'US',
         },
+    geo: {
+      '@type': 'GeoCoordinates',
+      ...(isRaleigh ? RALEIGH_GEO : DURHAM_GEO),
+    },
+    openingHoursSpecification: STANDARD_OPENING_HOURS,
     areaServed: [
       { '@type': 'State', name: 'North Carolina' },
       { '@type': 'State', name: 'South Carolina' },
       { '@type': 'State', name: 'Virginia' },
     ],
+    ...(SAME_AS_PROFILES.length > 0 && { sameAs: SAME_AS_PROFILES }),
   }
 }
 
@@ -373,6 +419,41 @@ function RelatedServices({ content }: { content: CityServiceContent }) {
   )
 }
 
+function NearbyCities({ content }: { content: CityServiceContent }) {
+  if (!content.citySlug) return null
+  const nearby = getNearbyCities(content.citySlug, content.nearbyHrefBuilder)
+  if (nearby.length === 0) return null
+  return (
+    <section className="bg-itsco-paper border-t border-[#EBEBEB]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 md:py-20">
+        <FadeUp>
+          <div className="flex items-center gap-3 mb-8">
+            <MapPin size={20} className="text-[#CA3C27]" />
+            <h2 className="text-xl md:text-2xl font-bold text-[#111111] tracking-tight">
+              IT services in nearby cities
+            </h2>
+          </div>
+        </FadeUp>
+        <StaggerChildren stagger={50} className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+          {nearby.map((city) => (
+            <Link
+              key={city.slug}
+              href={city.href}
+              className="group flex items-center justify-between gap-3 bg-itsco-card border border-[#EBEBEB] rounded-xl px-5 py-4 hover:border-[#CA3C27] hover:-translate-y-0.5 transition-[border-color,transform] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+            >
+              <span className="text-sm font-semibold text-[#111111] leading-snug">{city.name}, NC</span>
+              <ArrowRight
+                size={14}
+                className="text-[#555] flex-shrink-0 group-hover:text-[#CA3C27] transition-transform duration-200 group-hover:translate-x-0.5"
+              />
+            </Link>
+          ))}
+        </StaggerChildren>
+      </div>
+    </section>
+  )
+}
+
 function Faqs({ content }: { content: CityServiceContent }) {
   const faqs = (content.faqs ?? []).filter((f) => f.answer.some((a) => a.trim().length > 0))
   if (faqs.length === 0 || !content.faqHeading) return null
@@ -557,6 +638,7 @@ export default function CityServicePage({ content }: { content: CityServiceConte
         <Testimonials />
         <MidCta content={content} />
         <RelatedServices content={content} />
+        <NearbyCities content={content} />
         <Faqs content={content} />
         <OfficeLocation content={content} />
         <BookingCTA utmSuffix={content.bookingUtm} />

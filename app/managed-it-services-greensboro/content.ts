@@ -6,9 +6,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in Greensboro, NC | ITSco',
+    title: 'Managed IT Services in Greensboro, NC | Managed IT Support Services | ITSco',
     description:
-      'ITSco delivers managed IT services in Greensboro, NC — monitoring, cybersecurity, help desk, and cloud — built to increase efficiency and ROI. Book a free consultation.',
+      'ITSco delivers managed IT support services in Greensboro, NC — monitoring, cybersecurity, help desk, and cloud — built to increase efficiency and ROI. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-greensboro/',
   },
   hero: {
@@ -68,5 +68,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Greensboro, North Carolina at dusk',
     },
   },
+  citySlug: 'greensboro',
   bookingUtm: 'managed-it-greensboro-bottom',
 }

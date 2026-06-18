@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cloud-cybersecurity/',
   },
   serviceName: 'Cloud Cybersecurity',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Cloud Security',
     headlineLead: 'Cloud cybersecurity — the cloud',

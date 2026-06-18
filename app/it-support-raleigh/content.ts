@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Downtown Raleigh, North Carolina skyline',
     },
   },
+  citySlug: 'raleigh',
   bookingUtm: 'it-support-raleigh-bottom',
 }

@@ -77,5 +77,6 @@ export const CONTENT: CityServiceContent = {
     { question: S[37], answer: [S[38]] },
     { question: S[39], answer: [S[40]] },
   ],
+  citySlug: 'durham',
   bookingUtm: 'cyber-durham-bottom',
 }

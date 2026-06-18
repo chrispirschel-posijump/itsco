@@ -174,9 +174,46 @@ function ServiceArea() {
   )
 }
 
+const orgJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'ITSco',
+  url: 'https://www.itsco.com/',
+  logo: 'https://www.itsco.com/images/itsco-logo.png',
+  foundingDate: '1996',
+  description:
+    'ITSco is a managed IT services provider and MSSP headquartered near Research Triangle Park, Durham NC. Serves SMB to enterprise across NC, SC, and VA since 1996.',
+  address: {
+    '@type': 'PostalAddress',
+    streetAddress: '4601 Creekstone Drive, Suite 102',
+    addressLocality: 'Durham',
+    addressRegion: 'NC',
+    postalCode: '27703',
+    addressCountry: 'US',
+  },
+  areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.itsco.com/about-us/' },
+  ],
+}
+
 export default function AboutUsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Nav variant="light" />
       <main>
         <Hero />

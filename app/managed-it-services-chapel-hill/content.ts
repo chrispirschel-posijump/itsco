@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity monitoring in progress',
     },
   },
+  citySlug: 'chapel-hill',
   bookingUtm: 'managed-it-chapel-hill-bottom',
 }

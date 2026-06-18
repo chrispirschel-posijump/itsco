@@ -283,9 +283,67 @@ function Testimonials() {
   )
 }
 
+const contactJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'ContactPage',
+  url: 'https://www.itsco.com/contact-us/',
+  name: 'Contact ITSco',
+  description:
+    'Book a free 30-minute consultation, call our team, or send a message. Managed IT and cybersecurity for businesses across NC, SC, and VA.',
+  about: {
+    '@type': 'LocalBusiness',
+    name: 'ITSco',
+    url: 'https://www.itsco.com/',
+    telephone: '+1-919-674-0044',
+    email: 'info@itsco.com',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '4601 Creekstone Drive, Suite 102',
+      addressLocality: 'Durham',
+      addressRegion: 'NC',
+      postalCode: '27703',
+      addressCountry: 'US',
+    },
+    areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
+    contactPoint: [
+      {
+        '@type': 'ContactPoint',
+        contactType: 'customer support',
+        telephone: '+1-919-674-0044',
+        areaServed: 'US',
+        availableLanguage: ['English'],
+      },
+      {
+        '@type': 'ContactPoint',
+        contactType: 'sales',
+        telephone: '+1-919-249-9556',
+        areaServed: 'US',
+        availableLanguage: ['English'],
+      },
+    ],
+  },
+}
+
+const contactBreadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.itsco.com/contact-us/' },
+  ],
+}
+
 export default function ContactUsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(contactBreadcrumbJsonLd) }}
+      />
       <Nav variant="light" />
       <main>
         <Hero />

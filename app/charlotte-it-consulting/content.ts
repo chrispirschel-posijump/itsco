@@ -6,9 +6,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'IT Consulting in Charlotte, NC | ITSco',
+    title: 'IT Consulting Charlotte | IT Consulting in Charlotte, NC | ITSco',
     description:
-      'ITSco delivers IT consulting in Charlotte, NC — IT strategy, cloud, cybersecurity, and network solutions that turn your business goals into reality. Book a free consultation.',
+      'IT consulting Charlotte business leaders trust — ITSco delivers IT strategy, cloud, cybersecurity, and network solutions that turn business goals into reality. Book a free consultation.',
     canonical: 'https://www.itsco.com/charlotte-it-consulting/',
   },
   hero: {
@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'IT security consultant reviewing systems',
     },
   },
+  citySlug: 'charlotte',
   bookingUtm: 'it-consulting-charlotte-bottom',
 }

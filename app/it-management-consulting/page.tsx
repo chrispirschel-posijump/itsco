@@ -49,6 +49,16 @@ const serviceJsonLd = {
   url: 'https://www.itsco.com/it-management-consulting/',
 }
 
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+    { '@type': 'ListItem', position: 3, name: 'IT Strategy & Consulting', item: 'https://www.itsco.com/it-management-consulting/' },
+  ],
+}
+
 const FAQS = [
   {
     question: 'What does IT strategy and consulting actually involve?',
@@ -563,6 +573,7 @@ export default function ITManagementConsultingPage() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <Nav variant="light" />
       <main>
         <Hero />

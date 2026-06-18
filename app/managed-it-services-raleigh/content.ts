@@ -140,5 +140,6 @@ export const CONTENT: CityServiceContent = {
       answer: [S[40], S[41]],
     },
   ],
+  citySlug: 'raleigh',
   bookingUtm: 'managed-it-raleigh-bottom',
 }

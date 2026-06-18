@@ -10,9 +10,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Cyber Security Services in Cary, NC | ITSco',
+    title: 'IT Security Services in Cary, NC | Cyber Security Services | ITSco',
     description:
-      'ITSco delivers cyber security services in Cary, NC — risk assessments, data protection, security training, and rapid incident response. Book a free consultation.',
+      'ITSco delivers IT security services in Cary, NC — risk assessments, data protection, security awareness training, and rapid incident response. Book a free consultation.',
     canonical: 'https://www.itsco.com/cary-cyber-security-services/',
   },
   hero: {
@@ -88,5 +88,6 @@ export const CONTENT: CityServiceContent = {
     { question: 'Why is regularly updating software important for security?', answer: [S[19]] },
     { question: 'How can employees strengthen our cybersecurity?', answer: [S[20]] },
   ],
+  citySlug: 'cary',
   bookingUtm: 'cyber-cary-bottom',
 }

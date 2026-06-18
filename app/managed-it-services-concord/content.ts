@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity monitoring for a Concord business',
     },
   },
+  citySlug: 'concord',
   bookingUtm: 'managed-it-concord-bottom',
 }

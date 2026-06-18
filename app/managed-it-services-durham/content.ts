@@ -8,9 +8,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in Durham, NC | ITSco',
+    title: 'Managed IT Services in Durham, NC | Durham IT Services Company | ITSco',
     description:
-      'ITSco delivers managed IT services in Durham, NC — remote monitoring, cybersecurity, help desk, and cloud — with predictable pricing. Book a free consultation.',
+      'ITSco is the Durham IT services company businesses trust — managed IT, cybersecurity, help desk, and cloud with predictable pricing. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-durham/',
   },
   hero: {
@@ -121,5 +121,6 @@ export const CONTENT: CityServiceContent = {
       answer: [S[35], S[36], S[37]],
     },
   ],
+  citySlug: 'durham',
   bookingUtm: 'managed-it-durham-bottom',
 }

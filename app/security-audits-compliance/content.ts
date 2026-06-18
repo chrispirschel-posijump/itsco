@@ -13,6 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/security-audits-compliance/',
   },
   serviceName: 'Security Audits & Compliance',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Audits & Compliance',
     headlineLead: 'Security audits and compliance',

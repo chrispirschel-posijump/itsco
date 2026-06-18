@@ -329,24 +329,28 @@ const SUB_SERVICE_GROUPS = [
       { number: '02', title: 'Managed SOC',                 description: '24/7 security operations center providing real-time threat monitoring and rapid incident response.', href: '/managed-soc/' },
       { number: '03', title: 'SIEM Services',               description: 'Hosted, redundant Security Information and Event Management platform with customized detection rules.', href: '/siem-services/' },
       { number: '04', title: 'MDR Monitoring & Response',   description: 'Managed Detection and Response with active threat hunting and engineer-led containment.', href: '/mdr-monitoring-and-response/' },
-      { number: '05', title: 'Network & Endpoint Security', description: 'Multi-layered defense protecting network traffic, devices, and endpoints from intrusion.', href: '/network-security/' },
+      { number: '05', title: 'Network Security',            description: 'Multi-layered defense protecting network traffic, segmentation, and east-west flows from intrusion.', href: '/network-security/' },
+      { number: '06', title: 'Endpoint Security',           description: 'Next-gen endpoint protection across laptops, desktops, and servers — managed, monitored, and continuously updated.', href: '/endpoint-security/' },
     ],
   },
   {
     label: 'Prevention',
     items: [
-      { number: '06', title: 'Managed Firewall + IDS/IPS', description: 'Configured, monitored firewalls with intrusion detection and prevention, plus device updates.', href: '/managed-firewall/' },
-      { number: '07', title: 'Email Security',             description: 'Multi-layered defense against phishing, spoofing, malware, and business email compromise.', href: '/email-security/' },
-      { number: '08', title: 'Zero Trust Security',        description: 'Identity-first security model where no user or device is trusted by default.', href: '/zero-trust-security/' },
+      { number: '07', title: 'Managed Firewall',           description: 'Configured, monitored firewalls with policy management, device updates, and threat detection.', href: '/managed-firewall/' },
+      { number: '08', title: 'IDS / IPS',                  description: 'Intrusion detection and prevention systems that block known threats and surface anomalous traffic.', href: '/ids-ips/' },
+      { number: '09', title: 'Email Security',             description: 'Multi-layered defense against phishing, spoofing, malware, and business email compromise.', href: '/email-security/' },
+      { number: '10', title: 'Zero Trust Security',        description: 'Identity-first security model where no user or device is trusted by default.', href: '/zero-trust-security/' },
+      { number: '11', title: 'Cloud Cybersecurity',        description: 'Hardened cloud posture across Azure, AWS, and M365 — misconfiguration detection, identity, and continuous monitoring.', href: '/cloud-cybersecurity/' },
     ],
   },
   {
     label: 'Assessment & Compliance',
     items: [
-      { number: '09', title: 'Cyber Risk Assessment',          description: 'Comprehensive evaluation of vulnerabilities, threats, and remediation priorities.', href: '/cyber-risk-assessment/' },
-      { number: '10', title: 'Penetration Testing',            description: 'Controlled attack simulations to surface weaknesses before adversaries do.', href: '/penetration-testing-services/' },
-      { number: '11', title: 'Security Audits & Compliance',   description: 'Audit support and gap analyses for PCI DSS, HIPAA, GDPR, NIST, and CIS frameworks.', href: '/security-audits-compliance/' },
-      { number: '12', title: 'Compliance as a Service',         description: 'Continuous compliance posture management between audits — not just before them.', href: '/compliance-as-a-service/' },
+      { number: '12', title: 'Cyber Risk Assessment',          description: 'Comprehensive evaluation of vulnerabilities, threats, and remediation priorities.', href: '/cyber-risk-assessment/' },
+      { number: '13', title: 'Penetration Testing',            description: 'Controlled attack simulations to surface weaknesses before adversaries do.', href: '/penetration-testing-services/' },
+      { number: '14', title: 'Security Audits & Compliance',   description: 'Audit support and gap analyses for PCI DSS, HIPAA, GDPR, NIST, and CIS frameworks.', href: '/security-audits-compliance/' },
+      { number: '15', title: 'Compliance as a Service',        description: 'Continuous compliance posture management between audits — not just before them.', href: '/compliance-as-a-service/' },
+      { number: '16', title: 'Cybersecurity Consulting',       description: 'Strategic guidance — program design, board reporting, incident response planning, and vCISO leadership.', href: '/cybersecurity-consulting-services/' },
     ],
   },
 ]
@@ -362,7 +366,7 @@ function SubServicesSection() {
                 Explore the Program
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-                Twelve services. <span className="text-[#CA3C27]">Three disciplines.</span>
+                Sixteen services. <span className="text-[#CA3C27]">Three disciplines.</span>
               </h2>
             </div>
             <p className="text-sm text-[#555] leading-relaxed max-w-[36ch] md:text-right">

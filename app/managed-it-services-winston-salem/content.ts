@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Network security operations',
     },
   },
+  citySlug: 'winston-salem',
   bookingUtm: 'managed-it-winston-salem-bottom',
 }

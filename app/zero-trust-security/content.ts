@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/zero-trust-security/',
   },
   serviceName: 'Zero Trust Security',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Zero Trust',
     headlineLead: 'Zero trust security —',

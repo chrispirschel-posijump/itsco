@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { Check, ArrowRight } from 'lucide-react'
+import { Check, ArrowRight, ArrowLeft } from 'lucide-react'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -15,6 +15,10 @@ import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 export interface ServiceSubContent {
   meta: { title: string; description: string; canonical: string }
   serviceName: string
+  // Pillar this sub-service rolls up under, used for breadcrumb + back-link.
+  // When set, BreadcrumbList renders Home → Parent → Page and a visible
+  // "Back to <parent.name>" pill appears at the top of related services.
+  parent?: { name: string; href: string }
   hero: {
     eyebrow: string
     headlineLead: string
@@ -74,13 +78,24 @@ export function serviceJsonLd(content: ServiceSubContent) {
 
 export function serviceBreadcrumbJsonLd(content: ServiceSubContent) {
   const pageName = content.meta.title.replace(/\s*\|\s*ITSco\s*$/, '')
+  const items: object[] = [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+  ]
+  if (content.parent) {
+    items.push({
+      '@type': 'ListItem',
+      position: 2,
+      name: content.parent.name,
+      item: `https://www.itsco.com${content.parent.href}`,
+    })
+    items.push({ '@type': 'ListItem', position: 3, name: pageName, item: content.meta.canonical })
+  } else {
+    items.push({ '@type': 'ListItem', position: 2, name: pageName, item: content.meta.canonical })
+  }
   return {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-      { '@type': 'ListItem', position: 2, name: pageName, item: content.meta.canonical },
-    ],
+    itemListElement: items,
   }
 }
 
@@ -287,10 +302,24 @@ function Testimonials() {
 }
 
 function RelatedServices({ content }: { content: ServiceSubContent }) {
-  const { related } = content
+  const { related, parent } = content
   return (
     <section className="bg-itsco-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
+        {parent && (
+          <FadeUp>
+            <Link
+              href={parent.href}
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-[#CA3C27] hover:text-[#B4311E] mb-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] rounded-sm"
+            >
+              <ArrowLeft
+                size={16}
+                className="transition-transform duration-200 group-hover:-translate-x-0.5"
+              />
+              Back to {parent.name}
+            </Link>
+          </FadeUp>
+        )}
         <FadeUp>
           <h2 className="text-2xl md:text-3xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-10">
             {related.heading}

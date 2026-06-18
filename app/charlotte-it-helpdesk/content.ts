@@ -68,5 +68,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Charlotte, North Carolina cityscape',
     },
   },
+  citySlug: 'charlotte',
   bookingUtm: 'it-helpdesk-charlotte-bottom',
 }

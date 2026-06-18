@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Downtown Durham, North Carolina',
     },
   },
+  citySlug: 'durham',
   bookingUtm: 'it-support-durham-bottom',
 }

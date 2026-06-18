@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity monitoring for a Huntersville business',
     },
   },
+  citySlug: 'huntersville',
   bookingUtm: 'managed-it-huntersville-bottom',
 }

@@ -78,9 +78,36 @@ function PostGrid() {
   )
 }
 
+const blogJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Blog',
+  name: 'ITSco Insights',
+  url: 'https://www.itsco.com/blog/',
+  description:
+    'IT, cybersecurity, cloud, and AI insights for North Carolina business leaders — from the team at ITSco.',
+  publisher: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.itsco.com/blog/' },
+  ],
+}
+
 export default function BlogPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(blogJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Nav variant="light" />
       <main>
         <Hero />

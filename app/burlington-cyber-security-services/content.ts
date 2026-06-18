@@ -79,5 +79,6 @@ export const CONTENT: CityServiceContent = {
     { question: 'Why are regular software updates important for security?', answer: [S[27]] },
     { question: 'How can employees strengthen our cybersecurity?', answer: [S[28]] },
   ],
+  citySlug: 'burlington',
   bookingUtm: 'cyber-burlington-bottom',
 }

@@ -15,6 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/penetration-testing-services/',
   },
   serviceName: 'Penetration Testing',
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
   hero: {
     eyebrow: 'Cybersecurity · Penetration Testing',
     headlineLead: 'Penetration testing that finds',

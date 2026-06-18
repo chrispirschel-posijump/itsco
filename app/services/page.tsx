@@ -123,9 +123,36 @@ function ServicesGrid() {
   )
 }
 
+const servicesJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'CollectionPage',
+  name: 'IT Services',
+  url: 'https://www.itsco.com/services/',
+  description:
+    'Managed IT, cybersecurity, cloud, Microsoft solutions, engineering, and strategy services for businesses across NC, SC, and VA.',
+  about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
+}
+
+const breadcrumbJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+  ],
+}
+
 export default function ServicesPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(servicesJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
       <Nav variant="light" />
       <main>
         <Hero />

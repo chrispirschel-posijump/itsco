@@ -68,5 +68,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Downtown Charlotte, North Carolina skyline',
     },
   },
+  citySlug: 'charlotte',
   bookingUtm: 'it-support-charlotte-bottom',
 }

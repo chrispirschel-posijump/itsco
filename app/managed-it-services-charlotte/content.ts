@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Charlotte, North Carolina at dusk',
     },
   },
+  citySlug: 'charlotte',
   bookingUtm: 'managed-it-charlotte-bottom',
 }

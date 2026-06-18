@@ -69,5 +69,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Cybersecurity monitoring for an RTP business',
     },
   },
+  citySlug: 'rtp',
   bookingUtm: 'managed-it-rtp-bottom',
 }

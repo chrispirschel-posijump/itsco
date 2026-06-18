@@ -70,5 +70,6 @@ export const CONTENT: CityServiceContent = {
       alt: 'Raleigh, North Carolina at dusk',
     },
   },
+  citySlug: 'raleigh',
   bookingUtm: 'it-outsourcing-raleigh-bottom',
 }
