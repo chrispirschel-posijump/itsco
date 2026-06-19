@@ -63,12 +63,12 @@ function Hero() {
       <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-12 py-32 pt-44">
         <div className="max-w-4xl mx-auto text-center">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               ROI &amp; Strategy
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-6">
               Your IT should{" "}
               <span
                 className="bg-clip-text text-transparent"
@@ -79,7 +79,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-[52ch] mx-auto mt-6">
+            <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-[52ch] mx-auto mt-6">
               A world-class MSP delivers measurable value across four dimensions every quarter. Financial savings, downtime avoidance, risk reduction, and business enablement. Here is what to demand from your IT partner.
             </p>
           </FadeUp>
@@ -108,7 +108,7 @@ function Hero() {
                     value={s.value}
                     prefix={s.prefix}
                     suffix={s.suffix}
-                    className="text-2xl md:text-3xl font-extrabold text-[#111111] leading-none tracking-tight whitespace-nowrap block mb-3"
+                    className="text-2xl md:text-3xl font-extrabold text-itsco-dark leading-none tracking-tight whitespace-nowrap block mb-3"
                   />
                   <p className="text-xs text-[#555] leading-snug mb-2">
                     {s.label}
@@ -157,11 +157,11 @@ function DimensionsSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14 mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The Four Dimensions
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              IT ROI is more than a <span className="text-[#CA3C27]">monthly invoice.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              IT ROI is more than a <span className="text-itsco-red">monthly invoice.</span>
             </h2>
           </div>
         </FadeUp>
@@ -175,12 +175,12 @@ function DimensionsSection() {
                 className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 md:p-8 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
                 <div className="flex items-start justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center flex-shrink-0">
-                    <Icon size={24} className="text-[#CA3C27]" />
+                  <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center flex-shrink-0">
+                    <Icon size={24} className="text-itsco-red" />
                   </div>
                   <span className="text-xs font-bold tabular-nums text-[#999]">0{i + 1}</span>
                 </div>
-                <h3 className="text-xl font-semibold text-[#111111] leading-snug mb-3">
+                <h3 className="text-xl font-semibold text-itsco-dark leading-snug mb-3">
                   {d.title}
                 </h3>
                 <p className="text-sm md:text-base text-[#555] leading-relaxed flex-1">
@@ -214,13 +214,13 @@ function QBRSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-10 mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Quarterly Business Review
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              What your MSP should deliver <span className="text-[#CA3C27]">every quarter.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              What your MSP should deliver <span className="text-itsco-red">every quarter.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               A world-class MSP does not hand you a ticket report. They hand you a business review that answers: what did we save you, what risks did we prevent, and what do we do next?
             </p>
           </div>
@@ -244,14 +244,14 @@ function QBRSection() {
             {/* Header */}
             <div className="px-7 md:px-10 py-6 border-b border-black/10 flex flex-col md:flex-row md:items-center md:justify-between gap-3">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#CA3C27] mb-1">
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-itsco-red mb-1">
                   Sample Q3 Report
                 </p>
-                <p className="text-sm text-[#404040]">Documented results delivered to a real client this quarter</p>
+                <p className="text-sm text-itsco-body">Documented results delivered to a real client this quarter</p>
               </div>
               <div className="text-right">
                 <p className="text-xs uppercase tracking-[0.1em] text-[#555]">Net ROI this period</p>
-                <p className="text-3xl md:text-4xl font-extrabold text-[#111111] leading-none tracking-tight">271%</p>
+                <p className="text-3xl md:text-4xl font-extrabold text-itsco-dark leading-none tracking-tight">271%</p>
               </div>
             </div>
 
@@ -261,7 +261,7 @@ function QBRSection() {
                 {QBR_METRICS.slice(0, 4).map((row) => (
                   <div key={row.metric} className="px-7 md:px-10 py-5 flex items-center justify-between gap-4">
                     <p className="text-xs uppercase tracking-[0.08em] font-bold text-[#555]">{row.metric}</p>
-                    <p className="text-sm font-semibold text-[#111111] text-right">{row.result}</p>
+                    <p className="text-sm font-semibold text-itsco-dark text-right">{row.result}</p>
                   </div>
                 ))}
               </div>
@@ -269,7 +269,7 @@ function QBRSection() {
                 {QBR_METRICS.slice(4, 8).map((row) => (
                   <div key={row.metric} className="px-7 md:px-10 py-5 flex items-center justify-between gap-4">
                     <p className="text-xs uppercase tracking-[0.08em] font-bold text-[#555]">{row.metric}</p>
-                    <p className="text-sm font-semibold text-[#111111] text-right">{row.result}</p>
+                    <p className="text-sm font-semibold text-itsco-dark text-right">{row.result}</p>
                   </div>
                 ))}
               </div>
@@ -298,13 +298,13 @@ function BaselineSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Day One Baseline
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              Without a baseline, <span className="text-[#CA3C27]">you cannot prove ROI.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              Without a baseline, <span className="text-itsco-red">you cannot prove ROI.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               A great MSP sets these benchmarks on day one and reports against them at every quarterly business review. If your current MSP cannot answer these questions, that is a problem.
             </p>
           </div>
@@ -313,9 +313,9 @@ function BaselineSection() {
         <StaggerChildren stagger={60} className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
           {BASELINE_METRICS.map((m) => (
             <div key={m.title} className="flex gap-4 items-start">
-              <div className="w-1.5 h-1.5 rounded-full bg-[#CA3C27] mt-2.5 flex-shrink-0" />
+              <div className="w-1.5 h-1.5 rounded-full bg-itsco-red mt-2.5 flex-shrink-0" />
               <div>
-                <h3 className="text-base font-semibold text-[#111111] mb-1">{m.title}</h3>
+                <h3 className="text-base font-semibold text-itsco-dark mb-1">{m.title}</h3>
                 <p className="text-sm text-[#555] leading-relaxed">{m.desc}</p>
               </div>
             </div>
@@ -339,7 +339,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             See Where You Stand
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">
@@ -385,13 +385,13 @@ function EfficiencySection() {
         <FadeUp>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 mb-14 lg:items-center">
             <div className="max-w-xl">
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 Where ROI Compounds
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-                Three places ROI <span className="text-[#CA3C27]">stacks year over year.</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+                Three places ROI <span className="text-itsco-red">stacks year over year.</span>
               </h2>
-              <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+              <p className="text-base md:text-lg text-itsco-body leading-relaxed">
                 Standardization, SSO, and AI automation are the three highest-leverage moves we make for clients. Each one pays for itself. Together they compound.
               </p>
             </div>
@@ -414,10 +414,10 @@ function EfficiencySection() {
               key={e.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
-              <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#CA3C27] mb-3">
+              <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-red mb-3">
                 {e.title}
               </p>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3">
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3">
                 {e.headline}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -448,13 +448,13 @@ function QuestionsSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The Test
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              Six questions that <span className="text-[#CA3C27]">reveal everything.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              Six questions that <span className="text-itsco-red">reveal everything.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Ask your current MSP these. If they cannot answer them, you have a partner problem, not a technology problem.
             </p>
           </div>
@@ -463,10 +463,10 @@ function QuestionsSection() {
         <StaggerChildren stagger={60} className="divide-y divide-[#EBEBEB] max-w-3xl">
           {QUESTIONS.map((q, i) => (
             <div key={q} className="flex items-start gap-5 py-5">
-              <span className="text-xs font-bold tabular-nums text-[#CA3C27] mt-1 w-6 flex-shrink-0">
+              <span className="text-xs font-bold tabular-nums text-itsco-red mt-1 w-6 flex-shrink-0">
                 0{i + 1}
               </span>
-              <p className="text-lg md:text-xl text-[#111111] leading-snug font-medium">
+              <p className="text-lg md:text-xl text-itsco-dark leading-snug font-medium">
                 {q}
               </p>
             </div>
@@ -474,7 +474,7 @@ function QuestionsSection() {
         </StaggerChildren>
 
         <FadeUp delay={400}>
-          <p className="mt-12 text-base md:text-lg text-[#404040] leading-relaxed max-w-3xl">
+          <p className="mt-12 text-base md:text-lg text-itsco-body leading-relaxed max-w-3xl">
             If your IT provider cannot answer these six questions, it is time for a conversation with ITSco.
           </p>
         </FadeUp>

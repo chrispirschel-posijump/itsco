@@ -114,12 +114,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[55%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               Microsoft Solutions
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8 break-words">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8 break-words">
               The full value of{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -130,7 +130,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed max-w-[46ch] mb-10">
+            <p className="text-lg text-itsco-body leading-relaxed max-w-[46ch] mb-10">
               Microsoft 365, Azure, Teams, Copilot, and more — deployed, secured, and managed by a
               certified team. ITSco makes the whole Microsoft stack work together, so you get every
               bit of the value you already pay for.
@@ -163,13 +163,13 @@ function IntroSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               The Promise
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8">
-              One Microsoft stack, <span className="text-[#CA3C27]">working as one.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-8">
+              One Microsoft stack, <span className="text-itsco-red">working as one.</span>
             </h2>
-            <p className="text-lg text-[#404040] leading-relaxed">
+            <p className="text-lg text-itsco-body leading-relaxed">
               Most businesses own far more Microsoft capability than they use — and run it loosely
               configured and under-secured. ITSco brings 25+ years of experience and Microsoft-certified
               expertise to deploy, secure, and manage the whole suite as a single, well-run platform.
@@ -221,12 +221,12 @@ function FeaturesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               What We Do
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Microsoft, managed{' '}
-              <span className="text-[#CA3C27]">end to end.</span>
+              <span className="text-itsco-red">end to end.</span>
             </h2>
           </div>
         </FadeUp>
@@ -239,10 +239,10 @@ function FeaturesSection() {
                 key={f.title}
                 className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                  <Icon size={24} className="text-[#CA3C27]" />
+                <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                  <Icon size={24} className="text-itsco-red" />
                 </div>
-                <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">{f.title}</h3>
+                <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">{f.title}</h3>
                 <p className="text-sm text-[#555] leading-relaxed flex-1">{f.description}</p>
               </div>
             )
@@ -282,12 +282,12 @@ function AdvantagesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The ITSco Difference
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               A Microsoft partner that{' '}
-              <span className="text-[#CA3C27]">earns its place.</span>
+              <span className="text-itsco-red">earns its place.</span>
             </h2>
           </div>
         </FadeUp>
@@ -300,10 +300,10 @@ function AdvantagesSection() {
                 key={a.title}
                 className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center mb-5 flex-shrink-0">
+                <div className="w-12 h-12 rounded-xl bg-itsco-dark flex items-center justify-center mb-5 flex-shrink-0">
                   <Icon size={22} className="text-white" />
                 </div>
-                <h3 className="text-base font-semibold text-[#111111] leading-snug mb-3">{a.title}</h3>
+                <h3 className="text-base font-semibold text-itsco-dark leading-snug mb-3">{a.title}</h3>
                 <p className="text-sm text-[#555] leading-relaxed flex-1">{a.description}</p>
               </div>
             )
@@ -369,11 +369,11 @@ function SubServicesSection() {
         <FadeUp>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-16 border-b border-[#EBEBEB]">
             <div className="max-w-xl">
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 Explore Microsoft Solutions
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-                Drill into <span className="text-[#CA3C27]">any product.</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+                Drill into <span className="text-itsco-red">any product.</span>
               </h2>
             </div>
             <p className="text-sm text-[#555] leading-relaxed max-w-[36ch] md:text-right">
@@ -387,18 +387,18 @@ function SubServicesSection() {
             <Link
               key={s.number}
               href={s.href}
-              className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-black/[0.04] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
+              className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-black/[0.04] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-80"
             >
-              <span className="text-xs font-bold tabular-nums text-[#999] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <span className="text-xs font-bold tabular-nums text-[#999] lg:w-14 flex-shrink-0 group-hover:text-itsco-red transition-[color] duration-200">
                 {s.number}
               </span>
-              <h3 className="text-xl md:text-2xl font-semibold text-[#111111]/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-[#111111] transition-[color] duration-200">
+              <h3 className="text-xl md:text-2xl font-semibold text-itsco-dark/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-itsco-dark transition-[color] duration-200">
                 {s.title}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed lg:flex-1 lg:px-10">{s.description}</p>
               <ArrowRight
                 size={16}
-                className="hidden lg:block flex-shrink-0 text-[#999] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
+                className="hidden lg:block flex-shrink-0 text-[#999] group-hover:text-itsco-red group-hover:translate-x-1 transition-[transform,color] duration-200"
               />
             </Link>
           ))}
@@ -419,7 +419,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Make Microsoft Work Harder
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">
@@ -444,14 +444,14 @@ function TestimonialSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-6" />
-            <p className="text-2xl md:text-3xl font-medium text-[#111111] leading-[1.5] mb-6">
+            <div className="w-8 h-[3px] bg-itsco-red mx-auto mb-6" />
+            <p className="text-2xl md:text-3xl font-medium text-itsco-dark leading-[1.5] mb-6">
               &ldquo;ITSco is always there for us when we need them, and they have helped build up
               our IT infrastructure with robust resources that fit our security and everyday needs.
               We look forward to working with them for decades to come.&rdquo;
             </p>
             <p className="text-sm text-[#555]">
-              <span className="font-semibold text-[#404040]">Marlene Fulp</span>
+              <span className="font-semibold text-itsco-body">Marlene Fulp</span>
               <span className="mx-2 text-[#999]">&middot;</span>
               Assistant Administrator, Piedmont Triad Anesthesia
             </p>
@@ -468,11 +468,11 @@ function FAQSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               FAQs
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Microsoft solutions, <span className="text-[#CA3C27]">answered.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Microsoft solutions, <span className="text-itsco-red">answered.</span>
             </h2>
           </div>
         </FadeUp>
@@ -480,10 +480,10 @@ function FAQSection() {
         <StaggerChildren stagger={80} className="divide-y divide-[#EBEBEB] max-w-4xl">
           {FAQS.map((f) => (
             <div key={f.question} className="py-7">
-              <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
                 {f.question}
               </h3>
-              <p className="text-base text-[#404040] leading-relaxed">{f.answerText}</p>
+              <p className="text-base text-itsco-body leading-relaxed">{f.answerText}</p>
             </div>
           ))}
         </StaggerChildren>
@@ -498,11 +498,11 @@ function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Services
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Explore more from <span className="text-[#CA3C27]">ITSco.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Explore more from <span className="text-itsco-red">ITSco.</span>
             </h2>
           </div>
         </FadeUp>
@@ -510,39 +510,39 @@ function RelatedServices() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <Link
             href="/cloud-services/"
-            className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+            className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
-            <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">Cloud Services</h3>
+            <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Cloud Services</h3>
             <p className="text-sm text-[#555] leading-relaxed flex-1">
               Migration, hosting, and managed cloud — scalable, secure, and cost-controlled.
             </p>
-            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#CA3C27]">
+            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-itsco-red">
               Learn more
               <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
             </span>
           </Link>
           <Link
             href="/cybersecurity/"
-            className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+            className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
-            <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">Cybersecurity & MSSP</h3>
+            <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Cybersecurity & MSSP</h3>
             <p className="text-sm text-[#555] leading-relaxed flex-1">
               24/7 SOC monitoring, MDR, and compliance programs that reduce your risk exposure.
             </p>
-            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#CA3C27]">
+            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-itsco-red">
               Learn more
               <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
             </span>
           </Link>
           <Link
             href="/managed-it-services/"
-            className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+            className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
-            <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">Managed IT Services</h3>
+            <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Managed IT Services</h3>
             <p className="text-sm text-[#555] leading-relaxed flex-1">
               24/7 monitoring, helpdesk, and preventative maintenance for a predictable monthly cost.
             </p>
-            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#CA3C27]">
+            <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-itsco-red">
               Learn more
               <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
             </span>

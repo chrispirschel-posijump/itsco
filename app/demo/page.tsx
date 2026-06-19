@@ -23,7 +23,7 @@ const STATS: { value: number; decimals: boolean; prefix: string; suffix: string;
 
 function DemoHero() {
   return (
-    <section className="relative bg-[#111111] min-h-screen flex flex-col overflow-hidden">
+    <section className="relative bg-itsco-dark min-h-screen flex flex-col overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.03] pointer-events-none"
         style={{
@@ -42,15 +42,15 @@ function DemoHero() {
           className="object-cover object-center"
           sizes="52vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/55 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/60 via-transparent to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-r from-itsco-dark via-itsco-dark/55 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-itsco-dark/60 via-transparent to-transparent" />
       </div>
 
       {/* Main content */}
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36">
         <div className="lg:max-w-[50%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               The ROI-Driven IT Company
             </p>
           </FadeUp>
@@ -131,7 +131,7 @@ const CLIENTS = [
 
 function ClientLogos() {
   return (
-    <section className="bg-[#FAFAFA] border-b border-[#EBEBEB]">
+    <section className="bg-itsco-off-white border-b border-[#EBEBEB]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12">
         <FadeUp>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#BBBBBB] mb-8 text-center">
@@ -199,7 +199,7 @@ function ServicesSection() {
         <FadeUp>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-16 border-b border-white/10">
             <div className="max-w-xl">
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 What We Do
               </p>
               <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight">
@@ -218,9 +218,9 @@ function ServicesSection() {
             <Link
               key={s.number}
               href={s.href}
-              className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-white/[0.03] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
+              className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-white/[0.03] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-80"
             >
-              <span className="text-xs font-bold tabular-nums text-white/20 lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <span className="text-xs font-bold tabular-nums text-white/20 lg:w-14 flex-shrink-0 group-hover:text-itsco-red transition-[color] duration-200">
                 {s.number}
               </span>
               <h3 className="text-xl md:text-2xl font-semibold text-white/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-white transition-[color] duration-200">
@@ -231,7 +231,7 @@ function ServicesSection() {
               </p>
               <ArrowRight
                 size={16}
-                className="hidden lg:block flex-shrink-0 text-white/15 group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
+                className="hidden lg:block flex-shrink-0 text-white/15 group-hover:text-itsco-red group-hover:translate-x-1 transition-[transform,color] duration-200"
               />
             </Link>
           ))}
@@ -246,18 +246,18 @@ function ServicesSection() {
 
 function IndustriesSection() {
   return (
-    <section className="bg-[#FAFAFA] border-t border-[#EBEBEB]">
+    <section className="bg-itsco-off-white border-t border-[#EBEBEB]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
 
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Industries We Serve
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
               IT built for the way your industry works.
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Compliance, data sensitivity, and workflow demands differ by sector.
               Our teams are trained on yours, so you get IT advice built for your world.
             </p>
@@ -273,7 +273,7 @@ function IndustriesSection() {
               className="object-cover"
               sizes="100vw"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#FAFAFA]/30 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-itsco-off-white/30 to-transparent" />
           </div>
         </FadeUp>
 

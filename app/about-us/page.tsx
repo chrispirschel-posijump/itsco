@@ -38,12 +38,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               {HERO.eyebrow}
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               {HERO.headlineLead}{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -54,13 +54,13 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">{HERO.body}</p>
+            <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">{HERO.body}</p>
           </FadeUp>
           <FadeUp delay={300}>
             <div className="flex flex-wrap items-center gap-6 mb-10">
-              <div className="border-l-4 border-[#CA3C27] pl-5">
-                <p className="text-5xl font-extrabold leading-none tracking-tight text-[#111111]">{HERO.stat}</p>
-                <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#404040]/70 mt-2">{HERO.statLabel}</p>
+              <div className="border-l-4 border-itsco-red pl-5">
+                <p className="text-5xl font-extrabold leading-none tracking-tight text-itsco-dark">{HERO.stat}</p>
+                <p className="text-xs font-semibold uppercase tracking-[0.1em] text-itsco-body/70 mt-2">{HERO.statLabel}</p>
               </div>
             </div>
           </FadeUp>
@@ -91,12 +91,12 @@ function Values() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {VALUES_HEADING.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {VALUES_HEADING.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{VALUES_HEADING.headlineAccent}</span>
+              <span className="text-itsco-red">{VALUES_HEADING.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -107,11 +107,11 @@ function Values() {
               key={v.slug}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-8 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center mb-6 flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-itsco-dark flex items-center justify-center mb-6 flex-shrink-0">
                 <DynamicIcon slug={v.slug} size={22} className="text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-[#111111] leading-snug tracking-tight mb-4">{v.title}</h3>
-              <p className="text-base text-[#404040] leading-relaxed flex-1">{v.paragraph}</p>
+              <h3 className="text-xl font-semibold text-itsco-dark leading-snug tracking-tight mb-4">{v.title}</h3>
+              <p className="text-base text-itsco-body leading-relaxed flex-1">{v.paragraph}</p>
             </div>
           ))}
         </StaggerChildren>
@@ -126,29 +126,29 @@ function ServiceArea() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="lg:col-span-5">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {SERVICE_AREA.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {SERVICE_AREA.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{SERVICE_AREA.headlineAccent}</span>
+              <span className="text-itsco-red">{SERVICE_AREA.headlineAccent}</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-8">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-8">
               {SERVICE_AREA.body}
             </p>
             <div className="flex items-start gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-itsco-dark flex items-center justify-center flex-shrink-0">
                 <MapPin size={18} className="text-white" />
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#404040]/70 mb-1">
+                <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-body/70 mb-1">
                   Business office
                 </p>
                 <a
                   href={SERVICE_AREA.mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-semibold text-[#111111] hover:text-[#CA3C27] transition-colors duration-200"
+                  className="text-base font-semibold text-itsco-dark hover:text-itsco-red transition-colors duration-200"
                 >
                   {SERVICE_AREA.address}
                 </a>

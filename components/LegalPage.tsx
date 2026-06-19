@@ -38,12 +38,12 @@ export default function LegalPage({ content }: { content: LegalContent }) {
         <section className="relative bg-itsco-paper overflow-hidden">
           <div className="relative max-w-4xl mx-auto px-6 lg:px-12 pt-44 pb-16 md:pt-52 md:pb-20">
             <FadeUp>
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
                 {eyebrow}
               </p>
             </FadeUp>
             <FadeUp delay={100}>
-              <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-[#111111] leading-[1.08] tracking-tight mb-6">
+              <h1 className="text-4xl md:text-5xl lg:text-[3.25rem] font-extrabold text-itsco-dark leading-[1.08] tracking-tight mb-6">
                 {title}
               </h1>
             </FadeUp>
@@ -52,7 +52,7 @@ export default function LegalPage({ content }: { content: LegalContent }) {
             </FadeUp>
             {intro && (
               <FadeUp delay={300}>
-                <p className="text-lg text-[#404040] leading-relaxed max-w-3xl">{intro}</p>
+                <p className="text-lg text-itsco-body leading-relaxed max-w-3xl">{intro}</p>
               </FadeUp>
             )}
           </div>
@@ -66,8 +66,8 @@ export default function LegalPage({ content }: { content: LegalContent }) {
                 <FadeUp key={i}>
                   <div>
                     <div className="flex items-center gap-3 mb-5">
-                      <span className="inline-block w-1.5 h-6 bg-[#CA3C27] rounded-sm" />
-                      <h2 className="text-xl md:text-2xl font-extrabold text-[#111111] tracking-tight">
+                      <span className="inline-block w-1.5 h-6 bg-itsco-red rounded-sm" />
+                      <h2 className="text-xl md:text-2xl font-extrabold text-itsco-dark tracking-tight">
                         {s.heading}
                       </h2>
                     </div>
@@ -77,7 +77,7 @@ export default function LegalPage({ content }: { content: LegalContent }) {
                         {s.paragraphs.map((p, pi) => (
                           <p
                             key={pi}
-                            className="text-base text-[#404040] leading-relaxed"
+                            className="text-base text-itsco-body leading-relaxed"
                           >
                             {p}
                           </p>
@@ -90,10 +90,10 @@ export default function LegalPage({ content }: { content: LegalContent }) {
                         {s.bullets.map((b, bi) => (
                           <li key={bi} className="flex gap-3 items-start">
                             <span
-                              className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-[#CA3C27] flex-shrink-0"
+                              className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-itsco-red flex-shrink-0"
                               aria-hidden
                             />
-                            <span className="text-base text-[#404040] leading-relaxed flex-1">
+                            <span className="text-base text-itsco-body leading-relaxed flex-1">
                               {b}
                             </span>
                           </li>
@@ -108,8 +108,8 @@ export default function LegalPage({ content }: { content: LegalContent }) {
                 <FadeUp>
                   <div className="border-t border-[#EBEBEB] pt-10">
                     <div className="flex items-center gap-3 mb-5">
-                      <span className="inline-block w-1.5 h-6 bg-[#CA3C27] rounded-sm" />
-                      <h2 className="text-xl md:text-2xl font-extrabold text-[#111111] tracking-tight">
+                      <span className="inline-block w-1.5 h-6 bg-itsco-red rounded-sm" />
+                      <h2 className="text-xl md:text-2xl font-extrabold text-itsco-dark tracking-tight">
                         {contact.heading}
                       </h2>
                     </div>
@@ -117,7 +117,7 @@ export default function LegalPage({ content }: { content: LegalContent }) {
                       {contact.paragraphs.map((p, pi) => (
                         <p
                           key={pi}
-                          className="text-base text-[#404040] leading-relaxed"
+                          className="text-base text-itsco-body leading-relaxed"
                         >
                           {p}
                         </p>

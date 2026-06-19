@@ -76,12 +76,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:ml-[52%] lg:pl-12 lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               Get In Touch
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               Let&apos;s talk about{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -92,7 +92,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">
               Book a free 30-minute consultation, give us a call, or send a message — and discover
               how ITSco can turn IT into a business advantage.
             </p>
@@ -128,27 +128,27 @@ function CalendlySection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Left — value framing */}
           <FadeUp className="lg:col-span-5">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Free 30-Minute Consultation
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-5">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-5">
               Ready to turn IT into a{' '}
-              <span className="text-[#CA3C27]">business advantage?</span>
+              <span className="text-itsco-red">business advantage?</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-6">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-6">
               ITSco&apos;s free consultation is designed to assess your current IT environment and
               discuss ways it can support your goals for growth, efficiency, and security.
             </p>
-            <p className="text-sm font-bold uppercase tracking-[0.1em] text-[#111111] mb-4">
+            <p className="text-sm font-bold uppercase tracking-[0.1em] text-itsco-dark mb-4">
               In this session, you will:
             </p>
             <ul className="space-y-3">
               {SESSION_POINTS.map((point) => (
                 <li key={point} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-md bg-[#CA3C27]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check size={14} className="text-[#CA3C27]" />
+                  <div className="w-6 h-6 rounded-md bg-itsco-red/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check size={14} className="text-itsco-red" />
                   </div>
-                  <span className="text-base text-[#404040] leading-relaxed">{point}</span>
+                  <span className="text-base text-itsco-body leading-relaxed">{point}</span>
                 </li>
               ))}
             </ul>
@@ -181,12 +181,12 @@ function FormSection() {
       <div className="max-w-3xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
           <div className="text-center mb-10">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Send a Message
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Tell us how we can{' '}
-              <span className="text-[#CA3C27]">help.</span>
+              <span className="text-itsco-red">help.</span>
             </h2>
           </div>
         </FadeUp>
@@ -205,10 +205,10 @@ function ContactDetails() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
           {/* Contact details */}
           <FadeUp className="lg:col-span-5">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Other Ways to Reach Us
             </p>
-            <h2 className="text-2xl md:text-3xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8">
+            <h2 className="text-2xl md:text-3xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-8">
               Call, fax, or visit.
             </h2>
             <ul className="space-y-5">
@@ -216,11 +216,11 @@ function ContactDetails() {
                 const Icon = m.icon
                 return (
                   <li key={m.label} className="flex items-start gap-3">
-                    <div className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center flex-shrink-0">
+                    <div className="w-10 h-10 rounded-lg bg-itsco-dark flex items-center justify-center flex-shrink-0">
                       <Icon size={18} className="text-white" />
                     </div>
                     <div>
-                      <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#404040]/70 mb-1">
+                      <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-body/70 mb-1">
                         {m.label}
                       </p>
                       {m.href ? (
@@ -228,12 +228,12 @@ function ContactDetails() {
                           href={m.href}
                           target={m.href.startsWith('http') ? '_blank' : undefined}
                           rel={m.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-base font-semibold text-[#111111] hover:text-[#CA3C27] transition-colors duration-200"
+                          className="text-base font-semibold text-itsco-dark hover:text-itsco-red transition-colors duration-200"
                         >
                           {m.value}
                         </a>
                       ) : (
-                        <p className="text-base font-semibold text-[#111111]">{m.value}</p>
+                        <p className="text-base font-semibold text-itsco-dark">{m.value}</p>
                       )}
                     </div>
                   </li>
@@ -269,11 +269,11 @@ function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               In Their Words
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              What our clients <span className="text-[#CA3C27]">are saying.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              What our clients <span className="text-itsco-red">are saying.</span>
             </h2>
           </div>
         </FadeUp>

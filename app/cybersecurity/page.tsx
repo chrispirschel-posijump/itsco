@@ -118,12 +118,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[55%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               Cybersecurity &amp; Compliance
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8 break-words">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4.5rem] font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8 break-words">
               Cybersecurity &amp; Compliance,{" "}
               <span
                 className="bg-clip-text text-transparent"
@@ -134,7 +134,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed max-w-[44ch] mb-10">
+            <p className="text-lg text-itsco-body leading-relaxed max-w-[44ch] mb-10">
               Detection, threat defense, and continuous compliance posture — run as one program. ITSco delivers 24/7 SOC monitoring, MDR, and the controls auditors expect for SOC 2, HIPAA, PCI DSS, and NIST 800-171. Security and compliance are not separate workstreams. We treat them as one.
             </p>
           </FadeUp>
@@ -167,13 +167,13 @@ function IntroSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               The Promise
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8">
-              Detect threats. Reduce vulnerabilities. <span className="text-[#CA3C27]">Maintain compliance.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-8">
+              Detect threats. Reduce vulnerabilities. <span className="text-itsco-red">Maintain compliance.</span>
             </h2>
-            <p className="text-lg text-[#404040] leading-relaxed">
+            <p className="text-lg text-itsco-body leading-relaxed">
               ITSco is the managed security services provider businesses trust to protect their network, their endpoints, and their data. Serving Raleigh, Durham, and the Southeast since 1996. We integrate multiple security disciplines into one accountable program.
             </p>
           </div>
@@ -203,11 +203,11 @@ function MSSPSpotlight() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Flagship Offering
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Managed Security Services Provider <span className="text-[#CA3C27]">(MSSP).</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Managed Security Services Provider <span className="text-itsco-red">(MSSP).</span>
             </h2>
           </div>
         </FadeUp>
@@ -231,8 +231,8 @@ function MSSPSpotlight() {
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 max-w-5xl mx-auto">
               {MSSP_CAPABILITIES.map((cap) => (
                 <div key={cap} className="flex gap-3 items-start">
-                  <ShieldCheck size={16} className="text-[#CA3C27] mt-1 flex-shrink-0" />
-                  <p className="text-sm text-[#404040] leading-relaxed">{cap}</p>
+                  <ShieldCheck size={16} className="text-itsco-red mt-1 flex-shrink-0" />
+                  <p className="text-sm text-itsco-body leading-relaxed">{cap}</p>
                 </div>
               ))}
             </div>
@@ -284,11 +284,11 @@ function OtherServicesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The Full Stack
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Six more security services <span className="text-[#CA3C27]">working alongside MSSP.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Six more security services <span className="text-itsco-red">working alongside MSSP.</span>
             </h2>
           </div>
         </FadeUp>
@@ -301,10 +301,10 @@ function OtherServicesSection() {
                 key={s.title}
                 className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                  <Icon size={24} className="text-[#CA3C27]" />
+                <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                  <Icon size={24} className="text-itsco-red" />
                 </div>
-                <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3">
+                <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3">
                   {s.title}
                 </h3>
                 <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -362,11 +362,11 @@ function SubServicesSection() {
         <FadeUp>
           <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16 pb-16 border-b border-[#EBEBEB]">
             <div className="max-w-xl">
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 Explore the Program
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-                Sixteen services. <span className="text-[#CA3C27]">Three disciplines.</span>
+              <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+                Sixteen services. <span className="text-itsco-red">Three disciplines.</span>
               </h2>
             </div>
             <p className="text-sm text-[#555] leading-relaxed max-w-[36ch] md:text-right">
@@ -379,7 +379,7 @@ function SubServicesSection() {
           {SUB_SERVICE_GROUPS.map((group) => (
             <FadeUp key={group.label}>
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-2">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-2">
                   {group.label}
                 </p>
                 <div className="divide-y divide-[#EBEBEB] border-t border-[#EBEBEB]/60">
@@ -387,12 +387,12 @@ function SubServicesSection() {
                     <Link
                       key={s.number}
                       href={s.href}
-                      className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-black/[0.04] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-80"
+                      className="group flex flex-col lg:flex-row lg:items-center gap-3 lg:gap-0 py-7 -mx-6 px-6 lg:-mx-12 lg:px-12 hover:bg-black/[0.04] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-80"
                     >
-                      <span className="text-xs font-bold tabular-nums text-[#999] lg:w-14 flex-shrink-0 group-hover:text-[#CA3C27] transition-[color] duration-200">
+                      <span className="text-xs font-bold tabular-nums text-[#999] lg:w-14 flex-shrink-0 group-hover:text-itsco-red transition-[color] duration-200">
                         {s.number}
                       </span>
-                      <h3 className="text-xl md:text-2xl font-semibold text-[#111111]/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-[#111111] transition-[color] duration-200">
+                      <h3 className="text-xl md:text-2xl font-semibold text-itsco-dark/80 lg:w-[34%] flex-shrink-0 leading-snug group-hover:text-itsco-dark transition-[color] duration-200">
                         {s.title}
                       </h3>
                       <p className="text-sm text-[#555] leading-relaxed lg:flex-1 lg:px-10 group-hover:text-[#555] transition-[color] duration-200">
@@ -400,7 +400,7 @@ function SubServicesSection() {
                       </p>
                       <ArrowRight
                         size={16}
-                        className="hidden lg:block flex-shrink-0 text-[#999] group-hover:text-[#CA3C27] group-hover:translate-x-1 transition-[transform,color] duration-200"
+                        className="hidden lg:block flex-shrink-0 text-[#999] group-hover:text-itsco-red group-hover:translate-x-1 transition-[transform,color] duration-200"
                       />
                     </Link>
                   ))}
@@ -427,7 +427,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Pressure Test Your Defenses
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">
@@ -464,12 +464,12 @@ function TestimonialSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-6" />
-            <p className="text-2xl md:text-3xl font-medium text-[#111111] leading-[1.5] mb-6">
+            <div className="w-8 h-[3px] bg-itsco-red mx-auto mb-6" />
+            <p className="text-2xl md:text-3xl font-medium text-itsco-dark leading-[1.5] mb-6">
               &ldquo;Our relationship has sustained because ITSco's core values match ours. They have integrity, they care about their customers, and they deliver a quality product. The solutions they have built for us are high performance, reliable, and delivered on-time and on-budget.&rdquo;
             </p>
             <p className="text-sm text-[#555]">
-              <span className="font-semibold text-[#404040]">Joe Whitney</span>
+              <span className="font-semibold text-itsco-body">Joe Whitney</span>
               <span className="mx-2 text-[#999]">&middot;</span>
               Director, Plant IT Operations, Hospira
             </p>
@@ -504,11 +504,11 @@ function FAQSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               FAQs
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Frequently asked <span className="text-[#CA3C27]">questions.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Frequently asked <span className="text-itsco-red">questions.</span>
             </h2>
           </div>
         </FadeUp>
@@ -516,33 +516,33 @@ function FAQSection() {
         <StaggerChildren stagger={80} className="divide-y divide-[#EBEBEB] max-w-4xl">
           {/* Q1 */}
           <div className="py-7">
-            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+            <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
               {FAQS[0].question}
             </h3>
-            <p className="text-base text-[#404040] leading-relaxed">
+            <p className="text-base text-itsco-body leading-relaxed">
               {FAQS[0].answerText}
             </p>
           </div>
 
           {/* Q2 — has inline links */}
           <div className="py-7">
-            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+            <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
               {FAQS[1].question}
             </h3>
-            <p className="text-base text-[#404040] leading-relaxed">
+            <p className="text-base text-itsco-body leading-relaxed">
               We&apos;ve been doing this long enough to know that no two companies are the same. To give you the most cost-effective, comprehensive approach, we recommend{" "}
               <a
                 href={FAQ_CALENDLY}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+                className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
               >
                 scheduling a free consultation
               </a>{" "}
               to discuss your needs. See the{" "}
               <Link
                 href="/maximize-roi-with-managed-it-services/"
-                className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+                className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
               >
                 ROI of managed IT services
               </Link>{" "}
@@ -552,20 +552,20 @@ function FAQSection() {
 
           {/* Q3 */}
           <div className="py-7">
-            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+            <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
               {FAQS[2].question}
             </h3>
-            <p className="text-base text-[#404040] leading-relaxed">
+            <p className="text-base text-itsco-body leading-relaxed">
               {FAQS[2].answerText}
             </p>
           </div>
 
           {/* Q4 */}
           <div className="py-7">
-            <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+            <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
               {FAQS[3].question}
             </h3>
-            <p className="text-base text-[#404040] leading-relaxed">
+            <p className="text-base text-itsco-body leading-relaxed">
               {FAQS[3].answerText}
             </p>
           </div>
@@ -583,11 +583,11 @@ function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Services
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Explore more from <span className="text-[#CA3C27]">ITSco.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Explore more from <span className="text-itsco-red">ITSco.</span>
             </h2>
           </div>
         </FadeUp>

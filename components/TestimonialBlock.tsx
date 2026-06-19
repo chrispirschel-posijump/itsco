@@ -28,7 +28,7 @@ export default function TestimonialBlock({
           {isDark ? (
             <>
               {/* Red accent line */}
-              <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-8" />
+              <div className="w-8 h-[3px] bg-itsco-red mx-auto mb-8" />
 
               <blockquote className="text-2xl md:text-3xl font-medium text-white leading-[1.5]">
                 &ldquo;{quote}&rdquo;
@@ -43,14 +43,14 @@ export default function TestimonialBlock({
           ) : (
             <div className="border border-[#EBEBEB] rounded-2xl p-8 md:p-12">
               {/* Red accent line */}
-              <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-8" />
+              <div className="w-8 h-[3px] bg-itsco-red mx-auto mb-8" />
 
-              <blockquote className="text-xl text-[#111111] font-medium leading-relaxed">
+              <blockquote className="text-xl text-itsco-dark font-medium leading-relaxed">
                 &ldquo;{quote}&rdquo;
               </blockquote>
 
               <div className="mt-6 text-sm text-[#555]">
-                <span className="font-semibold text-[#111111]">{name}</span>
+                <span className="font-semibold text-itsco-dark">{name}</span>
                 {" · "}
                 {title}, {company}
               </div>

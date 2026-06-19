@@ -120,15 +120,15 @@ function Intro({ content }: { content: ServiceSubContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               {intro.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-8">
               {intro.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{intro.headlineAccent}</span>
+              <span className="text-itsco-red">{intro.headlineAccent}</span>
             </h2>
             {intro.paragraphs.map((p, i) => (
-              <p key={i} className="text-lg text-[#404040] leading-relaxed mb-4 last:mb-0">
+              <p key={i} className="text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
                 {p}
               </p>
             ))}
@@ -143,10 +143,10 @@ function Intro({ content }: { content: ServiceSubContent }) {
                   key={s.label}
                   className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-6 text-center shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
                 >
-                  <p className="text-4xl md:text-5xl font-extrabold leading-none tracking-tight text-[#CA3C27]">
+                  <p className="text-4xl md:text-5xl font-extrabold leading-none tracking-tight text-itsco-red">
                     {s.value}
                   </p>
-                  <p className="text-sm font-medium text-[#404040] leading-relaxed mt-3">{s.label}</p>
+                  <p className="text-sm font-medium text-itsco-body leading-relaxed mt-3">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -167,12 +167,12 @@ function Capabilities({ content }: { content: ServiceSubContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {capabilitiesHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {capabilitiesHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{capabilitiesHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{capabilitiesHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -183,10 +183,10 @@ function Capabilities({ content }: { content: ServiceSubContent }) {
               key={c.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                <DynamicIcon slug={c.slug} size={24} className="text-[#CA3C27]" />
+              <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                <DynamicIcon slug={c.slug} size={24} className="text-itsco-red" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">{c.title}</h3>
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">{c.title}</h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">{c.description}</p>
             </div>
           ))}
@@ -218,26 +218,26 @@ function Outcomes({ content }: { content: ServiceSubContent }) {
           </FadeUp>
 
           <FadeUp delay={100} className="order-2 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {outcomes.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {outcomes.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{outcomes.headlineAccent}</span>
+              <span className="text-itsco-red">{outcomes.headlineAccent}</span>
             </h2>
             {outcomes.paragraphs.map((p, i) => (
-              <p key={i} className="text-base md:text-lg text-[#404040] leading-relaxed mb-4 last:mb-0">
+              <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
                 {p}
               </p>
             ))}
             {outcomes.bullets && outcomes.bullets.length > 0 && (
               <ul className="mt-6 space-y-3">
                 {outcomes.bullets.map((b) => (
-                  <li key={b} className="flex items-start gap-3 text-base text-[#404040] leading-relaxed">
+                  <li key={b} className="flex items-start gap-3 text-base text-itsco-body leading-relaxed">
                     {isRisk ? (
-                      <span className="w-2.5 h-2.5 rounded-full border-2 border-[#CA3C27] flex-shrink-0 mt-2" />
+                      <span className="w-2.5 h-2.5 rounded-full border-2 border-itsco-red flex-shrink-0 mt-2" />
                     ) : (
-                      <Check size={20} className="text-[#CA3C27] flex-shrink-0 mt-0.5" />
+                      <Check size={20} className="text-itsco-red flex-shrink-0 mt-0.5" />
                     )}
                     <span>{b}</span>
                   </li>
@@ -263,12 +263,12 @@ function MidCta({ content }: { content: ServiceSubContent }) {
     >
       <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
             Ready when you are
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight mb-8">
             One conversation. A clear picture of{' '}
-            <span className="text-[#CA3C27]">where your IT stands.</span>
+            <span className="text-itsco-red">where your IT stands.</span>
           </h2>
           <CTAButton
             label="Book a Free Consultation"
@@ -287,11 +287,11 @@ function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               In Their Words
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              What our clients <span className="text-[#CA3C27]">are saying.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              What our clients <span className="text-itsco-red">are saying.</span>
             </h2>
           </div>
         </FadeUp>
@@ -310,7 +310,7 @@ function RelatedServices({ content }: { content: ServiceSubContent }) {
           <FadeUp>
             <Link
               href={parent.href}
-              className="group inline-flex items-center gap-2 text-sm font-semibold text-[#CA3C27] hover:text-[#B4311E] mb-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] rounded-sm"
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-itsco-red hover:text-itsco-red-dark mb-6 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red rounded-sm"
             >
               <ArrowLeft
                 size={16}
@@ -321,7 +321,7 @@ function RelatedServices({ content }: { content: ServiceSubContent }) {
           </FadeUp>
         )}
         <FadeUp>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-10">
             {related.heading}
           </h2>
         </FadeUp>
@@ -330,14 +330,14 @@ function RelatedServices({ content }: { content: ServiceSubContent }) {
             <Link
               key={l.href}
               href={l.href}
-              className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+              className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center mb-5 flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-itsco-dark flex items-center justify-center mb-5 flex-shrink-0">
                 <DynamicIcon slug={l.slug} size={22} className="text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">{l.label}</h3>
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">{l.label}</h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">{l.description}</p>
-              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#CA3C27]">
+              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-itsco-red">
                 Learn more
                 <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
               </span>
@@ -358,12 +358,12 @@ function Faqs({ content }: { content: ServiceSubContent }) {
       <div className="max-w-4xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="mb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {faqHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {faqHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{faqHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{faqHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -373,13 +373,13 @@ function Faqs({ content }: { content: ServiceSubContent }) {
               key={f.question}
               className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
-              <h3 className="flex items-start gap-3 text-lg font-semibold text-[#111111] leading-snug mb-3">
-                <Check size={20} className="text-[#CA3C27] flex-shrink-0 mt-0.5" />
+              <h3 className="flex items-start gap-3 text-lg font-semibold text-itsco-dark leading-snug mb-3">
+                <Check size={20} className="text-itsco-red flex-shrink-0 mt-0.5" />
                 <span>{f.question}</span>
               </h3>
               <div className="pl-8">
                 {f.answer.map((a, i) => (
-                  <p key={i} className="text-base text-[#404040] leading-relaxed mb-3 last:mb-0">
+                  <p key={i} className="text-base text-itsco-body leading-relaxed mb-3 last:mb-0">
                     {a}
                   </p>
                 ))}

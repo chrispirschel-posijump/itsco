@@ -126,12 +126,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:ml-[52%] lg:pl-12 lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               Empowering Pharma &amp; Med Tech IT Success
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[4rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[4rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               IT Services for{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -142,7 +142,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">
               The pharmaceutical and medical technology sectors face unique operational challenges requiring specialized IT expertise. Organizations in these industries need comprehensive technology solutions that address their distinct compliance requirements and operational complexities.
             </p>
           </FadeUp>
@@ -175,12 +175,12 @@ function CapabilitiesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Delivering Excellence
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
               Tailored solutions for{' '}
-              <span className="text-[#CA3C27]">Pharma/Med Tech IT.</span>
+              <span className="text-itsco-red">Pharma/Med Tech IT.</span>
             </h2>
           </div>
         </FadeUp>
@@ -191,10 +191,10 @@ function CapabilitiesSection() {
               key={c.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                <DynamicIcon slug={c.slug} size={24} className="text-[#CA3C27]" />
+              <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                <DynamicIcon slug={c.slug} size={24} className="text-itsco-red" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">
                 {c.title}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -216,20 +216,20 @@ function ExpertiseSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="order-2 lg:order-1 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Decades of Expertise
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Years of Pharma/Med Tech IT{' '}
-              <span className="text-[#CA3C27]">expertise.</span>
+              <span className="text-itsco-red">expertise.</span>
             </h2>
-            <p className="text-lg md:text-xl text-[#111111] leading-relaxed font-medium mb-6">
+            <p className="text-lg md:text-xl text-itsco-dark leading-relaxed font-medium mb-6">
               Don&apos;t let IT issues hinder your mission to improve health outcomes. Partner with ITSco for seamless IT management and experience the benefits firsthand.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               With extensive experience in the Pharma/Med Tech IT domain, our seasoned experts can effortlessly navigate your complex medical IT landscape.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Say goodbye to IT challenges with the assistance of our skilled Pharma/Med Tech IT professionals. Contact us today for a smoother operational journey.
             </p>
           </FadeUp>
@@ -273,20 +273,20 @@ function ReliableSupportSection() {
           </FadeUp>
 
           <FadeUp delay={100} className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Reliable Pharma/Med Tech IT Support
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Digital transformation,{' '}
-              <span className="text-[#CA3C27]">end to end.</span>
+              <span className="text-itsco-red">end to end.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Embracing digital transformation is crucial in the Pharmaceutical industry, and we offer comprehensive life sciences solutions to facilitate this shift.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Our services span across various industrial segments, including clinical trial development, regulatory compliance, discovery &amp; pre-clinical solutions, and benefits &amp; risk management. We collaborate closely with leading biotech, pharmaceutical, distributor, medical technology, and consumer health clients to deliver world-class solutions.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Our commitment lies in accelerating drug discovery, enhancing clinical trial effectiveness, and expediting the introduction of new drugs to the market. By bringing together technology, devices, and medicines, our MedTech experts are dedicated to improving patient engagement and optimizing healthcare outcomes.
             </p>
           </FadeUp>
@@ -304,20 +304,20 @@ function ComplianceSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="order-2 lg:order-1 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Compliance Assurance
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Pharma/Med Tech IT compliance{' '}
-              <span className="text-[#CA3C27]">assurance.</span>
+              <span className="text-itsco-red">assurance.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Take the burden off your team and eliminate concerns about tech compliance. With our expert team, you can shift your focus to developing life-saving solutions while entrusting your regulatory compliance services to us.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Our experienced professionals identify potential pitfalls and provide guidance to ensure full compliance with auditing services. We cover a range of compliance requirements, including HIPAA, HITECH, EHR, and reporting standards.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Let us handle your tech compliance needs, giving you peace of mind and allowing you to concentrate on what matters most — delivering impactful healthcare solutions.
             </p>
           </FadeUp>
@@ -361,20 +361,20 @@ function ComprehensiveSupportSection() {
           </FadeUp>
 
           <FadeUp delay={100} className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Across the Entire Lifecycle
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Comprehensive IT support{' '}
-              <span className="text-[#CA3C27]">throughout the process.</span>
+              <span className="text-itsco-red">throughout the process.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Unlock the potential of your life science enterprise with our comprehensive suite of digital solutions. Enhance clinical development processes, boost data productivity, and achieve impactful business outcomes.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Our digital solutions are tailored to optimize pharmaceutical discovery processes, streamline pre-clinical procedures, and refine product development strategies.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Backed by a combination of industry expertise and cutting-edge technologies, we deliver effective quality risk management services that serve as the foundation for high-quality pharmaceuticals and medical devices.
             </p>
           </FadeUp>
@@ -397,7 +397,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Stay Compliant: Be Certain and Confident
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-[1.1] tracking-tight max-w-2xl">
@@ -422,12 +422,12 @@ function CaseStudiesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Success Stories
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Engineering excellence,{' '}
-              <span className="text-[#CA3C27]">delivered.</span>
+              <span className="text-itsco-red">delivered.</span>
             </h2>
           </div>
         </FadeUp>
@@ -482,12 +482,12 @@ function FAQSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               FAQ About Our IT Company
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Frequently asked{' '}
-              <span className="text-[#CA3C27]">questions.</span>
+              <span className="text-itsco-red">questions.</span>
             </h2>
           </div>
         </FadeUp>
@@ -495,10 +495,10 @@ function FAQSection() {
         <StaggerChildren stagger={80} className="divide-y divide-[#EBEBEB] max-w-4xl">
           {FAQS.map((f, i) => (
             <div key={i} className="py-7">
-              <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
                 {f.question}
               </h3>
-              <p className="text-base text-[#404040] leading-relaxed">
+              <p className="text-base text-itsco-body leading-relaxed">
                 {i === 1 ? (
                   <>
                     The cost of Pharma/Med Tech IT services will vary depending on the specific needs of your business, the complexity of your systems, the number of users in your environment, and the level of support required. At ITSco, we are well aware of the unique challenges faced by med tech companies and offer a comprehensive base package of IT services.{' '}
@@ -506,7 +506,7 @@ function FAQSection() {
                       href={FAQ_CALENDLY}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+                      className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
                     >
                       Book a free consultation
                     </a>{' '}
@@ -532,12 +532,12 @@ function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Services
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Explore more from{' '}
-              <span className="text-[#CA3C27]">ITSco.</span>
+              <span className="text-itsco-red">ITSco.</span>
             </h2>
           </div>
         </FadeUp>

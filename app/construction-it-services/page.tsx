@@ -131,12 +131,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:ml-[52%] lg:pl-12 lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               Construction IT
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               IT services for{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -147,7 +147,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">
               Trusted partners for reliable construction IT solutions. Predictable cost, minimal downtime, project-ready support for every job site and back-office team.
             </p>
           </FadeUp>
@@ -180,11 +180,11 @@ function CapabilitiesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Comprehensive Construction IT
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Solutions in <span className="text-[#CA3C27]">one place.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Solutions in <span className="text-itsco-red">one place.</span>
             </h2>
           </div>
         </FadeUp>
@@ -195,10 +195,10 @@ function CapabilitiesSection() {
               key={c.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                <DynamicIcon slug={c.slug} size={24} className="text-[#CA3C27]" />
+              <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                <DynamicIcon slug={c.slug} size={24} className="text-itsco-red" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">
                 {c.title}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -220,14 +220,14 @@ function TrustworthyFoundationSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="order-2 lg:order-1 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Trustworthy Foundation
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Seamless operations,{' '}
-              <span className="text-[#CA3C27]">zero downtime.</span>
+              <span className="text-itsco-red">zero downtime.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               With our construction IT services, say goodbye to IT downtimes and enjoy unparalleled peace of mind. We understand that your main focus is on building, which is why we ensure seamless operations through cutting-edge technology and high availability. Our services provide unmatched reliability, allowing you to concentrate on your construction projects without any interruptions.
             </p>
           </FadeUp>
@@ -271,20 +271,20 @@ function DataProtectionSection() {
           </FadeUp>
 
           <FadeUp delay={100} className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Data Protection Shield
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               An impenetrable fortress{' '}
-              <span className="text-[#CA3C27]">for your data.</span>
+              <span className="text-itsco-red">for your data.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Immerse yourself in the peace of mind of fortified data. Our top-notch cybersecurity IT services form an impenetrable fortress for your construction company.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Bid farewell to data breaches and cyber threats. We provide round-the-clock coverage, ensuring the utmost security for your sensitive information.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               In today&apos;s digital landscape, data forms the foundation of your operations, and we guarantee its unwavering protection.
             </p>
           </FadeUp>
@@ -302,20 +302,20 @@ function BuildingSuccessSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="order-2 lg:order-1 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Expert IT Solutions
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Building success with{' '}
-              <span className="text-[#CA3C27]">certified experts.</span>
+              <span className="text-itsco-red">certified experts.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Consider the link between the most successful construction companies and top-tier IT infrastructure. Our team, equipped with multiple tech certifications, delivers customized IT solutions to meet your specific requirements.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Experience enhanced efficiency, increased productivity, and accelerated growth. Our construction company IT services provide the essential IT groundwork upon which your business success is built.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Learn more about how our services can transform your construction company&apos;s IT landscape.
             </p>
           </FadeUp>
@@ -359,17 +359,17 @@ function PartnerSupportSection() {
           </FadeUp>
 
           <FadeUp delay={100} className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               24/7 IT Partner Support
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               An IT partner who&apos;s{' '}
-              <span className="text-[#CA3C27]">always there.</span>
+              <span className="text-itsco-red">always there.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Why settle for an IT partner who is not always there? We are available round-the-clock to address any IT issue, big or small, through our 24/7 helpdesk.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               With a high rate of resolving issues on the first call, we ensure seamless operations for your business. Trust in the peace of mind that comes with knowing your IT needs are well taken care of.
             </p>
           </FadeUp>
@@ -392,7 +392,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Simplifying IT Complexity
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-[1.1] tracking-tight max-w-2xl">
@@ -417,12 +417,12 @@ function CaseStudiesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Success Stories
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               IT services for{' '}
-              <span className="text-[#CA3C27]">construction businesses.</span>
+              <span className="text-itsco-red">construction businesses.</span>
             </h2>
           </div>
         </FadeUp>
@@ -477,11 +477,11 @@ function FAQSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               FAQs
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Frequently asked <span className="text-[#CA3C27]">questions.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Frequently asked <span className="text-itsco-red">questions.</span>
             </h2>
           </div>
         </FadeUp>
@@ -489,10 +489,10 @@ function FAQSection() {
         <StaggerChildren stagger={80} className="divide-y divide-[#EBEBEB] max-w-4xl">
           {FAQS.map((f, i) => (
             <div key={i} className="py-7">
-              <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
                 {f.question}
               </h3>
-              <p className="text-base text-[#404040] leading-relaxed">
+              <p className="text-base text-itsco-body leading-relaxed">
                 {i === 2 ? (
                   <>
                     With Construction IT Services, you can expect round-the-clock IT support. Our dedicated helpdesk is available 24/7, with knowledgeable professionals answering the majority of calls promptly. Whether you have a minor inquiry or a critical issue, our team is committed to providing swift resolutions and expert assistance, ensuring minimal disruption to your business operations.{' '}
@@ -500,7 +500,7 @@ function FAQSection() {
                       href={FAQ_CALENDLY}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+                      className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
                     >
                       Book a free consultation
                     </a>{' '}
@@ -526,11 +526,11 @@ function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Services
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Explore more from <span className="text-[#CA3C27]">ITSco.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Explore more from <span className="text-itsco-red">ITSco.</span>
             </h2>
           </div>
         </FadeUp>

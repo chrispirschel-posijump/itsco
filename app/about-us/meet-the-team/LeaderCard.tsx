@@ -21,7 +21,7 @@ export default function LeaderCard({ name, title, image, bio }: LeaderCardProps)
 
   return (
     <div className="bg-itsco-card border border-[#EBEBEB] rounded-2xl overflow-hidden shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300">
-      <div className="relative aspect-[4/5] bg-[#111111]/5">
+      <div className="relative aspect-[4/5] bg-itsco-dark/5">
         <Image
           src={image}
           alt={`${name}, ${title} at ITSco`}
@@ -31,13 +31,13 @@ export default function LeaderCard({ name, title, image, bio }: LeaderCardProps)
         />
       </div>
       <div className="p-6">
-        <h3 className="text-xl font-bold text-[#111111] tracking-tight">{name}</h3>
-        <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#CA3C27] mt-1 mb-4">
+        <h3 className="text-xl font-bold text-itsco-dark tracking-tight">{name}</h3>
+        <p className="text-xs font-semibold uppercase tracking-[0.1em] text-itsco-red mt-1 mb-4">
           {title}
         </p>
         {firstParagraph && (
           <p
-            className={`text-sm text-[#404040] leading-relaxed ${expanded ? 'line-clamp-none' : 'line-clamp-3'}`}
+            className={`text-sm text-itsco-body leading-relaxed ${expanded ? 'line-clamp-none' : 'line-clamp-3'}`}
           >
             {firstParagraph}
           </p>
@@ -54,7 +54,7 @@ export default function LeaderCard({ name, title, image, bio }: LeaderCardProps)
               <div className="min-h-0">
                 <div className="space-y-3 pt-3">
                   {restParagraphs.map((p, i) => (
-                    <p key={i} className="text-sm text-[#404040] leading-relaxed">{p}</p>
+                    <p key={i} className="text-sm text-itsco-body leading-relaxed">{p}</p>
                   ))}
                 </div>
               </div>
@@ -63,7 +63,7 @@ export default function LeaderCard({ name, title, image, bio }: LeaderCardProps)
               type="button"
               onClick={() => setExpanded((v) => !v)}
               aria-expanded={expanded}
-              className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-[#CA3C27] hover:text-[#B4311E] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] rounded-sm active:opacity-70 transition-[color] duration-200"
+              className="mt-4 inline-flex items-center gap-1 text-sm font-semibold text-itsco-red hover:text-itsco-red-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70 transition-[color] duration-200"
             >
               {expanded ? 'Read less' : 'Read more'}
               <span aria-hidden className={`transition-transform duration-200 ${expanded ? 'rotate-180' : ''}`}>

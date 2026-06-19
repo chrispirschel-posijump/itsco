@@ -58,7 +58,7 @@ function FooterColumn({
           <li key={link.href}>
             <Link
               href={link.href}
-              className="text-sm text-white/60 hover:text-white transition-[color] duration-150 leading-loose focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] rounded-sm active:opacity-70"
+              className="text-sm text-white/60 hover:text-white transition-[color] duration-150 leading-loose focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70"
             >
               {link.label}
             </Link>
@@ -78,7 +78,7 @@ export default function Footer() {
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
             <div className="text-xl font-bold tracking-tight leading-none mb-4 select-none">
               <span className="text-white">ITS</span>
-              <span className="text-[#CA3C27]">co</span>
+              <span className="text-itsco-red">co</span>
             </div>
             <p className="text-sm text-white/50 leading-relaxed max-w-[220px]">
               The ROI-Driven IT Services Company. Trusted managed IT, cybersecurity, and cloud solutions since 1996.
@@ -104,10 +104,10 @@ export default function Footer() {
             </span>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="/privacy-policy/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] rounded-sm active:opacity-70">
+            <Link href="/privacy-policy/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70">
               Privacy Policy
             </Link>
-            <Link href="/terms/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] rounded-sm active:opacity-70">
+            <Link href="/terms/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70">
               Terms of Use
             </Link>
           </div>

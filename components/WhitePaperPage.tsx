@@ -56,7 +56,7 @@ function Hero({ content }: { content: WhitePaperContent }) {
       <div className="relative max-w-5xl mx-auto px-6 lg:px-12 pt-44 pb-20 md:pt-52 md:pb-24">
         <FadeUp>
           <div className="flex items-center gap-3 mb-6">
-            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#CA3C27]/10 text-[#CA3C27] text-xs font-bold uppercase tracking-[0.12em]">
+            <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-itsco-red/10 text-itsco-red text-xs font-bold uppercase tracking-[0.12em]">
               <FileText size={14} />
               White Paper
             </span>
@@ -67,15 +67,15 @@ function Hero({ content }: { content: WhitePaperContent }) {
         </FadeUp>
 
         <FadeUp delay={100}>
-          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-[#111111] leading-[1.08] tracking-tight mb-8 max-w-4xl">
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] font-extrabold text-itsco-dark leading-[1.08] tracking-tight mb-8 max-w-4xl">
             {content.title}
           </h1>
         </FadeUp>
 
         {content.subtitle && (
           <FadeUp delay={150}>
-            <blockquote className="border-l-4 border-[#CA3C27] pl-6 py-1 mb-10 max-w-3xl">
-              <p className="text-xl md:text-2xl text-[#111111] italic leading-relaxed">
+            <blockquote className="border-l-4 border-itsco-red pl-6 py-1 mb-10 max-w-3xl">
+              <p className="text-xl md:text-2xl text-itsco-dark italic leading-relaxed">
                 “{content.subtitle}”
               </p>
               {content.authors && (
@@ -88,7 +88,7 @@ function Hero({ content }: { content: WhitePaperContent }) {
         <FadeUp delay={200}>
           <div className="space-y-4 max-w-3xl mb-10">
             {content.abstract.map((p, i) => (
-              <p key={i} className="text-base md:text-lg text-[#404040] leading-relaxed">
+              <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed">
                 {p}
               </p>
             ))}
@@ -101,7 +101,7 @@ function Hero({ content }: { content: WhitePaperContent }) {
               href={content.pdfUrl}
               download={content.pdfFilename}
               data-utm={content.downloadUtm}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#CA3C27] text-white text-base font-semibold hover:bg-[#B4311E] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)] transition-[background-color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-itsco-red text-white text-base font-semibold hover:bg-itsco-red-dark hover:shadow-[0_0_40px_rgba(202,60,39,0.3)] transition-[background-color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red active:scale-[0.98]"
             >
               <Download size={18} />
               Download the white paper
@@ -131,12 +131,12 @@ function TakeawaysSection({ takeaways }: { takeaways: string[] }) {
       <div className="max-w-5xl mx-auto px-6 lg:px-12 py-20 md:py-24">
         <FadeUp>
           <div className="mb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               What&apos;s Inside
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Key takeaways from{' '}
-              <span className="text-[#CA3C27]">the white paper.</span>
+              <span className="text-itsco-red">the white paper.</span>
             </h2>
           </div>
         </FadeUp>
@@ -147,10 +147,10 @@ function TakeawaysSection({ takeaways }: { takeaways: string[] }) {
               key={i}
               className="flex gap-4 bg-itsco-card border border-[#EBEBEB] rounded-2xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-[#CA3C27]/10 text-[#CA3C27] text-sm font-extrabold flex-shrink-0">
+              <div className="flex items-center justify-center w-10 h-10 rounded-lg bg-itsco-red/10 text-itsco-red text-sm font-extrabold flex-shrink-0">
                 {String(i + 1).padStart(2, '0')}
               </div>
-              <p className="text-base text-[#404040] leading-relaxed flex-1">{t}</p>
+              <p className="text-base text-itsco-body leading-relaxed flex-1">{t}</p>
             </div>
           ))}
         </StaggerChildren>
@@ -170,7 +170,7 @@ function DownloadBand({ content }: { content: WhitePaperContent }) {
     >
       <div className="max-w-5xl mx-auto px-6 lg:px-12 py-20 md:py-24 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
             Read the full paper
           </p>
         </FadeUp>
@@ -190,7 +190,7 @@ function DownloadBand({ content }: { content: WhitePaperContent }) {
               href={content.pdfUrl}
               download={content.pdfFilename}
               data-utm={content.downloadUtm + '-band'}
-              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-[#CA3C27] text-white text-base font-semibold hover:bg-[#B4311E] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)] transition-[background-color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
+              className="inline-flex items-center gap-2 px-8 py-4 rounded-xl bg-itsco-red text-white text-base font-semibold hover:bg-itsco-red-dark hover:shadow-[0_0_40px_rgba(202,60,39,0.3)] transition-[background-color,box-shadow] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red active:scale-[0.98]"
             >
               <Download size={18} />
               Download the PDF
@@ -215,11 +215,11 @@ function RelatedPapersSection({ related }: { related: WhitePaperRelated[] }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24">
         <FadeUp>
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Reading
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              More from <span className="text-[#CA3C27]">the ITSco library.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              More from <span className="text-itsco-red">the ITSco library.</span>
             </h2>
           </div>
         </FadeUp>
@@ -229,19 +229,19 @@ function RelatedPapersSection({ related }: { related: WhitePaperRelated[] }) {
             <Link
               key={r.slug}
               href={r.href}
-              className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.99]"
+              className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:scale-[0.99]"
             >
               <div className="flex items-center gap-2 mb-4">
-                <FileText size={14} className="text-[#CA3C27]" />
-                <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[#CA3C27]">
+                <FileText size={14} className="text-itsco-red" />
+                <span className="text-xs font-semibold uppercase tracking-[0.12em] text-itsco-red">
                   {r.category}
                 </span>
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3 tracking-tight group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3 tracking-tight group-hover:text-itsco-red transition-[color] duration-200">
                 {r.title}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1 mb-5">{r.description}</p>
-              <div className="flex items-center gap-1.5 text-xs font-semibold text-[#404040] uppercase tracking-[0.08em] group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <div className="flex items-center gap-1.5 text-xs font-semibold text-itsco-body uppercase tracking-[0.08em] group-hover:text-itsco-red transition-[color] duration-200">
                 Read more
                 <ArrowRight
                   size={12}
@@ -267,12 +267,12 @@ function RelatedServicesSection({
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24">
         <FadeUp>
           <div className="max-w-2xl mb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Apply the Thinking
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               ITSco services that{' '}
-              <span className="text-[#CA3C27]">put this paper to work.</span>
+              <span className="text-itsco-red">put this paper to work.</span>
             </h2>
           </div>
         </FadeUp>
@@ -282,13 +282,13 @@ function RelatedServicesSection({
             <Link
               key={s.slug}
               href={s.href}
-              className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.99]"
+              className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:scale-[0.99]"
             >
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3 tracking-tight group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3 tracking-tight group-hover:text-itsco-red transition-[color] duration-200">
                 {s.title}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1 mb-5">{s.description}</p>
-              <div className="flex items-center gap-1.5 text-xs font-semibold text-[#404040] uppercase tracking-[0.08em] group-hover:text-[#CA3C27] transition-[color] duration-200">
+              <div className="flex items-center gap-1.5 text-xs font-semibold text-itsco-body uppercase tracking-[0.08em] group-hover:text-itsco-red transition-[color] duration-200">
                 Learn more
                 <ArrowRight
                   size={12}

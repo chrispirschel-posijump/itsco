@@ -17,7 +17,7 @@ export default function ServiceCard({ slug, title, description, href, image, ima
   return (
     <Link
       href={href}
-      className="group flex flex-col bg-itsco-card rounded-2xl border border-[#EBEBEB] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.98] overflow-hidden"
+      className="group flex flex-col bg-itsco-card rounded-2xl border border-[#EBEBEB] shadow-[0_2px_8px_rgba(0,0,0,0.06)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.12)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:scale-[0.98] overflow-hidden"
     >
       {image && (
         <div className="relative h-40 w-full overflow-hidden">
@@ -34,19 +34,19 @@ export default function ServiceCard({ slug, title, description, href, image, ima
 
       <div className="flex flex-col p-7 flex-1">
         {!image && (
-          <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-            <DynamicIcon slug={slug} size={24} className="text-[#CA3C27]" />
+          <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+            <DynamicIcon slug={slug} size={24} className="text-itsco-red" />
           </div>
         )}
 
-        <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">
+        <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">
           {title}
         </h3>
         <p className="text-sm text-[#555] leading-relaxed flex-1">
           {description}
         </p>
 
-        <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-[#404040] uppercase tracking-[0.08em] group-hover:text-[#111111] transition-[color] duration-200">
+        <div className="mt-4 flex items-center gap-1.5 text-xs font-semibold text-itsco-body uppercase tracking-[0.08em] group-hover:text-itsco-dark transition-[color] duration-200">
           Learn more
           <ArrowRight
             size={12}

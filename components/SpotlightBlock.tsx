@@ -49,20 +49,20 @@ export default function SpotlightBlock({
       {/* Text */}
       <div className={`order-2 ${textOrderClass}`}>
         {eyebrow && (
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
             {eyebrow}
           </p>
         )}
-        <h3 className="text-2xl md:text-3xl lg:text-[2.25rem] font-bold text-[#111111] leading-[1.15] tracking-tight mb-5">
+        <h3 className="text-2xl md:text-3xl lg:text-[2.25rem] font-bold text-itsco-dark leading-[1.15] tracking-tight mb-5">
           {title}
         </h3>
-        <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+        <p className="text-base md:text-lg text-itsco-body leading-relaxed">
           {description}
         </p>
         {cta && (
           <Link
             href={cta.href}
-            className="group inline-flex items-center gap-1.5 mt-6 text-sm font-semibold text-[#CA3C27] uppercase tracking-[0.08em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+            className="group inline-flex items-center gap-1.5 mt-6 text-sm font-semibold text-itsco-red uppercase tracking-[0.08em] focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
           >
             {cta.label}
             <ArrowRight

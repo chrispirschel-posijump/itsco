@@ -218,12 +218,12 @@ function Hero({ content }: { content: CityServiceContent }) {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               {hero.eyebrow}
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               {hero.headlineLead}{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -234,7 +234,7 @@ function Hero({ content }: { content: CityServiceContent }) {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">{hero.body}</p>
+            <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">{hero.body}</p>
           </FadeUp>
           <FadeUp delay={300}>
             <div className="flex flex-wrap gap-4">
@@ -264,12 +264,12 @@ function Capabilities({ content }: { content: CityServiceContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {capabilitiesHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {capabilitiesHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{capabilitiesHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{capabilitiesHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -280,10 +280,10 @@ function Capabilities({ content }: { content: CityServiceContent }) {
               key={c.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                <DynamicIcon slug={c.slug} size={24} className="text-[#CA3C27]" />
+              <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                <DynamicIcon slug={c.slug} size={24} className="text-itsco-red" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">{c.title}</h3>
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">{c.title}</h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">{c.description}</p>
             </div>
           ))}
@@ -300,15 +300,15 @@ function Positioning({ content }: { content: CityServiceContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {positioning.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {positioning.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{positioning.headlineAccent}</span>
+              <span className="text-itsco-red">{positioning.headlineAccent}</span>
             </h2>
             {positioning.paragraphs.map((p, i) => (
-              <p key={i} className="text-base md:text-lg text-[#404040] leading-relaxed mb-4 last:mb-0">
+              <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
                 {p}
               </p>
             ))}
@@ -321,10 +321,10 @@ function Positioning({ content }: { content: CityServiceContent }) {
                   key={s.label}
                   className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-6 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
                 >
-                  <p className="text-4xl md:text-5xl font-extrabold leading-none tracking-tight text-[#CA3C27]">
+                  <p className="text-4xl md:text-5xl font-extrabold leading-none tracking-tight text-itsco-red">
                     {s.value}
                   </p>
-                  <p className="text-sm font-medium text-[#404040] leading-relaxed mt-3">{s.label}</p>
+                  <p className="text-sm font-medium text-itsco-body leading-relaxed mt-3">{s.label}</p>
                 </div>
               ))}
             </div>
@@ -365,15 +365,15 @@ function SplitNarrative({
           </FadeUp>
 
           <FadeUp delay={100} className={`${textOrder} lg:col-span-7`}>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {data.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {data.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{data.headlineAccent}</span>
+              <span className="text-itsco-red">{data.headlineAccent}</span>
             </h2>
             {data.paragraphs.map((p, i) => (
-              <p key={i} className="text-base md:text-lg text-[#404040] leading-relaxed mb-4 last:mb-0">
+              <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
                 {p}
               </p>
             ))}
@@ -391,7 +391,7 @@ function RelatedServices({ content }: { content: CityServiceContent }) {
     <section className="bg-itsco-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-10">
+          <h2 className="text-2xl md:text-3xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-10">
             {related.heading}
           </h2>
         </FadeUp>
@@ -400,14 +400,14 @@ function RelatedServices({ content }: { content: CityServiceContent }) {
             <Link
               key={l.href}
               href={l.href}
-              className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+              className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center mb-5 flex-shrink-0">
+              <div className="w-12 h-12 rounded-xl bg-itsco-dark flex items-center justify-center mb-5 flex-shrink-0">
                 <DynamicIcon slug={l.slug} size={22} className="text-white" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">{l.label}</h3>
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">{l.label}</h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">{l.description}</p>
-              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-[#CA3C27]">
+              <span className="mt-5 inline-flex items-center gap-1.5 text-sm font-semibold text-itsco-red">
                 Learn more
                 <ArrowRight size={14} className="transition-transform duration-200 group-hover:translate-x-0.5" />
               </span>
@@ -428,8 +428,8 @@ function NearbyCities({ content }: { content: CityServiceContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-16 md:py-20">
         <FadeUp>
           <div className="flex items-center gap-3 mb-8">
-            <MapPin size={20} className="text-[#CA3C27]" />
-            <h2 className="text-xl md:text-2xl font-bold text-[#111111] tracking-tight">
+            <MapPin size={20} className="text-itsco-red" />
+            <h2 className="text-xl md:text-2xl font-bold text-itsco-dark tracking-tight">
               IT services in nearby cities
             </h2>
           </div>
@@ -439,12 +439,12 @@ function NearbyCities({ content }: { content: CityServiceContent }) {
             <Link
               key={city.slug}
               href={city.href}
-              className="group flex items-center justify-between gap-3 bg-itsco-card border border-[#EBEBEB] rounded-xl px-5 py-4 hover:border-[#CA3C27] hover:-translate-y-0.5 transition-[border-color,transform] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27]"
+              className="group flex items-center justify-between gap-3 bg-itsco-card border border-[#EBEBEB] rounded-xl px-5 py-4 hover:border-itsco-red hover:-translate-y-0.5 transition-[border-color,transform] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
             >
-              <span className="text-sm font-semibold text-[#111111] leading-snug">{city.name}, NC</span>
+              <span className="text-sm font-semibold text-itsco-dark leading-snug">{city.name}, NC</span>
               <ArrowRight
                 size={14}
-                className="text-[#555] flex-shrink-0 group-hover:text-[#CA3C27] transition-transform duration-200 group-hover:translate-x-0.5"
+                className="text-[#555] flex-shrink-0 group-hover:text-itsco-red transition-transform duration-200 group-hover:translate-x-0.5"
               />
             </Link>
           ))}
@@ -463,12 +463,12 @@ function Faqs({ content }: { content: CityServiceContent }) {
       <div className="max-w-4xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="mb-12">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {faqHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {faqHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{faqHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{faqHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -478,13 +478,13 @@ function Faqs({ content }: { content: CityServiceContent }) {
               key={f.question}
               className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
             >
-              <h3 className="flex items-start gap-3 text-lg font-semibold text-[#111111] leading-snug mb-3">
-                <Check size={20} className="text-[#CA3C27] flex-shrink-0 mt-0.5" />
+              <h3 className="flex items-start gap-3 text-lg font-semibold text-itsco-dark leading-snug mb-3">
+                <Check size={20} className="text-itsco-red flex-shrink-0 mt-0.5" />
                 <span>{f.question}</span>
               </h3>
               <div className="pl-8">
                 {f.answer.map((a, i) => (
-                  <p key={i} className="text-base text-[#404040] leading-relaxed mb-3 last:mb-0">
+                  <p key={i} className="text-base text-itsco-body leading-relaxed mb-3 last:mb-0">
                     {a}
                   </p>
                 ))}
@@ -503,11 +503,11 @@ function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               In Their Words
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              What our clients <span className="text-[#CA3C27]">are saying.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              What our clients <span className="text-itsco-red">are saying.</span>
             </h2>
           </div>
         </FadeUp>
@@ -529,12 +529,12 @@ function MidCta({ content }: { content: CityServiceContent }) {
     >
       <div className="max-w-4xl mx-auto px-6 lg:px-12 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
             Ready when you are
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight mb-8">
             Predictable IT costs, fewer surprises,{' '}
-            <span className="text-[#CA3C27]">measurable ROI.</span>
+            <span className="text-itsco-red">measurable ROI.</span>
           </h2>
           <CTAButton
             label="Book a Free Consultation"
@@ -554,27 +554,27 @@ function OfficeLocation({ content }: { content: CityServiceContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="lg:col-span-5">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {office.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {office.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{office.headlineAccent}</span>
+              <span className="text-itsco-red">{office.headlineAccent}</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-8">{office.body}</p>
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-8">{office.body}</p>
             <div className="flex items-start gap-3">
-              <div className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-itsco-dark flex items-center justify-center flex-shrink-0">
                 <MapPin size={18} className="text-white" />
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#404040]/70 mb-1">
+                <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-body/70 mb-1">
                   Business office
                 </p>
                 <a
                   href={office.mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-semibold text-[#111111] hover:text-[#CA3C27] transition-colors duration-200"
+                  className="text-base font-semibold text-itsco-dark hover:text-itsco-red transition-colors duration-200"
                 >
                   {office.address}
                 </a>

@@ -63,17 +63,17 @@ function Hero() {
       {/* Heavier white wash on the left for text readability */}
       <div className="absolute inset-0 bg-gradient-to-r from-itsco-paper via-itsco-paper/85 to-itsco-paper/45" />
       <div className="absolute inset-0 bg-gradient-to-t from-itsco-paper via-itsco-paper/20 to-transparent" />
-      <div className="absolute inset-0 bg-gradient-to-tr from-[#CA3C27]/5 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-tr from-itsco-red/5 via-transparent to-transparent" />
 
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="max-w-2xl">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Healthcare AI
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-6">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-6">
               Healthcare AI.{" "}
               <span
                 className="bg-clip-text text-transparent"
@@ -84,7 +84,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-[44ch] mb-10">
+            <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-[44ch] mb-10">
               We help clinical organizations deploy AI safely, prove it pays for itself, and stay HIPAA-compliant from the first day. Every engagement includes a fractional Chief AI Officer and quarterly ROI reporting.
             </p>
           </FadeUp>
@@ -117,13 +117,13 @@ function PositioningSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               The Promise
             </p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#111111] leading-[1.15] tracking-tight mb-8">
-              We don't just advise. We <span className="text-[#CA3C27]">build it, secure it, manage it,</span> and prove it works.
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-itsco-dark leading-[1.15] tracking-tight mb-8">
+              We don't just advise. We <span className="text-itsco-red">build it, secure it, manage it,</span> and prove it works.
             </h2>
-            <p className="text-lg text-[#404040] leading-relaxed">
+            <p className="text-lg text-itsco-body leading-relaxed">
               ITSco helps clinical organizations deploy AI across their operations — safely, compliantly, and with documented ROI. We provide the fractional Chief AI Officer your leadership needs, the private AI infrastructure your compliance team requires, and the managed operations your IT team cannot do alone — all under one retainer.
             </p>
           </div>
@@ -159,11 +159,11 @@ function ValuePropsSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16 mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               What You Get
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              AI built for the way <span className="text-[#CA3C27]">healthcare actually works.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              AI built for the way <span className="text-itsco-red">healthcare actually works.</span>
             </h2>
           </div>
         </FadeUp>
@@ -220,10 +220,10 @@ function ValuePropsSection() {
                 key={v.title}
                 className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                  <Icon size={24} className="text-[#CA3C27]" />
+                <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                  <Icon size={24} className="text-itsco-red" />
                 </div>
-                <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3">
+                <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3">
                   {v.title}
                 </h3>
                 <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -294,7 +294,7 @@ const COMPARISON_ROWS: { capability: string; mspr: CompCell; advisory: CompCell;
 ]
 
 function CellIcon({ tone }: { tone: CompCell['tone'] }) {
-  if (tone === 'positive') return <Check size={14} className="text-[#CA3C27] flex-shrink-0" />
+  if (tone === 'positive') return <Check size={14} className="text-itsco-red flex-shrink-0" />
   if (tone === 'neutral') return <Minus size={14} className="text-[#555] flex-shrink-0" />
   return <X size={14} className="text-[#555] flex-shrink-0" />
 }
@@ -305,13 +305,13 @@ function ComparisonSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Why ITSco
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              We do what advisory firms <span className="text-[#CA3C27]">won't.</span> And what traditional MSPs <span className="text-[#CA3C27]">can't.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              We do what advisory firms <span className="text-itsco-red">won't.</span> And what traditional MSPs <span className="text-itsco-red">can't.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               ITSco delivers AI strategy and operations as one continuous engagement. From the first assessment through every quarterly review, the same team owns the outcome.
             </p>
           </div>
@@ -321,17 +321,17 @@ function ComparisonSection() {
           <div className="bg-itsco-paper border border-black/20 rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
             {/* Header row — order: Capability (dark) · ITSco (highlight) · Traditional MSPs · Big 4 */}
             <div className="grid grid-cols-2 md:grid-cols-4 border-b border-black/20">
-              <div className="px-6 py-4 md:py-5 col-span-2 md:col-span-1 bg-[#111111]">
+              <div className="px-6 py-4 md:py-5 col-span-2 md:col-span-1 bg-itsco-dark">
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-white">What You Need</p>
               </div>
               <div className="col-span-2 md:col-span-1 px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20 bg-itsco-card">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#CA3C27]">ITSco</p>
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-itsco-red">ITSco</p>
               </div>
               <div className="px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#111111]">Traditional MSPs</p>
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-itsco-dark">Traditional MSPs</p>
               </div>
               <div className="px-6 py-4 md:py-5">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#111111]">Big 4 / Advisory</p>
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-itsco-dark">Big 4 / Advisory</p>
               </div>
             </div>
 
@@ -341,20 +341,20 @@ function ComparisonSection() {
                 key={row.capability}
                 className={`grid grid-cols-2 md:grid-cols-4 ${i < COMPARISON_ROWS.length - 1 ? 'border-b border-black/20' : ''}`}
               >
-                <div className="px-6 py-5 col-span-2 md:col-span-1 bg-[#111111]">
+                <div className="px-6 py-5 col-span-2 md:col-span-1 bg-itsco-dark">
                   <p className="text-sm font-bold uppercase tracking-[0.1em] text-white leading-snug">{row.capability}</p>
                 </div>
                 <div className="px-6 py-5 col-span-2 md:col-span-1 border-t md:border-t-0 border-black/20 bg-itsco-card flex items-center gap-2">
                   <CellIcon tone={row.itsco.tone} />
-                  <p className="text-sm font-medium text-[#404040]">{row.itsco.label}</p>
+                  <p className="text-sm font-medium text-itsco-body">{row.itsco.label}</p>
                 </div>
                 <div className="px-6 py-5 border-t md:border-t-0 border-black/20 flex items-center gap-2">
                   <CellIcon tone={row.mspr.tone} />
-                  <p className="text-sm text-[#404040]">{row.mspr.label}</p>
+                  <p className="text-sm text-itsco-body">{row.mspr.label}</p>
                 </div>
                 <div className="px-6 py-5 flex items-center gap-2">
                   <CellIcon tone={row.advisory.tone} />
-                  <p className="text-sm text-[#404040]">{row.advisory.label}</p>
+                  <p className="text-sm text-itsco-body">{row.advisory.label}</p>
                 </div>
               </div>
             ))}
@@ -407,13 +407,13 @@ function TiersSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               How We Engage
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              Four tiers and one platform. <span className="text-[#CA3C27]">Built for where you are.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              Four tiers and one platform. <span className="text-itsco-red">Built for where you are.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Pick the entry point that matches your readiness. We design every engagement to grow with you.
             </p>
           </div>
@@ -432,11 +432,11 @@ function TiersSection() {
         </FadeUp>
 
         <FadeUp delay={100}>
-          <div className="mt-16 max-w-3xl mx-auto border-l-2 border-[#CA3C27] pl-6 py-2">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <div className="mt-16 max-w-3xl mx-auto border-l-2 border-itsco-red pl-6 py-2">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
               Why this matters
             </p>
-            <p className="text-base text-[#404040] leading-relaxed italic">
+            <p className="text-base text-itsco-body leading-relaxed italic">
               OCR is actively investigating AI-related HIPAA violations. FDA is expanding AI/ML regulation for clinical decision support. Payers are beginning to require AI governance documentation. The Compliance Platform keeps you defensible — continuously, not just at audit time.
             </p>
           </div>
@@ -454,7 +454,7 @@ function ROIProofSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 md:pb-28 lg:pb-32">
         <FadeUp>
           <div className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)] border border-white/10 rounded-2xl p-10 md:p-14 max-w-5xl mx-auto shadow-[0_8px_24px_rgba(0,0,0,0.18)]">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3 text-center">
               The Outcomes
             </p>
             <h3 className="text-2xl md:text-3xl font-bold text-white leading-[1.15] tracking-tight mb-10 text-center">
@@ -482,7 +482,7 @@ function ROIProofSection() {
             </div>
 
             <div className="mt-12 pt-12 border-t border-white/10 max-w-3xl mx-auto text-center">
-              <div className="w-8 h-[3px] bg-[#CA3C27] mx-auto mb-6" />
+              <div className="w-8 h-[3px] bg-itsco-red mx-auto mb-6" />
               <p className="text-lg md:text-xl text-white leading-[1.5] font-medium mb-6">
                 &ldquo;ITSco has provided our technical support for the past 22 years. They are reliable, honest, and have been a true partner through all our growth.&rdquo;
               </p>
@@ -512,7 +512,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Take Action
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">

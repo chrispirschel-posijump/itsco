@@ -98,12 +98,12 @@ function Hero() {
       <BackgroundOrbs variant="light" />
       <div className="relative max-w-4xl mx-auto px-6 lg:px-12 pt-44 pb-20 md:pt-52 md:pb-24 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
             Industries We Serve
           </p>
         </FadeUp>
         <FadeUp delay={100}>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
             IT engineered for{' '}
             <span
               className="bg-clip-text text-transparent"
@@ -114,7 +114,7 @@ function Hero() {
           </h1>
         </FadeUp>
         <FadeUp delay={200}>
-          <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-2xl mx-auto mb-10">
             ITSco brings 25+ years of experience to the specific compliance, uptime, and security
             demands of your field — across North Carolina, South Carolina, and Virginia.
           </p>
@@ -162,12 +162,12 @@ function BySize() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-24 md:pb-32">
         <FadeUp>
           <div className="max-w-2xl mb-10">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               By Company Size
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               IT that fits your{' '}
-              <span className="text-[#CA3C27]">stage of growth.</span>
+              <span className="text-itsco-red">stage of growth.</span>
             </h2>
           </div>
         </FadeUp>

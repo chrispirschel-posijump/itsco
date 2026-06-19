@@ -24,7 +24,7 @@ const CLIENTS = [
 
 function ClientLogos() {
   return (
-    <section className="bg-[#FAFAFA] border-b border-[#EBEBEB]">
+    <section className="bg-itsco-off-white border-b border-[#EBEBEB]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12">
         <FadeUp>
           <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#BBBBBB] mb-8 text-center">
@@ -51,13 +51,13 @@ function IntroSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
-              IT that actually <span className="text-[#CA3C27]">works for your business.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
+              IT that actually <span className="text-itsco-red">works for your business.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Most businesses don't have an IT problem. They have an alignment problem. Systems were built reactively. Vendors were added without a plan. Now the infrastructure meant to drive growth is holding it back.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Our managed IT services give your organization a single, accountable technology partner. We bring the engineering depth for complex environments and the business sense to make every dollar count.
             </p>
           </div>
@@ -71,15 +71,15 @@ function IntroSection() {
 
 function CapabilitiesSection() {
   return (
-    <section className="bg-[#FAFAFA] border-y border-[#EBEBEB]">
+    <section className="bg-itsco-off-white border-y border-[#EBEBEB]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-10">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               What's Included
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              A complete managed IT program. <span className="text-[#CA3C27]">Not upsells.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              A complete managed IT program. <span className="text-itsco-red">Not upsells.</span>
             </h2>
           </div>
         </FadeUp>
@@ -117,7 +117,7 @@ function MidCTA() {
     <section className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Ready to simplify your IT?
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">
@@ -144,11 +144,11 @@ function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Services
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Explore more from <span className="text-[#CA3C27]">ITSco.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Explore more from <span className="text-itsco-red">ITSco.</span>
             </h2>
           </div>
         </FadeUp>
@@ -182,10 +182,10 @@ export default function PageALite() {
         <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
           <div className="lg:max-w-[50%]">
             <FadeUp>
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">Managed IT Services</p>
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">Managed IT Services</p>
             </FadeUp>
             <FadeUp delay={100}>
-              <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-extrabold text-[#111111] leading-[1.0] tracking-tight mb-8">
+              <h1 className="text-6xl md:text-7xl lg:text-[5.5rem] font-extrabold text-itsco-dark leading-[1.0] tracking-tight mb-8">
                 Your IT.{" "}
                 <span
                   className="bg-clip-text text-transparent"
@@ -196,7 +196,7 @@ export default function PageALite() {
               </h1>
             </FadeUp>
             <FadeUp delay={200}>
-              <p className="text-lg text-[#404040] leading-relaxed max-w-[38ch] mb-10">
+              <p className="text-lg text-itsco-body leading-relaxed max-w-[38ch] mb-10">
                 Stop chasing IT problems. We manage your infrastructure, security, and cloud so your team stays focused on the work that grows your business.
               </p>
             </FadeUp>
@@ -242,22 +242,22 @@ export default function PageALite() {
       <RelatedServices />
 
       {/* 8. Location */}
-      <section className="bg-[#FAFAFA] border-t border-[#EBEBEB]">
+      <section className="bg-itsco-off-white border-t border-[#EBEBEB]">
         <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
           <FadeUp>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 lg:items-center">
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                   Our Office
                 </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
-                  Based in Durham. <span className="text-[#CA3C27]">Serving the Southeast.</span>
+                <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
+                  Based in Durham. <span className="text-itsco-red">Serving the Southeast.</span>
                 </h2>
-                <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-6">
+                <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-6">
                   We work with businesses across North Carolina, South Carolina, and Virginia. Our engineering team is headquartered in Durham, minutes from Research Triangle Park.
                 </p>
-                <address className="not-italic text-sm text-[#404040] leading-relaxed space-y-1">
-                  <p className="font-semibold text-[#111111]">ITSco</p>
+                <address className="not-italic text-sm text-itsco-body leading-relaxed space-y-1">
+                  <p className="font-semibold text-itsco-dark">ITSco</p>
                   <p>4601 Creekstone Drive, Suite 102</p>
                   <p>Durham, NC 27703</p>
                   <p className="mt-3 text-xs text-[#888]">Support: (919) 674-0044</p>

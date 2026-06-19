@@ -36,14 +36,14 @@ export default function NumberedManifesto({ items }: NumberedManifestoProps) {
           {/* Content */}
           <div className="md:col-span-9 lg:col-span-10">
             {item.eyebrow && (
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
                 {item.eyebrow}
               </p>
             )}
-            <h3 className="text-2xl md:text-3xl font-semibold text-[#111111] leading-snug mb-4">
+            <h3 className="text-2xl md:text-3xl font-semibold text-itsco-dark leading-snug mb-4">
               {item.title}
             </h3>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed max-w-3xl">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed max-w-3xl">
               {item.description}
             </p>
             {item.meta && (

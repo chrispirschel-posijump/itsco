@@ -27,9 +27,9 @@ export default function BookingCTA({ utmSuffix, image, imageAlt, backgroundImage
             sizes="100vw"
           />
           {/* Dark overlay — keeps text readable */}
-          <div className="absolute inset-0 bg-[#111111]/75" />
+          <div className="absolute inset-0 bg-itsco-dark/75" />
           {/* Subtle red tint from bottom */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#CA3C27]/10 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-itsco-red/10 via-transparent to-transparent" />
         </>
       )}
       <div className="relative max-w-7xl mx-auto px-6 lg:px-12 py-28 md:py-36">
@@ -38,8 +38,8 @@ export default function BookingCTA({ utmSuffix, image, imageAlt, backgroundImage
           /* Split layout when image is provided */
           <div className="flex flex-col lg:flex-row lg:items-center gap-16">
             <div className="lg:flex-1 max-w-2xl">
-              <div className="w-12 h-[2px] bg-[#CA3C27] mb-8" />
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <div className="w-12 h-[2px] bg-itsco-red mb-8" />
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 Free 30-Minute Consultation
               </p>
               <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight mb-4">
@@ -69,8 +69,8 @@ export default function BookingCTA({ utmSuffix, image, imageAlt, backgroundImage
         ) : (
           /* Centered layout (default) */
           <div className="max-w-2xl mx-auto text-center">
-            <div className="w-12 h-[2px] bg-[#CA3C27] mx-auto mb-8" />
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <div className="w-12 h-[2px] bg-itsco-red mx-auto mb-8" />
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Free 30-Minute Consultation
             </p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-white leading-[1.1] tracking-tight">

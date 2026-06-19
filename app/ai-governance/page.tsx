@@ -63,12 +63,12 @@ function Hero() {
       <div className="relative w-full max-w-7xl mx-auto px-6 lg:px-12 py-32 pt-44">
         <div className="max-w-4xl mx-auto text-center">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               AI &amp; Automation
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-6 max-w-[18ch] mx-auto">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-6 max-w-[18ch] mx-auto">
               AI Governance for the{" "}
               <span
                 className="bg-clip-text text-transparent"
@@ -79,7 +79,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-[52ch] mx-auto mt-6">
+            <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-[52ch] mx-auto mt-6">
               Shadow AI is already inside your organization. Discover, control, and govern every AI tool your employees use before it becomes a breach, a compliance failure, or a headline.
             </p>
           </FadeUp>
@@ -108,7 +108,7 @@ function Hero() {
                     value={s.value}
                     prefix={s.prefix}
                     suffix={s.suffix}
-                    className="text-3xl md:text-4xl font-extrabold text-[#111111] leading-none tracking-tight whitespace-nowrap block mb-3"
+                    className="text-3xl md:text-4xl font-extrabold text-itsco-dark leading-none tracking-tight whitespace-nowrap block mb-3"
                   />
                   <p className="text-xs text-[#555] leading-snug mb-2">
                     {s.label}
@@ -162,11 +162,11 @@ function GovernanceGaps() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14 mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The Problem
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              The 5 AI Governance <span className="text-[#CA3C27]">Gaps.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              The 5 AI Governance <span className="text-itsco-red">Gaps.</span>
             </h2>
           </div>
         </FadeUp>
@@ -179,10 +179,10 @@ function GovernanceGaps() {
                 key={g.title}
                 className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
               >
-                <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                  <Icon size={24} className="text-[#CA3C27]" />
+                <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                  <Icon size={24} className="text-itsco-red" />
                 </div>
-                <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3">
+                <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3">
                   {g.title}
                 </h3>
                 <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -236,13 +236,13 @@ function FrameworkSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-10 mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The Framework
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              The ITSco AI Governance <span className="text-[#CA3C27]">Framework.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              The ITSco AI Governance <span className="text-itsco-red">Framework.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Four layers. Complete coverage. No agents required.
             </p>
           </div>
@@ -270,15 +270,15 @@ function FrameworkSection() {
                 className="h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] flex flex-col"
               >
                 <div className="flex items-start justify-between mb-5">
-                  <div className="w-12 h-12 rounded-xl bg-[#111111] flex items-center justify-center">
+                  <div className="w-12 h-12 rounded-xl bg-itsco-dark flex items-center justify-center">
                     <Icon size={22} className="text-white" />
                   </div>
                   <span className="text-xs font-bold tabular-nums text-[#999]">{l.layer}</span>
                 </div>
-                <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#CA3C27] mb-2">
+                <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-red mb-2">
                   {l.name}
                 </p>
-                <h3 className="text-base font-semibold text-[#111111] leading-snug mb-3">
+                <h3 className="text-base font-semibold text-itsco-dark leading-snug mb-3">
                   {l.title}
                 </h3>
                 <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -309,13 +309,13 @@ function ComparisonSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               The Comparison
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-4">
-              Why governance beats <span className="text-[#CA3C27]">blocking.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-4">
+              Why governance beats <span className="text-itsco-red">blocking.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Bans push AI underground. Governance brings it into the light, where it can be measured, controlled, and made safe.
             </p>
           </div>
@@ -325,16 +325,16 @@ function ComparisonSection() {
           <div className="bg-itsco-paper border border-black/20 rounded-2xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] overflow-hidden">
             {/* Header row */}
             <div className="grid grid-cols-1 md:grid-cols-3 border-b border-black/20">
-              <div className="px-6 py-4 md:py-5 bg-[#111111]">
+              <div className="px-6 py-4 md:py-5 bg-itsco-dark">
                 <p className="text-xs font-bold uppercase tracking-[0.12em] text-white">Capability</p>
               </div>
               <div className="px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20 bg-[#CCCCCC] flex items-center gap-2">
-                <X size={14} className="text-[#111111] flex-shrink-0" />
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#111111]">Block-Everything Approach</p>
+                <X size={14} className="text-itsco-dark flex-shrink-0" />
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-itsco-dark">Block-Everything Approach</p>
               </div>
               <div className="px-6 py-4 md:py-5 border-t md:border-t-0 border-black/20 bg-itsco-card flex items-center gap-2">
-                <Check size={14} className="text-[#CA3C27] flex-shrink-0" />
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-[#CA3C27]">ITSco AI Governance</p>
+                <Check size={14} className="text-itsco-red flex-shrink-0" />
+                <p className="text-xs font-bold uppercase tracking-[0.12em] text-itsco-red">ITSco AI Governance</p>
               </div>
             </div>
 
@@ -344,14 +344,14 @@ function ComparisonSection() {
                 key={row.capability}
                 className={`grid grid-cols-1 md:grid-cols-3 ${i < COMPARISON.length - 1 ? 'border-b border-black/20' : ''}`}
               >
-                <div className="px-6 py-5 md:py-6 bg-[#111111]">
+                <div className="px-6 py-5 md:py-6 bg-itsco-dark">
                   <p className="text-sm font-bold uppercase tracking-[0.1em] text-white leading-snug">{row.capability}</p>
                 </div>
                 <div className="px-6 py-5 md:py-6 border-t md:border-t-0 border-black/20">
-                  <p className="text-sm text-[#404040] leading-relaxed">{row.blocking}</p>
+                  <p className="text-sm text-itsco-body leading-relaxed">{row.blocking}</p>
                 </div>
                 <div className="px-6 py-5 md:py-6 border-t md:border-t-0 border-black/20 bg-itsco-card">
-                  <p className="text-sm text-[#404040] leading-relaxed">{row.itsco}</p>
+                  <p className="text-sm text-itsco-body leading-relaxed">{row.itsco}</p>
                 </div>
               </div>
             ))}
@@ -377,7 +377,7 @@ function OutcomeStats() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-20 md:pb-28">
         <FadeUp>
           <div className="bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)] border border-white/10 rounded-2xl p-10 md:p-14 max-w-5xl mx-auto shadow-[0_8px_24px_rgba(0,0,0,0.18)]">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3 text-center">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3 text-center">
               Outcomes You Can Measure
             </p>
             <h3 className="text-2xl md:text-3xl font-bold text-white leading-[1.15] tracking-tight mb-10 text-center">
@@ -413,7 +413,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Stop guessing. Start governing.
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight max-w-xl">
@@ -440,13 +440,13 @@ function WhyITSco() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-3xl mx-auto text-center">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Why ITSco
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
-              Managed AI governance. <span className="text-[#CA3C27]">Run by the team that already runs your IT.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
+              Managed AI governance. <span className="text-itsco-red">Run by the team that already runs your IT.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-10">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-10">
               AI governance is not new technology. It is the same operating discipline we already apply to your network, your endpoints, and your security operations. We extend that rigor to every AI tool your team uses, under the same managed-service model you already trust us for.
             </p>
           </div>
@@ -461,8 +461,8 @@ function WhyITSco() {
               'Per-user, per-department, per-tool controls from a single management plane',
             ].map((point) => (
               <div key={point} className="flex gap-3 items-start">
-                <div className="w-1.5 h-1.5 rounded-full bg-[#CA3C27] mt-2.5 flex-shrink-0" />
-                <p className="text-sm md:text-base text-[#404040] leading-relaxed">{point}</p>
+                <div className="w-1.5 h-1.5 rounded-full bg-itsco-red mt-2.5 flex-shrink-0" />
+                <p className="text-sm md:text-base text-itsco-body leading-relaxed">{point}</p>
               </div>
             ))}
           </div>

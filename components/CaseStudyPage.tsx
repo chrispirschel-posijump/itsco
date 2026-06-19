@@ -89,7 +89,7 @@ function renderInlineBold(text: string): React.ReactNode {
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       return (
-        <strong key={i} className="font-semibold text-[#111111]">
+        <strong key={i} className="font-semibold text-itsco-dark">
           {part.slice(2, -2)}
         </strong>
       )
@@ -104,7 +104,7 @@ function Paragraphs({ items, top = false }: { items: string[]; top?: boolean }) 
       {items.map((p, pi) => (
         <p
           key={pi}
-          className="text-base md:text-lg text-[#404040] leading-relaxed"
+          className="text-base md:text-lg text-itsco-body leading-relaxed"
         >
           {renderInlineBold(p)}
         </p>
@@ -128,11 +128,11 @@ function Bullets({
         return (
           <li key={bi} className="flex gap-3.5 items-start">
             <span
-              className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-[#CA3C27] flex-shrink-0"
+              className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-itsco-red flex-shrink-0"
               aria-hidden
             />
             <div className="flex-1">
-              <span className="text-base md:text-lg text-[#404040] leading-relaxed">
+              <span className="text-base md:text-lg text-itsco-body leading-relaxed">
                 {renderInlineBold(text)}
               </span>
               {subItems && subItems.length > 0 && (
@@ -140,10 +140,10 @@ function Bullets({
                   {subItems.map((s, si) => (
                     <li key={si} className="flex gap-3 items-start">
                       <span
-                        className="mt-2.5 inline-block w-1 h-1 rounded-full bg-[#CA3C27]/70 flex-shrink-0"
+                        className="mt-2.5 inline-block w-1 h-1 rounded-full bg-itsco-red/70 flex-shrink-0"
                         aria-hidden
                       />
-                      <span className="text-base text-[#404040] leading-relaxed flex-1">
+                      <span className="text-base text-itsco-body leading-relaxed flex-1">
                         {renderInlineBold(s)}
                       </span>
                     </li>
@@ -170,11 +170,11 @@ function BoldBullets({
       {items.map((b, bi) => (
         <li key={bi} className="flex gap-3.5 items-start">
           <span
-            className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-[#CA3C27] flex-shrink-0"
+            className="mt-2 inline-block w-1.5 h-1.5 rounded-full bg-itsco-red flex-shrink-0"
             aria-hidden
           />
-          <span className="text-base md:text-lg text-[#404040] leading-relaxed flex-1">
-            <strong className="font-bold text-[#111111]">{b.lead}</strong>{' '}
+          <span className="text-base md:text-lg text-itsco-body leading-relaxed flex-1">
+            <strong className="font-bold text-itsco-dark">{b.lead}</strong>{' '}
             {renderInlineBold(b.rest)}
           </span>
         </li>
@@ -193,8 +193,8 @@ function PullQuote({
   top?: boolean
 }) {
   return (
-    <figure className={`${top ? '' : 'mt-8'} border-l-4 border-[#CA3C27] pl-6 py-2`}>
-      <blockquote className="text-lg md:text-xl text-[#111111] italic leading-relaxed">
+    <figure className={`${top ? '' : 'mt-8'} border-l-4 border-itsco-red pl-6 py-2`}>
+      <blockquote className="text-lg md:text-xl text-itsco-dark italic leading-relaxed">
         “{quote}”
       </blockquote>
       {attribution && (
@@ -310,7 +310,7 @@ export default function CaseStudyPage({ content }: { content: CaseStudyContent }
                 {highlights.map((h, i) => (
                   <FadeUp key={i} delay={i * 75}>
                     <div>
-                      <p className="text-3xl md:text-4xl font-extrabold text-[#111111] tracking-tight leading-none">
+                      <p className="text-3xl md:text-4xl font-extrabold text-itsco-dark tracking-tight leading-none">
                         {h.value}
                       </p>
                       <p className="text-xs text-[#555] mt-3 leading-snug uppercase tracking-[0.08em] font-semibold">
@@ -334,8 +334,8 @@ export default function CaseStudyPage({ content }: { content: CaseStudyContent }
                 >
                   {/* Section heading with red accent block */}
                   <div className="flex items-center gap-3 mb-6">
-                    <span className="inline-block w-1.5 h-7 bg-[#CA3C27] rounded-sm" />
-                    <h2 className="text-2xl md:text-3xl font-extrabold text-[#111111] tracking-tight">
+                    <span className="inline-block w-1.5 h-7 bg-itsco-red rounded-sm" />
+                    <h2 className="text-2xl md:text-3xl font-extrabold text-itsco-dark tracking-tight">
                       {s.heading}
                     </h2>
                   </div>
@@ -363,8 +363,8 @@ export default function CaseStudyPage({ content }: { content: CaseStudyContent }
                   )}
 
                   {s.pullQuote && !s.blocks && (
-                    <figure className="mt-8 border-l-4 border-[#CA3C27] pl-6 py-2">
-                      <blockquote className="text-lg md:text-xl text-[#111111] italic leading-relaxed">
+                    <figure className="mt-8 border-l-4 border-itsco-red pl-6 py-2">
+                      <blockquote className="text-lg md:text-xl text-itsco-dark italic leading-relaxed">
                         “{s.pullQuote.quote}”
                       </blockquote>
                       {s.pullQuote.attribution && (
@@ -394,12 +394,12 @@ export default function CaseStudyPage({ content }: { content: CaseStudyContent }
             <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24">
               <FadeUp>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-block w-1.5 h-7 bg-[#CA3C27] rounded-sm" />
-                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27]">
+                  <span className="inline-block w-1.5 h-7 bg-itsco-red rounded-sm" />
+                  <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red">
                     More from our clients
                   </p>
                 </div>
-                <h2 className="text-3xl md:text-4xl font-extrabold text-[#111111] tracking-tight mb-12 max-w-2xl">
+                <h2 className="text-3xl md:text-4xl font-extrabold text-itsco-dark tracking-tight mb-12 max-w-2xl">
                   Explore more case studies
                 </h2>
               </FadeUp>

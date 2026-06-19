@@ -29,12 +29,12 @@ function Hero() {
 
       <div className="relative w-full max-w-4xl mx-auto px-6 lg:px-12 py-36 pt-48 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
             {HERO.eyebrow}
           </p>
         </FadeUp>
         <FadeUp delay={100}>
-          <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8 max-w-[16ch] mx-auto">
+          <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8 max-w-[16ch] mx-auto">
             {HERO.headlineLead}{' '}
             <span
               className="bg-clip-text text-transparent"
@@ -45,12 +45,12 @@ function Hero() {
           </h1>
         </FadeUp>
         <FadeUp delay={200}>
-          <p className="text-lg md:text-xl text-[#404040] leading-relaxed mb-10 max-w-2xl mx-auto">{HERO.body}</p>
+          <p className="text-lg md:text-xl text-itsco-body leading-relaxed mb-10 max-w-2xl mx-auto">{HERO.body}</p>
         </FadeUp>
         <FadeUp delay={300}>
-          <div className="inline-block border border-[#CA3C27]/20 rounded-2xl bg-white/40 backdrop-blur-sm px-10 py-6 mb-10">
-            <p className="text-5xl md:text-6xl font-extrabold leading-none tracking-tight text-[#CA3C27]">{HERO.stat}</p>
-            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-[#404040]/70 mt-3">{HERO.statLabel}</p>
+          <div className="inline-block border border-itsco-red/20 rounded-2xl bg-white/40 backdrop-blur-sm px-10 py-6 mb-10">
+            <p className="text-5xl md:text-6xl font-extrabold leading-none tracking-tight text-itsco-red">{HERO.stat}</p>
+            <p className="text-xs font-semibold uppercase tracking-[0.1em] text-itsco-body/70 mt-3">{HERO.statLabel}</p>
           </div>
         </FadeUp>
         <FadeUp delay={400}>
@@ -79,20 +79,20 @@ function Intro() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {INTRO.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-8">
               {INTRO.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{INTRO.headlineAccent}</span>
+              <span className="text-itsco-red">{INTRO.headlineAccent}</span>
             </h2>
             <StaggerChildren stagger={80}>
               {INTRO.paragraphs.map((p, i) => (
                 <p
                   key={i}
-                  className={`text-base md:text-lg text-[#404040] leading-relaxed ${
+                  className={`text-base md:text-lg text-itsco-body leading-relaxed ${
                     i < INTRO.paragraphs.length - 1 ? 'mb-5' : ''
-                  } ${i === INTRO.paragraphs.length - 1 ? 'text-[#111111] font-semibold' : ''}`}
+                  } ${i === INTRO.paragraphs.length - 1 ? 'text-itsco-dark font-semibold' : ''}`}
                 >
                   {p}
                 </p>
@@ -106,6 +106,7 @@ function Intro() {
                 src={INTRO.image}
                 alt={INTRO.imageAlt}
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 42vw"
               />
@@ -124,12 +125,12 @@ function TeamGrid() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Senior Leadership
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               People who understand how to{' '}
-              <span className="text-[#CA3C27]">leverage IT for your business.</span>
+              <span className="text-itsco-red">leverage IT for your business.</span>
             </h2>
           </div>
         </FadeUp>
@@ -153,32 +154,32 @@ function TeamGrid() {
 function Philosophy() {
   const consultationHref = `${CALENDLY_BASE}?utm_source=website&utm_medium=cta&utm_campaign=${PHILOSOPHY.consultationUtmSuffix}`
   const linkClass =
-    'text-[#CA3C27] font-semibold underline decoration-[#CA3C27]/30 decoration-2 underline-offset-4 hover:decoration-[#CA3C27] hover:text-[#B4311E] transition-colors duration-200'
+    'text-itsco-red font-semibold underline decoration-itsco-red/30 decoration-2 underline-offset-4 hover:decoration-itsco-red hover:text-itsco-red-dark transition-colors duration-200'
 
   return (
     <section className="bg-itsco-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16">
           <FadeUp className="lg:col-span-3">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {PHILOSOPHY.eyebrow}
             </p>
-            <div className="hidden lg:block w-12 h-px bg-[#CA3C27]/40 mb-4" />
-            <p className="text-2xl md:text-3xl font-bold text-[#111111] tracking-tight leading-snug">
+            <div className="hidden lg:block w-12 h-px bg-itsco-red/40 mb-4" />
+            <p className="text-2xl md:text-3xl font-bold text-itsco-dark tracking-tight leading-snug">
               {PHILOSOPHY.slogan}
             </p>
           </FadeUp>
 
           <FadeUp delay={120} className="lg:col-span-9">
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-8 max-w-2xl">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-8 max-w-2xl">
               {PHILOSOPHY.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{PHILOSOPHY.headlineAccent}</span>
+              <span className="text-itsco-red">{PHILOSOPHY.headlineAccent}</span>
             </h2>
             <div className="max-w-2xl">
               {PHILOSOPHY.paragraphs.map((p, i) => (
-                <p key={i} className="text-base md:text-lg text-[#404040] leading-relaxed mb-5">{p}</p>
+                <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed mb-5">{p}</p>
               ))}
-              <p className="mt-6 text-base md:text-lg text-[#404040] leading-relaxed">
+              <p className="mt-6 text-base md:text-lg text-itsco-body leading-relaxed">
                 Curious about the discipline behind every engagement? Read about{' '}
                 <Link href="/process/" className={linkClass}>
                   our process
@@ -203,27 +204,27 @@ function ServiceArea() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="lg:col-span-5">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {SERVICE_AREA.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {SERVICE_AREA.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{SERVICE_AREA.headlineAccent}</span>
+              <span className="text-itsco-red">{SERVICE_AREA.headlineAccent}</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-8">{SERVICE_AREA.body}</p>
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-8">{SERVICE_AREA.body}</p>
             <div className="flex items-start gap-3 mb-6">
-              <div className="w-10 h-10 rounded-lg bg-[#111111] flex items-center justify-center flex-shrink-0">
+              <div className="w-10 h-10 rounded-lg bg-itsco-dark flex items-center justify-center flex-shrink-0">
                 <MapPin size={18} className="text-white" />
               </div>
               <div>
-                <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#404040]/70 mb-1">
+                <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-body/70 mb-1">
                   Business office
                 </p>
                 <a
                   href={SERVICE_AREA.mapLink}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-base font-semibold text-[#111111] hover:text-[#CA3C27] transition-colors duration-200"
+                  className="text-base font-semibold text-itsco-dark hover:text-itsco-red transition-colors duration-200"
                 >
                   {SERVICE_AREA.address}
                 </a>
@@ -255,11 +256,11 @@ function Testimonials() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-16">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               In Their Words
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              What our clients <span className="text-[#CA3C27]">are saying.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              What our clients <span className="text-itsco-red">are saying.</span>
             </h2>
           </div>
         </FadeUp>
@@ -275,27 +276,27 @@ function TrustedSource() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
           <FadeUp className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {TRUSTED_SOURCE.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {TRUSTED_SOURCE.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{TRUSTED_SOURCE.headlineAccent}</span>
+              <span className="text-itsco-red">{TRUSTED_SOURCE.headlineAccent}</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-10">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-10">
               {TRUSTED_SOURCE.body}
             </p>
 
-            <h3 className="text-lg md:text-xl font-bold text-[#111111] tracking-tight mb-5">
+            <h3 className="text-lg md:text-xl font-bold text-itsco-dark tracking-tight mb-5">
               {TRUSTED_SOURCE.whyHeading}
             </h3>
             <ul className="space-y-3">
               {TRUSTED_SOURCE.reasons.map((r) => (
                 <li key={r} className="flex items-start gap-3">
-                  <div className="w-6 h-6 rounded-md bg-[#CA3C27]/10 flex items-center justify-center flex-shrink-0 mt-0.5">
-                    <Check size={14} className="text-[#CA3C27]" />
+                  <div className="w-6 h-6 rounded-md bg-itsco-red/10 flex items-center justify-center flex-shrink-0 mt-0.5">
+                    <Check size={14} className="text-itsco-red" />
                   </div>
-                  <span className="text-base text-[#404040] leading-relaxed">{r}</span>
+                  <span className="text-base text-itsco-body leading-relaxed">{r}</span>
                 </li>
               ))}
             </ul>
@@ -312,10 +313,10 @@ function TrustedSource() {
                   sizes="160px"
                 />
               </div>
-              <p className="text-xs font-bold uppercase tracking-[0.1em] text-[#404040]/70 mb-2">
+              <p className="text-xs font-bold uppercase tracking-[0.1em] text-itsco-body/70 mb-2">
                 {TRUSTED_SOURCE.accreditation.label}
               </p>
-              <p className="text-base text-[#111111] leading-relaxed">
+              <p className="text-base text-itsco-dark leading-relaxed">
                 {TRUSTED_SOURCE.accreditation.body}
               </p>
             </div>

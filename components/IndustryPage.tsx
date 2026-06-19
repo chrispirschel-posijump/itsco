@@ -110,12 +110,12 @@ function Hero({ content }: { content: IndustryContent }) {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:ml-[52%] lg:pl-12 lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               {hero.eyebrow}
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               {hero.headlineLead}{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -127,7 +127,7 @@ function Hero({ content }: { content: IndustryContent }) {
           </FadeUp>
           {hero.body && (
             <FadeUp delay={200}>
-              <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">{hero.body}</p>
+              <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">{hero.body}</p>
             </FadeUp>
           )}
           <FadeUp delay={300}>
@@ -158,12 +158,12 @@ function CapabilitiesSection({ content }: { content: IndustryContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {capabilitiesHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {capabilitiesHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{capabilitiesHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{capabilitiesHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -174,10 +174,10 @@ function CapabilitiesSection({ content }: { content: IndustryContent }) {
               key={c.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                <DynamicIcon slug={c.slug} size={24} className="text-[#CA3C27]" />
+              <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                <DynamicIcon slug={c.slug} size={24} className="text-itsco-red" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">{c.title}</h3>
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">{c.title}</h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">{c.description}</p>
             </div>
           ))}
@@ -210,17 +210,17 @@ function PillarSection({ pillar, bg }: { pillar: IndustryPillar; bg: string }) {
           </FadeUp>
 
           <FadeUp delay={100} className={`${textOrder} lg:col-span-7`}>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {pillar.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               {pillar.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{pillar.headlineAccent}</span>
+              <span className="text-itsco-red">{pillar.headlineAccent}</span>
             </h2>
             {pillar.paragraphs.map((p, i) => (
               <p
                 key={i}
-                className={`text-base md:text-lg text-[#404040] leading-relaxed ${
+                className={`text-base md:text-lg text-itsco-body leading-relaxed ${
                   i < pillar.paragraphs.length - 1 ? 'mb-4' : ''
                 }`}
               >
@@ -246,7 +246,7 @@ function MidCTA({ content }: { content: IndustryContent }) {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             {midCta.eyebrow}
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-[1.1] tracking-tight max-w-2xl">
@@ -270,12 +270,12 @@ function CaseStudiesSection({ content }: { content: IndustryContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {caseStudies.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {caseStudies.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{caseStudies.headlineAccent}</span>
+              <span className="text-itsco-red">{caseStudies.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -313,12 +313,12 @@ function FAQSection({ content }: { content: IndustryContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {faqHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {faqHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{faqHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{faqHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>
@@ -329,13 +329,13 @@ function FAQSection({ content }: { content: IndustryContent }) {
             const lastIndex = f.answer.length - 1
             return (
               <div key={i} className="py-7">
-                <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+                <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
                   {f.question}
                 </h3>
                 {f.answer.map((p, pi) => {
                   const spacing = pi < lastIndex ? 'mb-3' : ''
                   return (
-                    <p key={pi} className={`text-base text-[#404040] leading-relaxed ${spacing}`}>
+                    <p key={pi} className={`text-base text-itsco-body leading-relaxed ${spacing}`}>
                       {p}
                       {showInlineCta && pi === lastIndex && (
                         <>
@@ -344,7 +344,7 @@ function FAQSection({ content }: { content: IndustryContent }) {
                             href={faqCalendly}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+                            className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
                           >
                             Book a free consultation
                           </a>{' '}
@@ -370,12 +370,12 @@ function RelatedServices({ content }: { content: IndustryContent }) {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               {relatedHeading.eyebrow}
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               {relatedHeading.headlineLead}{' '}
-              <span className="text-[#CA3C27]">{relatedHeading.headlineAccent}</span>
+              <span className="text-itsco-red">{relatedHeading.headlineAccent}</span>
             </h2>
           </div>
         </FadeUp>

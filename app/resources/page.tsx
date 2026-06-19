@@ -51,12 +51,12 @@ function Hero() {
       <BackgroundOrbs variant="light" />
       <div className="relative max-w-4xl mx-auto px-6 lg:px-12 pt-44 pb-20 md:pt-52 md:pb-24 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
             Resources
           </p>
         </FadeUp>
         <FadeUp delay={100}>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
             Insights to make IT a{' '}
             <span
               className="bg-clip-text text-transparent"
@@ -67,7 +67,7 @@ function Hero() {
           </h1>
         </FadeUp>
         <FadeUp delay={200}>
-          <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-2xl mx-auto mb-10">
             Guides, articles, case studies, and white papers from the ITSco team — practical
             knowledge to help you get more from your technology.
           </p>

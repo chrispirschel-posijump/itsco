@@ -207,7 +207,7 @@ function FlyoutItem({ item }: { item: NavChild }) {
         <div className="rounded-xl bg-[#1C1C1C] border border-white/10 shadow-2xl p-2">
           <Link
             href={item.href}
-            className="block px-3 py-2 text-xs font-bold uppercase tracking-[0.1em] text-[#CA3C27] hover:text-white hover:bg-white/5 rounded-lg transition-[color,background-color] duration-150"
+            className="block px-3 py-2 text-xs font-bold uppercase tracking-[0.1em] text-itsco-red hover:text-white hover:bg-white/5 rounded-lg transition-[color,background-color] duration-150"
           >
             All {item.label} →
           </Link>
@@ -287,7 +287,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
       ref={headerRef}
       className={`w-full fixed top-0 left-0 right-0 z-40 transition-[background-color,backdrop-filter] duration-300 ${
         scrolled
-          ? "bg-[#111111]/90 backdrop-blur-md"
+          ? "bg-itsco-dark/90 backdrop-blur-md"
           : "bg-transparent"
       }`}
     >
@@ -318,8 +318,8 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
                 <button
                   className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
                     activeDropdown === item.label
-                      ? (showDarkText ? "text-[#111111]" : "text-white")
-                      : (showDarkText ? "text-[#111111]/70 hover:text-[#111111]" : "text-white/70 hover:text-white")
+                      ? (showDarkText ? "text-itsco-dark" : "text-white")
+                      : (showDarkText ? "text-itsco-dark/70 hover:text-itsco-dark" : "text-white/70 hover:text-white")
                   }`}
                   onClick={() =>
                     setActiveDropdown(activeDropdown === item.label ? null : item.label)
@@ -337,7 +337,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
                 <Link
                   href={item.href}
                   className={`block px-3 py-2 text-sm font-medium transition-colors duration-200 ${
-                    showDarkText ? "text-[#111111]/70 hover:text-[#111111]" : "text-white/70 hover:text-white"
+                    showDarkText ? "text-itsco-dark/70 hover:text-itsco-dark" : "text-white/70 hover:text-white"
                   }`}
                 >
                   {item.label}
@@ -357,7 +357,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
             href={ctaHref}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-5 py-2.5 text-sm font-semibold text-white bg-[#CA3C27] rounded-lg hover:bg-[#B4311E] transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#CA3C27] active:scale-[0.98]"
+            className="inline-block px-5 py-2.5 text-sm font-semibold text-white bg-itsco-red rounded-lg hover:bg-itsco-red-dark transition-[background-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red active:scale-[0.98]"
           >
             Book a Consultation
           </a>
@@ -365,8 +365,8 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
 
         {/* Mobile hamburger */}
         <button
-          className={`lg:hidden p-2 -mr-1 transition-[color,opacity] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded ${
-            showDarkText ? "text-[#111111] hover:text-[#111111]/70" : "text-white hover:text-white/80"
+          className={`lg:hidden p-2 -mr-1 transition-[color,opacity] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded ${
+            showDarkText ? "text-itsco-dark hover:text-itsco-dark/70" : "text-white hover:text-white/80"
           }`}
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -377,7 +377,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
 
       {/* Mobile full-screen overlay */}
       {mobileOpen && (
-        <div className="lg:hidden fixed inset-0 bg-[#111111] z-50 flex flex-col">
+        <div className="lg:hidden fixed inset-0 bg-itsco-dark z-50 flex flex-col">
           {/* Mobile header row */}
           <div className="flex items-center justify-between px-6 h-16 flex-shrink-0">
             <Link href="/" onClick={() => setMobileOpen(false)}>
@@ -452,7 +452,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
               href={ctaHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full text-center px-5 py-4 text-base font-semibold text-white bg-[#CA3C27] rounded-lg hover:bg-[#B4311E] transition-colors duration-200"
+              className="block w-full text-center px-5 py-4 text-base font-semibold text-white bg-itsco-red rounded-lg hover:bg-itsco-red-dark transition-colors duration-200"
               onClick={() => setMobileOpen(false)}
             >
               Book a Consultation

@@ -19,12 +19,12 @@ export default function NotFound() {
           <div className="relative flex-1 flex items-center">
             <div className="w-full max-w-3xl mx-auto px-6 lg:px-12 py-32 pt-44 text-center">
               <FadeUp>
-                <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+                <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
                   404 — Page Not Found
                 </p>
               </FadeUp>
               <FadeUp delay={100}>
-                <h1 className="text-5xl md:text-6xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+                <h1 className="text-5xl md:text-6xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
                   This page doesn&apos;t exist{' '}
                   <span
                     className="bg-clip-text text-transparent"
@@ -35,7 +35,7 @@ export default function NotFound() {
                 </h1>
               </FadeUp>
               <FadeUp delay={200}>
-                <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-xl mx-auto mb-10">
+                <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-xl mx-auto mb-10">
                   Sorry — the page you&apos;re looking for hasn&apos;t been built yet, or may have
                   moved. Let&apos;s get you back on track.
                 </p>

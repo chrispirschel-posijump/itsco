@@ -115,7 +115,7 @@ function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
             return (
               <h2
                 key={i}
-                className="text-2xl md:text-3xl font-bold text-[#111111] tracking-tight leading-snug mt-12 mb-4 first:mt-0"
+                className="text-2xl md:text-3xl font-bold text-itsco-dark tracking-tight leading-snug mt-12 mb-4 first:mt-0"
               >
                 {block.text}
               </h2>
@@ -125,7 +125,7 @@ function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
             return (
               <h3
                 key={i}
-                className="text-lg md:text-xl font-semibold text-[#111111] tracking-tight leading-snug mt-8 mb-3"
+                className="text-lg md:text-xl font-semibold text-itsco-dark tracking-tight leading-snug mt-8 mb-3"
               >
                 {block.text}
               </h3>
@@ -133,9 +133,9 @@ function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
           }
           if (block.type === 'ul') {
             return (
-              <ul key={i} className="list-disc pl-6 marker:text-[#CA3C27] space-y-2 mb-6">
+              <ul key={i} className="list-disc pl-6 marker:text-itsco-red space-y-2 mb-6">
                 {block.items.map((item, j) => (
-                  <li key={j} className="text-base md:text-lg text-[#404040] leading-relaxed pl-1">
+                  <li key={j} className="text-base md:text-lg text-itsco-body leading-relaxed pl-1">
                     {item}
                   </li>
                 ))}
@@ -143,7 +143,7 @@ function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
             )
           }
           return (
-            <p key={i} className="text-base md:text-lg text-[#404040] leading-[1.8] mb-5">
+            <p key={i} className="text-base md:text-lg text-itsco-body leading-[1.8] mb-5">
               {block.text}
             </p>
           )
@@ -159,7 +159,7 @@ function TopicCTA({ category }: { category: string }) {
     <section className="bg-itsco-blush">
       <div className="max-w-3xl mx-auto px-6 lg:px-12 pb-16 md:pb-20">
         <div className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-8 md:p-10 text-center shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
-          <h2 className="text-2xl md:text-3xl font-bold text-[#111111] tracking-tight mb-6">
+          <h2 className="text-2xl md:text-3xl font-bold text-itsco-dark tracking-tight mb-6">
             {cta.text}
           </h2>
           <CTAButton href={cta.href} label={cta.label} className="px-8 py-4 rounded-xl text-base" />
@@ -176,8 +176,8 @@ function RelatedPosts({ slug }: { slug: string }) {
     <section className="bg-itsco-paper">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
         <FadeUp>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#111111] tracking-tight mb-10">
-            More from the <span className="text-[#CA3C27]">ITSco blog.</span>
+          <h2 className="text-2xl md:text-3xl font-bold text-itsco-dark tracking-tight mb-10">
+            More from the <span className="text-itsco-red">ITSco blog.</span>
           </h2>
         </FadeUp>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

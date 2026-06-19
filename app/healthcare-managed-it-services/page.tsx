@@ -126,12 +126,12 @@ function Hero() {
       <div className="relative flex-1 flex items-center w-full max-w-7xl mx-auto px-6 lg:px-12 py-36 pt-48">
         <div className="lg:ml-[52%] lg:pl-12 lg:max-w-[48%]">
           <FadeUp>
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
               Healthcare IT
             </p>
           </FadeUp>
           <FadeUp delay={100}>
-            <h1 className="text-5xl md:text-6xl lg:text-[3.75rem] font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+            <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
               Managed IT services for{' '}
               <span
                 className="bg-clip-text text-transparent"
@@ -142,7 +142,7 @@ function Hero() {
             </h1>
           </FadeUp>
           <FadeUp delay={200}>
-            <p className="text-lg text-[#404040] leading-relaxed mb-10 max-w-xl">
+            <p className="text-lg text-itsco-body leading-relaxed mb-10 max-w-xl">
               Unlock Tangible Value with Our Healthcare IT Solutions. HIPAA-aligned managed IT, cybersecurity, and 24/7 helpdesk for clinical organizations across NC, SC, and VA.
             </p>
           </FadeUp>
@@ -175,11 +175,11 @@ function CapabilitiesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Complete IT Solutions
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Healthcare IT, <span className="text-[#CA3C27]">end to end.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Healthcare IT, <span className="text-itsco-red">end to end.</span>
             </h2>
           </div>
         </FadeUp>
@@ -190,10 +190,10 @@ function CapabilitiesSection() {
               key={c.title}
               className="h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300"
             >
-              <div className="w-12 h-12 rounded-xl bg-[#CA3C27]/10 flex items-center justify-center mb-5 flex-shrink-0">
-                <DynamicIcon slug={c.slug} size={24} className="text-[#CA3C27]" />
+              <div className="w-12 h-12 rounded-xl bg-itsco-red/10 flex items-center justify-center mb-5 flex-shrink-0">
+                <DynamicIcon slug={c.slug} size={24} className="text-itsco-red" />
               </div>
-              <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-2">
+              <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">
                 {c.title}
               </h3>
               <p className="text-sm text-[#555] leading-relaxed flex-1">
@@ -215,19 +215,19 @@ function BoostProductivitySection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="order-2 lg:order-1 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Predictable Costs, Predictable IT
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
-              Boost productivity, <span className="text-[#CA3C27]">slash costs.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
+              Boost productivity, <span className="text-itsco-red">slash costs.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Choose a full-service managed IT services provider to minimize administrative overheads while optimizing productivity across your teams.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Benefit from reduced IT costs, enhanced network stability, and less time spent resolving IT issues, all while gaining complete visibility into your IT spending.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Experience a seamless IT solution with one trusted partner, whether you operate a single location or multiple locations.
             </p>
           </FadeUp>
@@ -269,19 +269,19 @@ function FlexibleSupportSection() {
           </FadeUp>
 
           <FadeUp delay={100} className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Always-On Support
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
-              Flexible support, <span className="text-[#CA3C27]">anywhere.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
+              Flexible support, <span className="text-itsco-red">anywhere.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Rest easy knowing your IT is continuously monitored and managed by a trusted 24/7 IT company.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Resolve IT issues promptly with remote assistance from our team, while critical issues are handled by our certified professionals.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Experience the responsiveness of an in-house IT team when you partner with one of the top managed services providers.
             </p>
           </FadeUp>
@@ -297,23 +297,23 @@ function HumanSupportSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           <FadeUp className="order-2 lg:order-1 lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Real Humans, Real Help
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Human-based{' '}
-              <span className="text-[#CA3C27]">24/7 IT support.</span>
+              <span className="text-itsco-red">24/7 IT support.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Imagine having a personal IT squad available 24/7, ready to provide assistance at any time.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Say goodbye to impersonal automated replies and frustrating wait times. With our high live call answer rate, we are the solution to your tech troubles.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Your agents can reach our support team on-the-go through their mobile devices. This ensures quick access to assistance, even when they encounter urgent IT issues while working remotely.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Real people, real solutions &ndash; that&apos;s our commitment to keeping your healthcare practice agile and running smoothly.
             </p>
           </FadeUp>
@@ -355,23 +355,23 @@ function GenuineServiceSection() {
           </FadeUp>
 
           <FadeUp delay={100} className="lg:col-span-7">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Service That Goes Above
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight mb-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight mb-6">
               Genuine service from{' '}
-              <span className="text-[#CA3C27]">real experts.</span>
+              <span className="text-itsco-red">real experts.</span>
             </h2>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Other managed services providers meet their minimum contractual obligations, but our SLOs go above and beyond every time.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Exceptional service is ingrained in our team&apos;s core values, evident through our live customer satisfaction counter on our website.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed mb-4">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
               Experience personable service from real people who truly understand your business and its unique needs.
             </p>
-            <p className="text-base md:text-lg text-[#404040] leading-relaxed">
+            <p className="text-base md:text-lg text-itsco-body leading-relaxed">
               Partner with an award-winning IT provider that consistently maintains an average CSAT score of 90% or higher.
             </p>
           </FadeUp>
@@ -394,7 +394,7 @@ function MidCTA() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-24 flex flex-col md:flex-row md:items-center md:justify-between gap-8">
         <div>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-3">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-3">
             Optimal IT Efficiency for Enhanced Patient Care
           </p>
           <h2 className="text-3xl md:text-4xl font-extrabold text-white leading-[1.1] tracking-tight max-w-2xl">
@@ -419,12 +419,12 @@ function CaseStudiesSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Success Stories
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
               Engineering excellence,{' '}
-              <span className="text-[#CA3C27]">delivered.</span>
+              <span className="text-itsco-red">delivered.</span>
             </h2>
           </div>
         </FadeUp>
@@ -479,11 +479,11 @@ function FAQSection() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Healthcare IT Service FAQs
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Frequently asked <span className="text-[#CA3C27]">questions.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Frequently asked <span className="text-itsco-red">questions.</span>
             </h2>
           </div>
         </FadeUp>
@@ -491,10 +491,10 @@ function FAQSection() {
         <StaggerChildren stagger={80} className="divide-y divide-[#EBEBEB] max-w-4xl">
           {FAQS.map((f, i) => (
             <div key={i} className="py-7">
-              <h3 className="text-lg md:text-xl font-semibold text-[#111111] leading-snug mb-3">
+              <h3 className="text-lg md:text-xl font-semibold text-itsco-dark leading-snug mb-3">
                 {f.question}
               </h3>
-              <p className="text-base text-[#404040] leading-relaxed">
+              <p className="text-base text-itsco-body leading-relaxed">
                 {i === 3 ? (
                   <>
                     We recognize the unique and evolving requirements of healthcare organizations in Healthcare Managed IT Services. With us, you have the freedom to pay for the specific services you need, ensuring complete control over your budget. Our flexible delivery models can be easily scaled up or down to accommodate your changing needs, without binding you to lengthy contracts.{' '}
@@ -502,7 +502,7 @@ function FAQSection() {
                       href={FAQ_CALENDLY}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#CA3C27] font-semibold underline underline-offset-4 decoration-[#CA3C27]/30 hover:decoration-[#CA3C27] transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 rounded-sm"
+                      className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
                     >
                       Book a free consultation
                     </a>{' '}
@@ -528,11 +528,11 @@ function RelatedServices() {
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
         <FadeUp>
           <div className="max-w-2xl mb-14">
-            <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
               Related Services
             </p>
-            <h2 className="text-3xl md:text-4xl font-bold text-[#111111] leading-[1.15] tracking-tight">
-              Explore more from <span className="text-[#CA3C27]">ITSco.</span>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              Explore more from <span className="text-itsco-red">ITSco.</span>
             </h2>
           </div>
         </FadeUp>

@@ -75,8 +75,8 @@ export default function HeroSection({
             className="object-cover object-center"
             sizes="52vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-[#111111] via-[#111111]/55 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-r from-itsco-dark via-itsco-dark/55 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-itsco-dark/60 via-transparent to-transparent" />
         </div>
       )}
       {!isVariantC && image && imagePosition === "left" && (
@@ -89,8 +89,8 @@ export default function HeroSection({
             className="object-cover object-center"
             sizes="52vw"
           />
-          <div className="absolute inset-0 bg-gradient-to-l from-[#111111] via-[#111111]/55 to-transparent" />
-          <div className="absolute inset-0 bg-gradient-to-t from-[#111111]/60 via-transparent to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-l from-itsco-dark via-itsco-dark/55 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-t from-itsco-dark/60 via-transparent to-transparent" />
         </div>
       )}
 
@@ -100,7 +100,7 @@ export default function HeroSection({
         {isVariantC && (
           <div className="max-w-3xl mx-auto text-center">
             {eyebrow && (
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 {eyebrow}
               </p>
             )}
@@ -154,7 +154,7 @@ export default function HeroSection({
             ""
           }`}>
             {eyebrow && (
-              <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-4">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
                 {eyebrow}
               </p>
             )}

@@ -64,12 +64,12 @@ export default function TestimonialsRotator({
             >
               {items.map((t, i) => (
                 <figure key={`${p}-${i}-${t.name}`} className="flex flex-col">
-                  <div className="w-8 h-[3px] bg-[#CA3C27] mb-6" />
-                  <blockquote className="text-base md:text-lg text-[#111111] leading-[1.6] font-medium mb-6 flex-1">
+                  <div className="w-8 h-[3px] bg-itsco-red mb-6" />
+                  <blockquote className="text-base md:text-lg text-itsco-dark leading-[1.6] font-medium mb-6 flex-1">
                     &ldquo;{t.quote}&rdquo;
                   </blockquote>
                   <figcaption className="text-sm text-[#555] leading-snug">
-                    <span className="block font-semibold text-[#404040]">{t.name}</span>
+                    <span className="block font-semibold text-itsco-body">{t.name}</span>
                     <span className="block">{t.title}, {t.company}</span>
                   </figcaption>
                 </figure>
@@ -86,9 +86,9 @@ export default function TestimonialsRotator({
               key={i}
               onClick={() => setPage(i)}
               aria-label={`Show testimonial set ${i + 1}`}
-              className={`h-2 rounded-full transition-[width,background-color] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:opacity-70 ${
+              className={`h-2 rounded-full transition-[width,background-color] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 ${
                 i === page
-                  ? "w-8 bg-[#CA3C27]"
+                  ? "w-8 bg-itsco-red"
                   : "w-2 bg-[#CCCCCC] hover:bg-[#888]"
               }`}
             />

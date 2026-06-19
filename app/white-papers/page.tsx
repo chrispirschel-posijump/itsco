@@ -159,12 +159,12 @@ function Hero() {
       <BackgroundOrbs variant="light" />
       <div className="relative max-w-4xl mx-auto px-6 lg:px-12 pt-44 pb-20 md:pt-52 md:pb-24 text-center">
         <FadeUp>
-          <p className="text-xs font-bold uppercase tracking-[0.15em] text-[#CA3C27] mb-6">
+          <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-6">
             White Papers
           </p>
         </FadeUp>
         <FadeUp delay={100}>
-          <h1 className="text-5xl md:text-6xl font-extrabold text-[#111111] leading-[1.05] tracking-tight mb-8">
+          <h1 className="text-5xl md:text-6xl font-extrabold text-itsco-dark leading-[1.05] tracking-tight mb-8">
             In-depth research from{' '}
             <span
               className="bg-clip-text text-transparent"
@@ -175,7 +175,7 @@ function Hero() {
           </h1>
         </FadeUp>
         <FadeUp delay={200}>
-          <p className="text-lg md:text-xl text-[#404040] leading-relaxed max-w-2xl mx-auto mb-10">
+          <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-2xl mx-auto mb-10">
             Original research on AI strategy, cybersecurity, cloud architecture, ITAD, and the sustainable
             management of IT infrastructure. Free to read. Free to download. No gate.
           </p>
@@ -211,8 +211,8 @@ function PapersByCategory() {
             <div key={cat.key} className="mb-20 last:mb-0">
               <FadeUp>
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="inline-block w-1.5 h-7 bg-[#CA3C27] rounded-sm" />
-                  <h2 className="text-2xl md:text-3xl font-extrabold text-[#111111] tracking-tight">
+                  <span className="inline-block w-1.5 h-7 bg-itsco-red rounded-sm" />
+                  <h2 className="text-2xl md:text-3xl font-extrabold text-itsco-dark tracking-tight">
                     {cat.key}
                   </h2>
                 </div>
@@ -226,19 +226,19 @@ function PapersByCategory() {
                   <Link
                     key={p.slug}
                     href={p.href}
-                    className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-[#CA3C27] active:scale-[0.99]"
+                    className="group flex flex-col h-full bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:scale-[0.99]"
                   >
                     <div className="flex items-center gap-2 mb-4">
-                      <FileText size={14} className="text-[#CA3C27]" />
-                      <span className="text-xs font-semibold uppercase tracking-[0.12em] text-[#CA3C27]">
+                      <FileText size={14} className="text-itsco-red" />
+                      <span className="text-xs font-semibold uppercase tracking-[0.12em] text-itsco-red">
                         White Paper
                       </span>
                     </div>
-                    <h3 className="text-lg font-semibold text-[#111111] leading-snug mb-3 tracking-tight group-hover:text-[#CA3C27] transition-[color] duration-200">
+                    <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-3 tracking-tight group-hover:text-itsco-red transition-[color] duration-200">
                       {p.title}
                     </h3>
                     <p className="text-sm text-[#555] leading-relaxed flex-1 mb-5">{p.description}</p>
-                    <div className="flex items-center gap-1.5 text-xs font-semibold text-[#404040] uppercase tracking-[0.08em] group-hover:text-[#CA3C27] transition-[color] duration-200">
+                    <div className="flex items-center gap-1.5 text-xs font-semibold text-itsco-body uppercase tracking-[0.08em] group-hover:text-itsco-red transition-[color] duration-200">
                       Read white paper
                       <ArrowRight
                         size={12}
