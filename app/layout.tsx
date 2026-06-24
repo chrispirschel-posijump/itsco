@@ -27,10 +27,6 @@ export const metadata: Metadata = {
   // Global Open Graph defaults. Individual pages can override with page-
   // specific titles, descriptions, and images via their own metadata exports
   // — anything they don't set inherits from these defaults.
-  // TODO before launch: drop a 1200x630 PNG at /public/images/og-default.png
-  // and uncomment the `images` blocks below. Until then, social cards will
-  // render with title + description only (no image), which is better than a
-  // broken 404 image preview.
   openGraph: {
     type: "website",
     siteName: "ITSco",
@@ -39,21 +35,21 @@ export const metadata: Metadata = {
     title: "ITSco | The ROI-Driven IT Services Company",
     description:
       "Managed IT services, cybersecurity & compliance, and cloud solutions for businesses in NC, SC, and VA. Trusted since 1996.",
-    // images: [
-    //   {
-    //     url: "/images/og-default.png",
-    //     width: 1200,
-    //     height: 630,
-    //     alt: "ITSco — The ROI-Driven IT Services Company",
-    //   },
-    // ],
+    images: [
+      {
+        url: "/images/og-default.png",
+        width: 1200,
+        height: 630,
+        alt: "ITSco — The ROI-Driven IT Services Company",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "ITSco | The ROI-Driven IT Services Company",
     description:
       "Managed IT services, cybersecurity & compliance, and cloud solutions for businesses in NC, SC, and VA. Trusted since 1996.",
-    // images: ["/images/og-default.png"],
+    images: ["/images/og-default.png"],
   },
   // Site-wide noindex/nofollow during the preview/build phase. Remove these
   // before going live to allow search engines to crawl and index the site.
