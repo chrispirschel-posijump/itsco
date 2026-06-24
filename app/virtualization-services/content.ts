@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/virtualization-services/',
   },
   serviceName: 'Virtualization Services',
+  parent: { name: 'Cloud Services', href: '/cloud-services/' },
   hero: {
     eyebrow: 'Cloud · Virtualization',
     headlineLead: 'Virtualization that does more',

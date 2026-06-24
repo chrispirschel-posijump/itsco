@@ -17,6 +17,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/ai-strategy-consulting/',
   },
   serviceName: 'AI Strategy Consulting',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · AI Strategy Consulting',
     headlineLead: 'AI you can actually use —',

@@ -385,6 +385,54 @@ const SUB_SERVICES = [
     description: 'Embedded engineers who supplement your in-house team during projects, transitions, or workload peaks.',
     href: '/it-staff-augmentation/',
   },
+  {
+    number: '08',
+    title: 'Onsite IT Support',
+    description: 'In-person engineering visits for hardware deployments, network builds, and complex troubleshooting that needs a body in the room.',
+    href: '/onsite-it-support-services/',
+  },
+  {
+    number: '09',
+    title: 'Server Administration',
+    description: 'Configuration, patching, and ongoing administration of physical and virtual servers across Windows and Linux estates.',
+    href: '/server-admin-and-support-services/',
+  },
+  {
+    number: '10',
+    title: 'Employee Onboarding & Offboarding',
+    description: 'Standardized provisioning, access management, and deprovisioning workflows that keep your identity and data hygiene intact.',
+    href: '/employee-onboarding-offboarding/',
+  },
+  {
+    number: '11',
+    title: 'IT Procurement',
+    description: 'Vendor-neutral procurement of hardware, software, and licenses — negotiated, deployed, and asset-tagged for you.',
+    href: '/it-procurement/',
+  },
+  {
+    number: '12',
+    title: 'ITAD & Asset Disposal',
+    description: 'Certified, secure IT asset disposition with chain-of-custody documentation and environmentally responsible recycling.',
+    href: '/itad/',
+  },
+  {
+    number: '13',
+    title: 'Network Engineering',
+    description: 'Network architecture, segmentation, and high-availability design for offices, data centers, and hybrid environments.',
+    href: '/network-engineering/',
+  },
+  {
+    number: '14',
+    title: 'Systems Engineering',
+    description: 'Server, storage, and virtualization architecture engineered to scale with your business and your data.',
+    href: '/systems-engineering/',
+  },
+  {
+    number: '15',
+    title: 'VoIP & Unified Communications',
+    description: 'Business phone systems, conferencing, and unified comms designed for hybrid teams and call-quality SLAs.',
+    href: '/voip-unified-communications/',
+  },
 ]
 
 function SubServicesSection() {

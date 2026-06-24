@@ -16,6 +16,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/asset-lifecycle-management/',
   },
   serviceName: 'Asset Lifecycle Management',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Managed IT · Asset Management',
     headlineLead: 'Asset lifecycle management,',

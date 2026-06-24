@@ -14,6 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-desktop-vdi/',
   },
   serviceName: 'Managed Desktop & VDI',
+  parent: { name: 'Cloud Services', href: '/cloud-services/' },
   hero: {
     eyebrow: 'Cloud · Managed Desktop & VDI',
     headlineLead: 'Virtual desktops your team can',

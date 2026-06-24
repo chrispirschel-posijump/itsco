@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-cloud-services/',
   },
   serviceName: 'Managed Cloud Services',
+  parent: { name: 'Cloud Services', href: '/cloud-services/' },
   hero: {
     eyebrow: 'Cloud · Managed Cloud',
     headlineLead: 'Managed cloud services that keep',

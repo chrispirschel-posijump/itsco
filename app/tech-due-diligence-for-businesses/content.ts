@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/tech-due-diligence-for-businesses/',
   },
   serviceName: 'Technology Due Diligence',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · Due Diligence',
     headlineLead: 'Technology due diligence',

@@ -14,6 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-procurement/',
   },
   serviceName: 'IT Procurement',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Engineering · IT Procurement',
     headlineLead: 'IT procurement,',

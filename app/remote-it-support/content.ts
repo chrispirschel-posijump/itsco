@@ -13,6 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/remote-it-support/',
   },
   serviceName: 'Remote IT Support',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Managed IT · Remote Support',
     headlineLead: 'Remote IT support that',

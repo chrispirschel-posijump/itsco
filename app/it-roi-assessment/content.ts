@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-roi-assessment/',
   },
   serviceName: 'IT ROI Assessment',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · IT ROI',
     headlineLead: 'Maximize your IT investments',

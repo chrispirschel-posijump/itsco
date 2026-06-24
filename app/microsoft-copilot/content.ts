@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-copilot/',
   },
   serviceName: 'Microsoft Copilot',
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
   hero: {
     eyebrow: 'Microsoft · Copilot',
     headlineLead: 'Microsoft Copilot,',

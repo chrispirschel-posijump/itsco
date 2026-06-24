@@ -14,6 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/vcio-vcto-vciso-services/',
   },
   serviceName: 'vCIO, vCTO, vCISO & vCAIO Services',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · Virtual IT Leadership',
     headlineLead: 'Strategic IT leadership,',

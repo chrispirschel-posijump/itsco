@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/technical-project-management/',
   },
   serviceName: 'Technical Project Management',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · Project Management',
     headlineLead: 'IT projects delivered',

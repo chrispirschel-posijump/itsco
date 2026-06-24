@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-assessments-strategies/',
   },
   serviceName: 'IT Assessments & Strategies',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · Assessments',
     headlineLead: 'IT assessments and strategy',

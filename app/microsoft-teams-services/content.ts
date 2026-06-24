@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-teams-services/',
   },
   serviceName: 'Microsoft Teams Services',
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
   hero: {
     eyebrow: 'Microsoft · Teams',
     headlineLead: 'Microsoft Teams, built to',

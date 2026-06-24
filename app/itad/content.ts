@@ -13,6 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/itad/',
   },
   serviceName: 'IT Asset Disposition (ITAD)',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Engineering · ITAD',
     headlineLead: 'Secure IT asset disposition,',

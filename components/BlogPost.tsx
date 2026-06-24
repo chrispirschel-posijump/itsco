@@ -40,25 +40,41 @@ const TOPIC_CTA: Record<string, { text: string; href: string; label: string }> =
   },
 }
 
-export function blogJsonLd(post: BlogPostMeta) {
+function wordCount(article: readonly BlogBlock[]): number {
+  let n = 0
+  for (const block of article) {
+    if (block.type === 'ul') {
+      for (const item of block.items) n += item.trim().split(/\s+/).length
+    } else {
+      n += block.text.trim().split(/\s+/).length
+    }
+  }
+  return n
+}
+
+export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
   const url = `https://www.itsco.com/blog/${post.slug}/`
-  return [
-    {
-      '@context': 'https://schema.org',
-      '@type': 'Article',
-      headline: post.title,
-      description: post.excerpt,
-      image: `https://www.itsco.com${post.heroImage}`,
-      articleSection: post.category,
-      author: { '@type': 'Organization', name: 'ITSco' },
-      publisher: {
-        '@type': 'Organization',
-        name: 'ITSco',
-        logo: { '@type': 'ImageObject', url: 'https://www.itsco.com/images/itsco-logo.svg' },
-      },
-      mainEntityOfPage: url,
-      url,
+  const article_: Record<string, unknown> = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    headline: post.title,
+    description: post.excerpt,
+    image: `https://www.itsco.com${post.heroImage}`,
+    articleSection: post.category,
+    wordCount: wordCount(article),
+    author: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'ITSco',
+      logo: { '@type': 'ImageObject', url: 'https://www.itsco.com/images/itsco-logo.svg' },
     },
+    mainEntityOfPage: url,
+    url,
+  }
+  if (post.publishedDate) article_.datePublished = post.publishedDate
+  if (post.modifiedDate) article_.dateModified = post.modifiedDate
+  return [
+    article_,
     {
       '@context': 'https://schema.org',
       '@type': 'BreadcrumbList',
@@ -205,7 +221,7 @@ export default function BlogPost({
   post: BlogPostMeta
   article: readonly BlogBlock[]
 }) {
-  const jsonLd = blogJsonLd(post)
+  const jsonLd = blogJsonLd(post, article)
   return (
     <>
       {jsonLd.map((schema, i) => (

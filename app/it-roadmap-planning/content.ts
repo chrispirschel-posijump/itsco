@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-roadmap-planning/',
   },
   serviceName: 'IT Roadmap Planning',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · IT Roadmap',
     headlineLead: 'An IT roadmap that turns',

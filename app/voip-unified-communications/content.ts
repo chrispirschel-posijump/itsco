@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/voip-unified-communications/',
   },
   serviceName: 'VoIP & Unified Communications',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Engineering · VoIP & UC',
     headlineLead: 'Business communication',

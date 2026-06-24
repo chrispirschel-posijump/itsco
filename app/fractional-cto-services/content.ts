@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/fractional-cto-services/',
   },
   serviceName: 'Fractional CTO Services',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · Fractional CTO',
     headlineLead: 'A senior technology leader,',

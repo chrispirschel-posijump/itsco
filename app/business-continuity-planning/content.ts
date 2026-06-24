@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/business-continuity-planning/',
   },
   serviceName: 'Business Continuity Planning',
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
   hero: {
     eyebrow: 'Strategy · Business Continuity',
     headlineLead: 'A plan for the day',

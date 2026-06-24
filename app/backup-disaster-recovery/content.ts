@@ -14,6 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/backup-disaster-recovery/',
   },
   serviceName: 'Backup & Disaster Recovery',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Managed IT · Data Protection',
     headlineLead: 'Backup and disaster recovery',

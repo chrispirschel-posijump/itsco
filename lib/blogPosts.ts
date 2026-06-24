@@ -12,6 +12,11 @@ export interface BlogPost {
   category: string
   excerpt: string
   heroImage: string
+  // ISO-8601 date strings. When present, render in BlogPosting JSON-LD so the
+  // post qualifies for Google's enhanced article result. Posts without dates
+  // still emit valid schema, just without rich-result eligibility.
+  publishedDate?: string
+  modifiedDate?: string
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [

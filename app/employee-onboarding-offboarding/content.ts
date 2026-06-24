@@ -13,6 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/employee-onboarding-offboarding/',
   },
   serviceName: 'Employee IT Onboarding & Offboarding',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Managed IT · Onboarding & Offboarding',
     headlineLead: 'IT onboarding and offboarding,',

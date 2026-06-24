@@ -13,6 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/onsite-it-support-services/',
   },
   serviceName: 'On-Site IT Support',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Managed IT · On-Site Support',
     headlineLead: 'On-site IT support when the job',

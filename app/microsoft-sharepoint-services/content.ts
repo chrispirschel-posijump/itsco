@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-sharepoint-services/',
   },
   serviceName: 'Microsoft SharePoint Services',
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
   hero: {
     eyebrow: 'Microsoft · SharePoint',
     headlineLead: 'Microsoft SharePoint,',

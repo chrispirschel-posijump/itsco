@@ -372,6 +372,12 @@ const SUB_SERVICES = [
     description: 'A tested plan to keep critical operations running through any disruption.',
     href: '/business-continuity-planning/',
   },
+  {
+    number: '10',
+    title: 'AI Strategy Consulting',
+    description: 'Executive guidance to build a practical AI roadmap aligned with your business goals, budget, and risk tolerance.',
+    href: '/ai-strategy-consulting/',
+  },
 ]
 
 function SubServicesSection() {

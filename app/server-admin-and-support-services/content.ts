@@ -14,6 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/server-admin-and-support-services/',
   },
   serviceName: 'Server Administration & Support',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Managed IT · Server Services',
     headlineLead: 'Server administration and support,',

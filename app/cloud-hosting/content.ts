@@ -11,6 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cloud-hosting/',
   },
   serviceName: 'Cloud Hosting',
+  parent: { name: 'Cloud Services', href: '/cloud-services/' },
   hero: {
     eyebrow: 'Cloud · Hosting',
     headlineLead: 'Cloud hosting that’s reliable,',

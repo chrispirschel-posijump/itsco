@@ -12,6 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/network-engineering/',
   },
   serviceName: 'Network Engineering',
+  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
   hero: {
     eyebrow: 'Engineering · Network Engineering',
     headlineLead: 'Networks engineered',
