@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'Cloud computing has changed the cybersecurity landscape, but not in the way many leaders assume. The cloud is not inherently less secure than on-premises infrastructure — in many ways, the major providers run more sophisticated defenses than most businesses could build themselves. The risk has shifted to a new set of threats specific to how cloud environments are configured, accessed, and operated by their customers.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through the eight cloud security threats most likely to cause real business damage, why each one happens, and the practical defenses that prevent or contain them.',
-  },
+  { type: 'p', text: 'The eight cloud security threats most likely to cause real business damage are: (1) misconfiguration, (2) identity and credential compromise, (3) insecure APIs and interfaces, (4) data exposure and loss, (5) account hijacking, (6) insider risk, (7) supply chain and third-party risk, and (8) shadow IT and sanctioned-but-unmanaged cloud use. Each section explains why the threat happens and the practical defenses that prevent or contain it.' },
 
   { type: 'h2', text: '1. Misconfiguration' },
   {

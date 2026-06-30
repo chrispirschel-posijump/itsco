@@ -327,9 +327,55 @@ function TrustedSource() {
   )
 }
 
+// Canonical Person + AboutPage JSON-LD for the leadership roster. The @ids
+// match the references emitted on /about-us/, so AI engines and search
+// crawlers resolve them to the same entities across the site.
+const ORG_ID = 'https://www.itsco.com/#organization'
+const TEAM_URL = 'https://www.itsco.com/about-us/meet-the-team/'
+
+const teamJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'AboutPage',
+    name: 'Meet the ITSco Team',
+    url: TEAM_URL,
+    about: { '@id': ORG_ID },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.itsco.com/about-us/' },
+      { '@type': 'ListItem', position: 3, name: 'Meet the Team', item: TEAM_URL },
+    ],
+  },
+  ...TEAM.map((m) => {
+    const slug = m.name.toLowerCase().replace(/[^a-z0-9]+/g, '-')
+    return {
+      '@context': 'https://schema.org',
+      '@type': 'Person',
+      '@id': `${TEAM_URL}#${slug}`,
+      name: m.name,
+      jobTitle: m.title,
+      worksFor: { '@id': ORG_ID },
+      url: TEAM_URL,
+      image: `https://www.itsco.com${m.image}`,
+      description: m.bio.join(' '),
+    }
+  }),
+]
+
 export default function MeetTheTeamPage() {
   return (
     <>
+      {teamJsonLd.map((schema, i) => (
+        <script
+          key={i}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+        />
+      ))}
       <Nav variant="light" />
       <main>
         <Hero />

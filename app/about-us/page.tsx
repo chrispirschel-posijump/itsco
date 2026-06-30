@@ -174,13 +174,23 @@ function ServiceArea() {
   )
 }
 
+// Stable Schema.org IDs let other JSON-LD blocks reference these entities by
+// @id (e.g. blog Person → Organization affiliation). Using anchored hashes
+// on existing page URLs is the standard convention.
+const ORG_ID = 'https://www.itsco.com/#organization'
+const MIKE_ID = 'https://www.itsco.com/about-us/meet-the-team/#mike-savino'
+const GEORGE_ID = 'https://www.itsco.com/about-us/meet-the-team/#george-terrone'
+const GREG_ID = 'https://www.itsco.com/about-us/meet-the-team/#greg-wassil'
+
 const orgJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Organization',
+  '@id': ORG_ID,
   name: 'ITSco',
   url: 'https://www.itsco.com/',
   logo: 'https://www.itsco.com/images/itsco-logo.png',
   foundingDate: '1996',
+  founders: [{ '@id': GEORGE_ID }],
   description:
     'ITSco is a managed IT services provider and MSSP headquartered near Research Triangle Park, Durham NC. Serves SMB to enterprise across NC, SC, and VA since 1996.',
   address: {
@@ -192,7 +202,46 @@ const orgJsonLd = {
     addressCountry: 'US',
   },
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
+  employee: [{ '@id': MIKE_ID }, { '@id': GREG_ID }, { '@id': GEORGE_ID }],
 }
+
+// Person schema for leadership — boosts E-E-A-T and gives AI engines a
+// clear human-author signal connected to the Organization.
+const leadershipJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': MIKE_ID,
+    name: 'Mike Savino',
+    jobTitle: 'Chief Executive Officer & Chief Financial Officer',
+    worksFor: { '@id': ORG_ID },
+    url: 'https://www.itsco.com/about-us/meet-the-team/',
+    description:
+      'CEO and CFO of ITSco, focused on the outcomes that matter most to clients: financial stability, revenue growth, and operational excellence.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': GEORGE_ID,
+    name: 'George Terrone',
+    jobTitle: 'Founder',
+    worksFor: { '@id': ORG_ID },
+    url: 'https://www.itsco.com/about-us/meet-the-team/',
+    description:
+      'Founder of ITSco. Founded the company in 1996 to deliver outcomes-focused IT services to North Carolina businesses.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Person',
+    '@id': GREG_ID,
+    name: 'Greg Wassil',
+    jobTitle: 'Chief Technology Officer & Co-Founder',
+    worksFor: { '@id': ORG_ID },
+    url: 'https://www.itsco.com/about-us/meet-the-team/',
+    description:
+      'CTO and Co-Founder of ITSco. Leads technical strategy and engineering across managed IT, cybersecurity, and cloud services.',
+  },
+]
 
 const breadcrumbJsonLd = {
   '@context': 'https://schema.org',
@@ -214,6 +263,13 @@ export default function AboutUsPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
+      {leadershipJsonLd.map((person) => (
+        <script
+          key={person['@id']}
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
+        />
+      ))}
       <Nav variant="light" />
       <main>
         <Hero />

@@ -23,10 +23,7 @@ export const ARTICLE = [
     type: 'p',
     text: "Measurable outcomes: 30-60% reduction in support ticket volume reaching human agents; 40-70% reduction in average response time; consistent quality across all support interactions.",
   },
-  {
-    type: 'p',
-    text: "Where to start: deploy a well-grounded AI assistant against your existing knowledge base for internal-facing or customer-facing use. Measure deflection rates and customer satisfaction. Iterate on what the AI does well vs. where humans still add value.",
-  },
+  { type: 'p', text: 'The six concrete AI use cases this guide walks through are: (1) AI-augmented customer support, (2) AI-driven sales and marketing personalization, (3) AI-powered document processing and data extraction, (4) AI-enhanced software development, (5) AI-augmented operations and forecasting, and (6) AI in cybersecurity detection and response. Each example explains what the business is doing, how it works, and the measurable outcomes they are getting today.' },
 
   { type: 'h2', text: '2. AI-Driven Sales and Marketing Personalization' },
   {

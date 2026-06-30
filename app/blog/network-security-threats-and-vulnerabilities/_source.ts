@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'Network security threats and vulnerabilities are evolving faster than most businesses can keep up with. The attack surface keeps growing, the attackers keep getting more sophisticated, and the defenders keep working with finite budgets and finite attention. Understanding the threats your network actually faces — and the vulnerabilities that make them effective — is the first step in defending against them.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through ten network security threats and vulnerabilities most likely to cause real business damage today, what makes each one effective, and the defenses that work.',
-  },
+  { type: 'p', text: 'The ten threats most likely to cause real business damage today are: (1) phishing and social engineering, (2) ransomware, (3) credential theft and account compromise, (4) unpatched vulnerabilities, (5) misconfigured network devices, (6) insider threats, (7) distributed denial of service (DDoS), (8) supply chain attacks, (9) IoT and operational technology (OT) exposure, and (10) shadow IT and unmanaged SaaS. Each section explains what makes the threat effective and the defenses that work.' },
 
   { type: 'h2', text: '1. Phishing and Social Engineering' },
   {

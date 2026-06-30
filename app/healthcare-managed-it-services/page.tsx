@@ -222,13 +222,13 @@ function BoostProductivitySection() {
               Boost productivity, <span className="text-itsco-red">slash costs.</span>
             </h2>
             <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
-              Choose a full-service managed IT services provider to minimize administrative overheads while optimizing productivity across your teams.
+              Healthcare managed IT services are a specialized engagement model in which an outside provider owns the technology stack that clinical operations run on — EHR/EMR uptime, HIPAA-compliant infrastructure, medical-device network integration, telehealth quality of service, and 24/7 cybersecurity — under a predictable monthly fee tied to patient-care SLAs.
             </p>
             <p className="text-base md:text-lg text-itsco-body leading-relaxed mb-4">
-              Benefit from reduced IT costs, enhanced network stability, and less time spent resolving IT issues, all while gaining complete visibility into your IT spending.
+              The model exists because general-purpose MSPs miss the constraints that matter most in healthcare: BAA-backed compliance, IoMT segmentation, ransomware-target threat profile, and zero tolerance for downtime during a clinical day.
             </p>
             <p className="text-base md:text-lg text-itsco-body leading-relaxed">
-              Experience a seamless IT solution with one trusted partner, whether you operate a single location or multiple locations.
+              ITSco delivers this model for clinics, practice groups, and clinical-research organizations across NC, SC, and VA — with reduced IT cost, enhanced network stability, and complete visibility into IT spending across single or multi-site operations.
             </p>
           </FadeUp>
 

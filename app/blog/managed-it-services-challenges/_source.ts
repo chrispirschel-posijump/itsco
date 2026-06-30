@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: "Most articles about managed IT services are written like brochures — all upside, no friction. This one is different. Managed IT services do produce real, measurable improvements for most businesses, but they also involve real challenges that any leader thinking about an MSP engagement should understand up front.",
   },
-  {
-    type: 'p',
-    text: "Below are seven of the most common managed IT services challenges, why they happen, and how to navigate each one so the engagement succeeds.",
-  },
+  { type: 'p', text: 'The seven challenges most likely to come up in a managed IT services engagement are: (1) cost comparison is harder than it looks, (2) onboarding is operationally disruptive, (3) the first few months often surface old problems, (4) internal staff sometimes feel threatened, (5) strategic recommendations sometimes get ignored, (6) the MSP-vendor boundary can get confusing, and (7) changing MSPs has real switching costs. Each section explains why it happens and how to navigate it so the engagement succeeds.' },
 
   { type: 'h2', text: '1. The Cost Comparison Is Harder Than It Looks' },
   {

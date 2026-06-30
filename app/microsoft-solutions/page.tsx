@@ -170,10 +170,12 @@ function IntroSection() {
               One Microsoft stack, <span className="text-itsco-red">working as one.</span>
             </h2>
             <p className="text-lg text-itsco-body leading-relaxed">
-              Most businesses own far more Microsoft capability than they use — and run it loosely
-              configured and under-secured. ITSco brings 25+ years of experience and Microsoft-certified
-              expertise to deploy, secure, and manage the whole suite as a single, well-run platform.
-              One partner for 365, Azure, Teams, Copilot, and everything around them.
+              Most businesses pay for far more Microsoft capability than they actually use — and run
+              what they do use loosely configured and under-secured. Managed Microsoft solutions
+              fix both problems by deploying, securing, and operating the entire Microsoft stack
+              (365, Azure, Teams, Exchange, SharePoint, Copilot, Sentinel) as one integrated
+              platform. ITSco brings 25+ years and Microsoft-certified expertise so you get every
+              dollar of the value already on your invoice.
             </p>
           </div>
         </FadeUp>

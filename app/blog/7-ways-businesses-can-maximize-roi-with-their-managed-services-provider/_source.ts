@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'Hiring a managed services provider is only half the work. The other half — the half that determines whether the engagement actually delivers ROI — is what you do after the contract is signed. Businesses that get the most from their MSP relationships tend to do the same seven things. The ones that get the least tend to skip them.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through seven concrete habits that consistently separate high-ROI managed services engagements from average ones — practical things any business can put in place to get more value from the MSP they are already paying.',
-  },
+  { type: 'p', text: 'The seven habits that consistently separate high-ROI MSP engagements from average ones are: (1) name an internal owner for the MSP relationship, (2) hold quarterly business reviews and take them seriously, (3) treat the vCIO as the strategic IT voice in your business, (4) document the outcomes you expect from the engagement, (5) use the helpdesk aggressively, (6) fold security posture into customer-facing sales work, and (7) hold the MSP accountable — and reward good performance. Each one is practical, low-cost, and within any business\'s control.' },
 
   { type: 'h2', text: '1. Name an Internal Owner for the MSP Relationship' },
   {

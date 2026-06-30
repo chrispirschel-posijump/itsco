@@ -170,10 +170,12 @@ function IntroSection() {
               The cloud, done <span className="text-itsco-red">with a plan.</span>
             </h2>
             <p className="text-lg text-itsco-body leading-relaxed">
-              The cloud was supposed to be simpler, cheaper, and more flexible — but only when it is
-              chosen, built, and run well. ITSco brings 25+ years of infrastructure experience to
-              every stage: deciding what belongs in the cloud, moving it without disruption, and
-              managing it so it keeps delivering. One partner, accountable for the whole journey.
+              Managed cloud services span the full lifecycle of cloud infrastructure: strategy
+              (deciding what belongs in Azure, AWS, or hybrid), migration (moving workloads without
+              downtime), security, identity, FinOps, and ongoing day-to-day operations — delivered
+              by one accountable team rather than stitched together across vendors. ITSco brings
+              25+ years of infrastructure judgment to every stage, so the cloud actually delivers
+              the simpler, cheaper, more flexible promise it was supposed to.
             </p>
           </div>
         </FadeUp>

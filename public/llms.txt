@@ -1,0 +1,69 @@
+# ITSco
+
+> ITSco is a managed IT services provider (MSP) and managed security services provider (MSSP) headquartered in Durham, North Carolina. Founded 1996. We deliver managed IT, cybersecurity & compliance, cloud, Microsoft solutions, AI governance, and IT strategy consulting to businesses across North Carolina, South Carolina, and Virginia. Our positioning: every engagement is measured by business outcomes (financial savings, downtime avoidance, risk reduction, business enablement), not technical deliverables.
+
+## About ITSco
+
+- Founded: 1996
+- Headquarters: 4601 Creekstone Drive, Suite 102, Durham, NC 27703
+- Additional office: 8480 Honeycutt Rd #200-V700, Raleigh, NC 27615
+- Service area: North Carolina, South Carolina, Virginia (Raleigh-Durham, Charlotte, Greensboro, Winston-Salem, RTP, and surrounding markets)
+- Client retention: 60% of clients have been with ITSco for 5+ years
+- Security track record: zero clients have experienced a serious security breach
+- Primary contact: Mike Savino, CEO & CFO
+
+## Leadership
+
+- George Terrone — Founder (1996)
+- Mike Savino — CEO & CFO
+- Greg Wassil — CTO & Co-Founder
+- Jared Thomas — CIO
+
+## Core service pillars
+
+- [Managed IT Services](https://www.itsco.com/managed-it-services/): Fixed-monthly-cost 24/7 monitoring, helpdesk, security management, and advanced engineering — 15 sub-services across support, infrastructure, and lifecycle operations.
+- [Cybersecurity & Compliance](https://www.itsco.com/cybersecurity/): 16 services across 3 disciplines (Detection & Response, Prevention, Assessment & Compliance) including managed SOC, SIEM, MDR, firewall, endpoint, zero trust, pen testing, and SOC 2 / HIPAA / PCI DSS / NIST compliance.
+- [Cloud Services](https://www.itsco.com/cloud-services/): Cloud strategy, migration, managed cloud across Azure, AWS, and hybrid — with FinOps and identity wrapped in. 11 sub-services from migration through ongoing managed cloud operations.
+- [Microsoft Solutions](https://www.itsco.com/microsoft-solutions/): Deploy, manage, and secure Microsoft 365, Azure, Teams, Exchange, SharePoint, Copilot, and Sentinel.
+- [IT Strategy & Consulting](https://www.itsco.com/it-management-consulting/): vCIO, vCTO, vCISO, fractional CTO, IT roadmaps, due diligence, ROI assessments, and business continuity planning.
+- [AI & Automation](https://www.itsco.com/ai-automation/): AI governance, AI readiness assessment, AI strategy consulting, Microsoft Copilot deployment, and healthcare AI services.
+
+## Industries served
+
+- [Healthcare](https://www.itsco.com/healthcare-managed-it-services/) — HIPAA, EHR uptime, clinical workflow integrity
+- [Legal & Law Firms](https://www.itsco.com/legal-and-law-firm-it-services/) — document security, e-discovery, compliance
+- [Financial Services](https://www.itsco.com/financial-services-it/) — SEC, FINRA, PCI compliance
+- [Manufacturing](https://www.itsco.com/manufacturing-it/) — OT/IT convergence, supply-chain continuity
+- [Accounting Firms](https://www.itsco.com/accounting-firm-it-services/) — IRS data security, busy-season uptime
+- [Professional Services](https://www.itsco.com/professional-it-services/) — billable-hour productivity, client data protection
+- [Non-Profits](https://www.itsco.com/non-profit-it-services/) — grant-funded IT, mission-driven cost containment
+- [Pharma & Med-Tech](https://www.itsco.com/pharma-med-tech-it-services/) — FDA, GxP, regulated clinical research IT
+
+## Differentiators
+
+- **ROI-driven model**: every engagement quarterly-measured across financial savings, downtime avoidance, risk reduction, and business enablement
+- **Long-tenured client base**: 60% of clients stay 5+ years vs. industry-average MSP churn of 40% annually
+- **Zero serious breaches** across the entire client base
+- **Local leadership access**: clients work directly with Mike Savino (CEO) and Jared Thomas (CIO), not a sales tier
+- **27+ years in market**: deep Triangle / Charlotte / Triad / coastal NC relationships and operational maturity
+
+## Resources
+
+- [Blog](https://www.itsco.com/blog/): 47 published articles on managed IT, cybersecurity, cloud, AI, and IT strategy — written for CEO, COO, and CFO audiences, not IT managers.
+- [Case Studies](https://www.itsco.com/case-studies/): verbatim client outcomes including EmergeOrtho, SRN, and Cambrex.
+- [White Papers](https://www.itsco.com/white-papers/): research on AI's impact on data centers, ITAD, hardware lifecycle, zero trust architecture, hyperscaler monetization, and ESG.
+- [Maximize ROI](https://www.itsco.com/maximize-roi-with-managed-it-services/): the four-dimension framework ITSco uses to measure the ROI of managed IT services every quarter.
+
+## How to engage
+
+- [Book a free 30-minute consultation with Mike Savino](https://calendly.com/msavino-itsco/30-minute-free-consultation-with-itsco)
+- Customer support: (919) 674-0044
+- Sales inquiry: (919) 249-9556
+- Address: 4601 Creekstone Drive, Suite 102, Durham, NC 27703
+
+## Site map
+
+- [Sitemap](https://www.itsco.com/sitemap.xml)
+- [Contact](https://www.itsco.com/contact-us/)
+- [About](https://www.itsco.com/about-us/)
+- [Meet the Team](https://www.itsco.com/about-us/meet-the-team/)

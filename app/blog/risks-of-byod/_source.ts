@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'Bring Your Own Device (BYOD) policies — letting employees use personal phones, laptops, or tablets for work — became standard practice during the shift to remote work and never fully went away. The productivity and cost benefits are real, but so are the security risks. The businesses that get BYOD right understand both, and put controls in place that manage the risk without making BYOD unworkable for the people doing the work.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through the seven specific risks of BYOD, why each one matters, and the practical controls that defend against them.',
-  },
+  { type: 'p', text: 'The seven specific BYOD risks this guide walks through are: (1) data leakage through personal cloud and storage, (2) lost or stolen devices without encryption or remote wipe, (3) unpatched personal devices, (4) family-shared devices, (5) mixing personal and work browsing, (6) departing employees walking off with data, and (7) regulatory and compliance exposure. Each section explains why the risk matters and the practical controls that defend against it.' },
 
   { type: 'h2', text: '1. Data Leakage Through Personal Cloud and Storage' },
   {

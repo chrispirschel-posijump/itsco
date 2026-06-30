@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'Business leaders evaluating managed service providers (MSPs) often arrive with preconceptions about what an MSP does, what it costs, and whether it is worth it. Most of those preconceptions are out of date — they were accurate ten years ago and have not kept up with how the model has evolved.',
   },
-  {
-    type: 'p',
-    text: 'This guide addresses six of the most common misconceptions about MSP value head-on. The goal is not to talk you into hiring an MSP. It is to make sure your evaluation is based on what MSPs actually deliver today, not what they delivered in 2014.',
-  },
+  { type: 'p', text: 'The six misconceptions this guide addresses head-on are: (1) MSPs are only for businesses that cannot afford in-house IT, (2) MSPs are just a more expensive break-fix shop, (3) you lose control of your IT when you hire an MSP, (4) MSPs cannot match the responsiveness of an internal team, (5) all MSPs deliver roughly the same thing, and (6) you have to give up on strategic IT leadership. Each section explains why the misconception was once accurate, what changed, and what MSPs actually deliver today.' },
 
   { type: 'h2', text: 'Misconception #1: "An MSP Is Just Outsourced Helpdesk"' },
   {

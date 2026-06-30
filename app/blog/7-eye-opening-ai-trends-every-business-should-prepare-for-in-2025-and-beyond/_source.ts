@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'AI moves so fast that articles a year old already feel out of date. This guide is written for business leaders trying to make practical decisions about AI right now — what trends are real, what they mean operationally, and what to actually do about them in 2026 and the years following.',
   },
-  {
-    type: 'p',
-    text: "None of these trends require you to become an AI engineer. They require leadership decisions about strategy, governance, and investment that affect your business for years.",
-  },
+  { type: 'p', text: 'The seven AI trends business leaders need to prepare for are: (1) AI adoption moves from pilots to production, (2) AI governance becomes a real requirement, (3) AI drives cybersecurity in both directions, (4) vendor selection gets harder before it gets easier, (5) AI reshapes workforce skills faster than HR expects, (6) data quality becomes the real competitive advantage, and (7) the gap between AI leaders and laggards becomes permanent. Each section explains what is happening, what it means operationally, and what to do about it now.' },
 
   { type: 'h2', text: '1. AI Adoption Moves From Pilots to Production' },
   {

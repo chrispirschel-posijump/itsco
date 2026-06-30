@@ -18,7 +18,7 @@ export const HERO = {
   eyebrow: 'Boost Your Legal IT Solutions with ITSco',
   headlineLead: 'IT services for',
   headlineAccent: 'legal companies and law firms.',
-  body: 'Delivering service excellence in legal IT solutions. Predictable cost, robust cybersecurity, and 24/7 support built for the unique demands of law firms.',
+  body: 'Legal IT services are a specialized managed IT engagement built around the constraints law firms actually face: attorney-client privilege protection, ABA Model Rule 1.6 confidentiality, e-discovery and document management uptime, and the relentless cybersecurity threat profile that targets law firms specifically. ITSco delivers predictable cost, 24/7 cybersecurity operations, and the engineering depth firms need to keep practice systems running.',
   utmSuffix: 'legal-law-firm-it-hero',
 }
 

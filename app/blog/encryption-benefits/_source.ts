@@ -113,8 +113,5 @@ export const ARTICLE = [
     type: 'p',
     text: 'For most businesses, the highest-ROI cybersecurity investments are baseline controls done consistently across the environment. Encryption is at the top of that list — low operational overhead, high impact on incident severity, and required by an increasing number of frameworks customers care about.',
   },
-  {
-    type: 'p',
-    text: 'If you would like an assessment of your current encryption posture — what is covered, what is exposed, where the highest-leverage improvements live — ITSco offers a free scoping consultation. We can walk you through a realistic encryption strategy for your specific business and compliance profile.',
-  },
+  { type: 'p', text: 'The eight business-relevant benefits of data encryption this guide walks through are: confidentiality of sensitive data at rest and in transit, defense against laptop theft and lost devices, protection of cloud-stored data against misconfiguration, compliance with HIPAA / PCI DSS / GDPR / state privacy law, protection of intellectual property, mitigation of insider risk, safe harbor in breach disclosure requirements, and credibility with customers and auditors. Each section explains where encryption should be applied and what it does — and does not — protect against.' },
 ] as const

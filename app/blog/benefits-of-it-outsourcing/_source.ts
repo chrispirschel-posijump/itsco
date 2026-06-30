@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'IT outsourcing has matured significantly over the last decade. Once viewed as a cost-cutting tactic, it has become a strategic operating model that lets growing businesses access engineering depth, 24/7 cybersecurity operations, and strategic technology leadership that no in-house team could match at the same price.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through eight specific, measurable benefits businesses consistently realize from a competent IT outsourcing engagement — each tied to a business outcome you can defend at a board meeting.',
-  },
+  { type: 'p', text: 'The eight measurable benefits this guide walks through are: (1) predictable monthly IT cost replaces volatile vendor invoices, (2) access to 24/7 cybersecurity operations you could not otherwise staff, (3) engineering depth across domains a single hire cannot cover, (4) faster issue resolution and better user experience, (5) strategic IT planning that finally happens, (6) compliance posture maintained year-round, (7) senior people get their time back, and (8) faster project delivery from teams that have done it before. Each benefit ties to a business outcome you can defend at a board meeting.' },
 
   { type: 'h2', text: '1. Predictable Monthly IT Cost Replaces Volatile Vendor Invoices' },
   {

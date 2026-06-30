@@ -176,7 +176,7 @@ function IntroSection() {
               The managed services provider businesses <span className="text-itsco-red">trust to keep IT running.</span>
             </h2>
             <p className="text-lg text-itsco-body leading-relaxed">
-              A regularly maintained network means fewer failures, more predictable costs, and a dramatic reduction in security risks. ITSco offers a robust and flexible managed maintenance program for a low, fixed monthly cost with the peace of mind that IT infrastructure is being monitored and maintained by trusted partners. Serving businesses in Raleigh, Durham, and across the Southeast since 1996.
+              Managed IT services are a fixed-monthly-cost engagement where an outside team owns your monitoring, helpdesk, security, and infrastructure maintenance — replacing reactive break-fix billing and removing the need to build a full in-house IT department. ITSco has delivered managed IT to businesses across Raleigh, Durham, Charlotte, and the Southeast since 1996. Sixty percent of our clients stay with us 5+ years.
             </p>
           </div>
         </FadeUp>

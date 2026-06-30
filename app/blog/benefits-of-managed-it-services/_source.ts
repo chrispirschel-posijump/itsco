@@ -19,10 +19,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'The biggest immediate benefit of managed IT services is financial. Instead of vendor invoices that swing wildly between months (a normal month, then a $14,000 emergency project, then a normal month), you get one predictable monthly cost. Capacity planning gets easier. Year-over-year comparison becomes meaningful. Surprise project invoices disappear because the work is in scope.',
   },
-  {
-    type: 'p',
-    text: "Measurable result: a flat IT cost line on the P&L that the CFO can defend, plan around, and explain to the board.",
-  },
+  { type: 'p', text: 'The nine measurable benefits this guide walks through are: (1) predictable monthly cost replaces surprise invoices, (2) faster issue resolution through defined SLAs, (3) broader expertise than any single in-house hire, (4) proactive prevention catches issues before downtime, (5) stronger cybersecurity posture without standing up a 24/7 SOC, (6) compliance support across SOC 2, HIPAA, and PCI DSS, (7) scalable capacity that flexes with the business, (8) reduced downtime risk, and (9) freed-up internal resources for strategic work. Each benefit is described in practice and tied to a way you can measure it.' },
 
   { type: 'h2', text: '2. Proactive Monitoring Catches Issues Before Users Notice' },
   {

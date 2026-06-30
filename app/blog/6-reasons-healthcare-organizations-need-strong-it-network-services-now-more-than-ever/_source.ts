@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'Healthcare organizations are running on technology stacks that did not exist a decade ago and supporting workflows that did not exist three years ago. Telehealth, remote diagnostics, AI-augmented clinical decision support, increasingly stringent regulatory frameworks, and a relentless cyber threat environment have all converged on the same nerve center: the IT network that ties everything together.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through six specific reasons healthcare organizations need strong IT network services right now — not as a competitive advantage, but as the operational foundation that makes everything else possible.',
-  },
+  { type: 'p', text: 'The six reasons healthcare organizations need strong IT network services right now are: (1) patient care now depends on the network being reliable, (2) cybersecurity threats target healthcare specifically, (3) HIPAA compliance lives on the network, (4) multi-site operations are now the norm, (5) telehealth and remote care depend on network quality, and (6) operational efficiency pressures are relentless. Each section explains the operational reality and what strong network services look like in response.' },
 
   { type: 'h2', text: '1. Patient Care Now Depends on the Network Being Reliable' },
   {

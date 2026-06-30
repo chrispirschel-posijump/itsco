@@ -173,10 +173,11 @@ function IntroSection() {
             </h2>
             <p className="text-lg text-itsco-body leading-relaxed">
               Most technology problems are really decision problems — what to invest in, in what
-              order, and why. ITSco&apos;s strategy and consulting practice gives growing businesses
-              the executive-level guidance to answer those questions well: virtual IT leadership,
-              clear roadmaps, honest assessments, and a steady hand through projects, acquisitions,
-              and change.
+              order, and why. IT strategy and consulting answers those questions through
+              executive-level guidance delivered by virtual CIO, CTO, and CISO leadership: roadmap
+              planning, honest assessments, technology due diligence for M&amp;A, ROI measurement,
+              and project oversight. ITSco brings 25+ years of judgment to the technology decisions
+              that shape your business — strategy tied to outcomes, not just tools.
             </p>
           </div>
         </FadeUp>

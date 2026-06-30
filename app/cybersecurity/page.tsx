@@ -174,7 +174,7 @@ function IntroSection() {
               Detect threats. Reduce vulnerabilities. <span className="text-itsco-red">Maintain compliance.</span>
             </h2>
             <p className="text-lg text-itsco-body leading-relaxed">
-              ITSco is the managed security services provider businesses trust to protect their network, their endpoints, and their data. Serving Raleigh, Durham, and the Southeast since 1996. We integrate multiple security disciplines into one accountable program.
+              A managed cybersecurity program combines threat detection, vulnerability management, endpoint protection, and compliance into one accountable service — replacing fragmented point tools with a single team owning outcomes. ITSco has delivered this model across NC, SC, and VA since 1996. Zero clients have ever experienced a serious breach.
             </p>
           </div>
         </FadeUp>

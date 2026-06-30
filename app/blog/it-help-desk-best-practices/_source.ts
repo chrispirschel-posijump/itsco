@@ -9,10 +9,7 @@ export const ARTICLE = [
     type: 'p',
     text: 'A good IT help desk is one of the most visible things an IT operation produces. Users experience it every time something breaks; their satisfaction with IT depends heavily on what happens in that interaction. The best help desks share a set of practices that are well-understood, tested at scale, and surprisingly underused outside of mature IT operations.',
   },
-  {
-    type: 'p',
-    text: 'This guide walks through ten IT help desk best practices that actually move the needle on user experience, resolution time, and operational efficiency.',
-  },
+  { type: 'p', text: 'The ten best practices that actually move the needle on user experience, resolution time, and operational efficiency are: (1) staff Tier 1 with real engineers, (2) optimize for first-call resolution, (3) make multiple contact channels equally capable, (4) build a working self-service tier (Tier 0), (5) document everything, (6) track and report on meaningful metrics, (7) set defined service level targets — and honor them, (8) use the helpdesk aggressively (and tell users this), (9) integrate help desk with proactive operations, and (10) survey users and act on feedback. Each section explains the practice, why it works, and how to put it in place.' },
 
   { type: 'h2', text: '1. Staff Tier 1 With Real Engineers' },
   {
