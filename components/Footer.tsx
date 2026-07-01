@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const SERVICES_LINKS = [
@@ -76,10 +77,14 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-10">
           {/* Brand column */}
           <div className="col-span-2 md:col-span-3 lg:col-span-1">
-            <div className="text-xl font-bold tracking-tight leading-none mb-4 select-none">
-              <span className="text-white">ITS</span>
-              <span className="text-itsco-red">co</span>
-            </div>
+            <Link href="/" className="inline-block mb-4 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-80 transition-opacity duration-150">
+              <Image
+                src="/images/itsco-logo-white.svg"
+                alt="ITSco"
+                width={100}
+                height={57}
+              />
+            </Link>
             <p className="text-sm text-white/50 leading-relaxed max-w-[220px]">
               The ROI-Driven IT Services Company. Trusted managed IT, cybersecurity, and cloud solutions since 1996.
             </p>
