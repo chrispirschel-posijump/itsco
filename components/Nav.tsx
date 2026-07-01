@@ -316,7 +316,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
             >
               {item.children ? (
                 <button
-                  className={`flex items-center gap-1 px-3 py-2 text-sm font-medium rounded-lg transition-colors duration-200 ${
+                  className={`flex items-center gap-1 px-3 py-2 text-sm font-semibold rounded-lg transition-colors duration-200 ${
                     activeDropdown === item.label
                       ? (showDarkText ? "text-itsco-dark" : "text-white")
                       : (showDarkText ? "text-itsco-dark/70 hover:text-itsco-dark" : "text-white/70 hover:text-white")
@@ -336,7 +336,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
               ) : (
                 <Link
                   href={item.href}
-                  className={`block px-3 py-2 text-sm font-medium transition-colors duration-200 ${
+                  className={`block px-3 py-2 text-sm font-semibold transition-colors duration-200 ${
                     showDarkText ? "text-itsco-dark/70 hover:text-itsco-dark" : "text-white/70 hover:text-white"
                   }`}
                 >
