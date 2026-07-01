@@ -96,7 +96,7 @@ function Hero() {
 
 function StatsStrip() {
   return (
-    <section className="bg-itsco-off-white border-y border-[#EBEBEB]">
+    <section className="bg-itsco-card">
       <div className="max-w-7xl mx-auto px-6 lg:px-12 py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {STATS.map((s, i) => (
