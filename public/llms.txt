@@ -67,3 +67,7 @@
 - [Contact](https://www.itsco.com/contact-us/)
 - [About](https://www.itsco.com/about-us/)
 - [Meet the Team](https://www.itsco.com/about-us/meet-the-team/)
+
+## Social
+
+- [LinkedIn](https://www.linkedin.com/company/itscotech/)

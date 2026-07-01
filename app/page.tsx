@@ -75,7 +75,45 @@ const localBusinessJsonLd = {
       availableLanguage: 'English',
     },
   ],
-  sameAs: [],
+  sameAs: ['https://www.linkedin.com/company/itscotech/'],
+}
+
+// Organization schema complements LocalBusiness — the two coexist because
+// LocalBusiness has geo/address optimization for local search while
+// Organization is the canonical entity for knowledge-graph resolution and
+// AI-engine citation. Shared @id keeps them referring to the same entity.
+const organizationJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  '@id': 'https://www.itsco.com/#organization',
+  name: 'ITSco',
+  alternateName: 'ITS co',
+  url: 'https://www.itsco.com/',
+  logo: 'https://www.itsco.com/images/itsco-logo.svg',
+  description:
+    'ITSco is a managed IT services provider (MSP) and managed security services provider (MSSP) headquartered in Durham, North Carolina. Founded 1996.',
+  foundingDate: '1996',
+  sameAs: ['https://www.linkedin.com/company/itscotech/'],
+}
+
+// WebSite schema enables Google's site-search sitelinks box (the search bar
+// under organic results). potentialAction points at /blog/ as the searchable
+// entry point since it's the site's largest content index.
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  '@id': 'https://www.itsco.com/#website',
+  url: 'https://www.itsco.com/',
+  name: 'ITSco',
+  publisher: { '@id': 'https://www.itsco.com/#organization' },
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: 'https://www.itsco.com/blog/?q={search_term_string}',
+    },
+    'query-input': 'required name=search_term_string',
+  },
 }
 
 // ── 1. Hero — light, full-bleed image right with anchored stats ─────────────
@@ -448,6 +486,14 @@ export default function HomePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
       />
       <Nav variant="light" />
 

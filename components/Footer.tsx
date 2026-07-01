@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Linkedin } from "lucide-react";
 
 const SERVICES_LINKS = [
   { label: "Managed IT Services", href: "/managed-it-services/" },
@@ -85,9 +86,18 @@ export default function Footer() {
                 height={57}
               />
             </Link>
-            <p className="text-sm text-white/50 leading-relaxed max-w-[220px]">
+            <p className="text-sm text-white/50 leading-relaxed max-w-[220px] mb-5">
               The ROI-Driven IT Services Company. Trusted managed IT, cybersecurity, and cloud solutions since 1996.
             </p>
+            <a
+              href="https://www.linkedin.com/company/itscotech/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="ITSco on LinkedIn"
+              className="inline-flex items-center justify-center w-9 h-9 rounded-lg text-white/60 hover:text-white hover:bg-white/5 transition-[color,background-color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70"
+            >
+              <Linkedin size={18} />
+            </a>
           </div>
 
           <FooterColumn heading="Services" links={SERVICES_LINKS} />

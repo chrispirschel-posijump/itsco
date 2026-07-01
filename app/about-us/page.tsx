@@ -203,6 +203,7 @@ const orgJsonLd = {
   },
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
   employee: [{ '@id': MIKE_ID }, { '@id': GREG_ID }, { '@id': GEORGE_ID }],
+  sameAs: ['https://www.linkedin.com/company/itscotech/'],
 }
 
 // Person schema for leadership — boosts E-E-A-T and gives AI engines a
