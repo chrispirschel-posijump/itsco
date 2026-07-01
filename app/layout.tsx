@@ -6,7 +6,10 @@ import "./globals.css";
 const montserrat = Montserrat({
   variable: "--font-montserrat",
   subsets: ["latin"],
-  weight: ["400", "800"],
+  // 400 = body, 600 = nav labels + CTA, 800 = headings. Without 600 loaded,
+  // Tailwind's font-semibold falls back to 800 (ExtraBold), which reads as a
+  // huge jump from font-medium's 400 fallback.
+  weight: ["400", "600", "800"],
 });
 
 const prata = Prata({
