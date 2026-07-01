@@ -64,7 +64,7 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'tailored to your business.',
     paragraphs: [S[20], S[24], S[25]],
     image: {
-      src: '/images/hero/local/charlotte nc 2.jpg',
+      src: '/images/hero/local/charlotte nc 6.jpg',
       alt: 'Charlotte, North Carolina cityscape',
     },
   },

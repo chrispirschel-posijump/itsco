@@ -19,7 +19,7 @@ export const CONTENT: CityServiceContent = {
     utmSuffix: 'it-support-greensboro-hero',
   },
   heroImage: {
-    src: '/images/hero/local/greensboro nc 2.jpg',
+    src: '/images/hero/local/greensboro nc 5.jpg',
     alt: 'Greensboro, North Carolina cityscape',
   },
   capabilitiesHeading: {

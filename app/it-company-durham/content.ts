@@ -56,7 +56,7 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'commitment to your success.',
     paragraphs: [S[17], S[18], S[19], S[20]],
     image: {
-      src: '/images/hero/local/durham nc 2.jpg',
+      src: '/images/hero/local/durham nc 7.jpg',
       alt: 'Durham, North Carolina cityscape',
     },
   },

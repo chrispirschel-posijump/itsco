@@ -19,7 +19,7 @@ export const CONTENT: CityServiceContent = {
     utmSuffix: 'it-support-charlotte-hero',
   },
   heroImage: {
-    src: '/images/hero/local/charlotte nc 2.jpg',
+    src: '/images/hero/local/charlotte nc 6.jpg',
     alt: 'Charlotte, North Carolina cityscape',
   },
   capabilitiesHeading: {

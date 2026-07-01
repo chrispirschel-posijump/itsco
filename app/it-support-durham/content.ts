@@ -19,7 +19,7 @@ export const CONTENT: CityServiceContent = {
     utmSuffix: 'it-support-durham-hero',
   },
   heroImage: {
-    src: '/images/hero/local/durham nc 2.jpg',
+    src: '/images/hero/local/durham nc 7.jpg',
     alt: 'Durham, North Carolina cityscape',
   },
   capabilitiesHeading: {

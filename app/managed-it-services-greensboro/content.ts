@@ -54,7 +54,7 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'serving Greensboro.',
     paragraphs: [S[20], S[21], S[22], S[25], S[26]],
     image: {
-      src: '/images/hero/local/greensboro nc 2.jpg',
+      src: '/images/hero/local/greensboro nc 5.jpg',
       alt: 'Greensboro, North Carolina cityscape',
     },
   },

@@ -55,7 +55,7 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'business owners trust.',
     paragraphs: [S[17], S[18], S[19], S[20], S[21]],
     image: {
-      src: '/images/hero/local/charlotte nc 2.jpg',
+      src: '/images/hero/local/charlotte nc 6.jpg',
       alt: 'Charlotte, North Carolina cityscape',
     },
   },

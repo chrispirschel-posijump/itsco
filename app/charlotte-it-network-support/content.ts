@@ -64,7 +64,7 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'neither do we.',
     paragraphs: [S[21], S[22], S[23]],
     image: {
-      src: '/images/hero/local/charlotte nc 2.jpg',
+      src: '/images/hero/local/charlotte nc 6.jpg',
       alt: 'Charlotte, North Carolina cityscape',
     },
   },

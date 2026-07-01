@@ -61,7 +61,7 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'for cybercriminals.',
     paragraphs: [S[23], S[8]],
     image: {
-      src: '/images/hero/local/durham nc 2.jpg',
+      src: '/images/hero/local/durham nc 7.jpg',
       alt: 'Durham, North Carolina cityscape',
     },
   },
