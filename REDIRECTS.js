@@ -120,12 +120,6 @@ const redirects = [
     // Note: INVENTORY "Template only", flagged as overlapping it-roadmap-planning.
   },
   {
-    source:      '/services/itad',
-    destination: '/itad/',
-    permanent:   true,
-    // Note: INVENTORY "Flatten URL" — ITAD moved out of the /services/ path.
-  },
-  {
     source:      '/voip-services',
     destination: '/voip-unified-communications/',
     permanent:   true,
@@ -276,6 +270,139 @@ const redirects = [
     source:      '/blog/microsoft-removes-storage-limit-for-cloud-365',
     destination: '/blog/',
     permanent:   true,
+  },
+
+  // ── 3. GSC GAP FILLS (2026-07-09 audit) ─────────────────────────────────
+  // URLs with recent click history in Google Search Console that have no
+  // matching route on the new site. Targets chosen for nearest-page
+  // semantics — a click landing on the new page should still find the
+  // same intent addressed.
+  //
+  // Backlog: /government-it-services/, /education-it-services/, and
+  // /dealership-and-automotive-it-services/ redirect to /industries/ for
+  // launch. If organic traffic recovers on those verticals post-launch,
+  // consider standing up dedicated pages.
+  //
+  // Source has no trailing slash — Next.js strips it before evaluating.
+
+  {
+    source:      '/services/managed-it-services',
+    destination: '/managed-it-services/',
+    permanent:   true,
+    // Note: 13 clicks — flatten WordPress /services/ nesting.
+  },
+  {
+    source:      '/government-it-services',
+    destination: '/industries/',
+    permanent:   true,
+    // Note: 6 clicks — no dedicated industry page built; backlog for post-launch.
+  },
+  {
+    source:      '/services/security',
+    destination: '/cybersecurity/',
+    permanent:   true,
+    // Note: 5 clicks — flatten WordPress /services/ nesting.
+  },
+  {
+    source:      '/it-support-chapel-hill',
+    destination: '/managed-it-services-chapel-hill/',
+    permanent:   true,
+    // Note: 4 clicks — nearest city page.
+  },
+  {
+    source:      '/education-it-services',
+    destination: '/industries/',
+    permanent:   true,
+    // Note: 4 clicks — no dedicated industry page built; backlog for post-launch.
+  },
+  {
+    source:      '/chapel-hill-it-consulting',
+    destination: '/raleigh-it-consulting/',
+    permanent:   true,
+    // Note: 3 clicks — nearest active consulting page.
+  },
+  {
+    source:      '/erwin-it-consulting',
+    destination: '/raleigh-it-consulting/',
+    permanent:   true,
+    // Note: 3 clicks — nearest active consulting page.
+  },
+  {
+    source:      '/dealership-and-automotive-it-services',
+    destination: '/industries/',
+    permanent:   true,
+    // Note: 2 clicks — no dedicated industry page built; backlog for post-launch.
+  },
+  {
+    source:      '/backup-and-disaster-recovery',
+    destination: '/backup-disaster-recovery/',
+    permanent:   true,
+    // Note: 2 clicks — slug variant of canonical page.
+  },
+  {
+    source:      '/it-support-burlington',
+    destination: '/managed-it-services-burlington/',
+    permanent:   true,
+    // Note: 1 click — nearest city page.
+  },
+  {
+    source:      '/it-support-knightdale',
+    destination: '/it-company-in-knightdale/',
+    permanent:   true,
+    // Note: 1 click — nearest city page.
+  },
+  {
+    source:      '/fayetteville-it-consulting',
+    destination: '/managed-it-services-fayetteville/',
+    permanent:   true,
+    // Note: 1 click — nearest city page.
+  },
+  {
+    source:      '/butner-cyber-security-services',
+    destination: '/durham-cyber-security-services/',
+    permanent:   true,
+    // Note: 1 click — nearest cyber page (Butner is Durham-adjacent).
+  },
+  {
+    source:      '/request-our-pricing-guide',
+    destination: '/contact-us/',
+    permanent:   true,
+    // Note: 1 click — form intent → contact page.
+  },
+
+  // ── 4. WORDPRESS PDF PATH PRESERVATION ───────────────────────────────────
+  // Search Console shows these legacy /wp-content/uploads/ PDF URLs still
+  // pull clicks. The Zero Trust and AI Tools whitepapers already exist on
+  // the new site under /white-papers/; the 2018 cybersecurity monitoring
+  // paper is unavailable and redirects to the whitepapers hub. The
+  // EmergeOrtho Virtual Copilot case study was newly added to the site at
+  // /case-studies/emerge-ortho-virtual-copilot-deployment.pdf.
+  //
+  // Note: PDF sources retain the .pdf extension — no trailing slash to strip.
+
+  {
+    source:      '/wp-content/uploads/EmergeOrtho-Virtual-Copilot-Deployment-Case-Study-Rev-1.6.pdf',
+    destination: '/case-studies/emerge-ortho-virtual-copilot-deployment.pdf',
+    permanent:   true,
+    // Note: 10 clicks, position 13.5 — highest-traffic legacy PDF path.
+  },
+  {
+    source:      '/wp-content/uploads/Zero-Trust-Architecture-ITSco.pdf',
+    destination: '/white-papers/zero-trust-architecture.pdf',
+    permanent:   true,
+    // Note: 5 clicks — canonical file lives under /white-papers/ on the new site.
+  },
+  {
+    source:      '/wp-content/uploads/AI-Tools-for-Threat-Detection-ITSco.pdf',
+    destination: '/white-papers/ai-tools-for-threat-detection.pdf',
+    permanent:   true,
+    // Note: 2 clicks — canonical file lives under /white-papers/ on the new site.
+  },
+  {
+    source:      '/wp-content/uploads/2018/09/itsco-cybersecurity-monitoring-whitepaper.pdf',
+    destination: '/white-papers/',
+    permanent:   true,
+    // Note: 1 click — 2018 whitepaper unavailable; redirect to hub.
   },
 
 ]
