@@ -22,7 +22,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'IT Strategy & Consulting | vCIO, Roadmaps & Assessments | ITSco',
+  title: 'IT Strategy & Consulting | vCIO, Roadmaps & Assessments',
   description:
     'ITSco IT strategy and consulting — vCIO leadership, IT roadmaps, assessments, due diligence, and project management that align technology with business goals. Book a free consultation.',
   alternates: { canonical: 'https://www.itsco.com/it-management-consulting/' },

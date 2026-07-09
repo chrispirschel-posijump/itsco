@@ -10,7 +10,7 @@ import type { IndustryContent } from '@/components/IndustryPage'
 
 export const CONTENT: IndustryContent = {
   meta: {
-    title: 'Small Business IT Services | Managed IT for SMBs | ITSco',
+    title: 'Small Business IT Services | Managed IT for SMBs',
     description:
       "Small business IT services from ITSco — proactive managed IT, real cybersecurity, and 24/7 helpdesk on a predictable monthly cost. Built for businesses that don't have an IT department. Book a free consultation.",
     canonical: 'https://www.itsco.com/small-business/',

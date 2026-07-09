@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Cyber Risk Assessment Services | ITSco',
+    title: 'Cyber Risk Assessment Services',
     description:
       'ITSco cyber risk assessment maps your real exposure and delivers a prioritized, costed remediation roadmap — so security spending hits what matters. Book a free consultation.',
     canonical: 'https://www.itsco.com/cyber-risk-assessment/',

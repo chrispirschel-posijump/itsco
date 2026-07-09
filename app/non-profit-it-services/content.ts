@@ -14,7 +14,7 @@ import type { IndustryContent } from '@/components/IndustryPage'
 
 export const CONTENT: IndustryContent = {
   meta: {
-    title: 'Non-Profit IT Services | Managed IT for Nonprofits | ITSco',
+    title: 'Non-Profit IT Services | Managed IT for Nonprofits',
     description:
       "IT services built for nonprofits — donor data protection, mission-aligned budgets, board-ready reporting, and full use of Microsoft Tech for Social Impact, TechSoup, and Salesforce nonprofit programs. Book a free consultation with ITSco.",
     canonical: 'https://www.itsco.com/non-profit-it-services/',

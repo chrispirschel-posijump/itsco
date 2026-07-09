@@ -6,7 +6,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Fractional CTO Services | ITSco',
+    title: 'Fractional CTO Services',
     description:
       'ITSco fractional CTO services — senior technology leadership and strategy scaled to your size and budget, without a full-time hire. Book a free consultation.',
     canonical: 'https://www.itsco.com/fractional-cto-services/',

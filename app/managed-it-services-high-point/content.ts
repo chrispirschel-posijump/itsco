@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in High Point, NC | ITSco',
+    title: 'Managed IT Services in High Point, NC',
     description:
       'ITSco delivers managed IT services in High Point, NC — monitoring, cybersecurity, cloud, and automation — to help you meet your business goals. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-high-point/',

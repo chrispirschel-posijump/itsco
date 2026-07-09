@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'GPU and Refresh Cycle Case Study | White Paper | ITSco',
+    title: 'GPU and Refresh Cycle Case Study | White Paper',
     description:
       'Extended server refresh cycles have hit the ITAD industry hard. How rising GPU investments in 2024 signal a shift toward AI workloads and reshape the next five years of refresh strategy. Free PDF download.',
     canonical:

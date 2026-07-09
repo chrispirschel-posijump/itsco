@@ -10,7 +10,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Asset Lifecycle Management & IT Asset Disposition | ITSco',
+    title: 'Asset Lifecycle Management & IT Asset Disposition',
     description:
       'ITSco asset lifecycle management — procurement, deployment, maintenance, and secure, sustainable IT asset disposition. Book a free consultation.',
     canonical: 'https://www.itsco.com/asset-lifecycle-management/',

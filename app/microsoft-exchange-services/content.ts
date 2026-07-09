@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Microsoft Exchange Services | Email Migration & Management | ITSco',
+    title: 'Microsoft Exchange Services | Email Migration & Management',
     description:
       'ITSco Microsoft Exchange services — secure deployment, migration, management, and optimization of your business email environment. Book a free consultation.',
     canonical: 'https://www.itsco.com/microsoft-exchange-services/',

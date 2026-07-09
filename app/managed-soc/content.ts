@@ -9,7 +9,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Managed SOC Services | 24/7 Security Operations Center | ITSco',
+    title: 'Managed SOC Services | 24/7 Security Operations Center',
     description:
       'ITSco Managed SOC — a 24/7 security operations center with analysts, SIEM, and rapid response, without the cost of building one in-house. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-soc/',

@@ -7,7 +7,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'IT Staff Augmentation Services | Scale Your IT Team | ITSco',
+    title: 'IT Staff Augmentation Services | Scale Your IT Team',
     description:
       'ITSco IT staff augmentation places experienced engineers alongside your team for projects, transitions, and workload peaks — no hiring overhead. Book a free consultation.',
     canonical: 'https://www.itsco.com/it-staff-augmentation/',

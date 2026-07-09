@@ -16,7 +16,7 @@ import type { LegalContent } from '@/components/LegalPage'
 
 export const CONTENT: LegalContent = {
   meta: {
-    title: 'Terms of Use | ITSco',
+    title: 'Terms of Use',
     description:
       "Terms of Use governing your access to and use of itsco.com — acceptance, permitted use, intellectual property, disclaimers, and governing law.",
     canonical: 'https://www.itsco.com/terms/',

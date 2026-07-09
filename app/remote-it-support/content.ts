@@ -7,7 +7,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Remote IT Support Services | Fast, Senior-Staffed Help Desk | ITSco',
+    title: 'Remote IT Support Services | Fast, Senior-Staffed Help Desk',
     description:
       'ITSco remote IT support resolves most issues in minutes — secure remote access, a senior-staffed help desk, and predictable monthly cost. Book a free consultation.',
     canonical: 'https://www.itsco.com/remote-it-support/',

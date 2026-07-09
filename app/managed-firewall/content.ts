@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Managed Firewall Services | ITSco',
+    title: 'Managed Firewall Services',
     description:
       'ITSco managed firewall — expert configuration, 24/7 monitoring, rule management, and updates that keep your perimeter doing its job. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-firewall/',

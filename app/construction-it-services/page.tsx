@@ -15,7 +15,7 @@ import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 // prevents accidental indexing once the global robots gate is flipped at
 // launch, and the sitemap excludes it.
 export const metadata: Metadata = {
-  title: 'IT Services for Construction Companies | ITSco',
+  title: 'IT Services for Construction Companies',
   description: 'Managed IT, cybersecurity, cloud, and 24/7 helpdesk for construction companies. Predictable cost, minimal downtime, project-ready.',
   alternates: { canonical: 'https://www.itsco.com/construction-it-services/' },
   robots: { index: false, follow: false },

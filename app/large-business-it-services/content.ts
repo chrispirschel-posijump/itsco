@@ -11,7 +11,7 @@ import type { IndustryContent } from '@/components/IndustryPage'
 
 export const CONTENT: IndustryContent = {
   meta: {
-    title: 'Large Business IT Services | Multi-Site Managed IT & MSSP | ITSco',
+    title: 'Large Business IT Services | Multi-Site Managed IT & MSSP',
     description:
       'Large business IT services from ITSco — co-managed IT, 24/7 SOC, multi-site network operations, and compliance support engineered for 200-1000 employee organizations. Book a free consultation.',
     canonical: 'https://www.itsco.com/large-business-it-services/',

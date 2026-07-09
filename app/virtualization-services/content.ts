@@ -6,7 +6,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Virtualization Services | Server & Desktop Virtualization | ITSco',
+    title: 'Virtualization Services | Server & Desktop Virtualization',
     description:
       'ITSco virtualization services — consolidate servers and desktops onto efficient, resilient infrastructure. Less hardware, faster recovery. Book a free consultation.',
     canonical: 'https://www.itsco.com/virtualization-services/',

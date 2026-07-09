@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'Hardware Dumping in Africa | White Paper | ITSco',
+    title: 'Hardware Dumping in Africa | White Paper',
     description:
       "As the Global North advances, Africa bears the burden of e-waste dumping. The environmental, health, and geopolitical dimensions of a problem demanding sustainable ITAD. Free PDF download.",
     canonical: 'https://www.itsco.com/white-papers-hardware-dumping-in-africa/',

@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Cyber Security Services in Charlotte, NC | ITSco',
+    title: 'Cyber Security Services in Charlotte, NC',
     description:
       'ITSco delivers cyber security in Charlotte, NC — network security, audits, cloud security, intrusion detection, and penetration testing — to fortify your defenses. Book a free consultation.',
     canonical: 'https://www.itsco.com/charlotte-cyber-security-services/',

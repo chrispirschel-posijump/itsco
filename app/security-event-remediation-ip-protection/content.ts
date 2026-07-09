@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Security Event Remediation & IP Protection Services | ITSco',
+    title: 'Security Event Remediation & IP Protection Services',
     description:
       'ITSco security event remediation and IP protection — expert-led threat response, vulnerability remediation, and intellectual property security. Book a free consultation.',
     canonical: 'https://www.itsco.com/security-event-remediation-ip-protection/',

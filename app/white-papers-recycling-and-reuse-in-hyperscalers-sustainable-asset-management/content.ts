@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'Recycling and Reuse in Hyperscalers: Sustainable Asset Management | White Paper | ITSco',
+    title: 'Recycling and Reuse in Hyperscalers: Sustainable Asset Management | White Paper',
     description:
       "Hyperscaler data centers contribute 70% of toxic landfill waste. How circular economy practices and 4IR technologies are being adopted by Microsoft, Amazon, Google, and Meta. Free PDF download.",
     canonical:

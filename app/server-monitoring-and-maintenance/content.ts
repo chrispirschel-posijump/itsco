@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Server Monitoring & Maintenance Services | ITSco',
+    title: 'Server Monitoring & Maintenance Services',
     description:
       'ITSco server monitoring and maintenance — 24/7 proactive monitoring, patching, and expert troubleshooting that minimizes downtime. Book a free consultation.',
     canonical: 'https://www.itsco.com/server-monitoring-and-maintenance/',

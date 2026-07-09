@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import HomePage from "../page";
 
 export const metadata: Metadata = {
-  title: "Cream Theme Preview | ITSco",
+  title: "Cream Theme Preview",
   description: "Preserved reference of the previous cream/paper theme — before the oat cascade.",
   robots: { index: false, follow: false },
 };

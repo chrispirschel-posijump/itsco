@@ -6,7 +6,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Microsoft Sentinel Services | Cloud SIEM | ITSco',
+    title: 'Microsoft Sentinel Services | Cloud SIEM',
     description:
       'ITSco deploys, tunes, and monitors Microsoft Sentinel — Microsoft’s cloud-native SIEM — paired with analysts who act on what it finds. Book a free consultation.',
     canonical: 'https://www.itsco.com/microsoft-sentinel/',

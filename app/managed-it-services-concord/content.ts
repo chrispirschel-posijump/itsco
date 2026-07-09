@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in Concord, NC | ITSco',
+    title: 'Managed IT Services in Concord, NC',
     description:
       'ITSco delivers managed IT services in Concord, NC — monitoring, cybersecurity, help desk, and cloud — to increase productivity and control costs. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-concord/',

@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'AI Impact on Data Centers | White Paper | ITSco',
+    title: 'AI Impact on Data Centers | White Paper',
     description:
       "AI-powered robotics and predictive cooling redefine data center operations — where 70% of errors are human-driven. The $43B robotics market reshaping the industry by 2030. Free PDF download.",
     canonical: 'https://www.itsco.com/white-papers-ai-impact-on-data-centers/',

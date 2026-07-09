@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Endpoint Security Services | EDR & Device Protection | ITSco',
+    title: 'Endpoint Security Services | EDR & Device Protection',
     description:
       'ITSco endpoint security protects every laptop, desktop, server, and mobile device with EDR, encryption, and patching — centrally managed. Book a free consultation.',
     canonical: 'https://www.itsco.com/endpoint-security/',

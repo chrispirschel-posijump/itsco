@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Technology Due Diligence for Businesses | ITSco',
+    title: 'Technology Due Diligence for Businesses',
     description:
       'ITSco technology due diligence — a clear, actionable assessment of a target company’s IT infrastructure, security, and risk for investors and acquirers. Book a free consultation.',
     canonical: 'https://www.itsco.com/tech-due-diligence-for-businesses/',

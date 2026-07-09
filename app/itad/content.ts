@@ -7,7 +7,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Secure IT Asset Disposition (ITAD) Services | ITSco',
+    title: 'Secure IT Asset Disposition (ITAD) Services',
     description:
       'ITSco ITAD services — securely retire and dispose of IT hardware while protecting data, maximizing value recovery, and ensuring compliance. Book a free consultation.',
     canonical: 'https://www.itsco.com/itad/',

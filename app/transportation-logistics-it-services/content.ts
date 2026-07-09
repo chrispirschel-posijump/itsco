@@ -8,7 +8,7 @@
 import { SOURCE_PARAGRAPHS } from './_source'
 
 export const META = {
-  title: 'IT Services for Transportation & Logistics | ITSco',
+  title: 'IT Services for Transportation & Logistics',
   description: 'Transform your logistics and transportation operations with managed IT, cybersecurity, 24/7 support, and cloud services built for the industry.',
   canonical: 'https://www.itsco.com/transportation-logistics-it-services/',
 }

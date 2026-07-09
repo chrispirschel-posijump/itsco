@@ -22,7 +22,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Managed IT Services | Managed Services Provider | ITSco',
+  title: 'Managed IT Services | Managed Services Provider',
   description: 'ITSco delivers managed IT services with 24/7 monitoring, helpdesk, and security management. Predictable monthly cost. Trusted since 1996. Book a free consultation.',
   alternates: { canonical: 'https://www.itsco.com/managed-it-services/' },
   openGraph: {

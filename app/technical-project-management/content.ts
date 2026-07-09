@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Technical Project Management Services | ITSco',
+    title: 'Technical Project Management Services',
     description:
       'ITSco technical project management — IT projects delivered on time, on budget, and aligned to your goals by experienced TPMs. Book a free consultation.',
     canonical: 'https://www.itsco.com/technical-project-management/',

@@ -3,7 +3,7 @@
 // here when copy changes — page.tsx handles layout, images, and components.
 
 export const META = {
-  title: 'IT Services for Real Estate Firms | ITSco',
+  title: 'IT Services for Real Estate Firms',
   description: 'Preferred IT services for real estate industry leaders. Managed IT, cybersecurity, cloud, and 24/7 helpdesk built for property professionals.',
   canonical: 'https://www.itsco.com/real-estate-it-services/',
 }

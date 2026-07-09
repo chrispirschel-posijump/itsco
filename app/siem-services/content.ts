@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'SIEM Services | Managed Security Information & Event Management | ITSco',
+    title: 'SIEM Services | Managed Security Information & Event Management',
     description:
       'ITSco managed SIEM correlates security data in real time so genuine threats surface instantly — without the staffing overhead. Book a free consultation.',
     canonical: 'https://www.itsco.com/siem-services/',

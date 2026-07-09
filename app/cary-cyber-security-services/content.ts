@@ -10,7 +10,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'IT Security Services in Cary, NC | Cyber Security Services | ITSco',
+    title: 'IT Security Services in Cary, NC | Cyber Security Services',
     description:
       'ITSco delivers IT security services in Cary, NC — risk assessments, data protection, security awareness training, and rapid incident response. Book a free consultation.',
     canonical: 'https://www.itsco.com/cary-cyber-security-services/',

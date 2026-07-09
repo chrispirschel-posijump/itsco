@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Microsoft Copilot Services | Deployment & Adoption | ITSco',
+    title: 'Microsoft Copilot Services | Deployment & Adoption',
     description:
       'ITSco helps you deploy Microsoft Copilot securely — readiness, data governance, and adoption so the AI actually saves your team time. Book a free consultation.',
     canonical: 'https://www.itsco.com/microsoft-copilot/',

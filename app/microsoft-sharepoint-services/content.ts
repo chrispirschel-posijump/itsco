@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Microsoft SharePoint Services & Support | ITSco',
+    title: 'Microsoft SharePoint Services & Support',
     description:
       'ITSco Microsoft SharePoint services — deployment, migration, management, and security for a SharePoint environment that actually drives collaboration. Book a free consultation.',
     canonical: 'https://www.itsco.com/microsoft-sharepoint-services/',

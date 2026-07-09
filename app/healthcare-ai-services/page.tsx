@@ -10,7 +10,7 @@ import NumberedManifesto from '@/components/NumberedManifesto'
 import { Map, UserCog, ClipboardCheck, Check, Minus, X } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Healthcare AI Services | ITSco',
+  title: 'Healthcare AI Services',
   description: 'ITSco helps healthcare clinical organizations reduce IT risk, improve compliance, and deploy AI safely. HIPAA-native. Fractional CAIO included. Trusted since 1996.',
   alternates: { canonical: 'https://www.itsco.com/healthcare-ai-services/' },
   openGraph: {

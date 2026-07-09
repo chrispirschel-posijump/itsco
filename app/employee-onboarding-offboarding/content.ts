@@ -7,7 +7,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Employee IT Onboarding & Offboarding Services | ITSco',
+    title: 'Employee IT Onboarding & Offboarding Services',
     description:
       'ITSco handles employee IT onboarding and offboarding — accounts, devices, and access provisioned fast and revoked completely. Book a free consultation.',
     canonical: 'https://www.itsco.com/employee-onboarding-offboarding/',

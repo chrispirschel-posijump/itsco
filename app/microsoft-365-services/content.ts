@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Microsoft 365 Services | Deployment, Management & Security | ITSco',
+    title: 'Microsoft 365 Services | Deployment, Management & Security',
     description:
       'ITSco Microsoft 365 services — deployment, migration, security, and management so you get the full value of every license. Book a free consultation.',
     canonical: 'https://www.itsco.com/microsoft-365-services/',

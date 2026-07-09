@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Managed Desktop & VDI Services | Virtual Desktop Infrastructure | ITSco',
+    title: 'Managed Desktop & VDI Services | Virtual Desktop Infrastructure',
     description:
       'ITSco managed desktop and VDI — secure, centrally managed virtual desktops your team can reach from any device, anywhere. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-desktop-vdi/',

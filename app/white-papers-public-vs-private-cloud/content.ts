@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'Public vs Private Cloud | White Paper | ITSco',
+    title: 'Public vs Private Cloud | White Paper',
     description:
       "AI's growth is driving tech companies toward public cloud services that offer the scalability private clouds can't match. A comparative analysis of where each model fits. Free PDF download.",
     canonical: 'https://www.itsco.com/white-papers-public-vs-private-cloud/',

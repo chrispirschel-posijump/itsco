@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'AWS Services | Amazon Web Services Migration & Management | ITSco',
+    title: 'AWS Services | Amazon Web Services Migration & Management',
     description:
       'ITSco AWS services — migration, management, security, and cost optimization from a certified team. Get the value of AWS without the pitfalls. Book a free consultation.',
     canonical: 'https://www.itsco.com/aws-services/',

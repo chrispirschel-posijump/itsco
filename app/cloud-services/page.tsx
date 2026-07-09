@@ -21,7 +21,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Cloud Services | Migration, Hosting & Managed Cloud | ITSco',
+  title: 'Cloud Services | Migration, Hosting & Managed Cloud',
   description:
     'ITSco cloud services — migration, hosting, managed cloud, Azure, AWS, and virtualization. Scalable, secure, cost-controlled cloud. Book a free consultation.',
   alternates: { canonical: 'https://www.itsco.com/cloud-services/' },

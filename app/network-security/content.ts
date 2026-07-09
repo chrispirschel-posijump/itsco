@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Network Security Services | ITSco',
+    title: 'Network Security Services',
     description:
       'ITSco network security protects the infrastructure your business runs on — firewalls, segmentation, intrusion prevention, and 24/7 monitoring. Book a free consultation.',
     canonical: 'https://www.itsco.com/network-security/',

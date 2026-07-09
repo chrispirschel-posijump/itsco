@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'IT Roadmap Planning Services | ITSco',
+    title: 'IT Roadmap Planning Services',
     description:
       'ITSco IT roadmap planning — turn reactive IT spending into a clear, prioritized, costed multi-year plan aligned to your business goals. Book a free consultation.',
     canonical: 'https://www.itsco.com/it-roadmap-planning/',

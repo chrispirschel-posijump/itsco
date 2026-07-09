@@ -14,7 +14,7 @@
 // so it is NOT migrated here; flagged for Mike to confirm.
 
 export const META = {
-  title: 'AI Readiness Assessment for Businesses | AI Readiness Consulting | ITSco',
+  title: 'AI Readiness Assessment for Businesses | AI Readiness Consulting',
   description:
     'ITSco AI Readiness Assessment — strategic adoption, data and security readiness, workforce enablement, and compliance for organizations preparing to adopt AI. Lead-gen priority engagement. Book a free consultation.',
   canonical: 'https://www.itsco.com/ai-readiness-assessment/',

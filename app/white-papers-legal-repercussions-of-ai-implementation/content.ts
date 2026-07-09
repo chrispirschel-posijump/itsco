@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'Legal Repercussions of AI Implementation | White Paper | ITSco',
+    title: 'Legal Repercussions of AI Implementation | White Paper',
     description:
       "Data breaches peaked at 3,205 in 2023 — a 43.8% increase. The expanding regulatory landscape around AI-driven incidents, and what it means for cybersecurity, ITAD, and data destruction. Free PDF download.",
     canonical:

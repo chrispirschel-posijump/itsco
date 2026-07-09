@@ -21,7 +21,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Microsoft Solutions | 365, Azure, Teams & Copilot | ITSco',
+  title: 'Microsoft Solutions | 365, Azure, Teams & Copilot',
   description:
     'ITSco Microsoft solutions — deployment, management, and security across Microsoft 365, Azure, Teams, Exchange, SharePoint, Copilot, and Sentinel. Book a free consultation.',
   alternates: { canonical: 'https://www.itsco.com/microsoft-solutions/' },

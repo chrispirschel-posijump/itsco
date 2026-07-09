@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'IT Network Support in Raleigh, NC | ITSco',
+    title: 'IT Network Support in Raleigh, NC',
     description:
       'ITSco delivers IT network support in Raleigh, NC — network design, monitoring, security, and cloud networking that maximize uptime and reduce risk. Book a free consultation.',
     canonical: 'https://www.itsco.com/raleigh-it-network-support/',

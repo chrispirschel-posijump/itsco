@@ -8,7 +8,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Real Client Outcomes | ITSco',
+  title: 'Case Studies | Real Client Outcomes',
   description:
     'Real results from real ITSco clients across healthcare, financial services, and energy — measurable outcomes from managed IT, cybersecurity, and network automation engagements.',
   alternates: { canonical: 'https://www.itsco.com/case-studies/' },

@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Cybersecurity Consulting Services | vCISO & Strategy | ITSco',
+    title: 'Cybersecurity Consulting Services | vCISO & Strategy',
     description:
       'ITSco cybersecurity consulting — strategic guidance, vCISO leadership, and proactive defense to build a resilient security program. Book a free consultation.',
     canonical: 'https://www.itsco.com/cybersecurity-consulting-services/',

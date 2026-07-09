@@ -9,7 +9,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'Geopolitics of the AI Race | White Paper | ITSco',
+    title: 'Geopolitics of the AI Race | White Paper',
     description:
       "The race for AI dominance mirrors the 20th-century arms race. How US-China tensions, the Taiwan strait, and TSMC reshape semiconductor and AI infrastructure. Free PDF download.",
     canonical: 'https://www.itsco.com/white-paper-geopolitics/',

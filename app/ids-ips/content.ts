@@ -9,7 +9,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'IDS/IPS Services | Intrusion Detection & Prevention | ITSco',
+    title: 'IDS/IPS Services | Intrusion Detection & Prevention',
     description:
       'ITSco IDS/IPS monitors your network 24/7 — spotting anomalies, blocking intrusions, and neutralizing threats before they reach your data. Book a free consultation.',
     canonical: 'https://www.itsco.com/ids-ips/',

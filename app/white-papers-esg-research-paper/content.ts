@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'ESG Research Paper: AI, Energy, and the Power Grid | White Paper | ITSco',
+    title: 'ESG Research Paper: AI, Energy, and the Power Grid | White Paper',
     description:
       "GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid's capacity to scale. Free PDF download.",
     canonical: 'https://www.itsco.com/white-papers-esg-research-paper/',

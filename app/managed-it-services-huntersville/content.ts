@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in Huntersville, NC | ITSco',
+    title: 'Managed IT Services in Huntersville, NC',
     description:
       'ITSco delivers managed IT services in Huntersville, NC — monitoring, cybersecurity, help desk, and cloud — that save time and money. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-huntersville/',

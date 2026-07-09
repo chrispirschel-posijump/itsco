@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'FLP Hyperscaler Monetization | White Paper | ITSco',
+    title: 'FLP Hyperscaler Monetization | White Paper',
     description:
       "Today's AI boom is grounded in real profits and proven tech. While giants dominate, the real opportunity lies in the AI software layer. Free PDF download.",
     canonical: 'https://www.itsco.com/white-papers-flp-hyperscaler-monetization/',

@@ -26,7 +26,7 @@
 // production launch.
 
 export const META = {
-  title: 'Our Partners | Technology Alliances & Accreditations | ITSco',
+  title: 'Our Partners | Technology Alliances & Accreditations',
   description:
     "ITSco's technology partnerships and accreditations — the alliances that let us deliver enterprise-grade IT, security, and compliance to organizations of every size. Microsoft, Red Hat, Siemens Healthineers, MSP Alliance, and more.",
   canonical: 'https://www.itsco.com/partners/',

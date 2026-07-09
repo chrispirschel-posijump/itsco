@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'VoIP & Unified Communications Services | ITSco',
+    title: 'VoIP & Unified Communications Services',
     description:
       'ITSco VoIP and unified communications — secure, scalable business voice and collaboration for office, remote, and hybrid teams. Book a free consultation.',
     canonical: 'https://www.itsco.com/voip-unified-communications/',

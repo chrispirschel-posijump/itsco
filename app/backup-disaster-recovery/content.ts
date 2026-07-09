@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Backup & Disaster Recovery Services | ITSco',
+    title: 'Backup & Disaster Recovery Services',
     description:
       'ITSco backup and disaster recovery — automated backups, rapid recovery, and ransomware protection that keep your business resilient. Book a free consultation.',
     canonical: 'https://www.itsco.com/backup-disaster-recovery/',

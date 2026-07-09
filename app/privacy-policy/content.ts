@@ -15,7 +15,7 @@ import type { LegalContent } from '@/components/LegalPage'
 
 export const CONTENT: LegalContent = {
   meta: {
-    title: 'Privacy Policy | ITSco',
+    title: 'Privacy Policy',
     description:
       "ITSco's privacy policy — what information we collect through itsco.com, how we use it, who we share it with, and how to reach us with questions.",
     canonical: 'https://www.itsco.com/privacy-policy/',

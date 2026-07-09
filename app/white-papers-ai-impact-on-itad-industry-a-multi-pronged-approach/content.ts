@@ -7,7 +7,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach | White Paper | ITSco',
+    title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach | White Paper',
     description:
       'AI can turn IT asset disposition from a crisis into opportunity — improved decommissioning, predictive lifecycle planning, and secure data destruction. Free PDF download.',
     canonical:

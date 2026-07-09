@@ -11,7 +11,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'AI Strategy Consulting | Practical AI Roadmaps | ITSco',
+    title: 'AI Strategy Consulting | Practical AI Roadmaps',
     description:
       'ITSco AI strategy consulting — opportunity mapping, governance, and phased roadmaps that turn AI investments into measurable business outcomes. Book a free consultation.',
     canonical: 'https://www.itsco.com/ai-strategy-consulting/',

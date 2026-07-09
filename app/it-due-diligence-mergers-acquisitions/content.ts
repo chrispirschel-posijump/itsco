@@ -6,7 +6,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'IT Due Diligence for Mergers & Acquisitions | ITSco',
+    title: 'IT Due Diligence for Mergers & Acquisitions',
     description:
       'ITSco IT due diligence for M&A — surface hidden technology cost and risk before you sign, and plan the integration before day one. Book a free consultation.',
     canonical: 'https://www.itsco.com/it-due-diligence-mergers-acquisitions/',

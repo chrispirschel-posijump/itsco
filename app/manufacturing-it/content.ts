@@ -12,7 +12,7 @@ import type { IndustryContent } from '@/components/IndustryPage'
 
 export const CONTENT: IndustryContent = {
   meta: {
-    title: 'Manufacturing IT Services | Managed IT, OT Security & CMMC | ITSco',
+    title: 'Manufacturing IT Services | Managed IT, OT Security & CMMC',
     description:
       'Manufacturing IT services from ITSco — uptime, OT/ICS security, NIST 800-171 and CMMC compliance support, ERP and shop-floor integration. Built for manufacturers running 24/7. Book a free consultation.',
     canonical: 'https://www.itsco.com/manufacturing-it/',

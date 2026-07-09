@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Cloud Migration Services | ITSco',
+    title: 'Cloud Migration Services',
     description:
       'ITSco cloud migration — a planned, secure, low-disruption move to the cloud that lands right the first time. Book a free consultation.',
     canonical: 'https://www.itsco.com/cloud-migration/',

@@ -8,7 +8,7 @@ import type { WhitePaperContent } from '@/components/WhitePaperPage'
 
 export const CONTENT: WhitePaperContent = {
   meta: {
-    title: 'To What Extent Should We Trust Zero Trust Architecture? | White Paper | ITSco',
+    title: 'To What Extent Should We Trust Zero Trust Architecture? | White Paper',
     description:
       'Zero Trust Architecture (ZTA) — implementation costs, long-term security savings, and the case for investment. CAGR 15.2% through 2028. Free PDF download.',
     canonical: 'https://www.itsco.com/white-papers-zero-trust-architecture/',

@@ -20,7 +20,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Cybersecurity & Compliance | Managed Security Services Provider | ITSco',
+  title: 'Cybersecurity & Compliance | Managed Security Services Provider',
   description: 'ITSco delivers Cybersecurity & Compliance services — SIEM, SOC, MDR, firewall management, and continuous compliance posture (SOC 2, HIPAA, PCI, NIST 800-171). 24/7 monitoring. Trusted since 1996. Book a free consultation.',
   alternates: { canonical: 'https://www.itsco.com/cybersecurity/' },
   openGraph: {

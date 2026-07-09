@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Email Security Services | Anti-Phishing & Malware Protection | ITSco',
+    title: 'Email Security Services | Anti-Phishing & Malware Protection',
     description:
       'ITSco email security blocks phishing, malware, and account takeover before they reach your people. 24/7 monitoring and rapid response. Book a free consultation.',
     canonical: 'https://www.itsco.com/email-security/',

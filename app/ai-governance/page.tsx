@@ -9,7 +9,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { Eye, ShieldOff, AlertTriangle, FileCheck, Users, Search, ListChecks, ShieldCheck, BarChart3, Check, X } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'AI Governance for Business | ITSco',
+  title: 'AI Governance for Business',
   description: 'Shadow AI is already inside your organization. ITSco helps you discover, control, and govern every AI tool your employees use before it becomes a breach or a compliance failure.',
   alternates: { canonical: 'https://www.itsco.com/ai-governance/' },
   openGraph: {

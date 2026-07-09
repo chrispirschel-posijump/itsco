@@ -6,7 +6,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in RTP, NC | ITSco',
+    title: 'Managed IT Services in RTP, NC',
     description:
       'ITSco delivers managed IT services in Research Triangle Park, NC — monitoring, cybersecurity, cloud, and automation — for predictable costs and strong ROI. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-rtp/',

@@ -9,7 +9,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Fully-Managed Cybersecurity Services | MSSP | ITSco',
+    title: 'Fully-Managed Cybersecurity Services | MSSP',
     description:
       'ITSco fully-managed cybersecurity — 24/7 monitoring, threat detection, and response across your entire environment. Book a free consultation.',
     canonical: 'https://www.itsco.com/fully-managed-cybersecurity/',

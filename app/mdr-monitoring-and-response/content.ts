@@ -9,7 +9,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'MDR Services | Managed Detection & Response | ITSco',
+    title: 'MDR Services | Managed Detection & Response',
     description:
       'ITSco MDR — always-on monitoring, proactive threat hunting, and rapid incident response that catches threats early and shuts them down fast. Book a free consultation.',
     canonical: 'https://www.itsco.com/mdr-monitoring-and-response/',

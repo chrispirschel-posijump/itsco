@@ -14,7 +14,7 @@ import type { IndustryContent } from '@/components/IndustryPage'
 
 export const CONTENT: IndustryContent = {
   meta: {
-    title: 'Professional Services IT | Managed IT for Consultancies & Agencies | ITSco',
+    title: 'Professional Services IT | Managed IT for Consultancies & Agencies',
     description:
       'IT services built for consulting, architecture and engineering, and creative agencies. Billable-hour uptime, client confidentiality, hybrid-team enablement, and multi-office scale. Book a free consultation with ITSco.',
     canonical: 'https://www.itsco.com/professional-it-services/',

@@ -6,7 +6,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Business Continuity Planning Services | ITSco',
+    title: 'Business Continuity Planning Services',
     description:
       'ITSco business continuity planning — keep critical operations running through an outage, attack, or disaster, and recover fast. Book a free consultation.',
     canonical: 'https://www.itsco.com/business-continuity-planning/',

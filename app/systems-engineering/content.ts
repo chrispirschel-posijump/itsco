@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Systems Engineering Services | ITSco',
+    title: 'Systems Engineering Services',
     description:
       'ITSco systems engineering — servers, storage, virtualization, and architecture engineered for reliability, performance, and growth. Book a free consultation.',
     canonical: 'https://www.itsco.com/systems-engineering/',

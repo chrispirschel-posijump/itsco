@@ -9,7 +9,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { DollarSign, Clock, ShieldCheck, Rocket } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'The ROI of Managed IT Services | ITSco',
+  title: 'The ROI of Managed IT Services',
   description: 'Is your IT investment actually paying for itself? ITSco delivers documented ROI across four dimensions every quarter. See what your MSP should be measuring.',
   alternates: { canonical: 'https://www.itsco.com/maximize-roi-with-managed-it-services/' },
   openGraph: {

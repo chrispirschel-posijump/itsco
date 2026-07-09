@@ -18,7 +18,7 @@ import ClientLogosBand from '@/components/ClientLogosBand'
 import { TESTIMONIALS } from '@/lib/testimonials'
 
 export const metadata: Metadata = {
-  title: 'IT Services and Solutions That You Can Count On | ITSco',
+  title: 'IT Services and Solutions That You Can Count On',
   description: 'ITSco delivers managed IT, cybersecurity, and cloud services to businesses across NC, SC, and VA. Trusted since 1996. Book a free consultation today.',
   alternates: {
     canonical: 'https://www.itsco.com/',

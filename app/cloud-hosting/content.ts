@@ -5,7 +5,7 @@ import type { ServiceSubContent } from '@/components/ServiceSubPage'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Cloud Hosting Services | ITSco',
+    title: 'Cloud Hosting Services',
     description:
       'ITSco cloud hosting — reliable, scalable, secure hosting for your applications and infrastructure, fully managed. Book a free consultation.',
     canonical: 'https://www.itsco.com/cloud-hosting/',

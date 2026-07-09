@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Managed Network Services | Network Management & Support | ITSco',
+    title: 'Managed Network Services | Network Management & Support',
     description:
       'ITSco managed network services — proactive monitoring, design, and support that keep your network reliable, secure, and scalable. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-network-services/',

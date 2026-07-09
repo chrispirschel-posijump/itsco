@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'vCIO, vCTO, vCISO & vCAIO Services | Virtual IT Leadership | ITSco',
+    title: 'vCIO, vCTO, vCISO & vCAIO Services | Virtual IT Leadership',
     description:
       'ITSco virtual executive services — vCIO, vCTO, vCISO, and vCAIO leadership that aligns IT and AI with business goals, without the cost of a full-time hire. Book a free consultation.',
     canonical: 'https://www.itsco.com/vcio-vcto-vciso-services/',

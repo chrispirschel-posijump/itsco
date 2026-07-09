@@ -7,7 +7,7 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'Security Audits & Compliance Services | ITSco',
+    title: 'Security Audits & Compliance Services',
     description:
       'ITSco security audits and compliance — risk assessments, regulatory audits, and remediation roadmaps that keep your business secure and compliant. Book a free consultation.',
     canonical: 'https://www.itsco.com/security-audits-compliance/',

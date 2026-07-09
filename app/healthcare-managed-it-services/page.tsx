@@ -11,7 +11,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 
 export const metadata: Metadata = {
-  title: 'Managed IT Services for Healthcare | ITSco',
+  title: 'Managed IT Services for Healthcare',
   description: 'HIPAA-compliant managed IT, cybersecurity, and 24/7 helpdesk for healthcare institutions and facilities. Trusted since 1996.',
   alternates: { canonical: 'https://www.itsco.com/healthcare-managed-it-services/' },
 }
