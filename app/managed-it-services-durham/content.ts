@@ -10,7 +10,7 @@ export const CONTENT: CityServiceContent = {
   meta: {
     title: 'Managed IT Services in Durham, NC | Durham IT Services Company | ITSco',
     description:
-      'ITSco is the Durham IT services company businesses trust — managed IT, cybersecurity, help desk, and cloud with predictable pricing. Book a free consultation.',
+      'ITSco is the Durham IT services company Research Triangle businesses trust — managed IT, cybersecurity, help desk, and cloud with predictable pricing. Book a consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-durham/',
   },
   hero: {

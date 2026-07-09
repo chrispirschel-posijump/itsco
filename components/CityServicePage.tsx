@@ -126,30 +126,46 @@ const STANDARD_OPENING_HOURS = [
   },
 ]
 
-// External profile URLs for `sameAs`. Add Google Business Profile, LinkedIn,
-// Facebook, etc. URLs as they're confirmed. Schema.org allows empty array, so
-// declaring it now lets us drop URLs in without touching this file.
-//
-// TODO: populate with confirmed URLs:
-//   - Google Business Profile (Durham + Raleigh)
-//   - LinkedIn company page
-//   - Facebook business page
-//   - MSP Alliance member listing (Cyber Verify Level 2)
-const SAME_AS_PROFILES: readonly string[] = []
+// External profile URLs for `sameAs` — entity-verification signal to Google.
+// Add more as they're confirmed (Google Business Profile URLs per office,
+// Facebook, MSP Alliance member listing).
+const SAME_AS_PROFILES: readonly string[] = [
+  'https://www.linkedin.com/company/itscotech/',
+]
+
+// Google Business Profile aggregate review data per office. Update when
+// the review counts on the profiles materially change; the ratingValue
+// only changes if a lower-star review is posted.
+const GBP_RATINGS = {
+  durham: { ratingValue: '5', reviewCount: 16 },
+  raleigh: { ratingValue: '5', reviewCount: 1 },
+} as const
 
 export function cityLocalBusinessJsonLd(content: CityServiceContent) {
   const isRaleigh = content.officeLocation === 'raleigh'
+  const rating = isRaleigh ? GBP_RATINGS.raleigh : GBP_RATINGS.durham
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
+    // Page-scoped @id lets the Service schema back-reference this business.
+    '@id': content.meta.canonical + '#business',
     name: 'ITSco',
     alternateName: 'ITS co',
     description: content.meta.description,
     url: content.meta.canonical,
     logo: 'https://www.itsco.com/images/itsco-logo.svg',
-    // TODO before launch: replace with an actual office photo (1200x630 ideal).
-    // Google prefers a real photo over a logo here for local-pack results.
-    image: 'https://www.itsco.com/images/itsco-logo.svg',
+    // City cityscape used as interim image — swap for a real office photo
+    // (1200x630 ideal) once available for the local-pack card.
+    image: isRaleigh
+      ? 'https://www.itsco.com/images/hero/local/raleigh.jpg'
+      : 'https://www.itsco.com/images/hero/local/durham%20nc.jpg',
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: rating.ratingValue,
+      reviewCount: rating.reviewCount,
+      bestRating: '5',
+      worstRating: '1',
+    },
     telephone: '+1-919-674-0044',
     foundingDate: '1996',
     priceRange: '$$',
@@ -181,6 +197,28 @@ export function cityLocalBusinessJsonLd(content: CityServiceContent) {
       { '@type': 'State', name: 'Virginia' },
     ],
     ...(SAME_AS_PROFILES.length > 0 && { sameAs: SAME_AS_PROFILES }),
+  }
+}
+
+// Service schema — reinforces topical relevance for "managed IT services"
+// queries. Provider is a back-reference to the page's LocalBusiness by @id,
+// so Google can knit the two together as one entity.
+export function cityServiceJsonLd(content: CityServiceContent) {
+  const isRaleigh = content.officeLocation === 'raleigh'
+  const cityName = isRaleigh ? 'Raleigh' : 'Durham'
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Service',
+    serviceType: 'Managed IT Services',
+    name: content.meta.title.replace(/\s*\|\s*ITSco\s*$/, ''),
+    description: content.meta.description,
+    provider: { '@id': content.meta.canonical + '#business' },
+    areaServed: {
+      '@type': 'City',
+      name: cityName,
+      containedInPlace: { '@type': 'State', name: 'North Carolina' },
+    },
+    url: content.meta.canonical,
   }
 }
 
@@ -603,6 +641,7 @@ function OfficeLocation({ content }: { content: CityServiceContent }) {
 export default function CityServicePage({ content }: { content: CityServiceContent }) {
   const schemas = [
     cityLocalBusinessJsonLd(content),
+    cityServiceJsonLd(content),
     cityBreadcrumbJsonLd(content),
     cityFaqJsonLd(content),
   ].filter(Boolean)
