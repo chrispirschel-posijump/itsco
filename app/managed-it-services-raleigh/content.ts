@@ -8,7 +8,8 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'Managed IT Services in Raleigh, NC | Raleigh Managed Service Provider | ITSco',
+    // Root layout template appends " | ITSco" — do not include it here.
+    title: 'Managed IT Services in Raleigh, NC | Raleigh Managed Service Provider',
     description:
       'ITSco delivers managed IT services in Raleigh, NC — remote monitoring, network security, help desk, and cloud, built for predictable ROI. Book a free consultation.',
     canonical: 'https://www.itsco.com/managed-it-services-raleigh/',
