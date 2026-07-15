@@ -55,19 +55,15 @@ export const metadata: Metadata = {
       "Managed IT services, cybersecurity & compliance, and cloud solutions for businesses in NC, SC, and VA. Trusted since 1996.",
     images: ["/images/og-default.png"],
   },
-  // Site-wide noindex/nofollow during the preview/build phase. Remove these
-  // before going live to allow search engines to crawl and index the site.
-  robots: {
-    index: false,
-    follow: false,
-    googleBot: { index: false, follow: false },
-  },
 };
 
-// Google Tag Manager. Set NEXT_PUBLIC_GTM_ID=GTM-NKZ96XQ in Netlify's
-// production environment to enable analytics on the live site. Leave it
-// unset on preview deploys so QA traffic doesn't pollute Mike's data.
+// Google Tag Manager. Set NEXT_PUBLIC_GTM_ID=GTM-NKZ96XQ in Netlify.
+// The runtime hostname guard below keeps GTM from firing on preview
+// deploys, branch builds, or the bare itsco-prod.netlify.app hostname
+// even when the env var is scoped to All Contexts — so preview/QA
+// traffic never pollutes Mike's analytics.
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
+const CANONICAL_HOSTNAME = "www.itsco.com";
 
 export default function RootLayout({
   children,
@@ -78,11 +74,11 @@ export default function RootLayout({
     <html lang="en" className={`${montserrat.variable} ${prata.variable} h-full antialiased`}>
       {GTM_ID && (
         <Script id="gtm-init" strategy="afterInteractive">
-          {`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+          {`if(window.location.hostname==='${CANONICAL_HOSTNAME}'){(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','${GTM_ID}');`}
+})(window,document,'script','dataLayer','${GTM_ID}');}`}
         </Script>
       )}
       <body className="min-h-full flex flex-col">

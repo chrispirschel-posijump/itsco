@@ -7,10 +7,3 @@
 
 [build.environment]
   NODE_VERSION = "20"
-
-# Site-wide noindex during preview/build. Remove this section before going
-# live so search engines can crawl images, PDFs, and other non-HTML assets.
-[[headers]]
-  for = "/*"
-  [headers.values]
-    X-Robots-Tag = "noindex, nofollow"
