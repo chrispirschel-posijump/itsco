@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Link from 'next/link'
 import { Check, MapPin } from 'lucide-react'
 import Nav from '@/components/Nav'
@@ -102,7 +103,7 @@ function Intro() {
 
           <FadeUp delay={150} className="lg:col-span-5">
             <div className="relative aspect-[4/5] rounded-2xl overflow-hidden shadow-[0_8px_32px_rgba(0,0,0,0.12)]">
-              <Image
+              <HeroImage
                 src={INTRO.image}
                 alt={INTRO.imageAlt}
                 fill

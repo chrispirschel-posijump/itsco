@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Script from 'next/script'
 import { Phone, Printer, MapPin, Clock, Check } from 'lucide-react'
 import Nav from '@/components/Nav'
@@ -61,7 +61,7 @@ function Hero() {
       <BackgroundOrbs variant="light" />
 
       <div className="absolute left-0 top-0 bottom-0 w-[52%] hidden lg:block">
-        <Image
+        <HeroImage
           src="/images/hero/local/itsco office.jpg"
           alt="ITSco's office in Durham, North Carolina"
           fill

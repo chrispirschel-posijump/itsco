@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Link from 'next/link'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
@@ -99,7 +99,7 @@ function Hero() {
       <BackgroundOrbs variant="light" />
 
       <div className="absolute right-0 top-0 bottom-0 w-[52%] hidden lg:block">
-        <Image
+        <HeroImage
           src={HERO_IMAGE}
           alt="ITSco-managed cloud data center infrastructure"
           fill

@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -52,7 +52,7 @@ const breadcrumbJsonLd = {
 function Hero() {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden bg-itsco-paper">
-      <Image
+      <HeroImage
         src="/images/hero/industries/national-cancer-institute-X9Iq79PFif4-unsplash.jpg"
         alt="Healthcare professionals in a modern medical facility"
         fill

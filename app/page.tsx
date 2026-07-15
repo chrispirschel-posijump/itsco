@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Link from 'next/link'
 import { ArrowRight } from 'lucide-react'
 import Nav from '@/components/Nav'
@@ -185,7 +185,7 @@ function HomeHero() {
 
         {/* Mobile image */}
         <div className="mt-12 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_8px_32px_rgba(0,0,0,0.12)] lg:hidden">
-          <Image
+          <HeroImage
             src="/images/hero/services/pexels-vlada-karpovich-7433840.jpg"
             alt="ITSco managed IT services team"
             fill

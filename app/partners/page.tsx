@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -34,7 +35,7 @@ function Hero() {
       <BackgroundOrbs variant="light" />
 
       <div className="absolute right-0 top-0 bottom-0 w-[50%] hidden lg:block">
-        <Image
+        <HeroImage
           src={HERO_IMAGE.src}
           alt={HERO_IMAGE.alt}
           fill

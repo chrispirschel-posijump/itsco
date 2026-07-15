@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -111,7 +112,7 @@ function Hero() {
       <BackgroundOrbs variant="light" />
 
       <div className="absolute left-0 top-0 bottom-0 w-[52%] hidden lg:block">
-        <Image
+        <HeroImage
           src="/images/supporting/industries/accuray-AhTXFlSf5xI-unsplash.jpg"
           alt="Clinician consulting a patient next to a CyberKnife treatment device"
           fill
