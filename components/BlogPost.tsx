@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -90,7 +90,7 @@ export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
 function Hero({ post }: { post: BlogPostMeta }) {
   return (
     <section className="relative h-[62vh] min-h-[440px] w-full overflow-hidden">
-      <Image
+      <HeroImage
         src={post.heroImage}
         alt={post.title}
         fill

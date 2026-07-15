@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -250,7 +250,7 @@ export default function CaseStudyPage({ content }: { content: CaseStudyContent }
           }}
         >
           <div className="absolute inset-0">
-            <Image
+            <HeroImage
               src={hero.image.src}
               alt={hero.image.alt}
               fill

@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import CTAButton from '@/components/CTAButton'
 import { FadeUp } from '@/components/ScrollAnimations'
 
@@ -34,7 +34,7 @@ export default function FullBleedHero({
     >
       {/* Full-bleed background image */}
       <div className="absolute inset-0">
-        <Image
+        <HeroImage
           src={image.src}
           alt={image.alt}
           fill

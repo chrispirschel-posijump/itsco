@@ -1,4 +1,4 @@
-import Image from "next/image";
+import HeroImage from "@/components/HeroImage";
 import CTAButton from "@/components/CTAButton";
 import BackgroundOrbs from "@/components/BackgroundOrbs";
 
@@ -67,7 +67,7 @@ export default function HeroSection({
       {/* Full-bleed image panel — positioned relative to section, not content container */}
       {!isVariantC && image && imagePosition === "right" && (
         <div className="absolute right-0 top-0 bottom-0 w-[52%] hidden lg:block">
-          <Image
+          <HeroImage
             src={image}
             alt={imageAlt ?? heading}
             fill
@@ -81,7 +81,7 @@ export default function HeroSection({
       )}
       {!isVariantC && image && imagePosition === "left" && (
         <div className="absolute left-0 top-0 bottom-0 w-[52%] hidden lg:block">
-          <Image
+          <HeroImage
             src={image}
             alt={imageAlt ?? heading}
             fill
@@ -188,7 +188,7 @@ export default function HeroSection({
             {/* Mobile image — stacked below text on small screens */}
             {image && (
               <div className="mt-10 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_32px_80px_rgba(0,0,0,0.6)] lg:hidden">
-                <Image
+                <HeroImage
                   src={image}
                   alt={imageAlt ?? heading}
                   fill

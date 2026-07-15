@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import HeroImage from '@/components/HeroImage'
 import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
@@ -95,7 +96,7 @@ function Hero({ content }: { content: IndustryContent }) {
       <BackgroundOrbs variant="light" />
 
       <div className="absolute left-0 top-0 bottom-0 w-[52%] hidden lg:block">
-        <Image
+        <HeroImage
           src={heroImage.src}
           alt={heroImage.alt}
           fill

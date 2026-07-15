@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import HeroImage from "@/components/HeroImage";
 import { useEffect, useRef } from "react";
 
 interface HeroVideoProps {
@@ -49,7 +49,7 @@ export default function HeroVideo({
     <>
       {/* Poster image — shown immediately, behind the video, until video paints. Also the
           fallback when prefers-reduced-motion pauses the video. */}
-      <Image
+      <HeroImage
         src={poster}
         alt={alt}
         fill

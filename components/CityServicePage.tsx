@@ -7,6 +7,7 @@ import BookingCTA from '@/components/BookingCTA'
 import CTAButton from '@/components/CTAButton'
 import DynamicIcon from '@/components/DynamicIcon'
 import FullBleedHero from '@/components/FullBleedHero'
+import HeroImage from '@/components/HeroImage'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import ClientLogosBand from '@/components/ClientLogosBand'
 import TestimonialsRotator from '@/components/TestimonialsRotator'
@@ -241,7 +242,7 @@ function Hero({ content }: { content: CityServiceContent }) {
       <BackgroundOrbs variant="light" />
 
       <div className="absolute right-0 top-0 bottom-0 w-[52%] hidden lg:block">
-        <Image
+        <HeroImage
           src={heroImage.src}
           alt={heroImage.alt}
           fill
