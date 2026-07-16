@@ -6,7 +6,7 @@ import { ARTICLE } from './_source'
 const post = getPost('how-to-choose-a-managed-services-provider')!
 
 export const metadata: Metadata = {
-  title: `${post.title} | ITSco`,
+  title: post.title,
   description: post.excerpt,
   alternates: { canonical: `https://www.itsco.com/blog/${post.slug}/` },
 }

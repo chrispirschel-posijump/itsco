@@ -6,7 +6,7 @@ import { ARTICLE } from './_source'
 const post = getPost('real-world-examples-of-how-ai-helps-businesses-compete')!
 
 export const metadata: Metadata = {
-  title: `${post.title} | ITSco`,
+  title: post.title,
   description: post.excerpt,
   alternates: { canonical: `https://www.itsco.com/blog/${post.slug}/` },
 }

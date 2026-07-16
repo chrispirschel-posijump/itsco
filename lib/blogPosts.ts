@@ -17,9 +17,83 @@ export interface BlogPost {
   // still emit valid schema, just without rich-result eligibility.
   publishedDate?: string
   modifiedDate?: string
+  // Optional named author. Falls back to the "ITSco Team" byline when
+  // omitted; JSON-LD emits Person schema when set, Organization when not.
+  author?: { name: string; title?: string }
+  // Optional FAQ block for FAQPage JSON-LD. Renders the eligibility for
+  // Google's FAQ rich result on posts that end with a Q&A section.
+  faqs?: readonly { question: string; answer: string }[]
+  // Draft posts are hidden from the /blog/ index and from related-posts
+  // recommendations, and their individual page metadata emits noindex.
+  // Toggle to false on the intended publish day.
+  draft?: boolean
+}
+
+// Reads the current date in a way that stays stable across Next.js's static
+// generation (build-time) and runtime queries. Posts whose publishedDate is
+// after this date are treated as scheduled and hidden from the index.
+function isVisible(post: BlogPost): boolean {
+  if (post.draft) return false
+  if (post.publishedDate) {
+    const scheduled = new Date(post.publishedDate + 'T00:00:00Z').getTime()
+    const now = Date.now()
+    if (scheduled > now) return false
+  }
+  return true
+}
+
+// Public list — filters drafts and future-dated posts. Use this in the
+// /blog/ index and anywhere posts get displayed to visitors. The full
+// BLOG_POSTS array is exported below for internal tooling (e.g. metadata
+// lookup on scheduled posts that have their own page.tsx).
+export function visiblePosts(): BlogPost[] {
+  return BLOG_POSTS.filter(isVisible)
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Post 1 of the editorial roadmap ──────────────────────────────────────
+  // Scheduled for 2026-08-03. Draft flag stays true until publish day so
+  // the post is (a) hidden from the /blog/ index, (b) filtered out of
+  // related-posts, and (c) served with noindex if the URL is discovered.
+  // On Aug 3, flip `draft` to false (or remove) and redeploy.
+  {
+    slug: 'cyber-insurance-requirements-for-small-business',
+    title: 'Cyber Insurance Requirements for SMBs: What Your Underwriter Actually Wants',
+    category: 'Cybersecurity',
+    excerpt:
+      "Cyber insurance underwriters have tightened requirements dramatically. Here's the 12-point checklist your business needs to qualify — and what to do next.",
+    heroImage: '/images/hero/blog/microsoft-365-1MeZCPon3vk-unsplash.jpg',
+    publishedDate: '2026-08-03',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: "Do I need cyber insurance if I don't handle sensitive customer data?",
+        answer:
+          "Probably yes. Ransomware doesn't care what data you hold — it monetizes your downtime. Business email compromise targets your money directly. And increasingly, your own customers' contracts require you to carry coverage as a condition of doing business.",
+      },
+      {
+        question: 'What if my broker just tells me to answer "yes" to everything?',
+        answer:
+          'Get a new broker. Misrepresentation on the application is grounds for claim denial or policy rescission — precisely when you need coverage most. Answer accurately, and note remediation timelines for anything in progress.',
+      },
+      {
+        question: 'How much cyber coverage should a small business carry?',
+        answer:
+          "It depends on your revenue, data, and contractual obligations, so this is a conversation for your broker. As context, Coalition's 2026 Cyber Claims Report put the average ransomware loss at $269,000 — a useful floor when thinking about limits. Many mid-market companies carry $1M–$5M.",
+      },
+      {
+        question: 'Can I qualify for cyber insurance without hiring an MSP?',
+        answer:
+          'Yes — the controls matter, not who runs them. In practice, standing up 24/7 monitoring, MDR, tested backups, and documented patching in-house costs more than the managed equivalent for most companies under 500 people, which is why so many route it through a provider.',
+      },
+      {
+        question: "What's the difference between cyber insurance and general liability or E&O?",
+        answer:
+          "General liability covers physical injury and property damage. E&O covers mistakes in your professional services. Neither covers ransomware, breach response, forensics, or funds transfer fraud — that's what a standalone cyber policy exists for. Confirm the specifics with your broker or attorney; policy language varies by carrier.",
+      },
+    ],
+    draft: true,
+  },
   {
     slug: 'raleigh-industries',
     title: 'The 7 Biggest, Most Important Industries in Raleigh',
@@ -462,8 +536,11 @@ export function getPost(slug: string): BlogPost | undefined {
 // Related posts: same category first, then top up with others to reach `count`.
 export function relatedPosts(slug: string, count = 3): BlogPost[] {
   const current = getPost(slug)
-  if (!current) return BLOG_POSTS.slice(0, count) as BlogPost[]
-  const sameCategory = BLOG_POSTS.filter((p) => p.slug !== slug && p.category === current.category)
-  const others = BLOG_POSTS.filter((p) => p.slug !== slug && p.category !== current.category)
+  // Filter drafts and scheduled posts out of recommendations so the sidebar
+  // never surfaces a link that 404s or previews an unpublished draft.
+  const pool = BLOG_POSTS.filter(isVisible)
+  if (!current) return pool.slice(0, count) as BlogPost[]
+  const sameCategory = pool.filter((p) => p.slug !== slug && p.category === current.category)
+  const others = pool.filter((p) => p.slug !== slug && p.category !== current.category)
   return [...sameCategory, ...others].slice(0, count)
 }

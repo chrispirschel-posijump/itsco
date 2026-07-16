@@ -6,7 +6,7 @@ import { ARTICLE } from './_source'
 const post = getPost('6-reasons-healthcare-organizations-need-strong-it-network-services-now-more-than-ever')!
 
 export const metadata: Metadata = {
-  title: `${post.title} | ITSco`,
+  title: post.title,
   description: post.excerpt,
   alternates: { canonical: `https://www.itsco.com/blog/${post.slug}/` },
 }

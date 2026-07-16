@@ -10,6 +10,58 @@ import { type BlogPost as BlogPostMeta, relatedPosts } from '@/lib/blogPosts'
 export type BlogBlock =
   | { type: 'h2' | 'h3' | 'p'; text: string }
   | { type: 'ul'; items: readonly string[] }
+  | {
+      type: 'table'
+      headers: readonly string[]
+      rows: readonly (readonly string[])[]
+      caption?: string
+    }
+  | {
+      type: 'callout'
+      // Rendered as an inset accent box between paragraphs — used for the
+      // mid-post CTA in longer posts. `text` supports the same inline
+      // markdown (`[text](url)`, `**bold**`) as regular paragraphs.
+      text: string
+      cta?: { label: string; href: string }
+    }
+
+// Simple inline markdown parser. Supports:
+//   [link text](/some/url)  → <a href="/some/url">link text</a>
+//   **bold text**           → <strong>bold text</strong>
+// External URLs (http/https) get target="_blank" + rel="noopener noreferrer".
+// Anything not matching passes through as plain text.
+function parseInline(text: string): React.ReactNode[] {
+  const out: React.ReactNode[] = []
+  const pattern = /\[([^\]]+)\]\(([^)]+)\)|\*\*([^*]+)\*\*/g
+  let last = 0
+  let match: RegExpExecArray | null
+  while ((match = pattern.exec(text)) !== null) {
+    if (match.index > last) out.push(text.slice(last, match.index))
+    if (match[1] && match[2]) {
+      const href = match[2]
+      const external = /^https?:\/\//.test(href)
+      out.push(
+        <a
+          key={`l-${match.index}`}
+          href={href}
+          className="text-itsco-red underline decoration-itsco-red/40 underline-offset-2 hover:decoration-itsco-red transition-colors"
+          {...(external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}
+        >
+          {match[1]}
+        </a>,
+      )
+    } else if (match[3]) {
+      out.push(
+        <strong key={`b-${match.index}`} className="font-semibold text-itsco-dark">
+          {match[3]}
+        </strong>,
+      )
+    }
+    last = pattern.lastIndex
+  }
+  if (last < text.length) out.push(text.slice(last))
+  return out
+}
 
 // Topic-relevant CTA keyed by category — links to the matching service hub.
 const TOPIC_CTA: Record<string, { text: string; href: string; label: string }> = {
@@ -45,6 +97,10 @@ function wordCount(article: readonly BlogBlock[]): number {
   for (const block of article) {
     if (block.type === 'ul') {
       for (const item of block.items) n += item.trim().split(/\s+/).length
+    } else if (block.type === 'table') {
+      for (const h of block.headers) n += h.trim().split(/\s+/).length
+      for (const row of block.rows)
+        for (const cell of row) n += cell.trim().split(/\s+/).length
     } else {
       n += block.text.trim().split(/\s+/).length
     }
@@ -62,7 +118,16 @@ export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
     image: `https://www.itsco.com${post.heroImage}`,
     articleSection: post.category,
     wordCount: wordCount(article),
-    author: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
+    // Person author when the post declares one (Mike Savino etc.); falls
+    // back to Organization for legacy posts without a named byline.
+    author: post.author
+      ? {
+          '@type': 'Person',
+          name: post.author.name,
+          ...(post.author.title ? { jobTitle: post.author.title } : {}),
+          affiliation: { '@type': 'Organization', name: 'ITSco' },
+        }
+      : { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
     publisher: {
       '@type': 'Organization',
       name: 'ITSco',
@@ -73,7 +138,7 @@ export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
   }
   if (post.publishedDate) article_.datePublished = post.publishedDate
   if (post.modifiedDate) article_.dateModified = post.modifiedDate
-  return [
+  const schemas: Record<string, unknown>[] = [
     article_,
     {
       '@context': 'https://schema.org',
@@ -85,6 +150,20 @@ export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
       ],
     },
   ]
+  // Emit FAQPage schema when the post metadata includes a Q&A block so
+  // the FAQ section becomes eligible for Google's rich result.
+  if (post.faqs && post.faqs.length > 0) {
+    schemas.push({
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: post.faqs.map((f) => ({
+        '@type': 'Question',
+        name: f.question,
+        acceptedAnswer: { '@type': 'Answer', text: f.answer },
+      })),
+    })
+  }
+  return schemas
 }
 
 function Hero({ post }: { post: BlogPostMeta }) {
@@ -113,7 +192,9 @@ function Hero({ post }: { post: BlogPostMeta }) {
           </FadeUp>
           <FadeUp delay={200}>
             <p className="mt-5 text-sm font-semibold uppercase tracking-[0.1em] text-white/60">
-              By the ITSco Team
+              {post.author
+                ? `By ${post.author.name}${post.author.title ? `, ${post.author.title}` : ''}`
+                : 'By the ITSco Team'}
             </p>
           </FadeUp>
         </div>
@@ -152,15 +233,68 @@ function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
               <ul key={i} className="list-disc pl-6 marker:text-itsco-red space-y-2 mb-6">
                 {block.items.map((item, j) => (
                   <li key={j} className="text-base md:text-lg text-itsco-body leading-relaxed pl-1">
-                    {item}
+                    {parseInline(item)}
                   </li>
                 ))}
               </ul>
             )
           }
+          if (block.type === 'table') {
+            return (
+              <div key={i} className="my-8 overflow-x-auto">
+                <table className="w-full text-left border-collapse">
+                  <thead>
+                    <tr className="border-b-2 border-itsco-dark/10">
+                      {block.headers.map((h, j) => (
+                        <th
+                          key={j}
+                          className="py-3 pr-4 text-sm font-bold uppercase tracking-wider text-itsco-dark"
+                        >
+                          {parseInline(h)}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {block.rows.map((row, j) => (
+                      <tr key={j} className="border-b border-itsco-dark/5">
+                        {row.map((cell, k) => (
+                          <td key={k} className="py-3 pr-4 text-base text-itsco-body leading-relaxed">
+                            {parseInline(cell)}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+                {block.caption && (
+                  <p className="mt-2 text-sm text-itsco-body/70 italic">{parseInline(block.caption)}</p>
+                )}
+              </div>
+            )
+          }
+          if (block.type === 'callout') {
+            return (
+              <div
+                key={i}
+                className="my-8 rounded-2xl border-l-4 border-itsco-red bg-itsco-card p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+              >
+                <p className="text-base md:text-lg text-itsco-dark leading-[1.7] mb-4">
+                  {parseInline(block.text)}
+                </p>
+                {block.cta && (
+                  <CTAButton
+                    href={block.cta.href}
+                    label={block.cta.label}
+                    className="px-6 py-3 rounded-xl text-sm"
+                  />
+                )}
+              </div>
+            )
+          }
           return (
             <p key={i} className="text-base md:text-lg text-itsco-body leading-[1.8] mb-5">
-              {block.text}
+              {parseInline(block.text)}
             </p>
           )
         })}

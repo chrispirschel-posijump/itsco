@@ -6,7 +6,7 @@ import CTAButton from '@/components/CTAButton'
 import ServiceCard from '@/components/ServiceCard'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
-import { BLOG_POSTS } from '@/lib/blogPosts'
+import { visiblePosts } from '@/lib/blogPosts'
 
 export const metadata: Metadata = {
   title: 'ITSco Blog | Practical IT Insights for Business Leaders',
@@ -61,7 +61,7 @@ function PostGrid() {
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-24 md:pb-32">
         <StaggerChildren stagger={50} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {BLOG_POSTS.map((p) => (
+          {visiblePosts().map((p) => (
             <ServiceCard
               key={p.slug}
               slug="blog"
