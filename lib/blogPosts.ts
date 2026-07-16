@@ -51,6 +51,47 @@ export function visiblePosts(): BlogPost[] {
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Post 2 of the editorial roadmap ──────────────────────────────────────
+  // Scheduled for 2026-08-17. Draft flag stays true until publish day; flip
+  // to false (or remove) on Aug 17 and redeploy.
+  {
+    slug: 'hipaa-compliance-90-day-roadmap-small-practice',
+    title: 'HIPAA Compliance Checklist: 90-Day Roadmap for Small Practices',
+    category: 'Cybersecurity',
+    excerpt:
+      'A practical 90-day HIPAA compliance roadmap for small medical practices — administrative, physical, and technical safeguards, plus audit prep.',
+    heroImage: '/images/hero/blog/vitaly-gariev-2kopEHjST-g-unsplash.jpg',
+    publishedDate: '2026-08-17',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: 'Do I need a HIPAA compliance officer if I have fewer than 10 employees?',
+        answer:
+          'Yes. Every covered entity must designate a Privacy Officer and a Security Officer regardless of size. In a small practice, one person can hold both roles — but the appointment must be documented in writing and the person needs actual time allocated to the job.',
+      },
+      {
+        question: "Is my EHR vendor's HIPAA compliance enough to protect me?",
+        answer:
+          'No. Your EHR vendor is responsible for securing its platform, and your BAA with them covers their side. Your workstations, email, staff training, policies, other vendors, and risk assessment remain your obligation — and those are where most small-practice violations actually occur.',
+      },
+      {
+        question: "What's the average HIPAA fine for a small practice?",
+        answer:
+          'Recent OCR settlements with small providers have ranged from $10,000 to $250,000, nearly always paired with a 2-year corrective action plan requiring ongoing OCR supervision. Larger organizations have settled for as much as $3 million. The dollar figure is often smaller than the cost of the monitoring, remediation, and disruption that come with it.',
+      },
+      {
+        question: 'Can I do the Security Risk Assessment myself?',
+        answer:
+          "Legally, yes — HHS publishes a free SRA Tool designed for small practices. Practically, OCR has flagged generic and template-driven assessments as a common deficiency, and a self-assessment tends to miss the risks you don't know to look for. Many practices use the HHS tool as a baseline year over year and bring in an outside assessment when the stakes rise.",
+      },
+      {
+        question: 'How often do I need to update my HIPAA policies?',
+        answer:
+          'Review the SRA and policies at least annually, and immediately after any material change — new EHR, new location, new telehealth workflow, or a security incident. An SRA dated more than 12 months ago is treated as stale by investigators, insurers, and acquirers alike.',
+      },
+    ],
+    draft: true,
+  },
   // ── Post 1 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-08-03. Draft flag stays true until publish day so
   // the post is (a) hidden from the /blog/ index, (b) filtered out of
