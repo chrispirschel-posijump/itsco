@@ -24,6 +24,11 @@ interface HeroSectionProps {
   background?: string;
   clip?: boolean;
   orbs?: "light" | "dark" | false;
+  // Semantic heading level. Defaults to h1 (the component is designed as the
+  // page hero). Pass "h2" when using HeroSection as a mid-page CTA/section
+  // on a page that already has a proper h1 above (e.g. the homepage uses
+  // this for the "What's Your Strategy for AI Adoption?" mid-page block).
+  headingLevel?: "h1" | "h2";
 }
 
 export default function HeroSection({
@@ -37,12 +42,14 @@ export default function HeroSection({
   imagePosition = "right",
   stat,
   statLabel,
+  headingLevel = "h1",
   statColor = "#CA3C27",
   background,
   clip = true,
   orbs = false,
 }: HeroSectionProps) {
   const isVariantC = imagePosition === "none";
+  const Heading = headingLevel;
 
   return (
     <section
@@ -104,9 +111,9 @@ export default function HeroSection({
                 {eyebrow}
               </p>
             )}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-6 max-w-[16ch] mx-auto">
+            <Heading className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-6 max-w-[16ch] mx-auto">
               {heading}
-            </h1>
+            </Heading>
             {subheading && (
               <p className="text-lg md:text-xl text-white/65 leading-relaxed max-w-[42ch] mx-auto mt-6">
                 {subheading}
@@ -158,9 +165,9 @@ export default function HeroSection({
                 {eyebrow}
               </p>
             )}
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight max-w-[16ch]">
+            <Heading className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight max-w-[16ch]">
               {heading}
-            </h1>
+            </Heading>
             {subheading && (
               <p className="text-lg md:text-xl text-white/65 leading-relaxed max-w-[42ch] mt-6">
                 {subheading}

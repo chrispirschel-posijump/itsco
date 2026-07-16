@@ -18,18 +18,31 @@ import ClientLogosBand from '@/components/ClientLogosBand'
 import { TESTIMONIALS } from '@/lib/testimonials'
 
 export const metadata: Metadata = {
-  title: 'IT Services and Solutions That You Can Count On',
+  // Homepage title. Root layout's title.template only applies to CHILD
+  // segments, not the root page.tsx — so the "| ITSco" brand suffix has
+  // to be included in the raw string here.
+  title: 'Managed IT Services in Raleigh, Durham & NC | ITSco',
   description: 'ITSco delivers managed IT, cybersecurity, and cloud services to businesses across NC, SC, and VA. Trusted since 1996. Book a free consultation today.',
   alternates: {
     canonical: 'https://www.itsco.com/',
   },
   openGraph: {
-    title: 'IT Services and Solutions That You Can Count On | ITSco',
+    title: 'Managed IT Services in Raleigh, Durham & NC | ITSco',
     description: 'ITSco delivers managed IT, cybersecurity, and cloud services to businesses across NC, SC, and VA. Trusted since 1996.',
     url: 'https://www.itsco.com/',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
+    // Next.js doesn't deep-merge openGraph — declaring it here overrides
+    // the layout's images entirely. Re-declare so the og:image tag renders.
+    images: [
+      {
+        url: '/images/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: 'ITSco — The ROI-Driven IT Services Company',
+      },
+    ],
   },
 }
 
@@ -527,6 +540,7 @@ export default function HomePage() {
           <HeroSection
             eyebrow="AI Readiness Assessment"
             heading="What's Your Strategy for AI Adoption?"
+            headingLevel="h2"
             subheading="Over 72% of businesses are integrating AI into their operations. Companies that fail to adapt to the AI revolution risk falling behind."
             imagePosition="none"
             stat="72%"
