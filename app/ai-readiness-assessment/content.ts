@@ -181,12 +181,12 @@ export const INDUSTRIES = [
 export const WHY_ITSCO = {
   eyebrow: 'Why Choose ITSco for AI Readiness',
   headlineLead: 'AI readiness consulting,',
-  headlineAccent: 'grounded in 25+ years of IT discipline.',
+  headlineAccent: 'grounded in 30 years of IT discipline.',
   paragraphs: [
     "ITSco brings a combination most AI consultancies cannot: deep experience operating the IT, security, and compliance foundation AI workloads actually depend on, paired with vendor-neutral AI strategy and implementation guidance.",
   ],
   bullets: [
-    '25+ years in IT, cybersecurity, and AI-driven solutions',
+    '30 years in IT, cybersecurity, and AI-driven solutions',
     'End-to-end AI strategy, security, and implementation',
     'Custom AI roadmaps aligned with industry-specific needs',
     'Focus on compliance, risk mitigation, and data protection',
@@ -197,7 +197,7 @@ export const WHY_ITSCO = {
 
 export const MID_CTA = {
   eyebrow: 'Make AI a Measurable Advantage',
-  headline: "Talk to the team that's been building AI-ready foundations for 25 years.",
+  headline: "Talk to the team that's been building AI-ready foundations for 30 years.",
   utmSuffix: 'ai-readiness-assessment-mid',
 }
 

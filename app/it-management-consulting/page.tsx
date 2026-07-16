@@ -132,7 +132,7 @@ function Hero() {
           </FadeUp>
           <FadeUp delay={200}>
             <p className="text-lg text-itsco-body leading-relaxed max-w-[46ch] mb-10">
-              Virtual IT leadership, roadmaps, assessments, and due diligence — ITSco brings 25+ years
+              Virtual IT leadership, roadmaps, assessments, and due diligence — ITSco brings 30 years
               of judgment to the technology decisions that shape your business. Strategy tied to
               outcomes, not just tools.
             </p>
@@ -176,7 +176,7 @@ function IntroSection() {
               order, and why. IT strategy and consulting answers those questions through
               executive-level guidance delivered by virtual CIO, CTO, and CISO leadership: roadmap
               planning, honest assessments, technology due diligence for M&amp;A, ROI measurement,
-              and project oversight. ITSco brings 25+ years of judgment to the technology decisions
+              and project oversight. ITSco brings 30 years of judgment to the technology decisions
               that shape your business — strategy tied to outcomes, not just tools.
             </p>
           </div>
@@ -270,7 +270,7 @@ const ADVANTAGES = [
   },
   {
     icon: Award,
-    title: '25+ years of judgment',
+    title: '30 years of judgment',
     description: 'Decades of guiding businesses through technology change and growth.',
   },
   {

@@ -157,7 +157,7 @@ const processJsonLd = {
   name: 'Our Process',
   url: 'https://www.itsco.com/process/',
   description:
-    'How ITSco onboards, manages, and measures ROI for every client engagement — a structured, repeatable process refined over 25+ years.',
+    'How ITSco onboards, manages, and measures ROI for every client engagement — a structured, repeatable process refined over 30 years.',
   about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
 }
 

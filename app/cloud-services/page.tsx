@@ -174,7 +174,7 @@ function IntroSection() {
               (deciding what belongs in Azure, AWS, or hybrid), migration (moving workloads without
               downtime), security, identity, FinOps, and ongoing day-to-day operations — delivered
               by one accountable team rather than stitched together across vendors. ITSco brings
-              25+ years of infrastructure judgment to every stage, so the cloud actually delivers
+              30 years of infrastructure judgment to every stage, so the cloud actually delivers
               the simpler, cheaper, more flexible promise it was supposed to.
             </p>
           </div>

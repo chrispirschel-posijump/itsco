@@ -127,7 +127,7 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
       headlineLead: c.whyUsLead ?? 'A managed services provider',
       headlineAccent: c.whyUsAccent ?? `${c.name} businesses trust.`,
       paragraphs: [
-        `ITSco has delivered trusted IT services across North Carolina for more than 25 years. We've built our business on engineering excellence, honesty, and a genuine dedication to customer success.`,
+        `ITSco has delivered trusted IT services across North Carolina for 30 years. We've built our business on engineering excellence, honesty, and a genuine dedication to customer success.`,
         `Our results speak for themselves: 60% of our clients have been with us for five or more years, and over a third have been with us for more than a decade — in an industry where 40% of businesses look to switch providers every year.`,
         `When you partner with ITSco, you get a locally based team that treats your ${c.name} business as if it were their own — combining senior engineering talent with responsive, personal service.`,
       ],

@@ -62,7 +62,7 @@ const FAQS = [
   {
     question: 'Is ITSco a Microsoft-certified partner?',
     answerText:
-      'Yes. ITSco brings 25+ years of IT experience and Microsoft-certified professionals across the full stack — 365, Azure, Teams, Exchange, SharePoint, and security tools like Sentinel and Copilot.',
+      'Yes. ITSco brings 30 years of IT experience and Microsoft-certified professionals across the full stack — 365, Azure, Teams, Exchange, SharePoint, and security tools like Sentinel and Copilot.',
   },
   {
     question: 'We already use Microsoft — what would ITSco add?',
@@ -174,7 +174,7 @@ function IntroSection() {
               what they do use loosely configured and under-secured. Managed Microsoft solutions
               fix both problems by deploying, securing, and operating the entire Microsoft stack
               (365, Azure, Teams, Exchange, SharePoint, Copilot, Sentinel) as one integrated
-              platform. ITSco brings 25+ years and Microsoft-certified expertise so you get every
+              platform. ITSco brings 30 years and Microsoft-certified expertise so you get every
               dollar of the value already on your invoice.
             </p>
           </div>

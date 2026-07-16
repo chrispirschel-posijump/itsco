@@ -71,7 +71,7 @@ function ProblemSolution() {
                 IT designed for the way healthcare actually works.
               </h2>
               <ul className="space-y-4 text-base text-itsco-body leading-relaxed">
-                <li className="flex gap-3"><span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />HIPAA-compliant infrastructure built by engineers who've served healthcare for 25+ years</li>
+                <li className="flex gap-3"><span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />HIPAA-compliant infrastructure built by engineers who've served healthcare for 30 years</li>
                 <li className="flex gap-3"><span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />Unified monitoring across all locations, from a single-office practice to a 14-site system</li>
                 <li className="flex gap-3"><span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />Cybersecurity programs built around patient data protection and regulatory preparedness</li>
                 <li className="flex gap-3"><span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />A team that speaks your language: EHR, HL7, HIPAA, and clinical workflow fluency</li>
@@ -221,7 +221,7 @@ export default function PageBLite() {
             </FadeUp>
             <FadeUp delay={200}>
               <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-[42ch] mb-10">
-                HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. From a team that has served healthcare for over 25 years.
+                HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. From a team that has served healthcare for 30 years.
               </p>
             </FadeUp>
             <FadeUp delay={300}>

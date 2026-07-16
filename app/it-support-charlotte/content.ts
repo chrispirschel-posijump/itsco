@@ -40,7 +40,7 @@ export const CONTENT: CityServiceContent = {
   positioning: {
     eyebrow: 'Small Business IT Support',
     headlineLead: 'The IT support company in Charlotte',
-    headlineAccent: 'with 25 years of happy customers.',
+    headlineAccent: 'with 30 years of happy customers.',
     paragraphs: [S[2], S[12]],
   },
   stats: [

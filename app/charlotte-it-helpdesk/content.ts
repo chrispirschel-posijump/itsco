@@ -40,7 +40,7 @@ export const CONTENT: CityServiceContent = {
   positioning: {
     eyebrow: 'Fast, Friendly IT Helpdesk',
     headlineLead: 'IT helpdesk support refined',
-    headlineAccent: 'over 25 years in Charlotte.',
+    headlineAccent: '30 years serving businesses across North Carolina, including Charlotte.',
     paragraphs: [S[2], S[11], S[12], S[13]],
   },
   stats: [

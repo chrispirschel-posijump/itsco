@@ -115,7 +115,7 @@ function Hero() {
         </FadeUp>
         <FadeUp delay={200}>
           <p className="text-lg md:text-xl text-itsco-body leading-relaxed max-w-2xl mx-auto mb-10">
-            ITSco brings 25+ years of experience to the specific compliance, uptime, and security
+            ITSco brings 30 years of experience to the specific compliance, uptime, and security
             demands of your field — across North Carolina, South Carolina, and Virginia.
           </p>
         </FadeUp>

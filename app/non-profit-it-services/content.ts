@@ -23,7 +23,7 @@ export const CONTENT: IndustryContent = {
     eyebrow: 'Non-Profit IT Services',
     headlineLead: 'Technology that protects',
     headlineAccent: 'donors, beneficiaries, and the mission.',
-    body: "Managed IT, cybersecurity, and modernization built for nonprofits — where the budget is mission money, the data belongs to donors and beneficiaries, and the board is going to ask. ITSco brings nonprofit-specific licensing, board-ready reporting, and 25+ years of stewardship to organizations doing important work.",
+    body: "Managed IT, cybersecurity, and modernization built for nonprofits — where the budget is mission money, the data belongs to donors and beneficiaries, and the board is going to ask. ITSco brings nonprofit-specific licensing, board-ready reporting, and 30 years of stewardship to organizations doing important work.",
     utmSuffix: 'non-profit-it-hero',
   },
   heroImage: {
@@ -147,7 +147,7 @@ export const CONTENT: IndustryContent = {
   ],
   midCta: {
     eyebrow: 'Stewardship Is the Mission',
-    headline: "Talk to the IT team that's served nonprofits for 25+ years.",
+    headline: "Talk to the IT team that's served nonprofits for 30 years.",
     utmSuffix: 'non-profit-it-mid',
   },
   caseStudies: {

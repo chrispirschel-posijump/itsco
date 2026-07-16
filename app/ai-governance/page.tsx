@@ -455,7 +455,7 @@ function WhyITSco() {
         <FadeUp delay={150}>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6 max-w-3xl mx-auto">
             {[
-              '27+ years managing complex IT environments for SMB and enterprise clients',
+              '30 years managing complex IT environments for SMB and enterprise clients',
               'HIPAA, SOC 2, and GDPR compliance experience embedded in every engagement',
               'No new infrastructure required. Deployment begins in under 2 minutes',
               'Per-user, per-department, per-tool controls from a single management plane',

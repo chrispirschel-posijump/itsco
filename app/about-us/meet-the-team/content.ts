@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS } from './_source'
 
 export const META = {
   title: 'Meet the ITSco Team | Senior Leadership & Engineers',
-  description: 'ITSco’s success comes from a team committed to integrity, transparency, and engineering excellence. Meet the leadership behind 25+ years of trusted IT services.',
+  description: 'ITSco’s success comes from a team committed to integrity, transparency, and engineering excellence. Meet the leadership behind 30 years of trusted IT services.',
   canonical: 'https://www.itsco.com/about-us/meet-the-team/',
 }
 

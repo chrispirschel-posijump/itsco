@@ -41,7 +41,7 @@ export const CONTENT: CityServiceContent = {
   positioning: {
     eyebrow: 'A Pioneer in Charlotte IT Consulting',
     headlineLead: 'IT consulting in Charlotte,',
-    headlineAccent: 'refined over 25 years.',
+    headlineAccent: 'refined over 30 years.',
     paragraphs: [S[12], S[13], S[14]],
   },
   stats: [

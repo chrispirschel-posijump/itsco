@@ -54,7 +54,7 @@ export const CONTENT: CityServiceContent = {
     headlineLead: 'Why choose ITSco over other',
     headlineAccent: 'Cary cyber security companies.',
     paragraphs: [
-      'ITSco has secured North Carolina businesses for more than 25 years. Our CISSP-certified engineers bring deep, hands-on expertise to every engagement — and a track record without a single serious client breach.',
+      'ITSco has secured North Carolina businesses for 30 years. Our CISSP-certified engineers bring deep, hands-on expertise to every engagement — and a track record without a single serious client breach.',
       "We don't believe in one-size-fits-all security. We take the time to understand your systems and your business, then design a layered defense tailored to the risks that actually matter to your Cary organization.",
       '60% of our clients have been with us for five or more years. That kind of retention reflects a simple commitment: we treat your security as if it were our own.',
     ],

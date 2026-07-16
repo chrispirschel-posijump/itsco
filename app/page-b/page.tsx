@@ -88,7 +88,7 @@ function ProblemSolution() {
             <ul className="space-y-4 text-base text-itsco-body leading-relaxed">
               <li className="flex gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />
-                HIPAA-compliant infrastructure built by engineers who've served healthcare for 25+ years
+                HIPAA-compliant infrastructure built by engineers who've served healthcare for 30 years
               </li>
               <li className="flex gap-3">
                 <span className="w-1.5 h-1.5 rounded-full bg-itsco-dark mt-2.5 flex-shrink-0" />
@@ -239,7 +239,7 @@ export default function PageB() {
           <div className="max-w-2xl">
             <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">Healthcare IT Services</p>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tight mb-6">IT Built for Healthcare.</h1>
-            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-[42ch] mb-10">HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. From a team that has served healthcare for over 25 years.</p>
+            <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-[42ch] mb-10">HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. From a team that has served healthcare for 30 years.</p>
             <div className="flex flex-wrap items-center gap-4">
               <CTAButton label="Book a Free Consultation" utmSuffix="page-b" className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]" />
               <CTAButton label="Explore Healthcare Results" href="/case-studies/" variant="secondary" className="px-8 py-4 rounded-xl text-base" />

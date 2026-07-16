@@ -214,7 +214,7 @@ export const CONTENT: IndustryContent = {
     {
       question: 'Why choose ITSco specifically for mid-sized business IT?',
       answer: [
-        "ITSco has spent 25+ years working with mid-sized firms — long enough to know what actually breaks at this scale and what doesn't. We deliver the same security operations larger enterprises buy, sized and priced for your stage. We co-manage well alongside in-house staff. We bring strategic capacity through vCIO, vCTO, vCISO, and vCAIO leadership. And we win on outcomes, not contracts: most clients stay with us five years or longer because the work delivers.",
+        "ITSco has spent 30 years working with mid-sized firms — long enough to know what actually breaks at this scale and what doesn't. We deliver the same security operations larger enterprises buy, sized and priced for your stage. We co-manage well alongside in-house staff. We bring strategic capacity through vCIO, vCTO, vCISO, and vCAIO leadership. And we win on outcomes, not contracts: most clients stay with us five years or longer because the work delivers.",
       ],
     },
     {

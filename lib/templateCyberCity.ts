@@ -111,7 +111,7 @@ export function makeTemplateCyberCityContent(c: TemplateCyberCityInput): CitySer
       paragraphs: [
         `ITSco has secured North Carolina businesses since 1996. Our CISSP-certified engineers bring deep, hands-on expertise to every engagement.`,
         `We don't believe in one-size-fits-all security. We assess your systems and your risks, then design a defense tailored to what actually matters to your ${c.name} organization.`,
-        `Our track record speaks for itself: in more than 25 years, no client under our care has experienced a serious security breach.`,
+        `Our track record speaks for itself: in 30 years, no client under our care has experienced a serious security breach.`,
       ],
       image: c.whyUsImage,
     },
