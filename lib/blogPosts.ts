@@ -51,6 +51,46 @@ export function visiblePosts(): BlogPost[] {
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Post 3 of the editorial roadmap ──────────────────────────────────────
+  // Scheduled for 2026-08-31. Flip draft: false and redeploy on Aug 31.
+  {
+    slug: 'what-does-it-cost-50-person-company',
+    title: 'What Does IT Actually Cost for a 50-Person Company?',
+    category: 'Managed IT',
+    excerpt:
+      'A CFO-focused breakdown of real IT costs for a 50-person company — per-user benchmarks, model comparisons, and the hidden costs most miss.',
+    heroImage: '/images/hero/blog/israel-andrade-YI_9SivVt_s-unsplash.jpg',
+    publishedDate: '2026-08-31',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: 'How does IT cost per employee change as we grow from 25 to 100 employees?',
+        answer:
+          "It falls — typically from $200–$400 per user per month at 25 employees to $130–$250 at 100. Fixed costs like network infrastructure, security tooling, and strategic oversight amortize across more people. The categories don't change; the denominators do.",
+      },
+      {
+        question: 'Is it cheaper to hire an in-house IT person or use an MSP?',
+        answer:
+          "At 50 employees, an MSP is usually cheaper for equivalent coverage. One in-house generalist costs $80K–$220K all-in and can't cover 24/7 monitoring, security specialization, and strategy simultaneously. The honest comparison isn't one salary versus one contract — it's one salary versus the 4 or 5 roles that salary is silently expected to cover.",
+      },
+      {
+        question: "What's a typical IT budget as a percentage of revenue?",
+        answer:
+          'Around 3–6% for a 50-person company, but industry drives it more than size — benchmarks run from roughly 2% in construction and manufacturing to 10% in financial services. High revenue-per-employee firms will land below the range on a healthy budget; use per-user cost as the primary benchmark instead.',
+      },
+      {
+        question: 'Why do MSPs charge per user per month instead of hourly?',
+        answer:
+          'Because hourly billing rewards the provider when things break. Per-user pricing aligns incentives: the provider makes money by preventing problems, not billing for them. It also gives the CFO the thing hourly IT can never provide — a predictable line item that scales linearly with headcount.',
+      },
+      {
+        question: "How do we know if we're overspending on IT?",
+        answer:
+          'Benchmark your all-in per-user cost against published ranges, then check the mix. Overspending usually hides in 3 places: unused software licenses, redundant tools doing the same job, and paying senior-engineer rates for password resets. Underspending shows up differently — as downtime and productivity drag. Most companies are doing both at once.',
+      },
+    ],
+    draft: true,
+  },
   // ── Post 2 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-08-17. Draft flag stays true until publish day; flip
   // to false (or remove) on Aug 17 and redeploy.
