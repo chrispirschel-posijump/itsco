@@ -51,6 +51,46 @@ export function visiblePosts(): BlogPost[] {
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Post 4 of the editorial roadmap ──────────────────────────────────────
+  // Scheduled for 2026-09-14. Flip draft: false and redeploy on Sep 14.
+  {
+    slug: 'when-to-fire-your-msp',
+    title: "When to Fire Your MSP: 12 Signs You're With the Wrong Provider",
+    category: 'Managed IT',
+    excerpt:
+      "12 red flags that signal your MSP isn't delivering — plus how to evaluate switching, what it costs, and what to look for in a replacement.",
+    heroImage: '/images/hero/blog/vitaly-gariev-biciz2eSkiA-unsplash.jpg',
+    publishedDate: '2026-09-14',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: 'How long does it take to switch MSPs?',
+        answer:
+          'Plan for 60–90 days from signature to full cutover for a 50-person company, including a deliberate overlap period. The calendar time matters less than the sequence: documentation and credential inventory first, monitoring second, helpdesk cutover last.',
+      },
+      {
+        question: "What if I'm still in contract with my current MSP?",
+        answer:
+          "Read the termination and auto-renewal clauses first — many agreements allow exit with 60–90 days' notice, and persistent SLA failures may trigger a for-cause provision. Some companies run the numbers and find that paying an early termination fee still beats months of continued underservice. Have your attorney review the specifics before acting; contract interpretation is their lane.",
+      },
+      {
+        question: 'Will I lose data or historical tickets when I switch?',
+        answer:
+          "You shouldn't lose data — your systems and files are yours, and a professional transition transfers documentation, configurations, and credentials intact. Ticket history is less certain: it lives in the old provider's system, so request an export during the notice period, while cooperation is contractually required.",
+      },
+      {
+        question: 'Should I hire in-house IT instead of switching MSPs?',
+        answer:
+          "At 50 employees, usually not — one in-house generalist costs $80K–$220K all-in and can't cover helpdesk, security, and strategy simultaneously. The exception is when technology is core to your product. If the current MSP failed you, the fix is a better provider or a hybrid model, not necessarily a different model entirely.",
+      },
+      {
+        question: 'How do I evaluate a potential MSP before signing?',
+        answer:
+          "Use business-outcome measurement, named executive access, transparent pricing, cybersecurity depth, and a real strategic layer as your criteria — then add references: 2 clients your size at 3+ years tenure, and 1 who joined in the past 6 months. The long-tenured clients tell you what the relationship becomes; the recent one tells you what onboarding is really like.",
+      },
+    ],
+    draft: true,
+  },
   // ── Post 3 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-08-31. Flip draft: false and redeploy on Aug 31.
   {

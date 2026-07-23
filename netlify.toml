@@ -7,3 +7,22 @@
 
 [build.environment]
   NODE_VERSION = "20"
+
+# Long-cache raw static assets in /public/. Next.js Image (served via
+# /_next/image) is handled by next.config.ts images.minimumCacheTTL —
+# these rules cover any direct requests to raw files (OG image, PDFs,
+# hero videos, and any /images/ URL not routed through Next.js Image).
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/videos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/white-papers/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"

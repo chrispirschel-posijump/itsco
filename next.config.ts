@@ -10,6 +10,17 @@ const nextConfig: NextConfig = {
   async redirects() {
     return itscoRedirects;
   },
+  images: {
+    // Cache Next.js-optimized image responses for 1 year. The default 60s
+    // TTL was producing `max-age=0, must-revalidate` responses, forcing
+    // every visitor to re-check the server for every image on every visit
+    // and driving both bandwidth and web-request credit consumption.
+    minimumCacheTTL: 31536000,
+    // Serve AVIF (best compression, ~30% smaller than JPEG) with a WebP
+    // fallback for older browsers. Both are broadly supported now and
+    // cut per-image bandwidth substantially.
+    formats: ['image/avif', 'image/webp'],
+  },
 };
 
 export default nextConfig;
