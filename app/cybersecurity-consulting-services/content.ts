@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Cybersecurity Consulting Services | vCISO & Strategy',
     description:
       'ITSco cybersecurity consulting — strategic guidance, vCISO leadership, and proactive defense to build a resilient security program. Book a free consultation.',
-    canonical: 'https://www.itsco.com/cybersecurity-consulting-services/',
+    canonical: 'https://www.itsco.com/cybersecurity-consulting-services',
   },
   serviceName: 'Cybersecurity Consulting',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

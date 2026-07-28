@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'IT Resources',
   description:
     'Guides, articles, case studies, and white papers from ITSco — practical insights to make IT a measurable advantage for your business.',
-  alternates: { canonical: 'https://www.itsco.com/resources/' },
+  alternates: { canonical: 'https://www.itsco.com/resources' },
 }
 
 const RESOURCES = [
@@ -113,7 +113,7 @@ const resourcesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Resources',
-  url: 'https://www.itsco.com/resources/',
+  url: 'https://www.itsco.com/resources',
   description:
     'IT resources — case studies, white papers, blog posts, and tools to help business leaders make smarter technology decisions.',
   about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
@@ -124,7 +124,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.itsco.com/resources/' },
+    { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.itsco.com/resources' },
   ],
 }
 

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/fully-managed-cybersecurity/
 // Generated: 2026-05-20T18:53:58.095Z
 
-export const SOURCE_URL = "https://www.itsco.com/fully-managed-cybersecurity/"
+export const SOURCE_URL = "https://www.itsco.com/fully-managed-cybersecurity"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Client Testimonials: Fully-Managed Cybersecurity Excellence",

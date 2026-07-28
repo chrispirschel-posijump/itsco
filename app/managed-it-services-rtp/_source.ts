@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-rtp/
 // Generated: 2026-05-20T12:49:08.045Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-rtp/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-rtp"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "At ITSco, we design, deploy, and maintain secure, scalable, and robust IT environments to increase productivity and profitability. Let us be your Managed IT Services partner, located in the heart of Research Triangle Park, North Carolina .",

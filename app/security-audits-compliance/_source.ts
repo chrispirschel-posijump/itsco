@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/security-audits-compliance/
 // Generated: 2026-05-20T18:54:02.082Z
 
-export const SOURCE_URL = "https://www.itsco.com/security-audits-compliance/"
+export const SOURCE_URL = "https://www.itsco.com/security-audits-compliance"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Cybersecurity failures can jeopardize your business in an instant, leading to financial losses, reputational damage, and regulatory penalties.",

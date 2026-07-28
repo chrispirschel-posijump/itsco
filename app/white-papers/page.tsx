@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'White Papers | In-Depth Research from ITSco',
   description:
     'In-depth white papers from ITSco — research on AI strategy, cybersecurity, cloud architecture, ITAD, and the sustainable management of IT infrastructure. Free, no gate.',
-  alternates: { canonical: 'https://www.itsco.com/white-papers/' },
+  alternates: { canonical: 'https://www.itsco.com/white-papers' },
 }
 
 interface WhitePaper {
@@ -279,7 +279,7 @@ export default function WhitePapersHubPage() {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'White Papers',
-                item: 'https://www.itsco.com/white-papers/',
+                item: 'https://www.itsco.com/white-papers',
               },
             ],
           }),

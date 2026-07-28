@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/services/itad/
 // Generated: 2026-05-21T14:32:23.596Z
 
-export const SOURCE_URL = "https://www.itsco.com/services/itad/"
+export const SOURCE_URL = "https://www.itsco.com/services/itad"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Retiring old IT assets isn’t just about disposal—it’s about protecting sensitive data, maintaining compliance, and ensuring an efficient, secure process.",

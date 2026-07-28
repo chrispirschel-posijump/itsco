@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/server-monitoring-and-maintenance/
 // Generated: 2026-05-20T18:03:05.136Z
 
-export const SOURCE_URL = "https://www.itsco.com/server-monitoring-and-maintenance/"
+export const SOURCE_URL = "https://www.itsco.com/server-monitoring-and-maintenance"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Your servers are the backbone of your IT infrastructure—keeping them secure, optimized, and running smoothly is essential to business success.",

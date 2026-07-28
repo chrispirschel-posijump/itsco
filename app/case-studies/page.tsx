@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Case Studies | Real Client Outcomes',
   description:
     'Real results from real ITSco clients across healthcare, financial services, and energy — measurable outcomes from managed IT, cybersecurity, and network automation engagements.',
-  alternates: { canonical: 'https://www.itsco.com/case-studies/' },
+  alternates: { canonical: 'https://www.itsco.com/case-studies' },
 }
 
 const CASE_STUDIES = [
@@ -162,7 +162,7 @@ export default function CaseStudiesPage() {
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Case Studies',
-                item: 'https://www.itsco.com/case-studies/',
+                item: 'https://www.itsco.com/case-studies',
               },
             ],
           }),

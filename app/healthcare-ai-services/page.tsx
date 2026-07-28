@@ -12,11 +12,11 @@ import { Map, UserCog, ClipboardCheck, Check, Minus, X } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'Healthcare AI Services',
   description: 'ITSco helps healthcare clinical organizations reduce IT risk, improve compliance, and deploy AI safely. HIPAA-native. Fractional CAIO included. Trusted since 1996.',
-  alternates: { canonical: 'https://www.itsco.com/healthcare-ai-services/' },
+  alternates: { canonical: 'https://www.itsco.com/healthcare-ai-services' },
   openGraph: {
     title: 'Healthcare AI Services | ITSco',
     description: 'HIPAA-native AI strategy, infrastructure, deployment, and governance for clinical organizations.',
-    url: 'https://www.itsco.com/healthcare-ai-services/',
+    url: 'https://www.itsco.com/healthcare-ai-services',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -34,7 +34,7 @@ const serviceJsonLd = {
   },
   description: 'AI strategy, private LLM environments, managed AI operations, fractional Chief AI Officer, and HIPAA AI compliance for healthcare clinical organizations.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/healthcare-ai-services/',
+  url: 'https://www.itsco.com/healthcare-ai-services',
 }
 
 const breadcrumbJsonLd = {
@@ -42,8 +42,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation/' },
-    { '@type': 'ListItem', position: 3, name: 'Healthcare AI Services', item: 'https://www.itsco.com/healthcare-ai-services/' },
+    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation' },
+    { '@type': 'ListItem', position: 3, name: 'Healthcare AI Services', item: 'https://www.itsco.com/healthcare-ai-services' },
   ],
 }
 

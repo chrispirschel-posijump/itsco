@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft SharePoint Services & Support',
     description:
       'ITSco Microsoft SharePoint services — deployment, migration, management, and security for a SharePoint environment that actually drives collaboration. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-sharepoint-services/',
+    canonical: 'https://www.itsco.com/microsoft-sharepoint-services',
   },
   serviceName: 'Microsoft SharePoint Services',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

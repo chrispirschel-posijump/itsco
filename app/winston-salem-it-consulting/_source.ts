@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/winston-salem-it-consulting/
 // Generated: 2026-05-20T14:13:23.913Z
 
-export const SOURCE_URL = "https://www.itsco.com/winston-salem-it-consulting/"
+export const SOURCE_URL = "https://www.itsco.com/winston-salem-it-consulting"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Develop a long-term technology roadmap, implement projects, and unleash the full potential of your IT with a top IT consultancy.",

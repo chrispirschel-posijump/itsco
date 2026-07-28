@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Concord, NC',
     description:
       'ITSco delivers managed IT services in Concord, NC — monitoring, cybersecurity, help desk, and cloud — to increase productivity and control costs. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-concord/',
+    canonical: 'https://www.itsco.com/managed-it-services-concord',
   },
   hero: {
     eyebrow: 'Managed IT Services · Concord, NC',

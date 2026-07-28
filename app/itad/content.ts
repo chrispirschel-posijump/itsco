@@ -10,7 +10,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Secure IT Asset Disposition (ITAD) Services',
     description:
       'ITSco ITAD services — securely retire and dispose of IT hardware while protecting data, maximizing value recovery, and ensuring compliance. Book a free consultation.',
-    canonical: 'https://www.itsco.com/itad/',
+    canonical: 'https://www.itsco.com/itad',
   },
   serviceName: 'IT Asset Disposition (ITAD)',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

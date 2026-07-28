@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-huntersville/
 // Generated: 2026-05-20T12:43:57.571Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-huntersville/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-huntersville"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Save time and money by putting your IT services in the hands of an IT company that offers comprehensive, cost-effective support services in Huntersville. Why choose ITSco for managed IT services in Huntersville, North Carolina?",

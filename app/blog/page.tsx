@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: 'ITSco Blog | Practical IT Insights for Business Leaders',
   description:
     'Articles on managed IT, cybersecurity, cloud, and getting more value from your technology — practical insights from the ITSco team.',
-  alternates: { canonical: 'https://www.itsco.com/blog/' },
+  alternates: { canonical: 'https://www.itsco.com/blog' },
 }
 
 function Hero() {
@@ -82,7 +82,7 @@ const blogJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Blog',
   name: 'ITSco Insights',
-  url: 'https://www.itsco.com/blog/',
+  url: 'https://www.itsco.com/blog',
   description:
     'IT, cybersecurity, cloud, and AI insights for North Carolina business leaders — from the team at ITSco.',
   publisher: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
@@ -93,7 +93,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.itsco.com/blog/' },
+    { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.itsco.com/blog' },
   ],
 }
 

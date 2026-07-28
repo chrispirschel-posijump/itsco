@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft Sentinel Services | Cloud SIEM',
     description:
       'ITSco deploys, tunes, and monitors Microsoft Sentinel — Microsoft’s cloud-native SIEM — paired with analysts who act on what it finds. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-sentinel/',
+    canonical: 'https://www.itsco.com/microsoft-sentinel',
   },
   serviceName: 'Microsoft Sentinel',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

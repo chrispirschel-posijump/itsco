@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/cost-of-it-support-for-small-business/
 // Generated: 2026-05-20T17:50:04.737Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/cost-of-it-support-for-small-business/"
+export const SOURCE_URL = "https://www.itsco.com/blog/cost-of-it-support-for-small-business"
 export const PAGE_TITLE = "What is the Average Cost of IT Support for Small Businesses? | ITSco"
 
 export const ARTICLE = [

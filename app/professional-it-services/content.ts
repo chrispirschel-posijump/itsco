@@ -17,7 +17,7 @@ export const CONTENT: IndustryContent = {
     title: 'Professional Services IT | Managed IT for Consultancies & Agencies',
     description:
       'IT services built for consulting, architecture and engineering, and creative agencies. Billable-hour uptime, client confidentiality, hybrid-team enablement, and multi-office scale. Book a free consultation with ITSco.',
-    canonical: 'https://www.itsco.com/professional-it-services/',
+    canonical: 'https://www.itsco.com/professional-it-services',
   },
   hero: {
     eyebrow: 'Professional Services IT',

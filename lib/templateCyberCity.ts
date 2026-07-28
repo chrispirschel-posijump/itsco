@@ -25,7 +25,7 @@ export function makeTemplateCyberCityContent(c: TemplateCyberCityInput): CitySer
     meta: {
       title: `Cyber Security Services in ${c.name}, NC | ITSco`,
       description: `ITSco delivers cyber security services in ${c.name}, NC — SIEM, risk management, security architecture, compliance, and cloud security — from a team with zero serious client breaches. Book a free consultation.`,
-      canonical: `https://www.itsco.com/${c.slug}-cyber-security-services/`,
+      canonical: `https://www.itsco.com/${c.slug}-cyber-security-services`,
     },
     hero: {
       eyebrow: `Cyber Security Services · ${c.name}, NC`,

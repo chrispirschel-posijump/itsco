@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/about-us/meet-the-team/
 // Generated: 2026-05-15T18:40:49.039Z
 
-export const SOURCE_URL = "https://www.itsco.com/about-us/meet-the-team/"
+export const SOURCE_URL = "https://www.itsco.com/about-us/meet-the-team"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Discover the people working behind the scenes, striving to make your IT perform at peak efficiency—24/7.",

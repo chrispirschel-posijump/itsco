@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'AI Strategy Consulting | Practical AI Roadmaps',
     description:
       'ITSco AI strategy consulting — opportunity mapping, governance, and phased roadmaps that turn AI investments into measurable business outcomes. Book a free consultation.',
-    canonical: 'https://www.itsco.com/ai-strategy-consulting/',
+    canonical: 'https://www.itsco.com/ai-strategy-consulting',
   },
   serviceName: 'AI Strategy Consulting',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

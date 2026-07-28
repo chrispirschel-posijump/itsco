@@ -25,11 +25,11 @@ import {
 export const metadata: Metadata = {
   title: 'Managed IT Services | Managed Services Provider',
   description: 'ITSco delivers managed IT services with 24/7 monitoring, helpdesk, and security management. Predictable monthly cost. Trusted since 1996. Book a free consultation.',
-  alternates: { canonical: 'https://www.itsco.com/managed-it-services/' },
+  alternates: { canonical: 'https://www.itsco.com/managed-it-services' },
   openGraph: {
     title: 'Managed IT Services | Managed Services Provider | ITSco',
     description: 'Managed IT, monitored and maintained by trusted partners. Predictable monthly cost. Trusted since 1996.',
-    url: 'https://www.itsco.com/managed-it-services/',
+    url: 'https://www.itsco.com/managed-it-services',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -47,7 +47,7 @@ const serviceJsonLd = {
   },
   description: 'Managed IT services including 24/7 monitoring, helpdesk, preventative maintenance, security management, and advanced engineering for businesses across NC, SC, and VA.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/managed-it-services/',
+  url: 'https://www.itsco.com/managed-it-services',
 }
 
 const breadcrumbJsonLd = {
@@ -55,8 +55,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Managed IT Services', item: 'https://www.itsco.com/managed-it-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'Managed IT Services', item: 'https://www.itsco.com/managed-it-services' },
   ],
 }
 

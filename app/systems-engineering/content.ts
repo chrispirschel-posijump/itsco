@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Systems Engineering Services',
     description:
       'ITSco systems engineering — servers, storage, virtualization, and architecture engineered for reliability, performance, and growth. Book a free consultation.',
-    canonical: 'https://www.itsco.com/systems-engineering/',
+    canonical: 'https://www.itsco.com/systems-engineering',
   },
   serviceName: 'Systems Engineering',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

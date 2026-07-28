@@ -11,7 +11,7 @@ export const CONTENT: WhitePaperContent = {
     description:
       'AI can turn IT asset disposition from a crisis into opportunity — improved decommissioning, predictive lifecycle planning, and secure data destruction. Free PDF download.',
     canonical:
-      'https://www.itsco.com/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach/',
+      'https://www.itsco.com/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach',
   },
   category: 'ITAD & Sustainability',
   eyebrow: 'ITAD & Sustainability',

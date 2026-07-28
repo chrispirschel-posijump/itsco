@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/network-engineering/
 // Generated: 2026-05-21T14:32:22.118Z
 
-export const SOURCE_URL = "https://www.itsco.com/network-engineering/"
+export const SOURCE_URL = "https://www.itsco.com/network-engineering"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Drive business growth with a modern, secure, high-performance network designed and implemented by ITSco’s expert engineering team.",

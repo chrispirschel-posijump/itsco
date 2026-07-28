@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-winston-salem/
 // Generated: 2026-05-20T12:43:54.713Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-winston-salem/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-winston-salem"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Reduce risk and improve productivity with support from one of the most trusted IT companies serving Winston-Salem.",

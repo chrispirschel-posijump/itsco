@@ -16,7 +16,7 @@ export const CONTENT: CaseStudyContent = {
       'Regional Bank Network Automation Case Study — Ansible Tower | ITSco',
     description:
       'A 100+ year old, $27 billion regional bank turned to ITSco — via the Red Hat Partner Network — to deploy AWX/Ansible/Red Hat Tower across 250+ offices and automate network management.',
-    canonical: 'https://www.itsco.com/case-studies/regional-bank/',
+    canonical: 'https://www.itsco.com/case-studies/regional-bank',
   },
   industry: 'Financial Services',
   clientLabel: 'Anonymous · $27 Billion regional bank, 250+ offices, 2,800 employees',

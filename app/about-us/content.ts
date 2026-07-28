@@ -8,7 +8,7 @@ import { SOURCE_PARAGRAPHS } from './_source'
 export const META = {
   title: 'About ITSco | Trusted Managed IT Services Since 1996',
   description: 'ITSco has delivered managed IT services for 30 years. Built on honesty, engineering excellence, and a dedication to customer success across NC, SC, and VA.',
-  canonical: 'https://www.itsco.com/about-us/',
+  canonical: 'https://www.itsco.com/about-us',
 }
 
 export const HERO = {

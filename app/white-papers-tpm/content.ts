@@ -11,7 +11,7 @@ export const CONTENT: WhitePaperContent = {
     title: 'AI Spending and ESG Pressures Drive Demand for TPM | White Paper',
     description:
       "The third-party maintenance (TPM) market is projected to grow 20% per year as AI capex and ESG mandates extend server refresh cycles. Free PDF download.",
-    canonical: 'https://www.itsco.com/white-papers-tpm/',
+    canonical: 'https://www.itsco.com/white-papers-tpm',
   },
   category: 'ITAD & Sustainability',
   eyebrow: 'ITAD & Sustainability',

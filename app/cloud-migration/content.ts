@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Cloud Migration Services',
     description:
       'ITSco cloud migration — a planned, secure, low-disruption move to the cloud that lands right the first time. Book a free consultation.',
-    canonical: 'https://www.itsco.com/cloud-migration/',
+    canonical: 'https://www.itsco.com/cloud-migration',
   },
   serviceName: 'Cloud Migration',
   parent: { name: 'Cloud Services', href: '/cloud-services/' },

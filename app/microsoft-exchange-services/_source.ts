@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/microsoft-exchange-services/
 // Generated: 2026-05-21T13:37:01.553Z
 
-export const SOURCE_URL = "https://www.itsco.com/microsoft-exchange-services/"
+export const SOURCE_URL = "https://www.itsco.com/microsoft-exchange-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Microsoft Exchange is the backbone of business email communication, providing organizations with a secure and efficient way to manage their messaging infrastructure. Without expert support, businesses can face email downtime, security vulnerabilities, and compliance risks.",

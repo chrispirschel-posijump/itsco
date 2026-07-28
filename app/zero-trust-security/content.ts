@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Zero Trust Security Services',
     description:
       'ITSco helps you adopt zero trust security — verify every user, device, and request, so one stolen password never becomes a breach. Book a free consultation.',
-    canonical: 'https://www.itsco.com/zero-trust-security/',
+    canonical: 'https://www.itsco.com/zero-trust-security',
   },
   serviceName: 'Zero Trust Security',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

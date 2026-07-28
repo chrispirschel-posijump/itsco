@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-concord/
 // Generated: 2026-05-20T12:43:55.141Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-concord/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-concord"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Increase productivity and profitability and control costs with our IT services in Concord, North Carolina. Why choose ITSco for managed IT services in Concord?",

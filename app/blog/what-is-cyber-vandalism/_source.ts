@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/what-is-cyber-vandalism/
 // Generated: 2026-05-20T17:50:06.286Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/what-is-cyber-vandalism/"
+export const SOURCE_URL = "https://www.itsco.com/blog/what-is-cyber-vandalism"
 export const PAGE_TITLE = "What is Cyber Vandalism? | ITSco"
 
 export const ARTICLE = [

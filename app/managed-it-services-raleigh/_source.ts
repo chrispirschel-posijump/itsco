@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-raleigh/
 // Generated: 2026-05-20T11:39:25.833Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-raleigh/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-raleigh"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Let ITSco manage your information technology services to improve uptime and increase your ROI – so that you can focus on running your business.",

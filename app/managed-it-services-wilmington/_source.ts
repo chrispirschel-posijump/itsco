@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-wilmington/
 // Generated: 2026-05-20T12:43:52.664Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-wilmington/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-wilmington"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Put your IT infrastructure in the capable hands of an established North Carolina IT company serving Wilmington, so that you can focus on growing your company. Why choose ITSco for managed IT services in Wilmington, North Carolina?",

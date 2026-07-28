@@ -11,11 +11,11 @@ import { DollarSign, Clock, ShieldCheck, Rocket } from 'lucide-react'
 export const metadata: Metadata = {
   title: 'The ROI of Managed IT Services',
   description: 'Is your IT investment actually paying for itself? ITSco delivers documented ROI across four dimensions every quarter. See what your MSP should be measuring.',
-  alternates: { canonical: 'https://www.itsco.com/maximize-roi-with-managed-it-services/' },
+  alternates: { canonical: 'https://www.itsco.com/maximize-roi-with-managed-it-services' },
   openGraph: {
     title: 'The ROI of Managed IT Services | ITSco',
     description: 'Documented ROI across four dimensions every quarter. See what your MSP should be measuring.',
-    url: 'https://www.itsco.com/maximize-roi-with-managed-it-services/',
+    url: 'https://www.itsco.com/maximize-roi-with-managed-it-services',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -33,7 +33,7 @@ const serviceJsonLd = {
   },
   description: 'Quarterly business reviews documenting IT ROI across financial savings, downtime avoidance, risk reduction, and business enablement.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/maximize-roi-with-managed-it-services/',
+  url: 'https://www.itsco.com/maximize-roi-with-managed-it-services',
 }
 
 const breadcrumbJsonLd = {
@@ -41,8 +41,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Maximize IT ROI', item: 'https://www.itsco.com/maximize-roi-with-managed-it-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'Maximize IT ROI', item: 'https://www.itsco.com/maximize-roi-with-managed-it-services' },
   ],
 }
 

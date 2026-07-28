@@ -11,7 +11,7 @@ import { SOURCE_PARAGRAPHS } from './_source'
 export const META = {
   title: 'IT Services for Legal Companies and Law Firms',
   description: 'Boost your legal IT solutions with ITSco. Managed IT, cybersecurity, 24/7 helpdesk, and compliance support tailored to law firms.',
-  canonical: 'https://www.itsco.com/legal-and-law-firm-it-services/',
+  canonical: 'https://www.itsco.com/legal-and-law-firm-it-services',
 }
 
 export const HERO = {

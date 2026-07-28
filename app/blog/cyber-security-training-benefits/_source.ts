@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/cyber-security-training-benefits/
 // Generated: 2026-05-20T17:50:08.905Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/cyber-security-training-benefits/"
+export const SOURCE_URL = "https://www.itsco.com/blog/cyber-security-training-benefits"
 export const PAGE_TITLE = "Eight Benefits of Cyber Security Training for Your Business"
 
 export const ARTICLE = [

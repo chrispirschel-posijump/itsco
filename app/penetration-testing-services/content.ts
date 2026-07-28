@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Penetration Testing Services | NC, SC & VA',
     description:
       'ITSco penetration testing simulates real-world attacks across your networks, applications, and people — surfacing weaknesses before attackers do. Book a free consultation.',
-    canonical: 'https://www.itsco.com/penetration-testing-services/',
+    canonical: 'https://www.itsco.com/penetration-testing-services',
   },
   serviceName: 'Penetration Testing',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

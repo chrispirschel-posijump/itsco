@@ -216,7 +216,7 @@ const leadershipJsonLd = [
     name: 'Mike Savino',
     jobTitle: 'Chief Executive Officer & Chief Financial Officer',
     worksFor: { '@id': ORG_ID },
-    url: 'https://www.itsco.com/about-us/meet-the-team/',
+    url: 'https://www.itsco.com/about-us/meet-the-team',
     description:
       'CEO and CFO of ITSco, focused on the outcomes that matter most to clients: financial stability, revenue growth, and operational excellence.',
   },
@@ -227,7 +227,7 @@ const leadershipJsonLd = [
     name: 'George Terrone',
     jobTitle: 'Founder',
     worksFor: { '@id': ORG_ID },
-    url: 'https://www.itsco.com/about-us/meet-the-team/',
+    url: 'https://www.itsco.com/about-us/meet-the-team',
     description:
       'Founder of ITSco. Founded the company in 1996 to deliver outcomes-focused IT services to North Carolina businesses.',
   },
@@ -238,7 +238,7 @@ const leadershipJsonLd = [
     name: 'Greg Wassil',
     jobTitle: 'Chief Technology Officer & Co-Founder',
     worksFor: { '@id': ORG_ID },
-    url: 'https://www.itsco.com/about-us/meet-the-team/',
+    url: 'https://www.itsco.com/about-us/meet-the-team',
     description:
       'CTO and Co-Founder of ITSco. Leads technical strategy and engineering across managed IT, cybersecurity, and cloud services.',
   },
@@ -249,7 +249,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.itsco.com/about-us/' },
+    { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.itsco.com/about-us' },
   ],
 }
 

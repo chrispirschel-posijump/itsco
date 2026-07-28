@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-roi-assessment/
 // Generated: 2026-05-21T14:01:47.849Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-roi-assessment/"
+export const SOURCE_URL = "https://www.itsco.com/it-roi-assessment"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Investment in IT should be an enabler of business growth and not simply a drain on resources. Yet, many organizations struggle to understand where their IT budget is going, whether their systems truly serve their goals, or how to improve efficiency—and their bottom line.",

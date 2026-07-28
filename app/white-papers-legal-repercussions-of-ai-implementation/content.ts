@@ -11,7 +11,7 @@ export const CONTENT: WhitePaperContent = {
     description:
       "Data breaches peaked at 3,205 in 2023 — a 43.8% increase. The expanding regulatory landscape around AI-driven incidents, and what it means for cybersecurity, ITAD, and data destruction. Free PDF download.",
     canonical:
-      'https://www.itsco.com/white-papers-legal-repercussions-of-ai-implementation/',
+      'https://www.itsco.com/white-papers-legal-repercussions-of-ai-implementation',
   },
   category: 'Cybersecurity & AI Risk',
   eyebrow: 'Cybersecurity & AI Risk',

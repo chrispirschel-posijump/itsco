@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IT Roadmap Planning Services',
     description:
       'ITSco IT roadmap planning — turn reactive IT spending into a clear, prioritized, costed multi-year plan aligned to your business goals. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-roadmap-planning/',
+    canonical: 'https://www.itsco.com/it-roadmap-planning',
   },
   serviceName: 'IT Roadmap Planning',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

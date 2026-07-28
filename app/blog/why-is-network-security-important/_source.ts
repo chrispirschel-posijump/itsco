@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/why-is-network-security-important/
 // Generated: 2026-05-20T17:50:05.137Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/why-is-network-security-important/"
+export const SOURCE_URL = "https://www.itsco.com/blog/why-is-network-security-important"
 export const PAGE_TITLE = "10 Reasons Why Network Security is Important for Businesses | ITSco"
 
 export const ARTICLE = [

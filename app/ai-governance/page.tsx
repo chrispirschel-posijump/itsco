@@ -11,11 +11,11 @@ import { Eye, ShieldOff, AlertTriangle, FileCheck, Users, Search, ListChecks, Sh
 export const metadata: Metadata = {
   title: 'AI Governance for Business',
   description: 'Shadow AI is already inside your organization. ITSco helps you discover, control, and govern every AI tool your employees use before it becomes a breach or a compliance failure.',
-  alternates: { canonical: 'https://www.itsco.com/ai-governance/' },
+  alternates: { canonical: 'https://www.itsco.com/ai-governance' },
   openGraph: {
     title: 'AI Governance for Business | ITSco',
     description: 'Shadow AI is already inside your organization. Discover, control, and govern every AI tool your employees use.',
-    url: 'https://www.itsco.com/ai-governance/',
+    url: 'https://www.itsco.com/ai-governance',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -33,7 +33,7 @@ const serviceJsonLd = {
   },
   description: 'Shadow AI discovery, classification, real-time prompt and response inspection, and continuous compliance reporting for SOC 2, HIPAA, and GDPR.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/ai-governance/',
+  url: 'https://www.itsco.com/ai-governance',
 }
 
 const breadcrumbJsonLd = {
@@ -41,8 +41,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation/' },
-    { '@type': 'ListItem', position: 3, name: 'AI Governance', item: 'https://www.itsco.com/ai-governance/' },
+    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation' },
+    { '@type': 'ListItem', position: 3, name: 'AI Governance', item: 'https://www.itsco.com/ai-governance' },
   ],
 }
 

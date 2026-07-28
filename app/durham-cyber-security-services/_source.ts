@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/durham-cyber-security-services/
 // Generated: 2026-05-20T13:08:23.243Z
 
-export const SOURCE_URL = "https://www.itsco.com/durham-cyber-security-services/"
+export const SOURCE_URL = "https://www.itsco.com/durham-cyber-security-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Safeguard Your Data and Applications With a Proven Cyber Security Company",

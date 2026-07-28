@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'VoIP & Unified Communications Services',
     description:
       'ITSco VoIP and unified communications — secure, scalable business voice and collaboration for office, remote, and hybrid teams. Book a free consultation.',
-    canonical: 'https://www.itsco.com/voip-unified-communications/',
+    canonical: 'https://www.itsco.com/voip-unified-communications',
   },
   serviceName: 'VoIP & Unified Communications',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

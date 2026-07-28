@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/it-cost-reduction/
 // Generated: 2026-05-20T17:50:08.537Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/it-cost-reduction/"
+export const SOURCE_URL = "https://www.itsco.com/blog/it-cost-reduction"
 export const PAGE_TITLE = "How to Reduce Technology Costs [IT Cost Reduction] | ITSco"
 
 export const ARTICLE = [

@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft 365 Services | Deployment, Management & Security',
     description:
       'ITSco Microsoft 365 services — deployment, migration, security, and management so you get the full value of every license. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-365-services/',
+    canonical: 'https://www.itsco.com/microsoft-365-services',
   },
   serviceName: 'Microsoft 365 Services',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

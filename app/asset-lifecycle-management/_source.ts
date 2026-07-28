@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/services/managed-it-services/asset-lifecycle-management/
 // Generated: 2026-05-20T18:03:07.081Z
 
-export const SOURCE_URL = "https://www.itsco.com/services/managed-it-services/asset-lifecycle-management/"
+export const SOURCE_URL = "https://www.itsco.com/services/managed-it-services/asset-lifecycle-management"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "At ITSco, we offer end-to-end Asset Lifecycle Management solutions, encompassing every stage of an IT asset’s journey—from procurement and deployment to maintenance, upgrades, and secure end-of-life disposition.",

@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: post.title,
   description: post.excerpt,
   alternates: {
-    canonical: `https://www.itsco.com/blog/${post.slug}/`,
+    canonical: `https://www.itsco.com/blog/${post.slug}`,
   },
   // Draft posts (scheduled or explicitly flagged) should not be indexed
   // even if a search engine finds their URL directly. Once the post ships,

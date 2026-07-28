@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/penetration-testing-services/
 // Generated: 2026-05-20T18:54:01.248Z
 
-export const SOURCE_URL = "https://www.itsco.com/penetration-testing-services/"
+export const SOURCE_URL = "https://www.itsco.com/penetration-testing-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Thrilled Clients Rave About our Penetration Testing Services",

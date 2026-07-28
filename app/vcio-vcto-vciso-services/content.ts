@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'vCIO, vCTO, vCISO & vCAIO Services | Virtual IT Leadership',
     description:
       'ITSco virtual executive services — vCIO, vCTO, vCISO, and vCAIO leadership that aligns IT and AI with business goals, without the cost of a full-time hire. Book a free consultation.',
-    canonical: 'https://www.itsco.com/vcio-vcto-vciso-services/',
+    canonical: 'https://www.itsco.com/vcio-vcto-vciso-services',
   },
   serviceName: 'vCIO, vCTO, vCISO & vCAIO Services',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

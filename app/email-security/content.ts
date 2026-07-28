@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Email Security Services | Anti-Phishing & Malware Protection',
     description:
       'ITSco email security blocks phishing, malware, and account takeover before they reach your people. 24/7 monitoring and rapid response. Book a free consultation.',
-    canonical: 'https://www.itsco.com/email-security/',
+    canonical: 'https://www.itsco.com/email-security',
   },
   serviceName: 'Email Security',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

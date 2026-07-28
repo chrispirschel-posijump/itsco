@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Business Continuity Planning Services',
     description:
       'ITSco business continuity planning — keep critical operations running through an outage, attack, or disaster, and recover fast. Book a free consultation.',
-    canonical: 'https://www.itsco.com/business-continuity-planning/',
+    canonical: 'https://www.itsco.com/business-continuity-planning',
   },
   serviceName: 'Business Continuity Planning',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

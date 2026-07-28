@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/raleigh-it-helpdesk/
 // Generated: 2026-05-20T14:13:26.094Z
 
-export const SOURCE_URL = "https://www.itsco.com/raleigh-it-helpdesk/"
+export const SOURCE_URL = "https://www.itsco.com/raleigh-it-helpdesk"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Technology issues can frustrate employees, disrupt workflows, and reduce productivity. ITSco’s HelpDesk and Service Desk solutions provide businesses with fast, expert IT support, ensuring that technical problems are resolved quickly—before they impact operations.",

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/charlotte-it-consulting/
 // Generated: 2026-05-20T14:13:22.622Z
 
-export const SOURCE_URL = "https://www.itsco.com/charlotte-it-consulting/"
+export const SOURCE_URL = "https://www.itsco.com/charlotte-it-consulting"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Leverage the expertise of Charlotte’s top IT consultants and turn your business goals into reality.",

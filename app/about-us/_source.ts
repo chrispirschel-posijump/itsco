@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/about-us/
 // Generated: 2026-05-15T18:40:46.805Z
 
-export const SOURCE_URL = "https://www.itsco.com/about-us/"
+export const SOURCE_URL = "https://www.itsco.com/about-us"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Join the growing list of businesses that have found the answer to that challenge by partnering with the ITSco team.",

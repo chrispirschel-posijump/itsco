@@ -14,7 +14,7 @@ export const CONTENT: CaseStudyContent = {
       'Oil Company Network Automation Case Study — Ansible Tower Deployment | ITSco',
     description:
       "After a multi-million-dollar breach, one of the world's largest oil companies brought in ITSco via Red Hat to stand up Ansible Tower and harden network operations across security, supportability, and scalability.",
-    canonical: 'https://www.itsco.com/case-studies/network-automation/',
+    canonical: 'https://www.itsco.com/case-studies/network-automation',
   },
   industry: 'Energy',
   clientLabel: "Anonymous · One of the world's largest oil companies",

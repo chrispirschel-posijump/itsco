@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/network-security-plan/
 // Generated: 2026-05-20T17:50:07.413Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/network-security-plan/"
+export const SOURCE_URL = "https://www.itsco.com/blog/network-security-plan"
 export const PAGE_TITLE = "How to Plan & Implement a Network Security Plan | ITSco"
 
 export const ARTICLE = [

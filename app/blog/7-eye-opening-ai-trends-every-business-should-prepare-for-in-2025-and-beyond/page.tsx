@@ -8,7 +8,7 @@ const post = getPost('7-eye-opening-ai-trends-every-business-should-prepare-for-
 export const metadata: Metadata = {
   title: post.title,
   description: post.excerpt,
-  alternates: { canonical: `https://www.itsco.com/blog/${post.slug}/` },
+  alternates: { canonical: `https://www.itsco.com/blog/${post.slug}` },
 }
 
 export default function Page() {

@@ -16,7 +16,7 @@ export const CONTENT: IndustryContent = {
     title: 'Accounting Firm IT Services | Managed IT for CPAs',
     description:
       'IT services built for accounting firms — tax-season uptime, IRS Publication 4557 and GLBA-aligned cybersecurity, secure client portals, and modern firm infrastructure. Book a free consultation with ITSco.',
-    canonical: 'https://www.itsco.com/accounting-firm-it-services/',
+    canonical: 'https://www.itsco.com/accounting-firm-it-services',
   },
   hero: {
     eyebrow: 'Accounting Firm IT Services',

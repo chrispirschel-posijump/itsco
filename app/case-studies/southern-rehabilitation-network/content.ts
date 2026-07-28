@@ -15,7 +15,7 @@ export const CONTENT: CaseStudyContent = {
     description:
       "How ITSco's cybersecurity and infrastructure modernization helped Southern Rehabilitation Network meet stringent State of North Carolina security requirements and secure a critical contract.",
     canonical:
-      'https://www.itsco.com/case-studies/southern-rehabilitation-network/',
+      'https://www.itsco.com/case-studies/southern-rehabilitation-network',
   },
   industry: 'Healthcare',
   clientLabel: 'Southern Rehabilitation Network · Healthcare',

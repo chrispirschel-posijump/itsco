@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'AI & Automation Services',
   description:
     'AI governance, readiness assessments, strategy consulting, Microsoft Copilot, and process automation — ITSco helps businesses adopt AI safely and strategically.',
-  alternates: { canonical: 'https://www.itsco.com/ai-automation/' },
+  alternates: { canonical: 'https://www.itsco.com/ai-automation' },
 }
 
 const AI_SERVICES = [
@@ -121,7 +121,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation/' },
+    { '@type': 'ListItem', position: 2, name: 'AI & Automation', item: 'https://www.itsco.com/ai-automation' },
   ],
 }
 

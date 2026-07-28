@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Tech & IT Support in Winston-Salem, NC',
     description:
       'ITSco delivers tech and IT support in Winston-Salem, NC — 24/7 monitoring, help desk, cybersecurity, and cloud — with flexible, predictable pricing. Book a free consultation.',
-    canonical: 'https://www.itsco.com/winston-salem-tech-it-support/',
+    canonical: 'https://www.itsco.com/winston-salem-tech-it-support',
   },
   hero: {
     eyebrow: 'Tech & IT Support · Winston-Salem, NC',

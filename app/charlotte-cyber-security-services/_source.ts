@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/charlotte-cyber-security-services/
 // Generated: 2026-05-20T13:08:23.600Z
 
-export const SOURCE_URL = "https://www.itsco.com/charlotte-cyber-security-services/"
+export const SOURCE_URL = "https://www.itsco.com/charlotte-cyber-security-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Protect sensitive data and business applications with cutting-edge cyber security in Charlotte, North Carolina .",

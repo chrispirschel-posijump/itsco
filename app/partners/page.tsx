@@ -286,7 +286,7 @@ const partnersJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Partners',
-  url: 'https://www.itsco.com/partners/',
+  url: 'https://www.itsco.com/partners',
   description:
     'ITSco partners with Microsoft, leading cybersecurity vendors, and other industry technology leaders to deliver enterprise-grade IT to businesses across NC, SC, and VA.',
   about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
@@ -297,7 +297,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Partners', item: 'https://www.itsco.com/partners/' },
+    { '@type': 'ListItem', position: 2, name: 'Partners', item: 'https://www.itsco.com/partners' },
   ],
 }
 

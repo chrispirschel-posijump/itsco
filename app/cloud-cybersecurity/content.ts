@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Cloud Cybersecurity Services',
     description:
       'ITSco cloud cybersecurity closes the gap providers leave to you — configuration, identity, data protection, and monitoring across Microsoft 365, Azure, and AWS. Book a free consultation.',
-    canonical: 'https://www.itsco.com/cloud-cybersecurity/',
+    canonical: 'https://www.itsco.com/cloud-cybersecurity',
   },
   serviceName: 'Cloud Cybersecurity',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

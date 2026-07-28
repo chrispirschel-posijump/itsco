@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Server Monitoring & Maintenance Services',
     description:
       'ITSco server monitoring and maintenance — 24/7 proactive monitoring, patching, and expert troubleshooting that minimizes downtime. Book a free consultation.',
-    canonical: 'https://www.itsco.com/server-monitoring-and-maintenance/',
+    canonical: 'https://www.itsco.com/server-monitoring-and-maintenance',
   },
   serviceName: 'Server Monitoring & Maintenance',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/raleigh-industries/
 // Generated: 2026-05-20T17:50:03.405Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/raleigh-industries/"
+export const SOURCE_URL = "https://www.itsco.com/blog/raleigh-industries"
 export const PAGE_TITLE = "The 7 Biggest Most Important Industries in Raleigh | ITSco"
 
 export const ARTICLE = [

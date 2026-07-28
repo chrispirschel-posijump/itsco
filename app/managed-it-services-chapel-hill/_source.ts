@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-chapel-hill/
 // Generated: 2026-05-20T12:43:53.479Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-chapel-hill/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-chapel-hill"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Reduce overhead and improve returns on IT investments with ITSco’s managed IT services in Chapel Hill.",

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-greensboro/
 // Generated: 2026-05-20T12:43:52.315Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-greensboro/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-greensboro"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Our North Carolina based managed IT services team can maintain your infrastructure, support your users, and help increase business efficiency and ROI.",

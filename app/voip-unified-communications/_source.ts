@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/voip-unified-communications/
 // Generated: 2026-05-21T14:32:22.505Z
 
-export const SOURCE_URL = "https://www.itsco.com/voip-unified-communications/"
+export const SOURCE_URL = "https://www.itsco.com/voip-unified-communications"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Your business is only as successful as its ability to communicate. Outdated phone systems and disconnected communication platforms can lead to missed opportunities, poor customer experiences, and critical inefficiencies.",

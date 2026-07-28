@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Cyber Risk Assessment Services',
     description:
       'ITSco cyber risk assessment maps your real exposure and delivers a prioritized, costed remediation roadmap — so security spending hits what matters. Book a free consultation.',
-    canonical: 'https://www.itsco.com/cyber-risk-assessment/',
+    canonical: 'https://www.itsco.com/cyber-risk-assessment',
   },
   serviceName: 'Cyber Risk Assessment',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

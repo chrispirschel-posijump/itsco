@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Winston-Salem, NC',
     description:
       'ITSco delivers managed IT services in Winston-Salem, NC — network security, RMM, help desk, and cloud — to reduce risk and improve productivity. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-winston-salem/',
+    canonical: 'https://www.itsco.com/managed-it-services-winston-salem',
   },
   hero: {
     eyebrow: 'Managed IT Services · Winston-Salem, NC',

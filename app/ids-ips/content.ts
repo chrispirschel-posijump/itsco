@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IDS/IPS Services | Intrusion Detection & Prevention',
     description:
       'ITSco IDS/IPS monitors your network 24/7 — spotting anomalies, blocking intrusions, and neutralizing threats before they reach your data. Book a free consultation.',
-    canonical: 'https://www.itsco.com/ids-ips/',
+    canonical: 'https://www.itsco.com/ids-ips',
   },
   serviceName: 'Intrusion Detection & Prevention (IDS/IPS)',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

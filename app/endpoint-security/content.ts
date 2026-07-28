@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Endpoint Security Services | EDR & Device Protection',
     description:
       'ITSco endpoint security protects every laptop, desktop, server, and mobile device with EDR, encryption, and patching — centrally managed. Book a free consultation.',
-    canonical: 'https://www.itsco.com/endpoint-security/',
+    canonical: 'https://www.itsco.com/endpoint-security',
   },
   serviceName: 'Endpoint Security',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

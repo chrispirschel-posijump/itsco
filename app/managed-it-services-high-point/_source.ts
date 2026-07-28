@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-high-point/
 // Generated: 2026-05-20T12:49:09.190Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-high-point/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-high-point"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Let one of the leading North Carolina-based IT companies near High Point manage your IT infrastructure so you can focus on meeting your business goals. Why choose ITSco for managed IT services in High Point?",

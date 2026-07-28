@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/mdr-monitoring-and-response/
 // Generated: 2026-05-20T18:53:59.945Z
 
-export const SOURCE_URL = "https://www.itsco.com/mdr-monitoring-and-response/"
+export const SOURCE_URL = "https://www.itsco.com/mdr-monitoring-and-response"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Unrivaled Security with MDR Solutions",

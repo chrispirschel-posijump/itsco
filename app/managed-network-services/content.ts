@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Managed Network Services | Network Management & Support',
     description:
       'ITSco managed network services — proactive monitoring, design, and support that keep your network reliable, secure, and scalable. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-network-services/',
+    canonical: 'https://www.itsco.com/managed-network-services',
   },
   serviceName: 'Managed Network Services',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

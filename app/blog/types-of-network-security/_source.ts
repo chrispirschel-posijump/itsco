@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/types-of-network-security/
 // Generated: 2026-05-20T17:50:07.040Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/types-of-network-security/"
+export const SOURCE_URL = "https://www.itsco.com/blog/types-of-network-security"
 export const PAGE_TITLE = "The 15 Types of Network Security | ITSco"
 
 export const ARTICLE = [

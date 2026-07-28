@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-network-services/
 // Generated: 2026-05-20T18:03:03.331Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-network-services/"
+export const SOURCE_URL = "https://www.itsco.com/managed-network-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Optimize your network resources, reduce costs, and enhance scalability and security with ITSco’s comprehensive Managed Network Services.",

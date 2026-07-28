@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/technical-project-management/
 // Generated: 2026-05-21T14:01:47.469Z
 
-export const SOURCE_URL = "https://www.itsco.com/technical-project-management/"
+export const SOURCE_URL = "https://www.itsco.com/technical-project-management"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Technical project management is an often overlooked and undervalued skill, but without the expertise and oversight of experienced TPMs, IT projects can quickly unravel, leading to cost overruns, missed deadlines, and operational failures.",

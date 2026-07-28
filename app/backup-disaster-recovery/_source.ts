@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/backup-disaster-recovery/
 // Generated: 2026-05-20T18:03:06.334Z
 
-export const SOURCE_URL = "https://www.itsco.com/backup-disaster-recovery/"
+export const SOURCE_URL = "https://www.itsco.com/backup-disaster-recovery"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Data loss, cyberattacks, and system failures can represent an existential threat to your business—but with the right backup and disaster recovery (BDR) solution in place, your organization can reduce risk and bounce back quickly when disaster strikes.",

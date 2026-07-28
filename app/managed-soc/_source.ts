@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-soc/
 // Generated: 2026-05-20T18:53:59.563Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-soc/"
+export const SOURCE_URL = "https://www.itsco.com/managed-soc"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Industry Leaders Choose our Unmatched SOC Protection",

@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Managed Firewall Services',
     description:
       'ITSco managed firewall — expert configuration, 24/7 monitoring, rule management, and updates that keep your perimeter doing its job. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-firewall/',
+    canonical: 'https://www.itsco.com/managed-firewall',
   },
   serviceName: 'Managed Firewall',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

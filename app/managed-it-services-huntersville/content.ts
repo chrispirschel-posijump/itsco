@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Huntersville, NC',
     description:
       'ITSco delivers managed IT services in Huntersville, NC — monitoring, cybersecurity, help desk, and cloud — that save time and money. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-huntersville/',
+    canonical: 'https://www.itsco.com/managed-it-services-huntersville',
   },
   hero: {
     eyebrow: 'Managed IT Services · Huntersville, NC',

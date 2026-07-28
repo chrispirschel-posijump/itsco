@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/server-admin-and-support-services/
 // Generated: 2026-05-20T18:03:06.736Z
 
-export const SOURCE_URL = "https://www.itsco.com/server-admin-and-support-services/"
+export const SOURCE_URL = "https://www.itsco.com/server-admin-and-support-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Seamless Server Solutions for Uninterrupted Productivity.",

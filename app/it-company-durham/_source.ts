@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-company-durham/
 // Generated: 2026-05-20T14:13:26.873Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-company-durham/"
+export const SOURCE_URL = "https://www.itsco.com/it-company-durham"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Enhance infrastructure reliability with one of the leading IT companies.",

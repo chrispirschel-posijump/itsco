@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/charlotte-it-helpdesk/
 // Generated: 2026-05-20T14:13:26.490Z
 
-export const SOURCE_URL = "https://www.itsco.com/charlotte-it-helpdesk/"
+export const SOURCE_URL = "https://www.itsco.com/charlotte-it-helpdesk"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Stop waiting around in never-ending support queues; take advantage of helpdesk services that understand your business and provide the technical support you need to get back work.",

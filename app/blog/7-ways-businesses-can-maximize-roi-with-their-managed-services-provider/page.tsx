@@ -8,7 +8,7 @@ const post = getPost('7-ways-businesses-can-maximize-roi-with-their-managed-serv
 export const metadata: Metadata = {
   title: post.title,
   description: post.excerpt,
-  alternates: { canonical: `https://www.itsco.com/blog/${post.slug}/` },
+  alternates: { canonical: `https://www.itsco.com/blog/${post.slug}` },
 }
 
 export default function Page() {

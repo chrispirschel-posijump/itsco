@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/best-remote-support-software-for-small-business/
 // Generated: 2026-05-20T17:50:06.672Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/best-remote-support-software-for-small-business/"
+export const SOURCE_URL = "https://www.itsco.com/blog/best-remote-support-software-for-small-business"
 export const PAGE_TITLE = "The Best Remote IT Support Software For Small Business | ITSco"
 
 export const ARTICLE = [

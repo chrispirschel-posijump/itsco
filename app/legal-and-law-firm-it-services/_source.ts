@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/legal-and-law-firm-it-services/
 // Generated: 2026-05-15T16:52:12.396Z
 
-export const SOURCE_URL = "https://www.itsco.com/legal-and-law-firm-it-services/"
+export const SOURCE_URL = "https://www.itsco.com/legal-and-law-firm-it-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Boost Your Legal IT Solutions with ITSco",

@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Managed Cloud Services',
     description:
       'ITSco managed cloud services — monitoring, security, optimization, and support that keep your cloud fast, secure, and cost-controlled. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-cloud-services/',
+    canonical: 'https://www.itsco.com/managed-cloud-services',
   },
   serviceName: 'Managed Cloud Services',
   parent: { name: 'Cloud Services', href: '/cloud-services/' },

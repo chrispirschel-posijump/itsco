@@ -16,7 +16,7 @@ export const CONTENT: IndustryContent = {
     title: 'Enterprise Managed IT Services | Co-Managed IT, SOC & MDR',
     description:
       'Enterprise managed IT services from ITSco — co-managed IT, 24/7 SOC, advanced threat operations, multi-framework compliance, and senior delivery capacity for 1000+ employee organizations. Book a free consultation.',
-    canonical: 'https://www.itsco.com/enterprise-managed-it-services/',
+    canonical: 'https://www.itsco.com/enterprise-managed-it-services',
   },
   hero: {
     eyebrow: 'Enterprise Managed IT Services',

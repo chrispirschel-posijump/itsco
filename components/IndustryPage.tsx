@@ -419,7 +419,7 @@ export default function IndustryPage({ content }: { content: IndustryContent }) 
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-      { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://www.itsco.com/industries/' },
+      { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://www.itsco.com/industries' },
       { '@type': 'ListItem', position: 3, name: industryName, item: content.meta.canonical },
     ],
   }

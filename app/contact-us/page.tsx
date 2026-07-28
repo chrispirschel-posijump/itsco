@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title: 'Contact ITSco | Book a Free IT Consultation',
   description:
     'Get in touch with ITSco — book a free 30-minute consultation, call our team, or send us a message. Managed IT and cybersecurity for businesses across NC, SC, and VA.',
-  alternates: { canonical: 'https://www.itsco.com/contact-us/' },
+  alternates: { canonical: 'https://www.itsco.com/contact-us' },
 }
 
 const CALENDLY_URL =
@@ -286,7 +286,7 @@ function Testimonials() {
 const contactJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'ContactPage',
-  url: 'https://www.itsco.com/contact-us/',
+  url: 'https://www.itsco.com/contact-us',
   name: 'Contact ITSco',
   description:
     'Book a free 30-minute consultation, call our team, or send a message. Managed IT and cybersecurity for businesses across NC, SC, and VA.',
@@ -329,7 +329,7 @@ const contactBreadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.itsco.com/contact-us/' },
+    { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.itsco.com/contact-us' },
   ],
 }
 

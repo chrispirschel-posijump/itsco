@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/cloud-migration/
 // Generated: 2026-05-21T13:24:03.406Z
 
-export const SOURCE_URL = "https://www.itsco.com/cloud-migration/"
+export const SOURCE_URL = "https://www.itsco.com/cloud-migration"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Smooth Cloud Migration Services for Seamless Digital Transformation",

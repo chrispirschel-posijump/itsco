@@ -13,7 +13,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Security Services in Cary, NC | Cyber Security Services',
     description:
       'ITSco delivers IT security services in Cary, NC — risk assessments, data protection, security awareness training, and rapid incident response. Book a free consultation.',
-    canonical: 'https://www.itsco.com/cary-cyber-security-services/',
+    canonical: 'https://www.itsco.com/cary-cyber-security-services',
   },
   hero: {
     eyebrow: 'Cyber Security Services · Cary, NC',

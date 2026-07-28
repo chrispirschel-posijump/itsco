@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/cloud-migration-challenges/
 // Generated: 2026-05-20T17:50:07.801Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/cloud-migration-challenges/"
+export const SOURCE_URL = "https://www.itsco.com/blog/cloud-migration-challenges"
 export const PAGE_TITLE = "The 10 Most Common Cloud Migration Challenges | ITSco"
 
 export const ARTICLE = [

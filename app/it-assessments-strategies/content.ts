@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IT Assessments & Strategies',
     description:
       'ITSco IT assessments and strategy — in-depth evaluations of infrastructure, security, and compliance with an actionable technology roadmap. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-assessments-strategies/',
+    canonical: 'https://www.itsco.com/it-assessments-strategies',
   },
   serviceName: 'IT Assessments & Strategies',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

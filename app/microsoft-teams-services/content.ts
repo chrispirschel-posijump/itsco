@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft Teams Services | Setup, Voice & Management',
     description:
       'ITSco Microsoft Teams services — deployment, Teams Phone, governance, and adoption so Teams becomes the hub your business runs on. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-teams-services/',
+    canonical: 'https://www.itsco.com/microsoft-teams-services',
   },
   serviceName: 'Microsoft Teams Services',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

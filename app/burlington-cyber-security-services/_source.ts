@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/burlington-cyber-security-services/
 // Generated: 2026-05-20T13:08:24.991Z
 
-export const SOURCE_URL = "https://www.itsco.com/burlington-cyber-security-services/"
+export const SOURCE_URL = "https://www.itsco.com/burlington-cyber-security-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Why Choose ITSco for Cybersecurity Services in Burlington?",

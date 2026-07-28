@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-charlotte/
 // Generated: 2026-05-20T12:43:53.061Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-charlotte/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-charlotte"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Give your Charlotte business the managed IT services and support it needs to achieve your business goals. Why choose ITSco over other IT companies in Charlotte ?",

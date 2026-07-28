@@ -25,12 +25,12 @@ export const metadata: Metadata = {
   title: 'IT Strategy & Consulting | vCIO, Roadmaps & Assessments',
   description:
     'ITSco IT strategy and consulting — vCIO leadership, IT roadmaps, assessments, due diligence, and project management that align technology with business goals. Book a free consultation.',
-  alternates: { canonical: 'https://www.itsco.com/it-management-consulting/' },
+  alternates: { canonical: 'https://www.itsco.com/it-management-consulting' },
   openGraph: {
     title: 'IT Strategy & Consulting | vCIO, Roadmaps & Assessments | ITSco',
     description:
       'Strategic IT leadership, roadmaps, and assessments that tie technology to business outcomes. Trusted since 1996.',
-    url: 'https://www.itsco.com/it-management-consulting/',
+    url: 'https://www.itsco.com/it-management-consulting',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -46,7 +46,7 @@ const serviceJsonLd = {
   description:
     'IT strategy and consulting including vCIO/vCTO/vCISO leadership, IT roadmaps, assessments, technology due diligence, project management, and business continuity planning for businesses across NC, SC, and VA.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/it-management-consulting/',
+  url: 'https://www.itsco.com/it-management-consulting',
 }
 
 const breadcrumbJsonLd = {
@@ -54,8 +54,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
-    { '@type': 'ListItem', position: 3, name: 'IT Strategy & Consulting', item: 'https://www.itsco.com/it-management-consulting/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'IT Strategy & Consulting', item: 'https://www.itsco.com/it-management-consulting' },
   ],
 }
 

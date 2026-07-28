@@ -10,7 +10,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'On-Site IT Support Services | NC, SC & VA',
     description:
       'ITSco on-site IT support — experienced engineers dispatched for installations, cabling, hardware, and office moves across NC, SC & VA. Book a free consultation.',
-    canonical: 'https://www.itsco.com/onsite-it-support-services/',
+    canonical: 'https://www.itsco.com/onsite-it-support-services',
   },
   serviceName: 'On-Site IT Support',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

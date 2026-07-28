@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'IT Services & Solutions',
   description:
     'Managed IT, cybersecurity, cloud, Microsoft solutions, strategy, and engineering — ITSco delivers ROI-driven IT services for businesses across NC, SC, and VA.',
-  alternates: { canonical: 'https://www.itsco.com/services/' },
+  alternates: { canonical: 'https://www.itsco.com/services' },
 }
 
 const SERVICES = [
@@ -127,7 +127,7 @@ const servicesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'IT Services',
-  url: 'https://www.itsco.com/services/',
+  url: 'https://www.itsco.com/services',
   description:
     'Managed IT, cybersecurity, cloud, Microsoft solutions, engineering, and strategy services for businesses across NC, SC, and VA.',
   about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
@@ -138,7 +138,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
   ],
 }
 

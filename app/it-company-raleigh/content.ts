@@ -11,7 +11,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Company in Raleigh, NC',
     description:
       'ITSco is a trusted IT company in Raleigh, NC — managed IT, cybersecurity, cloud, and support delivered with honesty, transparency, and fair local pricing. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-company-raleigh/',
+    canonical: 'https://www.itsco.com/it-company-raleigh',
   },
   officeLocation: 'raleigh',
   hero: {

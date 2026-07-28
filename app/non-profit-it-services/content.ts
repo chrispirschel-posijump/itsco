@@ -17,7 +17,7 @@ export const CONTENT: IndustryContent = {
     title: 'Non-Profit IT Services | Managed IT for Nonprofits',
     description:
       "IT services built for nonprofits — donor data protection, mission-aligned budgets, board-ready reporting, and full use of Microsoft Tech for Social Impact, TechSoup, and Salesforce nonprofit programs. Book a free consultation with ITSco.",
-    canonical: 'https://www.itsco.com/non-profit-it-services/',
+    canonical: 'https://www.itsco.com/non-profit-it-services',
   },
   hero: {
     eyebrow: 'Non-Profit IT Services',

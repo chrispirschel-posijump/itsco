@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   title: 'Cloud Services | Migration, Hosting & Managed Cloud',
   description:
     'ITSco cloud services — migration, hosting, managed cloud, Azure, AWS, and virtualization. Scalable, secure, cost-controlled cloud. Book a free consultation.',
-  alternates: { canonical: 'https://www.itsco.com/cloud-services/' },
+  alternates: { canonical: 'https://www.itsco.com/cloud-services' },
   openGraph: {
     title: 'Cloud Services | Migration, Hosting & Managed Cloud | ITSco',
     description:
       'Scalable, secure, cost-controlled cloud — migration, hosting, and managed cloud from a partner who runs it all. Trusted since 1996.',
-    url: 'https://www.itsco.com/cloud-services/',
+    url: 'https://www.itsco.com/cloud-services',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -45,7 +45,7 @@ const serviceJsonLd = {
   description:
     'Cloud services including migration, hosting, managed cloud, Azure, AWS, public/private/hybrid cloud, virtualization, and VDI for businesses across NC, SC, and VA.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/cloud-services/',
+  url: 'https://www.itsco.com/cloud-services',
 }
 
 const breadcrumbJsonLd = {
@@ -53,8 +53,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Cloud Services', item: 'https://www.itsco.com/cloud-services/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'Cloud Services', item: 'https://www.itsco.com/cloud-services' },
   ],
 }
 

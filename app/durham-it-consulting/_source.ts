@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/durham-it-consulting/
 // Generated: 2026-05-20T14:13:24.321Z
 
-export const SOURCE_URL = "https://www.itsco.com/durham-it-consulting/"
+export const SOURCE_URL = "https://www.itsco.com/durham-it-consulting"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Work with our IT consulting specialists to develop an IT strategy that supports your business plans.",

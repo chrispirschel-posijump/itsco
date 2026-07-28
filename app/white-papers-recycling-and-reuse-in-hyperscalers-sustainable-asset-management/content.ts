@@ -11,7 +11,7 @@ export const CONTENT: WhitePaperContent = {
     description:
       "Hyperscaler data centers contribute 70% of toxic landfill waste. How circular economy practices and 4IR technologies are being adopted by Microsoft, Amazon, Google, and Meta. Free PDF download.",
     canonical:
-      'https://www.itsco.com/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management/',
+      'https://www.itsco.com/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management',
   },
   category: 'ITAD & Sustainability',
   eyebrow: 'ITAD & Sustainability',

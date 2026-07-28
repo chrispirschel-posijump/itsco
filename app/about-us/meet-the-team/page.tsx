@@ -332,7 +332,7 @@ function TrustedSource() {
 // match the references emitted on /about-us/, so AI engines and search
 // crawlers resolve them to the same entities across the site.
 const ORG_ID = 'https://www.itsco.com/#organization'
-const TEAM_URL = 'https://www.itsco.com/about-us/meet-the-team/'
+const TEAM_URL = 'https://www.itsco.com/about-us/meet-the-team'
 
 const teamJsonLd = [
   {
@@ -347,7 +347,7 @@ const teamJsonLd = [
     '@type': 'BreadcrumbList',
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.itsco.com/about-us/' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.itsco.com/about-us' },
       { '@type': 'ListItem', position: 3, name: 'Meet the Team', item: TEAM_URL },
     ],
   },

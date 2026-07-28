@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'AWS Services | Amazon Web Services Migration & Management',
     description:
       'ITSco AWS services — migration, management, security, and cost optimization from a certified team. Get the value of AWS without the pitfalls. Book a free consultation.',
-    canonical: 'https://www.itsco.com/aws-services/',
+    canonical: 'https://www.itsco.com/aws-services',
   },
   serviceName: 'AWS Services',
   parent: { name: 'Cloud Services', href: '/cloud-services/' },

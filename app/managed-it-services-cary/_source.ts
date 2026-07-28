@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-cary/
 // Generated: 2026-05-20T12:43:58.903Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-cary/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-cary"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Reduce risk and improve service with the leaders in managed IT services in Cary. Why choose ITSco for managed IT services in Cary?",

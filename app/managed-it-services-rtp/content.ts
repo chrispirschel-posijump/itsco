@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in RTP, NC',
     description:
       'ITSco delivers managed IT services in Research Triangle Park, NC — monitoring, cybersecurity, cloud, and automation — for predictable costs and strong ROI. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-rtp/',
+    canonical: 'https://www.itsco.com/managed-it-services-rtp',
   },
   hero: {
     eyebrow: 'Managed IT Services · Research Triangle Park, NC',

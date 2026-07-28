@@ -12,7 +12,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Raleigh, NC | Raleigh Managed Service Provider',
     description:
       'ITSco delivers managed IT services in Raleigh, NC — remote monitoring, network security, help desk, and cloud, built for predictable ROI. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-raleigh/',
+    canonical: 'https://www.itsco.com/managed-it-services-raleigh',
   },
   officeLocation: 'raleigh',
   hero: {

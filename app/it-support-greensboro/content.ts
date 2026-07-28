@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Support in Greensboro, NC',
     description:
       'ITSco delivers IT support in Greensboro, NC — monitoring, help desk, cybersecurity, and cloud — at fair, predictable prices. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-support-greensboro/',
+    canonical: 'https://www.itsco.com/it-support-greensboro',
   },
   hero: {
     eyebrow: 'IT Support · Greensboro, NC',

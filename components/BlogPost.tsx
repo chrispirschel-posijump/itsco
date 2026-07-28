@@ -109,7 +109,7 @@ function wordCount(article: readonly BlogBlock[]): number {
 }
 
 export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
-  const url = `https://www.itsco.com/blog/${post.slug}/`
+  const url = `https://www.itsco.com/blog/${post.slug}`
   const article_: Record<string, unknown> = {
     '@context': 'https://schema.org',
     '@type': 'BlogPosting',
@@ -145,7 +145,7 @@ export function blogJsonLd(post: BlogPostMeta, article: readonly BlogBlock[]) {
       '@type': 'BreadcrumbList',
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.itsco.com/blog/' },
+        { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://www.itsco.com/blog' },
         { '@type': 'ListItem', position: 3, name: post.title, item: url },
       ],
     },

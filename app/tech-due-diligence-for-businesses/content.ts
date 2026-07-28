@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Technology Due Diligence for Businesses',
     description:
       'ITSco technology due diligence — a clear, actionable assessment of a target company’s IT infrastructure, security, and risk for investors and acquirers. Book a free consultation.',
-    canonical: 'https://www.itsco.com/tech-due-diligence-for-businesses/',
+    canonical: 'https://www.itsco.com/tech-due-diligence-for-businesses',
   },
   serviceName: 'Technology Due Diligence',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

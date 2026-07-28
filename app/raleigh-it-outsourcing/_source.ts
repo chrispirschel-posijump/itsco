@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/raleigh-it-outsourcing/
 // Generated: 2026-05-20T14:13:31.547Z
 
-export const SOURCE_URL = "https://www.itsco.com/raleigh-it-outsourcing/"
+export const SOURCE_URL = "https://www.itsco.com/raleigh-it-outsourcing"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Empower your team to achieve more with IT outsourcing services that enhance productivity, collaboration, and communication.",

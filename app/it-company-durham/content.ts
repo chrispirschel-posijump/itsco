@@ -11,7 +11,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Company in Durham, NC',
     description:
       'ITSco is a trusted IT company in Durham, NC — managed IT, cybersecurity, cloud, and support delivered with an open-book, transparent approach. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-company-durham/',
+    canonical: 'https://www.itsco.com/it-company-durham',
   },
   hero: {
     eyebrow: 'IT Company · Durham, NC',

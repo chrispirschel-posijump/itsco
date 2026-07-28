@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Consulting Charlotte | IT Consulting in Charlotte, NC',
     description:
       'IT consulting Charlotte business leaders trust — ITSco delivers IT strategy, cloud, cybersecurity, and network solutions that turn business goals into reality. Book a free consultation.',
-    canonical: 'https://www.itsco.com/charlotte-it-consulting/',
+    canonical: 'https://www.itsco.com/charlotte-it-consulting',
   },
   hero: {
     eyebrow: 'IT Consulting · Charlotte, NC',

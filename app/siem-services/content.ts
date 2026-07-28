@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'SIEM Services | Managed Security Information & Event Management',
     description:
       'ITSco managed SIEM correlates security data in real time so genuine threats surface instantly — without the staffing overhead. Book a free consultation.',
-    canonical: 'https://www.itsco.com/siem-services/',
+    canonical: 'https://www.itsco.com/siem-services',
   },
   serviceName: 'SIEM Services',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

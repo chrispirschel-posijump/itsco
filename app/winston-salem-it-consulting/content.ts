@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Consulting in Winston-Salem, NC | IT Consulting Company',
     description:
       'ITSco is the Winston-Salem IT consulting company businesses trust — IT strategy, cloud, cybersecurity, and network solutions that unlock the full potential of your IT. Book a free consultation.',
-    canonical: 'https://www.itsco.com/winston-salem-it-consulting/',
+    canonical: 'https://www.itsco.com/winston-salem-it-consulting',
   },
   hero: {
     eyebrow: 'IT Consulting · Winston-Salem, NC',

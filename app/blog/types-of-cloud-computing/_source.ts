@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/types-of-cloud-computing/
 // Generated: 2026-05-20T17:50:05.520Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/types-of-cloud-computing/"
+export const SOURCE_URL = "https://www.itsco.com/blog/types-of-cloud-computing"
 export const PAGE_TITLE = "6 Types of Cloud Computing | ITSco"
 
 export const ARTICLE = [

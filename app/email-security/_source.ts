@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/email-security/
 // Generated: 2026-05-20T18:54:01.637Z
 
-export const SOURCE_URL = "https://www.itsco.com/email-security/"
+export const SOURCE_URL = "https://www.itsco.com/email-security"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Client Successes with Email Security",

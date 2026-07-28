@@ -11,7 +11,7 @@ export const CONTENT: WhitePaperContent = {
     description:
       'Extended server refresh cycles have hit the ITAD industry hard. How rising GPU investments in 2024 signal a shift toward AI workloads and reshape the next five years of refresh strategy. Free PDF download.',
     canonical:
-      'https://www.itsco.com/white-papers-gpu-and-refresh-cycle-case-study/',
+      'https://www.itsco.com/white-papers-gpu-and-refresh-cycle-case-study',
   },
   category: 'ITAD & Sustainability',
   eyebrow: 'ITAD & Sustainability',

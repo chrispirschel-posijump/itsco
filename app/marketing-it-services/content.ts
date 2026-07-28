@@ -10,7 +10,7 @@ import { SOURCE_PARAGRAPHS } from './_source'
 export const META = {
   title: 'IT Services for Marketing Companies',
   description: 'Tailored IT services for marketing agencies — managed IT, cybersecurity, 24/7 support, and data-driven consulting built on 30+ years of expertise.',
-  canonical: 'https://www.itsco.com/marketing-it-services/',
+  canonical: 'https://www.itsco.com/marketing-it-services',
 }
 
 export const HERO = {

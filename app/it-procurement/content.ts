@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IT Procurement Services',
     description:
       'ITSco IT procurement — the right technology sourced at the right price, with vendor-agnostic guidance and end-to-end lifecycle support. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-procurement/',
+    canonical: 'https://www.itsco.com/it-procurement',
   },
   serviceName: 'IT Procurement',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

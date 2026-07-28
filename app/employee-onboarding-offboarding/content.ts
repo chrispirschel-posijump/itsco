@@ -10,7 +10,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Employee IT Onboarding & Offboarding Services',
     description:
       'ITSco handles employee IT onboarding and offboarding — accounts, devices, and access provisioned fast and revoked completely. Book a free consultation.',
-    canonical: 'https://www.itsco.com/employee-onboarding-offboarding/',
+    canonical: 'https://www.itsco.com/employee-onboarding-offboarding',
   },
   serviceName: 'Employee IT Onboarding & Offboarding',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

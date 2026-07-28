@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Network Support in Charlotte, NC',
     description:
       'ITSco delivers IT and computer network support in Charlotte, NC — monitoring, security, cloud networking, and compliance that reduce IT expenses. Book a free consultation.',
-    canonical: 'https://www.itsco.com/charlotte-it-network-support/',
+    canonical: 'https://www.itsco.com/charlotte-it-network-support',
   },
   hero: {
     eyebrow: 'IT Network Support · Charlotte, NC',

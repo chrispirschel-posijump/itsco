@@ -10,7 +10,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IT Staff Augmentation Services | Scale Your IT Team',
     description:
       'ITSco IT staff augmentation places experienced engineers alongside your team for projects, transitions, and workload peaks — no hiring overhead. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-staff-augmentation/',
+    canonical: 'https://www.itsco.com/it-staff-augmentation',
   },
   serviceName: 'IT Staff Augmentation',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

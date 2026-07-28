@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Security Event Remediation & IP Protection Services',
     description:
       'ITSco security event remediation and IP protection — expert-led threat response, vulnerability remediation, and intellectual property security. Book a free consultation.',
-    canonical: 'https://www.itsco.com/security-event-remediation-ip-protection/',
+    canonical: 'https://www.itsco.com/security-event-remediation-ip-protection',
   },
   serviceName: 'Security Event Remediation & IP Protection',
   hero: {

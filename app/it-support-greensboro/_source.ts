@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-support-greensboro/
 // Generated: 2026-05-20T14:13:33.140Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-support-greensboro/"
+export const SOURCE_URL = "https://www.itsco.com/it-support-greensboro"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Let our computer support pros get your Greensboro business running more smoothly and efficiently with a full-range of proven IT services.",

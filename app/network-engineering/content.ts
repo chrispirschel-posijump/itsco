@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Network Engineering Services',
     description:
       'ITSco network engineering — modern, secure, high-performance networks designed and implemented by an expert engineering team. Book a free consultation.',
-    canonical: 'https://www.itsco.com/network-engineering/',
+    canonical: 'https://www.itsco.com/network-engineering',
   },
   serviceName: 'Network Engineering',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

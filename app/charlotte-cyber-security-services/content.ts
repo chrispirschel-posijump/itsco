@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Cyber Security Services in Charlotte, NC',
     description:
       'ITSco delivers cyber security in Charlotte, NC — network security, audits, cloud security, intrusion detection, and penetration testing — to fortify your defenses. Book a free consultation.',
-    canonical: 'https://www.itsco.com/charlotte-cyber-security-services/',
+    canonical: 'https://www.itsco.com/charlotte-cyber-security-services',
   },
   hero: {
     eyebrow: 'Cyber Security Services · Charlotte, NC',

@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Server Administration & Support Services',
     description:
       'ITSco server administration and support — end-to-end server management, 24/7 monitoring, and certified expert support that keeps you running. Book a free consultation.',
-    canonical: 'https://www.itsco.com/server-admin-and-support-services/',
+    canonical: 'https://www.itsco.com/server-admin-and-support-services',
   },
   serviceName: 'Server Administration & Support',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

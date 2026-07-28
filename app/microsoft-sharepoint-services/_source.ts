@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/microsoft-sharepoint-services/
 // Generated: 2026-05-21T13:37:02.267Z
 
-export const SOURCE_URL = "https://www.itsco.com/microsoft-sharepoint-services/"
+export const SOURCE_URL = "https://www.itsco.com/microsoft-sharepoint-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Microsoft SharePoint is a powerful platform for document management, collaboration, and workflow automation, but without expert guidance, businesses often face security risks, performance issues, and user adoption challenges.",

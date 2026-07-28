@@ -16,7 +16,7 @@ export const CONTENT: IndustryContent = {
     title: 'IT Services for Mid-Sized Business | Managed Cybersecurity for Mid-Sized Firms',
     description:
       'Managed IT and managed cybersecurity services for mid-sized firms (50-250 employees). Augment your in-house team, mature your security posture, scale without surprises. Book a free consultation with ITSco.',
-    canonical: 'https://www.itsco.com/mid-sized-business/',
+    canonical: 'https://www.itsco.com/mid-sized-business',
   },
   hero: {
     eyebrow: 'IT Services for Mid-Sized Business',

@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Charlotte, NC',
     description:
       'ITSco delivers managed IT services in Charlotte, NC — network security, help desk, cloud, and IT project management — to reduce risk and boost efficiency. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-charlotte/',
+    canonical: 'https://www.itsco.com/managed-it-services-charlotte',
   },
   hero: {
     eyebrow: 'Managed IT Services · Charlotte, NC',

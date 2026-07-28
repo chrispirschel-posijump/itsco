@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/charlotte-it-network-support/
 // Generated: 2026-05-20T14:13:34.748Z
 
-export const SOURCE_URL = "https://www.itsco.com/charlotte-it-network-support/"
+export const SOURCE_URL = "https://www.itsco.com/charlotte-it-network-support"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Our computer network support specialists help in deploying new technologies, and with total post-implementation network support .",

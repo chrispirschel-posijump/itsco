@@ -155,7 +155,7 @@ const processJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Our Process',
-  url: 'https://www.itsco.com/process/',
+  url: 'https://www.itsco.com/process',
   description:
     'How ITSco onboards, manages, and measures ROI for every client engagement — a structured, repeatable process refined over 30 years.',
   about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
@@ -166,7 +166,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Process', item: 'https://www.itsco.com/process/' },
+    { '@type': 'ListItem', position: 2, name: 'Process', item: 'https://www.itsco.com/process' },
   ],
 }
 

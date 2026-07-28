@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Greensboro, NC | Managed IT Support Services',
     description:
       'ITSco delivers managed IT support services in Greensboro, NC — monitoring, cybersecurity, help desk, and cloud — built to increase efficiency and ROI. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-greensboro/',
+    canonical: 'https://www.itsco.com/managed-it-services-greensboro',
   },
   hero: {
     eyebrow: 'Managed IT Services · Greensboro, NC',

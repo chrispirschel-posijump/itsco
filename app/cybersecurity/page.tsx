@@ -23,11 +23,11 @@ import {
 export const metadata: Metadata = {
   title: 'Cybersecurity & Compliance | Managed Security Services Provider',
   description: 'ITSco delivers Cybersecurity & Compliance services — SIEM, SOC, MDR, firewall management, and continuous compliance posture (SOC 2, HIPAA, PCI, NIST 800-171). 24/7 monitoring. Trusted since 1996. Book a free consultation.',
-  alternates: { canonical: 'https://www.itsco.com/cybersecurity/' },
+  alternates: { canonical: 'https://www.itsco.com/cybersecurity' },
   openGraph: {
     title: 'Cybersecurity & Compliance | Managed Security Services Provider | ITSco',
     description: 'Cybersecurity & Compliance services — SIEM, SOC, MDR, 24/7 monitoring, and continuous compliance posture. Trusted since 1996.',
-    url: 'https://www.itsco.com/cybersecurity/',
+    url: 'https://www.itsco.com/cybersecurity',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -45,7 +45,7 @@ const serviceJsonLd = {
   },
   description: 'Cybersecurity & Compliance — Managed Security Services Provider (MSSP) offering SIEM, SOC, MDR, firewall management, vulnerability management, security assessments, penetration testing, virtual CISO services, and continuous compliance posture management (SOC 2, HIPAA, PCI DSS, NIST 800-171) for businesses across NC, SC, and VA.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/cybersecurity/',
+  url: 'https://www.itsco.com/cybersecurity',
 }
 
 const breadcrumbJsonLd = {
@@ -53,8 +53,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Cybersecurity & Compliance', item: 'https://www.itsco.com/cybersecurity/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'Cybersecurity & Compliance', item: 'https://www.itsco.com/cybersecurity' },
   ],
 }
 

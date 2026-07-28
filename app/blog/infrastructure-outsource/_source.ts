@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/infrastructure-outsource/
 // Generated: 2026-05-20T17:50:05.904Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/infrastructure-outsource/"
+export const SOURCE_URL = "https://www.itsco.com/blog/infrastructure-outsource"
 export const PAGE_TITLE = "5 Reasons Why Businesses Outsource Their Infrastructure | ITSco"
 
 export const ARTICLE = [

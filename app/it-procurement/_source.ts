@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-procurement/
 // Generated: 2026-05-21T14:32:23.231Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-procurement/"
+export const SOURCE_URL = "https://www.itsco.com/it-procurement"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Optimize Technology Investments with Our IT Procurement Expertise",

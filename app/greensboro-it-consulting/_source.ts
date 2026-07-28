@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/greensboro-it-consulting/
 // Generated: 2026-05-20T14:13:25.669Z
 
-export const SOURCE_URL = "https://www.itsco.com/greensboro-it-consulting/"
+export const SOURCE_URL = "https://www.itsco.com/greensboro-it-consulting"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Let our IT consulting specialists help you with an IT strategy that supports your business goals and vision.",

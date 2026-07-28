@@ -12,7 +12,7 @@ export const META = {
   title: 'Financial Services IT | Managed IT for Banks & Credit Unions',
   description:
     'ITSco financial services IT — managed IT, cybersecurity, and compliance support built for banks, credit unions, and wealth firms. FFIEC-, GLBA-, SOX-, and PCI-aware. Book a free consultation.',
-  canonical: 'https://www.itsco.com/financial-services-it/',
+  canonical: 'https://www.itsco.com/financial-services-it',
 }
 
 export const HERO = {

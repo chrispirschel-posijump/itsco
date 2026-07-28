@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/transportation-logistics-it-services/
 // Generated: 2026-05-15T17:02:38.171Z
 
-export const SOURCE_URL = "https://www.itsco.com/transportation-logistics-it-services/"
+export const SOURCE_URL = "https://www.itsco.com/transportation-logistics-it-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Client Successes in Transportation & Logistics IT Services",

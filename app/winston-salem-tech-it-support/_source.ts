@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/winston-salem-tech-it-support/
 // Generated: 2026-05-20T14:13:32.781Z
 
-export const SOURCE_URL = "https://www.itsco.com/winston-salem-tech-it-support/"
+export const SOURCE_URL = "https://www.itsco.com/winston-salem-tech-it-support"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Let our tech support service engineers in Winston-Salem identify and remediate the root cause of your recurring IT issues.",

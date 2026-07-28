@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Consulting in Greensboro, NC',
     description:
       'ITSco delivers IT consulting in Greensboro, NC — IT strategy, cloud, cybersecurity, and network solutions that support your business vision. Book a free consultation.',
-    canonical: 'https://www.itsco.com/greensboro-it-consulting/',
+    canonical: 'https://www.itsco.com/greensboro-it-consulting',
   },
   hero: {
     eyebrow: 'IT Consulting · Greensboro, NC',

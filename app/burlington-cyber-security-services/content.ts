@@ -11,7 +11,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Cyber Security Services in Burlington, NC',
     description:
       'ITSco delivers cyber security services in Burlington, NC — proactive threat management, risk assessments, encryption, training, and rapid response. Book a free consultation.',
-    canonical: 'https://www.itsco.com/burlington-cyber-security-services/',
+    canonical: 'https://www.itsco.com/burlington-cyber-security-services',
   },
   hero: {
     eyebrow: 'Cyber Security Services · Burlington, NC',

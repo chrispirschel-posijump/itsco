@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/process/
 // Generated: 2026-05-15T18:40:51.279Z
 
-export const SOURCE_URL = "https://www.itsco.com/process/"
+export const SOURCE_URL = "https://www.itsco.com/process"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "We listen. We plan. We communicate. We deliver.",

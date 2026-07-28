@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/cary-cyber-security-services/
 // Generated: 2026-05-20T13:08:22.833Z
 
-export const SOURCE_URL = "https://www.itsco.com/cary-cyber-security-services/"
+export const SOURCE_URL = "https://www.itsco.com/cary-cyber-security-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Why choose ITSco for cybersecurity services?",

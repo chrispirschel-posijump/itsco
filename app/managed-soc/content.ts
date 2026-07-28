@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Managed SOC Services | 24/7 Security Operations Center',
     description:
       'ITSco Managed SOC — a 24/7 security operations center with analysts, SIEM, and rapid response, without the cost of building one in-house. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-soc/',
+    canonical: 'https://www.itsco.com/managed-soc',
   },
   serviceName: 'Managed SOC',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

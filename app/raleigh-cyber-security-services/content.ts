@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Cyber Security Services in Raleigh, NC | Computer Security Company',
     description:
       'ITSco is the Raleigh computer security company businesses trust — SIEM, risk management, security architecture, compliance, and cloud security from a team that has never had a client breach. Book a free consultation.',
-    canonical: 'https://www.itsco.com/raleigh-cyber-security-services/',
+    canonical: 'https://www.itsco.com/raleigh-cyber-security-services',
   },
   officeLocation: 'raleigh',
   hero: {

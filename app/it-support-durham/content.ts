@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'IT Support in Durham, NC',
     description:
       'ITSco delivers IT support in Durham, NC — 24/7 monitoring, help desk, cybersecurity, cloud, and automation — with predictable pricing. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-support-durham/',
+    canonical: 'https://www.itsco.com/it-support-durham',
   },
   hero: {
     eyebrow: 'IT Support · Durham, NC',

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-company-raleigh/
 // Generated: 2026-05-20T14:13:28.128Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-company-raleigh/"
+export const SOURCE_URL = "https://www.itsco.com/it-company-raleigh"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Reimagine IT management with one of the leading IT companies",

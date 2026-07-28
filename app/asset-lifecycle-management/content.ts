@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Asset Lifecycle Management & IT Asset Disposition',
     description:
       'ITSco asset lifecycle management — procurement, deployment, maintenance, and secure, sustainable IT asset disposition. Book a free consultation.',
-    canonical: 'https://www.itsco.com/asset-lifecycle-management/',
+    canonical: 'https://www.itsco.com/asset-lifecycle-management',
   },
   serviceName: 'Asset Lifecycle Management',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

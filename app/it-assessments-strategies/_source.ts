@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-assessments-strategies/
 // Generated: 2026-05-21T14:01:45.953Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-assessments-strategies/"
+export const SOURCE_URL = "https://www.itsco.com/it-assessments-strategies"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "A successful IT strategy starts with a clear understanding of your current technology landscape. ITSco’s IT assessment & strategy services provide in-depth evaluations of your infrastructure, security, and compliance, delivering actionable insights that drive performance, security, and long-term scalability.",

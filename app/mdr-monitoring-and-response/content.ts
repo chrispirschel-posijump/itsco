@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'MDR Services | Managed Detection & Response',
     description:
       'ITSco MDR — always-on monitoring, proactive threat hunting, and rapid incident response that catches threats early and shuts them down fast. Book a free consultation.',
-    canonical: 'https://www.itsco.com/mdr-monitoring-and-response/',
+    canonical: 'https://www.itsco.com/mdr-monitoring-and-response',
   },
   serviceName: 'Managed Detection & Response (MDR)',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

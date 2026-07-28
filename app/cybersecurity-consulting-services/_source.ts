@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/cybersecurity-consulting-services/
 // Generated: 2026-05-20T18:54:05.509Z
 
-export const SOURCE_URL = "https://www.itsco.com/cybersecurity-consulting-services/"
+export const SOURCE_URL = "https://www.itsco.com/cybersecurity-consulting-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Cybersecurity isn’t just an IT issue. It’s a business imperative. From ransomware attacks to insider threats, today’s risks evolve fast and hit hard. Without the right defense, a single incident can threaten your operations, data, and reputation.",

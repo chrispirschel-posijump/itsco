@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/ids-ips/
 // Generated: 2026-05-20T18:54:04.484Z
 
-export const SOURCE_URL = "https://www.itsco.com/ids-ips/"
+export const SOURCE_URL = "https://www.itsco.com/ids-ips"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Reliable IDS/IPS Services for Unbeatable Protection",

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/tech-due-diligence-for-businesses/
 // Generated: 2026-05-21T14:01:46.313Z
 
-export const SOURCE_URL = "https://www.itsco.com/tech-due-diligence-for-businesses/"
+export const SOURCE_URL = "https://www.itsco.com/tech-due-diligence-for-businesses"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Acquiring a new company is a complex process. At ITSco, we understand that technology is at the heart of every modern business—and that hidden IT risks can affect the value and long‐term success of your investment.",

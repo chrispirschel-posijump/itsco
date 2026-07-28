@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-support-raleigh/
 // Generated: 2026-05-20T14:13:17.808Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-support-raleigh/"
+export const SOURCE_URL = "https://www.itsco.com/it-support-raleigh"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Address recurring IT issues by working with our Raleigh IT support service engineers to identify and remediate the root causes of your problems.",

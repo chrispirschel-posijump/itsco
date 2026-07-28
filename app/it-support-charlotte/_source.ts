@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-support-charlotte/
 // Generated: 2026-05-20T14:13:19.111Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-support-charlotte/"
+export const SOURCE_URL = "https://www.itsco.com/it-support-charlotte"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Our IT support engineers will work with your team to eliminate recurring IT issues by addressing their root causes.",

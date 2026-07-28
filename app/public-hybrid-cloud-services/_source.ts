@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/public-hybrid-cloud-services/
 // Generated: 2026-05-21T13:24:05.406Z
 
-export const SOURCE_URL = "https://www.itsco.com/public-hybrid-cloud-services/"
+export const SOURCE_URL = "https://www.itsco.com/public-hybrid-cloud-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Empower with Public/Hybrid Cloud Solutions",

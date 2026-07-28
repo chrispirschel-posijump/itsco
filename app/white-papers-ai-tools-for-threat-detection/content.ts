@@ -10,7 +10,7 @@ export const CONTENT: WhitePaperContent = {
     title: 'AI Tools for Threat Detection | White Paper',
     description:
       "How AI-powered cybersecurity is reshaping breach economics — Darktrace, Microsoft Defender, IBM QRadar, and the $72.22B AI security market projected by 2029. Free PDF download.",
-    canonical: 'https://www.itsco.com/white-papers-ai-tools-for-threat-detection/',
+    canonical: 'https://www.itsco.com/white-papers-ai-tools-for-threat-detection',
   },
   category: 'Cybersecurity & AI Risk',
   eyebrow: 'Cybersecurity & AI Risk',

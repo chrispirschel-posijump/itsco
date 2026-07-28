@@ -444,7 +444,7 @@ export default function CaseStudyPage({ content }: { content: CaseStudyContent }
                 '@type': 'ListItem',
                 position: 2,
                 name: 'Case Studies',
-                item: 'https://www.itsco.com/case-studies/',
+                item: 'https://www.itsco.com/case-studies',
               },
               {
                 '@type': 'ListItem',

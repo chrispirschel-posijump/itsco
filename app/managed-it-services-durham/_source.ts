@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-it-services-durham/
 // Generated: 2026-05-20T11:39:25.451Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-it-services-durham/"
+export const SOURCE_URL = "https://www.itsco.com/managed-it-services-durham"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "ITSco will manage your information technology infrastructure so that you can focus on what matters: running and growing your business. Why choose ITSco over other managed IT services providers in Durham, NC?",

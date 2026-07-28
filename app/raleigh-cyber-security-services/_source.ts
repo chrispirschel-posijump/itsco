@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/raleigh-cyber-security-services/
 // Generated: 2026-05-20T13:08:21.450Z
 
-export const SOURCE_URL = "https://www.itsco.com/raleigh-cyber-security-services/"
+export const SOURCE_URL = "https://www.itsco.com/raleigh-cyber-security-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Our cyber security consultants are experts at implementing solutions that stop cybercriminals in their tracks.",

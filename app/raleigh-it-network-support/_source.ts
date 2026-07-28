@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/raleigh-it-network-support/
 // Generated: 2026-05-20T14:13:29.387Z
 
-export const SOURCE_URL = "https://www.itsco.com/raleigh-it-network-support/"
+export const SOURCE_URL = "https://www.itsco.com/raleigh-it-network-support"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Improve efficiency, lower IT costs, and protect your organization with ITSco’s trusted network support services.",

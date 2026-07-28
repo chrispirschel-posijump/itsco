@@ -14,7 +14,7 @@ import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 export const metadata: Metadata = {
   title: 'Pharma & Med Tech IT Services',
   description: 'Transforming IT Solutions for Pharma and Med Tech Industries.',
-  alternates: { canonical: 'https://www.itsco.com/pharma-med-tech-it-services/' },
+  alternates: { canonical: 'https://www.itsco.com/pharma-med-tech-it-services' },
 }
 
 // ── Capabilities (Tailored Solutions for Pharma/Med Tech IT) ────────────────

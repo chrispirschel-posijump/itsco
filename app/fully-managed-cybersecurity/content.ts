@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Fully-Managed Cybersecurity Services | MSSP',
     description:
       'ITSco fully-managed cybersecurity — 24/7 monitoring, threat detection, and response across your entire environment. Book a free consultation.',
-    canonical: 'https://www.itsco.com/fully-managed-cybersecurity/',
+    canonical: 'https://www.itsco.com/fully-managed-cybersecurity',
   },
   serviceName: 'Fully-Managed Cybersecurity',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/it-support-durham/
 // Generated: 2026-05-20T14:13:33.523Z
 
-export const SOURCE_URL = "https://www.itsco.com/it-support-durham/"
+export const SOURCE_URL = "https://www.itsco.com/it-support-durham"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Discover how to boost your team’s productivity and efficiency with outsourced IT support.",

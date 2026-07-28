@@ -24,12 +24,12 @@ export const metadata: Metadata = {
   title: 'Microsoft Solutions | 365, Azure, Teams & Copilot',
   description:
     'ITSco Microsoft solutions — deployment, management, and security across Microsoft 365, Azure, Teams, Exchange, SharePoint, Copilot, and Sentinel. Book a free consultation.',
-  alternates: { canonical: 'https://www.itsco.com/microsoft-solutions/' },
+  alternates: { canonical: 'https://www.itsco.com/microsoft-solutions' },
   openGraph: {
     title: 'Microsoft Solutions | 365, Azure, Teams & Copilot | ITSco',
     description:
       'Get the full value of Microsoft — 365, Azure, Teams, Copilot, and more, deployed and managed by a certified team. Trusted since 1996.',
-    url: 'https://www.itsco.com/microsoft-solutions/',
+    url: 'https://www.itsco.com/microsoft-solutions',
     siteName: 'ITSco',
     locale: 'en_US',
     type: 'website',
@@ -45,7 +45,7 @@ const serviceJsonLd = {
   description:
     'Microsoft solutions including Microsoft 365, Azure, Teams, Exchange, SharePoint, Copilot, and Sentinel — deployed, managed, and secured for businesses across NC, SC, and VA.',
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
-  url: 'https://www.itsco.com/microsoft-solutions/',
+  url: 'https://www.itsco.com/microsoft-solutions',
 }
 
 const breadcrumbJsonLd = {
@@ -53,8 +53,8 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services/' },
-    { '@type': 'ListItem', position: 3, name: 'Microsoft Solutions', item: 'https://www.itsco.com/microsoft-solutions/' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.itsco.com/services' },
+    { '@type': 'ListItem', position: 3, name: 'Microsoft Solutions', item: 'https://www.itsco.com/microsoft-solutions' },
   ],
 }
 

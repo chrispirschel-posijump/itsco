@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/security-event-remediation-ip-protection/
 // Generated: 2026-05-21T14:32:22.851Z
 
-export const SOURCE_URL = "https://www.itsco.com/security-event-remediation-ip-protection/"
+export const SOURCE_URL = "https://www.itsco.com/security-event-remediation-ip-protection"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Cyber threats are constantly evolving. Even the most secure organizations can experience security incidents. When a threat is detected, fast and effective remediation is critical to minimizing damage, protecting sensitive data, and ensuring business continuity.",

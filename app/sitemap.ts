@@ -160,8 +160,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Deduplicate just in case
   const unique = Array.from(new Set(routes)).sort()
 
+  // Emit URLs WITHOUT a trailing slash (except the site root), matching
+  // Next.js's default trailingSlash: false behavior. Previously appended a
+  // trailing slash to every URL, which caused Google to see a 308 → no-slash
+  // chain on every crawl and pick the no-slash version as canonical anyway.
   return unique.map((route) => ({
-    url: `${SITE_URL}${route}/`.replace(/\/+$/, '/'),
+    url: route === '' ? `${SITE_URL}/` : `${SITE_URL}${route}`,
     lastModified,
     changeFrequency: changeFrequencyFor(route),
     priority: priorityFor(route),

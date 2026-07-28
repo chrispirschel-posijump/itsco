@@ -10,7 +10,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Remote IT Support Services | Fast, Senior-Staffed Help Desk',
     description:
       'ITSco remote IT support resolves most issues in minutes — secure remote access, a senior-staffed help desk, and predictable monthly cost. Book a free consultation.',
-    canonical: 'https://www.itsco.com/remote-it-support/',
+    canonical: 'https://www.itsco.com/remote-it-support',
   },
   serviceName: 'Remote IT Support',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/managed-desktop-vdi/
 // Generated: 2026-05-21T13:24:05.760Z
 
-export const SOURCE_URL = "https://www.itsco.com/managed-desktop-vdi/"
+export const SOURCE_URL = "https://www.itsco.com/managed-desktop-vdi"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Trusted Provider of Managed Desktop/VDI Solutions for Businesses",

@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Private Cloud Services',
     description:
       'ITSco private cloud services — dedicated, single-tenant cloud infrastructure for sensitive and regulated workloads, fully managed. Book a free consultation.',
-    canonical: 'https://www.itsco.com/private-cloud-services/',
+    canonical: 'https://www.itsco.com/private-cloud-services',
   },
   serviceName: 'Private Cloud Services',
   parent: { name: 'Cloud Services', href: '/cloud-services/' },

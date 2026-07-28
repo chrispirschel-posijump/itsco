@@ -10,7 +10,7 @@ import { SOURCE_PARAGRAPHS } from './_source'
 export const META = {
   title: 'Our Process | ITSco — Delivering IT Without Pretense or Drama',
   description: 'ITSco’s proven process for delivering Professional Services and Proactive Managed Services. We listen, plan, communicate, and deliver — every engagement.',
-  canonical: 'https://www.itsco.com/process/',
+  canonical: 'https://www.itsco.com/process',
 }
 
 export const HERO = {

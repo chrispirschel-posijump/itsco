@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft Exchange Services | Email Migration & Management',
     description:
       'ITSco Microsoft Exchange services — secure deployment, migration, management, and optimization of your business email environment. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-exchange-services/',
+    canonical: 'https://www.itsco.com/microsoft-exchange-services',
   },
   serviceName: 'Microsoft Exchange Services',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

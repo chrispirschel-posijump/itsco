@@ -18,7 +18,7 @@ export const CONTENT: CaseStudyContent = {
     description:
       "How ITSco's advanced networking enabled EmergeOrtho to operate mobile MRI scanners remotely — unlocking 40 extra scan hours per week, ~30–40% labor savings, and 4–5 month payback.",
     canonical:
-      'https://www.itsco.com/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+      'https://www.itsco.com/case-studies/emerge-ortho-mobile-mri-remote-operations',
   },
   industry: 'Healthcare',
   clientLabel: 'EmergeOrtho · Orthopedic Care, North Carolina',

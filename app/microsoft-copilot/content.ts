@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft Copilot Services | Deployment & Adoption',
     description:
       'ITSco helps you deploy Microsoft Copilot securely — readiness, data governance, and adoption so the AI actually saves your team time. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-copilot/',
+    canonical: 'https://www.itsco.com/microsoft-copilot',
   },
   serviceName: 'Microsoft Copilot',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

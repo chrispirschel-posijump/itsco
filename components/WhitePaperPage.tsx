@@ -347,7 +347,7 @@ export default function WhitePaperPage({ content }: { content: WhitePaperContent
                   '@type': 'ListItem',
                   position: 2,
                   name: 'White Papers',
-                  item: 'https://www.itsco.com/white-papers/',
+                  item: 'https://www.itsco.com/white-papers',
                 },
                 {
                   '@type': 'ListItem',

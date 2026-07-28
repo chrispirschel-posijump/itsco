@@ -10,7 +10,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Security Audits & Compliance Services',
     description:
       'ITSco security audits and compliance — risk assessments, regulatory audits, and remediation roadmaps that keep your business secure and compliant. Book a free consultation.',
-    canonical: 'https://www.itsco.com/security-audits-compliance/',
+    canonical: 'https://www.itsco.com/security-audits-compliance',
   },
   serviceName: 'Security Audits & Compliance',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },

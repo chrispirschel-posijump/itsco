@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/raleigh-it-consulting/
 // Generated: 2026-05-20T14:13:21.442Z
 
-export const SOURCE_URL = "https://www.itsco.com/raleigh-it-consulting/"
+export const SOURCE_URL = "https://www.itsco.com/raleigh-it-consulting"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Align your IT efforts with your business goals by leveraging our IT consulting services in Raleigh.",

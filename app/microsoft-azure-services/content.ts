@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Microsoft Azure Services | Migration & Management',
     description:
       'ITSco Microsoft Azure services — migration, management, security, and optimization from Microsoft-certified experts. Book a free consultation.',
-    canonical: 'https://www.itsco.com/microsoft-azure-services/',
+    canonical: 'https://www.itsco.com/microsoft-azure-services',
   },
   serviceName: 'Microsoft Azure Services',
   parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },

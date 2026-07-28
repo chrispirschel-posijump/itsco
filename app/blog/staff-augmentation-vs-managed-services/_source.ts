@@ -2,7 +2,7 @@
 // Source: https://www.itsco.com/blog/staff-augmentation-vs-managed-services/
 // Generated: 2026-05-20T17:50:08.170Z
 
-export const SOURCE_URL = "https://www.itsco.com/blog/staff-augmentation-vs-managed-services/"
+export const SOURCE_URL = "https://www.itsco.com/blog/staff-augmentation-vs-managed-services"
 export const PAGE_TITLE = "A Comparison of Staff Augmentation vs. Managed Services | ITSco"
 
 export const ARTICLE = [

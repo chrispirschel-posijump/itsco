@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: post.title,
   description: post.excerpt,
   alternates: {
-    canonical: `https://www.itsco.com/blog/${post.slug}/`,
+    canonical: `https://www.itsco.com/blog/${post.slug}`,
   },
   ...(post.draft ? { robots: { index: false, follow: false } } : {}),
 }

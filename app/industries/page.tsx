@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   title: 'Industries We Serve',
   description:
     'Industry-specific managed IT and cybersecurity — healthcare, legal, financial services, manufacturing, and more — for businesses across NC, SC, and VA.',
-  alternates: { canonical: 'https://www.itsco.com/industries/' },
+  alternates: { canonical: 'https://www.itsco.com/industries' },
 }
 
 const INDUSTRIES = [
@@ -185,7 +185,7 @@ const industriesJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'CollectionPage',
   name: 'Industries We Serve',
-  url: 'https://www.itsco.com/industries/',
+  url: 'https://www.itsco.com/industries',
   description:
     'Industry-specific IT services for healthcare, legal, financial services, manufacturing, accounting, professional services, non-profits, and more.',
   about: { '@type': 'Organization', name: 'ITSco', url: 'https://www.itsco.com/' },
@@ -196,7 +196,7 @@ const breadcrumbJsonLd = {
   '@type': 'BreadcrumbList',
   itemListElement: [
     { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.itsco.com/' },
-    { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://www.itsco.com/industries/' },
+    { '@type': 'ListItem', position: 2, name: 'Industries', item: 'https://www.itsco.com/industries' },
   ],
 }
 

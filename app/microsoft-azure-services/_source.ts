@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/microsoft-azure-services/
 // Generated: 2026-05-21T13:24:04.997Z
 
-export const SOURCE_URL = "https://www.itsco.com/microsoft-azure-services/"
+export const SOURCE_URL = "https://www.itsco.com/microsoft-azure-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Microsoft Azure provides unmatched flexibility, scalability, and security. But without expert management, businesses risk inefficiencies, security vulnerabilities, and unexpected costs.",

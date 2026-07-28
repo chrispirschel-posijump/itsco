@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Chapel Hill, NC',
     description:
       'ITSco delivers managed IT services in Chapel Hill, NC — monitoring, cybersecurity, help desk, and cloud — to reduce overhead and improve IT ROI. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-chapel-hill/',
+    canonical: 'https://www.itsco.com/managed-it-services-chapel-hill',
   },
   hero: {
     eyebrow: 'Managed IT Services · Chapel Hill, NC',

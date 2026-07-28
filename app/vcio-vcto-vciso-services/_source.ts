@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/vcio-vcto-vciso-services/
 // Generated: 2026-05-21T14:01:44.630Z
 
-export const SOURCE_URL = "https://www.itsco.com/vcio-vcto-vciso-services/"
+export const SOURCE_URL = "https://www.itsco.com/vcio-vcto-vciso-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Modern businesses face complex challenges—from cybersecurity threats to IT infrastructure modernization to regulatory compliance. ITSco’s virtual executive services provide the strategic IT leadership you need—without the cost of hiring in-house C-level technology executives.",

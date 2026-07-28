@@ -19,7 +19,7 @@ export const CONTENT: LegalContent = {
     title: 'Terms of Use',
     description:
       "Terms of Use governing your access to and use of itsco.com — acceptance, permitted use, intellectual property, disclaimers, and governing law.",
-    canonical: 'https://www.itsco.com/terms/',
+    canonical: 'https://www.itsco.com/terms',
   },
   eyebrow: 'Legal',
   title: 'Terms of Use',

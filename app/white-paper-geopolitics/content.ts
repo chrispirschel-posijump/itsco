@@ -12,7 +12,7 @@ export const CONTENT: WhitePaperContent = {
     title: 'Geopolitics of the AI Race | White Paper',
     description:
       "The race for AI dominance mirrors the 20th-century arms race. How US-China tensions, the Taiwan strait, and TSMC reshape semiconductor and AI infrastructure. Free PDF download.",
-    canonical: 'https://www.itsco.com/white-paper-geopolitics/',
+    canonical: 'https://www.itsco.com/white-paper-geopolitics',
   },
   category: 'AI & Cloud Strategy',
   eyebrow: 'AI & Cloud Strategy',

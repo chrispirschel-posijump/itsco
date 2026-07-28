@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Public & Hybrid Cloud Services',
     description:
       'ITSco public and hybrid cloud services — the scalability of public cloud and the control of private, designed and managed around your workloads. Book a free consultation.',
-    canonical: 'https://www.itsco.com/public-hybrid-cloud-services/',
+    canonical: 'https://www.itsco.com/public-hybrid-cloud-services',
   },
   serviceName: 'Public & Hybrid Cloud Services',
   parent: { name: 'Cloud Services', href: '/cloud-services/' },

@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IT ROI Assessment Services',
     description:
       'ITSco IT ROI assessment — reduce waste, uncover opportunities, and get more value from every IT dollar with an unbiased expert review. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-roi-assessment/',
+    canonical: 'https://www.itsco.com/it-roi-assessment',
   },
   serviceName: 'IT ROI Assessment',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

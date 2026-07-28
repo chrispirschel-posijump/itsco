@@ -9,7 +9,7 @@ export const CONTENT: CityServiceContent = {
     title: 'Managed IT Services in Wilmington, NC | IT Solutions Provider',
     description:
       'ITSco is the Wilmington IT solutions provider businesses trust — managed IT, security, help desk, and cloud aligned with your business goals. Book a free consultation.',
-    canonical: 'https://www.itsco.com/managed-it-services-wilmington/',
+    canonical: 'https://www.itsco.com/managed-it-services-wilmington',
   },
   hero: {
     eyebrow: 'Managed IT Services · Wilmington, NC',

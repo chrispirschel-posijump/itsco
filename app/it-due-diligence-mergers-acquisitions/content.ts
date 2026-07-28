@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'IT Due Diligence for Mergers & Acquisitions',
     description:
       'ITSco IT due diligence for M&A — surface hidden technology cost and risk before you sign, and plan the integration before day one. Book a free consultation.',
-    canonical: 'https://www.itsco.com/it-due-diligence-mergers-acquisitions/',
+    canonical: 'https://www.itsco.com/it-due-diligence-mergers-acquisitions',
   },
   serviceName: 'IT Due Diligence for M&A',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

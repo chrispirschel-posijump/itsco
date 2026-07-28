@@ -9,7 +9,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Technical Project Management Services',
     description:
       'ITSco technical project management — IT projects delivered on time, on budget, and aligned to your goals by experienced TPMs. Book a free consultation.',
-    canonical: 'https://www.itsco.com/technical-project-management/',
+    canonical: 'https://www.itsco.com/technical-project-management',
   },
   serviceName: 'Technical Project Management',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },

@@ -10,7 +10,7 @@ export const CONTENT: WhitePaperContent = {
     title: 'ESG Research Paper: AI, Energy, and the Power Grid | White Paper',
     description:
       "GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid's capacity to scale. Free PDF download.",
-    canonical: 'https://www.itsco.com/white-papers-esg-research-paper/',
+    canonical: 'https://www.itsco.com/white-papers-esg-research-paper',
   },
   category: 'ITAD & Sustainability',
   eyebrow: 'ITAD & Sustainability',

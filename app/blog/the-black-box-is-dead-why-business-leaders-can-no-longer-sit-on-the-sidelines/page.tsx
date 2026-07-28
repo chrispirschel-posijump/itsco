@@ -8,7 +8,7 @@ const post = getPost('the-black-box-is-dead-why-business-leaders-can-no-longer-s
 export const metadata: Metadata = {
   title: post.title,
   description: post.excerpt,
-  alternates: { canonical: `https://www.itsco.com/blog/${post.slug}/` },
+  alternates: { canonical: `https://www.itsco.com/blog/${post.slug}` },
 }
 
 export default function Page() {

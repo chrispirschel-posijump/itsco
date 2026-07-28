@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Backup & Disaster Recovery Services',
     description:
       'ITSco backup and disaster recovery — automated backups, rapid recovery, and ransomware protection that keep your business resilient. Book a free consultation.',
-    canonical: 'https://www.itsco.com/backup-disaster-recovery/',
+    canonical: 'https://www.itsco.com/backup-disaster-recovery',
   },
   serviceName: 'Backup & Disaster Recovery',
   parent: { name: 'Managed IT Services', href: '/managed-it-services/' },

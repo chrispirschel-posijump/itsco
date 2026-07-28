@@ -3,7 +3,7 @@
 // Source: https://www.itsco.com/marketing-it-services/
 // Generated: 2026-05-15T17:10:16.688Z
 
-export const SOURCE_URL = "https://www.itsco.com/marketing-it-services/"
+export const SOURCE_URL = "https://www.itsco.com/marketing-it-services"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Client Raves: Unmatched Marketing IT Services",

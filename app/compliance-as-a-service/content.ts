@@ -8,7 +8,7 @@ export const CONTENT: ServiceSubContent = {
     title: 'Compliance as a Service | Continuous Compliance Management',
     description:
       "ITSco Compliance as a Service keeps you aligned to HIPAA, PCI-DSS, SOC 2, NIST, and more — every day, not just before audits. Book a free consultation.",
-    canonical: 'https://www.itsco.com/compliance-as-a-service/',
+    canonical: 'https://www.itsco.com/compliance-as-a-service',
   },
   serviceName: 'Compliance as a Service',
   parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
