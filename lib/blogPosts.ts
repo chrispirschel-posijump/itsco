@@ -173,10 +173,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     draft: true,
   },
   // ── Post 1 of the editorial roadmap ──────────────────────────────────────
-  // Scheduled for 2026-08-03. Draft flag stays true until publish day so
-  // the post is (a) hidden from the /blog/ index, (b) filtered out of
-  // related-posts, and (c) served with noindex if the URL is discovered.
-  // On Aug 3, flip `draft` to false (or remove) and redeploy.
+  // Published 2026-08-03.
   {
     slug: 'cyber-insurance-requirements-for-small-business',
     title: 'Cyber Insurance Requirements for SMBs: What Your Underwriter Actually Wants',
@@ -213,7 +210,6 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "General liability covers physical injury and property damage. E&O covers mistakes in your professional services. Neither covers ransomware, breach response, forensics, or funds transfer fraud — that's what a standalone cyber policy exists for. Confirm the specifics with your broker or attorney; policy language varies by carrier.",
       },
     ],
-    draft: true,
   },
   {
     slug: 'raleigh-industries',
