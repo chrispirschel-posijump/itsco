@@ -65,6 +65,14 @@ export const metadata: Metadata = {
 const GTM_ID = process.env.NEXT_PUBLIC_GTM_ID;
 const CANONICAL_HOSTNAME = "www.itsco.com";
 
+// RB2B (Reveal B2B) visitor identification. Account key is inherently
+// public — it appears verbatim in the client-side snippet. Restored from
+// the old WordPress site where it was installed directly in <head>, not
+// via GTM, so it did not carry over to the new stack automatically. Uses
+// the same hostname guard as GTM below so preview/QA traffic never
+// pollutes ITSco's RB2B reveals.
+const RB2B_ACCOUNT_KEY = "4O7Z0HMLW3NX";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -81,6 +89,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','${GTM_ID}');}`}
         </Script>
       )}
+      <Script id="rb2b-init" strategy="afterInteractive">
+        {`if(window.location.hostname==='${CANONICAL_HOSTNAME}'){!function(){var reb2b=window.reb2b=window.reb2b||[];if(reb2b.invoked)return;reb2b.invoked=true;reb2b.methods=["identify","collect"];reb2b.factory=function(method){return function(){var args=Array.prototype.slice.call(arguments);args.unshift(method);reb2b.push(args);return reb2b;};};for(var i=0;i<reb2b.methods.length;i++){var key=reb2b.methods[i];reb2b[key]=reb2b.factory(key);}reb2b.load=function(key){var script=document.createElement("script");script.type="text/javascript";script.async=true;script.src="https://s3-us-west-2.amazonaws.com/b2bjsstore/b/"+key+"/reb2b.js.gz";var first=document.getElementsByTagName("script")[0];first.parentNode.insertBefore(script,first);};reb2b.SNIPPET_VERSION="1.0.1";reb2b.load("${RB2B_ACCOUNT_KEY}");}();}`}
+      </Script>
       <body className="min-h-full flex flex-col">
         {GTM_ID && (
           <noscript>
