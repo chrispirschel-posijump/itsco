@@ -51,6 +51,46 @@ export function visiblePosts(): BlogPost[] {
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Post 5 of the editorial roadmap ──────────────────────────────────────
+  // Scheduled for 2026-09-28. Flip draft: false and redeploy on Sep 28.
+  {
+    slug: 'cost-of-it-downtime-for-business',
+    title: 'The Real Cost of IT Downtime for a Growing Business',
+    category: 'Managed IT',
+    excerpt:
+      "IT downtime costs more than lost hours. Revenue, trust, and recovery expenses add up fast. Here's how to calculate the real number for your business.",
+    heroImage: '/images/hero/blog/microsoft-365-oUbzU87d1Gc-unsplash.jpg',
+    publishedDate: '2026-09-28',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: 'How much does IT downtime cost per hour for a small business?',
+        answer:
+          "Published benchmarks put typical ranges at $8K–$25K per hour for companies under 50 employees, $25K–$75K for 50–100, and $75K–$250K for 100–500 — with ITIC finding even micro-businesses lose roughly $1,670 per minute. Where you land depends on revenue per employee and how customer-facing the affected systems are.",
+      },
+      {
+        question: 'How do I calculate the cost of downtime for my business?',
+        answer:
+          'Use: hourly cost × annual downtime hours × impact factor. Hourly cost is headcount times loaded hourly rate (~$75 for professional services). Impact factor is 0.9–1.0 for company-wide outages, 0.4–0.6 for critical systems, 0.1–0.2 for niche ones. The result is a floor — it prices lost productivity only, before revenue disruption, recovery costs, and trust erosion.',
+      },
+      {
+        question: 'How often do businesses actually experience significant downtime?',
+        answer:
+          "Per the Uptime Institute's 2026 Annual Outage Analysis, roughly half of operators experienced an impactful outage in the past 3 years, and about 1 in 10 outages causes serious or severe disruption. Frequency is declining, but cost per event is rising — 1 in 5 outages now exceeds $1 million.",
+      },
+      {
+        question: 'What causes most IT downtime?',
+        answer:
+          'Less hardware failure than most executives assume. Nearly 40% of organizations suffered a major human-error outage in the past 3 years, and 85% of those trace to inadequate or unfollowed procedures. Cybersecurity incidents are a rising cause with unusually long-lasting impacts. Both are manageable variables, not bad luck.',
+      },
+      {
+        question: 'Does managed IT actually reduce downtime?',
+        answer:
+          "It targets the documented causes: continuous monitoring converts failures-in-progress into scheduled fixes, tested procedures attack the leading human-error driver, 24/7 response shortens every incident, and tested backups compress recovery from days to hours. The honest measure for any provider — including us — is the trend in your own unplanned downtime hours year over year.",
+      },
+    ],
+    draft: true,
+  },
   // ── Post 4 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-09-14. Flip draft: false and redeploy on Sep 14.
   {
