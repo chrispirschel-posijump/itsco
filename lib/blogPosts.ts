@@ -172,8 +172,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     draft: true,
   },
   // ── Post 2 of the editorial roadmap ──────────────────────────────────────
-  // Scheduled for 2026-08-17. Draft flag stays true until publish day; flip
-  // to false (or remove) on Aug 17 and redeploy.
+  // Published 2026-08-17.
   {
     slug: 'hipaa-compliance-90-day-roadmap-small-practice',
     title: 'HIPAA Compliance Checklist: 90-Day Roadmap for Small Practices',
@@ -210,7 +209,6 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           'Review the SRA and policies at least annually, and immediately after any material change — new EHR, new location, new telehealth workflow, or a security incident. An SRA dated more than 12 months ago is treated as stale by investigators, insurers, and acquirers alike.',
       },
     ],
-    draft: true,
   },
   // ── Post 1 of the editorial roadmap ──────────────────────────────────────
   // Published 2026-08-03.
