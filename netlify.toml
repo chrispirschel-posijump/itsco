@@ -12,6 +12,22 @@
 # /_next/image) is handled by next.config.ts images.minimumCacheTTL —
 # these rules cover any direct requests to raw files (OG image, PDFs,
 # hero videos, and any /images/ URL not routed through Next.js Image).
+# Baseline security headers applied to every response. HSTS opts the
+# domain into HTTPS-only for two years and is preload-eligible;
+# X-Frame-Options blocks clickjacking; X-Content-Type-Options prevents
+# MIME-sniffing; Referrer-Policy stops full URLs from leaking to third
+# parties; Permissions-Policy denies browser features the site doesn't
+# use. CSP is intentionally omitted here — GTM injects tags dynamically
+# and a strict policy needs a per-tag audit before it goes on the site.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+    X-Content-Type-Options = "nosniff"
+    X-Frame-Options = "SAMEORIGIN"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), interest-cohort=()"
+
 [[headers]]
   for = "/images/*"
   [headers.values]

@@ -1,0 +1,25 @@
+# Dependabot config — enables automated security and version updates on
+# npm dependencies and GitHub Actions used by this repo. PRs are opened
+# weekly; security advisories from GitHub still create PRs on demand
+# regardless of the schedule.
+
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 5
+    groups:
+      # Group non-security minor/patch bumps into a single weekly PR to
+      # cut review load; security PRs still open individually.
+      minor-and-patch:
+        applies-to: version-updates
+        update-types:
+          - "minor"
+          - "patch"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
