@@ -206,17 +206,25 @@ export const INDUSTRY_QUESTIONS: Record<Industry, readonly string[]> = {
 // Cost of a Data Breach, Verizon DBIR, Gartner IT spending, ITIC downtime
 // research). These drive the savings picture, never the price.
 export const ROI_BENCHMARKS = {
-  billingRate: {
-    'professional-services': 150,
-    healthcare: 175,
-    legal: 250,
-    'financial-services': 200,
-    manufacturing: 80,
-    'non-profit': 60,
-    'government-defense': 120,
-    'real-estate': 110,
-    construction: 90,
-    other: 100,
+  // Fully loaded hourly payroll cost by industry: blended salary x ~1.3 for
+  // benefits and payroll tax, over 2,080 hours. This is what an idle hour
+  // COSTS, which is the defensible basis for lost-time math.
+  //
+  // It deliberately replaces the client billing rate used previously. A law
+  // firm charges $250/hour; that is revenue, not cost, and using it assumed
+  // 100% utilisation and that lost billable hours are never recovered.
+  // Neither holds, and the resulting figures did not survive CFO scrutiny.
+  loadedHourlyByIndustry: {
+    'professional-services': 55,
+    healthcare: 55,
+    legal: 60,
+    'financial-services': 60,
+    manufacturing: 40,
+    'non-profit': 35,
+    'government-defense': 60,
+    'real-estate': 45,
+    construction: 40,
+    other: 50,
   } as Record<Industry, number>,
   downtimeHoursByModel: {
     'break-fix': 20,
@@ -234,7 +242,6 @@ export const ROI_BENCHMARKS = {
     nothing: 24,
   } as Record<ITModel, number>,
   managedProductivityHours: 4,
-  loadedHourlyCost: 75,
   securityRiskByIndustry: {
     'professional-services': { low: 30_000, high: 90_000 },
     healthcare: { low: 80_000, high: 220_000 },
@@ -254,7 +261,11 @@ export const ROI_BENCHMARKS = {
     hybrid: 0.3,
     nothing: 0.7,
   } as Record<ITModel, number>,
-  downtimeImpactFactor: 0.75,
+  // Share of the workforce genuinely unable to work during a typical
+  // incident. Most outages are partial -- one system, one site, one team --
+  // so charging every employee for the full outage window overstates the
+  // loss. 0.35 is the blended partial-outage assumption.
+  outageParticipationFactor: 0.35,
 } as const
 
 /* ── Lead quality ─────────────────────────────────────────────────────
@@ -462,14 +473,20 @@ export function calculateRoi(inputs: CalcInputs, quote: Quote): Roi | null {
   const { users, industry, model } = inputs
   if (!model) return null
 
-  const billRate = ROI_BENCHMARKS.billingRate[industry] ?? 100
+  // One labour-cost basis drives both people-time lines, so the two numbers
+  // are consistent with each other and with what the company actually pays.
+  const loadedHourly = ROI_BENCHMARKS.loadedHourlyByIndustry[industry] ?? 50
+
   const dtCurrent = ROI_BENCHMARKS.downtimeHoursByModel[model] ?? 20
   const dtSaved = Math.max(0, dtCurrent - ROI_BENCHMARKS.managedDowntimeHours)
-  const downtimeMid = dtSaved * users * billRate * ROI_BENCHMARKS.downtimeImpactFactor
+  const downtimeMid =
+    dtSaved * users * loadedHourly * ROI_BENCHMARKS.outageParticipationFactor
 
+  // No participation factor here: degraded systems and support waits affect
+  // everyone, which is exactly what separates this from an outage.
   const prodCurrent = ROI_BENCHMARKS.productivityHoursByModel[model] ?? 12
   const prodSaved = Math.max(0, prodCurrent - ROI_BENCHMARKS.managedProductivityHours)
-  const productivityMid = prodSaved * users * ROI_BENCHMARKS.loadedHourlyCost
+  const productivityMid = prodSaved * users * loadedHourly
 
   const riskRange = ROI_BENCHMARKS.securityRiskByIndustry[industry]
   const riskFactor = ROI_BENCHMARKS.riskReductionByCurrent[model] ?? 0.5
