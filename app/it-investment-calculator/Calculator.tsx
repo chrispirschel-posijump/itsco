@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowRight, ChevronDown, Printer, X } from 'lucide-react'
+import { ANALYTICS_EVENTS, pushEvent } from '@/lib/analytics'
 import {
   ADDONS,
   INDUSTRIES,
@@ -258,6 +259,15 @@ export default function Calculator() {
       // ours to chase, not a reason to withhold what they asked for.
       setSubmitState('error')
     }
+    // Categorical context only — never the name, email or phone just
+    // captured. See lib/analytics.ts.
+    pushEvent(ANALYTICS_EVENTS.calculatorLead, {
+      form_name: 'calculator',
+      industry: inputs.industry,
+      current_it_model: model ?? 'not_specified',
+      knowledge_users: inputs.users,
+      estimate_monthly: Math.round(quote.monthly),
+    })
     setRevealed(true)
     setGateOpen(false)
     requestAnimationFrame(() =>
@@ -674,7 +684,10 @@ export default function Calculator() {
                     Book a call with us
                     <ArrowRight size={16} className="shrink-0 transition-transform duration-200 group-hover:translate-x-1" />
                   </button>
-                  <button type="button" onClick={() => window.print()} className={BTN_SECONDARY}>
+                  <button type="button" onClick={() => {
+                    pushEvent(ANALYTICS_EVENTS.calculatorPdf, { form_name: 'calculator' })
+                    window.print()
+                  }} className={BTN_SECONDARY}>
                     <Printer size={16} className="shrink-0" />
                     Save as PDF
                   </button>
