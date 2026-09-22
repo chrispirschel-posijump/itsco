@@ -9,9 +9,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 export const CONTENT: CityServiceContent = {
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
-    title: 'Managed IT Services in Raleigh, NC | Raleigh Managed Service Provider',
+    title: 'Managed IT Services in Raleigh, NC — Fixed Pricing',
     description:
-      'ITSco delivers managed IT services in Raleigh, NC — remote monitoring, network security, help desk, and cloud, built for predictable ROI. Book a free consultation.',
+      'Managed IT for Raleigh and RTP businesses — monitoring, help desk, cybersecurity, and cloud at a fixed monthly cost. Serving North Carolina since 1996.',
     canonical: 'https://www.itsco.com/managed-it-services-raleigh',
   },
   officeLocation: 'raleigh',

@@ -6,9 +6,10 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'IT Consulting in Raleigh, NC',
+    // Root layout template appends " | ITSco" — do not include it here.
+    title: 'IT Consulting in Raleigh, NC — vCIO & IT Strategy',
     description:
-      'ITSco delivers IT consulting in Raleigh, NC — IT strategy, cloud, cybersecurity, and network solutions that align technology with your business goals. Book a free consultation.',
+      'IT strategy and vCIO consulting for Raleigh companies — technology roadmaps, budget planning, and security guidance from an NC firm advising since 1996.',
     canonical: 'https://www.itsco.com/raleigh-it-consulting',
   },
   officeLocation: 'raleigh',

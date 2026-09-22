@@ -9,9 +9,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 export const CONTENT: CityServiceContent = {
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
-    title: 'Managed IT Services in Durham, NC | Durham IT Services Company',
+    title: 'Managed IT Services in Durham, NC — Since 1996',
     description:
-      'ITSco is the Durham IT services company Research Triangle businesses trust — managed IT, cybersecurity, help desk, and cloud with predictable pricing. Book a consultation.',
+      'Durham-based managed IT since 1996 — monitoring, help desk, cybersecurity, and cloud. 60% of our clients have stayed with us five years or longer.',
     canonical: 'https://www.itsco.com/managed-it-services-durham',
   },
   hero: {
