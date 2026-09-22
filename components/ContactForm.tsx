@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Check } from 'lucide-react'
+import { ANALYTICS_EVENTS, pushEvent } from '@/lib/analytics'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -27,6 +28,10 @@ export default function ContactForm() {
       })
       if (!res.ok) throw new Error(`${res.status}`)
       setStatus('success')
+      // Fires only on a confirmed submission, so the conversion count
+      // matches what actually reached Netlify. No personal data — see
+      // lib/analytics.ts.
+      pushEvent(ANALYTICS_EVENTS.contactFormSubmit, { form_name: 'contact' })
       form.reset()
     } catch {
       setStatus('error')

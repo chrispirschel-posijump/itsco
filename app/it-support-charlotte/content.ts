@@ -6,9 +6,10 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
   meta: {
-    title: 'IT Support in Charlotte, NC',
+    // Root layout template appends " | ITSco" — do not include it here.
+    title: 'IT Support in Charlotte, NC — 24/7 Monitoring',
     description:
-      'ITSco delivers IT support in Charlotte, NC — 24/7 monitoring, help desk, computer network support, and cybersecurity — with predictable pricing. Book a free consultation.',
+      'Managed IT support for Charlotte businesses — 24/7 monitoring, help desk, cybersecurity. NC-based since 1996. Fixed monthly pricing, no surprise bills.',
     canonical: 'https://www.itsco.com/it-support-charlotte',
   },
   hero: {

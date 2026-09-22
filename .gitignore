@@ -45,3 +45,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Finder/sync duplicates ("file 2.ts"). Something on this machine copies
+# edited files; the copies are byte-identical, untracked, and break tsc
+# because TypeScript compiles every file it finds.
+*\ 2.*
+*\ copy.*
