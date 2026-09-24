@@ -24,7 +24,7 @@ const NAV_ITEMS = [
         ],
       },
       {
-        label: "Cybersecurity & Compliance",
+        label: "Cybersecurity",
         href: "/cybersecurity/",
         children: [
           { label: "Fully Managed Cybersecurity", href: "/fully-managed-cybersecurity/" },
@@ -40,9 +40,23 @@ const NAV_ITEMS = [
           { label: "Email Security", href: "/email-security/" },
           { label: "Cloud Cybersecurity", href: "/cloud-cybersecurity/" },
           { label: "Zero Trust Security", href: "/zero-trust-security/" },
-          { label: "Security Audits & Compliance", href: "/security-audits-compliance/" },
-          { label: "Compliance as a Service", href: "/compliance-as-a-service/" },
           { label: "Cybersecurity Consulting", href: "/cybersecurity-consulting-services/" },
+        ],
+      },
+      // Compliance promoted out of the Cybersecurity pillar to a pillar of its
+      // own. Mike asked for it "as a tab almost" on both the Aug 19 and Sep 2
+      // calls; it had been sitting 14th of 16 in a dropdown. Splitting also
+      // relieves the most overloaded pillar on the site and gives the planned
+      // vertical pages (HIPAA, CMMC, life sciences, financial services) a home.
+      //
+      // Security Audits & Compliance moves here as a child. Note it is the only
+      // compliance page currently ranking, so its URL stays untouched.
+      {
+        label: "Compliance Services",
+        href: "/compliance-as-a-service/",
+        children: [
+          { label: "Compliance as a Service", href: "/compliance-as-a-service/" },
+          { label: "Security Audits & Compliance", href: "/security-audits-compliance/" },
         ],
       },
       {
