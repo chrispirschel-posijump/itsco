@@ -1,7 +1,7 @@
 # Basis of Estimate — IT Investment Calculator
 
 **Last reviewed:** 2026-10-07
-**Next review due:** 2027-10-07 (annually, or whenever BLS publishes a new ECEC release)
+**Next review due:** 2027-01-07 — **quarterly**, per Mike on the Oct 7 call: *"I think we check in on it once a quarter … if a license cost changes or we increase our labor costs a little bit, we'll catch it in the quoting process."*
 **Owner:** Certainly (Chris Pirschel) with ITSco (Zack Beckham, pricing)
 
 This file exists because counsel asked for it. Under North Carolina's Unfair
@@ -43,14 +43,22 @@ says "standard rates as of October 2026" rather than "actual pricing."
 | `serverPerUnit` | $210 / server / mo | Zack — each VM counts | Aug 2026 |
 | `networkPerDevice` | $50 / device / mo | Zack — per firewall or switch | Aug 2026 |
 | `sysAdminHourlyRate` | $125 / hr | Zack — client-facing rate | 2026-10-06 |
-| `usersPerSysAdminHour` | 10 users = 1 hr / mo | Zack — "always round up" | 2026-10-06 |
-| `sysAdminMaxHours` | 100 hrs (1,000 users) | Our cap, not Zack's. Linear forever quotes $62,500/mo at the 5,000-user input ceiling, for a company size ITSco does not sell to. | 2026-10-06 |
+| `devicesPerSysAdminHour` | 10 devices = 1 hr / mo | Zack — "always round up". Device-driven as of Oct 7 | 2026-10-07 |
+| `sysAdminMaxHours` | 100 hrs (1,000 devices) | Our cap, not Zack's. Uncapped it would quote far more sys admin than ITSco would staff, for a company size it does not sell to. | 2026-10-06 |
 | Add-on unit prices | see `ADDONS` | Zack's per-seat and per-device costs | Aug 2026 |
 
-**Open item:** the sys admin ratio is applied to *knowledge users* (people
-with a computer), not total headcount. Zack said "employees." For a
-manufacturer with 300 staff and 60 on computers this is $750/mo versus
-$3,750/mo. Awaiting Mike's confirmation.
+**Settled Oct 7.** The sys admin ratio runs on **device count — computing plus
+mobile — not headcount.** Zack: *"I would base it on the number of units or
+devices, because if you're a user and you don't have any devices, you can't
+really create any alerts."* Chris confirmed mobile devices count the same as
+laptops, with no distinction.
+
+> ⚠️ **Worth watching.** Mobile devices attract no other charge in the model —
+> no device monitoring, no endpoint protection — but now carry sys admin labor
+> at full weight. At the 50-user default this doubles the sys admin line from
+> $625 to $1,250 a month and moves the per-user figure from roughly $90 to
+> $102. Mike praised $90 on the Oct 7 call as *"a very competitive rate with
+> security in it,"* so the headline number he approved has shifted.
 
 ---
 
@@ -228,6 +236,30 @@ incident is both.
 
 ## Part 5 — Price presentation
 
+### What the prospect sees in the breakdown
+
+**A list of what's included. No quantities, no rates, no per-line prices, no
+total row.** Settled on the Oct 7 call, in three escalating steps:
+
+- Zack: *"Can we take out the rate? The quantity is fine, but take out the
+  rate — that's just quoting all of our hard pricing."*
+- Mike went further: *"I'm not sure we want either in there. If you give them a
+  total and a quantity, they can do the math."*
+- And further still: *"List just what's included, be a list, and get rid of
+  everything else — the price is above in the range."*
+
+The per-line hint text went too, at Zack's request. The **per-user-per-month**
+figure stays — Mike: *"I like that. It's an easy way for prospects to compare
+us to others."*
+
+**Add-on prices remain visible in the selector**, which is inconsistent with
+the above but deliberate: they are the mechanism by which the range responds to
+a toggle, and removing them would make the tool feel broken. Flagged for ITSco
+to overrule if they want.
+
+Every figure still reaches ITSco in the submission payload, so the sales team
+loses nothing.
+
 ### ±10% range
 
 The monthly figure is shown as a band rounded to the nearest $50, not a point.
@@ -236,10 +268,10 @@ Mike's own reference on the Sept 2 call was that 10% is a meaningful band:
 *"10% here is $390 a month … that's barely three hours of labor."* Counsel's
 draft disclaimer also assumes a range throughout.
 
-> ⚠️ **Mike landed on a single number during that same call**, reasoning that an
-> upper bound locks ITSco in. The range was reinstated on 2026-10-07 at Chris's
-> direction and with counsel's draft assuming it. **Still needs Mike's explicit
-> confirmation.**
+**Confirmed by Mike on Oct 7:** *"I think it's fine. I don't have a strong
+opinion … I feel better, again, with the disclaimers. Until we really get in and
+talk to somebody and validate certain things, this is really high level, and I'm
+not going to worry about somebody suing us for $500 a month."*
 
 The itemised breakdown continues to show exact line items and is labelled as
 the mid-point, so the band reads as scoping uncertainty rather than vagueness
@@ -293,12 +325,15 @@ results panels.
 | 2026-10-06 | Sys admin labor added — $125/hr, 1 hr per 10 users, capped at 100 hrs |
 | 2026-10-07 | Industry labor rates and the in-house hire figure replaced with BLS-sourced values; breach-cost savings line removed; IBM, Verizon, Gartner and ITIC dropped from page copy |
 | 2026-10-07 | Net-return panel replaced with exposure framing; price shown as a ±10% range; conditional language throughout; counsel's plain-English line and expandable terms added as a draft |
+| 2026-10-07 | After the monthly call: sys admin moved from headcount to device count; breakdown table replaced with a plain included-services list; review cadence set to quarterly |
 
 ---
 
 ## Review checklist
 
 Annually, or on any constant change:
+
+Quarterly, per Mike's Oct 7 direction.
 
 - [ ] Pull the current BLS ECEC release; update industry rates and the 70%
       wage share if it has moved

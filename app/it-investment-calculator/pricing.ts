@@ -9,16 +9,17 @@
 // one hour per ten users per month, always rounded up. Three decisions are
 // baked in and worth knowing before anyone edits the numbers:
 //
-//   1. Driven by KNOWN USERS, not total headcount. Zack said "employees";
-//      we apply it to people with a computer. For a manufacturer with 300
-//      staff and 60 on computers that is the difference between $3,750 and
-//      $750 a month. Pending Mike's confirmation.
+//   1. Driven by DEVICE COUNT -- computing devices plus mobile devices --
+//      not headcount. Settled by Zack on the Oct 7 call: "I would base it on
+//      the number of units or devices, because if you're a user and you don't
+//      have any devices, you can't really create any alerts." Mobile devices
+//      count the same as laptops; Chris confirmed no distinction.
 //   2. FLAT regardless of add-ons. Mike originally asked which add-on tools
 //      should trigger sys admin time; Zack answered with a flat headcount
 //      ratio instead. Simple was judged the right call for an estimate.
-//   3. CAPPED at 1,000 users (100 hours/month). Linear forever would quote
-//      $62,500/month of sys admin at the 5,000-user input ceiling, for a
-//      company size ITSco does not sell to.
+//   3. CAPPED at 1,000 devices (100 hours/month). Linear forever would quote
+//      far more sys admin than ITSco would ever staff, for a company size it
+//      does not sell to.
 
 export const PRICING = {
   /** Per help-desk unit, where one unit covers three knowledge users. */
@@ -33,9 +34,9 @@ export const PRICING = {
   networkPerDevice: 50,
   /** Client-facing systems administration rate, per hour. */
   sysAdminHourlyRate: 125,
-  /** One sys admin hour per this many knowledge users, per month. */
-  usersPerSysAdminHour: 10,
-  /** Hour ceiling — 100 hours covers 1,000 users. See the note above. */
+  /** One sys admin hour per this many managed devices, per month. */
+  devicesPerSysAdminHour: 10,
+  /** Hour ceiling — 100 hours covers 1,000 devices. See the note above. */
   sysAdminMaxHours: 100,
 } as const
 
@@ -394,15 +395,17 @@ export function calculateQuote(
   inputs: CalcInputs,
   addons: Record<string, boolean>,
 ): Quote {
-  const { users, devices, servers, networkGear } = inputs
+  const { users, devices, mobileDevices, servers, networkGear } = inputs
 
   const mspUnits = Math.max(1, Math.ceil(users / 3))
   // Separate from the help-desk calculation above: this is the engineering
   // time spent triaging tool alerts behind the scenes, which Mike flagged as
-  // the labour most often added back into quotes by hand.
+  // the labour most often added back into quotes by hand. Driven by devices
+  // rather than headcount -- a user without a device generates no alerts.
+  const managedDevices = devices + mobileDevices
   const sysAdminHours = Math.min(
     PRICING.sysAdminMaxHours,
-    Math.max(1, Math.ceil(users / PRICING.usersPerSysAdminHour)),
+    Math.max(1, Math.ceil(managedDevices / PRICING.devicesPerSysAdminHour)),
   )
   const base: QuoteLine[] = [
     {
@@ -417,7 +420,7 @@ export function calculateQuote(
       qty: sysAdminHours,
       rate: PRICING.sysAdminHourlyRate,
       monthly: sysAdminHours * PRICING.sysAdminHourlyRate,
-      hint: '1 hour per 10 users per month, rounded up',
+      hint: '1 hour per 10 managed devices per month, rounded up',
     },
     {
       label: 'Client portal, ticketing & reporting',

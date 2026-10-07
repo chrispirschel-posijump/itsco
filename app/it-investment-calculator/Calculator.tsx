@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
-import { ArrowRight, ChevronDown, Printer, X } from 'lucide-react'
+import { ArrowRight, Check, ChevronDown, Printer, X } from 'lucide-react'
 import { ANALYTICS_EVENTS, pushEvent } from '@/lib/analytics'
 import {
   ROI_BENCHMARKS,
@@ -658,66 +658,31 @@ export default function Calculator() {
                   <p className="mt-2.5 text-[13px] leading-relaxed text-itsco-body/70">{comparison}</p>
                 )}
 
-                <div className="mt-5 overflow-x-auto">
-                  <table className="w-full border-collapse text-[13px] tabular-nums">
-                    <thead>
-                      <tr>
-                        <th className="border-t border-[#EBEBEB] py-2 text-left text-[11px] font-semibold uppercase tracking-[0.08em] text-itsco-body/60">
-                          Line item
-                        </th>
-                        <th className="border-t border-[#EBEBEB] py-2 text-right text-[11px] font-semibold uppercase tracking-[0.08em] text-itsco-body/60">
-                          Qty × rate
-                        </th>
-                        <th className="border-t border-[#EBEBEB] py-2 text-right text-[11px] font-semibold uppercase tracking-[0.08em] text-itsco-body/60">
-                          Monthly
-                        </th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      {quote.base.map((l) => (
-                        <tr key={l.label}>
-                          <td className="border-t border-[#EBEBEB] py-2 pr-3 text-itsco-body">
-                            {l.label}
-                            <span className="block text-[11px] text-itsco-body/60">{l.hint}</span>
-                          </td>
-                          <td className="border-t border-[#EBEBEB] py-2 text-right text-xs text-itsco-body/60 whitespace-nowrap">
-                            {l.qty} × {fmtCents(l.rate)}
-                          </td>
-                          <td className="border-t border-[#EBEBEB] py-2 text-right font-semibold text-itsco-dark whitespace-nowrap">
-                            {fmtCents(l.monthly)}
-                          </td>
-                        </tr>
+                {/* A list of what is included, with no quantities, rates or
+                    per-line prices. Settled on the Oct 7 call -- Mike: "list
+                    just what's included, be a list, and get rid of everything
+                    else, the price is above in the range." The figures still
+                    reach ITSco in the submission payload. */}
+                <div className="mt-6 border-t border-[#EBEBEB] pt-5">
+                  <p className="text-[11px] font-bold uppercase tracking-[0.11em] text-itsco-body/60 mb-3">
+                    What’s included
+                  </p>
+                  <ul className="grid gap-x-8 gap-y-2 sm:grid-cols-2">
+                    {quote.base
+                      .filter((l) => l.monthly > 0)
+                      .map((l) => (
+                        <li key={l.label} className="flex items-start gap-2.5 text-sm text-itsco-body">
+                          <Check size={15} className="mt-[3px] shrink-0 text-itsco-red" aria-hidden="true" />
+                          {l.label}
+                        </li>
                       ))}
-                      {quote.addonLines.length > 0 && (
-                        <tr>
-                          <td colSpan={3} className="border-t border-[#DDD6C4] pt-3.5 pb-1 text-[11px] uppercase tracking-[0.1em] text-itsco-body/60">
-                            Add-ons
-                          </td>
-                        </tr>
-                      )}
-                      {quote.addonLines.map((l) => (
-                        <tr key={l.label}>
-                          <td className="border-t border-[#EBEBEB] py-2 pr-3 text-itsco-body">
-                            {l.label}
-                            <span className="block text-[11px] text-itsco-body/60">per {l.unit}</span>
-                          </td>
-                          <td className="border-t border-[#EBEBEB] py-2 text-right text-xs text-itsco-body/60 whitespace-nowrap">
-                            {l.qty} × {fmtCents(l.rate)}
-                          </td>
-                          <td className="border-t border-[#EBEBEB] py-2 text-right font-semibold text-itsco-dark whitespace-nowrap">
-                            {fmtCents(l.monthly)}
-                          </td>
-                        </tr>
-                      ))}
-                      <tr>
-                        <td className="border-t-2 border-[#DDD6C4] pt-3 font-bold text-itsco-dark">Total monthly, mid-point</td>
-                        <td className="border-t-2 border-[#DDD6C4]" />
-                        <td className="border-t-2 border-[#DDD6C4] pt-3 text-right text-lg font-extrabold text-itsco-dark tracking-tight tabular-nums whitespace-nowrap">
-                          {fmtCents(quote.monthly)}
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
+                    {quote.addonLines.map((l) => (
+                      <li key={l.label} className="flex items-start gap-2.5 text-sm text-itsco-body">
+                        <Check size={15} className="mt-[3px] shrink-0 text-itsco-red" aria-hidden="true" />
+                        {l.label}
+                      </li>
+                    ))}
+                  </ul>
                 </div>
 
                 <p className="mt-3 text-xs leading-relaxed text-itsco-body/60">
