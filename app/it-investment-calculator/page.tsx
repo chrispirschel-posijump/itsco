@@ -43,15 +43,16 @@ export default function ITInvestmentCalculatorPage() {
           <footer className="mt-12 border-t border-[#EBEBEB] pt-6">
             <p className="max-w-[62ch] text-xs leading-relaxed text-itsco-body/60">
               <strong className="text-itsco-body">About these numbers.</strong> The monthly figure is a
-              pricing estimate based on ITSco’s standard rates as of October 2026. Labor costs use
-              U.S. Bureau of Labor Statistics Employer Costs for Employee Compensation data (June
-              2026); the in-house hire comparison uses the BLS median systems administrator wage (May
-              2025), loaded for benefits and required contributions. The hours a company recovers are
-              ITSco’s own operating assumptions from 30 years serving 50–500-person companies, not
-              third-party research. Actual proposals are scoped individually — this is an estimate
-              based on what we know today and subject to change once we understand your environment.
-              It’s discovery-conversation napkin math, not a formal quote or contract.
-            </p>
+              pricing estimate built from ITSco’s standard rates as of October 2026, shown as a range
+              because final scope is set after discovery. Labor costs use U.S. Bureau of Labor
+              Statistics Employer Costs for Employee Compensation data (June 2026); the in-house hire
+              comparison uses the BLS median systems administrator wage (May 2025), loaded for benefits
+              and required contributions. Cyber claim figures come from the Coalition 2026 Cyber Claims
+              Report and the NetDiligence 2026 Cyber Claims Study. The hours a company recovers, and
+              the one-week incident scenario, are ITSco’s own illustrations rather than third-party
+              research. ITSco is not affiliated with these sources and they do not endorse this
+              estimate. Actual proposals are scoped individually, and the figures here could change
+              once we understand your environment. </p>
           </footer>
         </div>
       </main>

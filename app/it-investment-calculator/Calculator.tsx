@@ -507,6 +507,16 @@ export default function Calculator() {
             </div>
           ) : (
             <>
+              {/* Counsel's Version A plain-English line. Placement per their
+                  guidance: directly under the result, same visual weight.
+                  DRAFT -- adapted to what the calculator actually does and
+                  pending counsel review. See BASIS_OF_ESTIMATE.md. */}
+              <p className="rounded-lg border border-[#EBEBEB] border-l-[3px] border-l-itsco-red bg-white px-4 py-3.5 text-[15px] leading-relaxed text-itsco-body">
+                <strong className="text-itsco-dark">This is an estimate, not a quote.</strong> Your
+                final pricing is set only after we review your environment and both parties sign an
+                agreement.
+              </p>
+
               {submitState === 'error' ? (
                 <p className="rounded-lg border border-[#EBEBEB] border-l-[3px] border-l-itsco-red bg-white px-4 py-3 text-[13px] leading-relaxed text-itsco-body print:hidden">
                   <strong className="text-itsco-dark">Your estimate is ready below.</strong> We couldn’t
@@ -552,6 +562,13 @@ export default function Calculator() {
                         </dd>
                       </div>
                     </dl>
+
+                    <p className="mt-4 text-xs leading-relaxed text-itsco-body/60">
+                      Labor costs: U.S. Bureau of Labor Statistics, Employer Costs for Employee
+                      Compensation, June 2026 — total compensation per hour worked for your industry.
+                      The hours a company recovers are ITSco’s own operating assumptions from 30 years
+                      serving 50–500-person companies, not third-party research.
+                    </p>
                   </article>
 
                   {/* Exposure, not savings. Replaced the net-return panel on
@@ -704,6 +721,11 @@ export default function Calculator() {
                 </div>
 
                 <p className="mt-3 text-xs leading-relaxed text-itsco-body/60">
+                  Rates: ITSco’s standard rates as of October 2026, subject to change. The in-house
+                  comparison uses the BLS median systems administrator wage (May 2025), loaded using the
+                  ECEC finding that wages are 70% of total employer compensation.
+                </p>
+                <p className="mt-2 text-xs leading-relaxed text-itsco-body/60">
                   Excludes Microsoft 365 licensing (most companies pay this separately, and pricing is
                   publicly available). One-time setup fees and contract-term discounts aren’t included — we
                   can walk through those on a discovery call.
@@ -727,6 +749,74 @@ export default function Calculator() {
           )}
         </div>
       </div>
+
+      {revealed && (
+        <details className="mx-auto mt-8 max-w-3xl rounded-2xl border border-[#EBEBEB] bg-itsco-card/60 px-6 py-4 print:open">
+          <summary className="cursor-pointer text-sm font-semibold text-itsco-dark marker:text-itsco-body/40 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red">
+            View estimate terms
+          </summary>
+          <ol className="mt-4 list-decimal space-y-3 pl-5 text-[13px] leading-relaxed text-itsco-body/80">
+            <li>
+              <strong className="text-itsco-dark">Estimate only; not an offer.</strong> The figures
+              from this calculator (the “Estimate”) are for general information and planning only. The
+              Estimate is not an offer, bid, quote, proposal or contract, and creates no obligation for
+              ITSco. ITSco is bound only by a written agreement signed by authorized representatives of
+              both parties.
+            </li>
+            <li>
+              <strong className="text-itsco-dark">Basis of the Estimate.</strong> The Estimate is a
+              range based on ITSco’s standard rates as of October 2026 and on the information you
+              entered. It covers recurring managed services fees and the add-on services you selected.
+              Its accuracy depends on the accuracy of your inputs, which ITSco has not verified.
+            </li>
+            <li>
+              <strong className="text-itsco-dark">Pricing subject to change.</strong> Rates, fees and
+              third-party costs may change at any time without notice. Third-party vendors set their
+              own licensing prices, which are outside ITSco’s control and are billed at the rates in
+              effect when a contract is signed or renewed. Final pricing is set after discovery and
+              could differ materially — for example where your environment needs remediation, has more
+              users, devices or locations than entered, or carries specific compliance requirements.
+            </li>
+            <li>
+              <strong className="text-itsco-dark">Exclusions.</strong> Unless expressly stated, the
+              Estimate does not include applicable taxes, Microsoft 365 or other productivity
+              licensing, one-time onboarding or project fees, hardware or equipment, travel,
+              remediation of pre-existing conditions, after-hours or emergency services, out-of-scope
+              project work, or the cost of regulatory compliance programs.
+            </li>
+            <li>
+              <strong className="text-itsco-dark">Comparisons and scenarios are illustrative.</strong>{' '}
+              The in-house staffing comparison, the estimated time a managed partnership could recover,
+              and the incident scenario are illustrations. Labor costs are drawn from U.S. Bureau of
+              Labor Statistics data and claim figures from published cyber insurance claims studies;
+              the hours and recovery times applied to them are ITSco’s own assumptions. They are not
+              guarantees or predictions of results for your organization, and actual results will vary.
+              ITSco is not affiliated with these sources and they do not endorse the Estimate.
+            </li>
+            <li>
+              <strong className="text-itsco-dark">No warranty; no reliance.</strong> The Estimate is
+              provided “as is,” without warranty of any kind. Please do not rely on it for budgeting,
+              procurement or financial decisions without a formal written proposal from ITSco. To the
+              fullest extent permitted by law, ITSco is not liable for decisions made or actions taken
+              based on the Estimate.
+            </li>
+            <li>
+              <strong className="text-itsco-dark">Not professional advice.</strong> Nothing in this
+              calculator is legal, financial, tax or compliance advice.
+            </li>
+          </ol>
+          <p className="mt-4 text-xs text-itsco-body/60">
+            We handle the details you provide in line with our{' '}
+            <a
+              href="/privacy-policy"
+              className="font-semibold text-itsco-red underline underline-offset-2 hover:text-itsco-red-dark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
+            >
+              privacy policy
+            </a>
+            .
+          </p>
+        </details>
+      )}
 
       {/* ── Gating modal ──────────────────────────────────────────── */}
       {gateOpen && (

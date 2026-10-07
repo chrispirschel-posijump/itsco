@@ -175,39 +175,124 @@ full billable hours each. It would not have survived a CFO's first question.
 
 ---
 
-## Part 4 — Removed from the model
+## Part 4 — Exposure panel (MIXED)
 
-### Security and breach exposure — REMOVED 2026-10-07
+Replaced the net-return panel on 2026-10-07. Net required the modelled value
+to exceed the price before the panel said anything encouraging, and after sys
+admin labor entered the price and the unsourced breach line left the model, it
+often did not. Exposure makes no claim that has to clear a bar.
 
-Previously shown as a dollar savings line: industry breach cost × risk
+### Average cyber claim — $79,000 (SOURCED)
+
+**Source:** Coalition, *2026 Cyber Claims Report* — average claim severity for
+businesses under $25M revenue, drawn from 100,000+ policyholders across five
+countries. Same report: overall claims frequency 1.54%; sub-$25M frequency
+1.21%; overall average claim $116,000.
+<https://www.coalitioninc.com/announcements/2026-cyber-claims-report>
+
+### 61% of claims from ransomware or email compromise (SOURCED)
+
+**Source:** NetDiligence, *2026 Cyber Claims Study* (16th annual, 10,309 claims
+from incidents 2021–2025). Ransomware and business email compromise together
+accounted for 51% of SME claims of at least $1,000 across the five-year period,
+rising to nearly 61% in 2025. SMEs are 97% of all claims in the dataset.
+<https://netdiligence.com/blog/2026/09/2026-cyber-claims-study-key-findings/>
+
+### One-week incident scenario (MIXED)
+
+`users × 40 hours × loadedHourlyByIndustry`
+
+The labor rate is sourced (Part 2). **The week is not.** It is an illustration,
+not a researched recovery time, and the page states it conditionally — "if an
+incident took you offline for a week." Published recovery times vary widely and
+the figure deliberately excludes recovery fees, legal costs, and lost revenue,
+which makes it conservative.
+
+**Do not restate the week as a typical or expected recovery time** without a
+source. The conditional framing is what keeps this defensible.
+
+### Why expected-value math was not used
+
+An annualised figure is the more conventional construction, and it was
+considered: 1.21% frequency × $79,000 severity ≈ **$956/year** for a company in
+this revenue band. Even tripling the frequency to account for weak security
+posture — a plausible but unsourceable adjustment — reaches roughly
+$2,900/year, under 5% of a typical annual price.
+
+The old breach line showed $16,500 for a 50-person professional services firm,
+roughly 17× the defensible expected value. Presenting a small annualised number
+would have been honest but unpersuasive; presenting the cost of an actual
+incident is both.
+
+---
+
+## Part 5 — Price presentation
+
+### ±10% range
+
+The monthly figure is shown as a band rounded to the nearest $50, not a point.
+
+Mike's own reference on the Sept 2 call was that 10% is a meaningful band:
+*"10% here is $390 a month … that's barely three hours of labor."* Counsel's
+draft disclaimer also assumes a range throughout.
+
+> ⚠️ **Mike landed on a single number during that same call**, reasoning that an
+> upper bound locks ITSco in. The range was reinstated on 2026-10-07 at Chris's
+> direction and with counsel's draft assuming it. **Still needs Mike's explicit
+> confirmation.**
+
+The itemised breakdown continues to show exact line items and is labelled as
+the mid-point, so the band reads as scoping uncertainty rather than vagueness
+about the rate card.
+
+---
+
+## Part 6 — Removed from the model
+
+### Security and breach exposure as a savings line — REMOVED 2026-10-07
+
+Previously shown as a dollar savings figure: industry breach cost × risk
 reduction × size factor.
 
-**Removed because it could not be defended.** The industry figures derive from
+**Removed because it could not be defended.** The industry figures derived from
 breach-cost research whose population is *organizations that suffered a
 breach*, skewed heavily toward enterprises. Applying that to a 50-person
 company and multiplying by an unsourced risk-reduction percentage produced a
 dollar figure with no traceable basis — precisely the exposure counsel flagged
-under the UDTPA.
+under the UDTPA. It carried only 10–20% of the modelled total.
 
-It contributed only 10–20% of the modeled total, so the cost of removing it is
-small relative to the risk of defending it.
+Security still appears on the page, as exposure (Part 4) rather than savings.
+**Do not reintroduce a security savings figure** without a defensible source.
 
-**Security is still part of what ITSco delivers.** It should be presented as
-capability gained, listed rather than monetized. Do not reintroduce a dollar
-figure without a defensible source.
+### Net annual return panel — REMOVED 2026-10-07
 
-### Sources to remove from page copy
+See Part 4. Still calculated and sent to ITSco in the submission payload,
+labelled as internal, so the sales team keeps the full picture.
 
-The footer currently credits BLS, IBM Cost of a Data Breach, Verizon DBIR,
+### Sources removed from page copy — 2026-10-07
+
+The footer previously credited BLS, IBM Cost of a Data Breach, Verizon DBIR,
 Gartner, and ITIC.
 
-**Only BLS actually drives a number.** With the breach line removed, IBM and
-Verizon no longer inform anything. No figure in the model traces to Gartner or
-ITIC at all — they appear to have been included because they sound
-authoritative, which is the exact pattern counsel warned about.
+With the breach line removed, IBM and Verizon no longer informed anything, and
+**no figure ever traced to Gartner or ITIC at all** — they appear to have been
+included because they sound authoritative, which is the exact pattern counsel
+warned about. Page copy now cites BLS, Coalition and NetDiligence, each of
+which drives a number that appears on screen.
 
-**Action:** cite BLS only, and describe the hours assumptions as ITSco's
-operating experience.
+---
+
+## Changelog
+
+Every entry here should correspond to a commit touching `pricing.ts` or the
+results panels.
+
+| Date | Change |
+|---|---|
+| 2026-09-16 | Downtime rebased from client billing rate to loaded payroll cost; outage participation factor set to 0.35 after Brendan challenged the earlier figures |
+| 2026-10-06 | Sys admin labor added — $125/hr, 1 hr per 10 users, capped at 100 hrs |
+| 2026-10-07 | Industry labor rates and the in-house hire figure replaced with BLS-sourced values; breach-cost savings line removed; IBM, Verizon, Gartner and ITIC dropped from page copy |
+| 2026-10-07 | Net-return panel replaced with exposure framing; price shown as a ±10% range; conditional language throughout; counsel's plain-English line and expandable terms added as a draft |
 
 ---
 
@@ -222,3 +307,7 @@ Annually, or on any constant change:
       the page disclaimer
 - [ ] Confirm no unsourced figure has been promoted into a sourced claim
 - [ ] Confirm page copy cites only sources that drive a number
+- [ ] Pull the current Coalition and NetDiligence claims studies; update the
+      claim severity and ransomware share figures
+- [ ] Confirm the disclaimer language still matches what the calculator does —
+      counsel's draft was written against an earlier version
