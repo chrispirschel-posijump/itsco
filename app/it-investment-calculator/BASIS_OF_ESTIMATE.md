@@ -43,22 +43,30 @@ says "standard rates as of October 2026" rather than "actual pricing."
 | `serverPerUnit` | $210 / server / mo | Zack — each VM counts | Aug 2026 |
 | `networkPerDevice` | $50 / device / mo | Zack — per firewall or switch | Aug 2026 |
 | `sysAdminHourlyRate` | $125 / hr | Zack — client-facing rate | 2026-10-06 |
-| `devicesPerSysAdminHour` | 10 devices = 1 hr / mo | Zack — "always round up". Device-driven as of Oct 7 | 2026-10-07 |
-| `sysAdminMaxHours` | 100 hrs (1,000 devices) | Our cap, not Zack's. Uncapped it would quote far more sys admin than ITSco would staff, for a company size it does not sell to. | 2026-10-06 |
+| `devicesPerSysAdminHour` | 10 computing devices = 1 hr / mo | Zack — "always round up". Computing devices only; mobile excluded | 2026-10-07 |
+| `sysAdminMaxHours` | 100 hrs (1,000 computing devices) | Our cap, not Zack's. Uncapped it would quote far more sys admin than ITSco would staff, for a company size it does not sell to. | 2026-10-06 |
 | Add-on unit prices | see `ADDONS` | Zack's per-seat and per-device costs | Aug 2026 |
 
-**Settled Oct 7.** The sys admin ratio runs on **device count — computing plus
-mobile — not headcount.** Zack: *"I would base it on the number of units or
+**Settled Oct 7.** The sys admin ratio runs on **computing devices** — not
+headcount, and not mobile. Zack: *"I would base it on the number of units or
 devices, because if you're a user and you don't have any devices, you can't
-really create any alerts."* Chris confirmed mobile devices count the same as
-laptops, with no distinction.
+really create any alerts."*
 
-> ⚠️ **Worth watching.** Mobile devices attract no other charge in the model —
-> no device monitoring, no endpoint protection — but now carry sys admin labor
-> at full weight. At the 50-user default this doubles the sys admin line from
-> $625 to $1,250 a month and moves the per-user figure from roughly $90 to
-> $102. Mike praised $90 on the Oct 7 call as *"a very competitive rate with
-> security in it,"* so the headline number he approved has shifted.
+Applied to computers only, for two reasons. Zack's own reasoning is alert
+generation, and a phone under MDM produces a fraction of what a managed
+endpoint does with monitoring, endpoint protection and SIEM agents on it. And
+**mobile devices carry no other charge anywhere in the model** — no device
+monitoring, no endpoint protection — so pricing sys admin labor on them alone
+would be inconsistent.
+
+Mobile devices stay a scoping field, captured so ITSco knows the shape of the
+environment, not a priced one. If that should change, the right fix is a proper
+MDM line item agreed with Zack, not a side effect of the sys admin ratio.
+
+> **One line to confirm with Zack:** when he said "units or devices," did he
+> mean computers only, or everything including phones? A 30-second answer
+> settles it. At the 50-user default the difference is $750 versus $1,250 a
+> month, and about $93 versus $102 per user.
 
 ---
 
@@ -325,7 +333,7 @@ results panels.
 | 2026-10-06 | Sys admin labor added — $125/hr, 1 hr per 10 users, capped at 100 hrs |
 | 2026-10-07 | Industry labor rates and the in-house hire figure replaced with BLS-sourced values; breach-cost savings line removed; IBM, Verizon, Gartner and ITIC dropped from page copy |
 | 2026-10-07 | Net-return panel replaced with exposure framing; price shown as a ±10% range; conditional language throughout; counsel's plain-English line and expandable terms added as a draft |
-| 2026-10-07 | After the monthly call: sys admin moved from headcount to device count; breakdown table replaced with a plain included-services list; review cadence set to quarterly |
+| 2026-10-07 | After the monthly call: sys admin moved from headcount to computing-device count, with mobile deliberately excluded; breakdown table replaced with a plain included-services list; review cadence set to quarterly |
 
 ---
 

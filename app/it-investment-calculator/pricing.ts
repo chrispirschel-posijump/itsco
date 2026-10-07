@@ -9,11 +9,12 @@
 // one hour per ten users per month, always rounded up. Three decisions are
 // baked in and worth knowing before anyone edits the numbers:
 //
-//   1. Driven by DEVICE COUNT -- computing devices plus mobile devices --
-//      not headcount. Settled by Zack on the Oct 7 call: "I would base it on
-//      the number of units or devices, because if you're a user and you don't
-//      have any devices, you can't really create any alerts." Mobile devices
-//      count the same as laptops; Chris confirmed no distinction.
+//   1. Driven by COMPUTING DEVICE COUNT, not headcount and not mobile.
+//      Zack on the Oct 7 call: "I would base it on the number of units or
+//      devices, because if you're a user and you don't have any devices, you
+//      can't really create any alerts." Applied to computers only, because
+//      that same alert logic points there and because mobile devices carry no
+//      other charge in the model. Worth one line of confirmation from Zack.
 //   2. FLAT regardless of add-ons. Mike originally asked which add-on tools
 //      should trigger sys admin time; Zack answered with a flat headcount
 //      ratio instead. Simple was judged the right call for an estimate.
@@ -395,17 +396,18 @@ export function calculateQuote(
   inputs: CalcInputs,
   addons: Record<string, boolean>,
 ): Quote {
-  const { users, devices, mobileDevices, servers, networkGear } = inputs
+  const { users, devices, servers, networkGear } = inputs
 
   const mspUnits = Math.max(1, Math.ceil(users / 3))
   // Separate from the help-desk calculation above: this is the engineering
   // time spent triaging tool alerts behind the scenes, which Mike flagged as
-  // the labour most often added back into quotes by hand. Driven by devices
-  // rather than headcount -- a user without a device generates no alerts.
-  const managedDevices = devices + mobileDevices
+  // the labour most often added back into quotes by hand. Driven by computing
+  // devices -- a user without a device generates no alerts, and a phone under
+  // MDM generates a fraction of what a managed endpoint does. Mobile devices
+  // stay unpriced across the whole model; see BASIS_OF_ESTIMATE.md.
   const sysAdminHours = Math.min(
     PRICING.sysAdminMaxHours,
-    Math.max(1, Math.ceil(managedDevices / PRICING.devicesPerSysAdminHour)),
+    Math.max(1, Math.ceil(devices / PRICING.devicesPerSysAdminHour)),
   )
   const base: QuoteLine[] = [
     {
@@ -420,7 +422,7 @@ export function calculateQuote(
       qty: sysAdminHours,
       rate: PRICING.sysAdminHourlyRate,
       monthly: sysAdminHours * PRICING.sysAdminHourlyRate,
-      hint: '1 hour per 10 managed devices per month, rounded up',
+      hint: '1 hour per 10 computing devices per month, rounded up',
     },
     {
       label: 'Client portal, ticketing & reporting',
