@@ -111,12 +111,21 @@ export const ADDONS: readonly AddOn[] = [
 ]
 
 // The comparison every executive makes regardless of current setup: "what
-// would it cost to just hire someone?" Fully-loaded cost is the BLS median
-// for Network & Computer Systems Administrators (~$96K) x ~1.3 for benefits,
-// payroll tax, and tooling. The staffing ratio is the common SMB rule of
-// thumb and only drives the "you'd typically staff N" note.
+// would it cost to just hire someone?"
+//
+// SOURCED. BLS Occupational Outlook Handbook, Network and Computer Systems
+// Administrators — median annual wage $99,130 (May 2025). Loaded using the
+// ECEC June 2026 finding that wages are 70.0% of total compensation:
+//   $99,130 / 0.70 = $141,614
+// Covers wages, benefits and legally required contributions. Excludes
+// tooling, training, recruitment and absence cover, so it is a conservative
+// floor rather than a true all-in figure.
+//
+// usersPerFte is an OPERATING ASSUMPTION, not sourced — the common SMB rule
+// of thumb of one IT FTE per 50-100 users. It drives only the "typically
+// staffs N" note, never a dollar figure.
 export const INHOUSE_BENCHMARK = {
-  loadedAnnualCost: 125_000,
+  loadedAnnualCost: 141_614,
   usersPerFte: 75,
 } as const
 
@@ -221,25 +230,28 @@ export const INDUSTRY_QUESTIONS: Record<Industry, readonly string[]> = {
 // Cost of a Data Breach, Verizon DBIR, Gartner IT spending, ITIC downtime
 // research). These drive the savings picture, never the price.
 export const ROI_BENCHMARKS = {
-  // Fully loaded hourly payroll cost by industry: blended salary x ~1.3 for
-  // benefits and payroll tax, over 2,080 hours. This is what an idle hour
-  // COSTS, which is the defensible basis for lost-time math.
+  // SOURCED. U.S. Bureau of Labor Statistics, Employer Costs for Employee
+  // Compensation, June 2026 reference period, Table 5 — private industry
+  // total compensation cost per hour worked.
+  // https://www.bls.gov/news.release/ecec.t05.htm
   //
-  // It deliberately replaces the client billing rate used previously. A law
-  // firm charges $250/hour; that is revenue, not cost, and using it assumed
-  // 100% utilisation and that lost billable hours are never recovered.
-  // Neither holds, and the resulting figures did not survive CFO scrutiny.
+  // Total compensation, not wages: the figure already carries benefits,
+  // insurance and legally required contributions, so it is what an idle hour
+  // actually costs an employer. All-private-industry average: $46.89.
+  //
+  // ECEC publishes by major industry group, so four rows are documented
+  // proxies — see BASIS_OF_ESTIMATE.md before changing any of them.
   loadedHourlyByIndustry: {
-    'professional-services': 55,
-    healthcare: 55,
-    legal: 60,
-    'financial-services': 60,
-    manufacturing: 40,
-    'non-profit': 35,
-    'government-defense': 60,
-    'real-estate': 45,
-    construction: 40,
-    other: 50,
+    'professional-services': 63.25,
+    healthcare: 54.83,
+    legal: 63.25,
+    'financial-services': 68.64,
+    manufacturing: 49.35,
+    'non-profit': 46.89,
+    'government-defense': 63.25,
+    'real-estate': 68.64,
+    construction: 52.73,
+    other: 46.89,
   } as Record<Industry, number>,
   downtimeHoursByModel: {
     'break-fix': 20,
@@ -257,25 +269,6 @@ export const ROI_BENCHMARKS = {
     nothing: 24,
   } as Record<ITModel, number>,
   managedProductivityHours: 4,
-  securityRiskByIndustry: {
-    'professional-services': { low: 30_000, high: 90_000 },
-    healthcare: { low: 80_000, high: 220_000 },
-    legal: { low: 60_000, high: 150_000 },
-    'financial-services': { low: 70_000, high: 180_000 },
-    manufacturing: { low: 40_000, high: 110_000 },
-    'non-profit': { low: 20_000, high: 70_000 },
-    'government-defense': { low: 100_000, high: 300_000 },
-    'real-estate': { low: 25_000, high: 80_000 },
-    construction: { low: 30_000, high: 90_000 },
-    other: { low: 30_000, high: 90_000 },
-  } as Record<Industry, { low: number; high: number }>,
-  riskReductionByCurrent: {
-    'break-fix': 0.55,
-    'in-house': 0.35,
-    'existing-msp': 0.2,
-    hybrid: 0.3,
-    nothing: 0.7,
-  } as Record<ITModel, number>,
   // Share of the workforce genuinely unable to work during a typical
   // incident. Most outages are partial -- one system, one site, one team --
   // so charging every employee for the full outage window overstates the
@@ -484,7 +477,6 @@ export interface Range {
 export interface Roi {
   downtime: Range
   productivity: Range
-  security: Range
   valueLow: number
   valueHigh: number
   valueTotal: number
@@ -517,30 +509,26 @@ export function calculateRoi(inputs: CalcInputs, quote: Quote): Roi | null {
   const prodSaved = Math.max(0, prodCurrent - ROI_BENCHMARKS.managedProductivityHours)
   const productivityMid = prodSaved * users * loadedHourly
 
-  const riskRange = ROI_BENCHMARKS.securityRiskByIndustry[industry]
-  const riskFactor = ROI_BENCHMARKS.riskReductionByCurrent[model] ?? 0.5
-  const userRiskScale = Math.min(2.5, Math.max(0.5, users / 100))
-  const securityMid = ((riskRange.low + riskRange.high) / 2) * riskFactor * userRiskScale
+  // Security was previously monetised here as breach cost x risk reduction.
+  // Removed 2026-10-07: the breach figures describe organisations that were
+  // breached, skewed toward enterprises, and the risk-reduction percentage
+  // had no source at all. Security remains part of what ITSco delivers and
+  // is presented as capability gained rather than a dollar saved.
+  // See BASIS_OF_ESTIMATE.md.
 
-  // +/-25% band on the modeled midpoints; security uses its published
-  // low/high directly rather than a synthetic band.
+  // +/-25% band on the modeled midpoints.
   const BAND = 0.25
   const band = (mid: number): Range => ({ low: mid * (1 - BAND), high: mid * (1 + BAND) })
   const downtime = band(downtimeMid)
   const productivity = band(productivityMid)
-  const security = {
-    low: riskRange.low * riskFactor * userRiskScale,
-    high: riskRange.high * riskFactor * userRiskScale,
-  }
 
-  const valueTotal = downtimeMid + productivityMid + securityMid
-  const valueLow = downtime.low + productivity.low + security.low
-  const valueHigh = downtime.high + productivity.high + security.high
+  const valueTotal = downtimeMid + productivityMid
+  const valueLow = downtime.low + productivity.low
+  const valueHigh = downtime.high + productivity.high
 
   return {
     downtime,
     productivity,
-    security,
     valueLow,
     valueHigh,
     valueTotal,

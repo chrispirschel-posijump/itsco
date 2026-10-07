@@ -43,12 +43,12 @@ export default function ITInvestmentCalculatorPage() {
           <footer className="mt-12 border-t border-[#EBEBEB] pt-6">
             <p className="max-w-[62ch] text-xs leading-relaxed text-itsco-body/60">
               <strong className="text-itsco-body">About these numbers.</strong> The monthly figure is a
-              pricing estimate based on ITSco’s actual per-unit pricing (2026 rates). The in-house hire
-              comparison uses the BLS median systems administrator salary, fully loaded for benefits and
-              payroll tax. Savings ranges are directional benchmarks based on public industry sources
-              (BLS wage data, IBM Cost of a Data Breach, Verizon DBIR, Gartner IT spending benchmarks,
-              ITIC downtime research) blended with ITSco’s 30 years of operational experience with
-              50–500-person companies. Actual proposals are scoped individually — this is an estimate
+              pricing estimate based on ITSco’s standard rates as of October 2026. Labor costs use
+              U.S. Bureau of Labor Statistics Employer Costs for Employee Compensation data (June
+              2026); the in-house hire comparison uses the BLS median systems administrator wage (May
+              2025), loaded for benefits and required contributions. The hours a company recovers are
+              ITSco’s own operating assumptions from 30 years serving 50–500-person companies, not
+              third-party research. Actual proposals are scoped individually — this is an estimate
               based on what we know today and subject to change once we understand your environment.
               It’s discovery-conversation napkin math, not a formal quote or contract.
             </p>

@@ -184,7 +184,6 @@ export default function Calculator() {
       lines.push('', '--- ROI RANGE (annual) ---')
       push('Downtime avoided', fmtRange(roi.downtime.low, roi.downtime.high))
       push('Productivity recovered', fmtRange(roi.productivity.low, roi.productivity.high))
-      push('Security exposure reduced', fmtRange(roi.security.low, roi.security.high))
       push('Total annual value', fmtRange(roi.valueLow, roi.valueHigh))
       push('Net annual return', fmtRange(roi.netLow, roi.netHigh))
     }
@@ -292,10 +291,10 @@ export default function Calculator() {
   const inhouseValue = hires < 1 ? `${Math.round(hires * 100)}%` : `${hires.toFixed(1)}×`
   const inhouseLabel =
     hires < 1
-      ? 'of one full-time IT hire, fully loaded (~$125K/yr)'
+      ? 'of one full-time IT hire, fully loaded (~$142K/yr)'
       : typicalFte > 1
         ? `one full-time IT hire — a ${inputs.users}-person company typically staffs ${typicalFte}`
-        : 'one full-time IT hire, fully loaded (~$125K/yr)'
+        : 'one full-time IT hire, fully loaded (~$142K/yr)'
 
   const comparison = !model
     ? ''
@@ -528,7 +527,6 @@ export default function Calculator() {
                     <dl>
                       <ValueRow label="Fewer outages (downtime avoided)" value={fmtRange(roi.downtime.low, roi.downtime.high)} />
                       <ValueRow label="Team productivity recovered" value={fmtRange(roi.productivity.low, roi.productivity.high)} />
-                      <ValueRow label="Security & breach exposure reduced" value={fmtRange(roi.security.low, roi.security.high)} />
                       <div className="flex items-baseline justify-between gap-5 border-t-2 border-[#DDD6C4] mt-2 pt-4">
                         <dt className="text-[11px] font-bold uppercase tracking-[0.12em] text-itsco-body/60">
                           Typical range, per year
