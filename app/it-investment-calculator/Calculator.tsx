@@ -4,6 +4,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowRight, ChevronDown, Printer, X } from 'lucide-react'
 import { ANALYTICS_EVENTS, pushEvent } from '@/lib/analytics'
 import {
+  ROI_BENCHMARKS,
   ADDONS,
   INDUSTRIES,
   INDUSTRY_QUESTIONS,
@@ -185,7 +186,10 @@ export default function Calculator() {
       push('Downtime avoided', fmtRange(roi.downtime.low, roi.downtime.high))
       push('Productivity recovered', fmtRange(roi.productivity.low, roi.productivity.high))
       push('Total annual value', fmtRange(roi.valueLow, roi.valueHigh))
-      push('Net annual return', fmtRange(roi.netLow, roi.netHigh))
+      // Net is no longer shown to the prospect -- the panel was replaced with
+      // exposure framing -- but the sales team still wants the full picture.
+      push('Net annual return (internal, not shown to prospect)', fmtRange(roi.netLow, roi.netHigh))
+      push('One-week incident exposure', fmtCompact(inputs.users * 40 * loadedHourly))
     }
     lines.push('', '=== END ===')
 
@@ -306,8 +310,20 @@ export default function Calculator() {
           ? "Compare against your current MSP's monthly invoice as a starting point."
           : 'This is the MSP-side cost only — your existing internal IT salaries would remain.'
 
-  const MEANINGFUL_NET = 5000
-  const showNetFigure = roi && roi.netAnnual >= MEANINGFUL_NET && roi.netLow > 0
+  // Exposure scenario: one week offline, costed with the same BLS labour rate
+  // the savings panel uses. An illustration, never a prediction.
+  const loadedHourly = ROI_BENCHMARKS.loadedHourlyByIndustry[inputs.industry] ?? 46.89
+  const incidentWeekCost = inputs.users * 40 * loadedHourly
+
+  // The estimate is shown as a band rather than a point. Mike's own reference
+  // on the Sept 2 call was 10% — enough to read as an estimate without
+  // implying a ceiling ITSco is held to.
+  const PRICE_BAND = 0.1
+  const round50 = (n: number) => Math.round(n / 50) * 50
+  const monthlyLow = round50(quote.monthly * (1 - PRICE_BAND))
+  const monthlyHigh = round50(quote.monthly * (1 + PRICE_BAND))
+  const annualLow = quote.annual * (1 - PRICE_BAND)
+  const annualHigh = quote.annual * (1 + PRICE_BAND)
 
   return (
     <>
@@ -512,7 +528,7 @@ export default function Calculator() {
                   <article className={`${PANEL} border-l-4 border-l-[#6B665D]`}>
                     <div className="flex flex-wrap items-baseline justify-between gap-3 mb-3">
                       <h2 className="text-xl md:text-2xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
-                        What a managed partnership typically saves
+                        What a managed partnership could save you
                       </h2>
                       <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-itsco-body/60">
                         vs. {MODEL_LABEL_SHORT[model]}
@@ -529,7 +545,7 @@ export default function Calculator() {
                       <ValueRow label="Team productivity recovered" value={fmtRange(roi.productivity.low, roi.productivity.high)} />
                       <div className="flex items-baseline justify-between gap-5 border-t-2 border-[#DDD6C4] mt-2 pt-4">
                         <dt className="text-[11px] font-bold uppercase tracking-[0.12em] text-itsco-body/60">
-                          Typical range, per year
+                          Could be worth, per year
                         </dt>
                         <dd className="text-2xl font-extrabold text-itsco-dark tracking-tight tabular-nums">
                           {fmtRange(roi.valueLow, roi.valueHigh)}
@@ -538,44 +554,56 @@ export default function Calculator() {
                     </dl>
                   </article>
 
+                  {/* Exposure, not savings. Replaced the net-return panel on
+                      2026-10-07: net required the modelled value to clear the
+                      price, which it often did not once sys admin labour went
+                      in and the unsourced breach line came out. Language is
+                      deliberately conditional throughout -- could, might -- so
+                      nothing reads as a prediction. */}
                   <article className={`${PANEL} border-l-[5px] border-l-itsco-dark`}>
                     <div className="flex flex-wrap items-baseline justify-between gap-3 mb-3">
                       <h2 className="text-xl md:text-2xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
-                        What this typically returns
+                        What one bad week could cost you
                       </h2>
                       <span className="text-[11px] font-semibold uppercase tracking-[0.1em] text-itsco-body/60">
-                        Directional estimate
+                        Industry claims data
                       </span>
                     </div>
                     <p className="max-w-[62ch] text-sm leading-relaxed text-itsco-body mb-6">
-                      After the ITSco monthly investment, this is the range that typically stays in the
-                      budget instead of being absorbed by preventable downtime, lost time, and unmanaged
-                      risk.
+                      Security incidents are infrequent and expensive, which makes them hard to budget
+                      for. These figures are not a prediction — they are what the claims data says an
+                      incident tends to cost a company of your size.
                     </p>
 
-                    {showNetFigure ? (
-                      <div className="flex flex-col gap-3.5">
-                        <p className="text-5xl md:text-6xl font-extrabold text-itsco-dark tracking-tight leading-none tabular-nums">
-                          {fmtRange(roi.netLow, roi.netHigh)}
-                        </p>
-                        <span className="text-xs font-medium uppercase tracking-[0.06em] text-itsco-body/60">
-                          Per year, typical net return
-                        </span>
-                        <span className="self-start rounded-full border border-[#EBEBEB] bg-white px-3.5 py-2 text-[13px] font-semibold tabular-nums text-itsco-body">
-                          Roughly {fmtRange(roi.netLow / 12, roi.netHigh / 12)} a month — directional, not a guarantee
-                        </span>
-                      </div>
-                    ) : (
-                      <div className="rounded-lg border border-[#EBEBEB] bg-white p-5">
-                        <p className="text-[15px] leading-relaxed text-itsco-body">
-                          {model === 'existing-msp'
-                            ? 'Your existing MSP appears to be delivering most of the operational value already. This calculator can’t measure the strategic upside — vendor consolidation, roadmap advisory, executive-level IT leadership, or specialty security expertise. That’s what a conversation is for.'
-                            : roi.netAnnual < 0
-                              ? 'Your current setup looks competitive with a fully managed partnership on paper. This napkin math doesn’t capture the strategic value ITSco delivers — vCIO advisory, security expertise, or vendor consolidation. We can walk through where those gaps typically sit.'
-                              : 'You’re close to break-even on paper. The real value at this size usually comes from strategic upside — vCIO advisory, better security posture, freed-up executive attention. Worth a 30-minute conversation.'}
-                        </p>
-                      </div>
-                    )}
+                    <div className="flex flex-col gap-3.5">
+                      <p className="text-5xl md:text-6xl font-extrabold text-itsco-dark tracking-tight leading-none tabular-nums">
+                        {fmtCompact(incidentWeekCost)}
+                      </p>
+                      <span className="text-xs font-medium uppercase tracking-[0.06em] text-itsco-body/60">
+                        In staff time alone, if an incident took you offline for a week
+                      </span>
+                      <span className="self-start rounded-full border border-[#EBEBEB] bg-white px-3.5 py-2 text-[13px] font-semibold tabular-nums text-itsco-body">
+                        {inputs.users} people × 40 hours × {fmtDollar(loadedHourly)}/hr
+                      </span>
+                    </div>
+
+                    <dl className="mt-6 border-t border-[#EBEBEB] pt-5">
+                      <ValueRow
+                        label="Average cyber claim, companies under $25M revenue"
+                        value={fmtCompact(79_000)}
+                      />
+                      <ValueRow
+                        label="Share of claims from ransomware or email compromise"
+                        value="61%"
+                      />
+                    </dl>
+
+                    <p className="mt-4 text-xs leading-relaxed text-itsco-body/60">
+                      Claim figures: Coalition 2026 Cyber Claims Report (100,000+ policyholders) and
+                      NetDiligence 2026 Cyber Claims Study (10,309 claims). The week-long scenario is an
+                      illustration using your own headcount and industry labor cost — recovery times
+                      vary widely, and this excludes recovery fees, legal costs, and lost revenue.
+                    </p>
                   </article>
                 </>
               )}
@@ -586,18 +614,22 @@ export default function Calculator() {
                   Your monthly ITSco pricing estimate
                 </h2>
                 <p className="max-w-[62ch] text-sm leading-relaxed text-itsco-body mb-5">
-                  Based on ITSco’s real per-unit pricing for your environment. Adjust the add-ons to see
-                  the total update live.
+                  Built from ITSco’s standard rates against the environment you described. Adjust the
+                  add-ons to see the range update live.
                 </p>
 
                 <p className="text-4xl md:text-5xl font-extrabold text-itsco-dark tracking-tight leading-none tabular-nums">
-                  {fmtCents(quote.monthly)}
+                  {fmtDollar(monthlyLow)} – {fmtDollar(monthlyHigh)}
                 </p>
                 <span className="mt-2.5 block text-xs font-medium uppercase tracking-[0.06em] text-itsco-body/60">
                   Per month
                 </span>
                 <p className="mt-2.5 text-[13px] tabular-nums text-itsco-body">
-                  {fmtCompact(quote.annual)} per year, all in.
+                  Roughly {fmtCompact(annualLow)} – {fmtCompact(annualHigh)} a year.
+                </p>
+                <p className="mt-2 max-w-[62ch] text-[13px] leading-relaxed text-itsco-body/70">
+                  Shown as a range because final scope could move either way once we see your
+                  environment. The breakdown below is the mid-point.
                 </p>
 
                 <div className="mt-4 grid gap-3 sm:grid-cols-2">
@@ -661,7 +693,7 @@ export default function Calculator() {
                         </tr>
                       ))}
                       <tr>
-                        <td className="border-t-2 border-[#DDD6C4] pt-3 font-bold text-itsco-dark">Total monthly</td>
+                        <td className="border-t-2 border-[#DDD6C4] pt-3 font-bold text-itsco-dark">Total monthly, mid-point</td>
                         <td className="border-t-2 border-[#DDD6C4]" />
                         <td className="border-t-2 border-[#DDD6C4] pt-3 text-right text-lg font-extrabold text-itsco-dark tracking-tight tabular-nums whitespace-nowrap">
                           {fmtCents(quote.monthly)}
