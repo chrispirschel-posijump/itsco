@@ -248,7 +248,17 @@ export default function Calculator() {
     if (Object.keys(cleaned).length) return
 
     setSubmitState('sending')
-    const body = new URLSearchParams(buildSubmission())
+    const submission = buildSubmission()
+    const body = new URLSearchParams(submission)
+    // Additive, fire-and-forget GlassHive sync. No await: a slow or failed
+    // sync must never delay the estimate. The function no-ops unless the
+    // GlassHive env vars are set, so this is inert until switched on.
+    void fetch('/.netlify/functions/calculator-sync', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(submission),
+      keepalive: true,
+    }).catch(() => {})
     try {
       const res = await fetch('/__forms.html', {
         method: 'POST',
