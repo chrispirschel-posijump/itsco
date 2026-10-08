@@ -99,7 +99,7 @@ export default async (req) => {
     const res = await fetch(
       `${GLASSHIVE_URL}/${encodeURIComponent(listId)}/upload`,
       {
-        method: 'POST',
+        method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
           Authorization: apiKey,
