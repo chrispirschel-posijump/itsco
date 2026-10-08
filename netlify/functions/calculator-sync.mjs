@@ -7,31 +7,24 @@
 // call from the browser: it drops the prospect onto a GlassHive list so
 // ITSco can run follow-up automation from inside GlassHive.
 //
-// Ships DARK. If either env var is missing it no-ops, so the code can merge
-// and launch before the list exists or the key is set. It turns on the
-// moment both vars are present on the Netlify context:
+// Ships DARK. If either env var is missing it no-ops with 204, so the code
+// can merge and launch before the list exists or the key is set. It turns
+// on the moment both vars are present on the Netlify context:
 //   GLASSHIVE_API_KEY  - the key generated in GlassHive account settings.
 //                        Lives ONLY here, never in the repo or the client.
 //   GLASSHIVE_LIST_ID  - integer id of the "ROI Calculator Submissions"
 //                        list, created in GlassHive.
 //
-// Endpoint: POST https://rest.api.glasshive.com/partner/v1/lists/{id}/upload
-// Upserts Companies by Name/Phone/Website and Contacts by Email.
-//
-// NOTE (temporary): this build returns GlassHive's status/body in the HTTP
-// response for debugging on the dark preview. Strip the diagnostics before
-// production -- see the json() calls below.
+// Endpoint: PUT https://rest.api.glasshive.com/partner/v1/lists/{id}/upload
+// (the upload operation is a PUT; a POST returns a 404 from the gateway).
+// Upserts Companies by Name/Phone/Website and Contacts by Email, so a
+// prospect who runs the calculator twice updates rather than duplicates.
+// There is no custom-field mechanism on this endpoint, so the estimate,
+// industry, IT model and add-ons do NOT come here -- they stay in the
+// Netlify notification email. GlassHive gets identity + list membership.
 
 const GLASSHIVE_URL = 'https://rest.api.glasshive.com/partner/v1/lists'
 const TIMEOUT_MS = 8000
-
-/** JSON response helper (debug build echoes diagnostics to the browser). */
-function json(obj, status = 200) {
-  return new Response(JSON.stringify(obj), {
-    status,
-    headers: { 'Content-Type': 'application/json' },
-  })
-}
 
 /** Split a single "name" field into first / last on the first space. */
 function splitName(full) {
@@ -53,25 +46,26 @@ function compact(obj) {
 }
 
 export default async (req) => {
+  // No-op quietly on anything but POST so a stray GET never errors loudly.
   if (req.method !== 'POST') return new Response(null, { status: 405 })
 
   const apiKey = process.env.GLASSHIVE_API_KEY
   const listId = process.env.GLASSHIVE_LIST_ID
-  if (!apiKey || !listId) {
-    // DEBUG: report which var is missing instead of a silent no-op.
-    return json({ ok: false, stage: 'config', hasKey: Boolean(apiKey), hasListId: Boolean(listId) })
-  }
+  // Dark-ship switch: without both, do nothing and succeed.
+  if (!apiKey || !listId) return new Response(null, { status: 204 })
 
   let data
   try {
     data = await req.json()
   } catch {
-    return json({ ok: false, stage: 'parse' }, 400)
+    return new Response(null, { status: 400 })
   }
 
   const email = String(data.email || '').trim()
   const company = String(data.company || '').trim()
-  if (!email && !company) return json({ ok: false, stage: 'empty' })
+  // Email is the contact upsert key and company is the company upsert key;
+  // with neither there is nothing meaningful to send.
+  if (!email && !company) return new Response(null, { status: 204 })
 
   const { first, last } = splitName(data.name)
 
@@ -102,22 +96,24 @@ export default async (req) => {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
+          // GlassHive's docs pass the key bare in the Authorization header.
           Authorization: apiKey,
         },
         body: JSON.stringify(payload),
         signal: controller.signal,
       },
     )
-    const body = await res.text().catch(() => '')
     if (!res.ok) {
-      console.error('GlassHive upload failed', res.status, body.slice(0, 500))
-      // DEBUG: echo GlassHive's status + body so it reads in the Network tab.
-      return json({ ok: false, stage: 'glasshive', ghStatus: res.status, ghBody: body.slice(0, 800) })
+      // Log for us; never surface to the prospect (they already have their
+      // estimate and sales already got the Netlify email).
+      const detail = await res.text().catch(() => '')
+      console.error('GlassHive upload failed', res.status, detail.slice(0, 500))
+      return new Response(null, { status: 502 })
     }
-    return json({ ok: true, ghStatus: res.status, ghBody: body.slice(0, 300) })
+    return new Response(null, { status: 204 })
   } catch (err) {
     console.error('GlassHive upload error', err?.name || err)
-    return json({ ok: false, stage: 'fetch', error: String(err?.name || err) })
+    return new Response(null, { status: 502 })
   } finally {
     clearTimeout(timer)
   }
