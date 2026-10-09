@@ -3,7 +3,10 @@
 import { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
+import CalculatorBanner from "@/components/CalculatorBanner";
+import { CITY_PATHS } from "@/lib/localPages";
 
 const NAV_ITEMS = [
   {
@@ -143,6 +146,7 @@ const NAV_ITEMS = [
     label: "Resources",
     href: "/resources/",
     children: [
+      { label: "IT Investment Calculator", href: "/it-investment-calculator/" },
       { label: "ROI Guide", href: "/maximize-roi-with-managed-it-services/" },
       { label: "Blog", href: "/blog/" },
       { label: "Case Studies", href: "/case-studies/" },
@@ -251,7 +255,35 @@ function DropdownMenu({
   );
 }
 
+// Normalize a path for comparison: drop a trailing slash (except root), lowercase.
+const normPath = (p: string) => {
+  const s = p.length > 1 && p.endsWith("/") ? p.slice(0, -1) : p;
+  return s.toLowerCase();
+};
+
+// Flatten every href under the Services pillar (pillars + sub-services) so the
+// calculator banner's "service pages" set tracks the nav automatically.
+type NavNode = { href?: string; children?: readonly NavNode[] };
+function collectHrefs(nodes: readonly NavNode[], acc: string[] = []): string[] {
+  for (const n of nodes) {
+    if (n.href) acc.push(n.href);
+    if (n.children?.length) collectHrefs(n.children, acc);
+  }
+  return acc;
+}
+
+// Where the calculator banner shows: homepage + all service pages + all city
+// (local-SEO) pages. Everything else — blog, legal, industries, about — is left
+// clean.
+const CALC_BANNER_PATHS = new Set<string>([
+  "/",
+  ...collectHrefs([NAV_ITEMS[0] as NavNode]).map(normPath),
+  ...CITY_PATHS.map(normPath),
+]);
+
 export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }) {
+  const pathname = usePathname();
+  const showCalcBanner = CALC_BANNER_PATHS.has(normPath(pathname ?? ""));
   const [mobileOpen, setMobileOpen] = useState(false);
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [mobileExpanded, setMobileExpanded] = useState<string | null>(null);
@@ -283,9 +315,11 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
   const showDarkText = isLight && !scrolled;
 
   return (
-    <header
+    <>
+      <CalculatorBanner show={showCalcBanner} />
+      <header
       ref={headerRef}
-      className={`w-full fixed top-0 left-0 right-0 z-40 transition-[background-color,backdrop-filter] duration-300 ${
+      className={`w-full fixed top-[var(--itsco-banner-h,0px)] left-0 right-0 z-40 transition-[background-color,backdrop-filter] duration-300 ${
         scrolled
           ? "bg-itsco-dark/90 backdrop-blur-md"
           : "bg-transparent"
@@ -460,6 +494,7 @@ export default function Nav({ variant = "dark" }: { variant?: "dark" | "light" }
           </div>
         </div>
       )}
-    </header>
+      </header>
+    </>
   );
 }
