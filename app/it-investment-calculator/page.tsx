@@ -3,19 +3,34 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import Calculator from './Calculator'
 
-// UNLISTED PREVIEW — not linked from nav or footer, excluded from
-// app/sitemap.ts, and noindexed below. Before this goes public:
-//   1. Remove the `robots` key from the metadata export
-//   2. Remove '/it-investment-calculator' from EXCLUDED_ROUTES in sitemap.ts
-//   3. Add the nav/footer entry point and the CTA on
-//      /maximize-roi-with-managed-it-services
-//   4. Resolve the systems-administration labor gap noted in pricing.ts
+// Public page. Pricing constants and calculation logic live in pricing.ts;
+// the substantiation for every figure is in BASIS_OF_ESTIMATE.md. Linked from
+// the Resources nav and the site-wide calculator banner, and included in
+// app/sitemap.ts. Submissions post to Netlify Forms and sync to GlassHive via
+// netlify/functions/calculator-sync.mjs.
 export const metadata: Metadata = {
   title: 'IT Investment Calculator',
   description:
     'Estimate what managed IT would cost your company — and what a managed partnership typically saves compared with your current setup.',
   alternates: { canonical: 'https://www.itsco.com/it-investment-calculator' },
-  robots: { index: false, follow: false },
+  openGraph: {
+    title: 'IT Investment Calculator | ITSco',
+    description:
+      'Estimate what managed IT should cost your company — and what a managed partnership typically saves versus your current setup.',
+    url: 'https://www.itsco.com/it-investment-calculator',
+    siteName: 'ITSco',
+    locale: 'en_US',
+    type: 'website',
+    // Keep a share image (Next drops the inherited one once a page sets its own OG).
+    images: [
+      {
+        url: '/images/og-default.png',
+        width: 1200,
+        height: 630,
+        alt: 'ITSco IT Investment Calculator',
+      },
+    ],
+  },
 }
 
 export default function ITInvestmentCalculatorPage() {
@@ -26,7 +41,7 @@ export default function ITInvestmentCalculatorPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-12 pt-28 pb-20 md:pt-32 md:pb-28">
           <header className="mb-10 max-w-[780px]">
             <span className="mb-4 inline-block text-[11px] font-bold uppercase tracking-[0.16em] text-itsco-red">
-              Preview · Internal review
+              IT Investment Calculator
             </span>
             <h1 className="text-[2.5rem] sm:text-5xl md:text-6xl lg:text-[3.75rem] break-words font-extrabold text-itsco-dark leading-[1.05] tracking-tight">
               Your ITSco IT Investment Estimate

@@ -56,4 +56,6 @@ export const ANALYTICS_EVENTS = {
   calculatorLead: 'calculator_lead',
   /** Calculator results printed or saved as PDF. */
   calculatorPdf: 'calculator_pdf',
+  /** Site-wide banner CTA clicked through to the calculator. */
+  calculatorBannerClick: 'calculator_banner_click',
 } as const

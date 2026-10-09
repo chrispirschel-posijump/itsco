@@ -18,9 +18,6 @@ const EXCLUDED_ROUTES = new Set<string>([
   '/demo-lite',
   '/demo-cream',
   '/demo-oat',
-  // Unlisted preview — noindexed page.tsx, not linked from nav or footer.
-  // Remove when the calculator goes public.
-  '/it-investment-calculator',
   '/page-a',
   '/page-a-lite',
   '/page-b',
