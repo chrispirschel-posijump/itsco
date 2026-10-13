@@ -337,7 +337,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     draft: true,
   },
   // ── Post 5 of the editorial roadmap ──────────────────────────────────────
-  // Scheduled for 2026-09-28. Flip draft: false and redeploy on Sep 28.
+  // Published 2026-09-28.
   {
     slug: 'cost-of-it-downtime-for-business',
     title: 'The Real Cost of IT Downtime for a Growing Business',
@@ -374,7 +374,6 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "It targets the documented causes: continuous monitoring converts failures-in-progress into scheduled fixes, tested procedures attack the leading human-error driver, 24/7 response shortens every incident, and tested backups compress recovery from days to hours. The honest measure for any provider — including us — is the trend in your own unplanned downtime hours year over year.",
       },
     ],
-    draft: true,
   },
   // ── Post 4 of the editorial roadmap ──────────────────────────────────────
   // Published 2026-09-14.
