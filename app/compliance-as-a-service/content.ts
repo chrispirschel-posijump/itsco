@@ -108,6 +108,13 @@ export const CONTENT: ServiceSubContent = {
         'NIST 800-171 controls, CUI handling and exchange, and CMMC readiness for contractors and the suppliers who serve them.',
     },
     {
+      // [NEW] GovRAMP — NC now requires GovRAMP or FedRAMP for state cloud vendors.
+      slug: 'caas-govramp',
+      title: 'Public-Sector Cloud (GovRAMP)',
+      description:
+        'GovRAMP and FedRAMP readiness for companies that sell cloud services to government. We build to the NIST 800-53 Rev. 5 baseline, prepare the evidence an independent assessor expects, and run the continuous monitoring that keeps your status current.',
+    },
+    {
       slug: 'caas-continuous-monitoring',
       title: 'Continuous Control Monitoring',
       description:
@@ -198,7 +205,17 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Which frameworks do you support?',
       answer: [
-        'The major ones — HIPAA, PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, GDPR — plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
+        'The major ones — HIPAA, PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, GDPR — plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for companies selling cloud services to government, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
+      ],
+    },
+    {
+      // [NEW] GovRAMP — North Carolina's new mandate (Mike's priority one).
+      // Dates verified against the NC DOA procurement overview and GovRAMP.org,
+      // Oct 2026. Re-verify before any material revision.
+      question: 'North Carolina now requires GovRAMP for state cloud vendors. Can you help us get there?',
+      answer: [
+        'Yes. North Carolina adopted GovRAMP — the public-sector cloud security program formerly known as StateRAMP — for third-party cloud services sold to state executive-branch agencies. There is a one-year on-ramp from April 1, 2026 to April 1, 2027; after it, a cloud product generally has to be GovRAMP or FedRAMP engaged for a bid to be accepted. It applies to vendor-hosted cloud, not to on-premises systems.',
+        'GovRAMP is built on the NIST 800-53 Rev. 5 control set, with an independent assessment and ongoing continuous monitoring to earn and keep a status. We own the technology side of getting there: a gap assessment against the baseline, implementing and documenting the controls, preparing your package for the independent assessor, and running the monthly monitoring the program expects. The authorization itself is granted through GovRAMP, not by us — our job is to get you ready and keep you there.',
       ],
     },
     {
