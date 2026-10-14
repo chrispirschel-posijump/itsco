@@ -12,11 +12,18 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import ClientLogosBand from '@/components/ClientLogosBand'
 import TestimonialsRotator from '@/components/TestimonialsRotator'
 import { TESTIMONIALS } from '@/lib/testimonials'
-import { getNearbyCities } from '@/lib/nearbyCities'
+import { getCityName, getNearbyCities } from '@/lib/nearbyCities'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 
 export interface CityServiceContent {
   meta: { title: string; description: string; canonical: string }
+  // schema.org Service.serviceType — the service line this page actually
+  // sells (e.g. 'IT Consulting', 'Cybersecurity Services'). Set per page so
+  // Google and AI Overviews don't read every city page as managed IT.
+  serviceType: string
+  // City named in the Service schema's areaServed. Defaults to the display
+  // name for citySlug, then to the office city.
+  serviceCity?: string
   // 'panel' (default) = light right-image hero; 'fullbleed' = dark full-bleed hero.
   heroVariant?: 'panel' | 'fullbleed'
   // 'durham' (default) shows the Durham HQ; 'raleigh' shows the Raleigh office.
@@ -201,16 +208,17 @@ export function cityLocalBusinessJsonLd(content: CityServiceContent) {
   }
 }
 
-// Service schema — reinforces topical relevance for "managed IT services"
-// queries. Provider is a back-reference to the page's LocalBusiness by @id,
+// Service schema — reinforces topical relevance for the page's own service
+// line in its own city. Provider is a back-reference to the page's LocalBusiness by @id,
 // so Google can knit the two together as one entity.
 export function cityServiceJsonLd(content: CityServiceContent) {
-  const isRaleigh = content.officeLocation === 'raleigh'
-  const cityName = isRaleigh ? 'Raleigh' : 'Durham'
+  const officeCity = content.officeLocation === 'raleigh' ? 'Raleigh' : 'Durham'
+  const cityName =
+    content.serviceCity ?? (content.citySlug && getCityName(content.citySlug)) ?? officeCity
   return {
     '@context': 'https://schema.org',
     '@type': 'Service',
-    serviceType: 'Managed IT Services',
+    serviceType: content.serviceType,
     name: content.meta.title.replace(/\s*\|\s*ITSco\s*$/, ''),
     description: content.meta.description,
     provider: { '@id': content.meta.canonical + '#business' },

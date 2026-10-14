@@ -5,6 +5,7 @@ import type { CityServiceContent } from '@/components/CityServicePage'
 import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
+  serviceType: 'Managed IT Services',
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
     title: 'Managed IT Services in Greensboro, NC — Since 1996',

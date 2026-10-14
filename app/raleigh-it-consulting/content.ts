@@ -5,6 +5,7 @@ import type { CityServiceContent } from '@/components/CityServicePage'
 import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
+  serviceType: 'IT Consulting',
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
     title: 'IT Consulting in Raleigh, NC — vCIO & IT Strategy',

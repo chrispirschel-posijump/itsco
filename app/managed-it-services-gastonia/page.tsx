@@ -3,6 +3,7 @@ import CityServicePage from '@/components/CityServicePage'
 import { makeTemplateCityContent } from '@/lib/templateCity'
 
 const CONTENT = makeTemplateCityContent({
+  serviceType: 'Managed IT Services',
   name: 'Gastonia',
   slug: 'gastonia',
   region: 'the Charlotte metro',

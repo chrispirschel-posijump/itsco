@@ -10,6 +10,8 @@ interface TemplateCityInput {
   name: string
   slug: string
   region: string
+  // schema.org serviceType for this page — see CityServiceContent.serviceType.
+  serviceType: string
   heroImage: { src: string; alt: string }
   whyUsImage: { src: string; alt: string }
   securityImage: { src: string; alt: string }
@@ -34,6 +36,7 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
   const canonical = `https://www.itsco.com${c.canonicalPath ?? `/managed-it-services-${c.slug}/`}`
   const utm = c.utmBase ?? `managed-it-${c.slug}`
   return {
+    serviceType: c.serviceType,
     meta: {
       title: `${nounTitle} in ${c.name}, NC | ITSco`,
       description: `ITSco delivers ${noun.toLowerCase()} in ${c.name}, NC — monitoring, cybersecurity, help desk, and cloud — with predictable pricing and measurable ROI. Book a free consultation.`,

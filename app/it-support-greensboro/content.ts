@@ -5,6 +5,7 @@ import type { CityServiceContent } from '@/components/CityServicePage'
 import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
+  serviceType: 'IT Support',
   meta: {
     title: 'IT Support in Greensboro, NC',
     description:

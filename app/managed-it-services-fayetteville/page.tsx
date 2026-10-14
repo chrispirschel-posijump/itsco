@@ -3,6 +3,7 @@ import CityServicePage from '@/components/CityServicePage'
 import { makeTemplateCityContent } from '@/lib/templateCity'
 
 const CONTENT = makeTemplateCityContent({
+  serviceType: 'Managed IT Services',
   name: 'Fayetteville',
   slug: 'fayetteville',
   region: 'the Sandhills',

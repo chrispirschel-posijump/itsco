@@ -3,6 +3,7 @@ import CityServicePage from '@/components/CityServicePage'
 import { makeTemplateCityContent } from '@/lib/templateCity'
 
 const CONTENT = makeTemplateCityContent({
+  serviceType: 'IT Services',
   name: 'Knightdale',
   slug: 'knightdale',
   region: 'the Triangle',

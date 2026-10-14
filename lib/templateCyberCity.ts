@@ -22,6 +22,8 @@ interface TemplateCyberCityInput {
 
 export function makeTemplateCyberCityContent(c: TemplateCyberCityInput): CityServiceContent {
   return {
+    serviceType: 'Cybersecurity Services',
+    serviceCity: c.name,
     meta: {
       title: `Cyber Security Services in ${c.name}, NC | ITSco`,
       description: `ITSco delivers cyber security services in ${c.name}, NC — SIEM, risk management, security architecture, compliance, and cloud security — from a team with zero serious client breaches. Book a free consultation.`,

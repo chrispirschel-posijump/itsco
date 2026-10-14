@@ -3,6 +3,7 @@ import CityServicePage from '@/components/CityServicePage'
 import { makeTemplateCityContent } from '@/lib/templateCity'
 
 const CONTENT = makeTemplateCityContent({
+  serviceType: 'IT Support',
   name: 'Rocky Mount',
   slug: 'rocky-mount',
   region: 'eastern North Carolina',

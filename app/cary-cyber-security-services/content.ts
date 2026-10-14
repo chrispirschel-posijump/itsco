@@ -9,6 +9,7 @@ import type { CityServiceContent } from '@/components/CityServicePage'
 import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: CityServiceContent = {
+  serviceType: 'Cybersecurity Services',
   meta: {
     title: 'IT Security Services in Cary, NC | Cyber Security Services',
     description:
