@@ -70,6 +70,58 @@ export const CONTENT: CityServiceContent = {
       alt: 'IT security consultant reviewing systems',
     },
   },
+  // FAQs are new copy (not from _source.ts), written in a direct-answer
+  // format so Google AI Overviews and other LLMs can quote them. Each answer
+  // leads with a 40–60 word response. Claims limited to approved proof points.
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Durham IT consulting,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    {
+      question: 'What does IT consulting include for Durham businesses?',
+      answer: [
+        'IT consulting for Durham businesses covers the strategic side of technology: an IT roadmap tied to business goals, security and risk assessments, network design audits, cloud migration planning, compliance and continuity planning, and IT investment planning. The goal is to decide what to fix, buy, or retire, and in what order.',
+        'ITSco delivers this through senior consultants and virtual CIO/CTO leadership based in Durham, with the engineering team to carry the plan through when you want hands-on help.',
+      ],
+    },
+    {
+      question: 'How is an IT consultant different from a managed service provider (MSP)?',
+      answer: [
+        'An IT consultant sets direction: what your technology should look like in three years, what it should cost, and which risks to address first. A managed service provider (MSP) runs day-to-day operations: help desk, monitoring, patching, and backups. Consulting answers "what should we do?"; managed services handle "keep it running."',
+        'Many Durham businesses need both. ITSco offers IT consulting as a standalone engagement or alongside managed IT services, so the team that builds your roadmap can also execute it.',
+      ],
+    },
+    {
+      question: 'What is a virtual CIO (vCIO), and does my business need one?',
+      answer: [
+        'A virtual CIO is a senior technology executive who provides CIO-level strategy part-time, without a full-time executive salary. A vCIO owns your IT roadmap, budget, vendor decisions, and risk priorities, and reports in business terms to your CEO, COO, or CFO.',
+        'Companies with 50 to 500 employees often need this leadership but not a full-time hire. If IT decisions are being made reactively or by whoever is closest to the problem, a vCIO is usually the missing piece.',
+      ],
+    },
+    {
+      question: 'When should a business hire an IT consultant?',
+      answer: [
+        'Bring in an IT consultant before a major decision, not after a problem. Common triggers: planning a cloud migration, preparing for a compliance audit, an acquisition or merger, rapid headcount growth, rising IT costs without a clear reason, a security incident, or leadership turnover in IT.',
+        'An outside assessment gives leadership an objective view of where technology is helping or holding the business back, and a prioritized plan to act on.',
+      ],
+    },
+    {
+      question: 'What industries does ITSco provide IT consulting for in Durham?',
+      answer: [
+        'ITSco provides IT consulting to Durham and Research Triangle businesses in healthcare, pharma and life sciences, legal, financial services, accounting, construction, manufacturing, marketing, and non-profit organizations. Each brings different compliance requirements and risk priorities, which shape the roadmap.',
+        'Clients work directly with ITSco senior leadership, not a sales tier, and 60% of our clients have been with us for five years or more.',
+      ],
+    },
+    {
+      question: 'Do you provide IT consulting outside of Durham?',
+      answer: [
+        'Yes. ITSco is headquartered in Durham, NC, and has served businesses since 1996, with a second office in Raleigh. Our IT consultants work with companies across Durham, Raleigh, Chapel Hill, Cary, and Research Triangle Park, and throughout North Carolina, South Carolina, and Virginia.',
+        'Local presence means on-site work when a project calls for it, plus consultants who know the Triangle business market.',
+      ],
+    },
+  ],
   citySlug: 'durham',
   bookingUtm: 'it-consulting-durham-bottom',
 }

@@ -1,7 +1,7 @@
 // Content for /compliance-as-a-service/
 // Rewrite page — fresh ROI-focused content. Primary keyword: "compliance as a service".
 //
-// DRAFT FOR MIKE'S REVIEW — revised 2026-09-24.
+// Launched 2026-10-14. Revised 2026-09-24 for Mike's review.
 // Sections marked [NEW] or [REVISED] respond to what Mike asked for across the
 // Aug 19 and Sep 2 calls. His words, and where they landed:
 //
