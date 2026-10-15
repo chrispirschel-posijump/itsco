@@ -34,7 +34,7 @@ export const INTRO = {
 export const TEAM = [
   {
     name: 'Mike Savino',
-    title: 'CEO & CFO',
+    title: 'CEO, CFO & Partner',
     image: '/images/team/ls_mike4.webp',
     bio: [
       'Mike is our CEO and CFO, and an influential leader who leverages expertise in managing and developing high-performing individuals and teams to drive exponential organizational results. His focus is always on the outcomes that matter most to our clients: financial stability, revenue growth, and operational excellence.',
@@ -44,15 +44,31 @@ export const TEAM = [
   },
   {
     name: 'George Terrone',
-    title: 'Founder',
+    title: 'Founding Partner',
     image: '/images/team/ls_george4.webp',
     bio: [SOURCE_PARAGRAPHS[10], SOURCE_PARAGRAPHS[11]],
   },
   {
     name: 'Greg Wassil',
-    title: 'CTO & Co-Founder',
-    image: '/images/team/ls_greg4.webp',
-    bio: [SOURCE_PARAGRAPHS[4], SOURCE_PARAGRAPHS[5], SOURCE_PARAGRAPHS[6]],
+    title: 'CTO & Founding Partner',
+    image: '/images/team/ls_greg5.webp',
+    bio: [
+      'Greg has spent much of his career helping clients solve complex technology challenges while building ITSco into a company known for its integrity, technical excellence, and long-term relationships. Since 1996, he has played a key role in shaping the organization’s growth, culture, and commitment to customer success.',
+      'As CTO, Greg remains deeply involved with clients, engineers, and projects. He believes successful technology projects start with listening, taking the time to understand each organization’s goals, challenges, and priorities before developing practical solutions that align technology with business needs. Whether guiding strategic initiatives, modernizing infrastructure, or leading business-critical technology projects, Greg focuses on building trust, maintaining clear communication, and delivering meaningful results.',
+      'Over the years, Greg has served as an engineer, architect, project manager, mentor, advisor, and business leader. He is passionate about helping engineers grow, fostering collaboration, and creating an environment where people can do their best work. What he values most is not the technology itself, but the relationships built along the way. The trust of clients, employees, and partners, and the success achieved together, are what he considers among ITSco’s greatest accomplishments.',
+    ],
+  },
+  {
+    name: 'Zackary Beckham',
+    title: 'Chief of Business Development & Partner',
+    image: '/images/team/ls_zackary4.webp',
+    bio: [
+      'Zackary has built his career where technology, operations, and compliance meet, helping organizations protect their data, meet demanding regulatory standards, and adopt new technology in ways that deliver real value. He was introduced to ITSco through Caprae Capital and quickly found a company whose commitment to integrity, transparency, and engineering excellence matched his own.',
+      'Zackary began his career at GoDaddy, where he spent five years in the Office of the President (now the Office of the CEO) as the final point of escalation for customer issues that could not be resolved anywhere else in the organization. Working directly with lead engineers and the company’s general counsel to resolve the toughest cases, he learned early that lasting customer relationships are built on listening and following through.',
+      'He went on to hold leadership roles at DMD Systems Recovery and Destroy Drive, spending more than a decade in IT asset disposition and secure data destruction. He directed data center decommissioning projects for Fortune 50 clients, including Facebook, Salesforce, and Apple, and led both companies to ISO 9001, ISO 14001, and ISO 45001 certification, maintaining those standards through years of recertification. That experience shaped his view that compliance is not a one-time project, but a discipline built into daily operations.',
+      'At ITSco, Zackary focuses on customer success, particularly for clients in highly regulated industries such as healthcare, finance, and defense contracting. He has guided clients to SOC 2 certification and through CMMC readiness, and he leads ITSco’s AI initiatives both internally and for clients. A certified PMP, he has also completed several AI programs, including Anthropic’s Claude Partner Program certification.',
+      'What Zackary values most is earning the kind of trust that makes ITSco the first call when the stakes are high, and building partnerships that last long after a project is complete.',
+    ],
   },
 ]
 
