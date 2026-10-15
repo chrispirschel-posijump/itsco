@@ -51,6 +51,44 @@ export function visiblePosts(): BlogPost[] {
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Timely post (outside the evergreen roadmap) — NC GovRAMP rule ────────
+  // draft:true until Mike/counsel sign off on the regulatory copy. Same
+  // category as cmmc-2-nc-defense-contractors so the two NC-compliance posts
+  // surface in each other's related-posts. Update publishedDate to the actual
+  // publish day when flipping draft:false.
+  {
+    slug: 'north-carolina-govramp-requirement',
+    title: 'North Carolina GovRAMP: What Cloud Vendors Need to Know',
+    category: 'Cybersecurity',
+    excerpt:
+      "North Carolina now requires cloud vendors selling to state agencies to be GovRAMP or FedRAMP engaged, with a one-year on-ramp to April 2027. Here's what it means and how to get ready.",
+    heroImage: '/images/hero/blog/jeff-mclain-hF3c-qFEc3U-unsplash.jpg',
+    publishedDate: '2026-10-15',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: 'What is GovRAMP?',
+        answer:
+          'GovRAMP, formerly known as StateRAMP, is a nonprofit program that standardizes cloud security verification for government buyers. It is built on the NIST 800-53 Rev. 5 control set, and providers earn a status through an independent assessment and keep it through continuous monitoring.',
+      },
+      {
+        question: 'Does North Carolina require GovRAMP?',
+        answer:
+          'Yes. North Carolina requires third-party cloud services sold to state executive-branch agencies to be GovRAMP or FedRAMP engaged. A one-year on-ramp runs from April 1, 2026 to April 1, 2027, after which it applies to new bids and to existing contracts at renewal. On-premises systems are out of scope.',
+      },
+      {
+        question: 'Does FedRAMP satisfy the North Carolina requirement?',
+        answer:
+          'Yes. North Carolina accepts FedRAMP as an alternative to GovRAMP, so a product that already holds FedRAMP status can meet the requirement.',
+      },
+      {
+        question: 'How long does it take to get GovRAMP ready?',
+        answer:
+          'Plan on several months. The gap assessment, control remediation, documentation, independent review, and continuous monitoring setup all take time, which is why vendors aiming for the April 2027 deadline should start now.',
+      },
+    ],
+    draft: true,
+  },
   // ── Post 12 of the editorial roadmap — CAPSTONE ─────────────────────────
   // Scheduled for 2027-01-04. Flip draft: false and redeploy on Jan 4.
   //
