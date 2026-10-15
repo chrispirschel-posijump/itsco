@@ -199,13 +199,13 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'How is this different from Security Audits & Compliance?',
       answer: [
-        'Audits are point-in-time engagements that tell you where you stand. Compliance as a Service is ongoing — it keeps you compliant between audits, so the next audit is a confirmation rather than a fire drill. Most clients use both: the audits validate, the service maintains.',
+        'Audits are point-in-time engagements that tell you where you stand. Compliance as a Service is ongoing. It keeps you compliant between audits, so the next audit is a confirmation rather than a fire drill. Most clients use both: the audits validate, the service maintains.',
       ],
     },
     {
       question: 'Which frameworks do you support?',
       answer: [
-        'The major ones — HIPAA, PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, GDPR — plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for companies selling cloud services to government, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
+        'The major ones: HIPAA, PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, and GDPR, plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for companies selling cloud services to government, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
       ],
     },
     {
@@ -214,8 +214,8 @@ export const CONTENT: ServiceSubContent = {
       // Oct 2026. Re-verify before any material revision.
       question: 'North Carolina now requires GovRAMP for state cloud vendors. Can you help us get there?',
       answer: [
-        'Yes. North Carolina adopted GovRAMP — the public-sector cloud security program formerly known as StateRAMP — for third-party cloud services sold to state executive-branch agencies. There is a one-year on-ramp from April 1, 2026 to April 1, 2027; after it, a cloud product generally has to be GovRAMP or FedRAMP engaged for a bid to be accepted. It applies to vendor-hosted cloud, not to on-premises systems.',
-        'GovRAMP is built on the NIST 800-53 Rev. 5 control set, with an independent assessment and ongoing continuous monitoring to earn and keep a status. We own the technology side of getting there: a gap assessment against the baseline, implementing and documenting the controls, preparing your package for the independent assessor, and running the monthly monitoring the program expects. The authorization itself is granted through GovRAMP, not by us — our job is to get you ready and keep you there.',
+        'Yes. North Carolina adopted GovRAMP, the public-sector cloud security program formerly known as StateRAMP, for third-party cloud services sold to state executive-branch agencies. There is a one-year on-ramp from April 1, 2026 to April 1, 2027; after it, a cloud product generally has to be GovRAMP or FedRAMP engaged for a bid to be accepted. It applies to vendor-hosted cloud, not to on-premises systems.',
+        'GovRAMP is built on the NIST 800-53 Rev. 5 control set, with an independent assessment and ongoing continuous monitoring to earn and keep a status. We own the technology side of getting there: a gap assessment against the baseline, implementing and documenting the controls, preparing your package for the independent assessor, and running the monthly monitoring the program expects. The authorization itself is granted through GovRAMP, not by us. Our job is to get you ready and keep you there. For a plain-language breakdown of the rule and the timeline, read our guide to [North Carolina’s GovRAMP requirement](/blog/north-carolina-govramp-requirement).',
       ],
     },
     {
@@ -223,21 +223,21 @@ export const CONTENT: ServiceSubContent = {
       // hedging — worth keeping even if Mike trims elsewhere.
       question: 'Do you handle the legal side of compliance too?',
       answer: [
-        'No, and you should be wary of an IT provider who says otherwise. Your attorney and your auditor determine what the regulations require of your business. We own the technology side of meeting them — the controls, the evidence, the documentation, and the systems that hold your regulated data — and we work alongside your counsel rather than in place of them.',
+        'No, and you should be wary of an IT provider who says otherwise. Your attorney and your auditor determine what the regulations require of your business. We own the technology side of meeting them: the controls, the evidence, the documentation, and the systems that hold your regulated data. We work alongside your counsel rather than in place of them.',
       ],
     },
     {
       // [NEW] Mike's recurring-cost point, in the buyer's words.
       question: 'How is this priced?',
       answer: [
-        'It folds into your monthly managed services cost rather than arriving as a separate project fee. Scope depends on which frameworks apply, how complex your environment is, and what evidence your auditors expect — which is what the first conversation is for. The point is that being audit-ready becomes a line item you plan for, not a bill that surprises you.',
+        'It folds into your monthly managed services cost rather than arriving as a separate project fee. Scope depends on which frameworks apply, how complex your environment is, and what evidence your auditors expect. That is what the first conversation is for. The point is that being audit-ready becomes a line item you plan for, not a bill that surprises you.',
       ],
     },
     {
       // [NEW] Speaks directly to the prospect Mike described: turned away elsewhere.
       question: 'Our last provider said our requirements were too complicated. Is that a problem?',
       answer: [
-        "It is usually the reason companies call us. Multi-framework environments, operational technology on the same network as business systems, regulated data that has to move between organizations — these are the engagements many providers decline. We have spent 30 years on them. Tell us what you are actually held to and we will tell you honestly whether we are the right fit.",
+        "It is usually the reason companies call us. Multi-framework environments, operational technology on the same network as business systems, regulated data that has to move between organizations: these are the engagements many providers decline. We have spent 30 years on them. Tell us what you are actually held to and we will tell you honestly whether we are the right fit.",
       ],
     },
   ],
