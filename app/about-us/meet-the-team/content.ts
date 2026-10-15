@@ -34,7 +34,7 @@ export const INTRO = {
 export const TEAM = [
   {
     name: 'Mike Savino',
-    title: 'CEO & CFO',
+    title: 'CEO, CFO & Partner',
     image: '/images/team/ls_mike4.webp',
     bio: [
       'Mike is our CEO and CFO, and an influential leader who leverages expertise in managing and developing high-performing individuals and teams to drive exponential organizational results. His focus is always on the outcomes that matter most to our clients: financial stability, revenue growth, and operational excellence.',
@@ -44,7 +44,7 @@ export const TEAM = [
   },
   {
     name: 'George Terrone',
-    title: 'Founder',
+    title: 'Founding Partner',
     image: '/images/team/ls_george4.webp',
     bio: [SOURCE_PARAGRAPHS[10], SOURCE_PARAGRAPHS[11]],
   },
