@@ -45,6 +45,12 @@ function renderAnswer(text: string): ReactNode[] {
   return out
 }
 
+// Plain-text version of an answer for JSON-LD (FAQPage schema): [label](href)
+// collapses to its label so raw markdown never reaches structured data.
+function stripMarkdown(text: string): string {
+  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
+}
+
 export interface ServiceSubContent {
   meta: { title: string; description: string; canonical: string }
   serviceName: string
@@ -141,7 +147,7 @@ export function serviceFaqJsonLd(content: ServiceSubContent) {
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer.join(' ') },
+      acceptedAnswer: { '@type': 'Answer', text: f.answer.map(stripMarkdown).join(' ') },
     })),
   }
 }
