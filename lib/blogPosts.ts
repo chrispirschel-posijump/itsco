@@ -87,7 +87,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           'Plan on several months. The gap assessment, control remediation, documentation, independent review, and continuous monitoring setup all take time, which is why vendors aiming for the April 2027 deadline should start now.',
       },
     ],
-    draft: true,
+    draft: false,
   },
   // ── Post 12 of the editorial roadmap — CAPSTONE ─────────────────────────
   // Scheduled for 2027-01-04. Flip draft: false and redeploy on Jan 4.
