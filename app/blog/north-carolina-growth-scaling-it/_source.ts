@@ -10,7 +10,7 @@ import type { BlogBlock } from '@/components/BlogPost'
 export const ARTICLE: readonly BlogBlock[] = [
   {
     type: 'p',
-    text: 'North Carolina just became the state more Americans moved to than any other. Between July 2024 and July 2025, it added more than 84,000 residents through net domestic migration, according to the U.S. Census Bureau. That is more than Texas, more than Florida, more than anywhere else in the country. It is a milestone worth celebrating. It is also a quiet operational test for the businesses already here, because rapid growth lands on your technology before it lands anywhere else.',
+    text: 'North Carolina just became the state more Americans moved to than any other. Between July 2024 and July 2025, it added more than 84,000 residents through net domestic migration, according to the [U.S. Census Bureau](https://www.census.gov/data/tables/time-series/demo/popest/2020s-state-total.html). That is more than Texas, more than Florida, more than anywhere else in the country. It is a milestone worth celebrating. It is also a quiet operational test for the businesses already here, because rapid growth lands on your technology before it lands anywhere else.',
   },
 
   { type: 'h2', text: 'Growth is a business story before it is a demographic one' },
