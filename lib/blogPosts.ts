@@ -51,6 +51,38 @@ export function visiblePosts(): BlogPost[] {
 }
 
 export const BLOG_POSTS: readonly BlogPost[] = [
+  // ── Timely post (outside the evergreen roadmap) — NC net-migration ───────
+  // Built around Zack's Census net-migration graphic. draft:true until the
+  // hero image is swapped for an NC-specific shot and the copy is approved.
+  // Update publishedDate to the actual publish day when flipping draft:false.
+  {
+    slug: 'north-carolina-growth-scaling-it',
+    title: 'North Carolina Is the #1 State for Growth. Is Your IT Ready?',
+    category: 'Business Insights',
+    excerpt:
+      'North Carolina added more residents than any other state in 2025. For the businesses already here, record growth is a stress test for IT. Here is how to scale technology without it becoming the bottleneck.',
+    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+    publishedDate: '2026-10-16',
+    author: { name: 'Mike Savino', title: 'CEO, ITSco' },
+    faqs: [
+      {
+        question: 'Why does business growth strain IT?',
+        answer:
+          'Growth multiplies the work IT does quietly in the background: onboarding more people, securing more devices and locations, and keeping more systems running. The setup that worked at one size often breaks at the next, which is why fast-growing companies tend to hit onboarding delays, security gaps, and slower support right when they can least afford them.',
+      },
+      {
+        question: 'Should a growing company hire IT staff or use a managed provider?',
+        answer:
+          'It depends on how often you face real technology decisions and how fast you are scaling. Hiring IT talent in a competitive market is slow and expensive, and one person cannot cover help desk, security, and strategy at once. Many growing companies use a managed provider to add capacity quickly without the hiring race, then add in-house staff only where dedicated depth is genuinely needed.',
+      },
+      {
+        question: 'How does rapid growth affect cybersecurity and compliance?',
+        answer:
+          'More people, devices, and locations widen the attack surface, and bigger contracts bring a higher compliance bar. Enterprise customers, regulated clients, and government buyers increasingly ask for security documentation before they sign. Building security and compliance readiness as you grow is far cheaper than scrambling to meet a requirement after a deal is already on the table.',
+      },
+    ],
+    draft: true,
+  },
   // ── Timely post (outside the evergreen roadmap) — NC GovRAMP rule ────────
   // draft:true until Mike/counsel sign off on the regulatory copy. Same
   // category as cmmc-2-nc-defense-contractors so the two NC-compliance posts
