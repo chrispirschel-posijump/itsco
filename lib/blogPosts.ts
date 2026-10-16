@@ -61,7 +61,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     category: 'Business Insights',
     excerpt:
       'North Carolina added more residents than any other state in 2025. For the businesses already here, record growth is a stress test for IT. Here is how to scale technology without it becoming the bottleneck.',
-    heroImage: '/images/hero/blog/steven-cordes-EZmOa2Mv0nc-unsplash.jpg',
+    heroImage: '/images/hero/blog/gene-gallin-fe0s2abV8R8-unsplash.jpg',
     publishedDate: '2026-10-16',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
     faqs: [
