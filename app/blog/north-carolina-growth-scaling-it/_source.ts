@@ -69,7 +69,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'The North Carolina advantage' },
   {
     type: 'p',
-    text: 'There is an upside to growing in the state everyone is moving to: the talent, the customers, and the momentum are all here. The risk is treating technology as an afterthought while the business races ahead. We have spent 30 years helping businesses across the Triangle and the rest of North Carolina scale without letting IT become the thing that holds them back. We know the local market, the regulations that come with it, and what it takes to keep a growing company running.',
+    text: 'There is an upside to growing in the state everyone is moving to: the talent, the customers, and the momentum are all here. The risk is treating technology as an afterthought while the business races ahead. We have spent 30 years helping businesses across the Triangle and the rest of North Carolina scale without letting IT become the thing that holds them back. We know the local market, [the regulations that come with it](/blog/north-carolina-govramp-requirement), and what it takes to keep a growing company running.',
   },
   {
     type: 'p',
