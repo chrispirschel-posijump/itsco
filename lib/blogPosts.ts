@@ -58,10 +58,10 @@ export const BLOG_POSTS: readonly BlogPost[] = [
   // publish day when flipping draft:false.
   {
     slug: 'north-carolina-govramp-requirement',
-    title: 'North Carolina GovRAMP: What Cloud Vendors Need to Know',
+    title: 'North Carolina GovRAMP: What It Means for Businesses Working With the State',
     category: 'Cybersecurity',
     excerpt:
-      "North Carolina now requires cloud vendors selling to state agencies to be GovRAMP or FedRAMP engaged, with a one-year on-ramp to April 2027. Here's what it means and how to get ready.",
+      "North Carolina now requires the cloud services used to handle state data to be GovRAMP or FedRAMP engaged, and it reaches far more than software vendors. Here's who is affected and how to get ready before the April 2027 deadline.",
     heroImage: '/images/hero/blog/jeff-mclain-hF3c-qFEc3U-unsplash.jpg',
     publishedDate: '2026-10-15',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
@@ -72,9 +72,9 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           'GovRAMP, formerly known as StateRAMP, is a nonprofit program that standardizes cloud security verification for government buyers. It is built on the NIST 800-53 Rev. 5 control set, and providers earn a status through an independent assessment and keep it through continuous monitoring.',
       },
       {
-        question: 'Does North Carolina require GovRAMP?',
+        question: 'Who does North Carolina\'s GovRAMP requirement apply to?',
         answer:
-          'Yes. North Carolina requires third-party cloud services sold to state executive-branch agencies to be GovRAMP or FedRAMP engaged. A one-year on-ramp runs from April 1, 2026 to April 1, 2027, after which it applies to new bids and to existing contracts at renewal. On-premises systems are out of scope.',
+          'Any cloud service used to process, transmit, or store North Carolina state data. That includes software vendors selling cloud products to the state and professional-services firms that use a cloud platform to deliver their work, such as a healthcare, accounting, or consulting business running state work through a third-party cloud tool. A one-year on-ramp runs from April 1, 2026 to April 1, 2027, after which it applies to new bids and to existing contracts at renewal. On-premises systems are out of scope.',
       },
       {
         question: 'Does FedRAMP satisfy the North Carolina requirement?',
@@ -84,7 +84,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         question: 'How long does it take to get GovRAMP ready?',
         answer:
-          'Plan on several months. The gap assessment, control remediation, documentation, independent review, and continuous monitoring setup all take time, which is why vendors aiming for the April 2027 deadline should start now.',
+          'Plan on several months. The gap assessment, control remediation, documentation, independent review, and continuous monitoring setup all take time, which is why anyone whose state work depends on a cloud platform should start well before the April 2027 deadline.',
       },
     ],
     draft: false,
