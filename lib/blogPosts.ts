@@ -372,7 +372,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "Both, in different lanes. IT owns implementation, integration, and security mechanics. Leadership owns what AI should do in the business, whose data it touches, who reviews its output, and whether the trade-offs are worth it. Delegating those executive questions to the tech team doesn't avoid the decision — it makes it by default.",
       },
     ],
-    draft: true,
+    draft: false,
   },
   // ── Post 5 of the editorial roadmap ──────────────────────────────────────
   // Published 2026-09-28.
