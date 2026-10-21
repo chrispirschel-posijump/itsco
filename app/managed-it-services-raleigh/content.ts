@@ -65,7 +65,11 @@ export const CONTENT: CityServiceContent = {
     },
   },
   security: {
-    eyebrow: 'Cybersecurity in Raleigh',
+    // Eyebrow intentionally not "Cybersecurity in Raleigh" — that exact phrase
+    // let this managed-IT page out-rank /raleigh-cyber-security-services for
+    // "cybersecurity services raleigh". Dedicated cyber demand is funneled to
+    // that page via the exact-match related link below.
+    eyebrow: 'Security built in',
     headlineLead: 'Protect your Raleigh business',
     headlineAccent: 'against the bad guys.',
     paragraphs: [S[25], S[26], S[27], S[28]],
@@ -109,9 +113,9 @@ export const CONTENT: CityServiceContent = {
       },
       {
         slug: 'cyber-security-management',
-        label: 'Cyber Security in Raleigh',
+        label: 'Cyber Security Services in Raleigh',
         href: '/raleigh-cyber-security-services/',
-        description: 'Layered cybersecurity defenses that protect your data and uptime.',
+        description: 'Dedicated cyber security services in Raleigh, with layered defenses that protect your data and uptime.',
       },
     ],
   },

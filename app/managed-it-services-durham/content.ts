@@ -122,6 +122,33 @@ export const CONTENT: CityServiceContent = {
       question: 'In what ways do managed IT services align with my business goals?',
       answer: [S[35], S[36], S[37]],
     },
+    // AIO / answer-engine FAQs — tight, extractable answers for broad and local
+    // commercial queries. Kept free of "IT support Durham" head terms so this
+    // page does not compete with /it-support-durham.
+    {
+      question: 'What areas around Durham does ITSco serve?',
+      answer: [
+        'ITSco is headquartered in Durham and serves managed IT clients across the Triangle, including Raleigh, Chapel Hill, Cary, Morrisville, and Research Triangle Park, plus the wider Southeast. On-site visits and fast response are standard throughout the Durham and RTP area. We have supported North Carolina businesses since 1996.',
+      ],
+    },
+    {
+      question: "What is included in ITSco's managed IT services in Durham?",
+      answer: [
+        'A fixed monthly plan covers 24/7 monitoring, a responsive help desk, cybersecurity, backup and disaster recovery, cloud management, and ongoing infrastructure maintenance. It replaces unpredictable break-fix billing with one predictable cost, so your team gets proactive management instead of waiting for something to break.',
+      ],
+    },
+    {
+      question: 'How much do managed IT services cost in Durham?',
+      answer: [
+        'Most Durham businesses pay a fixed monthly fee based on their number of users and devices, rather than hourly break-fix rates. Pricing scales with company size and the services included. Use our free IT Investment Calculator to estimate your monthly cost, or book a consultation for a quote tied to your environment.',
+      ],
+    },
+    {
+      question: 'Is ITSco a managed services provider (MSP) in Durham?',
+      answer: [
+        'Yes. ITSco is a Durham-based MSP and MSSP, which means we own your IT and security operations as an outside partner on a fixed monthly plan. An MSP manages your technology proactively, rather than billing by the hour after a problem occurs. We have served Durham and the Triangle since 1996.',
+      ],
+    },
   ],
   citySlug: 'durham',
   bookingUtm: 'managed-it-durham-bottom',

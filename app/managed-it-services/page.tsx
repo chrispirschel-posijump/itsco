@@ -179,6 +179,29 @@ function IntroSection() {
             <p className="text-lg text-itsco-body leading-relaxed">
               Managed IT services are a fixed-monthly-cost engagement where an outside team owns your monitoring, helpdesk, security, and infrastructure maintenance — replacing reactive break-fix billing and removing the need to build a full in-house IT department. ITSco has delivered managed IT to businesses across Raleigh, Durham, Charlotte, and the Southeast since 1996. Sixty percent of our clients stay with us 5+ years.
             </p>
+            {/* Directional, exact-match internal links to the intended managed-IT
+                landing page per market. Consolidates ranking signals so Google
+                stops ranking consulting/cyber pages for "managed it services
+                [city]" (see Rec 2 keyword-targeting). */}
+            <div className="mt-10">
+              <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
+                Managed IT by location
+              </p>
+              <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-base font-semibold">
+                <Link href="/managed-it-services-raleigh" className="text-itsco-dark underline decoration-itsco-red/30 underline-offset-4 hover:text-itsco-red hover:decoration-itsco-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-itsco-red focus-visible:ring-offset-2 active:opacity-80 rounded-sm transition-colors">
+                  Managed IT services in Raleigh
+                </Link>
+                <Link href="/managed-it-services-durham" className="text-itsco-dark underline decoration-itsco-red/30 underline-offset-4 hover:text-itsco-red hover:decoration-itsco-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-itsco-red focus-visible:ring-offset-2 active:opacity-80 rounded-sm transition-colors">
+                  Managed IT services in Durham
+                </Link>
+                <Link href="/managed-it-services-charlotte" className="text-itsco-dark underline decoration-itsco-red/30 underline-offset-4 hover:text-itsco-red hover:decoration-itsco-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-itsco-red focus-visible:ring-offset-2 active:opacity-80 rounded-sm transition-colors">
+                  Managed IT services in Charlotte
+                </Link>
+                <Link href="/managed-it-services-greensboro" className="text-itsco-dark underline decoration-itsco-red/30 underline-offset-4 hover:text-itsco-red hover:decoration-itsco-red focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-itsco-red focus-visible:ring-offset-2 active:opacity-80 rounded-sm transition-colors">
+                  Managed IT services in Greensboro
+                </Link>
+              </div>
+            </div>
           </div>
         </FadeUp>
       </div>
