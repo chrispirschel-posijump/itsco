@@ -15,7 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/fully-managed-cybersecurity',
   },
   serviceName: 'Fully-Managed Cybersecurity',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Fully Managed',
     headlineLead: 'Fully-managed cybersecurity,',
@@ -67,19 +67,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment around the clock.',
       },
       {
         slug: 'mdr-monitoring-and-response',
         label: 'MDR Monitoring & Response',
-        href: '/mdr-monitoring-and-response/',
+        href: '/mdr-monitoring-and-response',
         description: 'Proactive threat hunting and rapid incident response, fully managed.',
       },
       {
         slug: 'cybersecurity',
         label: 'Cybersecurity Overview',
-        href: '/cybersecurity/',
+        href: '/cybersecurity',
         description: 'The full ITSco MSSP program — every service, one trusted partner.',
       },
     ],

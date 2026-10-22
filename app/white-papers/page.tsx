@@ -31,7 +31,7 @@ const PAPERS: WhitePaper[] = [
     title: 'Implementing AI Tools to Prevent Data Breaches and Enhance Security',
     description:
       'The AI-powered cybersecurity market is on track for a $72.22B valuation by 2029 (CAGR 36.78%). How AI-driven detection, automation, and compliance monitoring change the economics of cybersecurity.',
-    href: '/white-papers-ai-tools-for-threat-detection/',
+    href: '/white-papers-ai-tools-for-threat-detection',
   },
   {
     slug: 'zero-trust-architecture',
@@ -39,7 +39,7 @@ const PAPERS: WhitePaper[] = [
     title: 'To What Extent Should We Trust “Zero Trust Architecture”?',
     description:
       "Zero Trust Architecture (ZTA) — the cost of implementation, the size of the long-term security savings, and why recent advancements make ZTA a smart investment despite adoption challenges.",
-    href: '/white-papers-zero-trust-architecture/',
+    href: '/white-papers-zero-trust-architecture',
   },
   {
     slug: 'legal-repercussions-of-ai-implementation',
@@ -47,7 +47,7 @@ const PAPERS: WhitePaper[] = [
     title: 'Legal Repercussions of AI Implementation',
     description:
       'Data breaches peaked at 3,205 in 2023 — a 43.8% jump from 2022. The expanding regulatory landscape around AI-driven incidents, and what it means for cybersecurity, ITAD, and data destruction.',
-    href: '/white-papers-legal-repercussions-of-ai-implementation/',
+    href: '/white-papers-legal-repercussions-of-ai-implementation',
   },
 
   // AI & Cloud Strategy
@@ -57,7 +57,7 @@ const PAPERS: WhitePaper[] = [
     title: 'AI Impact on Data Centers',
     description:
       "70% of data center errors result from human mistakes. How AI-powered robotics, drones, and predictive cooling are redefining data center operations — and where the costs and risks land.",
-    href: '/white-papers-ai-impact-on-data-centers/',
+    href: '/white-papers-ai-impact-on-data-centers',
   },
   {
     slug: 'public-vs-private-cloud',
@@ -65,7 +65,7 @@ const PAPERS: WhitePaper[] = [
     title: 'Public vs Private Cloud',
     description:
       "AI's growth is driving tech companies toward public cloud services that offer the scalability and flexibility private clouds can't match. A comparative analysis of where each model fits.",
-    href: '/white-papers-public-vs-private-cloud/',
+    href: '/white-papers-public-vs-private-cloud',
   },
   {
     slug: 'flp-hyperscaler-monetization',
@@ -73,7 +73,7 @@ const PAPERS: WhitePaper[] = [
     title: 'FLP Hyperscaler Monetization',
     description:
       "Today's AI boom is grounded in real profits and proven tech — not dot-com speculation. Where the real monetization opportunities sit across infrastructure, chips, and AI software platforms.",
-    href: '/white-papers-flp-hyperscaler-monetization/',
+    href: '/white-papers-flp-hyperscaler-monetization',
   },
   {
     slug: 'geopolitics',
@@ -81,7 +81,7 @@ const PAPERS: WhitePaper[] = [
     title: 'Geopolitics of the AI Race',
     description:
       'The race for AI dominance mirrors the 20th-century arms race. How US-China tensions, the Taiwan strait, and TSMC reshape the global semiconductor and AI infrastructure landscape.',
-    href: '/white-paper-geopolitics/',
+    href: '/white-paper-geopolitics',
   },
 
   // ITAD & Sustainability
@@ -91,7 +91,7 @@ const PAPERS: WhitePaper[] = [
     title: 'AI Spending and ESG Pressures Drive Demand for TPM',
     description:
       'The third-party maintenance (TPM) industry was sized at $2.1B in 2022 and is projected to grow 20% per year. Why AI capex pressure and ESG mandates are accelerating the move away from OEM-only support.',
-    href: '/white-papers-tpm/',
+    href: '/white-papers-tpm',
   },
   {
     slug: 'gpu-and-refresh-cycle',
@@ -99,7 +99,7 @@ const PAPERS: WhitePaper[] = [
     title: 'GPU and Refresh Cycle Case Study',
     description:
       'Extended server refresh cycles have hit the ITAD industry hard. How rising GPU investments in 2024 signal a shift toward AI workloads and what it means for the next five years of refresh strategy.',
-    href: '/white-papers-gpu-and-refresh-cycle-case-study/',
+    href: '/white-papers-gpu-and-refresh-cycle-case-study',
   },
   {
     slug: 'esg-research-paper',
@@ -107,7 +107,7 @@ const PAPERS: WhitePaper[] = [
     title: 'ESG Research Paper: AI, Energy, and the Power Grid',
     description:
       "GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid's capacity to scale. The ESG and infrastructure implications for the next decade.",
-    href: '/white-papers-esg-research-paper/',
+    href: '/white-papers-esg-research-paper',
   },
   {
     slug: 'recycling-and-reuse-in-hyperscalers',
@@ -115,7 +115,7 @@ const PAPERS: WhitePaper[] = [
     title: 'Recycling and Reuse in Hyperscalers: Sustainable Asset Management',
     description:
       'Hyperscaler data centers contribute 70% of toxic landfill waste. How circular economy practices and 4IR technologies are being adopted by Microsoft, Amazon, Google, and Meta to reduce e-waste.',
-    href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management/',
+    href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management',
   },
   {
     slug: 'ai-impact-on-itad',
@@ -123,7 +123,7 @@ const PAPERS: WhitePaper[] = [
     title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach',
     description:
       'AI can turn IT asset disposition from a crisis into an opportunity. How machine learning is improving decommissioning, predictive lifecycle planning, and secure data destruction across ITAD.',
-    href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach/',
+    href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach',
   },
   {
     slug: 'hardware-dumping-in-africa',
@@ -131,7 +131,7 @@ const PAPERS: WhitePaper[] = [
     title: 'Hardware Dumping in Africa',
     description:
       "As the Global North advances, Africa bears the burden of e-waste dumping. The environmental, health, and geopolitical dimensions of a problem that demands sustainable ITAD practices.",
-    href: '/white-papers-hardware-dumping-in-africa/',
+    href: '/white-papers-hardware-dumping-in-africa',
   },
 ]
 

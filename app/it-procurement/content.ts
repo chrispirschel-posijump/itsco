@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-procurement',
   },
   serviceName: 'IT Procurement',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Engineering · IT Procurement',
     headlineLead: 'IT procurement,',
@@ -66,19 +66,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'network-engineering',
         label: 'Network Engineering',
-        href: '/network-engineering/',
+        href: '/network-engineering',
         description: 'Modern, secure, high-performance networks designed for your business.',
       },
       {
         slug: 'asset-lifecycle-management',
         label: 'Asset Lifecycle Management',
-        href: '/asset-lifecycle-management/',
+        href: '/asset-lifecycle-management',
         description: 'Hardware tracking, refresh planning, and end-of-life disposition.',
       },
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
     ],

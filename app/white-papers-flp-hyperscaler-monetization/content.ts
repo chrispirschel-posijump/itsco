@@ -38,7 +38,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Geopolitics of the AI Race',
       description:
         'How US-China tensions, the Taiwan strait, and TSMC reshape the global semiconductor and AI infrastructure landscape.',
-      href: '/white-paper-geopolitics/',
+      href: '/white-paper-geopolitics',
     },
     {
       slug: 'public-vs-private-cloud',
@@ -46,7 +46,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Public vs Private Cloud',
       description:
         "AI's growth is driving tech companies toward public cloud services. A comparative analysis of where each model fits.",
-      href: '/white-papers-public-vs-private-cloud/',
+      href: '/white-papers-public-vs-private-cloud',
     },
     {
       slug: 'gpu-and-refresh-cycle',
@@ -54,7 +54,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'GPU and Refresh Cycle Case Study',
       description:
         "How rising GPU investments in 2024 signal a shift toward AI workloads and reshape refresh strategy.",
-      href: '/white-papers-gpu-and-refresh-cycle-case-study/',
+      href: '/white-papers-gpu-and-refresh-cycle-case-study',
     },
   ],
   relatedServices: [
@@ -63,21 +63,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Strategy Consulting',
       description:
         'Practical AI direction and roadmaps that turn AI investment into measurable business advantage — not the demo.',
-      href: '/ai-strategy-consulting/',
+      href: '/ai-strategy-consulting',
     },
     {
       slug: 'ai-readiness-assessment',
       title: 'AI Readiness Assessment',
       description:
         'A clear-eyed gap analysis of data, security, infrastructure, and skills before you commit to a full AI roadmap.',
-      href: '/ai-readiness-assessment/',
+      href: '/ai-readiness-assessment',
     },
     {
       slug: 'vcio-vcto-vciso-services',
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership for institutions that need C-suite expertise without a C-suite hire.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
     },
   ],
   bookingUtm: 'wp-flp-hyperscaler',

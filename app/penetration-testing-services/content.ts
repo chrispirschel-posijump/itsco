@@ -15,7 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/penetration-testing-services',
   },
   serviceName: 'Penetration Testing',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Penetration Testing',
     headlineLead: 'Penetration testing that finds',
@@ -67,19 +67,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'cyber-risk-assessment',
         label: 'Cyber Risk Assessment',
-        href: '/cyber-risk-assessment/',
+        href: '/cyber-risk-assessment',
         description: 'A clear picture of your exposure and a prioritized plan to fix it.',
       },
       {
         slug: 'security-audits-compliance',
         label: 'Security Audits & Compliance',
-        href: '/security-audits-compliance/',
+        href: '/security-audits-compliance',
         description: 'In-depth audits that keep you secure and compliant.',
       },
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
     ],

@@ -85,19 +85,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
       {
         slug: 'mdr-monitoring-and-response',
         label: 'MDR Monitoring & Response',
-        href: '/mdr-monitoring-and-response/',
+        href: '/mdr-monitoring-and-response',
         description: 'Proactive threat hunting and rapid incident response, fully managed.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],

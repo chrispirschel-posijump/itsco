@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-365-services',
   },
   serviceName: 'Microsoft 365 Services',
-  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions' },
   hero: {
     eyebrow: 'Microsoft · Microsoft 365',
     headlineLead: 'Microsoft 365, set up to',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'microsoft-exchange-services',
         label: 'Microsoft Exchange Services',
-        href: '/microsoft-exchange-services/',
+        href: '/microsoft-exchange-services',
         description: 'Secure, reliable business email deployment and management.',
       },
       {
         slug: 'microsoft-teams-services',
         label: 'Microsoft Teams Services',
-        href: '/microsoft-teams-services/',
+        href: '/microsoft-teams-services',
         description: 'Teams set up and managed as a real collaboration and communication hub.',
       },
       {
         slug: 'microsoft-solutions',
         label: 'Microsoft Solutions Overview',
-        href: '/microsoft-solutions/',
+        href: '/microsoft-solutions',
         description: 'The full ITSco Microsoft program — 365, Azure, Teams, and more.',
       },
     ],

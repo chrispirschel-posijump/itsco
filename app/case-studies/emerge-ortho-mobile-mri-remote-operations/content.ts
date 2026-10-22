@@ -153,7 +153,7 @@ export const CONTENT: CaseStudyContent = {
         'Southern Rehabilitation Network secured a critical State of North Carolina contract after a cybersecurity and infrastructure modernization led by ITSco.',
       image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
       imageAlt: 'Healthcare provider with tablet — IT modernization',
-      href: '/case-studies/southern-rehabilitation-network/',
+      href: '/case-studies/southern-rehabilitation-network',
     },
     {
       category: 'Financial Services',
@@ -162,7 +162,7 @@ export const CONTENT: CaseStudyContent = {
         'A century-old regional bank with 250+ offices and 2,800 employees turned to ITSco to modernize network management through Ansible-based automation.',
       image: '/images/case-studies/banking.jpg',
       imageAlt: 'Financial services environment',
-      href: '/case-studies/regional-bank/',
+      href: '/case-studies/regional-bank',
     },
     {
       category: 'Energy',
@@ -171,7 +171,7 @@ export const CONTENT: CaseStudyContent = {
         "After a multi-million-dollar breach, one of the world's largest oil companies brought in ITSco — via Red Hat — to stand up Ansible Tower and harden the network.",
       image: '/images/case-studies/energy.jpg',
       imageAlt: 'Energy industry infrastructure',
-      href: '/case-studies/network-automation/',
+      href: '/case-studies/network-automation',
     },
   ],
   bookingUtm: 'emerge-ortho-mri-bottom',

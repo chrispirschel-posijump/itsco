@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-assessments-strategies',
   },
   serviceName: 'IT Assessments & Strategies',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · Assessments',
     headlineLead: 'IT assessments and strategy',
@@ -81,19 +81,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'it-roadmap-planning',
         label: 'IT Roadmap Planning',
-        href: '/it-roadmap-planning/',
+        href: '/it-roadmap-planning',
         description: 'A prioritized, costed technology roadmap aligned to your business goals.',
       },
       {
         slug: 'it-roi-assessment',
         label: 'IT ROI Assessment',
-        href: '/it-roi-assessment/',
+        href: '/it-roi-assessment',
         description: 'A clear-eyed look at what your IT spend delivers — and where value is leaking.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

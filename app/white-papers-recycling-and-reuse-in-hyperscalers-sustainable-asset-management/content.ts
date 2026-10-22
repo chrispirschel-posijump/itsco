@@ -40,7 +40,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Spending and ESG Pressures Drive Demand for TPM',
       description:
         'Why AI capex pressure and ESG mandates are accelerating the move away from OEM-only support.',
-      href: '/white-papers-tpm/',
+      href: '/white-papers-tpm',
     },
     {
       slug: 'ai-impact-on-itad',
@@ -48,7 +48,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach',
       description:
         "How machine learning is improving decommissioning, predictive lifecycle planning, and secure data destruction.",
-      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach/',
+      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach',
     },
     {
       slug: 'hardware-dumping-in-africa',
@@ -56,7 +56,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Hardware Dumping in Africa',
       description:
         'As the Global North advances, Africa bears the burden of e-waste dumping — the case for sustainable ITAD practices.',
-      href: '/white-papers-hardware-dumping-in-africa/',
+      href: '/white-papers-hardware-dumping-in-africa',
     },
   ],
   relatedServices: [
@@ -65,21 +65,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'IT Asset Disposition',
       description:
         'Certified, secure, audit-ready disposition — chain of custody, data destruction, recycling, and reuse.',
-      href: '/itad/',
+      href: '/itad',
     },
     {
       slug: 'it-procurement',
       title: 'IT Procurement',
       description:
         'Hardware, software, and licensing sourced at the discounts your size actually qualifies for.',
-      href: '/it-procurement/',
+      href: '/it-procurement',
     },
     {
       slug: 'managed-it-services',
       title: 'Managed IT Services',
       description:
         'Proactive monitoring, helpdesk, and lifecycle management on a predictable monthly cost.',
-      href: '/managed-it-services/',
+      href: '/managed-it-services',
     },
   ],
   bookingUtm: 'wp-recycling-hyperscalers',

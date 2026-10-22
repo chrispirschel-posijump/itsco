@@ -15,7 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-soc',
   },
   serviceName: 'Managed SOC',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Managed SOC',
     headlineLead: 'A security operations center',
@@ -67,19 +67,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'mdr-monitoring-and-response',
         label: 'MDR Monitoring & Response',
-        href: '/mdr-monitoring-and-response/',
+        href: '/mdr-monitoring-and-response',
         description: 'Proactive threat hunting and rapid incident response, fully managed.',
       },
       {
         slug: 'siem-services',
         label: 'SIEM Services',
-        href: '/siem-services/',
+        href: '/siem-services',
         description: 'Real-time log correlation and alerting across your whole environment.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],

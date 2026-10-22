@@ -20,35 +20,35 @@ const AI_SERVICES = [
     title: 'AI Governance',
     description:
       'Policies, controls, and oversight that let your business adopt AI safely, responsibly, and in line with compliance requirements.',
-    href: '/ai-governance/',
+    href: '/ai-governance',
   },
   {
     slug: 'ai-readiness-assessment',
     title: 'AI Readiness Assessment',
     description:
       'A clear-eyed evaluation of where AI can deliver real ROI for your business — and, just as importantly, where it cannot.',
-    href: '/ai-readiness-assessment/',
+    href: '/ai-readiness-assessment',
   },
   {
     slug: 'ai-strategy-consulting',
     title: 'AI Strategy Consulting',
     description:
       'Executive guidance to build a practical AI roadmap aligned with your business goals, budget, and risk tolerance.',
-    href: '/ai-strategy-consulting/',
+    href: '/ai-strategy-consulting',
   },
   {
     slug: 'microsoft-copilot',
     title: 'Microsoft Copilot',
     description:
       'Deploy, secure, and govern Microsoft Copilot to boost everyday productivity across your team — without compromising data security.',
-    href: '/microsoft-copilot/',
+    href: '/microsoft-copilot',
   },
   {
     slug: 'healthcare-ai-services',
     title: 'Healthcare AI',
     description:
       'AI solutions purpose-built for the compliance, privacy, and clinical demands of healthcare organizations.',
-    href: '/healthcare-ai-services/',
+    href: '/healthcare-ai-services',
   },
 ]
 

@@ -34,7 +34,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/compliance-as-a-service',
   },
   serviceName: 'Compliance as a Service',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Compliance as a Service',
     headlineLead: 'Compliance, kept current —',
@@ -173,19 +173,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'security-audits-compliance',
         label: 'Security Audits & Compliance',
-        href: '/security-audits-compliance/',
+        href: '/security-audits-compliance',
         description: 'In-depth point-in-time audits and remediation roadmaps that keep you compliant.',
       },
       {
         slug: 'cyber-risk-assessment',
         label: 'Cyber Risk Assessment',
-        href: '/cyber-risk-assessment/',
+        href: '/cyber-risk-assessment',
         description: 'A clear-eyed view of your exposure and a prioritized plan to close it.',
       },
       {
         slug: 'cybersecurity-consulting-services',
         label: 'Cybersecurity Consulting',
-        href: '/cybersecurity-consulting-services/',
+        href: '/cybersecurity-consulting-services',
         description: 'Strategic security guidance and execution from a vendor-neutral team.',
       },
     ],

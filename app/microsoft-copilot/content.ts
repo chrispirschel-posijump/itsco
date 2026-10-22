@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-copilot',
   },
   serviceName: 'Microsoft Copilot',
-  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions' },
   hero: {
     eyebrow: 'Microsoft · Copilot',
     headlineLead: 'Microsoft Copilot,',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'microsoft-365-services',
         label: 'Microsoft 365 Services',
-        href: '/microsoft-365-services/',
+        href: '/microsoft-365-services',
         description: 'Deployment, management, and security across the full Microsoft 365 suite.',
       },
       {
         slug: 'ai-automation',
         label: 'AI & Automation',
-        href: '/ai-automation/',
+        href: '/ai-automation',
         description: 'Practical AI strategy and process automation for measurable business gains.',
       },
       {
         slug: 'microsoft-solutions',
         label: 'Microsoft Solutions Overview',
-        href: '/microsoft-solutions/',
+        href: '/microsoft-solutions',
         description: 'The full ITSco Microsoft program — 365, Azure, Teams, and more.',
       },
     ],

@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cloud-cybersecurity',
   },
   serviceName: 'Cloud Cybersecurity',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Cloud Security',
     headlineLead: 'Cloud cybersecurity — the cloud',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
       {
         slug: 'security-audits-compliance',
         label: 'Security Audits & Compliance',
-        href: '/security-audits-compliance/',
+        href: '/security-audits-compliance',
         description: 'In-depth audits and remediation roadmaps that keep you compliant.',
       },
       {
         slug: 'network-security',
         label: 'Network Security',
-        href: '/network-security/',
+        href: '/network-security',
         description: 'End-to-end protection for the network your business runs on.',
       },
     ],

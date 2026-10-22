@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-roadmap-planning',
   },
   serviceName: 'IT Roadmap Planning',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · IT Roadmap',
     headlineLead: 'An IT roadmap that turns',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'it-assessments-strategies',
         label: 'IT Assessments & Strategies',
-        href: '/it-assessments-strategies/',
+        href: '/it-assessments-strategies',
         description: 'In-depth evaluations of infrastructure, security, and compliance.',
       },
       {
         slug: 'vcio-vcto-vciso-services',
         label: 'vCIO, vCTO & vCISO Services',
-        href: '/vcio-vcto-vciso-services/',
+        href: '/vcio-vcto-vciso-services',
         description: 'Strategic IT leadership without the cost of a full-time executive.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

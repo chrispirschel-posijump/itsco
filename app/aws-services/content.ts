@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/aws-services',
   },
   serviceName: 'AWS Services',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Amazon Web Services',
     headlineLead: 'AWS, architected and',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'cloud-migration',
         label: 'Cloud Migration',
-        href: '/cloud-migration/',
+        href: '/cloud-migration',
         description: 'A planned, low-disruption move to the cloud that lands right the first time.',
       },
       {
         slug: 'microsoft-azure-services',
         label: 'Microsoft Azure Services',
-        href: '/microsoft-azure-services/',
+        href: '/microsoft-azure-services',
         description: 'Migration, management, and optimization on Microsoft Azure.',
       },
       {
         slug: 'managed-cloud-services',
         label: 'Managed Cloud Services',
-        href: '/managed-cloud-services/',
+        href: '/managed-cloud-services',
         description: 'Ongoing management, monitoring, and optimization of your cloud environment.',
       },
     ],

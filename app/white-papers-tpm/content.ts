@@ -40,7 +40,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'GPU and Refresh Cycle Case Study',
       description:
         "How rising GPU investments in 2024 signal a shift toward AI workloads and reshape refresh strategy.",
-      href: '/white-papers-gpu-and-refresh-cycle-case-study/',
+      href: '/white-papers-gpu-and-refresh-cycle-case-study',
     },
     {
       slug: 'esg-research-paper',
@@ -48,7 +48,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'ESG Research Paper: AI, Energy, and the Power Grid',
       description:
         'GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid.',
-      href: '/white-papers-esg-research-paper/',
+      href: '/white-papers-esg-research-paper',
     },
     {
       slug: 'recycling-and-reuse-in-hyperscalers',
@@ -56,7 +56,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Recycling and Reuse in Hyperscalers: Sustainable Asset Management',
       description:
         'How Microsoft, Amazon, and Google use circular economy practices to reduce e-waste.',
-      href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management/',
+      href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management',
     },
   ],
   relatedServices: [
@@ -65,21 +65,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'IT Asset Disposition',
       description:
         'Certified, secure, audit-ready disposition of decommissioned IT assets — chain of custody, data destruction, reporting.',
-      href: '/itad/',
+      href: '/itad',
     },
     {
       slug: 'it-procurement',
       title: 'IT Procurement',
       description:
         'Hardware, software, and licensing sourced at the discounts your size actually qualifies for — minus the overhead.',
-      href: '/it-procurement/',
+      href: '/it-procurement',
     },
     {
       slug: 'managed-it-services',
       title: 'Managed IT Services',
       description:
         'Proactive monitoring, helpdesk, and infrastructure management on a predictable monthly cost.',
-      href: '/managed-it-services/',
+      href: '/managed-it-services',
     },
   ],
   bookingUtm: 'wp-tpm',

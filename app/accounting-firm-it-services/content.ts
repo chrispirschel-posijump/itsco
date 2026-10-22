@@ -164,7 +164,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'certification earned',
         image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
         imageAlt: 'Healthcare provider with tablet — IT modernization',
-        href: '/case-studies/southern-rehabilitation-network/',
+        href: '/case-studies/southern-rehabilitation-network',
       },
       {
         key: 'bank',
@@ -176,7 +176,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'employees across 250 offices',
         image: '/images/case-studies/banking.jpg',
         imageAlt: 'Banking professional reviewing financial systems',
-        href: '/case-studies/regional-bank/',
+        href: '/case-studies/regional-bank',
       },
       {
         key: 'oil',
@@ -188,7 +188,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'and on budget',
         image: '/images/case-studies/energy.jpg',
         imageAlt: 'Server infrastructure for an enterprise energy network',
-        href: '/case-studies/network-automation/',
+        href: '/case-studies/network-automation',
       },
     ],
   },
@@ -243,7 +243,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, firewall management, and compliance programs scaled to the threats accounting firms face every tax season.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -252,7 +252,7 @@ export const CONTENT: IndustryContent = {
       title: 'Compliance as a Service',
       description:
         'Continuous IRS Pub 4557, GLBA, and SOC 2 posture management — between client engagements, not just before them.',
-      href: '/compliance-as-a-service/',
+      href: '/compliance-as-a-service',
       image: '/images/supporting/industries/scott-graham-5fNmWej4tAA-unsplash.jpg',
       imageAlt: 'Reviewing compliance documentation and controls',
     },
@@ -261,7 +261,7 @@ export const CONTENT: IndustryContent = {
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership for firms that need executive-level guidance without a full-time hire.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
       image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
       imageAlt: 'Executive advisors meeting with a leadership team',
     },

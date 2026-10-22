@@ -39,7 +39,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Recycling and Reuse in Hyperscalers: Sustainable Asset Management',
       description:
         'How Microsoft, Amazon, and Google use circular economy practices to reduce e-waste.',
-      href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management/',
+      href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management',
     },
     {
       slug: 'ai-impact-on-itad',
@@ -47,7 +47,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach',
       description:
         "How machine learning is improving decommissioning, predictive lifecycle planning, and secure data destruction.",
-      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach/',
+      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach',
     },
     {
       slug: 'geopolitics',
@@ -55,7 +55,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Geopolitics of the AI Race',
       description:
         'How US-China tensions, the Taiwan strait, and TSMC reshape the global semiconductor and AI infrastructure landscape.',
-      href: '/white-paper-geopolitics/',
+      href: '/white-paper-geopolitics',
     },
   ],
   relatedServices: [
@@ -64,21 +64,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'IT Asset Disposition',
       description:
         'Certified, secure, audit-ready disposition — chain of custody, data destruction, recycling, and reuse done right.',
-      href: '/itad/',
+      href: '/itad',
     },
     {
       slug: 'it-procurement',
       title: 'IT Procurement',
       description:
         'Hardware and software sourced through vendor relationships that prioritize responsible lifecycle management.',
-      href: '/it-procurement/',
+      href: '/it-procurement',
     },
     {
       slug: 'managed-it-services',
       title: 'Managed IT Services',
       description:
         'Proactive monitoring, helpdesk, and lifecycle management on a predictable monthly cost.',
-      href: '/managed-it-services/',
+      href: '/managed-it-services',
     },
   ],
   bookingUtm: 'wp-hardware-dumping',

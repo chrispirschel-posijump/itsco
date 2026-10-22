@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/virtualization-services',
   },
   serviceName: 'Virtualization Services',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Virtualization',
     headlineLead: 'Virtualization that does more',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-desktop-vdi',
         label: 'Managed Desktop & VDI',
-        href: '/managed-desktop-vdi/',
+        href: '/managed-desktop-vdi',
         description: 'Secure virtual desktops your team can reach from any device, anywhere.',
       },
       {
         slug: 'cloud-hosting',
         label: 'Cloud Hosting',
-        href: '/cloud-hosting/',
+        href: '/cloud-hosting',
         description: 'Reliable, scalable hosting for your applications and infrastructure.',
       },
       {
         slug: 'cloud-services',
         label: 'Cloud Services Overview',
-        href: '/cloud-services/',
+        href: '/cloud-services',
         description: 'The full ITSco cloud program — migration, hosting, management, and more.',
       },
     ],

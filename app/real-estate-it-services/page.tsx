@@ -250,7 +250,7 @@ function CaseStudiesSection() {
               statLabel="and on budget"
               image="/images/case-studies/energy.jpg"
               imageAlt="Server infrastructure for an enterprise energy network"
-              href="/case-studies/network-automation/"
+              href="/case-studies/network-automation"
             />,
             <CaseStudyCard
               key="bank"
@@ -261,7 +261,7 @@ function CaseStudiesSection() {
               statLabel="employees across 250 offices"
               image="/images/case-studies/banking.jpg"
               imageAlt="Banking professional reviewing financial systems"
-              href="/case-studies/regional-bank/"
+              href="/case-studies/regional-bank"
             />,
             <CaseStudyCard
               key="srn"
@@ -272,7 +272,7 @@ function CaseStudiesSection() {
               statLabel="locations supported"
               image="/images/case-studies/healthcare.jpg"
               imageAlt="Healthcare facility powered by modern IT infrastructure"
-              href="/case-studies/southern-rehabilitation-network/"
+              href="/case-studies/southern-rehabilitation-network"
             />,
           ]}
         </StaggerChildren>
@@ -351,7 +351,7 @@ function RelatedServices() {
             slug="managed-it-services"
             title="Managed IT Services"
             description="Proactive monitoring, helpdesk, and network management. Predictable monthly cost. No in-house IT department required."
-            href="/managed-it-services/"
+            href="/managed-it-services"
             image="/images/supporting/services/berkeley-communications-WEDDt-u3q3o-unsplash.jpg"
             imageAlt="Helpdesk technician on the phone behind monitors"
           />
@@ -359,7 +359,7 @@ function RelatedServices() {
             slug="cybersecurity"
             title="Cybersecurity & MSSP"
             description="24/7 SOC monitoring, MDR, firewall management, and compliance programs that reduce your risk exposure before threats become incidents."
-            href="/cybersecurity/"
+            href="/cybersecurity"
             image="/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg"
             imageAlt="Security operations engineers reviewing code on multiple monitors"
           />
@@ -367,7 +367,7 @@ function RelatedServices() {
             slug="cloud-services"
             title="Cloud Services"
             description="Managed cloud, migration strategy, and Azure and AWS support that scales your infrastructure with your business."
-            href="/cloud-services/"
+            href="/cloud-services"
             image="/images/supporting/services/annie-spratt-sggw4-qDD54-unsplash-1024x702.jpg"
             imageAlt="Team collaborating around laptops in a modern workspace"
           />

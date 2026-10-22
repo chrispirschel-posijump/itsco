@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/itad',
   },
   serviceName: 'IT Asset Disposition (ITAD)',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Engineering · ITAD',
     headlineLead: 'Secure IT asset disposition,',
@@ -65,19 +65,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'asset-lifecycle-management',
         label: 'Asset Lifecycle Management',
-        href: '/asset-lifecycle-management/',
+        href: '/asset-lifecycle-management',
         description: 'End-to-end IT asset management — procurement through disposition.',
       },
       {
         slug: 'network-engineering',
         label: 'Network Engineering',
-        href: '/network-engineering/',
+        href: '/network-engineering',
         description: 'Modern, secure, high-performance networks designed for your business.',
       },
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
     ],

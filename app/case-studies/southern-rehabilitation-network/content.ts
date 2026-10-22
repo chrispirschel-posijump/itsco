@@ -110,7 +110,7 @@ export const CONTENT: CaseStudyContent = {
         "How ITSco's advanced networking enabled EmergeOrtho to operate mobile MRI scanners remotely — unlocking 40 extra scan hours per week and ~30–40% labor savings.",
       image: '/images/case-studies/healthcare.jpg',
       imageAlt: 'Healthcare imaging environment',
-      href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+      href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
     },
     {
       category: 'Financial Services',
@@ -119,7 +119,7 @@ export const CONTENT: CaseStudyContent = {
         'A century-old regional bank with 250+ offices and 2,800 employees turned to ITSco to modernize network management through Ansible-based automation.',
       image: '/images/case-studies/banking.jpg',
       imageAlt: 'Financial services environment',
-      href: '/case-studies/regional-bank/',
+      href: '/case-studies/regional-bank',
     },
     {
       category: 'Energy',
@@ -128,7 +128,7 @@ export const CONTENT: CaseStudyContent = {
         "After a multi-million-dollar breach, one of the world's largest oil companies brought in ITSco — via Red Hat — to stand up Ansible Tower and harden the network.",
       image: '/images/case-studies/energy.jpg',
       imageAlt: 'Energy industry infrastructure',
-      href: '/case-studies/network-automation/',
+      href: '/case-studies/network-automation',
     },
   ],
   bookingUtm: 'srn-it-innovation-bottom',

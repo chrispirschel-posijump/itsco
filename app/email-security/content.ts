@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/email-security',
   },
   serviceName: 'Email Security',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Email Security',
     headlineLead: 'Email security that stops',
@@ -66,19 +66,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
       {
         slug: 'cyber-risk-assessment',
         label: 'Cyber Risk Assessment',
-        href: '/cyber-risk-assessment/',
+        href: '/cyber-risk-assessment',
         description: 'Know exactly where your exposure is — and what to fix first.',
       },
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
     ],

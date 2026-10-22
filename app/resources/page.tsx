@@ -20,28 +20,28 @@ const RESOURCES = [
     title: 'ROI Guide',
     description:
       'Maximize ROI with Managed IT Services — our guide to turning IT spending into measurable business returns.',
-    href: '/maximize-roi-with-managed-it-services/',
+    href: '/maximize-roi-with-managed-it-services',
   },
   {
     slug: 'blog',
     title: 'Blog',
     description:
       'Practical articles on managed IT, cybersecurity, cloud, and getting more value from your technology.',
-    href: '/blog/',
+    href: '/blog',
   },
   {
     slug: 'case-studies',
     title: 'Case Studies',
     description:
       'Real results from real ITSco clients across healthcare, finance, manufacturing, and more.',
-    href: '/case-studies/',
+    href: '/case-studies',
   },
   {
     slug: 'white-papers',
     title: 'White Papers',
     description:
       'In-depth guidance on the technology decisions facing today’s business leaders.',
-    href: '/white-papers/',
+    href: '/white-papers',
   },
 ]
 

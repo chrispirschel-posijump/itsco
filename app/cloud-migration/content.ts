@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cloud-migration',
   },
   serviceName: 'Cloud Migration',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Migration',
     headlineLead: 'Cloud migration',
@@ -66,19 +66,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-cloud-services',
         label: 'Managed Cloud Services',
-        href: '/managed-cloud-services/',
+        href: '/managed-cloud-services',
         description: 'Ongoing management, monitoring, and optimization of your cloud environment.',
       },
       {
         slug: 'microsoft-azure-services',
         label: 'Microsoft Azure Services',
-        href: '/microsoft-azure-services/',
+        href: '/microsoft-azure-services',
         description: 'Migration, management, and optimization on Microsoft Azure.',
       },
       {
         slug: 'cloud-services',
         label: 'Cloud Services Overview',
-        href: '/cloud-services/',
+        href: '/cloud-services',
         description: 'The full ITSco cloud program — migration, hosting, management, and more.',
       },
     ],

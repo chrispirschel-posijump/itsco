@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/business-continuity-planning',
   },
   serviceName: 'Business Continuity Planning',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · Business Continuity',
     headlineLead: 'A plan for the day',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'backup-disaster-recovery',
         label: 'Backup & Disaster Recovery',
-        href: '/backup-disaster-recovery/',
+        href: '/backup-disaster-recovery',
         description: 'Automated backups and tested recovery that protect against data loss.',
       },
       {
         slug: 'it-assessments-strategies',
         label: 'IT Assessments & Strategies',
-        href: '/it-assessments-strategies/',
+        href: '/it-assessments-strategies',
         description: 'In-depth evaluations of infrastructure, security, and resilience.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

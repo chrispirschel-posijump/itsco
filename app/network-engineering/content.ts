@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/network-engineering',
   },
   serviceName: 'Network Engineering',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Engineering · Network Engineering',
     headlineLead: 'Networks engineered',
@@ -78,19 +78,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'systems-engineering',
         label: 'Systems Engineering',
-        href: '/systems-engineering/',
+        href: '/systems-engineering',
         description: 'Server and systems architecture engineered for reliability and scale.',
       },
       {
         slug: 'voip-unified-communications',
         label: 'VoIP & Unified Communications',
-        href: '/voip-unified-communications/',
+        href: '/voip-unified-communications',
         description: 'Secure, scalable business voice and collaboration solutions.',
       },
       {
         slug: 'managed-network-services',
         label: 'Managed Network Services',
-        href: '/managed-network-services/',
+        href: '/managed-network-services',
         description: 'Ongoing monitoring, management, and support for your network.',
       },
     ],

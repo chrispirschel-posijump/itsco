@@ -150,7 +150,7 @@ function Hero() {
               />
               <CTAButton
                 label="Discover the ROI"
-                href="/maximize-roi-with-managed-it-services/"
+                href="/maximize-roi-with-managed-it-services"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />
@@ -371,91 +371,91 @@ const SUB_SERVICES = [
     number: '01',
     title: 'Managed Network Services',
     description: 'Continuous monitoring, configuration, and management of your network infrastructure.',
-    href: '/managed-network-services/',
+    href: '/managed-network-services',
   },
   {
     number: '02',
     title: 'HelpDesk & Service Desk',
     description: 'Local, 24/7 support staffed by senior engineers who already know your environment.',
-    href: '/raleigh-it-helpdesk/',
+    href: '/raleigh-it-helpdesk',
   },
   {
     number: '03',
     title: 'Server Monitoring & Maintenance',
     description: 'Real-time server health monitoring, patch management, and performance tuning.',
-    href: '/server-monitoring-and-maintenance/',
+    href: '/server-monitoring-and-maintenance',
   },
   {
     number: '04',
     title: 'Backup & Disaster Recovery',
     description: 'Automated backups, tested recovery plans, and business continuity strategies that protect against the worst case.',
-    href: '/backup-disaster-recovery/',
+    href: '/backup-disaster-recovery',
   },
   {
     number: '05',
     title: 'Asset Lifecycle Management',
     description: 'Hardware tracking, refresh planning, and certified end-of-life data destruction.',
-    href: '/asset-lifecycle-management/',
+    href: '/asset-lifecycle-management',
   },
   {
     number: '06',
     title: 'Remote IT Support',
     description: 'Fast, efficient resolution for distributed teams. Most issues fixed without scheduling an on-site visit.',
-    href: '/remote-it-support/',
+    href: '/remote-it-support',
   },
   {
     number: '07',
     title: 'IT Staff Augmentation',
     description: 'Embedded engineers who supplement your in-house team during projects, transitions, or workload peaks.',
-    href: '/it-staff-augmentation/',
+    href: '/it-staff-augmentation',
   },
   {
     number: '08',
     title: 'Onsite IT Support',
     description: 'In-person engineering visits for hardware deployments, network builds, and complex troubleshooting that needs a body in the room.',
-    href: '/onsite-it-support-services/',
+    href: '/onsite-it-support-services',
   },
   {
     number: '09',
     title: 'Server Administration',
     description: 'Configuration, patching, and ongoing administration of physical and virtual servers across Windows and Linux estates.',
-    href: '/server-admin-and-support-services/',
+    href: '/server-admin-and-support-services',
   },
   {
     number: '10',
     title: 'Employee Onboarding & Offboarding',
     description: 'Standardized provisioning, access management, and deprovisioning workflows that keep your identity and data hygiene intact.',
-    href: '/employee-onboarding-offboarding/',
+    href: '/employee-onboarding-offboarding',
   },
   {
     number: '11',
     title: 'IT Procurement',
     description: 'Vendor-neutral procurement of hardware, software, and licenses — negotiated, deployed, and asset-tagged for you.',
-    href: '/it-procurement/',
+    href: '/it-procurement',
   },
   {
     number: '12',
     title: 'ITAD & Asset Disposal',
     description: 'Certified, secure IT asset disposition with chain-of-custody documentation and environmentally responsible recycling.',
-    href: '/itad/',
+    href: '/itad',
   },
   {
     number: '13',
     title: 'Network Engineering',
     description: 'Network architecture, segmentation, and high-availability design for offices, data centers, and hybrid environments.',
-    href: '/network-engineering/',
+    href: '/network-engineering',
   },
   {
     number: '14',
     title: 'Systems Engineering',
     description: 'Server, storage, and virtualization architecture engineered to scale with your business and your data.',
-    href: '/systems-engineering/',
+    href: '/systems-engineering',
   },
   {
     number: '15',
     title: 'VoIP & Unified Communications',
     description: 'Business phone systems, conferencing, and unified comms designed for hybrid teams and call-quality SLAs.',
-    href: '/voip-unified-communications/',
+    href: '/voip-unified-communications',
   },
 ]
 
@@ -634,7 +634,7 @@ function FAQSection() {
               </a>{" "}
               to discuss your needs. See the{" "}
               <Link
-                href="/maximize-roi-with-managed-it-services/"
+                href="/maximize-roi-with-managed-it-services"
                 className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
               >
                 ROI of managed IT services
@@ -690,7 +690,7 @@ function RelatedServices() {
             slug="cybersecurity"
             title="Cybersecurity & MSSP"
             description="24/7 SOC monitoring, MDR, firewall management, and compliance programs that reduce your risk exposure before threats become incidents."
-            href="/cybersecurity/"
+            href="/cybersecurity"
             image="/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg"
             imageAlt="Security operations engineers reviewing code on multiple monitors"
           />
@@ -698,7 +698,7 @@ function RelatedServices() {
             slug="cloud-services"
             title="Cloud Services"
             description="Managed cloud, migration strategy, and Azure and AWS support that scales your infrastructure with your business."
-            href="/cloud-services/"
+            href="/cloud-services"
             image="/images/supporting/services/annie-spratt-sggw4-qDD54-unsplash-1024x702.jpg"
             imageAlt="Team collaborating around laptops in a modern workspace"
           />
@@ -706,7 +706,7 @@ function RelatedServices() {
             slug="vcio-vcto-vciso-services"
             title="Strategy & Consulting"
             description="vCIO, vCTO, and vCISO engagements that align your technology roadmap with your business goals."
-            href="/it-management-consulting/"
+            href="/it-management-consulting"
             image="/images/supporting/services/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"
             imageAlt="Modern boardroom with floor-to-ceiling windows"
           />
