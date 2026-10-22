@@ -38,7 +38,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Impact on Data Centers',
       description:
         "How AI-powered robotics, drones, and predictive cooling are redefining data center operations.",
-      href: '/white-papers-ai-impact-on-data-centers/',
+      href: '/white-papers-ai-impact-on-data-centers',
     },
     {
       slug: 'flp-hyperscaler-monetization',
@@ -46,7 +46,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'FLP Hyperscaler Monetization',
       description:
         "Today's AI boom is grounded in real profits — not dot-com speculation. Where the real monetization opportunities sit.",
-      href: '/white-papers-flp-hyperscaler-monetization/',
+      href: '/white-papers-flp-hyperscaler-monetization',
     },
     {
       slug: 'esg-research-paper',
@@ -54,7 +54,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'ESG Research Paper: AI, Energy, and the Power Grid',
       description:
         'GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid.',
-      href: '/white-papers-esg-research-paper/',
+      href: '/white-papers-esg-research-paper',
     },
   ],
   relatedServices: [
@@ -63,21 +63,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'Cloud Services',
       description:
         'Managed cloud across public, private, and hybrid — migration, modernization, FinOps, and engineering.',
-      href: '/cloud-services/',
+      href: '/cloud-services',
     },
     {
       slug: 'managed-cloud-services',
       title: 'Managed Cloud Services',
       description:
         'Managed Azure, AWS, and hybrid cloud — with the engineering depth modern workloads require.',
-      href: '/managed-cloud-services/',
+      href: '/managed-cloud-services',
     },
     {
       slug: 'microsoft-solutions',
       title: 'Microsoft Solutions',
       description:
         'Microsoft 365, Azure, SharePoint, Teams, Sentinel — the full Microsoft stack, managed end-to-end.',
-      href: '/microsoft-solutions/',
+      href: '/microsoft-solutions',
     },
   ],
   bookingUtm: 'wp-public-private-cloud',

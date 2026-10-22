@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-roi-assessment',
   },
   serviceName: 'IT ROI Assessment',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · IT ROI',
     headlineLead: 'Maximize your IT investments',
@@ -73,19 +73,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'it-assessments-strategies',
         label: 'IT Assessments & Strategies',
-        href: '/it-assessments-strategies/',
+        href: '/it-assessments-strategies',
         description: 'In-depth evaluations of infrastructure, security, and compliance.',
       },
       {
         slug: 'maximize-roi-with-managed-it-services',
         label: 'The ROI of Managed IT',
-        href: '/maximize-roi-with-managed-it-services/',
+        href: '/maximize-roi-with-managed-it-services',
         description: 'How ITSco measures and proves the return on managed IT, every quarter.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

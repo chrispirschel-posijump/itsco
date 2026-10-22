@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cyber-risk-assessment',
   },
   serviceName: 'Cyber Risk Assessment',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Risk Assessment',
     headlineLead: 'Cyber risk assessment —',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'security-audits-compliance',
         label: 'Security Audits & Compliance',
-        href: '/security-audits-compliance/',
+        href: '/security-audits-compliance',
         description: 'In-depth audits and remediation roadmaps that keep you compliant.',
       },
       {
         slug: 'penetration-testing-services',
         label: 'Penetration Testing',
-        href: '/penetration-testing-services/',
+        href: '/penetration-testing-services',
         description: 'Real-world attack simulations that surface weaknesses before attackers do.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],

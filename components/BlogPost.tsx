@@ -67,27 +67,27 @@ function parseInline(text: string): React.ReactNode[] {
 const TOPIC_CTA: Record<string, { text: string; href: string; label: string }> = {
   Cybersecurity: {
     text: 'Concerned about your security posture?',
-    href: '/cybersecurity/',
+    href: '/cybersecurity',
     label: 'Explore Cybersecurity Services',
   },
   'Managed IT': {
     text: 'Ready for proactive, predictable IT?',
-    href: '/managed-it-services/',
+    href: '/managed-it-services',
     label: 'Explore Managed IT Services',
   },
   Cloud: {
     text: 'Planning a move to the cloud?',
-    href: '/cloud-services/',
+    href: '/cloud-services',
     label: 'Explore Cloud Services',
   },
   'Business Insights': {
     text: 'Want to make IT a business advantage?',
-    href: '/services/',
+    href: '/services',
     label: 'Explore Our Services',
   },
   AI: {
     text: 'Ready to make AI a measurable advantage?',
-    href: '/ai-automation/',
+    href: '/ai-automation',
     label: 'Explore AI Services',
   },
 }
@@ -337,7 +337,7 @@ function RelatedPosts({ slug }: { slug: string }) {
               slug="blog"
               title={p.title}
               description={p.excerpt}
-              href={`/blog/${p.slug}/`}
+              href={`/blog/${p.slug}`}
               image={p.heroImage}
               imageAlt={p.title}
             />

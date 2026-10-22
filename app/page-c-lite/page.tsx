@@ -246,7 +246,7 @@ export default function PageCLite() {
                 />
                 <CTAButton
                   label="Learn About Our Process"
-                  href="/process/"
+                  href="/process"
                   variant="secondary"
                   className="px-8 py-4 rounded-xl text-base"
                 />

@@ -188,7 +188,7 @@ function HomeHero() {
               />
               <CTAButton
                 label="Discover the ROI"
-                href="/maximize-roi-with-managed-it-services/"
+                href="/maximize-roi-with-managed-it-services"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />
@@ -239,37 +239,37 @@ const SERVICES = [
     number: '01',
     title: 'Network & Systems Engineering',
     description: 'LAN and WAN design, deployment, and management. Windows and *Nix engineering and administration.',
-    href: '/network-engineering/',
+    href: '/network-engineering',
   },
   {
     number: '02',
     title: 'DevOps Services',
     description: 'DevOps transformations for enterprise and community environments. Automation, orchestration, and containerization.',
-    href: '/ai-automation/',
+    href: '/ai-automation',
   },
   {
     number: '03',
     title: 'Integrated Services',
     description: 'Data storage, data management, and data security. Vulnerability audits and remediation. Disaster recovery solutions.',
-    href: '/backup-disaster-recovery/',
+    href: '/backup-disaster-recovery',
   },
   {
     number: '04',
     title: 'Managed Services',
     description: 'Remote monitoring and management of IT systems and networks. Automated patching and upgrades. Help desk services and proactive support.',
-    href: '/managed-it-services/',
+    href: '/managed-it-services',
   },
   {
     number: '05',
     title: 'Managed Security Services (MSSP)',
     description: 'Multi-level defense strategies. Active threat detection and response. SIEM and SOC services. Vulnerability scanning, secure access controls, and security awareness training.',
-    href: '/cybersecurity/',
+    href: '/cybersecurity',
   },
   {
     number: '06',
     title: 'Executive Consulting',
     description: 'Fractional and interim CIO/CTO services. Strategic planning, risk mitigation, and business continuity planning.',
-    href: '/vcio-vcto-vciso-services/',
+    href: '/vcio-vcto-vciso-services',
   },
 ]
 
@@ -392,7 +392,7 @@ function CaseStudiesSection() {
               statLabel="extra MRI capacity per week, per truck"
               image="/images/case-studies/healthcare.jpg"
               imageAlt="Healthcare imaging environment — remote MRI operations"
-              href="/case-studies/emerge-ortho-mobile-mri-remote-operations/"
+              href="/case-studies/emerge-ortho-mobile-mri-remote-operations"
             />,
             <CaseStudyCard
               key="oil"
@@ -403,7 +403,7 @@ function CaseStudiesSection() {
               statLabel="and on budget"
               image="/images/case-studies/energy.jpg"
               imageAlt="Server infrastructure for an enterprise energy network"
-              href="/case-studies/network-automation/"
+              href="/case-studies/network-automation"
             />,
             <CaseStudyCard
               key="bank"
@@ -414,7 +414,7 @@ function CaseStudiesSection() {
               statLabel="employees across 250 offices"
               image="/images/case-studies/banking.jpg"
               imageAlt="Banking professional reviewing financial systems"
-              href="/case-studies/regional-bank/"
+              href="/case-studies/regional-bank"
             />,
             <CaseStudyCard
               key="srn"
@@ -425,7 +425,7 @@ function CaseStudiesSection() {
               statLabel="locations supported"
               image="/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg"
               imageAlt="Healthcare provider with tablet — IT modernization"
-              href="/case-studies/southern-rehabilitation-network/"
+              href="/case-studies/southern-rehabilitation-network"
             />,
           ]}
         </StaggerChildren>
@@ -479,10 +479,10 @@ function IndustriesSection() {
 
         <StaggerChildren stagger={100} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            <IndustryCard key="hc" slug="healthcare-managed-it-services" title="Healthcare" description="HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. EmergeOrtho trusts ITSco across 14 locations." href="/healthcare-managed-it-services/" />,
-            <IndustryCard key="lg" slug="legal-and-law-firm-it-services" title="Legal" description="Secure, reliable IT for law firms that can't afford downtime or data breaches. Built with the confidentiality standards your practice requires." href="/legal-and-law-firm-it-services/" />,
-            <IndustryCard key="bf" slug="financial-services-it" title="Financial Services" description="SOC 2, PCI-DSS, and FFIEC-aligned managed IT and cybersecurity for banks, credit unions, RIAs, and private equity firms in the Southeast." href="/financial-services-it/" />,
-            <IndustryCard key="mf" slug="manufacturing-it" title="Manufacturing" description="OT/IT convergence, plant floor connectivity, ERP support, and network security engineered for manufacturers who can't afford unplanned downtime." href="/manufacturing-it/" />,
+            <IndustryCard key="hc" slug="healthcare-managed-it-services" title="Healthcare" description="HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. EmergeOrtho trusts ITSco across 14 locations." href="/healthcare-managed-it-services" />,
+            <IndustryCard key="lg" slug="legal-and-law-firm-it-services" title="Legal" description="Secure, reliable IT for law firms that can't afford downtime or data breaches. Built with the confidentiality standards your practice requires." href="/legal-and-law-firm-it-services" />,
+            <IndustryCard key="bf" slug="financial-services-it" title="Financial Services" description="SOC 2, PCI-DSS, and FFIEC-aligned managed IT and cybersecurity for banks, credit unions, RIAs, and private equity firms in the Southeast." href="/financial-services-it" />,
+            <IndustryCard key="mf" slug="manufacturing-it" title="Manufacturing" description="OT/IT convergence, plant floor connectivity, ERP support, and network security engineered for manufacturers who can't afford unplanned downtime." href="/manufacturing-it" />,
           ]}
         </StaggerChildren>
 
@@ -555,7 +555,7 @@ export default function HomePage() {
             }}
             secondaryCTA={{
               label: 'Get an AI Readiness Assessment',
-              href: '/ai-readiness-assessment/',
+              href: '/ai-readiness-assessment',
               variant: 'secondary',
             }}
           />

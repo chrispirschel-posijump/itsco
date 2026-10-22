@@ -162,7 +162,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'employees across 250 offices',
         image: '/images/case-studies/banking.jpg',
         imageAlt: 'Banking professional reviewing financial systems',
-        href: '/case-studies/regional-bank/',
+        href: '/case-studies/regional-bank',
       },
       {
         key: 'oil',
@@ -174,7 +174,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'and on budget',
         image: '/images/case-studies/energy.jpg',
         imageAlt: 'Server infrastructure for an enterprise energy network',
-        href: '/case-studies/network-automation/',
+        href: '/case-studies/network-automation',
       },
       {
         key: 'srn',
@@ -186,7 +186,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'certification earned',
         image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
         imageAlt: 'Healthcare provider with tablet — IT modernization',
-        href: '/case-studies/southern-rehabilitation-network/',
+        href: '/case-studies/southern-rehabilitation-network',
       },
     ],
   },
@@ -241,7 +241,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, SIEM, and compliance programs engineered to the threats and frameworks large organizations answer to.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -250,7 +250,7 @@ export const CONTENT: IndustryContent = {
       title: 'Managed Network Services',
       description:
         'Multi-site network design, monitoring, and management — one operational picture across every location.',
-      href: '/managed-network-services/',
+      href: '/managed-network-services',
       image: '/images/supporting/services/network-services.jpg',
       imageAlt: 'Network operations supporting multi-site connectivity',
     },
@@ -259,7 +259,7 @@ export const CONTENT: IndustryContent = {
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership — embedded with your team, accountable to your board.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
       image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
       imageAlt: 'Executive advisors meeting with a leadership team',
     },

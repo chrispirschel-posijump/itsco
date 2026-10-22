@@ -38,7 +38,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'To What Extent Should We Trust “Zero Trust Architecture”?',
       description:
         'The cost of Zero Trust implementation, the size of the long-term security savings, and the case for ZTA across organizations of every size.',
-      href: '/white-papers-zero-trust-architecture/',
+      href: '/white-papers-zero-trust-architecture',
     },
     {
       slug: 'legal-repercussions-of-ai-implementation',
@@ -46,7 +46,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Legal Repercussions of AI Implementation',
       description:
         'The expanding regulatory landscape around AI-driven breaches, and what it means for cybersecurity, ITAD, and data destruction.',
-      href: '/white-papers-legal-repercussions-of-ai-implementation/',
+      href: '/white-papers-legal-repercussions-of-ai-implementation',
     },
     {
       slug: 'ai-impact-on-data-centers',
@@ -54,7 +54,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Impact on Data Centers',
       description:
         "How AI-powered robotics, drones, and predictive cooling redefine data center operations — where 70% of errors are human-driven.",
-      href: '/white-papers-ai-impact-on-data-centers/',
+      href: '/white-papers-ai-impact-on-data-centers',
     },
   ],
   relatedServices: [
@@ -63,21 +63,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'Managed SOC & MDR',
       description:
         '24/7 AI-augmented detection, investigation, and response — senior analysts triaging real signal across SIEM, EDR, identity, and cloud.',
-      href: '/managed-soc/',
+      href: '/managed-soc',
     },
     {
       slug: 'cybersecurity',
       title: 'Cybersecurity & Compliance',
       description:
         'The full ITSco cybersecurity program — SOC, MDR, MFA, SIEM, vulnerability management, and continuous compliance posture.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
     },
     {
       slug: 'ai-governance',
       title: 'AI Governance',
       description:
         'Policy, control, and oversight frameworks that keep AI adoption aligned with your security and compliance obligations.',
-      href: '/ai-governance/',
+      href: '/ai-governance',
     },
   ],
   bookingUtm: 'wp-ai-threat-detection',

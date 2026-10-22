@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/onsite-it-support-services',
   },
   serviceName: 'On-Site IT Support',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · On-Site Support',
     headlineLead: 'On-site IT support when the job',
@@ -100,19 +100,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
       {
         slug: 'remote-it-support',
         label: 'Remote IT Support',
-        href: '/remote-it-support/',
+        href: '/remote-it-support',
         description: 'Fast, senior-staffed remote support that resolves most issues in minutes.',
       },
       {
         slug: 'managed-network-services',
         label: 'Managed Network Services',
-        href: '/managed-network-services/',
+        href: '/managed-network-services',
         description: 'Proactive monitoring, design, and support across your entire network.',
       },
     ],

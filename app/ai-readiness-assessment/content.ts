@@ -213,7 +213,7 @@ export const RELATED = [
     title: 'AI Strategy Consulting',
     description:
       'Once the assessment is complete, build the phased roadmap, governance framework, and vendor selection that turn AI into a measurable business advantage.',
-    href: '/ai-strategy-consulting/',
+    href: '/ai-strategy-consulting',
     image: '/images/supporting/services/nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg',
     imageAlt: 'Executive AI strategy session',
   },
@@ -222,7 +222,7 @@ export const RELATED = [
     title: 'AI Governance',
     description:
       'The policy, control, and oversight frameworks that keep AI adoption aligned with your security, compliance, and ethical obligations.',
-    href: '/ai-governance/',
+    href: '/ai-governance',
     image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
     imageAlt: 'AI governance review',
   },
@@ -231,7 +231,7 @@ export const RELATED = [
     title: 'vCIO, vCTO, vCISO & vCAIO',
     description:
       'Ongoing virtual executive leadership — including vCAIO for organizations that want AI direction continuously, not project-by-project.',
-    href: '/vcio-vcto-vciso-services/',
+    href: '/vcio-vcto-vciso-services',
     image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
     imageAlt: 'Virtual executive leadership advising a leadership team',
   },

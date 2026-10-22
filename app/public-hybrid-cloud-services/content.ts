@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/public-hybrid-cloud-services',
   },
   serviceName: 'Public & Hybrid Cloud Services',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Public & Hybrid',
     headlineLead: 'Public and hybrid cloud,',
@@ -66,19 +66,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'cloud-hosting',
         label: 'Cloud Hosting',
-        href: '/cloud-hosting/',
+        href: '/cloud-hosting',
         description: 'Reliable, scalable hosting for your applications and infrastructure.',
       },
       {
         slug: 'private-cloud-services',
         label: 'Private Cloud Services',
-        href: '/private-cloud-services/',
+        href: '/private-cloud-services',
         description: 'Dedicated, single-tenant cloud for sensitive workloads and tight control.',
       },
       {
         slug: 'cloud-services',
         label: 'Cloud Services Overview',
-        href: '/cloud-services/',
+        href: '/cloud-services',
         description: 'The full ITSco cloud program — migration, hosting, management, and more.',
       },
     ],

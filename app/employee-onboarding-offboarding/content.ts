@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/employee-onboarding-offboarding',
   },
   serviceName: 'Employee IT Onboarding & Offboarding',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Onboarding & Offboarding',
     headlineLead: 'IT onboarding and offboarding,',
@@ -100,19 +100,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
       {
         slug: 'remote-it-support',
         label: 'Remote IT Support',
-        href: '/remote-it-support/',
+        href: '/remote-it-support',
         description: 'Fast, senior-staffed remote support that resolves most issues in minutes.',
       },
       {
         slug: 'asset-lifecycle-management',
         label: 'Asset Lifecycle Management',
-        href: '/asset-lifecycle-management/',
+        href: '/asset-lifecycle-management',
         description: 'Procurement, deployment, and secure end-of-life disposition for IT assets.',
       },
     ],

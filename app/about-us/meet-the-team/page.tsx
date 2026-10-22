@@ -182,7 +182,7 @@ function Philosophy() {
               ))}
               <p className="mt-6 text-base md:text-lg text-itsco-body leading-relaxed">
                 Curious about the discipline behind every engagement? Read about{' '}
-                <Link href="/process/" className={linkClass}>
+                <Link href="/process" className={linkClass}>
                   our process
                 </Link>
                 , or{' '}

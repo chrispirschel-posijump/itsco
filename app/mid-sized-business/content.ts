@@ -164,7 +164,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'certification earned',
         image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
         imageAlt: 'Healthcare provider with tablet — IT modernization',
-        href: '/case-studies/southern-rehabilitation-network/',
+        href: '/case-studies/southern-rehabilitation-network',
       },
       {
         key: 'bank',
@@ -176,7 +176,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'employees across 250 offices',
         image: '/images/case-studies/banking.jpg',
         imageAlt: 'Banking professional reviewing financial systems',
-        href: '/case-studies/regional-bank/',
+        href: '/case-studies/regional-bank',
       },
       {
         key: 'emergeortho',
@@ -188,7 +188,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'extra capacity per week, per truck',
         image: '/images/case-studies/healthcare.jpg',
         imageAlt: 'Healthcare imaging environment — remote MRI operations',
-        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
       },
     ],
   },
@@ -243,7 +243,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, identity-led access, and continuous compliance — the managed cybersecurity services mid-sized firms need.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -252,7 +252,7 @@ export const CONTENT: IndustryContent = {
       title: 'Managed IT Services',
       description:
         'Proactive monitoring, helpdesk, and infrastructure management on a predictable monthly fee — the foundation of every engagement.',
-      href: '/managed-it-services/',
+      href: '/managed-it-services',
       image: '/images/supporting/services/berkeley-communications-WEDDt-u3q3o-unsplash.jpg',
       imageAlt: 'Helpdesk engineer supporting users',
     },
@@ -261,7 +261,7 @@ export const CONTENT: IndustryContent = {
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership for firms that need executive expertise without a full-time hire.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
       image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
       imageAlt: 'Executive advisors meeting with a leadership team',
     },

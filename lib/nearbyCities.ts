@@ -73,7 +73,7 @@ const ADJACENCY: Record<string, readonly string[]> = {
 // that city, so the "Nearby cities" section can deep-link into the same
 // service-class page when one exists for the neighbor city. Falls back to the
 // neighbor's `/managed-it-services-<slug>/` URL.
-const DEFAULT_HREF = (slug: string) => `/managed-it-services-${slug}/`
+const DEFAULT_HREF = (slug: string) => `/managed-it-services-${slug}`
 
 // Returns the list of nearby cities for a given slug, mapped to {name, slug, href}.
 // Pass a `hrefBuilder` to point links at a service variant (e.g. cybersecurity)

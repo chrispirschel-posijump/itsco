@@ -40,7 +40,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Implementing AI Tools to Prevent Data Breaches and Enhance Security',
       description:
         'How AI-driven security tools mitigate breach risk and reduce per-incident cost by an average of $2.22M.',
-      href: '/white-papers-ai-tools-for-threat-detection/',
+      href: '/white-papers-ai-tools-for-threat-detection',
     },
     {
       slug: 'legal-repercussions-of-ai-implementation',
@@ -48,7 +48,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Legal Repercussions of AI Implementation',
       description:
         'Data breaches peaked at 3,205 in 2023 — a 43.8% jump from 2022. The expanding AI regulatory landscape.',
-      href: '/white-papers-legal-repercussions-of-ai-implementation/',
+      href: '/white-papers-legal-repercussions-of-ai-implementation',
     },
     {
       slug: 'public-vs-private-cloud',
@@ -56,7 +56,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Public vs Private Cloud',
       description:
         "AI's growth is driving tech companies toward public cloud services. A comparative analysis of where each model fits.",
-      href: '/white-papers-public-vs-private-cloud/',
+      href: '/white-papers-public-vs-private-cloud',
     },
   ],
   relatedServices: [
@@ -65,21 +65,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'Zero Trust Security',
       description:
         'ITSco-managed Zero Trust deployment — identity, micro-segmentation, conditional access, and continuous verification.',
-      href: '/zero-trust-security/',
+      href: '/zero-trust-security',
     },
     {
       slug: 'cybersecurity',
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, identity-led access, and continuous compliance — the full ITSco cybersecurity program.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
     },
     {
       slug: 'managed-soc',
       title: 'Managed SOC & MDR',
       description:
         'Senior analysts triaging real signal across SIEM, EDR/XDR, identity, network, and cloud — 24/7.',
-      href: '/managed-soc/',
+      href: '/managed-soc',
     },
   ],
   bookingUtm: 'wp-zero-trust',

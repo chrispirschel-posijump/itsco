@@ -25,7 +25,7 @@ const CASE_STUDIES = [
     statLabel: 'Extra MRI scanning per week, per truck',
     image: '/images/case-studies/healthcare.jpg',
     imageAlt: 'Healthcare imaging environment',
-    href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+    href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
   },
   {
     slug: 'southern-rehabilitation-network',
@@ -35,7 +35,7 @@ const CASE_STUDIES = [
       'Southern Rehabilitation Network (SRN), a long-time customer for whom we provide managed services, needed a major update to its computing infrastructure and cybersecurity practices to support its bid for a critical contract with the State of North Carolina.',
     image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
     imageAlt: 'Healthcare provider with tablet — IT modernization',
-    href: '/case-studies/southern-rehabilitation-network/',
+    href: '/case-studies/southern-rehabilitation-network',
   },
   {
     slug: 'regional-bank',
@@ -47,7 +47,7 @@ const CASE_STUDIES = [
     statLabel: 'In assets under management',
     image: '/images/case-studies/banking.jpg',
     imageAlt: 'Financial services environment',
-    href: '/case-studies/regional-bank/',
+    href: '/case-studies/regional-bank',
   },
   {
     slug: 'network-automation',
@@ -57,7 +57,7 @@ const CASE_STUDIES = [
       "As one of the world's largest oil companies, the subject of this case study is under almost constant attack by cyber criminals and state actors who wish to disrupt western economies for financial and political gain.",
     image: '/images/case-studies/energy.jpg',
     imageAlt: 'Energy industry infrastructure',
-    href: '/case-studies/network-automation/',
+    href: '/case-studies/network-automation',
   },
 ]
 

@@ -17,7 +17,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/ai-strategy-consulting',
   },
   serviceName: 'AI Strategy Consulting',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · AI Strategy Consulting',
     headlineLead: 'AI you can actually use —',
@@ -109,28 +109,28 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'vcaio-leadership',
         label: 'vCIO, vCTO, vCISO & vCAIO Services',
-        href: '/vcio-vcto-vciso-services/',
+        href: '/vcio-vcto-vciso-services',
         description:
           'Ongoing virtual executive leadership — including a vCAIO for organizations that need AI direction continuously, not project-by-project.',
       },
       {
         slug: 'ai-governance',
         label: 'AI Governance',
-        href: '/ai-governance/',
+        href: '/ai-governance',
         description:
           'The policy, control, and oversight frameworks that keep AI adoption aligned with your security and compliance obligations.',
       },
       {
         slug: 'ai-readiness-assessment',
         label: 'AI Readiness Assessment',
-        href: '/ai-readiness-assessment/',
+        href: '/ai-readiness-assessment',
         description:
           'A focused readiness evaluation — data, security, infrastructure, and skills — before you commit to a full AI roadmap.',
       },
       {
         slug: 'ai-automation',
         label: 'AI & Automation Overview',
-        href: '/ai-automation/',
+        href: '/ai-automation',
         description:
           'The full ITSco AI program — strategy, governance, automation, and adoption.',
       },

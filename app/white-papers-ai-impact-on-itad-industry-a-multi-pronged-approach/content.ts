@@ -40,7 +40,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Hardware Dumping in Africa',
       description:
         'As the Global North advances, Africa bears the burden of e-waste dumping — the case for sustainable ITAD practices.',
-      href: '/white-papers-hardware-dumping-in-africa/',
+      href: '/white-papers-hardware-dumping-in-africa',
     },
     {
       slug: 'recycling-and-reuse-in-hyperscalers',
@@ -48,7 +48,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Recycling and Reuse in Hyperscalers: Sustainable Asset Management',
       description:
         'How Microsoft, Amazon, and Google use circular economy practices to reduce e-waste.',
-      href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management/',
+      href: '/white-papers-recycling-and-reuse-in-hyperscalers-sustainable-asset-management',
     },
     {
       slug: 'tpm',
@@ -56,7 +56,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Spending and ESG Pressures Drive Demand for TPM',
       description:
         'Why AI capex pressure and ESG mandates are accelerating the move away from OEM-only support.',
-      href: '/white-papers-tpm/',
+      href: '/white-papers-tpm',
     },
   ],
   relatedServices: [
@@ -65,21 +65,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'IT Asset Disposition',
       description:
         'Certified, secure, audit-ready disposition — chain of custody, data destruction, recycling, and reuse.',
-      href: '/itad/',
+      href: '/itad',
     },
     {
       slug: 'ai-automation',
       title: 'AI & Automation',
       description:
         "Practical AI deployment — process automation, AI-augmented IT operations, and adoption tied to measurable outcomes.",
-      href: '/ai-automation/',
+      href: '/ai-automation',
     },
     {
       slug: 'security-event-remediation-ip-protection',
       title: 'Security Event Remediation & IP Protection',
       description:
         'Incident response, evidence preservation, and IP protection — critical capabilities when AI is part of the attack surface.',
-      href: '/security-event-remediation-ip-protection/',
+      href: '/security-event-remediation-ip-protection',
     },
   ],
   bookingUtm: 'wp-ai-itad',

@@ -321,43 +321,43 @@ const SUB_SERVICES = [
     number: '01',
     title: 'Microsoft 365 Services',
     description: 'Deployment, management, security, and licensing across the full 365 suite.',
-    href: '/microsoft-365-services/',
+    href: '/microsoft-365-services',
   },
   {
     number: '02',
     title: 'Microsoft Azure Services',
     description: 'Migration, management, and optimization on Microsoft Azure by certified experts.',
-    href: '/microsoft-azure-services/',
+    href: '/microsoft-azure-services',
   },
   {
     number: '03',
     title: 'Microsoft Teams Services',
     description: 'Teams set up and managed as a real collaboration and communication hub.',
-    href: '/microsoft-teams-services/',
+    href: '/microsoft-teams-services',
   },
   {
     number: '04',
     title: 'Microsoft Exchange Services',
     description: 'Secure, reliable business email — deployment, migration, and management.',
-    href: '/microsoft-exchange-services/',
+    href: '/microsoft-exchange-services',
   },
   {
     number: '05',
     title: 'Microsoft SharePoint Services',
     description: 'Document management and collaboration, optimized, secured, and adopted.',
-    href: '/microsoft-sharepoint-services/',
+    href: '/microsoft-sharepoint-services',
   },
   {
     number: '06',
     title: 'Microsoft Copilot',
     description: 'A secure Copilot rollout — readiness, data governance, and real adoption.',
-    href: '/microsoft-copilot/',
+    href: '/microsoft-copilot',
   },
   {
     number: '07',
     title: 'Microsoft Sentinel',
     description: "Microsoft's cloud SIEM, deployed and monitored as a managed security service.",
-    href: '/microsoft-sentinel/',
+    href: '/microsoft-sentinel',
   },
 ]
 
@@ -511,7 +511,7 @@ function RelatedServices() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <Link
-            href="/cloud-services/"
+            href="/cloud-services"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Cloud Services</h3>
@@ -524,7 +524,7 @@ function RelatedServices() {
             </span>
           </Link>
           <Link
-            href="/cybersecurity/"
+            href="/cybersecurity"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Cybersecurity & MSSP</h3>
@@ -537,7 +537,7 @@ function RelatedServices() {
             </span>
           </Link>
           <Link
-            href="/managed-it-services/"
+            href="/managed-it-services"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Managed IT Services</h3>

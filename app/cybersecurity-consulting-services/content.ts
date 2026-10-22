@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cybersecurity-consulting-services',
   },
   serviceName: 'Cybersecurity Consulting',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Consulting',
     headlineLead: 'Cybersecurity consulting',
@@ -68,19 +68,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
       {
         slug: 'security-audits-compliance',
         label: 'Security Audits & Compliance',
-        href: '/security-audits-compliance/',
+        href: '/security-audits-compliance',
         description: 'In-depth audits and remediation roadmaps that keep you compliant.',
       },
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
     ],

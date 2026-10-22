@@ -16,7 +16,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/asset-lifecycle-management',
   },
   serviceName: 'Asset Lifecycle Management',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Asset Management',
     headlineLead: 'Asset lifecycle management,',
@@ -76,19 +76,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-network-services',
         label: 'Managed Network Services',
-        href: '/managed-network-services/',
+        href: '/managed-network-services',
         description: 'Proactive monitoring, design, and support across your entire network.',
       },
       {
         slug: 'server-monitoring-and-maintenance',
         label: 'Server Monitoring & Maintenance',
-        href: '/server-monitoring-and-maintenance/',
+        href: '/server-monitoring-and-maintenance',
         description: '24/7 monitoring, patching, and tuning that keeps critical servers healthy.',
       },
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
     ],

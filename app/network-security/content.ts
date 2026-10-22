@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/network-security',
   },
   serviceName: 'Network Security',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Network Security',
     headlineLead: 'Network security that protects',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'ids-ips',
         label: 'IDS/IPS',
-        href: '/ids-ips/',
+        href: '/ids-ips',
         description: 'Intrusion detection and prevention that catches what others miss.',
       },
       {
         slug: 'managed-firewall',
         label: 'Managed Firewall',
-        href: '/managed-firewall/',
+        href: '/managed-firewall',
         description: 'Properly configured, monitored firewalls as a reliable first line of defense.',
       },
       {
         slug: 'endpoint-security',
         label: 'Endpoint Security',
-        href: '/endpoint-security/',
+        href: '/endpoint-security',
         description: 'Protection for every laptop, desktop, server, and mobile device.',
       },
     ],

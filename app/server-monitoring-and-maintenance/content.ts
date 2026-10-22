@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/server-monitoring-and-maintenance',
   },
   serviceName: 'Server Monitoring & Maintenance',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Server Services',
     headlineLead: 'Server monitoring and maintenance',
@@ -92,19 +92,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-network-services',
         label: 'Managed Network Services',
-        href: '/managed-network-services/',
+        href: '/managed-network-services',
         description: 'Proactive monitoring, design, and support across your entire network.',
       },
       {
         slug: 'backup-disaster-recovery',
         label: 'Backup & Disaster Recovery',
-        href: '/backup-disaster-recovery/',
+        href: '/backup-disaster-recovery',
         description: 'Automated backups and tested recovery plans that protect against the worst case.',
       },
       {
         slug: 'hardware-software-support',
         label: 'Server Administration & Support',
-        href: '/server-admin-and-support-services/',
+        href: '/server-admin-and-support-services',
         description: 'End-to-end server administration backed by certified engineers, 24/7.',
       },
     ],

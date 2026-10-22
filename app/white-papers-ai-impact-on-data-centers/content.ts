@@ -39,7 +39,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Public vs Private Cloud',
       description:
         "AI's growth is driving tech companies toward public cloud services that offer the scalability private clouds can't match.",
-      href: '/white-papers-public-vs-private-cloud/',
+      href: '/white-papers-public-vs-private-cloud',
     },
     {
       slug: 'esg-research-paper',
@@ -47,7 +47,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'ESG Research Paper: AI, Energy, and the Power Grid',
       description:
         "GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid.",
-      href: '/white-papers-esg-research-paper/',
+      href: '/white-papers-esg-research-paper',
     },
     {
       slug: 'ai-impact-on-itad',
@@ -55,7 +55,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach',
       description:
         'AI can turn IT asset disposition from a crisis into an opportunity — improved decommissioning, lifecycle planning, and secure destruction.',
-      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach/',
+      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach',
     },
   ],
   relatedServices: [
@@ -64,21 +64,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'Managed Cloud Services',
       description:
         'Managed Azure, AWS, and hybrid cloud — with the engineering depth modern data center workloads require.',
-      href: '/managed-cloud-services/',
+      href: '/managed-cloud-services',
     },
     {
       slug: 'ai-automation',
       title: 'AI & Automation',
       description:
         "Practical AI deployment — from process automation to AI-augmented IT operations — tied to measurable business outcomes.",
-      href: '/ai-automation/',
+      href: '/ai-automation',
     },
     {
       slug: 'cloud-services',
       title: 'Cloud Services',
       description:
         'The full ITSco cloud program — migration, modernization, FinOps, and ongoing management.',
-      href: '/cloud-services/',
+      href: '/cloud-services',
     },
   ],
   bookingUtm: 'wp-ai-data-centers',

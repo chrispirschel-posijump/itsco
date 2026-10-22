@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-due-diligence-mergers-acquisitions',
   },
   serviceName: 'IT Due Diligence for M&A',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · M&A Due Diligence',
     headlineLead: 'IT due diligence that',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'tech-due-diligence-for-businesses',
         label: 'Technology Due Diligence',
-        href: '/tech-due-diligence-for-businesses/',
+        href: '/tech-due-diligence-for-businesses',
         description: 'Clear, actionable technology assessment for investors and acquirers.',
       },
       {
         slug: 'it-assessments-strategies',
         label: 'IT Assessments & Strategies',
-        href: '/it-assessments-strategies/',
+        href: '/it-assessments-strategies',
         description: 'In-depth evaluations of infrastructure, security, and compliance.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-firewall',
   },
   serviceName: 'Managed Firewall',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Managed Firewall',
     headlineLead: 'Managed firewall —',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'ids-ips',
         label: 'IDS/IPS',
-        href: '/ids-ips/',
+        href: '/ids-ips',
         description: 'Intrusion detection and prevention that catches what others miss.',
       },
       {
         slug: 'network-security',
         label: 'Network Security',
-        href: '/network-security/',
+        href: '/network-security',
         description: 'End-to-end protection for the network your business runs on.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],
