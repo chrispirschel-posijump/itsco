@@ -7,7 +7,7 @@ export const SOURCE_URL = "https://www.itsco.com/about-us/meet-the-team"
 
 export const SOURCE_PARAGRAPHS = [
   /* 00 */ "Discover the people working behind the scenes, striving to make your IT perform at peak efficiency—24/7.",
-  /* 01 */ "Every high-functioning organization is built on great people. And ITSco’s success over the last 25+ years is built on an incredible team of motivated and talented individuals. People who are committed to each other, to our customers and to our founding principles of integrity, transparency, and engineering excellence.",
+  /* 01 */ "Every high-functioning organization is built on great people. And ITSco’s success over the last 30 years is built on an incredible team of motivated and talented individuals. People who are committed to each other, to our customers and to our founding principles of integrity, transparency, and engineering excellence.",
   /* 02 */ "This commitment is reflected and amplified by our senior leadership team, all of whom have many years of experience managing people and projects in service to our customers and an unwavering dedication to our core values.",
   /* 03 */ "We love what we do, and it shows!",
   /* 04 */ "Greg is our CTO, one of ITSco’s founders, and a cornerstone of our long-term success . His incredible work ethic and dedication to excellence continues to set the bar for our engineering team, and his total commitment to the success of our customers is evident in everything he does.",

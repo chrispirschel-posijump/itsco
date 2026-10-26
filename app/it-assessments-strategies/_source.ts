@@ -20,7 +20,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 11 */ "Poorly configured IT environments lead to downtime, slow performance, and wasted resources.",
   /* 12 */ "Companies without strategic IT planning fall behind in adopting emerging technologies.",
   /* 13 */ "Unoptimized IT infrastructure leads to unnecessary spending on maintenance and reactive fixes.",
-  /* 14 */ "25+ years of expertise, delivering detailed, actionable assessments to improve security and efficiency.",
+  /* 14 */ "30 years of expertise, delivering detailed, actionable assessments to improve security and efficiency.",
   /* 15 */ "Tap into tailored IT roadmaps to help your business align IT investments with growth objectives for the future.",
   /* 16 */ "Uncover risks and vulnerabilities before they become costly issues, saving you from reactive IT spending.",
   /* 17 */ "Preparing businesses for AI adoption, cloud migration, and digital transformation with strategic planning and expert guidance.",

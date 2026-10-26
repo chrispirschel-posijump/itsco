@@ -21,7 +21,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 12 */ "Poorly executed Azure migrations lead to service disruptions, lost productivity, and data integrity risks.",
   /* 13 */ "Without expert architecture planning, businesses struggle to scale cloud environments efficiently.",
   /* 14 */ "Managing Azure requires deep technical knowledge that most in-house IT teams lack, leading to higher costs, fewer efficiencies, and more issues as time goes on.",
-  /* 15 */ "With 25+ years of IT expertise, ITSco delivers customized Azure solutions for businesses of all sizes.",
+  /* 15 */ "With 30 years of IT expertise, ITSco delivers customized Azure solutions for businesses of all sizes.",
   /* 16 */ "Our team ensures seamless Azure migration, management, and optimization.",
   /* 17 */ "ITSco helps businesses meet compliance standards and protect cloud-based assets.",
   /* 18 */ "Our Azure-certified professionals provide continuous cloud management and technical support.",

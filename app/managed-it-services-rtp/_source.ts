@@ -20,7 +20,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 11 */ "We’ll manage your IT infrastructure projects to ensure they remain on track, and on budget, and meet the highest technical standards.",
   /* 12 */ "Are you getting the return you expect from your IT spending?",
   /* 13 */ "Ensure every IT dollar delivers the ROI you expect with our managed IT services in RTP. We’ll help you make more informed decisions and better IT investments:",
-  /* 14 */ "Focus on predictability and ROI with an IT services company that brings 25+ years of experience to the table.",
+  /* 14 */ "Focus on predictability and ROI with an IT services company that brings 30 years of experience to the table.",
   /* 15 */ "Of our clients have been with us for 5+ years",
   /* 16 */ "As one of the leading IT companies in RTP",
   /* 17 */ "Of our clients have experienced a severe cyber security breach",

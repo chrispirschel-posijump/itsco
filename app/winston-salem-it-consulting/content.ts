@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years of IT consulting in Winston-Salem & the Triad' },
+    { value: '30', label: 'Years of IT consulting in Winston-Salem & the Triad' },
     { value: '0%', label: 'Of our clients have experienced a significant security breach' },
   ],
   whyUs: {

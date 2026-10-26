@@ -33,7 +33,7 @@ export const CONTENT: ServiceSubContent = {
     paragraphs: [S[1]],
   },
   stats: [
-    { value: '25+', label: 'Years of IT infrastructure expertise' },
+    { value: '30', label: 'Years of IT infrastructure expertise' },
     { value: '24/7', label: 'Proactive monitoring and incident response' },
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
   ],

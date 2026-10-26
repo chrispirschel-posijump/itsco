@@ -33,7 +33,7 @@ export const CONTENT: ServiceSubContent = {
     paragraphs: [S[1]],
   },
   stats: [
-    { value: '25+', label: 'Years of network engineering experience' },
+    { value: '30', label: 'Years of network engineering experience' },
     { value: '99%+', label: 'Network uptime across managed clients' },
     { value: '24/7', label: 'Proactive monitoring and maintenance' },
   ],

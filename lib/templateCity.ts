@@ -122,7 +122,7 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
     },
     stats: [
       { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-      { value: '25+', label: `Years serving ${c.region} & North Carolina` },
+      { value: '30', label: `Years serving ${c.region} & North Carolina` },
       { value: '0%', label: 'Of our clients have experienced a serious security breach' },
     ],
     whyUs: {

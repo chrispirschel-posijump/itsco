@@ -21,7 +21,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 12 */ "A disorganized SharePoint structure can make it difficult for teams to find, share, and manage important files.",
   /* 13 */ "Poorly configured environments lead to lagging document retrieval and inefficient workflows.",
   /* 14 */ "A sloppy SharePoint setup can create an almost unusable environment, costing you money in the process.",
-  /* 15 */ "With 25+ years of IT expertise, ITSco provides proactive SharePoint support and management.",
+  /* 15 */ "With 30 years of IT expertise, ITSco provides proactive SharePoint support and management.",
   /* 16 */ "Our solutions optimize workflows, enhance document collaboration, and improve business efficiency.",
   /* 17 */ "We help businesses reduce IT costs, improve SharePoint licensing, and eliminate inefficiencies.",
   /* 18 */ "ITSco’s experts provide around-the-clock assistance to prevent downtime and SharePoint disruptions.",

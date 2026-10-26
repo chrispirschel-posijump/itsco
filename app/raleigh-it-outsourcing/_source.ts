@@ -28,7 +28,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 19 */ "Support provided by our Raleigh IT outsourcing services",
   /* 20 */ "With the average data breach costing over $5.9 million, SMB’s are under a lot of pressure to protect their IT infrastructure and the sensitive data housed within.",
   /* 21 */ "ITSco is here to help with that effort. Since 1996, we’ve been one of the IT outsourcing companies that Raleigh businesses have depended on to defend against cyber threats and meet their compliance requirements.",
-  /* 22 */ "With a 25+ year record of systems and networking engineering excellence, we partner with our customers to create a multi-layered defense strategy based on cutting-edge information technology that is customized to meet their business requirements",
+  /* 22 */ "With a 30-year record of systems and networking engineering excellence, we partner with our customers to create a multi-layered defense strategy based on cutting-edge information technology that is customized to meet their business requirements",
   /* 23 */ "Control IT spending and reduce operating expenses with outsourced IT services",
   /* 24 */ "Eliminate unpredictability. Stay on schedule and stay on budget with business-appropriate solutions and easy-to-understand IT services pricing.",
   /* 25 */ "Our IT outsourcing services and solutions are engineered to support the evolving demands of small-to-medium sized businesses throughout their business growth and development.",

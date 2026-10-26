@@ -19,7 +19,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 10 */ "Lack of proactive monitoring leads to performance bottlenecks and an unoptimized email environment.",
   /* 11 */ "Without robust email backup and disaster recovery solutions, businesses risk losing critical communications and files.",
   /* 12 */ "Over-provisioning and inefficient Microsoft Exchange licensing can lead to unnecessary IT expenses.",
-  /* 13 */ "With 25+ years of IT expertise, ITSco delivers proactive Microsoft Exchange support and management.",
+  /* 13 */ "With 30 years of IT expertise, ITSco delivers proactive Microsoft Exchange support and management.",
   /* 14 */ "We implement multi-layered security strategies, including email encryption, phishing protection, and threat intelligence.",
   /* 15 */ "Our solutions maximize efficiency and streamline business communication across Microsoft 365 and Exchange Online.",
   /* 16 */ "We help businesses reduce IT costs, optimize Microsoft Exchange licensing, and eliminate inefficiencies.",

@@ -200,6 +200,6 @@ export const ARTICLE = [
   },
   {
     type: 'p',
-    text: 'ITSco has been delivering managed and co-managed IT outsourcing engagements for businesses across North Carolina, South Carolina, and Virginia for 25+ years. If you are evaluating IT outsourcing for your business — first time or reconsidering — a free scoping consultation is the right place to start.',
+    text: 'ITSco has been delivering managed and co-managed IT outsourcing engagements for businesses across North Carolina, South Carolina, and Virginia for 30 years. If you are evaluating IT outsourcing for your business — first time or reconsidering — a free scoping consultation is the right place to start.',
   },
 ] as const

@@ -50,7 +50,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years serving Durham, RTP & North Carolina' },
+    { value: '30', label: 'Years serving Durham, RTP & North Carolina' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -72,29 +72,6 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/local/durham nc 3.jpg',
       alt: 'Durham, North Carolina at dusk',
     },
-  },
-  related: {
-    heading: 'Our other IT services in Durham',
-    links: [
-      {
-        slug: 'remote-it-support',
-        label: 'IT Support in Durham',
-        href: '/it-support-durham',
-        description: 'Responsive remote and on-site IT support for Durham businesses.',
-      },
-      {
-        slug: 'it-management-consulting',
-        label: 'IT Consulting in Durham',
-        href: '/durham-it-consulting',
-        description: 'Strategic technology guidance to align IT with your business goals.',
-      },
-      {
-        slug: 'managed-it-services',
-        label: 'IT Company in Durham',
-        href: '/it-company-durham',
-        description: 'A locally based IT partner committed to Durham for the long run.',
-      },
-    ],
   },
   faqHeading: {
     eyebrow: 'FAQ',
@@ -150,6 +127,37 @@ export const CONTENT: CityServiceContent = {
       ],
     },
   ],
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Durham (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Durham',
+    links: [
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Durham',
+        href: '/it-support-durham',
+        description: 'Responsive IT support and help desk for Durham businesses.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Durham',
+        href: '/durham-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Durham',
+        href: '/durham-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Durham businesses.',
+      },
+      {
+        slug: 'about-us',
+        label: 'IT Company in Durham',
+        href: '/it-company-durham',
+        description: 'A locally based IT partner serving Durham businesses since 1996.',
+      },
+    ],
+  },
   citySlug: 'durham',
   bookingUtm: 'managed-it-durham-bottom',
 }

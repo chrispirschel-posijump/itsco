@@ -203,7 +203,7 @@ export default function PageC() {
         heading="Your IT Strategy Shouldn't Be Guesswork."
         subheading="Our vCIO, vCTO, and vCISO services give your leadership team a trusted technology advisor. We align your IT investments with business outcomes and reduce risk at every level."
         imagePosition="none"
-        stat="25+"
+        stat="30"
         statLabel="years of strategic IT leadership for NC businesses"
         primaryCTA={{ label: 'Book a Free Consultation', utmSuffix: 'page-c' }}
         secondaryCTA={{ label: 'Learn About Our Process', href: '/process', variant: 'secondary' }}

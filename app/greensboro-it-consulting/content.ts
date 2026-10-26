@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years of IT consulting in Greensboro & the Triad' },
+    { value: '30', label: 'Years of IT consulting in Greensboro & the Triad' },
     { value: '0%', label: 'Of our clients have experienced a significant security breach' },
   ],
   whyUs: {
@@ -69,6 +69,25 @@ export const CONTENT: CityServiceContent = {
       src: '/images/supporting/services/daria-pimkina-Dj5HnHMtkH0-unsplash.jpg',
       alt: 'IT security consultant reviewing systems',
     },
+  },
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Greensboro (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Greensboro',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Greensboro',
+        href: '/managed-it-services-greensboro',
+        description: 'Fully managed IT for Greensboro businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Greensboro',
+        href: '/it-support-greensboro',
+        description: 'Responsive IT support and help desk for Greensboro businesses.',
+      },
+    ],
   },
   citySlug: 'greensboro',
   bookingUtm: 'it-consulting-greensboro-bottom',

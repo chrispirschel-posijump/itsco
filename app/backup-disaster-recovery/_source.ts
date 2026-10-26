@@ -19,7 +19,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 10 */ "IT outages can halt operations for hours—or even days—without a reliable recovery plan in place.",
   /* 11 */ "Without ransomware-resistant backups, businesses are vulnerable to data theft and extortion.",
   /* 12 */ "Businesses with weak disaster recovery plans can take weeks to fully recover from an incident.",
-  /* 13 */ "25+ years of battle-tested data protection and recovery strategies.",
+  /* 13 */ "30 years of battle-tested data protection and recovery strategies.",
   /* 14 */ "Automated, always-on backup solutions to prevent data loss before it happens.",
   /* 15 */ "Recovery solutions to minimize downtime and get you online again quickly.",
   /* 16 */ "On-site & cloud solutions for a BDR strategy that fits your needs.",

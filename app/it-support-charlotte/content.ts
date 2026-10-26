@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years supporting Charlotte & North Carolina businesses' },
+    { value: '30', label: 'Years supporting Charlotte & North Carolina businesses' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -69,6 +69,49 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/local/charlotte nc .jpg',
       alt: 'Downtown Charlotte, North Carolina skyline',
     },
+  },
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Charlotte (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Charlotte',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Charlotte',
+        href: '/managed-it-services-charlotte',
+        description: 'Fully managed IT for Charlotte businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Charlotte',
+        href: '/charlotte-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Charlotte',
+        href: '/charlotte-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Charlotte businesses.',
+      },
+      {
+        slug: 'help-desk-services',
+        label: 'IT Helpdesk in Charlotte',
+        href: '/charlotte-it-helpdesk',
+        description: 'A dedicated help desk team that resolves end-user issues fast.',
+      },
+      {
+        slug: 'network-security-services',
+        label: 'IT Network Support in Charlotte',
+        href: '/charlotte-it-network-support',
+        description: 'Network design, monitoring and support that keeps your business connected.',
+      },
+      {
+        slug: 'it-staff-augmentation',
+        label: 'IT Outsourcing in Charlotte',
+        href: '/charlotte-it-outsourcing',
+        description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
+      },
+    ],
   },
   citySlug: 'charlotte',
   bookingUtm: 'it-support-charlotte-bottom',

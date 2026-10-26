@@ -21,7 +21,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 12 */ "On-premises PBX systems require expensive maintenance, hardware upgrades, and service fees.",
   /* 13 */ "Unsecured VoIP systems are targets for hacking, fraud, and compliance violations.",
   /* 14 */ "Traditional systems lack the flexibility to scale with business growth or integrate with modern collaboration tools.",
-  /* 15 */ "With 25+ years of IT expertise, ITSco delivers reliable and scalable VoIP & UC solutions tailored to business needs.",
+  /* 15 */ "With 30 years of IT expertise, ITSco delivers reliable and scalable VoIP & UC solutions tailored to business needs.",
   /* 16 */ "We ensure availability and crystal-clear call quality, optimizing your network for seamless communication.",
   /* 17 */ "ITSco’s VoIP solutions include advanced encryption, fraud prevention, and compliance monitoring.",
   /* 18 */ "We keep your communications running smoothly with expert implementation and 24/7 monitoring.",

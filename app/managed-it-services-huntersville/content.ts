@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years serving Huntersville & the Charlotte area' },
+    { value: '30', label: 'Years serving Huntersville & the Charlotte area' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {

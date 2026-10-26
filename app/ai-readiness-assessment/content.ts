@@ -35,7 +35,7 @@ export const HERO_IMAGE = {
 
 export const STATS = [
   { value: '72%', label: 'Of businesses are integrating AI into operations' },
-  { value: '25+', label: 'Years of IT, cybersecurity, and AI-driven solutions' },
+  { value: '30', label: 'Years of IT, cybersecurity, and AI-driven solutions' },
   { value: '0%', label: 'Of our clients have suffered a serious security breach' },
 ]
 

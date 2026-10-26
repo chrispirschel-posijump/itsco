@@ -14,6 +14,7 @@ import TestimonialsRotator from '@/components/TestimonialsRotator'
 import { TESTIMONIALS } from '@/lib/testimonials'
 import { getCityName, getNearbyCities } from '@/lib/nearbyCities'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
+import { renderAnswer, stripMarkdown } from '@/lib/inlineLinks'
 
 export interface CityServiceContent {
   meta: { title: string; description: string; canonical: string }
@@ -112,7 +113,7 @@ export function cityFaqJsonLd(content: CityServiceContent) {
     mainEntity: faqs.map((f) => ({
       '@type': 'Question',
       name: f.question,
-      acceptedAnswer: { '@type': 'Answer', text: f.answer.join(' ') },
+      acceptedAnswer: { '@type': 'Answer', text: f.answer.map(stripMarkdown).join(' ') },
     })),
   }
 }
@@ -532,7 +533,7 @@ function Faqs({ content }: { content: CityServiceContent }) {
               <div className="pl-8">
                 {f.answer.map((a, i) => (
                   <p key={i} className="text-base text-itsco-body leading-relaxed mb-3 last:mb-0">
-                    {a}
+                    {renderAnswer(a)}
                   </p>
                 ))}
               </div>

@@ -103,7 +103,7 @@ export const ARTICLE = [
     "items": [
       "A Single Source for all of Your IT Needs",
       "Leverage Partnerships With Industry-Leading Suppliers",
-      "25+ Years Supporting Business Growth Through Engineering Excellence"
+      "30 Years Supporting Business Growth Through Engineering Excellence"
     ]
   },
   {

@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years securing North Carolina businesses' },
+    { value: '30', label: 'Years securing North Carolina businesses' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -70,35 +70,42 @@ export const CONTENT: CityServiceContent = {
       alt: 'Raleigh, North Carolina cityscape',
     },
   },
-  related: {
-    heading: 'Our other IT services in Raleigh',
-    links: [
-      {
-        slug: 'managed-it-services',
-        label: 'Managed IT Services in Raleigh',
-        href: '/managed-it-services-raleigh',
-        description: 'Full-suite managed IT — monitoring, help desk, cloud, and support.',
-      },
-      {
-        slug: 'remote-it-support',
-        label: 'IT Support in Raleigh',
-        href: '/it-support-raleigh',
-        description: 'Responsive remote and on-site IT support for Raleigh businesses.',
-      },
-      {
-        slug: 'it-staff-augmentation',
-        label: 'Outsourced IT in Raleigh',
-        href: '/raleigh-it-outsourcing',
-        description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
-      },
-    ],
-  },
   faqHeading: {
     eyebrow: 'FAQ',
     headlineLead: 'Raleigh cyber security,',
     headlineAccent: 'answered.',
   },
   faqs: [
+    // New buyer-question FAQs (not from _source.ts), written in a direct-answer
+    // format for AI Overviews and assistants. Oct 2026. The 5 migrated FAQs follow.
+    {
+      question: 'What should a small business in Raleigh look for in a cybersecurity company?',
+      answer: [
+        'Look for 24/7 monitoring backed by people who respond, not just software alerts; a track record you can verify; and help with the compliance rules your industry answers to. Ask how long clients stay, who you will actually talk to, and what happens when a threat gets through. A good partner answers all three plainly.',
+        'ITSco has protected North Carolina businesses since 1996, with offices in Durham and Raleigh. 60% of our clients have been with us for five years or more, none has experienced a serious security breach, and you work directly with senior leadership, including CEO Mike Savino and CIO Jared Thomas. If you want a baseline first, start with a [security audit](/security-audits-compliance).',
+      ],
+    },
+    {
+      question: 'Does ITSco help North Carolina manufacturers with CMMC?',
+      answer: [
+        'Yes. ITSco helps manufacturers and other defense suppliers prepare for CMMC: confirming whether Level 1 or Level 2 applies, running a gap analysis against NIST 800-171, putting missing controls in place, securing controlled unclassified information (CUI), and building the documented evidence that your self-assessment score and any future certification depend on.',
+        'We handle the technology side. Certification assessments are performed by an authorized third-party assessor, not by ITSco. CMMC requirements are changing in 2026, so read our guide to [CMMC compliance after the suspension](/blog/cmmc-2-nc-defense-contractors) for the current status, or see how [Compliance as a Service](/compliance-as-a-service) keeps you ready.',
+      ],
+    },
+    {
+      question: 'Does ITSco offer a managed SOC (24/7 security monitoring)?',
+      answer: [
+        'Yes. ITSco\'s managed security operations center (SOC) watches your systems 24/7, including nights and weekends. Analysts review log files, network traffic and user activity using managed SIEM, endpoint detection and response, and behavioral monitoring, then contain and remediate threats through a defined incident response process. You get SOC protection without building one in-house.',
+        'Every client is assigned a dedicated IT consultant who keeps the security strategy aligned with the business as it changes. See what is included on our [Managed SOC](/managed-soc) page.',
+      ],
+    },
+    {
+      question: 'Can ITSco support HIPAA compliance for healthcare practices?',
+      answer: [
+        'Yes. ITSco puts in place and maintains the technical side of HIPAA for patient data: HIPAA-compliant systems, 24/7 security monitoring, secure backup and recovery, staff security awareness training, and the controls, evidence and documentation an auditor will ask to see. Compliance runs as an ongoing service, so you stay ready between audits instead of scrambling before one.',
+        'Your attorney and auditor decide what HIPAA requires of your practice; we own the technology side of meeting it. Learn more about [Compliance as a Service](/compliance-as-a-service) and our [healthcare IT services](/healthcare-managed-it-services).',
+      ],
+    },
     {
       question: 'What comprehensive measures does ITSco employ to safeguard our data and applications against cyber threats?',
       answer: [S[26], S[27]],
@@ -120,6 +127,55 @@ export const CONTENT: CityServiceContent = {
       answer: [S[34], S[35]],
     },
   ],
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Raleigh (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Raleigh',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Raleigh',
+        href: '/managed-it-services-raleigh',
+        description: 'Fully managed IT for Raleigh businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Raleigh',
+        href: '/it-support-raleigh',
+        description: 'Responsive IT support and help desk for Raleigh businesses.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Raleigh',
+        href: '/raleigh-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'about-us',
+        label: 'IT Company in Raleigh',
+        href: '/it-company-raleigh',
+        description: 'A locally based IT partner serving Raleigh businesses since 1996.',
+      },
+      {
+        slug: 'help-desk-services',
+        label: 'IT Helpdesk in Raleigh',
+        href: '/raleigh-it-helpdesk',
+        description: 'A dedicated help desk team that resolves end-user issues fast.',
+      },
+      {
+        slug: 'network-security-services',
+        label: 'IT Network Support in Raleigh',
+        href: '/raleigh-it-network-support',
+        description: 'Network design, monitoring and support that keeps your business connected.',
+      },
+      {
+        slug: 'it-staff-augmentation',
+        label: 'IT Outsourcing in Raleigh',
+        href: '/raleigh-it-outsourcing',
+        description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
+      },
+    ],
+  },
   citySlug: 'raleigh',
   bookingUtm: 'cyber-raleigh-bottom',
 }

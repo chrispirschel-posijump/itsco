@@ -129,6 +129,6 @@ export const ARTICLE = [
   },
   {
     type: 'p',
-    text: "ITSco has been delivering managed IT services to businesses across North Carolina, South Carolina, and Virginia for 25+ years. If you are evaluating managed IT services for the first time — or reconsidering a relationship that has stopped delivering — a free scoping consultation is the right place to start.",
+    text: "ITSco has been delivering managed IT services to businesses across North Carolina, South Carolina, and Virginia for 30 years. If you are evaluating managed IT services for the first time — or reconsidering a relationship that has stopped delivering — a free scoping consultation is the right place to start.",
   },
 ] as const

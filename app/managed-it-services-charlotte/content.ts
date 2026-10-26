@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years serving Charlotte & North Carolina' },
+    { value: '30', label: 'Years serving Charlotte & North Carolina' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -69,6 +69,49 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/local/charlotte nc 3.jpg',
       alt: 'Charlotte, North Carolina at dusk',
     },
+  },
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Charlotte (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Charlotte',
+    links: [
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Charlotte',
+        href: '/it-support-charlotte',
+        description: 'Responsive IT support and help desk for Charlotte businesses.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Charlotte',
+        href: '/charlotte-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Charlotte',
+        href: '/charlotte-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Charlotte businesses.',
+      },
+      {
+        slug: 'help-desk-services',
+        label: 'IT Helpdesk in Charlotte',
+        href: '/charlotte-it-helpdesk',
+        description: 'A dedicated help desk team that resolves end-user issues fast.',
+      },
+      {
+        slug: 'network-security-services',
+        label: 'IT Network Support in Charlotte',
+        href: '/charlotte-it-network-support',
+        description: 'Network design, monitoring and support that keeps your business connected.',
+      },
+      {
+        slug: 'it-staff-augmentation',
+        label: 'IT Outsourcing in Charlotte',
+        href: '/charlotte-it-outsourcing',
+        description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
+      },
+    ],
   },
   citySlug: 'charlotte',
   bookingUtm: 'managed-it-charlotte-bottom',

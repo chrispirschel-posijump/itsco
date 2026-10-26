@@ -34,7 +34,7 @@ export const CONTENT: ServiceSubContent = {
     ],
   },
   stats: [
-    { value: '25+', label: 'Years of IT engineering depth to draw from' },
+    { value: '30', label: 'Years of IT engineering depth to draw from' },
     { value: 'Days', label: 'To place an engineer — not the months a hire takes' },
     { value: '0', label: 'Recruiting, benefits, or training overhead to absorb' },
   ],

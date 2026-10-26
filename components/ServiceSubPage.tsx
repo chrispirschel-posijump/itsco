@@ -11,45 +11,7 @@ import ClientLogosBand from '@/components/ClientLogosBand'
 import TestimonialsRotator from '@/components/TestimonialsRotator'
 import { TESTIMONIALS } from '@/lib/testimonials'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
-import type { ReactNode } from 'react'
-
-// Minimal inline-link parser for FAQ answers: [label](href). Internal hrefs
-// (starting with "/") use next/link; external open in a new tab. Plain text
-// with no link markup passes through unchanged.
-function renderAnswer(text: string): ReactNode[] {
-  const out: ReactNode[] = []
-  const pattern = /\[([^\]]+)\]\(([^)]+)\)/g
-  let last = 0
-  let k = 0
-  let m: RegExpExecArray | null
-  while ((m = pattern.exec(text)) !== null) {
-    if (m.index > last) out.push(text.slice(last, m.index))
-    const label = m[1]
-    const href = m[2]
-    const linkClass =
-      'font-medium text-itsco-red underline underline-offset-2 hover:text-itsco-red-dark'
-    out.push(
-      /^https?:\/\//.test(href) ? (
-        <a key={k++} href={href} target="_blank" rel="noopener noreferrer" className={linkClass}>
-          {label}
-        </a>
-      ) : (
-        <Link key={k++} href={href} className={linkClass}>
-          {label}
-        </Link>
-      ),
-    )
-    last = pattern.lastIndex
-  }
-  if (last < text.length) out.push(text.slice(last))
-  return out
-}
-
-// Plain-text version of an answer for JSON-LD (FAQPage schema): [label](href)
-// collapses to its label so raw markdown never reaches structured data.
-function stripMarkdown(text: string): string {
-  return text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1')
-}
+import { renderAnswer, stripMarkdown } from '@/lib/inlineLinks'
 
 export interface ServiceSubContent {
   meta: { title: string; description: string; canonical: string }

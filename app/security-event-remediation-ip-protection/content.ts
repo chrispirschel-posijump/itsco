@@ -31,7 +31,7 @@ export const CONTENT: ServiceSubContent = {
   },
   stats: [
     { value: '0%', label: 'Of our clients have suffered a serious security breach' },
-    { value: '25+', label: 'Years of systems and network security expertise' },
+    { value: '30', label: 'Years of systems and network security expertise' },
     { value: '24/7', label: 'Threat response and remediation coverage' },
   ],
   capabilitiesHeading: {

@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years serving Greensboro, the Triad & North Carolina' },
+    { value: '30', label: 'Years serving Greensboro, the Triad & North Carolina' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -69,6 +69,25 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/local/greensboro 3.jpg',
       alt: 'Greensboro, North Carolina at dusk',
     },
+  },
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Greensboro (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Greensboro',
+    links: [
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Greensboro',
+        href: '/it-support-greensboro',
+        description: 'Responsive IT support and help desk for Greensboro businesses.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Greensboro',
+        href: '/greensboro-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+    ],
   },
   citySlug: 'greensboro',
   bookingUtm: 'managed-it-greensboro-bottom',

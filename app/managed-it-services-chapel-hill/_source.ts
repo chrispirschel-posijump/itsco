@@ -32,6 +32,6 @@ export const SOURCE_PARAGRAPHS = [
   /* 23 */ "With cybercrime up more than 600% since the start of the COVID-19 pandemic, your company is more likely than ever to be exposed to the threat of a serious cyber attack.",
   /* 24 */ "Improving your cybersecurity defenses must be a continuous business priority for you and your IT service provider . Keep up your guard with ITSco’s cybersecurity services.",
   /* 25 */ "Our managed security solutions include:",
-  /* 26 */ "If you are choosing between IT companies in Chapel Hill, choose a firm you can count on. One with a 25+ year track record of success and a long list of satisfied customers in the Triangle and across North Carolina .",
+  /* 26 */ "If you are choosing between IT companies in Chapel Hill, choose a firm you can count on. One with a 30-year track record of success and a long list of satisfied customers in the Triangle and across North Carolina .",
   /* 27 */ "Our end-to-end IT Services in Chapel Hill include a complete suite of IT services – from well trained, North Carolina based help desk personnel that provide a frustration-free experience for your users – to seasoned engineers and project managers that can deliver the strategic IT planning and implementation services your business needs to be successful for the long run.",
 ] as const

@@ -21,7 +21,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 12 */ "Without rapid containment and remediation, attackers can remain undetected, leading to long-term data theft and system compromise.",
   /* 13 */ "Failure to secure data properly can lead to fines, legal consequences, and loss of business certifications.",
   /* 14 */ "Unpatched vulnerabilities and weak security policies make organizations repeat targets for hackers.",
-  /* 15 */ "With 25+ years of systems and network security expertise, ITSco delivers fast, effective, and strategic threat remediation.",
+  /* 15 */ "With 30 years of systems and network security expertise, ITSco delivers fast, effective, and strategic threat remediation.",
   /* 16 */ "We address security gaps and implement long-term security enhancements to prevent future breaches.",
   /* 17 */ "ITSco helps businesses meet HIPAA, NIST, CMMC, and industry compliance standards.",
   /* 18 */ "From real-time threat response to strategic improvements, we build resilient cybersecurity defenses.",

@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years supporting Durham & the Triangle' },
+    { value: '30', label: 'Years supporting Durham & the Triangle' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -69,6 +69,37 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/local/durham nc.jpg',
       alt: 'Downtown Durham, North Carolina',
     },
+  },
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Durham (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Durham',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Durham',
+        href: '/managed-it-services-durham',
+        description: 'Fully managed IT for Durham businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Durham',
+        href: '/durham-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Durham',
+        href: '/durham-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Durham businesses.',
+      },
+      {
+        slug: 'about-us',
+        label: 'IT Company in Durham',
+        href: '/it-company-durham',
+        description: 'A locally based IT partner serving Durham businesses since 1996.',
+      },
+    ],
   },
   citySlug: 'durham',
   bookingUtm: 'it-support-durham-bottom',

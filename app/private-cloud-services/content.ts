@@ -33,7 +33,7 @@ export const CONTENT: ServiceSubContent = {
   },
   stats: [
     { value: '0%', label: 'Of our clients have suffered a serious security breach' },
-    { value: '25+', label: 'Years as a trusted IT services provider' },
+    { value: '30', label: 'Years as a trusted IT services provider' },
     { value: '24/7', label: 'Private cloud monitoring and support' },
   ],
   capabilitiesHeading: {

@@ -18,7 +18,7 @@ export const HERO = {
   headlineAccent: 'behind the scenes.',
   body: SOURCE_PARAGRAPHS[0],
   utmSuffix: 'meet-the-team-hero',
-  stat: '25+',
+  stat: '30',
   statLabel: 'Years of engineering excellence',
 }
 

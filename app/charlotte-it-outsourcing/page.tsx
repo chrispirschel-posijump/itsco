@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import CityServicePage from '@/components/CityServicePage'
 import { makeTemplateCityContent } from '@/lib/templateCity'
 
-const CONTENT = makeTemplateCityContent({
+const BASE = makeTemplateCityContent({
   serviceType: 'IT Outsourcing',
   name: 'Charlotte',
   slug: 'charlotte',
@@ -30,6 +30,55 @@ const CONTENT = makeTemplateCityContent({
     alt: 'Cybersecurity monitoring for a Charlotte business',
   },
 })
+
+// Override the template's default service-pillar links with the sibling
+// Charlotte pages.
+const CONTENT = {
+  ...BASE,
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Charlotte (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Charlotte',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Charlotte',
+        href: '/managed-it-services-charlotte',
+        description: 'Fully managed IT for Charlotte businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Charlotte',
+        href: '/it-support-charlotte',
+        description: 'Responsive IT support and help desk for Charlotte businesses.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Charlotte',
+        href: '/charlotte-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Charlotte',
+        href: '/charlotte-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Charlotte businesses.',
+      },
+      {
+        slug: 'help-desk-services',
+        label: 'IT Helpdesk in Charlotte',
+        href: '/charlotte-it-helpdesk',
+        description: 'A dedicated help desk team that resolves end-user issues fast.',
+      },
+      {
+        slug: 'network-security-services',
+        label: 'IT Network Support in Charlotte',
+        href: '/charlotte-it-network-support',
+        description: 'Network design, monitoring and support that keeps your business connected.',
+      },
+    ],
+  },
+}
 
 export const metadata: Metadata = {
   title: CONTENT.meta.title,

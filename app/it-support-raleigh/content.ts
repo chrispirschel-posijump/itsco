@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years supporting Raleigh & North Carolina businesses' },
+    { value: '30', label: 'Years supporting Raleigh & North Carolina businesses' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {
@@ -69,6 +69,55 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/local/raleigh.jpg',
       alt: 'Downtown Raleigh, North Carolina skyline',
     },
+  },
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Raleigh (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Raleigh',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Raleigh',
+        href: '/managed-it-services-raleigh',
+        description: 'Fully managed IT for Raleigh businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Raleigh',
+        href: '/raleigh-it-consulting',
+        description: 'Strategic technology guidance that aligns IT with your business goals.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Raleigh',
+        href: '/raleigh-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Raleigh businesses.',
+      },
+      {
+        slug: 'about-us',
+        label: 'IT Company in Raleigh',
+        href: '/it-company-raleigh',
+        description: 'A locally based IT partner serving Raleigh businesses since 1996.',
+      },
+      {
+        slug: 'help-desk-services',
+        label: 'IT Helpdesk in Raleigh',
+        href: '/raleigh-it-helpdesk',
+        description: 'A dedicated help desk team that resolves end-user issues fast.',
+      },
+      {
+        slug: 'network-security-services',
+        label: 'IT Network Support in Raleigh',
+        href: '/raleigh-it-network-support',
+        description: 'Network design, monitoring and support that keeps your business connected.',
+      },
+      {
+        slug: 'it-staff-augmentation',
+        label: 'IT Outsourcing in Raleigh',
+        href: '/raleigh-it-outsourcing',
+        description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
+      },
+    ],
   },
   citySlug: 'raleigh',
   bookingUtm: 'it-support-raleigh-bottom',

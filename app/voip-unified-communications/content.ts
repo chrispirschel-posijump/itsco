@@ -32,7 +32,7 @@ export const CONTENT: ServiceSubContent = {
   },
   stats: [
     { value: '0%', label: 'Of our clients have suffered a serious security breach' },
-    { value: '25+', label: 'Years of IT infrastructure expertise' },
+    { value: '30', label: 'Years of IT infrastructure expertise' },
     { value: '24/7', label: 'Communication system monitoring and support' },
   ],
   capabilitiesHeading: {

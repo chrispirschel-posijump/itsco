@@ -20,7 +20,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 11 */ "Poorly maintained servers lead to lagging applications and frustrated users.",
   /* 12 */ "Server failures can bring your business to a halt, causing lost productivity and revenue.",
   /* 13 */ "Without proper capacity planning, businesses struggle to scale IT infrastructure to meet evolving business needs.",
-  /* 14 */ "25+ years of IT infrastructure expertise.",
+  /* 14 */ "30 years of IT infrastructure expertise.",
   /* 15 */ "Resolving issues before they impact your business.",
   /* 16 */ "Advanced security measures to protect your servers.",
   /* 17 */ "Ensuring your IT infrastructure is operating efficiently.",

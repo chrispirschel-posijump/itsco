@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years supporting North Carolina businesses' },
+    { value: '30', label: 'Years supporting North Carolina businesses' },
     { value: '30%', label: 'Of our clients have been with us for 10+ years' },
   ],
   whyUs: {

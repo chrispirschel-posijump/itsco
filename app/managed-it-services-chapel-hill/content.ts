@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have trusted us for 5+ years' },
-    { value: '25+', label: 'Years serving Chapel Hill & the Triangle' },
+    { value: '30', label: 'Years serving Chapel Hill & the Triangle' },
     { value: '0%', label: 'Of our clients have experienced a serious security breach' },
   ],
   whyUs: {

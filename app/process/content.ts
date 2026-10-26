@@ -19,7 +19,7 @@ export const HERO = {
   headlineAccent: 'without pretense or drama.',
   body: SOURCE_PARAGRAPHS[0],
   utmSuffix: 'process-hero',
-  stat: '25+',
+  stat: '30',
   statLabel: 'Years of refining our process',
 }
 

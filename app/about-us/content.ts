@@ -17,7 +17,7 @@ export const HERO = {
   headlineAccent: 'shouldn’t be a challenge.',
   body: SOURCE_PARAGRAPHS[0],
   utmSuffix: 'about-us-hero',
-  stat: '25+',
+  stat: '30',
   statLabel: 'Years of trusted IT services',
 }
 

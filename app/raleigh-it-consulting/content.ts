@@ -49,7 +49,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
-    { value: '25+', label: 'Years of IT strategy consulting in the Triangle' },
+    { value: '30', label: 'Years of IT strategy consulting in the Triangle' },
     { value: '0%', label: 'Of our clients have experienced a serious data breach' },
   ],
   whyUs: {
@@ -71,6 +71,108 @@ export const CONTENT: CityServiceContent = {
       src: '/images/hero/consulting/path-digital-tR0jvlsmCuQ-unsplash.jpg',
       alt: 'IT security consultant reviewing systems',
     },
+  },
+  // FAQs are new copy (not from _source.ts), written in a direct-answer
+  // format for AI Overviews and assistants, following /durham-it-consulting.
+  // Oct 2026. Avoid "IT company Raleigh" wording: that keyword belongs to
+  // /it-company-raleigh.
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Raleigh IT consulting,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    {
+      question: 'What does IT consulting include for Raleigh businesses?',
+      answer: [
+        'IT consulting turns technology into a plan your leadership team can act on. For Raleigh businesses that usually means an IT strategy and roadmap tied to business goals, cybersecurity and risk assessments, cloud and scalability planning, disaster recovery planning, and clear decisions about which IT investments to fund, replace or retire first.',
+        'ITSco\'s consultants also trace recurring IT problems to their root cause, so the same issue stops coming back. Most engagements start with an [IT assessment](/it-assessments-strategies) or a [technology roadmap](/it-roadmap-planning).',
+      ],
+    },
+    {
+      question: 'What is the difference between an IT consultant and a managed service provider?',
+      answer: [
+        'An IT consultant decides where your technology should go: the roadmap, the budget, the risks to fix first and the vendors to use. A managed service provider (MSP) keeps it running every day with help desk, monitoring, patching and backups. One plans the work and the other operates the environment. Most growing companies need both.',
+        'ITSco does both, so the consultants who build your plan work alongside the engineers who carry it out. If day-to-day support is what you need, see [managed IT services in Raleigh](/managed-it-services-raleigh).',
+      ],
+    },
+    {
+      question: 'What does a vCIO or fractional CTO do for a Raleigh company?',
+      answer: [
+        'A virtual CIO (vCIO) or fractional CTO gives you senior technology leadership part-time, without a full-time executive salary. They own the IT roadmap and budget, make vendor and architecture decisions, set security priorities, and report to your CEO, COO or CFO in business terms. It suits 50 to 500 person companies that have outgrown ad hoc IT decisions.',
+        'Learn more about our [vCIO, vCTO and vCISO services](/vcio-vcto-vciso-services) and [fractional CTO services](/fractional-cto-services).',
+      ],
+    },
+    {
+      question: 'When should a business hire an IT consultant?',
+      answer: [
+        'Bring in an IT consultant before a major technology decision, not after something breaks. Typical moments: planning a cloud move, preparing for a compliance audit, an acquisition, fast headcount growth, IT costs climbing with no clear reason, the same outage repeating, or the person who held all your IT knowledge leaving the company.',
+        'An outside review gives leadership an honest picture of where technology is helping or holding the business back, and a prioritized plan to fix it.',
+      ],
+    },
+    {
+      question: 'Does ITSco have an office in Raleigh?',
+      answer: [
+        'Yes. ITSco has a Raleigh office at 8480 Honeycutt Road in North Raleigh, in addition to our Durham headquarters. Our consultants work on-site with clients across Raleigh, Cary, Durham, Chapel Hill and Research Triangle Park, and we have served Triangle businesses since 1996, for 30 years.',
+        'Clients work directly with ITSco senior leadership, including CEO Mike Savino and CIO Jared Thomas, not a sales tier.',
+      ],
+    },
+    {
+      question: 'Why do Raleigh businesses choose ITSco for IT consulting?',
+      answer: [
+        'Because the advice holds up over time. 60% of ITSco\'s clients have been with us for five years or more, and none has experienced a serious security breach. We measure every engagement by business return across four areas: financial savings, downtime avoided, risk reduced and new business capabilities enabled.',
+        'That is why we focus on fixing root causes rather than symptoms, and on IT investments you can justify to your board or owners.',
+      ],
+    },
+  ],
+  // Sibling city pages: each links the others with its target phrase so
+  // Google sees one owner per keyword in Raleigh (Oct 2026).
+  related: {
+    heading: 'Our other IT services in Raleigh',
+    links: [
+      {
+        slug: 'managed-it-services',
+        label: 'Managed IT Services in Raleigh',
+        href: '/managed-it-services-raleigh',
+        description: 'Fully managed IT for Raleigh businesses, from monitoring and help desk to cloud and security.',
+      },
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Raleigh',
+        href: '/it-support-raleigh',
+        description: 'Responsive IT support and help desk for Raleigh businesses.',
+      },
+      {
+        slug: 'cyber-security-management',
+        label: 'Cyber Security Services in Raleigh',
+        href: '/raleigh-cyber-security-services',
+        description: 'Layered security, monitoring and compliance support for Raleigh businesses.',
+      },
+      {
+        slug: 'about-us',
+        label: 'IT Company in Raleigh',
+        href: '/it-company-raleigh',
+        description: 'A locally based IT partner serving Raleigh businesses since 1996.',
+      },
+      {
+        slug: 'help-desk-services',
+        label: 'IT Helpdesk in Raleigh',
+        href: '/raleigh-it-helpdesk',
+        description: 'A dedicated help desk team that resolves end-user issues fast.',
+      },
+      {
+        slug: 'network-security-services',
+        label: 'IT Network Support in Raleigh',
+        href: '/raleigh-it-network-support',
+        description: 'Network design, monitoring and support that keeps your business connected.',
+      },
+      {
+        slug: 'it-staff-augmentation',
+        label: 'IT Outsourcing in Raleigh',
+        href: '/raleigh-it-outsourcing',
+        description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
+      },
+    ],
   },
   citySlug: 'raleigh',
   bookingUtm: 'it-consulting-raleigh-bottom',

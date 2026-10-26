@@ -34,7 +34,7 @@ export const CONTENT: ServiceSubContent = {
   },
   stats: [
     { value: '0%', label: 'Of our clients have encountered a substantial security breach' },
-    { value: '25+', label: 'Years as a trusted IT services provider' },
+    { value: '30', label: 'Years as a trusted IT services provider' },
     { value: '60%', label: 'Of our clients have stayed with us for over five years' },
   ],
   capabilitiesHeading: {

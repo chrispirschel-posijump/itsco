@@ -35,7 +35,7 @@ export const CONTENT: ServiceSubContent = {
   },
   stats: [
     { value: '< 1 hr', label: 'Average response time for critical issues' },
-    { value: '25+', label: 'Years supporting businesses across NC, SC & VA' },
+    { value: '30', label: 'Years supporting businesses across NC, SC & VA' },
     { value: '24/7', label: 'Remote monitoring and help desk coverage' },
   ],
   capabilitiesHeading: {

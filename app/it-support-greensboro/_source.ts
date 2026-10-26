@@ -31,7 +31,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 22 */ "In addition to automated vulnerability scanning and management , ITSco offers a robust range of security services, including:",
   /* 23 */ "Don’t let IT budgets take you by surprise.",
   /* 24 */ "Our managed IT support services in Greensboro are offered at realistic prices that can be tailored to your business needs. Great service is never cheap – but we work hard at being fair. That means you get great engineering at competitive prices, with no bull!",
-  /* 25 */ "Our goal is to provide real value to every customer, every day. And our 25+ years of service to the Triangle and the Triad is proof of our ability to deliver on our promises.",
+  /* 25 */ "Our goal is to provide real value to every customer, every day. And our 30 years of service to the Triangle and the Triad is proof of our ability to deliver on our promises.",
   /* 26 */ "If you are looking for a reliable IT computer support team for your Greensboro business, call ITSco today.",
   /* 27 */ "Looking for outsourced IT support in Greensboro? Choose a company that combines knowledgeable and reliable tech support services with careful attention to your business needs and competitive pricing.",
   /* 28 */ "ITSco is the IT partner you have been looking for to provide great IT support services that will keep your Greensboro business running safely and efficiently.",

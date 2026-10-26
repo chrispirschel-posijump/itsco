@@ -21,7 +21,7 @@ export const SOURCE_PARAGRAPHS = [
   /* 12 */ "Uncover cost-saving opportunities and potential areas for improvement that can drive long-term growth.",
   /* 13 */ "We translate detailed technical findings into clear, actionable insights that support your decision-making process.",
   /* 14 */ "At ITSco, our team combines deep technical expertise with a focus on clear communication. We deliver a detailed report that not only highlights risks but also provides practical recommendations for improvement. This empowers you to make informed decisions throughout the acquisition process, ensuring a smoother transition and a secure investment .",
-  /* 15 */ "25+ years in IT assessment, cybersecurity, and infrastructure strategy.",
+  /* 15 */ "30 years in IT assessment, cybersecurity, and infrastructure strategy.",
   /* 16 */ "Technical reporting customized to your business' risks and opportunities.",
   /* 17 */ "We're with you every step of the way to provide expert guidance and answer any questions.",
   /* 18 */ "Discover how ITSco’s Technology Due Diligence service can protect your investment and unlock hidden value. Contact us to schedule a consultation or learn more about our comprehensive approach to IT risk analysis and due diligence.",

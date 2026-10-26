@@ -47,7 +47,7 @@ export const CONTENT: CityServiceContent = {
   },
   stats: [
     { value: '60%', label: 'Of our clients have relied on us for 5+ years' },
-    { value: '25+', label: 'Years serving Winston-Salem & the Triad' },
+    { value: '30', label: 'Years serving Winston-Salem & the Triad' },
     { value: '0%', label: 'Of our clients have experienced a major security breach' },
   ],
   whyUs: {
