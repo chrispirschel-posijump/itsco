@@ -40,7 +40,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'Implementing AI Tools to Prevent Data Breaches and Enhance Security',
       description:
         'How AI-driven security tools mitigate breach risk and reduce per-incident cost by an average of $2.22M.',
-      href: '/white-papers-ai-tools-for-threat-detection/',
+      href: '/white-papers-ai-tools-for-threat-detection',
     },
     {
       slug: 'zero-trust-architecture',
@@ -48,7 +48,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'To What Extent Should We Trust “Zero Trust Architecture”?',
       description:
         'The cost of Zero Trust implementation, the size of the long-term security savings, and the case for ZTA.',
-      href: '/white-papers-zero-trust-architecture/',
+      href: '/white-papers-zero-trust-architecture',
     },
     {
       slug: 'ai-impact-on-itad',
@@ -56,7 +56,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Impact on ITAD Industry — A Multi-Pronged Approach',
       description:
         "How machine learning is improving decommissioning, predictive lifecycle planning, and secure data destruction across ITAD.",
-      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach/',
+      href: '/white-papers-ai-impact-on-itad-industry-a-multi-pronged-approach',
     },
   ],
   relatedServices: [
@@ -65,21 +65,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Governance',
       description:
         'Policy, control, and oversight frameworks that keep AI adoption aligned with your security and compliance obligations.',
-      href: '/ai-governance/',
+      href: '/ai-governance',
     },
     {
       slug: 'compliance-as-a-service',
       title: 'Compliance as a Service',
       description:
         'Continuous SOC 2, HIPAA, PCI DSS, and emerging AI compliance posture — kept current, not built under deadline.',
-      href: '/compliance-as-a-service/',
+      href: '/compliance-as-a-service',
     },
     {
       slug: 'itad',
       title: 'IT Asset Disposition',
       description:
         'Certified, secure, audit-ready disposition of decommissioned IT assets — chain of custody, data destruction, and reporting.',
-      href: '/itad/',
+      href: '/itad',
     },
   ],
   bookingUtm: 'wp-legal-ai',

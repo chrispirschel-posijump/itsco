@@ -73,7 +73,7 @@ function Hero() {
               />
               <CTAButton
                 label="Meet the Team"
-                href="/about-us/meet-the-team/"
+                href="/about-us/meet-the-team"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />

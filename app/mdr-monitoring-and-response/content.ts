@@ -15,7 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/mdr-monitoring-and-response',
   },
   serviceName: 'Managed Detection & Response (MDR)',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · MDR',
     headlineLead: 'Managed detection and response',
@@ -66,19 +66,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment around the clock.',
       },
       {
         slug: 'cyber-risk-assessment',
         label: 'Cyber Risk Assessment',
-        href: '/cyber-risk-assessment/',
+        href: '/cyber-risk-assessment',
         description: 'Know exactly where your exposure is — and what to fix first.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],

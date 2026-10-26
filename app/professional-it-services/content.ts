@@ -165,7 +165,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'certification earned',
         image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
         imageAlt: 'Healthcare provider with tablet — IT modernization',
-        href: '/case-studies/southern-rehabilitation-network/',
+        href: '/case-studies/southern-rehabilitation-network',
       },
       {
         key: 'bank',
@@ -177,7 +177,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'employees across 250 offices',
         image: '/images/case-studies/banking.jpg',
         imageAlt: 'Banking professional reviewing financial systems',
-        href: '/case-studies/regional-bank/',
+        href: '/case-studies/regional-bank',
       },
       {
         key: 'emergeortho',
@@ -189,7 +189,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'extra capacity per week, per truck',
         image: '/images/case-studies/healthcare.jpg',
         imageAlt: 'Healthcare imaging environment — remote MRI operations',
-        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
       },
     ],
   },
@@ -244,7 +244,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, identity-led access, and compliance programs scaled to the client-confidentiality obligations your firm carries.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -253,7 +253,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cloud Services',
       description:
         'Managed cloud, M365, Teams, and SharePoint — letting hybrid teams collaborate without slowing down or softening security.',
-      href: '/cloud-services/',
+      href: '/cloud-services',
       image: '/images/supporting/services/annie-spratt-sggw4-qDD54-unsplash-1024x702.jpg',
       imageAlt: 'Team collaborating around laptops in a modern workspace',
     },
@@ -262,7 +262,7 @@ export const CONTENT: IndustryContent = {
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership for firms that need executive expertise without a full-time hire.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
       image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
       imageAlt: 'Executive advisors meeting with a leadership team',
     },

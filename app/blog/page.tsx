@@ -67,7 +67,7 @@ function PostGrid() {
               slug="blog"
               title={p.title}
               description={p.excerpt}
-              href={`/blog/${p.slug}/`}
+              href={`/blog/${p.slug}`}
               image={p.heroImage}
               imageAlt={p.title}
             />

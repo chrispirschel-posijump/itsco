@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/it-staff-augmentation',
   },
   serviceName: 'IT Staff Augmentation',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Staff Augmentation',
     headlineLead: 'IT staff augmentation that',
@@ -106,19 +106,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
       {
         slug: 'remote-it-support',
         label: 'Remote IT Support',
-        href: '/remote-it-support/',
+        href: '/remote-it-support',
         description: 'Fast, senior-staffed remote support that resolves most issues in minutes.',
       },
       {
         slug: 'hardware-software-support',
         label: 'Server Administration & Support',
-        href: '/server-admin-and-support-services/',
+        href: '/server-admin-and-support-services',
         description: 'End-to-end server administration backed by certified engineers, 24/7.',
       },
     ],

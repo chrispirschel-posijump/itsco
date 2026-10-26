@@ -18,44 +18,44 @@ function LinkedInIcon({ size = 18 }: { size?: number }) {
 }
 
 const SERVICES_LINKS = [
-  { label: "Managed IT Services", href: "/managed-it-services/" },
-  { label: "Cybersecurity & Compliance", href: "/cybersecurity/" },
-  { label: "Cloud Services", href: "/cloud-services/" },
-  { label: "Strategy & Consulting", href: "/it-management-consulting/" },
-  { label: "Microsoft Solutions", href: "/microsoft-solutions/" },
-  { label: "Network Engineering", href: "/network-engineering/" },
-  { label: "AI & Automation", href: "/ai-automation/" },
+  { label: "Managed IT Services", href: "/managed-it-services" },
+  { label: "Cybersecurity & Compliance", href: "/cybersecurity" },
+  { label: "Cloud Services", href: "/cloud-services" },
+  { label: "Strategy & Consulting", href: "/it-management-consulting" },
+  { label: "Microsoft Solutions", href: "/microsoft-solutions" },
+  { label: "Network Engineering", href: "/network-engineering" },
+  { label: "AI & Automation", href: "/ai-automation" },
 ];
 
 const INDUSTRIES_LINKS = [
-  { label: "Healthcare", href: "/healthcare-managed-it-services/" },
-  { label: "Financial Services", href: "/financial-services-it/" },
-  { label: "Legal", href: "/legal-and-law-firm-it-services/" },
-  { label: "Manufacturing", href: "/manufacturing-it/" },
-  { label: "Accounting Firms", href: "/accounting-firm-it-services/" },
-  { label: "Professional Services", href: "/professional-it-services/" },
-  { label: "Non-Profit", href: "/non-profit-it-services/" },
+  { label: "Healthcare", href: "/healthcare-managed-it-services" },
+  { label: "Financial Services", href: "/financial-services-it" },
+  { label: "Legal", href: "/legal-and-law-firm-it-services" },
+  { label: "Manufacturing", href: "/manufacturing-it" },
+  { label: "Accounting Firms", href: "/accounting-firm-it-services" },
+  { label: "Professional Services", href: "/professional-it-services" },
+  { label: "Non-Profit", href: "/non-profit-it-services" },
 ];
 
 const LOCAL_LINKS = [
-  { label: "Raleigh", href: "/managed-it-services-raleigh/" },
-  { label: "Durham", href: "/managed-it-services-durham/" },
-  { label: "Chapel Hill", href: "/managed-it-services-chapel-hill/" },
-  { label: "Cary", href: "/managed-it-services-cary/" },
-  { label: "Charlotte", href: "/managed-it-services-charlotte/" },
-  { label: "Greensboro", href: "/managed-it-services-greensboro/" },
-  { label: "Burlington", href: "/managed-it-services-burlington/" },
-  { label: "Fayetteville", href: "/managed-it-services-fayetteville/" },
+  { label: "Raleigh", href: "/managed-it-services-raleigh" },
+  { label: "Durham", href: "/managed-it-services-durham" },
+  { label: "Chapel Hill", href: "/managed-it-services-chapel-hill" },
+  { label: "Cary", href: "/managed-it-services-cary" },
+  { label: "Charlotte", href: "/managed-it-services-charlotte" },
+  { label: "Greensboro", href: "/managed-it-services-greensboro" },
+  { label: "Burlington", href: "/managed-it-services-burlington" },
+  { label: "Fayetteville", href: "/managed-it-services-fayetteville" },
 ];
 
 const COMPANY_LINKS = [
-  { label: "About ITSco", href: "/about-us/" },
-  { label: "Our Process", href: "/process/" },
-  { label: "Partners", href: "/partners/" },
-  { label: "Resource Center", href: "/resources/" },
-  { label: "Blog", href: "/blog/" },
-  { label: "Case Studies", href: "/case-studies/" },
-  { label: "Contact Us", href: "/contact-us/" },
+  { label: "About ITSco", href: "/about-us" },
+  { label: "Our Process", href: "/process" },
+  { label: "Partners", href: "/partners" },
+  { label: "Resource Center", href: "/resources" },
+  { label: "Blog", href: "/blog" },
+  { label: "Case Studies", href: "/case-studies" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 function FooterColumn({
@@ -134,10 +134,10 @@ export default function Footer() {
             </span>
           </div>
           <div className="flex items-center gap-5">
-            <Link href="/privacy-policy/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70">
+            <Link href="/privacy-policy" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70">
               Privacy Policy
             </Link>
-            <Link href="/terms/" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70">
+            <Link href="/terms" className="text-xs text-white/35 hover:text-white/70 transition-[color] duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red rounded-sm active:opacity-70">
               Terms of Use
             </Link>
           </div>

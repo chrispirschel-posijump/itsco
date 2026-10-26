@@ -99,37 +99,37 @@ function CapabilitiesSection() {
             slug="managed-it-services"
             title="24/7 Monitoring & Helpdesk"
             description="Proactive monitoring catches issues before they become outages. When something does come up, our helpdesk resolves it fast."
-            href="/managed-it-services/"
+            href="/managed-it-services"
           />
           <ServiceCard
             slug="cybersecurity"
             title="Cybersecurity & Compliance"
             description="SOC monitoring, SIEM, vulnerability management, and compliance support. All managed under one roof."
-            href="/cybersecurity/"
+            href="/cybersecurity"
           />
           <ServiceCard
             slug="cloud-services"
             title="Cloud Infrastructure"
             description="Azure, AWS, and hybrid cloud environments designed, migrated, and managed to grow with your business."
-            href="/cloud-services/"
+            href="/cloud-services"
           />
           <ServiceCard
             slug="backup-disaster-recovery"
             title="Backup & Disaster Recovery"
             description="Automated backups, tested recovery plans, and business continuity strategies that protect against the worst-case scenario."
-            href="/backup-disaster-recovery/"
+            href="/backup-disaster-recovery"
           />
           <ServiceCard
             slug="network-engineering"
             title="Network Engineering"
             description="Enterprise-grade network design, optimization, and ongoing management for reliable, high-performance connectivity."
-            href="/network-engineering/"
+            href="/network-engineering"
           />
           <ServiceCard
             slug="vcio-vcto-vciso-services"
             title="vCIO & Strategic Advisory"
             description="Executive-level IT leadership that aligns your technology roadmap with your business goals. No full-time salary required."
-            href="/vcio-vcto-vciso-services/"
+            href="/vcio-vcto-vciso-services"
           />
         </div>
       </div>
@@ -182,19 +182,19 @@ function RelatedServices() {
             slug="microsoft-solutions"
             title="Microsoft Solutions"
             description="M365, Azure, Teams, SharePoint, and Copilot — deployed and managed by certified Microsoft specialists."
-            href="/microsoft-solutions/"
+            href="/microsoft-solutions"
           />
           <ServiceCard
             slug="managed-network-services"
             title="Managed Network Services"
             description="Full-scope network monitoring, management, and performance tuning with flexible outsourcing options."
-            href="/managed-network-services/"
+            href="/managed-network-services"
           />
           <ServiceCard
             slug="it-assessments-strategies"
             title="IT Assessments & Strategy"
             description="IT audits, cybersecurity assessments, and strategic roadmaps aligned with your growth plans."
-            href="/it-assessments-strategies/"
+            href="/it-assessments-strategies"
           />
         </div>
       </div>
@@ -224,7 +224,7 @@ export default function PageA() {
             <p className="text-lg text-white/60 leading-relaxed max-w-[38ch] mb-10">Stop chasing IT problems. We manage your infrastructure, security, and cloud so your team stays focused on the work that grows your business.</p>
             <div className="flex flex-wrap gap-4">
               <CTAButton label="Book a Free Consultation" utmSuffix="page-a" className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]" />
-              <CTAButton label="Discover the ROI" href="/maximize-roi-with-managed-it-services/" variant="secondary" className="px-8 py-4 rounded-xl text-base" />
+              <CTAButton label="Discover the ROI" href="/maximize-roi-with-managed-it-services" variant="secondary" className="px-8 py-4 rounded-xl text-base" />
             </div>
           </div>
           <div className="mt-12 relative rounded-2xl overflow-hidden aspect-[4/3] shadow-[0_32px_80px_rgba(0,0,0,0.6)] lg:hidden">

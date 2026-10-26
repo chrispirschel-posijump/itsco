@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/vcio-vcto-vciso-services',
   },
   serviceName: 'vCIO, vCTO, vCISO & vCAIO Services',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · Virtual IT Leadership',
     headlineLead: 'Strategic IT leadership,',
@@ -82,25 +82,25 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'fractional-cto-services',
         label: 'Fractional CTO Services',
-        href: '/fractional-cto-services/',
+        href: '/fractional-cto-services',
         description: 'Hands-on technology leadership scaled to the time your business needs.',
       },
       {
         slug: 'it-roadmap-planning',
         label: 'IT Roadmap Planning',
-        href: '/it-roadmap-planning/',
+        href: '/it-roadmap-planning',
         description: 'A prioritized, costed technology roadmap aligned to your business goals.',
       },
       {
         slug: 'ai-strategy-consulting',
         label: 'AI Strategy Consulting',
-        href: '/ai-strategy-consulting/',
+        href: '/ai-strategy-consulting',
         description: 'Practical AI direction and roadmaps that turn AI investments into business outcomes.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

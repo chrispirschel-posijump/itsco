@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-cloud-services',
   },
   serviceName: 'Managed Cloud Services',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Managed Cloud',
     headlineLead: 'Managed cloud services that keep',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'cloud-migration',
         label: 'Cloud Migration',
-        href: '/cloud-migration/',
+        href: '/cloud-migration',
         description: 'A planned, low-disruption move to the cloud that lands right the first time.',
       },
       {
         slug: 'cloud-hosting',
         label: 'Cloud Hosting',
-        href: '/cloud-hosting/',
+        href: '/cloud-hosting',
         description: 'Reliable, scalable hosting for your applications and infrastructure.',
       },
       {
         slug: 'cloud-services',
         label: 'Cloud Services Overview',
-        href: '/cloud-services/',
+        href: '/cloud-services',
         description: 'The full ITSco cloud program — migration, hosting, management, and more.',
       },
     ],

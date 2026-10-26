@@ -161,7 +161,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'certification earned',
         image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
         imageAlt: 'Healthcare provider with tablet — IT modernization',
-        href: '/case-studies/southern-rehabilitation-network/',
+        href: '/case-studies/southern-rehabilitation-network',
       },
       {
         key: 'emergeortho',
@@ -173,7 +173,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'extra capacity per week, per truck',
         image: '/images/case-studies/healthcare.jpg',
         imageAlt: 'Healthcare imaging environment — remote MRI operations',
-        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
       },
       {
         key: 'oil',
@@ -185,7 +185,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'and on budget',
         image: '/images/case-studies/energy.jpg',
         imageAlt: 'Server infrastructure for an enterprise energy network',
-        href: '/case-studies/network-automation/',
+        href: '/case-studies/network-automation',
       },
     ],
   },
@@ -240,7 +240,7 @@ export const CONTENT: IndustryContent = {
       title: 'Managed IT Services',
       description:
         'Proactive monitoring, patching, and helpdesk on a predictable monthly fee — the foundation of every ITSco engagement.',
-      href: '/managed-it-services/',
+      href: '/managed-it-services',
       image: '/images/supporting/services/berkeley-communications-WEDDt-u3q3o-unsplash.jpg',
       imageAlt: 'Helpdesk technician supporting users',
     },
@@ -249,7 +249,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, MFA, and security awareness training — enterprise-grade defenses sized for small business budgets.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -258,7 +258,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cloud Services',
       description:
         'Managed Microsoft 365, Teams, and Azure — the modern foundation a small business needs to work from anywhere.',
-      href: '/cloud-services/',
+      href: '/cloud-services',
       image: '/images/supporting/services/annie-spratt-sggw4-qDD54-unsplash-1024x702.jpg',
       imageAlt: 'Team collaborating around laptops in a modern workspace',
     },

@@ -202,19 +202,19 @@ function RelatedServices() {
             slug="cybersecurity"
             title="Cybersecurity & MSSP"
             description="24/7 SOC monitoring, MDR, and compliance programs built for healthcare environments."
-            href="/cybersecurity/"
+            href="/cybersecurity"
           />
           <ServiceCard
             slug="managed-it-services"
             title="Managed IT Services"
             description="Proactive monitoring, helpdesk, and network management without the overhead of an in-house team."
-            href="/managed-it-services/"
+            href="/managed-it-services"
           />
           <ServiceCard
             slug="backup-disaster-recovery"
             title="Backup & Disaster Recovery"
             description="HIPAA-compliant backup solutions with tested recovery plans protecting patient data."
-            href="/backup-disaster-recovery/"
+            href="/backup-disaster-recovery"
           />
         </div>
       </div>
@@ -242,7 +242,7 @@ export default function PageB() {
             <p className="text-lg md:text-xl text-white/70 leading-relaxed max-w-[42ch] mb-10">HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. From a team that has served healthcare for 30 years.</p>
             <div className="flex flex-wrap items-center gap-4">
               <CTAButton label="Book a Free Consultation" utmSuffix="page-b" className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]" />
-              <CTAButton label="Explore Healthcare Results" href="/case-studies/" variant="secondary" className="px-8 py-4 rounded-xl text-base" />
+              <CTAButton label="Explore Healthcare Results" href="/case-studies" variant="secondary" className="px-8 py-4 rounded-xl text-base" />
             </div>
           </div>
         </div>

@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/zero-trust-security',
   },
   serviceName: 'Zero Trust Security',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Zero Trust',
     headlineLead: 'Zero trust security —',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'network-security',
         label: 'Network Security',
-        href: '/network-security/',
+        href: '/network-security',
         description: 'End-to-end protection for the network your business runs on.',
       },
       {
         slug: 'endpoint-security',
         label: 'Endpoint Security',
-        href: '/endpoint-security/',
+        href: '/endpoint-security',
         description: 'Protection for every laptop, desktop, server, and mobile device.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],

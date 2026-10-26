@@ -148,7 +148,7 @@ function Hero() {
               />
               <CTAButton
                 label="Discover the ROI"
-                href="/maximize-roi-with-managed-it-services/"
+                href="/maximize-roi-with-managed-it-services"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />
@@ -326,32 +326,32 @@ const SUB_SERVICE_GROUPS = [
   {
     label: 'Detection & Response',
     items: [
-      { number: '01', title: 'Fully Managed Cybersecurity', description: 'End-to-end defense covering monitoring, detection, response, and recovery, managed by certified specialists.', href: '/fully-managed-cybersecurity/' },
-      { number: '02', title: 'Managed SOC',                 description: '24/7 security operations center providing real-time threat monitoring and rapid incident response.', href: '/managed-soc/' },
-      { number: '03', title: 'SIEM Services',               description: 'Hosted, redundant Security Information and Event Management platform with customized detection rules.', href: '/siem-services/' },
-      { number: '04', title: 'MDR Monitoring & Response',   description: 'Managed Detection and Response with active threat hunting and engineer-led containment.', href: '/mdr-monitoring-and-response/' },
-      { number: '05', title: 'Network Security',            description: 'Multi-layered defense protecting network traffic, segmentation, and east-west flows from intrusion.', href: '/network-security/' },
-      { number: '06', title: 'Endpoint Security',           description: 'Next-gen endpoint protection across laptops, desktops, and servers — managed, monitored, and continuously updated.', href: '/endpoint-security/' },
+      { number: '01', title: 'Fully Managed Cybersecurity', description: 'End-to-end defense covering monitoring, detection, response, and recovery, managed by certified specialists.', href: '/fully-managed-cybersecurity' },
+      { number: '02', title: 'Managed SOC',                 description: '24/7 security operations center providing real-time threat monitoring and rapid incident response.', href: '/managed-soc' },
+      { number: '03', title: 'SIEM Services',               description: 'Hosted, redundant Security Information and Event Management platform with customized detection rules.', href: '/siem-services' },
+      { number: '04', title: 'MDR Monitoring & Response',   description: 'Managed Detection and Response with active threat hunting and engineer-led containment.', href: '/mdr-monitoring-and-response' },
+      { number: '05', title: 'Network Security',            description: 'Multi-layered defense protecting network traffic, segmentation, and east-west flows from intrusion.', href: '/network-security' },
+      { number: '06', title: 'Endpoint Security',           description: 'Next-gen endpoint protection across laptops, desktops, and servers — managed, monitored, and continuously updated.', href: '/endpoint-security' },
     ],
   },
   {
     label: 'Prevention',
     items: [
-      { number: '07', title: 'Managed Firewall',           description: 'Configured, monitored firewalls with policy management, device updates, and threat detection.', href: '/managed-firewall/' },
-      { number: '08', title: 'IDS / IPS',                  description: 'Intrusion detection and prevention systems that block known threats and surface anomalous traffic.', href: '/ids-ips/' },
-      { number: '09', title: 'Email Security',             description: 'Multi-layered defense against phishing, spoofing, malware, and business email compromise.', href: '/email-security/' },
-      { number: '10', title: 'Zero Trust Security',        description: 'Identity-first security model where no user or device is trusted by default.', href: '/zero-trust-security/' },
-      { number: '11', title: 'Cloud Cybersecurity',        description: 'Hardened cloud posture across Azure, AWS, and M365 — misconfiguration detection, identity, and continuous monitoring.', href: '/cloud-cybersecurity/' },
+      { number: '07', title: 'Managed Firewall',           description: 'Configured, monitored firewalls with policy management, device updates, and threat detection.', href: '/managed-firewall' },
+      { number: '08', title: 'IDS / IPS',                  description: 'Intrusion detection and prevention systems that block known threats and surface anomalous traffic.', href: '/ids-ips' },
+      { number: '09', title: 'Email Security',             description: 'Multi-layered defense against phishing, spoofing, malware, and business email compromise.', href: '/email-security' },
+      { number: '10', title: 'Zero Trust Security',        description: 'Identity-first security model where no user or device is trusted by default.', href: '/zero-trust-security' },
+      { number: '11', title: 'Cloud Cybersecurity',        description: 'Hardened cloud posture across Azure, AWS, and M365 — misconfiguration detection, identity, and continuous monitoring.', href: '/cloud-cybersecurity' },
     ],
   },
   {
     label: 'Assessment & Compliance',
     items: [
-      { number: '12', title: 'Cyber Risk Assessment',          description: 'Comprehensive evaluation of vulnerabilities, threats, and remediation priorities.', href: '/cyber-risk-assessment/' },
-      { number: '13', title: 'Penetration Testing',            description: 'Controlled attack simulations to surface weaknesses before adversaries do.', href: '/penetration-testing-services/' },
-      { number: '14', title: 'Security Audits & Compliance',   description: 'Audit support and gap analyses for PCI DSS, HIPAA, GDPR, NIST, and CIS frameworks.', href: '/security-audits-compliance/' },
-      { number: '15', title: 'Compliance as a Service',        description: 'Continuous compliance posture management between audits — not just before them.', href: '/compliance-as-a-service/' },
-      { number: '16', title: 'Cybersecurity Consulting',       description: 'Strategic guidance — program design, board reporting, incident response planning, and vCISO leadership.', href: '/cybersecurity-consulting-services/' },
+      { number: '12', title: 'Cyber Risk Assessment',          description: 'Comprehensive evaluation of vulnerabilities, threats, and remediation priorities.', href: '/cyber-risk-assessment' },
+      { number: '13', title: 'Penetration Testing',            description: 'Controlled attack simulations to surface weaknesses before adversaries do.', href: '/penetration-testing-services' },
+      { number: '14', title: 'Security Audits & Compliance',   description: 'Audit support and gap analyses for PCI DSS, HIPAA, GDPR, NIST, and CIS frameworks.', href: '/security-audits-compliance' },
+      { number: '15', title: 'Compliance as a Service',        description: 'Continuous compliance posture management between audits — not just before them.', href: '/compliance-as-a-service' },
+      { number: '16', title: 'Cybersecurity Consulting',       description: 'Strategic guidance — program design, board reporting, incident response planning, and vCISO leadership.', href: '/cybersecurity-consulting-services' },
     ],
   },
 ]
@@ -542,7 +542,7 @@ function FAQSection() {
               </a>{" "}
               to discuss your needs. See the{" "}
               <Link
-                href="/maximize-roi-with-managed-it-services/"
+                href="/maximize-roi-with-managed-it-services"
                 className="text-itsco-red font-semibold underline underline-offset-4 decoration-itsco-red/30 hover:decoration-itsco-red transition-[text-decoration-color] duration-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-itsco-red active:opacity-70 rounded-sm"
               >
                 ROI of managed IT services
@@ -598,7 +598,7 @@ function RelatedServices() {
             slug="managed-it-services"
             title="Managed IT Services"
             description="Proactive monitoring, helpdesk, and network management. Predictable monthly cost. No in-house IT department required."
-            href="/managed-it-services/"
+            href="/managed-it-services"
             image="/images/supporting/services/berkeley-communications-WEDDt-u3q3o-unsplash.jpg"
             imageAlt="Helpdesk technician on the phone behind monitors"
           />
@@ -606,7 +606,7 @@ function RelatedServices() {
             slug="cloud-services"
             title="Cloud Services"
             description="Managed cloud, migration strategy, and Azure and AWS support that scales your infrastructure with your business."
-            href="/cloud-services/"
+            href="/cloud-services"
             image="/images/supporting/services/daria-pimkina-Dj5HnHMtkH0-unsplash.jpg"
             imageAlt="Modern office workspace with team collaborating"
           />
@@ -614,7 +614,7 @@ function RelatedServices() {
             slug="vcio-vcto-vciso-services"
             title="Strategy & Consulting"
             description="vCIO, vCTO, and vCISO engagements that align your technology roadmap with your business goals."
-            href="/it-management-consulting/"
+            href="/it-management-consulting"
             image="/images/supporting/services/group-people-working-out-business-plan-office.jpg"
             imageAlt="Confident leader with team in a strategy session"
           />

@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/voip-unified-communications',
   },
   serviceName: 'VoIP & Unified Communications',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Engineering · VoIP & UC',
     headlineLead: 'Business communication',
@@ -78,19 +78,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'network-engineering',
         label: 'Network Engineering',
-        href: '/network-engineering/',
+        href: '/network-engineering',
         description: 'Modern, secure, high-performance networks — the foundation VoIP runs on.',
       },
       {
         slug: 'microsoft-teams-services',
         label: 'Microsoft Teams Services',
-        href: '/microsoft-teams-services/',
+        href: '/microsoft-teams-services',
         description: 'Teams set up and managed as a real collaboration and calling hub.',
       },
       {
         slug: 'managed-network-services',
         label: 'Managed Network Services',
-        href: '/managed-network-services/',
+        href: '/managed-network-services',
         description: 'Ongoing monitoring, management, and support for your network.',
       },
     ],

@@ -9,7 +9,7 @@ const CONTENT = makeTemplateCityContent({
   region: 'the Triangle',
   serviceNoun: 'IT services',
   serviceNounTitle: 'IT Company',
-  canonicalPath: '/it-company-in-knightdale/',
+  canonicalPath: '/it-company-in-knightdale',
   utmBase: 'it-company-knightdale',
   heroAccent: 'generate real business value.',
   positioningAccent: 'spend smarter.',

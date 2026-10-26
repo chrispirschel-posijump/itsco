@@ -149,7 +149,7 @@ export const RELATED = [
     title: 'Case Studies',
     description:
       'Real outcomes delivered through ITSco partnerships — Red Hat, Siemens Healthineers, and the senior engineering work behind each engagement.',
-    href: '/case-studies/',
+    href: '/case-studies',
     image: '/images/case-studies/banking.jpg',
     imageAlt: 'Real client outcomes',
   },
@@ -158,7 +158,7 @@ export const RELATED = [
     title: 'About ITSco',
     description:
       'The team, the philosophy, and the 25-year track record behind every partnership and every client engagement.',
-    href: '/about-us/',
+    href: '/about-us',
     image: '/images/supporting/services/priscilla-du-preez-xLKg2s4rXWE-unsplash.jpg',
     imageAlt: 'ITSco team',
   },
@@ -167,7 +167,7 @@ export const RELATED = [
     title: 'Resources',
     description:
       'Guides, articles, white papers, and case studies — practical knowledge from the work itself.',
-    href: '/resources/',
+    href: '/resources',
     image: '/images/supporting/services/annie-spratt-sggw4-qDD54-unsplash-1024x702.jpg',
     imageAlt: 'IT resources and insights',
   },

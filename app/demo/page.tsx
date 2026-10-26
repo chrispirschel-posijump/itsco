@@ -73,7 +73,7 @@ function DemoHero() {
               />
               <CTAButton
                 label="See the ROI of Managed IT"
-                href="/maximize-roi-with-managed-it-services/"
+                href="/maximize-roi-with-managed-it-services"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />
@@ -157,37 +157,37 @@ const SERVICES = [
     number: '01',
     title: 'Managed IT Services',
     description: 'Proactive monitoring, helpdesk support, and network management that keeps your team productive and your systems running. No in-house IT department required.',
-    href: '/managed-it-services/',
+    href: '/managed-it-services',
   },
   {
     number: '02',
     title: 'Cybersecurity & MSSP',
     description: '24/7 SOC monitoring, MDR, firewall management, and compliance programs that reduce your risk exposure before threats become incidents.',
-    href: '/cybersecurity/',
+    href: '/cybersecurity',
   },
   {
     number: '03',
     title: 'Cloud Services',
     description: 'Managed cloud, migration strategy, and Azure and AWS support that scales your infrastructure with your business. No more capital costs for on-premises hardware.',
-    href: '/cloud-services/',
+    href: '/cloud-services',
   },
   {
     number: '04',
     title: 'Strategy & Consulting',
     description: 'vCIO, vCTO, and vCISO engagements that align your technology roadmap to your business goals. Your leadership team gets a trusted advisor at the table.',
-    href: '/it-management-consulting/',
+    href: '/it-management-consulting',
   },
   {
     number: '05',
     title: 'Microsoft Solutions',
     description: 'Microsoft 365, Azure, Teams, SharePoint, and Copilot implementation and ongoing managed support. Deployed and managed by certified Microsoft specialists.',
-    href: '/microsoft-solutions/',
+    href: '/microsoft-solutions',
   },
   {
     number: '06',
     title: 'Network Engineering',
     description: 'Enterprise-grade network design, systems engineering, VoIP, and ITAD services that give your infrastructure the reliability your operations depend on.',
-    href: '/network-engineering/',
+    href: '/network-engineering',
   },
 ]
 
@@ -279,10 +279,10 @@ function IndustriesSection() {
 
         <StaggerChildren stagger={100} className="grid grid-cols-1 sm:grid-cols-2 gap-4">
           {[
-            <IndustryCard key="hc" slug="healthcare-managed-it-services" title="Healthcare" description="HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. EmergeOrtho trusts ITSco across 14 locations." href="/healthcare-managed-it-services/" />,
-            <IndustryCard key="lg" slug="legal-and-law-firm-it-services" title="Legal" description="Secure, reliable IT for law firms that can't afford downtime or data breaches. Built with the confidentiality standards your practice requires." href="/legal-and-law-firm-it-services/" />,
-            <IndustryCard key="bf" slug="banking-and-financial-services-it" title="Banking & Financial Services" description="SOC 2, PCI-DSS, and FFIEC-aligned managed IT and cybersecurity for banks, credit unions, RIAs, and private equity firms in the Southeast." href="/banking-and-financial-services-it/" />,
-            <IndustryCard key="mf" slug="manufacturing-it" title="Manufacturing" description="OT/IT convergence, plant floor connectivity, ERP support, and network security engineered for manufacturers who can't afford unplanned downtime." href="/manufacturing-it/" />,
+            <IndustryCard key="hc" slug="healthcare-managed-it-services" title="Healthcare" description="HIPAA-compliant managed IT and cybersecurity for medical practices, health systems, and orthopaedic groups across the Southeast. EmergeOrtho trusts ITSco across 14 locations." href="/healthcare-managed-it-services" />,
+            <IndustryCard key="lg" slug="legal-and-law-firm-it-services" title="Legal" description="Secure, reliable IT for law firms that can't afford downtime or data breaches. Built with the confidentiality standards your practice requires." href="/legal-and-law-firm-it-services" />,
+            <IndustryCard key="bf" slug="banking-and-financial-services-it" title="Banking & Financial Services" description="SOC 2, PCI-DSS, and FFIEC-aligned managed IT and cybersecurity for banks, credit unions, RIAs, and private equity firms in the Southeast." href="/banking-and-financial-services-it" />,
+            <IndustryCard key="mf" slug="manufacturing-it" title="Manufacturing" description="OT/IT convergence, plant floor connectivity, ERP support, and network security engineered for manufacturers who can't afford unplanned downtime." href="/manufacturing-it" />,
           ]}
         </StaggerChildren>
 
@@ -336,7 +336,7 @@ export default function DemoPage() {
           }}
           secondaryCTA={{
             label: 'Learn About AI & Automation',
-            href: '/ai-automation/',
+            href: '/ai-automation',
             variant: 'secondary',
           }}
         />

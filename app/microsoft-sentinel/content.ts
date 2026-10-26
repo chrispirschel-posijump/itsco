@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-sentinel',
   },
   serviceName: 'Microsoft Sentinel',
-  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions' },
   hero: {
     eyebrow: 'Microsoft · Sentinel',
     headlineLead: 'Microsoft Sentinel —',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
       {
         slug: 'siem-services',
         label: 'SIEM Services',
-        href: '/siem-services/',
+        href: '/siem-services',
         description: 'Platform-agnostic managed SIEM — real-time correlation and response.',
       },
       {
         slug: 'microsoft-solutions',
         label: 'Microsoft Solutions Overview',
-        href: '/microsoft-solutions/',
+        href: '/microsoft-solutions',
         description: 'The full ITSco Microsoft program — 365, Azure, Teams, and more.',
       },
     ],

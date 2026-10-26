@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/systems-engineering',
   },
   serviceName: 'Systems Engineering',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Engineering · Systems Engineering',
     headlineLead: 'Systems engineering for infrastructure',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'network-engineering',
         label: 'Network Engineering',
-        href: '/network-engineering/',
+        href: '/network-engineering',
         description: 'Modern, secure, high-performance networks designed for your business.',
       },
       {
         slug: 'virtualization-services',
         label: 'Virtualization Services',
-        href: '/virtualization-services/',
+        href: '/virtualization-services',
         description: 'Consolidate servers and desktops onto efficient, resilient infrastructure.',
       },
       {
         slug: 'voip-unified-communications',
         label: 'VoIP & Unified Communications',
-        href: '/voip-unified-communications/',
+        href: '/voip-unified-communications',
         description: 'Secure, scalable business voice and collaboration solutions.',
       },
     ],

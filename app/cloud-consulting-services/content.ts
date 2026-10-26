@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cloud-consulting-services',
   },
   serviceName: 'Cloud Consulting',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Consulting',
     headlineLead: 'Cloud consulting —',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'cloud-migration',
         label: 'Cloud Migration',
-        href: '/cloud-migration/',
+        href: '/cloud-migration',
         description: 'A planned, low-disruption move to the cloud that lands right the first time.',
       },
       {
         slug: 'managed-cloud-services',
         label: 'Managed Cloud Services',
-        href: '/managed-cloud-services/',
+        href: '/managed-cloud-services',
         description: 'Ongoing management, monitoring, and optimization of your cloud environment.',
       },
       {
         slug: 'cloud-services',
         label: 'Cloud Services Overview',
-        href: '/cloud-services/',
+        href: '/cloud-services',
         description: 'The full ITSco cloud program — migration, hosting, management, and more.',
       },
     ],

@@ -176,9 +176,9 @@ function RelatedServices() {
           </div>
         </FadeUp>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-          <ServiceCard slug="cybersecurity" title="Cybersecurity & MSSP" description="24/7 SOC monitoring, MDR, and compliance programs built for healthcare environments." href="/cybersecurity/" />
-          <ServiceCard slug="managed-it-services" title="Managed IT Services" description="Proactive monitoring, helpdesk, and network management without the overhead of an in-house team." href="/managed-it-services/" />
-          <ServiceCard slug="backup-disaster-recovery" title="Backup & Disaster Recovery" description="HIPAA-compliant backup solutions with tested recovery plans protecting patient data." href="/backup-disaster-recovery/" />
+          <ServiceCard slug="cybersecurity" title="Cybersecurity & MSSP" description="24/7 SOC monitoring, MDR, and compliance programs built for healthcare environments." href="/cybersecurity" />
+          <ServiceCard slug="managed-it-services" title="Managed IT Services" description="Proactive monitoring, helpdesk, and network management without the overhead of an in-house team." href="/managed-it-services" />
+          <ServiceCard slug="backup-disaster-recovery" title="Backup & Disaster Recovery" description="HIPAA-compliant backup solutions with tested recovery plans protecting patient data." href="/backup-disaster-recovery" />
         </div>
       </div>
     </section>
@@ -227,7 +227,7 @@ export default function PageBLite() {
             <FadeUp delay={300}>
               <div className="flex flex-wrap items-center gap-4">
                 <CTAButton label="Book a Free Consultation" utmSuffix="page-b-lite" className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]" />
-                <CTAButton label="Explore Healthcare Results" href="/case-studies/" variant="secondary" className="px-8 py-4 rounded-xl text-base" />
+                <CTAButton label="Explore Healthcare Results" href="/case-studies" variant="secondary" className="px-8 py-4 rounded-xl text-base" />
               </div>
             </FadeUp>
           </div>

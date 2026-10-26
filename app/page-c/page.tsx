@@ -206,7 +206,7 @@ export default function PageC() {
         stat="25+"
         statLabel="years of strategic IT leadership for NC businesses"
         primaryCTA={{ label: 'Book a Free Consultation', utmSuffix: 'page-c' }}
-        secondaryCTA={{ label: 'Learn About Our Process', href: '/process/', variant: 'secondary' }}
+        secondaryCTA={{ label: 'Learn About Our Process', href: '/process', variant: 'secondary' }}
       />
 
       {/* 2. Client logos */}

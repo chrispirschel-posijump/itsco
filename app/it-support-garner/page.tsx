@@ -9,7 +9,7 @@ const CONTENT = makeTemplateCityContent({
   region: 'the Triangle',
   serviceNoun: 'IT support',
   serviceNounTitle: 'IT Support',
-  canonicalPath: '/it-support-garner/',
+  canonicalPath: '/it-support-garner',
   utmBase: 'it-support-garner',
   heroAccent: 'keeps your business running.',
   positioningAccent: 'pay for themselves.',

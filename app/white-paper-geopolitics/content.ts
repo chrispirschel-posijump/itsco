@@ -41,7 +41,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'FLP Hyperscaler Monetization',
       description:
         "Today's AI boom is grounded in real profits — not dot-com speculation. Where the real monetization opportunities sit.",
-      href: '/white-papers-flp-hyperscaler-monetization/',
+      href: '/white-papers-flp-hyperscaler-monetization',
     },
     {
       slug: 'gpu-and-refresh-cycle',
@@ -49,7 +49,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'GPU and Refresh Cycle Case Study',
       description:
         "How rising GPU investments in 2024 signal a shift toward AI workloads and reshape refresh strategy.",
-      href: '/white-papers-gpu-and-refresh-cycle-case-study/',
+      href: '/white-papers-gpu-and-refresh-cycle-case-study',
     },
     {
       slug: 'tpm',
@@ -57,7 +57,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Spending and ESG Pressures Drive Demand for TPM',
       description:
         'Why AI capex pressure and ESG mandates are accelerating the move away from OEM-only support.',
-      href: '/white-papers-tpm/',
+      href: '/white-papers-tpm',
     },
   ],
   relatedServices: [
@@ -66,21 +66,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Strategy Consulting',
       description:
         'Practical AI direction and roadmaps that turn AI investment into measurable business advantage.',
-      href: '/ai-strategy-consulting/',
+      href: '/ai-strategy-consulting',
     },
     {
       slug: 'vcio-vcto-vciso-services',
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership for institutions that need C-suite expertise without a C-suite hire.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
     },
     {
       slug: 'tech-due-diligence-for-businesses',
       title: 'Tech Due Diligence',
       description:
         'Independent technology assessments for M&A, supplier evaluation, and strategic technology decisions.',
-      href: '/tech-due-diligence-for-businesses/',
+      href: '/tech-due-diligence-for-businesses',
     },
   ],
   bookingUtm: 'wp-geopolitics',

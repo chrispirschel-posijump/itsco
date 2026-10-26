@@ -15,7 +15,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/ids-ips',
   },
   serviceName: 'Intrusion Detection & Prevention (IDS/IPS)',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · IDS/IPS',
     headlineLead: 'Intrusion detection and prevention',
@@ -67,19 +67,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-firewall',
         label: 'Managed Firewall',
-        href: '/managed-firewall/',
+        href: '/managed-firewall',
         description: 'Properly configured, monitored firewalls as a reliable first line of defense.',
       },
       {
         slug: 'network-security',
         label: 'Network Security',
-        href: '/network-security/',
+        href: '/network-security',
         description: 'End-to-end protection for the network your business runs on.',
       },
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
     ],

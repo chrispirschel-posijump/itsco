@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-network-services',
   },
   serviceName: 'Managed Network Services',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Network Services',
     headlineLead: 'Managed network services',
@@ -75,19 +75,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'server-monitoring-and-maintenance',
         label: 'Server Monitoring & Maintenance',
-        href: '/server-monitoring-and-maintenance/',
+        href: '/server-monitoring-and-maintenance',
         description: '24/7 monitoring, patching, and tuning that keeps critical servers healthy.',
       },
       {
         slug: 'backup-disaster-recovery',
         label: 'Backup & Disaster Recovery',
-        href: '/backup-disaster-recovery/',
+        href: '/backup-disaster-recovery',
         description: 'Automated backups and tested recovery plans that protect against the worst case.',
       },
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
     ],

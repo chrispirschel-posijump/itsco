@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/technical-project-management',
   },
   serviceName: 'Technical Project Management',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · Project Management',
     headlineLead: 'IT projects delivered',
@@ -74,19 +74,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'it-roadmap-planning',
         label: 'IT Roadmap Planning',
-        href: '/it-roadmap-planning/',
+        href: '/it-roadmap-planning',
         description: 'A prioritized, costed technology roadmap aligned to your business goals.',
       },
       {
         slug: 'vcio-vcto-vciso-services',
         label: 'vCIO, vCTO & vCISO Services',
-        href: '/vcio-vcto-vciso-services/',
+        href: '/vcio-vcto-vciso-services',
         description: 'Strategic IT leadership without the cost of a full-time executive.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

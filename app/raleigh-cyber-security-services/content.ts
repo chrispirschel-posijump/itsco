@@ -76,19 +76,19 @@ export const CONTENT: CityServiceContent = {
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services in Raleigh',
-        href: '/managed-it-services-raleigh/',
+        href: '/managed-it-services-raleigh',
         description: 'Full-suite managed IT — monitoring, help desk, cloud, and support.',
       },
       {
         slug: 'remote-it-support',
         label: 'IT Support in Raleigh',
-        href: '/it-support-raleigh/',
+        href: '/it-support-raleigh',
         description: 'Responsive remote and on-site IT support for Raleigh businesses.',
       },
       {
         slug: 'it-staff-augmentation',
         label: 'Outsourced IT in Raleigh',
-        href: '/raleigh-it-outsourcing/',
+        href: '/raleigh-it-outsourcing',
         description: 'Scale your IT capacity with ITSco engineers as an extension of your team.',
       },
     ],

@@ -9,7 +9,7 @@ const CONTENT = makeTemplateCityContent({
   region: 'eastern North Carolina',
   serviceNoun: 'IT support',
   serviceNounTitle: 'IT Support',
-  canonicalPath: '/it-support-rocky-mount/',
+  canonicalPath: '/it-support-rocky-mount',
   utmBase: 'it-support-rocky-mount',
   heroAccent: 'fixes the root cause.',
   positioningAccent: 'deliver predictable value.',

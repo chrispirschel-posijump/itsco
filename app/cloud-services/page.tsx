@@ -320,67 +320,67 @@ const SUB_SERVICES = [
     number: '01',
     title: 'Managed Cloud Services',
     description: 'Day-to-day monitoring, security, optimization, and support of your cloud environment.',
-    href: '/managed-cloud-services/',
+    href: '/managed-cloud-services',
   },
   {
     number: '02',
     title: 'Cloud Migration',
     description: 'A planned, secure, low-disruption move to the cloud that lands right the first time.',
-    href: '/cloud-migration/',
+    href: '/cloud-migration',
   },
   {
     number: '03',
     title: 'Cloud Consulting',
     description: 'Readiness assessments, strategy, and roadmaps that make the cloud pay off.',
-    href: '/cloud-consulting-services/',
+    href: '/cloud-consulting-services',
   },
   {
     number: '04',
     title: 'Microsoft Azure Services',
     description: 'Migration, management, and optimization on Microsoft Azure by certified experts.',
-    href: '/microsoft-azure-services/',
+    href: '/microsoft-azure-services',
   },
   {
     number: '05',
     title: 'AWS Services',
     description: 'Amazon Web Services architected, managed, and cost-optimized for your workloads.',
-    href: '/aws-services/',
+    href: '/aws-services',
   },
   {
     number: '06',
     title: 'Cloud Hosting',
     description: 'Reliable, scalable, secure hosting for your applications and infrastructure.',
-    href: '/cloud-hosting/',
+    href: '/cloud-hosting',
   },
   {
     number: '07',
     title: 'Public & Hybrid Cloud',
     description: 'The scalability of public cloud and the control of private — combined.',
-    href: '/public-hybrid-cloud-services/',
+    href: '/public-hybrid-cloud-services',
   },
   {
     number: '08',
     title: 'Private Cloud Services',
     description: 'Dedicated, single-tenant cloud for sensitive workloads and tight control.',
-    href: '/private-cloud-services/',
+    href: '/private-cloud-services',
   },
   {
     number: '09',
     title: 'Cloud Cybersecurity',
     description: 'Closing the security gap cloud providers leave to you — configuration, identity, and data.',
-    href: '/cloud-cybersecurity/',
+    href: '/cloud-cybersecurity',
   },
   {
     number: '10',
     title: 'Virtualization Services',
     description: 'Consolidate servers and desktops onto efficient, resilient infrastructure.',
-    href: '/virtualization-services/',
+    href: '/virtualization-services',
   },
   {
     number: '11',
     title: 'Managed Desktop & VDI',
     description: 'Secure virtual desktops your team can reach from any device, anywhere.',
-    href: '/managed-desktop-vdi/',
+    href: '/managed-desktop-vdi',
   },
 ]
 
@@ -534,7 +534,7 @@ function RelatedServices() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <Link
-            href="/managed-it-services/"
+            href="/managed-it-services"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Managed IT Services</h3>
@@ -547,7 +547,7 @@ function RelatedServices() {
             </span>
           </Link>
           <Link
-            href="/cybersecurity/"
+            href="/cybersecurity"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Cybersecurity & MSSP</h3>
@@ -560,7 +560,7 @@ function RelatedServices() {
             </span>
           </Link>
           <Link
-            href="/ai-automation/"
+            href="/ai-automation"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">AI &amp; Automation</h3>

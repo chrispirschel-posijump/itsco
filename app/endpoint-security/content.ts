@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/endpoint-security',
   },
   serviceName: 'Endpoint Security',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Endpoint Security',
     headlineLead: 'Endpoint security for every device',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'network-security',
         label: 'Network Security',
-        href: '/network-security/',
+        href: '/network-security',
         description: 'End-to-end protection for the network your business runs on.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
       {
         slug: 'managed-soc',
         label: 'Managed SOC',
-        href: '/managed-soc/',
+        href: '/managed-soc',
         description: 'A 24/7 security operations center watching your environment.',
       },
     ],

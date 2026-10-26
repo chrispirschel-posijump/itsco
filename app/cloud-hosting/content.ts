@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/cloud-hosting',
   },
   serviceName: 'Cloud Hosting',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Hosting',
     headlineLead: 'Cloud hosting that’s reliable,',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'public-hybrid-cloud-services',
         label: 'Public & Hybrid Cloud',
-        href: '/public-hybrid-cloud-services/',
+        href: '/public-hybrid-cloud-services',
         description: 'The scalability of public cloud and the control of private, combined.',
       },
       {
         slug: 'private-cloud-services',
         label: 'Private Cloud Services',
-        href: '/private-cloud-services/',
+        href: '/private-cloud-services',
         description: 'Dedicated, single-tenant cloud for sensitive workloads and tight control.',
       },
       {
         slug: 'managed-cloud-services',
         label: 'Managed Cloud Services',
-        href: '/managed-cloud-services/',
+        href: '/managed-cloud-services',
         description: 'Ongoing management, monitoring, and optimization of your cloud environment.',
       },
     ],

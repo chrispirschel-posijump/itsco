@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/managed-desktop-vdi',
   },
   serviceName: 'Managed Desktop & VDI',
-  parent: { name: 'Cloud Services', href: '/cloud-services/' },
+  parent: { name: 'Cloud Services', href: '/cloud-services' },
   hero: {
     eyebrow: 'Cloud · Managed Desktop & VDI',
     headlineLead: 'Virtual desktops your team can',
@@ -66,19 +66,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-cloud-services',
         label: 'Managed Cloud Services',
-        href: '/managed-cloud-services/',
+        href: '/managed-cloud-services',
         description: 'Ongoing management, monitoring, and optimization of your cloud environment.',
       },
       {
         slug: 'virtualization-services',
         label: 'Virtualization Services',
-        href: '/virtualization-services/',
+        href: '/virtualization-services',
         description: 'Consolidate servers and infrastructure for efficiency and resilience.',
       },
       {
         slug: 'cloud-services',
         label: 'Cloud Services Overview',
-        href: '/cloud-services/',
+        href: '/cloud-services',
         description: 'The full ITSco cloud program — migration, hosting, management, and more.',
       },
     ],

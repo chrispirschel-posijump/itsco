@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/remote-it-support',
   },
   serviceName: 'Remote IT Support',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Remote Support',
     headlineLead: 'Remote IT support that',
@@ -106,19 +106,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
       {
         slug: 'raleigh-it-helpdesk',
         label: 'HelpDesk & Service Desk',
-        href: '/raleigh-it-helpdesk/',
+        href: '/raleigh-it-helpdesk',
         description: 'Local, responsive help desk support staffed by senior engineers.',
       },
       {
         slug: 'it-staff-augmentation',
         label: 'IT Staff Augmentation',
-        href: '/it-staff-augmentation/',
+        href: '/it-staff-augmentation',
         description: 'Embedded engineers who supplement your in-house team when you need them.',
       },
     ],

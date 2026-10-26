@@ -11,7 +11,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/microsoft-teams-services',
   },
   serviceName: 'Microsoft Teams Services',
-  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions/' },
+  parent: { name: 'Microsoft Solutions', href: '/microsoft-solutions' },
   hero: {
     eyebrow: 'Microsoft · Teams',
     headlineLead: 'Microsoft Teams, built to',
@@ -97,19 +97,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'microsoft-365-services',
         label: 'Microsoft 365 Services',
-        href: '/microsoft-365-services/',
+        href: '/microsoft-365-services',
         description: 'Deployment, management, and security across the full Microsoft 365 suite.',
       },
       {
         slug: 'microsoft-sharepoint-services',
         label: 'Microsoft SharePoint Services',
-        href: '/microsoft-sharepoint-services/',
+        href: '/microsoft-sharepoint-services',
         description: 'Document management and collaboration, optimized and secured.',
       },
       {
         slug: 'microsoft-solutions',
         label: 'Microsoft Solutions Overview',
-        href: '/microsoft-solutions/',
+        href: '/microsoft-solutions',
         description: 'The full ITSco Microsoft program — 365, Azure, Teams, and more.',
       },
     ],

@@ -323,61 +323,61 @@ const SUB_SERVICES = [
     number: '01',
     title: 'vCIO, vCTO, vCISO & vCAIO Services',
     description: 'Virtual C-level IT leadership that aligns technology with business strategy.',
-    href: '/vcio-vcto-vciso-services/',
+    href: '/vcio-vcto-vciso-services',
   },
   {
     number: '02',
     title: 'Fractional CTO Services',
     description: 'Hands-on senior technology leadership scaled to your size and budget.',
-    href: '/fractional-cto-services/',
+    href: '/fractional-cto-services',
   },
   {
     number: '03',
     title: 'IT Roadmap Planning',
     description: 'A prioritized, costed multi-year plan that turns strategy into sequenced moves.',
-    href: '/it-roadmap-planning/',
+    href: '/it-roadmap-planning',
   },
   {
     number: '04',
     title: 'IT Assessments & Strategies',
     description: 'In-depth evaluations of infrastructure, security, and compliance with a roadmap.',
-    href: '/it-assessments-strategies/',
+    href: '/it-assessments-strategies',
   },
   {
     number: '05',
     title: 'IT ROI Assessment',
     description: 'A clear-eyed look at what your IT spend delivers — and where value is leaking.',
-    href: '/it-roi-assessment/',
+    href: '/it-roi-assessment',
   },
   {
     number: '06',
     title: 'Technology Due Diligence',
     description: 'Clear, actionable technology assessment for investors and acquirers.',
-    href: '/tech-due-diligence-for-businesses/',
+    href: '/tech-due-diligence-for-businesses',
   },
   {
     number: '07',
     title: 'IT Due Diligence for M&A',
     description: 'Dedicated IT due diligence and integration planning for mergers and acquisitions.',
-    href: '/it-due-diligence-mergers-acquisitions/',
+    href: '/it-due-diligence-mergers-acquisitions',
   },
   {
     number: '08',
     title: 'Technical Project Management',
     description: 'Experienced TPMs who deliver complex IT projects on time and on budget.',
-    href: '/technical-project-management/',
+    href: '/technical-project-management',
   },
   {
     number: '09',
     title: 'Business Continuity Planning',
     description: 'A tested plan to keep critical operations running through any disruption.',
-    href: '/business-continuity-planning/',
+    href: '/business-continuity-planning',
   },
   {
     number: '10',
     title: 'AI Strategy Consulting',
     description: 'Executive guidance to build a practical AI roadmap aligned with your business goals, budget, and risk tolerance.',
-    href: '/ai-strategy-consulting/',
+    href: '/ai-strategy-consulting',
   },
 ]
 
@@ -531,7 +531,7 @@ function RelatedServices() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <Link
-            href="/managed-it-services/"
+            href="/managed-it-services"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Managed IT Services</h3>
@@ -544,7 +544,7 @@ function RelatedServices() {
             </span>
           </Link>
           <Link
-            href="/maximize-roi-with-managed-it-services/"
+            href="/maximize-roi-with-managed-it-services"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">The ROI of Managed IT</h3>
@@ -557,7 +557,7 @@ function RelatedServices() {
             </span>
           </Link>
           <Link
-            href="/cybersecurity/"
+            href="/cybersecurity"
             className="group h-full flex flex-col bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_rgba(0,0,0,0.1)] hover:-translate-y-1 transition-[transform,box-shadow] duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-itsco-red"
           >
             <h3 className="text-lg font-semibold text-itsco-dark leading-snug mb-2">Cybersecurity & MSSP</h3>

@@ -13,7 +13,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/security-audits-compliance',
   },
   serviceName: 'Security Audits & Compliance',
-  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity/' },
+  parent: { name: 'Cybersecurity & Compliance', href: '/cybersecurity' },
   hero: {
     eyebrow: 'Cybersecurity · Audits & Compliance',
     headlineLead: 'Security audits and compliance',
@@ -67,19 +67,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'cyber-risk-assessment',
         label: 'Cyber Risk Assessment',
-        href: '/cyber-risk-assessment/',
+        href: '/cyber-risk-assessment',
         description: 'A focused look at your exposure and a prioritized plan to fix it.',
       },
       {
         slug: 'penetration-testing-services',
         label: 'Penetration Testing',
-        href: '/penetration-testing-services/',
+        href: '/penetration-testing-services',
         description: 'Real-world attack simulations that surface weaknesses before attackers do.',
       },
       {
         slug: 'fully-managed-cybersecurity',
         label: 'Fully-Managed Cybersecurity',
-        href: '/fully-managed-cybersecurity/',
+        href: '/fully-managed-cybersecurity',
         description: 'End-to-end cybersecurity, monitored and managed by ITSco.',
       },
     ],

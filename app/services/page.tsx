@@ -20,42 +20,42 @@ const SERVICES = [
     title: 'Managed IT Services',
     description:
       'Proactive support, 24/7 monitoring, help desk, and network management that keep your business running — with predictable, fixed-rate pricing.',
-    href: '/managed-it-services/',
+    href: '/managed-it-services',
   },
   {
     slug: 'cybersecurity',
     title: 'Cybersecurity & MSSP',
     description:
       'Layered defense — SOC, SIEM, MDR, firewall, and endpoint protection — from a team that has never had a client experience a serious breach.',
-    href: '/cybersecurity/',
+    href: '/cybersecurity',
   },
   {
     slug: 'cloud-services',
     title: 'Cloud Services',
     description:
       'Cloud migration, hosting, and managed Azure and AWS environments engineered for reliability, scalability, and security.',
-    href: '/cloud-services/',
+    href: '/cloud-services',
   },
   {
     slug: 'it-management-consulting',
     title: 'Strategy & Consulting',
     description:
       'vCIO, vCTO, and vCISO leadership, IT roadmaps, and due diligence that align technology spending with your business plans.',
-    href: '/it-management-consulting/',
+    href: '/it-management-consulting',
   },
   {
     slug: 'microsoft-solutions',
     title: 'Microsoft Solutions',
     description:
       'Microsoft 365, Azure, Teams, SharePoint, Copilot, and Sentinel — deployed, secured, and managed by certified engineers.',
-    href: '/microsoft-solutions/',
+    href: '/microsoft-solutions',
   },
   {
     slug: 'network-engineering',
     title: 'Engineering',
     description:
       'Network and systems engineering, VoIP, IT procurement, and secure asset disposition delivered by senior technical talent.',
-    href: '/network-engineering/',
+    href: '/network-engineering',
   },
 ]
 

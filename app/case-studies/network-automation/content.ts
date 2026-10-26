@@ -90,7 +90,7 @@ export const CONTENT: CaseStudyContent = {
         'A century-old regional bank with 250+ offices and 2,800 employees turned to ITSco — via the Red Hat Partner Network — to modernize network management through Ansible-based automation.',
       image: '/images/case-studies/banking.jpg',
       imageAlt: 'Financial services environment',
-      href: '/case-studies/regional-bank/',
+      href: '/case-studies/regional-bank',
     },
     {
       category: 'Healthcare',
@@ -99,7 +99,7 @@ export const CONTENT: CaseStudyContent = {
         "How ITSco's advanced networking enabled EmergeOrtho to operate mobile MRI scanners remotely — unlocking 40 extra scan hours per week and ~30–40% labor savings.",
       image: '/images/case-studies/healthcare.jpg',
       imageAlt: 'Healthcare imaging environment',
-      href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+      href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
     },
     {
       category: 'Healthcare',
@@ -108,7 +108,7 @@ export const CONTENT: CaseStudyContent = {
         'Southern Rehabilitation Network secured a critical State of North Carolina contract after a cybersecurity and infrastructure modernization led by ITSco.',
       image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
       imageAlt: 'Healthcare provider with tablet — IT modernization',
-      href: '/case-studies/southern-rehabilitation-network/',
+      href: '/case-studies/southern-rehabilitation-network',
     },
   ],
   bookingUtm: 'oil-network-automation-bottom',

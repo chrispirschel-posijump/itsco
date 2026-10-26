@@ -12,7 +12,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/fractional-cto-services',
   },
   serviceName: 'Fractional CTO Services',
-  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting/' },
+  parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · Fractional CTO',
     headlineLead: 'A senior technology leader,',
@@ -98,19 +98,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'vcio-vcto-vciso-services',
         label: 'vCIO, vCTO & vCISO Services',
-        href: '/vcio-vcto-vciso-services/',
+        href: '/vcio-vcto-vciso-services',
         description: 'Virtual CIO, CTO, and CISO leadership matched to your needs.',
       },
       {
         slug: 'it-roadmap-planning',
         label: 'IT Roadmap Planning',
-        href: '/it-roadmap-planning/',
+        href: '/it-roadmap-planning',
         description: 'A prioritized, costed technology roadmap aligned to your business goals.',
       },
       {
         slug: 'it-management-consulting',
         label: 'Strategy & Consulting Overview',
-        href: '/it-management-consulting/',
+        href: '/it-management-consulting',
         description: 'The full ITSco strategy program — leadership, roadmaps, and assessments.',
       },
     ],

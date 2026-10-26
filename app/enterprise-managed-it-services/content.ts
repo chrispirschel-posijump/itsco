@@ -164,7 +164,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'and on budget',
         image: '/images/case-studies/energy.jpg',
         imageAlt: 'Server infrastructure for an enterprise energy network',
-        href: '/case-studies/network-automation/',
+        href: '/case-studies/network-automation',
       },
       {
         key: 'bank',
@@ -176,7 +176,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'employees across 250 offices',
         image: '/images/case-studies/banking.jpg',
         imageAlt: 'Banking professional reviewing financial systems',
-        href: '/case-studies/regional-bank/',
+        href: '/case-studies/regional-bank',
       },
       {
         key: 'emergeortho',
@@ -188,7 +188,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'extra capacity per week, per truck',
         image: '/images/case-studies/healthcare.jpg',
         imageAlt: 'Healthcare imaging environment — remote MRI operations',
-        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
       },
     ],
   },
@@ -243,7 +243,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, SIEM, and multi-framework compliance — engineered to the threats and obligations enterprise programs answer to.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -252,7 +252,7 @@ export const CONTENT: IndustryContent = {
       title: 'Managed SOC & MDR',
       description:
         '24/7 detection, investigation, and response — senior analysts, real signal, integrated incident response.',
-      href: '/managed-soc/',
+      href: '/managed-soc',
       image: '/images/supporting/services/network-services.jpg',
       imageAlt: 'Security operations team monitoring an enterprise environment',
     },
@@ -261,7 +261,7 @@ export const CONTENT: IndustryContent = {
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Senior virtual-executive capacity that supplements your internal leadership across IT, security, and AI strategy.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
       image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
       imageAlt: 'Executive advisors meeting with an enterprise leadership team',
     },

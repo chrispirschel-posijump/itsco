@@ -165,7 +165,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'certification earned',
         image: '/images/supporting/industries/pexels-polina-tankilevitch-5234499.jpg',
         imageAlt: 'Healthcare provider with tablet — IT modernization',
-        href: '/case-studies/southern-rehabilitation-network/',
+        href: '/case-studies/southern-rehabilitation-network',
       },
       {
         key: 'emergeortho',
@@ -177,7 +177,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'extra service capacity per truck',
         image: '/images/case-studies/healthcare.jpg',
         imageAlt: 'Healthcare imaging environment — remote MRI operations',
-        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations/',
+        href: '/case-studies/emerge-ortho-mobile-mri-remote-operations',
       },
       {
         key: 'bank',
@@ -189,7 +189,7 @@ export const CONTENT: IndustryContent = {
         statLabel: 'employees across 250 offices',
         image: '/images/case-studies/banking.jpg',
         imageAlt: 'Institutional workplace reviewing operational systems',
-        href: '/case-studies/regional-bank/',
+        href: '/case-studies/regional-bank',
       },
     ],
   },
@@ -244,7 +244,7 @@ export const CONTENT: IndustryContent = {
       title: 'Cybersecurity & Compliance',
       description:
         '24/7 SOC, MDR, MFA, and compliance programs scaled to the donor-data and grant obligations your organization carries.',
-      href: '/cybersecurity/',
+      href: '/cybersecurity',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
       imageAlt: 'Security operations engineers reviewing code on multiple monitors',
     },
@@ -253,7 +253,7 @@ export const CONTENT: IndustryContent = {
       title: 'Microsoft Solutions',
       description:
         'Full use of Microsoft Tech for Social Impact — managed M365, Teams, SharePoint, and Azure built for nonprofits.',
-      href: '/microsoft-solutions/',
+      href: '/microsoft-solutions',
       image: '/images/supporting/services/windows-AigsWJmvoEo-unsplash.jpg',
       imageAlt: 'Microsoft cloud and productivity tools for organizations',
     },
@@ -262,7 +262,7 @@ export const CONTENT: IndustryContent = {
       title: 'vCIO, vCTO, vCISO & vCAIO',
       description:
         'Strategic IT, security, and AI leadership for executive directors who need C-suite expertise without a C-suite hire.',
-      href: '/vcio-vcto-vciso-services/',
+      href: '/vcio-vcto-vciso-services',
       image: '/images/hero/consulting/pexels-vlada-karpovich-7433919.jpg',
       imageAlt: 'Executive advisors meeting with a leadership team',
     },

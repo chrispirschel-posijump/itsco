@@ -40,7 +40,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'AI Spending and ESG Pressures Drive Demand for TPM',
       description:
         'Why AI capex pressure and ESG mandates are accelerating the move away from OEM-only support.',
-      href: '/white-papers-tpm/',
+      href: '/white-papers-tpm',
     },
     {
       slug: 'esg-research-paper',
@@ -48,7 +48,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'ESG Research Paper: AI, Energy, and the Power Grid',
       description:
         'GPUs combine fast calculation with rapid energy consumption — AI growth is on a collision course with the power grid.',
-      href: '/white-papers-esg-research-paper/',
+      href: '/white-papers-esg-research-paper',
     },
     {
       slug: 'flp-hyperscaler-monetization',
@@ -56,7 +56,7 @@ export const CONTENT: WhitePaperContent = {
       title: 'FLP Hyperscaler Monetization',
       description:
         "Today's AI boom is grounded in real profits and proven tech — not dot-com speculation.",
-      href: '/white-papers-flp-hyperscaler-monetization/',
+      href: '/white-papers-flp-hyperscaler-monetization',
     },
   ],
   relatedServices: [
@@ -65,21 +65,21 @@ export const CONTENT: WhitePaperContent = {
       title: 'IT Asset Disposition',
       description:
         'Certified, secure, audit-ready disposition of decommissioned IT assets — chain of custody, data destruction, reporting.',
-      href: '/itad/',
+      href: '/itad',
     },
     {
       slug: 'it-procurement',
       title: 'IT Procurement',
       description:
         'Hardware, software, and licensing sourced at the discounts your size actually qualifies for — minus the overhead.',
-      href: '/it-procurement/',
+      href: '/it-procurement',
     },
     {
       slug: 'managed-cloud-services',
       title: 'Managed Cloud Services',
       description:
         'Managed Azure, AWS, and hybrid cloud — with FinOps, identity, and security wrapped in.',
-      href: '/managed-cloud-services/',
+      href: '/managed-cloud-services',
     },
   ],
   bookingUtm: 'wp-gpu-refresh',

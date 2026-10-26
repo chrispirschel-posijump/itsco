@@ -79,19 +79,19 @@ export const CONTENT: CityServiceContent = {
       {
         slug: 'remote-it-support',
         label: 'IT Support in Durham',
-        href: '/it-support-durham/',
+        href: '/it-support-durham',
         description: 'Responsive remote and on-site IT support for Durham businesses.',
       },
       {
         slug: 'it-management-consulting',
         label: 'IT Consulting in Durham',
-        href: '/durham-it-consulting/',
+        href: '/durham-it-consulting',
         description: 'Strategic technology guidance to align IT with your business goals.',
       },
       {
         slug: 'managed-it-services',
         label: 'IT Company in Durham',
-        href: '/it-company-durham/',
+        href: '/it-company-durham',
         description: 'A locally based IT partner committed to Durham for the long run.',
       },
     ],

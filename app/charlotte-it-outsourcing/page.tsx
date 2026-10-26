@@ -9,7 +9,7 @@ const CONTENT = makeTemplateCityContent({
   region: 'the Charlotte metro',
   serviceNoun: 'IT outsourcing',
   serviceNounTitle: 'IT Outsourcing',
-  canonicalPath: '/charlotte-it-outsourcing/',
+  canonicalPath: '/charlotte-it-outsourcing',
   utmBase: 'it-outsourcing-charlotte',
   heroAccent: 'empowers your team to achieve more.',
   positioningAccent: 'maximize your IT ROI.',

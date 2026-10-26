@@ -26,14 +26,14 @@ interface TemplateCityInput {
   // (e.g. it-support, it-company, it-outsourcing). Default to managed IT.
   serviceNoun?: string       // e.g. 'IT support' — used mid-headline/body
   serviceNounTitle?: string  // e.g. 'IT Support' — used in meta title + eyebrow
-  canonicalPath?: string     // e.g. '/it-support-garner/'
+  canonicalPath?: string     // e.g. '/it-support-garner' (no trailing slash)
   utmBase?: string           // e.g. 'it-support-garner'
 }
 
 export function makeTemplateCityContent(c: TemplateCityInput): CityServiceContent {
   const noun = c.serviceNoun ?? 'Managed IT services'
   const nounTitle = c.serviceNounTitle ?? 'Managed IT Services'
-  const canonical = `https://www.itsco.com${c.canonicalPath ?? `/managed-it-services-${c.slug}/`}`
+  const canonical = `https://www.itsco.com${c.canonicalPath ?? `/managed-it-services-${c.slug}`}`
   const utm = c.utmBase ?? `managed-it-${c.slug}`
   return {
     serviceType: c.serviceType,
@@ -157,28 +157,28 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
         {
           slug: 'managed-it-services',
           label: 'Managed IT Services',
-          href: '/managed-it-services/',
+          href: '/managed-it-services',
           description:
             'Predictable, fixed-rate IT management with proactive monitoring, helpdesk, and 24/7 cybersecurity — sized for businesses across NC, SC, and VA.',
         },
         {
           slug: 'cybersecurity',
           label: 'Cybersecurity & Compliance',
-          href: '/cybersecurity/',
+          href: '/cybersecurity',
           description:
             'Managed SOC, MDR, firewall, vulnerability management, and continuous compliance (SOC 2, HIPAA, PCI DSS, NIST 800-171) as one program.',
         },
         {
           slug: 'cloud-services',
           label: 'Cloud Services',
-          href: '/cloud-services/',
+          href: '/cloud-services',
           description:
             'Cloud strategy, migration, and managed cloud across Azure, AWS, and hybrid — with FinOps and identity wrapped in.',
         },
         {
           slug: 'maximize-roi',
           label: 'Maximize IT ROI',
-          href: '/maximize-roi-with-managed-it-services/',
+          href: '/maximize-roi-with-managed-it-services',
           description:
             'See how ITSco measures the ROI of managed IT services across four dimensions — and what to expect from your engagement.',
         },

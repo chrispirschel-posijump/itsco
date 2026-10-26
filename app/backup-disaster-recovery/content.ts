@@ -14,7 +14,7 @@ export const CONTENT: ServiceSubContent = {
     canonical: 'https://www.itsco.com/backup-disaster-recovery',
   },
   serviceName: 'Backup & Disaster Recovery',
-  parent: { name: 'Managed IT Services', href: '/managed-it-services/' },
+  parent: { name: 'Managed IT Services', href: '/managed-it-services' },
   hero: {
     eyebrow: 'Managed IT · Data Protection',
     headlineLead: 'Backup and disaster recovery',
@@ -87,19 +87,19 @@ export const CONTENT: ServiceSubContent = {
       {
         slug: 'server-monitoring-and-maintenance',
         label: 'Server Monitoring & Maintenance',
-        href: '/server-monitoring-and-maintenance/',
+        href: '/server-monitoring-and-maintenance',
         description: '24/7 monitoring, patching, and tuning that keeps critical servers healthy.',
       },
       {
         slug: 'managed-network-services',
         label: 'Managed Network Services',
-        href: '/managed-network-services/',
+        href: '/managed-network-services',
         description: 'Proactive monitoring, design, and support across your entire network.',
       },
       {
         slug: 'managed-it-services',
         label: 'Managed IT Services',
-        href: '/managed-it-services/',
+        href: '/managed-it-services',
         description: 'The full ITSco managed IT program — monitoring, helpdesk, security, and more.',
       },
     ],
