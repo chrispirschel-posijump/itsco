@@ -3,7 +3,10 @@
 // of CMMC Phase 2 — original brief (pre-suspension) targeted a Nov 2026
 // C3PAO deadline that no longer exists in the form it assumed.
 //
-// PRE-PUBLISH VERIFICATION REQUIRED: the CMMC Reform Task Force reports
+// VERIFIED Oct 26, 2026: task force delivered ~Sep 11 but report unpublished,
+// no new Phase 2 date; Sep 3 class deviation added. Department renamed to
+// "Department of War (formerly the Department of Defense)" per Chris.
+// Original note: the CMMC Reform Task Force reports
 // ~Sep 13, 2026. Re-verify the "What Actually Happened" section and FAQ 1
 // against the task force outcome before flipping draft to false. The rest
 // of the post (durable obligations, signature risk, 14 families, action
@@ -14,17 +17,17 @@ import type { BlogBlock } from '@/components/BlogPost'
 export const ARTICLE: readonly BlogBlock[] = [
   {
     type: 'p',
-    text: "If you run a defense contracting business in North Carolina, you've probably heard some version of \"CMMC is dead\" since mid-July. Here's what actually happened: on July 13, 2026, the Department of Defense suspended CMMC Phase 2 — the requirement, scheduled for November 10, that contractors handling Controlled Unclassified Information pass a third-party assessment before contract award. A reform task force is now reviewing the whole program. What did not happen: your cybersecurity obligations going away. The 110 security requirements still bind you, your self-assessment and affirmation obligations still stand, and your prime's contract clauses didn't read the Pentagon's press release. This post covers what changed, what didn't, and what NC contractors should do with the pause.",
+    text: "If you run a defense contracting business in North Carolina, you've probably heard some version of \"CMMC is dead\" since mid-July. Here's what actually happened: on July 13, 2026, the Department of War (formerly the Department of Defense) suspended CMMC Phase 2 — the requirement, scheduled for November 10, that contractors handling Controlled Unclassified Information pass a third-party assessment before contract award. A reform task force is now reviewing the whole program. What did not happen: your cybersecurity obligations going away. The 110 security requirements still bind you, your self-assessment and affirmation obligations still stand, and your prime's contract clauses didn't read the Pentagon's press release. This post covers what changed, what didn't, and what NC contractors should do with the pause.",
   },
 
   { type: 'h2', text: 'What Actually Happened on July 13' },
   {
     type: 'p',
-    text: "The Cybersecurity Maturity Model Certification program rolls out in phases. Phase 1 began November 10, 2025: new DoD solicitations started requiring CMMC Level 1 or Level 2 self-assessments, with scores posted to the Supplier Performance Risk System (SPRS) and an annual affirmation signed by a senior company official. Phase 2, scheduled for November 10, 2026, was the escalation — Level 2 certification by a third-party assessor (a C3PAO) as a condition of award for most contracts involving CUI. That's what got [suspended](https://www.csis.org/analysis/what-cmmc-pause-means-defense-industrial-base), along with the phases behind it.",
+    text: "The Cybersecurity Maturity Model Certification program rolls out in phases. Phase 1 began November 10, 2025: new defense solicitations started requiring CMMC Level 1 or Level 2 self-assessments, with scores posted to the Supplier Performance Risk System (SPRS) and an annual affirmation signed by a senior company official. Phase 2, scheduled for November 10, 2026, was the escalation — Level 2 certification by a third-party assessor (a C3PAO) as a condition of award for most contracts involving CUI. That's what got [suspended](https://www.csis.org/analysis/what-cmmc-pause-means-defense-industrial-base), along with the phases behind it. On September 3, a formal class deviation made the suspension binding on contracting officers.",
   },
   {
     type: 'p',
-    text: "The stated reason is arithmetic. More than 100,000 defense industrial base companies would eventually need third-party assessments — from roughly 100 authorized assessment organizations. SBA data projected the coming phases could cost small and mid-size businesses over $7 billion annually, and a [March 2026 GAO report](https://www.governmentcontractslaw.com/2026/07/dod-suspends-cmmc-phase-2-what-happened-what-it-means-and-what-nobody-is-telling-you/) warned the requirements could push small businesses out of the defense industrial base entirely. DoD's CIO put it plainly: \"the math just simply doesn't math.\" The reform task force reports this fall, and officials have declined to rule out ending the certification program altogether. Which sounds like permission to stand down. It isn't — and the next section is why.",
+    text: "The stated reason is arithmetic. More than 100,000 defense industrial base companies would eventually need third-party assessments — from roughly 100 authorized assessment organizations. SBA data projected the coming phases could cost small and mid-size businesses over $7 billion annually, and a [March 2026 GAO report](https://www.governmentcontractslaw.com/2026/07/dod-suspends-cmmc-phase-2-what-happened-what-it-means-and-what-nobody-is-telling-you/) warned the requirements could push small businesses out of the defense industrial base entirely. The department's CIO put it plainly: \"the math just simply doesn't math.\" The reform task force delivered its recommendations to the department in September, but as of late October the report hasn't been published and no new Phase 2 date has been set. Officials have declined to rule out ending the certification program altogether. Which sounds like permission to stand down. It isn't — and the next section is why.",
   },
 
   { type: 'h2', text: "What Didn't Get Suspended" },
@@ -101,11 +104,11 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'The Pause Rewards Whoever Uses It' },
   {
     type: 'p',
-    text: "CMMC's third-party machinery got suspended because the rollout math failed, not because the DoD stopped caring whether its supply chain leaks. Some version of verification is coming back — reformed, rescoped, or renamed — and the reform report lands this fall. Contractors who use the pause to close gaps and build evidence walk into whatever comes next with options: clean affirmations today, fast certification whenever it's required, and a [security posture that returns value](/maximize-roi-with-managed-it-services) well beyond the DoD contract that forced the conversation. The ones waiting for certainty will get it — in a contract clause, on someone else's timeline.",
+    text: "CMMC's third-party machinery got suspended because the rollout math failed, not because the department stopped caring whether its supply chain leaks. Some version of verification is coming back — reformed, rescoped, or renamed — and the reform report lands this fall. Contractors who use the pause to close gaps and build evidence walk into whatever comes next with options: clean affirmations today, fast certification whenever it's required, and a [security posture that returns value](/maximize-roi-with-managed-it-services) well beyond the defense contract that forced the conversation. The ones waiting for certainty will get it — in a contract clause, on someone else's timeline.",
   },
 
   {
     type: 'p',
-    text: "Note: CMMC requirements are evolving rapidly — verify current guidance with the DoD CMMC Program Office and your contracting officer before making compliance decisions.",
+    text: "Note: CMMC requirements are evolving rapidly — verify current guidance with the Department of War's CMMC Program Office and your contracting officer before making compliance decisions.",
   },
 ]
