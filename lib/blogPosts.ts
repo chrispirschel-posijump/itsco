@@ -311,7 +311,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     title: 'CMMC Compliance After the Suspension: What NC Contractors Do',
     category: 'Cybersecurity',
     excerpt:
-      "DoD suspended CMMC Phase 2 — but your cybersecurity obligations didn't move. Here's what NC defense contractors need to know and do during the pause.",
+      "The Department of War suspended CMMC Phase 2, but your cybersecurity obligations didn't move. Here's what NC defense contractors need to know and do during the pause.",
     heroImage: '/images/hero/blog/vitaly-gariev-g-kAqqIRM78-unsplash.jpg',
     publishedDate: '2026-10-26',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
@@ -319,7 +319,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         question: 'Is CMMC cancelled?',
         answer:
-          "No. On July 13, 2026, DoD suspended Phase 2 — the third-party (C3PAO) assessment requirement scheduled for November 2026 — and froze later phases while a reform task force reviews the program. The underlying rule wasn't repealed, and officials haven't ruled out any outcome. Self-assessment requirements from Phase 1 remain in effect.",
+          "No. On July 13, 2026, the Department of War (formerly the Department of Defense) suspended Phase 2, the third-party (C3PAO) assessment requirement scheduled for November 2026, and froze later phases while a reform task force reviewed the program. The task force delivered its recommendations in September, but the department hasn't published them or set a new Phase 2 date. The underlying rule wasn't repealed, and officials haven't ruled out any outcome. Self-assessment requirements from Phase 1 remain in effect.",
       },
       {
         question: 'Do defense contractors still have cybersecurity obligations during the suspension?',
@@ -329,7 +329,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         question: 'Which version of NIST 800-171 does CMMC use — Rev 2 or Rev 3?',
         answer:
-          "Rev 2, with its 110 requirements across 14 families. NIST published Revision 3 in May 2024, but the current CMMC rule and assessment criteria remain on Rev 2, and DoD issued a class deviation keeping Rev 2 as the compliance baseline. Build and document to Rev 2; track Rev 3 for planning only.",
+          "Rev 2, with its 110 requirements across 14 families. NIST published Revision 3 in May 2024, but the current CMMC rule and assessment criteria remain on Rev 2, and the department issued a class deviation keeping Rev 2 as the compliance baseline. Build and document to Rev 2; track Rev 3 for planning only.",
       },
       {
         question: 'What should a defense contractor do during the CMMC pause?',
@@ -337,7 +337,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "Confirm whether you handle FCI or CUI by reviewing your DFARS contract clauses, get an honest gap analysis so your SPRS score and annual affirmation reflect reality, and remediate in sequence — access controls and MFA first, then documentation and evidence, then monitoring and incident response capability. If a reformed certification requirement returns, you're ready early; if it doesn't, you've reduced the risk your own affirmation carries.",
       },
     ],
-    draft: true,
+    draft: false,
   },
   // ── Post 6 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-10-12. Flip draft: false and redeploy on Oct 12.
