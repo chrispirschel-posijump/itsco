@@ -23,7 +23,7 @@ export const ARTICLE = [
     "text": "Keep in mind that the nature and extent of these challenges will vary depending on your business’ specific needs, but, by understanding the issues presented here, you will be better prepared to embark on a successful cloud migration!"
   },
   {
-    "type": "h3",
+    "type": "h2",
     "text": "What is a Cloud Migration, and When Does it Become Necessary for a Business to Perform One?"
   },
   {

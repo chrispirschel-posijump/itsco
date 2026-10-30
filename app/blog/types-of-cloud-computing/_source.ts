@@ -31,7 +31,7 @@ export const ARTICLE = [
     "text": "In this article, we’ll examine some cloud computing examples to help clear up any confusion and help you determine which model is the best fit for your business’s needs."
   },
   {
-    "type": "h3",
+    "type": "h2",
     "text": "Discover the Right Cloud Configuration for Your Business"
   },
   {

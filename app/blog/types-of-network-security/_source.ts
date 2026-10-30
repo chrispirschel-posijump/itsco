@@ -23,7 +23,7 @@ export const ARTICLE = [
     "text": "Comprehensive knowledge of various network security types is essential for safeguarding sensitive data about your business, your employees and your customers."
   },
   {
-    "type": "h3",
+    "type": "h2",
     "text": "What is Network Security?"
   },
   {
@@ -31,7 +31,7 @@ export const ARTICLE = [
     "text": "Network security represents your shield against a wide array of cyber threats. At its most fundamental level, it refers to the strategies and techniques designed to monitor and prevent unauthorized access, modification, or exploitation of a computer network and its accessible resources."
   },
   {
-    "type": "h3",
+    "type": "h2",
     "text": "Anxious About Potential Cyber Threats?"
   },
   {
@@ -43,7 +43,7 @@ export const ARTICLE = [
     "text": "Get Protected"
   },
   {
-    "type": "h3",
+    "type": "h2",
     "text": "What are the Benefits of Improved Network Security?"
   },
   {
