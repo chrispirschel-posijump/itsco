@@ -12,7 +12,7 @@ export const CONTENT: CityServiceContent = {
     // Root layout template appends " | ITSco" — do not include it here.
     title: 'Managed IT Services in Raleigh, NC — Fixed Pricing',
     description:
-      'Managed IT for Raleigh and RTP businesses — monitoring, help desk, cybersecurity, and cloud at a fixed monthly cost. Serving North Carolina since 1996.',
+      'Managed IT services in Raleigh from a local managed services provider: monitoring, help desk, cybersecurity, and cloud at one fixed monthly cost. Since 1996.',
     canonical: 'https://www.itsco.com/managed-it-services-raleigh',
   },
   officeLocation: 'raleigh',

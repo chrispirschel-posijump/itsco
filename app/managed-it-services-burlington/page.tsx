@@ -3,6 +3,14 @@ import CityServicePage from '@/components/CityServicePage'
 import { makeTemplateCityContent } from '@/lib/templateCity'
 
 const CONTENT = makeTemplateCityContent({
+  extraRelated: [
+    {
+      slug: 'cyber-security-management',
+      label: 'Cybersecurity in Burlington',
+      href: '/burlington-cyber-security-services',
+      description: 'Layered cybersecurity defenses for Burlington businesses, monitored around the clock.',
+    },
+  ],
   serviceType: 'Managed IT Services',
   name: 'Burlington',
   slug: 'burlington',

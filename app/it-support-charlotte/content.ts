@@ -10,12 +10,12 @@ export const CONTENT: CityServiceContent = {
     // Root layout template appends " | ITSco" — do not include it here.
     title: 'IT Support in Charlotte, NC — 24/7 Monitoring',
     description:
-      'Managed IT support for Charlotte businesses — 24/7 monitoring, help desk, cybersecurity. NC-based since 1996. Fixed monthly pricing, no surprise bills.',
+      'IT support in Charlotte, NC: 24/7 monitoring, help desk, and cybersecurity from an NC-based team since 1996. Fixed monthly pricing, no surprise bills.',
     canonical: 'https://www.itsco.com/it-support-charlotte',
   },
   hero: {
     eyebrow: 'IT Support · Charlotte, NC',
-    headlineLead: 'Charlotte IT support that',
+    headlineLead: 'IT support in Charlotte, NC that',
     headlineAccent: 'eliminates recurring issues.',
     body: S[0],
     utmSuffix: 'it-support-charlotte-hero',
