@@ -6,7 +6,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { FadeUp } from '@/components/ScrollAnimations'
 
 export const metadata: Metadata = {
-  title: 'Page Not Found | ITSco',
+  title: 'Page Not Found',
 }
 
 export default function NotFound() {

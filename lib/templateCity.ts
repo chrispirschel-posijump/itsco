@@ -41,7 +41,7 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
   return {
     serviceType: c.serviceType,
     meta: {
-      title: `${nounTitle} in ${c.name}, NC | ITSco`,
+      title: `${nounTitle} in ${c.name}, NC`, // layout template appends " | ITSco"
       description: `ITSco delivers ${noun.toLowerCase()} in ${c.name}, NC — monitoring, cybersecurity, help desk, and cloud — with predictable pricing and measurable ROI. Book a free consultation.`,
       canonical,
     },

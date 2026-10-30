@@ -10,7 +10,11 @@ export const ARTICLE: readonly BlogBlock[] = [
   // ── Intro ────────────────────────────────────────────────────────────────
   {
     type: 'p',
-    text: "I hear a version of this on discovery calls every month: \"The email server was down for a couple hours last week, but honestly, nobody was locked out that long.\" Here's the problem with that sentence — a 2-hour email outage was never 2 hours of lost email. It was missed meetings, delayed decisions, salespeople not answering inbound leads, customers who reached out and got silence, and an IT resource dropping everything to firefight. The cost was real; it just never appeared on an invoice, so it never made it into a spreadsheet. This post shows you how to calculate what downtime actually costs your business — using published industry benchmarks and a formula you can run on a napkin today.",
+    text: "I hear a version of this on discovery calls every month: \"The email server was down for a couple hours last week, but honestly, nobody was locked out that long.\" Here's the problem with that sentence — a 2-hour email outage was never 2 hours of lost email. It was missed meetings, delayed decisions, salespeople not answering inbound leads, customers who reached out and got silence, and an IT resource dropping everything to firefight.",
+  },
+  {
+    type: 'p',
+    text: "The cost was real; it just never appeared on an invoice, so it never made it into a spreadsheet. This post shows you how to calculate what downtime actually costs your business — using published industry benchmarks and a formula you can run on a napkin today.",
   },
 
   // ── H2 · 4 Cost Categories ───────────────────────────────────────────────
@@ -37,7 +41,11 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'The Per-Hour Numbers, by Company Size' },
   {
     type: 'p',
-    text: "The published data is blunt. [ITIC's Hourly Cost of Downtime research](https://itic-corp.com/itic-reports-surveys/) finds a single hour of downtime now costs more than $300,000 for over 90% of mid-size and large enterprises — and 41% put the figure between $1 million and $5 million. Even at the smallest end, ITIC estimates a micro-business under 25 employees with a single server loses roughly $1,670 per minute, calling that figure \"extremely conservative.\" The [Uptime Institute's 2026 Annual Outage Analysis](https://intelligence.uptimeinstitute.com/resource/annual-outage-analysis-2026) points the same direction: 57% of organizations say their most recent major outage cost over $100,000, and for the second consecutive year, 1 in 5 outages exceeded $1 million. Gartner's widely cited 2014 estimate — $5,600 per minute, about $336,000 per hour — now reads as the conservative baseline the newer surveys have left behind.",
+    text: "The published data is blunt. [ITIC's Hourly Cost of Downtime research](https://itic-corp.com/itic-reports-surveys/) finds a single hour of downtime now costs more than $300,000 for over 90% of mid-size and large enterprises — and 41% put the figure between $1 million and $5 million.",
+  },
+  {
+    type: 'p',
+    text: "Even at the smallest end, ITIC estimates a micro-business under 25 employees with a single server loses roughly $1,670 per minute, calling that figure \"extremely conservative.\" The [Uptime Institute's 2026 Annual Outage Analysis](https://intelligence.uptimeinstitute.com/resource/annual-outage-analysis-2026) points the same direction: 57% of organizations say their most recent major outage cost over $100,000, and for the second consecutive year, 1 in 5 outages exceeded $1 million. Gartner's widely cited 2014 estimate — $5,600 per minute, about $336,000 per hour — now reads as the conservative baseline the newer surveys have left behind.",
   },
   {
     type: 'p',
@@ -63,7 +71,11 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'How Often Does This Actually Happen?' },
   {
     type: 'p',
-    text: "Fair question — an expensive event that never occurs costs nothing. The honest news from the Uptime Institute is that outage frequency has declined for 5 consecutive years as infrastructure improves. The rest of the picture: roughly half of operators still experienced at least one impactful outage in the past 3 years, about 1 in 10 outages causes serious or severe disruption, and the events that do land are getting more expensive, not less. Two findings matter most for a growing business. First, nearly 40% of organizations suffered a major outage caused by human error in the past 3 years — and 85% of those trace back to staff failing to follow procedures, or procedures that were inadequate to begin with. Second, Uptime flags cybersecurity incidents as a rising cause with unusually severe, lasting impacts — consistent with [Verizon's 2025 DBIR](https://www.verizon.com/business/resources/reports/dbir/) finding ransomware present in 44% of breaches. Downtime isn't primarily a hardware lottery. It's a process and security posture problem — which means it's largely a managed variable.",
+    text: "Fair question — an expensive event that never occurs costs nothing. The honest news from the Uptime Institute is that outage frequency has declined for 5 consecutive years as infrastructure improves. The rest of the picture: roughly half of operators still experienced at least one impactful outage in the past 3 years, about 1 in 10 outages causes serious or severe disruption, and the events that do land are getting more expensive, not less. Two findings matter most for a growing business.",
+  },
+  {
+    type: 'p',
+    text: "First, nearly 40% of organizations suffered a major outage caused by human error in the past 3 years — and 85% of those trace back to staff failing to follow procedures, or procedures that were inadequate to begin with. Second, Uptime flags cybersecurity incidents as a rising cause with unusually severe, lasting impacts — consistent with [Verizon's 2025 DBIR](https://www.verizon.com/business/resources/reports/dbir/) finding ransomware present in 44% of breaches. Downtime isn't primarily a hardware lottery. It's a process and security posture problem — which means it's largely a managed variable.",
   },
   {
     type: 'p',
@@ -95,7 +107,11 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'What Proactive Management Actually Prevents' },
   {
     type: 'p',
-    text: "Not everything — a hurricane doesn't care about your monitoring stack. But look at what the outage data says actually causes downtime, and the preventable share is large. Continuous [managed IT monitoring](/managed-it-services) catches the failing drive, the certificate about to expire, and the server running out of headroom while they're still tickets instead of outages. Documented, tested procedures attack the single biggest human-error driver in the Uptime data — the 85% of error-caused outages rooted in process failures. [24/7 detection and response](/mdr-monitoring-and-response) compresses the gap between \"something's wrong\" and \"someone's on it,\" which is where an incident either stays small or doesn't. Redundancy in the right places — failover internet, replicated critical systems — means a partial failure degrades service instead of stopping the company, converting would-be outages into events most employees never notice. And when something does get through, tested [backup and disaster recovery](/backup-disaster-recovery) is the difference between restoring in hours and rebuilding over days — the single largest lever on the \"annual downtime hours\" term in your formula. None of this eliminates the impact factor; it shrinks every term it touches.",
+    text: "Not everything — a hurricane doesn't care about your monitoring stack. But look at what the outage data says actually causes downtime, and the preventable share is large. Continuous [managed IT monitoring](/managed-it-services) catches the failing drive, the certificate about to expire, and the server running out of headroom while they're still tickets instead of outages. Documented, tested procedures attack the single biggest human-error driver in the Uptime data — the 85% of error-caused outages rooted in process failures. [24/7 detection and response](/mdr-monitoring-and-response) compresses the gap between \"something's wrong\" and \"someone's on it,\" which is where an incident either stays small or doesn't.",
+  },
+  {
+    type: 'p',
+    text: "Redundancy in the right places — failover internet, replicated critical systems — means a partial failure degrades service instead of stopping the company, converting would-be outages into events most employees never notice. And when something does get through, tested [backup and disaster recovery](/backup-disaster-recovery) is the difference between restoring in hours and rebuilding over days — the single largest lever on the \"annual downtime hours\" term in your formula. None of this eliminates the impact factor; it shrinks every term it touches.",
   },
 
   // ── H2 · What to Do ──────────────────────────────────────────────────────

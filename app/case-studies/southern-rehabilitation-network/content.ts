@@ -11,7 +11,7 @@ import type { CaseStudyContent } from '@/components/CaseStudyPage'
 export const CONTENT: CaseStudyContent = {
   meta: {
     title:
-      'Southern Rehabilitation Network Case Study — IT Modernization | ITSco',
+      'Southern Rehabilitation Network Case Study — IT Modernization',
     description:
       "How ITSco's cybersecurity and infrastructure modernization helped Southern Rehabilitation Network meet stringent State of North Carolina security requirements and secure a critical contract.",
     canonical:

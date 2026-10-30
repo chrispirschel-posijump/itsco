@@ -11,7 +11,7 @@ import type { CaseStudyContent } from '@/components/CaseStudyPage'
 export const CONTENT: CaseStudyContent = {
   meta: {
     title:
-      'Oil Company Network Automation Case Study — Ansible Tower Deployment | ITSco',
+      'Oil Company Network Automation Case Study — Ansible Tower Deployment',
     description:
       "After a multi-million-dollar breach, one of the world's largest oil companies brought in ITSco via Red Hat to stand up Ansible Tower and harden network operations across security, supportability, and scalability.",
     canonical: 'https://www.itsco.com/case-studies/network-automation',

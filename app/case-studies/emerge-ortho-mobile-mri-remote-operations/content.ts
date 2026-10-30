@@ -14,7 +14,7 @@ import type { CaseStudyContent } from '@/components/CaseStudyPage'
 export const CONTENT: CaseStudyContent = {
   meta: {
     title:
-      'EmergeOrtho Mobile MRI Case Study — Remote Operations | ITSco',
+      'EmergeOrtho Mobile MRI Case Study — Remote Operations',
     description:
       "How ITSco's advanced networking enabled EmergeOrtho to operate mobile MRI scanners remotely — unlocking 40 extra scan hours per week, ~30–40% labor savings, and 4–5 month payback.",
     canonical:

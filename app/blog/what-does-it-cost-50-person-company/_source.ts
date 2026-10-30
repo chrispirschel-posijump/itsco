@@ -40,13 +40,25 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: 'Model 1: In-House IT' },
   {
     type: 'p',
-    text: 'You hire your own team. The [Bureau of Labor Statistics](https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm) puts the 2024 median wage for computer and information systems managers at $171,200 — that\'s the national median, skewed by enterprise CIOs, so a small-company IT director typically lands in the $110K–$160K salary range. A [support specialist](https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm) runs a $60,340 median for user support and $73,340 for network support. Add 25–30% for benefits and payroll taxes, plus tooling, training, and recruiting, and each IT hire costs $80K–$220K all-in per year. The structural problem at 50 employees: one person can\'t cover helpdesk, security, infrastructure, and strategy — and two people cost more than most 50-person companies should spend on IT in total. The usual result is one overloaded generalist doing reactive support, with security and strategy handled "when there\'s time," which in practice means never. There\'s a third variant worth naming only to dismiss it: break-fix support, where you pay hourly when something breaks. At 50 employees, break-fix isn\'t a cost model — it\'s a deferred-cost model, and the deferral comes due in the hidden-cost section below.',
+    text: 'You hire your own team. The [Bureau of Labor Statistics](https://www.bls.gov/ooh/management/computer-and-information-systems-managers.htm) puts the 2024 median wage for computer and information systems managers at $171,200 — that\'s the national median, skewed by enterprise CIOs, so a small-company IT director typically lands in the $110K–$160K salary range. A [support specialist](https://www.bls.gov/ooh/computer-and-information-technology/computer-support-specialists.htm) runs a $60,340 median for user support and $73,340 for network support. Add 25–30% for benefits and payroll taxes, plus tooling, training, and recruiting, and each IT hire costs $80K–$220K all-in per year.',
+  },
+  {
+    type: 'p',
+    text: 'The structural problem at 50 employees: one person can\'t cover helpdesk, security, infrastructure, and strategy — and two people cost more than most 50-person companies should spend on IT in total. The usual result is one overloaded generalist doing reactive support, with security and strategy handled "when there\'s time," which in practice means never.',
+  },
+  {
+    type: 'p',
+    text: 'There\'s a third variant worth naming only to dismiss it: break-fix support, where you pay hourly when something breaks. At 50 employees, break-fix isn\'t a cost model — it\'s a deferred-cost model, and the deferral comes due in the hidden-cost section below.',
   },
 
   { type: 'h3', text: 'Model 2: Fully Managed (MSP)' },
   {
     type: 'p',
-    text: "You contract the whole function to a [managed IT services](/managed-it-services/) provider for a per-user monthly fee — typically $125–$250 per user per month all-in, with the spread driven by your security stack and industry requirements. A law firm with compliance obligations sits at the top of the range; a company with simple needs sits near the bottom. The economic logic: you're buying fractional access to a full team — helpdesk, engineers, security analysts, strategists — that no 50-person company could staff internally. The tradeoffs are real, too: you're one client among many, provider quality varies enormously, and the cheapest per-user quote in a bid process is usually cheap because a category from the list above quietly isn't included. Ask any prospective provider to map their fee against all 6 categories before comparing prices.",
+    text: "You contract the whole function to a [managed IT services](/managed-it-services/) provider for a per-user monthly fee — typically $125–$250 per user per month all-in, with the spread driven by your security stack and industry requirements. A law firm with compliance obligations sits at the top of the range; a company with simple needs sits near the bottom.",
+  },
+  {
+    type: 'p',
+    text: "The economic logic: you're buying fractional access to a full team — helpdesk, engineers, security analysts, strategists — that no 50-person company could staff internally. The tradeoffs are real, too: you're one client among many, provider quality varies enormously, and the cheapest per-user quote in a bid process is usually cheap because a category from the list above quietly isn't included. Ask any prospective provider to map their fee against all 6 categories before comparing prices.",
   },
 
   { type: 'h3', text: 'Model 3: Hybrid / Co-Managed' },
@@ -76,7 +88,11 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "Two honest caveats CFOs should apply. First, industry moves these numbers more than headcount does: Deloitte's CIO research has tracked average technology spend near 5% of revenue in recent years, but [Avasant's benchmarking](https://avasant.com/report/it-spending-as-a-percentage-of-revenue-by-industry-company-size-and-region/) shows the industry spread runs from roughly 2% in construction and manufacturing to 10% in financial services — a wider gap than any company-size effect. Second, the revenue-percentage metric breaks down for high-revenue-per-employee firms. A 50-person professional services firm billing $10M might spend a perfectly healthy 1.5% of revenue on IT while a 50-person nonprofit spends 6% on the identical stack. Benchmark per user first; use revenue percentage as a cross-check, not a target.",
+    text: "Two honest caveats CFOs should apply. First, industry moves these numbers more than headcount does: Deloitte's CIO research has tracked average technology spend near 5% of revenue in recent years, but [Avasant's benchmarking](https://avasant.com/report/it-spending-as-a-percentage-of-revenue-by-industry-company-size-and-region/) shows the industry spread runs from roughly 2% in construction and manufacturing to 10% in financial services — a wider gap than any company-size effect.",
+  },
+  {
+    type: 'p',
+    text: "Second, the revenue-percentage metric breaks down for high-revenue-per-employee firms. A 50-person professional services firm billing $10M might spend a perfectly healthy 1.5% of revenue on IT while a 50-person nonprofit spends 6% on the identical stack. Benchmark per user first; use revenue percentage as a cross-check, not a target.",
   },
 
   // ── H2 · A 50-Person Company's Actual IT Budget ─────────────────────────
@@ -109,7 +125,15 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "The math behind the bigger lines, since your board will ask. **Hardware:** 50 machines at roughly $1,000 average (a mix of standard laptops and a few higher-spec workstations), replaced on a rolling 3-year cycle, is about $16,700 a year — you're always buying a third of the fleet, never all of it at once, which is exactly how a CFO wants capital spend to behave. **Helpdesk and engineering at $50:** that buys unlimited support tickets plus the project engineering hours (migrations, office moves, new-hire setups) that hourly shops bill separately at $150–$250/hour. **Line-of-business software at $30** is the widest-swinging line on the table: an accounting firm's tax software, an engineering firm's CAD seats, a clinic's EHR. Some companies run $10; some run $80. Pull your actual SaaS spend before using this row — it's the one place the illustration can't substitute for your general ledger.",
+    text: "The math behind the bigger lines, since your board will ask. **Hardware:** 50 machines at roughly $1,000 average (a mix of standard laptops and a few higher-spec workstations), replaced on a rolling 3-year cycle, is about $16,700 a year — you're always buying a third of the fleet, never all of it at once, which is exactly how a CFO wants capital spend to behave.",
+  },
+  {
+    type: 'p',
+    text: "**Helpdesk and engineering at $50:** that buys unlimited support tickets plus the project engineering hours (migrations, office moves, new-hire setups) that hourly shops bill separately at $150–$250/hour.",
+  },
+  {
+    type: 'p',
+    text: "**Line-of-business software at $30** is the widest-swinging line on the table: an accounting firm's tax software, an engineering firm's CAD seats, a clinic's EHR. Some companies run $10; some run $80. Pull your actual SaaS spend before using this row — it's the one place the illustration can't substitute for your general ledger.",
   },
   {
     type: 'p',
@@ -151,7 +175,15 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "**In-house wins** when technology is your product or near it: you're building custom applications, running proprietary systems, or operating in a regulated niche where deep, dedicated institutional knowledge outweighs the cost premium. **Fully managed wins** for most companies between 20 and 100 employees: you get the full specialist bench at a predictable monthly cost, with no single point of failure who can resign, get sick, or go on vacation. **Hybrid wins** when you have — or need — an internal IT leader who's genuinely strategic but shouldn't spend their days resetting passwords; that's typically the 100–500 employee zone, where internal context and external depth both earn their keep.",
+    text: "**In-house wins** when technology is your product or near it: you're building custom applications, running proprietary systems, or operating in a regulated niche where deep, dedicated institutional knowledge outweighs the cost premium.",
+  },
+  {
+    type: 'p',
+    text: "**Fully managed wins** for most companies between 20 and 100 employees: you get the full specialist bench at a predictable monthly cost, with no single point of failure who can resign, get sick, or go on vacation.",
+  },
+  {
+    type: 'p',
+    text: "**Hybrid wins** when you have — or need — an internal IT leader who's genuinely strategic but shouldn't spend their days resetting passwords; that's typically the 100–500 employee zone, where internal context and external depth both earn their keep.",
   },
   {
     type: 'p',
@@ -216,6 +248,10 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'The Number Is Knowable' },
   {
     type: 'p',
-    text: 'IT budgeting stops being guesswork once you separate the 6 categories, benchmark per user for your size, and price the hidden costs alongside the visible ones. For a typical 50-person company, the honest all-in number lands between $150 and $300 per user per month — and in 30 years of running IT at exactly this scale, the pattern ITSco sees is consistent: predictable models beat reactive ones over any multi-year window, and the strategic layer is where companies underinvest most. That layer is also where [IT spend turns into measurable ROI](/maximize-roi-with-managed-it-services/) — which is the only reason to spend any of it.',
+    text: 'IT budgeting stops being guesswork once you separate the 6 categories, benchmark per user for your size, and price the hidden costs alongside the visible ones.',
+  },
+  {
+    type: 'p',
+    text: 'For a typical 50-person company, the honest all-in number lands between $150 and $300 per user per month — and in 30 years of running IT at exactly this scale, the pattern ITSco sees is consistent: predictable models beat reactive ones over any multi-year window, and the strategic layer is where companies underinvest most. That layer is also where [IT spend turns into measurable ROI](/maximize-roi-with-managed-it-services/) — which is the only reason to spend any of it.',
   },
 ]

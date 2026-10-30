@@ -13,7 +13,7 @@ import type { CaseStudyContent } from '@/components/CaseStudyPage'
 export const CONTENT: CaseStudyContent = {
   meta: {
     title:
-      'Regional Bank Network Automation Case Study — Ansible Tower | ITSco',
+      'Regional Bank Network Automation Case Study — Ansible Tower',
     description:
       'A 100+ year old, $27 billion regional bank turned to ITSco — via the Red Hat Partner Network — to deploy AWX/Ansible/Red Hat Tower across 250+ offices and automate network management.',
     canonical: 'https://www.itsco.com/case-studies/regional-bank',

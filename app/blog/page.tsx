@@ -60,6 +60,9 @@ function PostGrid() {
       style={{ background: 'linear-gradient(180deg, var(--color-itsco-paper) 0%, var(--color-itsco-blush) 100%)' }}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-12 pb-24 md:pb-32">
+        {/* Screen-reader-only section heading so the card titles (H3) sit
+            under an H2 instead of skipping straight from the page H1. */}
+        <h2 className="sr-only">All articles</h2>
         <StaggerChildren stagger={50} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {visiblePosts().map((p) => (
             <ServiceCard
