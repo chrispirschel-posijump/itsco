@@ -70,6 +70,29 @@ export const CONTENT: CityServiceContent = {
       alt: 'Network security operations',
     },
   },
+  related: {
+    heading: 'Our other IT services in Winston-Salem',
+    links: [
+      {
+        slug: 'it-management-consulting',
+        label: 'IT Consulting in Winston-Salem',
+        href: '/winston-salem-it-consulting',
+        description: 'Strategic technology guidance to align IT with your business goals.',
+      },
+      {
+        slug: 'remote-it-support',
+        label: 'IT Support in Winston-Salem',
+        href: '/winston-salem-tech-it-support',
+        description: 'Responsive remote and on-site IT support for Winston-Salem businesses.',
+      },
+      {
+        slug: 'cybersecurity',
+        label: 'Cybersecurity & Compliance',
+        href: '/cybersecurity',
+        description: 'Managed SOC, MDR, firewall, and continuous compliance as one program.',
+      },
+    ],
+  },
   citySlug: 'winston-salem',
   bookingUtm: 'managed-it-winston-salem-bottom',
 }

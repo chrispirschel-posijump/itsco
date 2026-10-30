@@ -601,7 +601,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     title: '6 Types of Cloud Computing',
     category: 'Cloud',
     excerpt:
-      'IaaS, PaaS, SaaS, and beyond — the six models of cloud computing and how to know which fits your business.',
+      'The 6 types of cloud computing compared: public, private, hybrid, and on-premise clouds plus IaaS, PaaS, and SaaS, and how to choose the right fit.',
     heroImage: '/images/hero/blog/compagnons-psXNymQI7Pk-unsplash.jpg',
     publishedDate: '2026-05-20',
   },

@@ -28,6 +28,9 @@ interface TemplateCityInput {
   serviceNounTitle?: string  // e.g. 'IT Support' — used in meta title + eyebrow
   canonicalPath?: string     // e.g. '/it-support-garner' (no trailing slash)
   utmBase?: string           // e.g. 'it-support-garner'
+  // Extra links shown first in the related-services block, e.g. the city's
+  // own cybersecurity page so it isn't orphaned.
+  extraRelated?: ReadonlyArray<{ slug: string; label: string; href: string; description: string }>
 }
 
 export function makeTemplateCityContent(c: TemplateCityInput): CityServiceContent {
@@ -154,6 +157,7 @@ export function makeTemplateCityContent(c: TemplateCityInput): CityServiceConten
     related: {
       heading: `More IT services available in ${c.name} and across North Carolina`,
       links: [
+        ...(c.extraRelated ?? []),
         {
           slug: 'managed-it-services',
           label: 'Managed IT Services',
