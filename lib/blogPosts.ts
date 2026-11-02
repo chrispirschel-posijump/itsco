@@ -57,12 +57,12 @@ export const BLOG_POSTS: readonly BlogPost[] = [
   // Update publishedDate to the actual publish day when flipping draft:false.
   {
     slug: 'north-carolina-growth-scaling-it',
-    title: 'North Carolina Is the #1 State for Growth. Is Your IT Ready?',
+    title: 'North Carolina Is the #1 State Americans Are Moving To. Is Your IT Ready?',
     category: 'Business Insights',
     excerpt:
-      'North Carolina added more residents than any other state in 2025. For the businesses already here, record growth is a stress test for IT. Here is how to scale technology without it becoming the bottleneck.',
+      'More Americans moved to North Carolina than to any other state in 2025. For the businesses already here, record growth is a stress test for IT. Here is how to scale technology without it becoming the bottleneck.',
     heroImage: '/images/hero/blog/gene-gallin-fe0s2abV8R8-unsplash.jpg',
-    publishedDate: '2026-10-16',
+    publishedDate: '2026-11-02',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
     faqs: [
       {
@@ -81,7 +81,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           'More people, devices, and locations widen the attack surface, and bigger contracts bring a higher compliance bar. Enterprise customers, regulated clients, and government buyers increasingly ask for security documentation before they sign. Building security and compliance readiness as you grow is far cheaper than scrambling to meet a requirement after a deal is already on the table.',
       },
     ],
-    draft: true,
+    draft: false,
   },
   // ── Timely post (outside the evergreen roadmap) — NC GovRAMP rule ────────
   // draft:true until Mike/counsel sign off on the regulatory copy. Same

@@ -37,7 +37,7 @@ export const ARTICLE: readonly BlogBlock[] = [
 
   {
     type: 'callout',
-    text: 'ITSco helps North Carolina businesses scale their technology as they grow, without the hiring scramble or the security gaps. See how our [managed IT services](/managed-it-services/) turn IT from a bottleneck into an advantage.',
+    text: 'ITSco helps North Carolina businesses scale their technology as they grow, without the hiring scramble or the security gaps. See how our [managed IT services](/managed-it-services) turn IT from a bottleneck into an advantage.',
     cta: {
       label: 'Book a free consultation',
       href: 'https://calendly.com/msavino-itsco/30-minute-free-consultation-with-itsco?utm_source=website&utm_medium=cta&utm_campaign=north-carolina-growth-scaling-it-mid',
@@ -61,8 +61,8 @@ export const ARTICLE: readonly BlogBlock[] = [
       '**Standardize early.** Fewer device models, consistent configurations, and automated provisioning make the next 50 hires far cheaper to support than the last 50.',
       '**Build security that scales with headcount, not around it.** Managed monitoring, endpoint protection, and access controls that grow with the company beat a patchwork added after each new hire.',
       '**Buy capacity instead of competing for it.** Hiring IT talent in a booming market is slow and expensive. A managed partner gives you help desk, security, and engineering depth without the hiring race.',
-      '**Put a strategic layer on it.** Someone needs to plan the roadmap, manage vendors, and tie technology to where the business is heading. For most growing companies that is a [fractional CIO](/it-management-consulting/), not a full-time hire.',
-      '**Get compliance-ready before the contract asks.** If growth is bringing enterprise or government work, the [compliance](/compliance-as-a-service/) bar is coming with it, and readiness is cheaper than scrambling.',
+      '**Put a strategic layer on it.** Someone needs to plan the roadmap, manage vendors, and tie technology to where the business is heading. For most growing companies that is a [fractional CIO](/it-management-consulting), not a full-time hire.',
+      '**Get compliance-ready before the contract asks.** If growth is bringing enterprise or government work, the [compliance](/compliance-as-a-service) bar is coming with it, and readiness is cheaper than scrambling.',
     ],
   },
 
