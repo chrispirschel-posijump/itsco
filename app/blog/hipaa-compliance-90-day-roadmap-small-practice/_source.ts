@@ -19,7 +19,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: 'The most consequential gap is the missing Security Risk Assessment. In October 2024, OCR launched a formal [Risk Analysis Initiative](https://natlawreview.com/article/2025-enforcement-trends-risk-analysis-failures-center-hhss-multimillion-dollar) targeting exactly this failure, and it has produced 12 enforcement actions since. Small providers are not being skipped: a Michigan surgical group settled for $10,000, a New York neurology practice and a small California imaging provider each settled for $25,000, and a Syracuse surgery center paid $250,000 — every one of them cited for the same thing, [no compliant risk analysis](https://www.feldesman.com/ocrs-new-security-risk-analysis-initiative-results-in-seven-enforcement-actions-in-first-six-months/). And each settlement came with a 2-year corrective action plan, which means OCR supervision long after the check clears. For practices in [healthcare-focused IT environments](/healthcare-managed-it-services/), this is the enforcement climate the next three years will be built on.',
+    text: 'The most consequential gap is the missing Security Risk Assessment. In October 2024, OCR launched a formal [Risk Analysis Initiative](https://natlawreview.com/article/2025-enforcement-trends-risk-analysis-failures-center-hhss-multimillion-dollar) targeting exactly this failure, and it has produced 12 enforcement actions since. Small providers are not being skipped: a Michigan surgical group settled for $10,000, a New York neurology practice and a small California imaging provider each settled for $25,000, and a Syracuse surgery center paid $250,000 — every one of them cited for the same thing, [no compliant risk analysis](https://www.feldesman.com/ocrs-new-security-risk-analysis-initiative-results-in-seven-enforcement-actions-in-first-six-months/). And each settlement came with a 2-year corrective action plan, which means OCR supervision long after the check clears. For practices in [healthcare-focused IT environments](/healthcare-managed-it-services), this is the enforcement climate the next three years will be built on.',
   },
 
   // ── H2 · The HIPAA Framework in One Paragraph ───────────────────────────
@@ -41,13 +41,13 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: 'Milestone 2: Complete a Security Risk Assessment (Days 4–15)' },
   {
     type: 'p',
-    text: "The SRA is the single most-enforced requirement in HIPAA — the common thread in every Risk Analysis Initiative settlement. It's an inventory of every system touching protected health information (EHR, email, backups, texting between providers, that tablet at the front desk), paired with an honest assessment of threats, likelihood, impact, and what you're doing about each. HHS publishes a free [Security Risk Assessment Tool](https://www.healthit.gov/topic/privacy-security-and-hipaa/security-risk-assessment-tool) built for small and mid-sized practices — a legitimate starting point. But OCR has specifically flagged generic, template-driven assessments as a common deficiency: the analysis must reflect your actual environment. A structured [cyber risk assessment](/cyber-risk-assessment/) performed by someone who does this weekly produces the formal, dated document OCR expects — and a prioritized fix list for the next 75 days.",
+    text: "The SRA is the single most-enforced requirement in HIPAA — the common thread in every Risk Analysis Initiative settlement. It's an inventory of every system touching protected health information (EHR, email, backups, texting between providers, that tablet at the front desk), paired with an honest assessment of threats, likelihood, impact, and what you're doing about each. HHS publishes a free [Security Risk Assessment Tool](https://www.healthit.gov/topic/privacy-security-and-hipaa/security-risk-assessment-tool) built for small and mid-sized practices — a legitimate starting point. But OCR has specifically flagged generic, template-driven assessments as a common deficiency: the analysis must reflect your actual environment. A structured [cyber risk assessment](/cyber-risk-assessment) performed by someone who does this weekly produces the formal, dated document OCR expects — and a prioritized fix list for the next 75 days.",
   },
 
   { type: 'h3', text: 'Milestone 3: Write (or Resuscitate) Your Policies (Days 16–25)' },
   {
     type: 'p',
-    text: 'The Written Information Security Policy is the master document, supported by sub-policies covering access control, mobile devices, remote work, incident response, workforce sanctions, business associate management, and contingency planning — the last of which covers how you\'d restore patient data after a system failure, which is where documented [backup and disaster recovery](/backup-disaster-recovery/) procedures live. HHS templates give you the skeleton. The work is making each policy describe what your practice actually does, because a policy that says "all devices are encrypted" when the front-desk laptop isn\'t is worse than no policy — it\'s documented evidence you knew the standard and didn\'t meet it.',
+    text: 'The Written Information Security Policy is the master document, supported by sub-policies covering access control, mobile devices, remote work, incident response, workforce sanctions, business associate management, and contingency planning — the last of which covers how you\'d restore patient data after a system failure, which is where documented [backup and disaster recovery](/backup-disaster-recovery) procedures live. HHS templates give you the skeleton. The work is making each policy describe what your practice actually does, because a policy that says "all devices are encrypted" when the front-desk laptop isn\'t is worse than no policy — it\'s documented evidence you knew the standard and didn\'t meet it.',
   },
 
   { type: 'h3', text: 'Milestone 4: Inventory Your Business Associate Agreements (Days 26–30)' },
@@ -82,7 +82,7 @@ export const ARTICLE: readonly BlogBlock[] = [
       '**Audit logging turned on and retained.** You must be able to show who accessed which record and when. Microsoft 365\'s audit log and your EHR\'s access reports cover most small practices — verify they\'re enabled and retention is set.',
       '**Encryption in transit and at rest.** TLS-encrypted email for anything containing PHI, and full-disk encryption (BitLocker or FileVault) on every laptop. An encrypted lost laptop is an incident; an unencrypted one is a reportable breach.',
       '**Automatic logoff** on idle sessions, everywhere PHI is accessible.',
-      '**A managed network perimeter.** Ransomware operators, per OCR, are behind a [264% increase in large reported healthcare breaches since 2018](https://www.mccarter.com/insights/season-of-enforcement-ocr-announces-its-sixth-enforcement-action-of-2025/) — and a [managed firewall](/managed-firewall/) with active rule review is the control standing between your network and that trend line.',
+      '**A managed network perimeter.** Ransomware operators, per OCR, are behind a [264% increase in large reported healthcare breaches since 2018](https://www.mccarter.com/insights/season-of-enforcement-ocr-announces-its-sixth-enforcement-action-of-2025/) — and a [managed firewall](/managed-firewall) with active rule review is the control standing between your network and that trend line.',
     ],
   },
 
@@ -118,7 +118,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: 'Assemble the Audit Package (Days 81–90)' },
   {
     type: 'p',
-    text: 'The final 10 days convert 80 days of work into a single evidence folder: the signed officer appointments, the dated SRA, the WISP and sub-policies, the BAA inventory, training logs, the IR plan with tabletop notes, and any sanction records. Store it centrally with access for the Privacy/Security Officer and practice leadership. If assembling it exposes gaps — an unsigned policy, a vendor who never returned the BAA — that\'s the point. A [security audit and compliance review](/security-audits-compliance/) at this stage functions as a dress rehearsal, catching what an OCR investigator would catch, while it\'s still free to fix.',
+    text: 'The final 10 days convert 80 days of work into a single evidence folder: the signed officer appointments, the dated SRA, the WISP and sub-policies, the BAA inventory, training logs, the IR plan with tabletop notes, and any sanction records. Store it centrally with access for the Privacy/Security Officer and practice leadership. If assembling it exposes gaps — an unsigned policy, a vendor who never returned the BAA — that\'s the point. A [security audit and compliance review](/security-audits-compliance) at this stage functions as a dress rehearsal, catching what an OCR investigator would catch, while it\'s still free to fix.',
   },
 
   // ── H2 · If OCR Comes Knocking ──────────────────────────────────────────
@@ -164,7 +164,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "Stack that against the alternative: 5-figure settlements for even the smallest practices, 2 years of OCR supervision, breach notification costs, and the patient-trust damage no line item captures. Compliance spend isn't overhead — it's some of the highest-[ROI IT investment](/maximize-roi-with-managed-it-services/) a practice can make, because it's the spend that prevents the 6-figure event.",
+    text: "Stack that against the alternative: 5-figure settlements for even the smallest practices, 2 years of OCR supervision, breach notification costs, and the patient-trust damage no line item captures. Compliance spend isn't overhead — it's some of the highest-[ROI IT investment](/maximize-roi-with-managed-it-services) a practice can make, because it's the spend that prevents the 6-figure event.",
   },
 
   // ── H2 · FAQ ─────────────────────────────────────────────────────────────

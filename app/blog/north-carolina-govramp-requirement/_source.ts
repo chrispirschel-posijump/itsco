@@ -59,7 +59,7 @@ export const ARTICLE: readonly BlogBlock[] = [
 
   {
     type: 'callout',
-    text: 'ITSco runs this as a managed service, not a one-time project. See how our [Compliance as a Service](/compliance-as-a-service/) model keeps you aligned between audits, not just before them.',
+    text: 'ITSco runs this as a managed service, not a one-time project. See how our [Compliance as a Service](/compliance-as-a-service) model keeps you aligned between audits, not just before them.',
     cta: {
       label: 'Book a free consultation',
       href: 'https://calendly.com/msavino-itsco/30-minute-free-consultation-with-itsco?utm_source=website&utm_medium=cta&utm_campaign=north-carolina-govramp-requirement-mid',
@@ -75,7 +75,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'Where ITSco fits' },
   {
     type: 'p',
-    text: 'We handle the technology side of getting you there: the gap assessment, the control work, the documentation, coordinating the independent assessment, and running the continuous monitoring that keeps your status current. The authorization itself is granted through GovRAMP, not by us. Our job is to get you ready and keep you there. We have spent 30 years doing this kind of work for businesses across North Carolina, and for many clients GovRAMP readiness is the start of a broader relationship through our [Compliance as a Service](/compliance-as-a-service/) and managed IT programs.',
+    text: 'We handle the technology side of getting you there: the gap assessment, the control work, the documentation, coordinating the independent assessment, and running the continuous monitoring that keeps your status current. The authorization itself is granted through GovRAMP, not by us. Our job is to get you ready and keep you there. We have spent 30 years doing this kind of work for businesses across North Carolina, and for many clients GovRAMP readiness is the start of a broader relationship through our [Compliance as a Service](/compliance-as-a-service) and managed IT programs.',
   },
   {
     type: 'p',
