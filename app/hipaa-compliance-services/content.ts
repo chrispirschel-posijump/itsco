@@ -30,7 +30,7 @@ export const CONTENT: ServiceSubContent = {
     // Root layout template appends " | ITSco".
     title: 'HIPAA Compliance Services for Healthcare Practices in NC',
     description:
-      'HIPAA compliance services and consulting for North Carolina practices: risk assessments, safeguards, Microsoft 365 and 24/7 monitoring, managed year-round.',
+      'HIPAA compliance services and consulting for North Carolina practices: risk assessments, safeguards, Microsoft 365, and 24/7 monitoring, managed year-round.',
     canonical: 'https://www.itsco.com/hipaa-compliance-services',
   },
   serviceName: 'HIPAA Compliance Services',
@@ -39,7 +39,7 @@ export const CONTENT: ServiceSubContent = {
     eyebrow: 'Compliance Services · HIPAA',
     headlineLead: 'HIPAA compliance, managed',
     headlineAccent: 'year-round, not just at audit time.',
-    body: 'For medical practices, specialty groups and the businesses that handle their patient data. ITSco runs the technology side of HIPAA as an ongoing service, so you stay audit-ready every month instead of scrambling before an audit.',
+    body: 'For medical practices, specialty groups, and the businesses that handle their patient data. ITSco runs the technology side of HIPAA as an ongoing service, so you stay audit-ready every month instead of scrambling before an audit.',
     utmSuffix: 'hipaa-compliance-services-hero',
   },
   heroImage: {
@@ -51,9 +51,9 @@ export const CONTENT: ServiceSubContent = {
     headlineLead: 'HIPAA is not a one-time project.',
     headlineAccent: 'Your risk changes every month.',
     paragraphs: [
-      'Every new hire, laptop, cloud app and vendor changes how patient data moves through your practice, and the HIPAA Security Rule expects your safeguards to keep pace. When the HHS Office for Civil Rights investigates a breach, one of the first documents it asks for is your [security risk analysis](https://www.hhs.gov/hipaa/for-professionals/security/guidance/risk-analysis/index.html), and a missing or outdated one is among the failures it cites most often.',
+      'Every new hire, laptop, cloud app, and vendor changes how patient data moves through your practice, and the HIPAA Security Rule expects your safeguards to keep pace. When the HHS Office for Civil Rights investigates a breach, one of the first documents it asks for is your [security risk analysis](https://www.hhs.gov/hipaa/for-professionals/security/guidance/risk-analysis/index.html), and a missing or outdated one is among the failures it cites most often.',
       'ITSco handles the technology side of HIPAA: the risk assessment, the safeguards it calls for, the documentation that proves them, and the monitoring that keeps them in place. Your attorney and compliance officer decide what HIPAA requires of your organization. We make sure your systems meet it, and we build that work into a predictable monthly cost.',
-      'The rules are also changing. In January 2025, HHS [proposed a major update to the Security Rule](https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information) with stricter requirements for encryption, multi-factor authentication, asset inventories and annual compliance audits. It is not final yet, and regulators now [target 2027](https://www.hipaajournal.com/final-rule-implementing-hipaa-security-rule-updates-edges-closer/), but practices that close those gaps now will not face a rushed project later.',
+      'The rules are also changing. In January 2025, HHS [proposed a major update to the Security Rule](https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information) with stricter requirements for encryption, multi-factor authentication, asset inventories, and annual compliance audits. It is not final yet, and regulators now [target 2027](https://www.hipaajournal.com/final-rule-implementing-hipaa-security-rule-updates-edges-closer/), but practices that close those gaps now will not face a rushed project later.',
     ],
   },
   stats: [
@@ -77,13 +77,13 @@ export const CONTENT: ServiceSubContent = {
       slug: 'caas-policy-management',
       title: 'Policies & Documentation',
       description:
-        'Written safeguards, procedures and evidence kept current, so you can show an auditor what you do instead of describing it.',
+        'Written safeguards, procedures, and evidence kept current, so you can show an auditor what you do instead of describing it.',
     },
     {
       slug: 'endpoint-security',
       title: 'Technical Safeguards',
       description:
-        'Multi-factor authentication, encryption, endpoint protection and access controls on every device and account that handles protected health information.',
+        'Multi-factor authentication, encryption, endpoint protection, and access controls on every device and account that handles protected health information.',
     },
     {
       slug: 'managed-soc',
@@ -101,7 +101,7 @@ export const CONTENT: ServiceSubContent = {
       slug: 'microsoft-365-services',
       title: 'HIPAA-Ready Microsoft 365',
       description:
-        'Email encryption, data loss prevention, retention and access settings configured for patient data, so your email and files hold up to a HIPAA review.',
+        'Email encryption, data loss prevention, retention, and access settings configured for patient data, so your email and files hold up to a HIPAA review.',
     },
     {
       slug: 'compliance-management',
@@ -113,7 +113,7 @@ export const CONTENT: ServiceSubContent = {
       slug: 'caas-audit-prep',
       title: 'Training & Audit Readiness',
       description:
-        'Staff security training with completion records, plus an evidence package ready for an auditor, insurer or acquirer whenever they ask.',
+        'Staff security training with completion records, plus an evidence package ready for an auditor, insurer, or acquirer whenever they ask.',
     },
   ],
   outcomes: {
@@ -143,13 +143,13 @@ export const CONTENT: ServiceSubContent = {
         slug: 'compliance-as-a-service',
         label: 'Compliance as a Service',
         href: '/compliance-as-a-service',
-        description: 'Ongoing compliance for HIPAA, CMMC, SOC 2, GovRAMP and the frameworks other providers turn down.',
+        description: 'Ongoing compliance for HIPAA, CMMC, SOC 2, GovRAMP, and the frameworks other providers turn down.',
       },
       {
         slug: 'healthcare-managed-it-services',
         label: 'Healthcare IT Services',
         href: '/healthcare-managed-it-services',
-        description: 'Managed IT built for practices, specialty groups and healthcare organizations.',
+        description: 'Managed IT built for practices, specialty groups, and healthcare organizations.',
       },
       {
         slug: 'cyber-risk-assessment',
@@ -168,13 +168,13 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'What do HIPAA compliance services include?',
       answer: [
-        'HIPAA compliance services cover the technology side of the Security Rule: a documented security risk assessment, the safeguards it calls for such as encryption, multi-factor authentication, monitoring and backups, written policies and evidence, staff training, vendor Business Associate Agreements, and an annual reassessment. ITSco runs all of it as an ongoing service, not a one-time project.',
+        'HIPAA compliance services cover the technology side of the Security Rule: a documented security risk assessment, the safeguards it calls for (encryption, multi-factor authentication, monitoring, and backups), written policies and evidence, staff training, vendor Business Associate Agreements, and an annual reassessment. ITSco runs all of it as an ongoing service, not a one-time project.',
       ],
     },
     {
       question: 'What is a HIPAA security risk assessment, and how often do we need one?',
       answer: [
-        'It is a documented review of every system that stores or moves patient data, the threats to each, and what you are doing about them. HIPAA requires one, and investigators ask for it early. Update it at least once a year and after any major change, such as a new EHR, office or cloud system.',
+        'It is a documented review of every system that stores or moves patient data, the threats to each, and what you are doing about them. HIPAA requires one, and investigators ask for it early. Update it at least once a year and after any major change, such as a new EHR, office, or cloud system.',
       ],
     },
     {
@@ -186,19 +186,19 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Is Microsoft 365 HIPAA compliant?',
       answer: [
-        'Microsoft 365 can support HIPAA compliance, but not out of the box. Microsoft will sign a Business Associate Agreement, and your tenant still needs the right settings: email encryption, multi-factor authentication, data loss prevention, retention and access controls. Default setups are a common gap. ITSco configures and monitors these settings for healthcare clients.',
+        'Microsoft 365 can support HIPAA compliance, but not out of the box. Microsoft will sign a Business Associate Agreement, and your tenant still needs the right settings: email encryption, multi-factor authentication, data loss prevention, retention, and access controls. Default setups are a common gap. ITSco configures and monitors these settings for healthcare clients.',
       ],
     },
     {
       question: 'What is changing in the HIPAA Security Rule?',
       answer: [
-        'HHS [proposed a major Security Rule update](https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information) in January 2025, adding stricter requirements for encryption, multi-factor authentication, asset inventories and annual compliance audits. It is not final; regulators now target 2027, and the current rule stays in force until then. Practices that close those gaps now avoid a rushed project later.',
+        'HHS [proposed a major Security Rule update](https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information) in January 2025, adding stricter requirements for encryption, multi-factor authentication, asset inventories, and annual compliance audits. It is not final; regulators now target 2027, and the current rule stays in force until then. Practices that close those gaps now avoid a rushed project later.',
       ],
     },
     {
       question: 'Who has to comply with HIPAA?',
       answer: [
-        'Covered entities, meaning healthcare providers, health plans and clearinghouses, plus their business associates: any vendor that handles patient data on their behalf, such as billing companies, IT providers and law firms. Business associates are directly liable for Security Rule violations, so HIPAA reaches well beyond the practice itself.',
+        'Covered entities, meaning healthcare providers, health plans, and clearinghouses, plus their business associates: any vendor that handles patient data on their behalf, such as billing companies, IT providers, and law firms. Business associates are directly liable for Security Rule violations, so HIPAA reaches well beyond the practice itself.',
       ],
     },
     {
@@ -210,7 +210,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Can ITSco work alongside our existing IT person or team?',
       answer: [
-        'Yes. Many practices keep an internal IT person for day-to-day support and bring in ITSco for the compliance work: the risk assessment, security monitoring, documentation and audit preparation. We share the evidence and the remediation plan, so your team always knows what is covered and who owns each task.',
+        'Yes. Many practices keep an internal IT person for day-to-day support and bring in ITSco for the compliance work: the risk assessment, security monitoring, documentation, and audit preparation. We share the evidence and the remediation plan, so your team always knows what is covered and who owns each task.',
       ],
     },
     {
@@ -222,7 +222,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Do you work with healthcare organizations outside Raleigh and Durham?',
       answer: [
-        'Yes. ITSco is based in Durham with an office in Raleigh and supports healthcare organizations across North Carolina, South Carolina and Virginia. Most compliance work, from monitoring to documentation, happens remotely, and our team is on-site in the Triangle when a project needs hands-on work.',
+        'Yes. ITSco is based in Durham with an office in Raleigh and supports healthcare organizations across North Carolina, South Carolina, and Virginia. Most compliance work, from monitoring to documentation, happens remotely, and our team is on-site in the Triangle when a project needs hands-on work.',
       ],
     },
   ],
