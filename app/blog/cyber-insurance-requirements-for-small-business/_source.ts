@@ -41,13 +41,13 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: '2. Endpoint detection and response (EDR) — not just antivirus' },
   {
     type: 'p',
-    text: 'Traditional antivirus matches files against a list of known threats. EDR watches behavior — a program encrypting hundreds of files in a minute gets flagged and stopped even if it\'s never been seen before. Underwriters now name-check modern EDR platforms on questionnaires and treat legacy antivirus as a "no" answer. Every company laptop, desktop, and server needs coverage, and you\'ll need to state which platform you run. Our [endpoint security](/endpoint-security/) page covers what a properly managed deployment looks like.',
+    text: 'Traditional antivirus matches files against a list of known threats. EDR watches behavior — a program encrypting hundreds of files in a minute gets flagged and stopped even if it\'s never been seen before. Underwriters now name-check modern EDR platforms on questionnaires and treat legacy antivirus as a "no" answer. Every company laptop, desktop, and server needs coverage, and you\'ll need to state which platform you run. Our [endpoint security](/endpoint-security) page covers what a properly managed deployment looks like.',
   },
 
   { type: 'h3', text: '3. 24/7 security monitoring' },
   {
     type: 'p',
-    text: 'Someone — a person, not just software — has to be watching alerts around the clock. Ransomware operators deliberately launch attacks on Friday nights and holiday weekends because they know most SMBs have nobody watching. An alert that fires at 2 a.m. Saturday and gets read Monday morning is a failed control. Insurers increasingly ask who monitors your environment overnight and how fast they respond. For most 50–500-person companies, a [managed SOC](/managed-soc/) is how this gets answered without hiring a night shift.',
+    text: 'Someone — a person, not just software — has to be watching alerts around the clock. Ransomware operators deliberately launch attacks on Friday nights and holiday weekends because they know most SMBs have nobody watching. An alert that fires at 2 a.m. Saturday and gets read Monday morning is a failed control. Insurers increasingly ask who monitors your environment overnight and how fast they respond. For most 50–500-person companies, a [managed SOC](/managed-soc) is how this gets answered without hiring a night shift.',
   },
 
   { type: 'h3', text: '4. Managed detection and response (MDR)' },
@@ -81,7 +81,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: '7. Immutable, tested backups' },
   {
     type: 'p',
-    text: 'Ransomware crews attack backups first — encrypt or delete the safety net, then demand payment. So insurers now ask three pointed questions: Are backups immutable (unable to be altered, even by an admin)? Is at least one copy offline or off-network? When did you last test a restore? The old 3-2-1 rule has grown to 3-2-1-1-0: three copies, two media types, one offsite, one immutable/offline, zero errors on restore tests. It works — Coalition found a record 86% of ransomware victims refused to pay in 2025, largely because tested backups gave them the option to walk away. [Backup and disaster recovery](/backup-disaster-recovery/) done right is what makes that possible.',
+    text: 'Ransomware crews attack backups first — encrypt or delete the safety net, then demand payment. So insurers now ask three pointed questions: Are backups immutable (unable to be altered, even by an admin)? Is at least one copy offline or off-network? When did you last test a restore? The old 3-2-1 rule has grown to 3-2-1-1-0: three copies, two media types, one offsite, one immutable/offline, zero errors on restore tests. It works — Coalition found a record 86% of ransomware victims refused to pay in 2025, largely because tested backups gave them the option to walk away. [Backup and disaster recovery](/backup-disaster-recovery) done right is what makes that possible.',
   },
 
   { type: 'h3', text: '8. A written, tested incident response plan' },
@@ -93,7 +93,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: '9. Documented security awareness training' },
   {
     type: 'p',
-    text: "Verizon's 2025 DBIR found the human element involved in 60% of breaches. Insurers know this, so they want recurring training — quarterly is the emerging standard — plus phishing simulations, with completion records for both. An annual slideshow nobody remembers won't satisfy the questionnaire. We've written previously about [what effective security training looks like](/blog/cyber-security-training-benefits/) and why the simulation data matters more than the course completion certificate.",
+    text: "Verizon's 2025 DBIR found the human element involved in 60% of breaches. Insurers know this, so they want recurring training — quarterly is the emerging standard — plus phishing simulations, with completion records for both. An annual slideshow nobody remembers won't satisfy the questionnaire. We've written previously about [what effective security training looks like](/blog/cyber-security-training-benefits) and why the simulation data matters more than the course completion certificate.",
   },
 
   { type: 'h3', text: '10. Network segmentation and managed firewalls' },
@@ -105,7 +105,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: '11. Vulnerability scanning and annual penetration testing' },
   {
     type: 'p',
-    text: "Vulnerability scanning is automated and ongoing; a penetration test is a skilled human attempting to break in the way a real attacker would. Carriers commonly require an annual third-party pen test for policies with limits above $1M — and they may ask for the executive summary. If you've never had a [penetration test](/penetration-testing-services/) performed, expect findings. That's the point: fix them before an attacker or an underwriter finds them first.",
+    text: "Vulnerability scanning is automated and ongoing; a penetration test is a skilled human attempting to break in the way a real attacker would. Carriers commonly require an annual third-party pen test for policies with limits above $1M — and they may ask for the executive summary. If you've never had a [penetration test](/penetration-testing-services) performed, expect findings. That's the point: fix them before an attacker or an underwriter finds them first.",
   },
 
   { type: 'h3', text: '12. A written information security policy (WISP)' },
@@ -172,7 +172,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "Now weigh it against the alternative. A $2M cyber policy for a 100-person company generally runs $8K–$25K per year. If these controls are the difference between a denial and a policy — or between a punitive premium and a standard one — the math resolves quickly. And the controls do more than satisfy an underwriter: they're the same measures that prevent the $269,000 loss in the first place. This is how we think about every security investment — measured [ROI](/maximize-roi-with-managed-it-services/), not fear.",
+    text: "Now weigh it against the alternative. A $2M cyber policy for a 100-person company generally runs $8K–$25K per year. If these controls are the difference between a denial and a policy — or between a punitive premium and a standard one — the math resolves quickly. And the controls do more than satisfy an underwriter: they're the same measures that prevent the $269,000 loss in the first place. This is how we think about every security investment — measured [ROI](/maximize-roi-with-managed-it-services), not fear.",
   },
 
   // ── H2 · What to Do in the Next 90 Days ─────────────────────────────────
@@ -187,7 +187,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: '**Weeks 2–3:** Run a gap analysis against the 12 controls above. A structured [cyber risk assessment](/cyber-risk-assessment/) gives you a prioritized list instead of a vague sense of dread.',
+    text: '**Weeks 2–3:** Run a gap analysis against the 12 controls above. A structured [cyber risk assessment](/cyber-risk-assessment) gives you a prioritized list instead of a vague sense of dread.',
   },
   {
     type: 'p',

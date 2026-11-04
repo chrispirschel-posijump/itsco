@@ -17,7 +17,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: '1. You never talk to a strategic partner — only a ticket queue' },
   {
     type: 'p',
-    text: "Your entire relationship runs through a ticketing system. Nobody at the provider knows your industry, your growth plans, or what your busy season looks like — they know your open tickets. Ticket resolution is table stakes, not partnership. What good looks like: a named senior contact who initiates [strategic conversations](/it-management-consulting/) about where the business is going, not just what's currently broken.",
+    text: "Your entire relationship runs through a ticketing system. Nobody at the provider knows your industry, your growth plans, or what your busy season looks like — they know your open tickets. Ticket resolution is table stakes, not partnership. What good looks like: a named senior contact who initiates [strategic conversations](/it-management-consulting) about where the business is going, not just what's currently broken.",
   },
 
   { type: 'h3', text: '2. Your invoices are unpredictable' },
@@ -75,7 +75,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: "9. They don't measure or report ROI" },
   {
     type: 'p',
-    text: "You get invoices, not evidence. No reporting on downtime avoided, incidents prevented, costs reduced, or projects delivered — which leaves you defending the IT line to your board with nothing but a feeling. What good looks like: a documented [ROI framework](/maximize-roi-with-managed-it-services/) with quarterly reporting against it. If a provider can't demonstrate its own value, that's not modesty — it's an answer.",
+    text: "You get invoices, not evidence. No reporting on downtime avoided, incidents prevented, costs reduced, or projects delivered — which leaves you defending the IT line to your board with nothing but a feeling. What good looks like: a documented [ROI framework](/maximize-roi-with-managed-it-services) with quarterly reporting against it. If a provider can't demonstrate its own value, that's not modesty — it's an answer.",
   },
 
   { type: 'h3', text: "10. They've turned down growth" },
@@ -121,7 +121,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "Now the comparison that matters: a 50-person company paying roughly $150K a year for underservice is paying full price for partial value — before counting the hidden costs of recurring issues, slow response, and strategic drift covered in our [IT cost breakdown](/blog/what-does-it-cost-50-person-company/). Against that baseline, a one-time transition cost pays for itself within 6–12 months in most cases. Staying isn't the free option; it just invoices differently.",
+    text: "Now the comparison that matters: a 50-person company paying roughly $150K a year for underservice is paying full price for partial value — before counting the hidden costs of recurring issues, slow response, and strategic drift covered in our [IT cost breakdown](/blog/what-does-it-cost-50-person-company). Against that baseline, a one-time transition cost pays for itself within 6–12 months in most cases. Staying isn't the free option; it just invoices differently.",
   },
 
   // ── H2 · What to Look for in a Replacement ──────────────────────────────
@@ -136,8 +136,8 @@ export const ARTICLE: readonly BlogBlock[] = [
       "**1. Business-outcome measurement.** They should explain, unprompted, how they'll measure and report the ROI of your IT spend — not just SLA compliance. Ask to see a sample quarterly report from a real (anonymized) client.",
       '**2. Named executive access.** You should know exactly which decision-maker — owner, CEO, CIO — you can reach, and have met them before signing. At ITSco, clients work directly with senior leadership, not a sales tier; whoever you choose, demand the same.',
       "**3. Transparent pricing.** Fixed per-user pricing, scope defined in writing, and clear project boundaries. If the proposal's pricing section confuses you now, imagine the invoices later.",
-      "**4. Cybersecurity depth.** A documented security philosophy, managed detection and response, and a tested incident response process — the controls cyber insurance underwriters check are a convenient audit of any [managed IT provider's](/managed-it-services/) real depth.",
-      '**5. A strategic layer.** Genuine [vCIO capability](/vcio-vcto-vciso-services/) — technology roadmapping, budget planning, vendor management — as a defined part of the service, not a sales-cycle promise that evaporates after onboarding.',
+      "**4. Cybersecurity depth.** A documented security philosophy, managed detection and response, and a tested incident response process — the controls cyber insurance underwriters check are a convenient audit of any [managed IT provider's](/managed-it-services) real depth.",
+      '**5. A strategic layer.** Genuine [vCIO capability](/vcio-vcto-vciso-services) — technology roadmapping, budget planning, vendor management — as a defined part of the service, not a sales-cycle promise that evaporates after onboarding.',
     ],
   },
 
@@ -185,6 +185,6 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'Name It, Then Act on It' },
   {
     type: 'p',
-    text: 'The signs are usually there — the harder step is naming them and acting instead of renewing by default. When executives describe why they finally switched providers, the pattern is nearly always some version of "we knew for over a year." You don\'t have to decide today whether to switch. You just have to decide whether the evidence deserves a real evaluation — and an [IT ROI assessment](/it-roi-assessment/) of your current environment is the lowest-risk way to turn a suspicion into a documented answer.',
+    text: 'The signs are usually there — the harder step is naming them and acting instead of renewing by default. When executives describe why they finally switched providers, the pattern is nearly always some version of "we knew for over a year." You don\'t have to decide today whether to switch. You just have to decide whether the evidence deserves a real evaluation — and an [IT ROI assessment](/it-roi-assessment) of your current environment is the lowest-risk way to turn a suspicion into a documented answer.',
   },
 ]

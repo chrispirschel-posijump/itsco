@@ -130,7 +130,7 @@ function Intro({ content }: { content: ServiceSubContent }) {
             </h2>
             {intro.paragraphs.map((p, i) => (
               <p key={i} className="text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
-                {p}
+                {renderAnswer(p)}
               </p>
             ))}
           </div>
@@ -228,7 +228,7 @@ function Outcomes({ content }: { content: ServiceSubContent }) {
             </h2>
             {outcomes.paragraphs.map((p, i) => (
               <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
-                {p}
+                {renderAnswer(p)}
               </p>
             ))}
             {outcomes.bullets && outcomes.bullets.length > 0 && (
@@ -240,7 +240,7 @@ function Outcomes({ content }: { content: ServiceSubContent }) {
                     ) : (
                       <Check size={20} className="text-itsco-red flex-shrink-0 mt-0.5" />
                     )}
-                    <span>{b}</span>
+                    <span>{renderAnswer(b)}</span>
                   </li>
                 ))}
               </ul>

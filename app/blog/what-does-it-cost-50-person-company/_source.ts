@@ -54,7 +54,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: 'Model 2: Fully Managed (MSP)' },
   {
     type: 'p',
-    text: "You contract the whole function to a [managed IT services](/managed-it-services/) provider for a per-user monthly fee — typically $125–$250 per user per month all-in, with the spread driven by your security stack and industry requirements. A law firm with compliance obligations sits at the top of the range; a company with simple needs sits near the bottom.",
+    text: "You contract the whole function to a [managed IT services](/managed-it-services) provider for a per-user monthly fee — typically $125–$250 per user per month all-in, with the spread driven by your security stack and industry requirements. A law firm with compliance obligations sits at the top of the range; a company with simple needs sits near the bottom.",
   },
   {
     type: 'p',
@@ -64,7 +64,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h3', text: 'Model 3: Hybrid / Co-Managed' },
   {
     type: 'p',
-    text: "You keep internal IT — usually one person who knows the business cold — and add MSP depth behind them through [staff augmentation or co-managed IT](/it-staff-augmentation/). The internal hire handles day-to-day and institutional knowledge; the MSP covers after-hours monitoring, security operations, project surges, and the specialties no single person carries. Budget $50–$120 per user per month on the MSP side, plus the internal salary. This model usually starts making sense between 100 and 500 employees; at 50, it's typically justified only by unusual complexity — custom software, manufacturing systems, heavy compliance.",
+    text: "You keep internal IT — usually one person who knows the business cold — and add MSP depth behind them through [staff augmentation or co-managed IT](/it-staff-augmentation). The internal hire handles day-to-day and institutional knowledge; the MSP covers after-hours monitoring, security operations, project surges, and the specialties no single person carries. Budget $50–$120 per user per month on the MSP side, plus the internal salary. This model usually starts making sense between 100 and 500 employees; at 50, it's typically justified only by unusual complexity — custom software, manufacturing systems, heavy compliance.",
   },
 
   // ── H2 · Per-User IT Cost Benchmarks by Company Size ────────────────────
@@ -99,7 +99,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: "A 50-Person Company's Actual IT Budget" },
   {
     type: 'p',
-    text: "Here's what the full stack looks like for a 50-person professional services company, line by line. Every figure is a current market rate — Microsoft 365 Business Premium, for instance, is Microsoft's published $22 list price, one of the few plans that held flat through Microsoft's July 2026 price increase. The strategic layer near the bottom is the line most companies omit entirely — the [vCIO function](/vcio-vcto-vciso-services/) that decides what all the other lines should be.",
+    text: "Here's what the full stack looks like for a 50-person professional services company, line by line. Every figure is a current market rate — Microsoft 365 Business Premium, for instance, is Microsoft's published $22 list price, one of the few plans that held flat through Microsoft's July 2026 price increase. The strategic layer near the bottom is the line most companies omit entirely — the [vCIO function](/vcio-vcto-vciso-services) that decides what all the other lines should be.",
   },
   {
     type: 'table',
@@ -208,7 +208,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: "If you'd rather pressure-test the model against your actual environment than a generic table, an [IT ROI assessment](/it-roi-assessment/) does exactly that — current spend, gaps, and where the budget is working against you.",
+    text: "If you'd rather pressure-test the model against your actual environment than a generic table, an [IT ROI assessment](/it-roi-assessment) does exactly that — current spend, gaps, and where the budget is working against you.",
   },
 
   // ── H2 · FAQ ─────────────────────────────────────────────────────────────
@@ -252,6 +252,6 @@ export const ARTICLE: readonly BlogBlock[] = [
   },
   {
     type: 'p',
-    text: 'For a typical 50-person company, the honest all-in number lands between $150 and $300 per user per month — and in 30 years of running IT at exactly this scale, the pattern ITSco sees is consistent: predictable models beat reactive ones over any multi-year window, and the strategic layer is where companies underinvest most. That layer is also where [IT spend turns into measurable ROI](/maximize-roi-with-managed-it-services/) — which is the only reason to spend any of it.',
+    text: 'For a typical 50-person company, the honest all-in number lands between $150 and $300 per user per month — and in 30 years of running IT at exactly this scale, the pattern ITSco sees is consistent: predictable models beat reactive ones over any multi-year window, and the strategic layer is where companies underinvest most. That layer is also where [IT spend turns into measurable ROI](/maximize-roi-with-managed-it-services) — which is the only reason to spend any of it.',
   },
 ]
