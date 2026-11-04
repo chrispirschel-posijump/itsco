@@ -81,7 +81,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           'More people, devices, and locations widen the attack surface, and bigger contracts bring a higher compliance bar. Enterprise customers, regulated clients, and government buyers increasingly ask for security documentation before they sign. Building security and compliance readiness as you grow is far cheaper than scrambling to meet a requirement after a deal is already on the table.',
       },
     ],
-    draft: false,
+    draft: true,
   },
   // ── Timely post (outside the evergreen roadmap) — NC GovRAMP rule ────────
   // draft:true until Mike/counsel sign off on the regulatory copy. Same

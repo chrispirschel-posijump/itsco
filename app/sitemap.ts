@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next'
 import fs from 'node:fs'
 import path from 'node:path'
+import { BLOG_POSTS, visiblePosts } from '@/lib/blogPosts'
 
 // Auto-generated sitemap: walks app/ at build time, derives a route for every
 // page.tsx, filters out demo/sandbox/orphan pages, and assigns a priority
@@ -12,6 +13,11 @@ const SITE_URL = 'https://www.itsco.com'
 // in Google (demo/sandbox pages, dynamic sitemap/robots) or are noindexed
 // orphans that we don't want surfaced now that the global crawl gate
 // is being flipped.
+const VISIBLE_SLUGS = new Set(visiblePosts().map((p) => p.slug))
+const HIDDEN_BLOG_ROUTES = new Set(
+  BLOG_POSTS.filter((p) => !VISIBLE_SLUGS.has(p.slug)).map((p) => `/blog/${p.slug}`),
+)
+
 const EXCLUDED_ROUTES = new Set<string>([
   // Draft until Mike approves (Nov 2026); remove to publish.
   '/hipaa-compliance-services',
@@ -156,6 +162,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const routes = collectRoutes(appDir)
     .filter((r) => !EXCLUDED_ROUTES.has(r))
+    // Draft and future-dated posts render (noindex) at their URL but must not
+    // be listed here, or the sitemap hands Google pages marked noindex.
+    .filter((r) => !HIDDEN_BLOG_ROUTES.has(r))
     // Treat empty string as the homepage
     .map((r) => (r === '/' ? '' : r))
 
