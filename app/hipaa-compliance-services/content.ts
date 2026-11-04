@@ -222,7 +222,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Do you work with healthcare organizations outside Raleigh and Durham?',
       answer: [
-        'Yes. ITSco is based in Durham with an office in Raleigh and supports healthcare organizations across North Carolina, South Carolina, and Virginia. Most compliance work, from monitoring to documentation, happens remotely, and our team is on-site in the Triangle when a project needs hands-on work.',
+        'Yes. ITSco is based in Durham with an office in Raleigh, and we work with healthcare organizations well beyond the Triangle. Most compliance work, from monitoring to documentation, happens remotely, so distance is rarely a barrier. When your organization needs on-site work, we build it into the scope based on your locations and needs.',
       ],
     },
   ],
