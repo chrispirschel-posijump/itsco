@@ -13,6 +13,8 @@ const SITE_URL = 'https://www.itsco.com'
 // orphans that we don't want surfaced now that the global crawl gate
 // is being flipped.
 const EXCLUDED_ROUTES = new Set<string>([
+  // Draft until Mike approves (Nov 2026); remove to publish.
+  '/hipaa-compliance-services',
   // Demo and sandbox pages (not promoted in nav, not for indexing)
   '/demo',
   '/demo-lite',
