@@ -216,7 +216,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'How are HIPAA compliance services priced?',
       answer: [
-        'As a predictable monthly fee built into your IT services, not a surprise project before an audit. The price depends on your number of users and locations, the systems that hold patient data, and the safeguards you already have in place. A free consultation is the fastest way to get a number for your practice.',
+        'As a predictable monthly fee built into your IT services, not a surprise project before an audit. The price depends on your users and locations, the systems that hold patient data, and the safeguards already in place. Our [IT Investment Calculator](/it-investment-calculator) estimates your monthly IT cost in minutes, and a free consultation turns that into a number for your practice.',
       ],
     },
     {
