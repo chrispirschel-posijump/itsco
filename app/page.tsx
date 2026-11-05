@@ -9,6 +9,7 @@ import BookingCTA from '@/components/BookingCTA'
 import IndustryCard from '@/components/IndustryCard'
 import TestimonialBlock from '@/components/TestimonialBlock'
 import CTAButton from '@/components/CTAButton'
+import CalculatorCTAButton from '@/components/CalculatorCTAButton'
 import CaseStudyCard from '@/components/CaseStudyCard'
 import TestimonialsRotator from '@/components/TestimonialsRotator'
 import { FadeUp, StaggerChildren, CountUp } from '@/components/ScrollAnimations'
@@ -186,9 +187,8 @@ function HomeHero() {
                 utmSuffix="homepage-hero"
                 className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]"
               />
-              <CTAButton
-                label="Discover the ROI"
-                href="/maximize-roi-with-managed-it-services"
+              <CalculatorCTAButton
+                placement="homepage-hero"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />

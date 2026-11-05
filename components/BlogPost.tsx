@@ -3,6 +3,8 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
 import CTAButton from '@/components/CTAButton'
+import CalculatorCTAButton from '@/components/CalculatorCTAButton'
+import { Fragment } from 'react'
 import ServiceCard from '@/components/ServiceCard'
 import { FadeUp } from '@/components/ScrollAnimations'
 import { type BlogPost as BlogPostMeta, relatedPosts } from '@/lib/blogPosts'
@@ -203,11 +205,43 @@ function Hero({ post }: { post: BlogPostMeta }) {
   )
 }
 
-function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
+// Where the mid-article calculator box goes on calculatorCta posts: before
+// the section heading closest to ~45% of the way through, skipping headings
+// that sit within 3 blocks of an existing callout so two boxes never stack.
+function calculatorCalloutIndex(article: readonly BlogBlock[]): number {
+  const target = article.length * 0.45
+  const callouts = article.flatMap((b, i) => (b.type === 'callout' ? [i] : []))
+  const open = article
+    .map((b, i) => (b.type === 'h2' && i > 2 ? i : -1))
+    .filter((i) => i > 0 && !callouts.some((c) => Math.abs(c - i) <= 3))
+  // Prefer headings that don't continue a numbered list ("8. ..."), so the box
+  // never splits a sequence of tips.
+  const unnumbered = open.filter((i) => {
+    const b = article[i]
+    return !(b.type === 'h2' && /^\d+[.)]\s/.test(b.text) && !/^1[.)]\s/.test(b.text))
+  })
+  const candidates = unnumbered.length ? unnumbered : open
+  if (candidates.length === 0) return Math.floor(article.length / 2)
+  return candidates.reduce((best, i) => (Math.abs(i - target) < Math.abs(best - target) ? i : best))
+}
+
+function CalculatorCallout() {
+  return (
+    <div className="my-8 rounded-2xl border-l-4 border-itsco-red bg-itsco-card p-6 md:p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+      <p className="text-base md:text-lg text-itsco-dark leading-[1.7] mb-4">
+        <strong>What would this cost for your team?</strong> The IT Investment Calculator turns your headcount, devices, and support needs into a monthly estimate in about two minutes.
+      </p>
+      <CalculatorCTAButton placement="blog-mid" className="px-6 py-3 rounded-xl text-sm" />
+    </div>
+  )
+}
+
+function ArticleBody({ article, calcIndex }: { article: readonly BlogBlock[]; calcIndex?: number }) {
   return (
     <section className="bg-itsco-paper">
       <div className="max-w-3xl mx-auto px-6 lg:px-12 py-16 md:py-20">
         {article.map((block, i) => {
+          const el = (() => {
           if (block.type === 'h2') {
             return (
               <h2
@@ -297,7 +331,34 @@ function ArticleBody({ article }: { article: readonly BlogBlock[] }) {
               {parseInline(block.text)}
             </p>
           )
+          })()
+          return i === calcIndex ? (
+            <Fragment key={i}>
+              <CalculatorCallout />
+              {el}
+            </Fragment>
+          ) : (
+            el
+          )
         })}
+      </div>
+    </section>
+  )
+}
+
+function CalculatorTopicCTA() {
+  return (
+    <section className="bg-itsco-blush">
+      <div className="max-w-3xl mx-auto px-6 lg:px-12 pb-16 md:pb-20">
+        <div className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-8 md:p-10 text-center shadow-[0_2px_8px_rgba(0,0,0,0.04)]">
+          <h2 className="text-2xl md:text-3xl font-bold text-itsco-dark tracking-tight mb-3">
+            What should IT cost your business?
+          </h2>
+          <p className="text-base text-itsco-body leading-relaxed mb-6 max-w-xl mx-auto">
+            Get a monthly estimate based on your team, devices, and security needs in about two minutes.
+          </p>
+          <CalculatorCTAButton placement="blog-end" className="px-8 py-4 rounded-xl text-base" />
+        </div>
       </div>
     </section>
   )
@@ -368,8 +429,11 @@ export default function BlogPost({
       <Nav />
       <main>
         <Hero post={post} />
-        <ArticleBody article={article} />
-        <TopicCTA category={post.category} />
+        <ArticleBody
+          article={article}
+          calcIndex={post.calculatorCta ? calculatorCalloutIndex(article) : undefined}
+        />
+        {post.calculatorCta ? <CalculatorTopicCTA /> : <TopicCTA category={post.category} />}
         <BookingCTA utmSuffix={`blog-${post.slug}-bottom`} />
         <RelatedPosts slug={post.slug} />
       </main>

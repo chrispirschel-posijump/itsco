@@ -27,6 +27,9 @@ export interface BlogPost {
   // recommendations, and their individual page metadata emits noindex.
   // Toggle to false on the intended publish day.
   draft?: boolean
+  // Cost-focused posts: the IT Investment Calculator becomes the main CTA
+  // (mid-article box + end-of-post button). Booking stays below it.
+  calculatorCta?: boolean
 }
 
 // Reads the current date in a way that stays stable across Next.js's static
@@ -297,6 +300,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       },
     ],
     draft: true,
+    calculatorCta: true,
   },
   // ── Post 8 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-11-09. Flip draft: false and redeploy on Nov 9.
@@ -444,6 +448,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "It targets the documented causes: continuous monitoring converts failures-in-progress into scheduled fixes, tested procedures attack the leading human-error driver, 24/7 response shortens every incident, and tested backups compress recovery from days to hours. The honest measure for any provider — including us — is the trend in your own unplanned downtime hours year over year.",
       },
     ],
+    calculatorCta: true,
   },
   // ── Post 4 of the editorial roadmap ──────────────────────────────────────
   // Published 2026-09-14.
@@ -522,6 +527,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           'Benchmark your all-in per-user cost against published ranges, then check the mix. Overspending usually hides in 3 places: unused software licenses, redundant tools doing the same job, and paying senior-engineer rates for password resets. Underspending shows up differently — as downtime and productivity drag. Most companies are doing both at once.',
       },
     ],
+    calculatorCta: true,
   },
   // ── Post 2 of the editorial roadmap ──────────────────────────────────────
   // Published 2026-08-17.
@@ -618,6 +624,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'In-house IT team or outsourced MSP? A practical breakdown of what IT support actually costs a small business.',
     heroImage: '/images/hero/blog/cardmapr-nl-AWOcmWKnOR8-unsplash.jpg',
     publishedDate: '2026-05-20',
+    calculatorCta: true,
   },
   {
     slug: 'why-is-network-security-important',
@@ -699,6 +706,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'Staff augmentation or managed services? A clear comparison to help you choose the right IT support model.',
     heroImage: '/images/supporting/services/pexels-theo-decker-5946207.jpg',
     publishedDate: '2026-05-20',
+    calculatorCta: true,
   },
   {
     slug: 'it-cost-reduction',
@@ -708,6 +716,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'Practical ways to cut technology costs without sacrificing performance, security, or your ability to scale.',
     heroImage: '/images/hero/consulting/path-digital-tR0jvlsmCuQ-unsplash.jpg',
     publishedDate: '2026-05-20',
+    calculatorCta: true,
   },
   {
     slug: 'cyber-security-training-benefits',
@@ -764,6 +773,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'Break-fix vs managed services — the math, the operating model, and where break-fix still makes sense vs where it costs you money.',
     heroImage: '/images/supporting/industries/austin-distel-DS1hZ4xzD7M-unsplash.jpg',
     publishedDate: '2026-06-11',
+    calculatorCta: true,
   },
   {
     slug: 'managed-services-vs-professional-services',
@@ -970,6 +980,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       'Transparent 2026 pricing ranges for managed IT services, helpdesk, security, and project work — what drives cost, what is included, and how to compare proposals without being misled.',
     heroImage: '/images/supporting/services/pexels-thirdman-5582868.jpg',
     publishedDate: '2026-06-11',
+    calculatorCta: true,
   },
   {
     slug: 'what-is-it-procurement',

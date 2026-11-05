@@ -5,6 +5,7 @@ import Nav from '@/components/Nav'
 import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
 import CTAButton from '@/components/CTAButton'
+import CalculatorCTAButton from '@/components/CalculatorCTAButton'
 import DynamicIcon from '@/components/DynamicIcon'
 import FullBleedHero from '@/components/FullBleedHero'
 import HeroImage from '@/components/HeroImage'
@@ -291,9 +292,8 @@ function Hero({ content }: { content: CityServiceContent }) {
                 utmSuffix={hero.utmSuffix}
                 className="px-8 py-4 rounded-xl text-base"
               />
-              <CTAButton
-                label="See our capabilities"
-                href="#capabilities"
+              <CalculatorCTAButton
+                placement="city-hero"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />

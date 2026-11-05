@@ -7,6 +7,7 @@ import Footer from '@/components/Footer'
 import BookingCTA from '@/components/BookingCTA'
 import ServiceCard from '@/components/ServiceCard'
 import CTAButton from '@/components/CTAButton'
+import CalculatorCTAButton from '@/components/CalculatorCTAButton'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import {
@@ -148,9 +149,8 @@ function Hero() {
                 utmSuffix="managed-it-services-hero"
                 className="px-8 py-4 rounded-xl text-base transition-[background-color,box-shadow] hover:shadow-[0_0_40px_rgba(202,60,39,0.3)]"
               />
-              <CTAButton
-                label="Discover the ROI"
-                href="/maximize-roi-with-managed-it-services"
+              <CalculatorCTAButton
+                placement="managed-it-services-hero"
                 variant="secondary"
                 className="px-8 py-4 rounded-xl text-base"
               />
