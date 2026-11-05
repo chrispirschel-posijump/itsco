@@ -58,4 +58,6 @@ export const ANALYTICS_EVENTS = {
   calculatorPdf: 'calculator_pdf',
   /** Site-wide banner CTA clicked through to the calculator. */
   calculatorBannerClick: 'calculator_banner_click',
+  /** Calculator button clicked (hero or blog); `placement` says which one. */
+  calculatorCtaClick: 'calculator_cta_click',
 } as const
