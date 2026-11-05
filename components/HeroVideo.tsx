@@ -1,7 +1,7 @@
 "use client";
 
 import HeroImage from "@/components/HeroImage";
-import { useEffect, useState } from "react";
+import { useEffect, useRef } from "react";
 
 interface HeroVideoProps {
   /** Path to MP4 source — required */
@@ -15,19 +15,6 @@ interface HeroVideoProps {
   sizes?: string;
 }
 
-// The loop is ~1.9 MB, so only fetch it when it will actually be seen: desktop
-// widths (the panel is hidden below lg), no reduced-motion or data-saver
-// preference, and not an automated browser. Everyone else gets the poster.
-function shouldPlayVideo() {
-  const nav = navigator as Navigator & { connection?: { saveData?: boolean } };
-  return (
-    window.matchMedia("(min-width: 1024px)").matches &&
-    !window.matchMedia("(prefers-reduced-motion: reduce)").matches &&
-    !nav.connection?.saveData &&
-    !nav.webdriver
-  );
-}
-
 export default function HeroVideo({
   mp4Src,
   webmSrc,
@@ -36,33 +23,32 @@ export default function HeroVideo({
   className = "object-cover object-center",
   sizes = "52vw",
 }: HeroVideoProps) {
-  const [showVideo, setShowVideo] = useState(false);
+  const videoRef = useRef<HTMLVideoElement>(null);
 
   useEffect(() => {
-    const motion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    const onMotionChange = () => {
-      if (motion.matches) setShowVideo(false);
+    const video = videoRef.current;
+    if (!video) return;
+
+    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
+
+    const apply = () => {
+      if (mq.matches) {
+        video.pause();
+        video.removeAttribute("autoplay");
+      } else {
+        video.play().catch(() => {});
+      }
     };
 
-    // Wait until the page has finished loading so the video never competes
-    // with the poster, fonts, or scripts.
-    const start = () => {
-      if (shouldPlayVideo()) setShowVideo(true);
-    };
-    if (document.readyState === "complete") start();
-    else window.addEventListener("load", start, { once: true });
-
-    motion.addEventListener("change", onMotionChange);
-    return () => {
-      window.removeEventListener("load", start);
-      motion.removeEventListener("change", onMotionChange);
-    };
+    apply();
+    mq.addEventListener("change", apply);
+    return () => mq.removeEventListener("change", apply);
   }, []);
 
   return (
     <>
-      {/* Poster image — shown immediately, and stays as the only image whenever the
-          video is skipped. */}
+      {/* Poster image — shown immediately, behind the video, until video paints. Also the
+          fallback when prefers-reduced-motion pauses the video. */}
       <HeroImage
         src={poster}
         alt={alt}
@@ -71,21 +57,24 @@ export default function HeroVideo({
         className={className}
         sizes={sizes}
       />
-      {showVideo && (
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
-          preload="auto"
-          poster={poster}
-          aria-hidden="true"
-          className={`absolute inset-0 w-full h-full ${className}`}
-        >
-          {webmSrc && <source src={webmSrc} type="video/webm" />}
-          <source src={mp4Src} type="video/mp4" />
-        </video>
-      )}
+      <video
+        ref={videoRef}
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="metadata"
+        poster={poster}
+        aria-hidden="true"
+        className={`absolute inset-0 w-full h-full ${className}`}
+      >
+        {/* media limits the download to desktop widths, where the panel is visible.
+            Below lg no source matches, so phones never fetch the ~1.9 MB loop. */}
+        {webmSrc && (
+          <source src={webmSrc} type="video/webm" media="(min-width: 1024px)" />
+        )}
+        <source src={mp4Src} type="video/mp4" media="(min-width: 1024px)" />
+      </video>
     </>
   );
 }
