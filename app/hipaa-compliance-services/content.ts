@@ -51,7 +51,7 @@ export const CONTENT: ServiceSubContent = {
     headlineLead: 'HIPAA is not a one-time project.',
     headlineAccent: 'Your risk changes every month.',
     paragraphs: [
-      'Every new hire, laptop, cloud app, and vendor changes how patient data moves through your practice, and the HIPAA Security Rule expects your safeguards to keep pace. When the HHS Office for Civil Rights investigates a breach, one of the first documents it asks for is your [security risk analysis](https://www.hhs.gov/hipaa/for-professionals/security/guidance/risk-analysis/index.html), and a missing or outdated one is among the failures it cites most often.',
+      'Every new hire, laptop, cloud app, and vendor changes how patient data moves through your practice, and the HIPAA Security Rule expects your safeguards to keep pace. When the HHS Office for Civil Rights investigates a breach, one of the first documents it asks for is your [security risk analysis](https://www.hhs.gov/hipaa/for-professionals/security/guidance/guidance-risk-analysis/index.html), and a missing or outdated one is among the failures it cites most often.',
       'ITSco handles the technology side of HIPAA: the risk assessment, the safeguards it calls for, the documentation that proves them, and the monitoring that keeps them in place. Your attorney and compliance officer decide what HIPAA requires of your organization. We make sure your systems meet it, and we build that work into a predictable monthly cost.',
       'The rules are also changing. In January 2025, HHS [proposed a major update to the Security Rule](https://www.federalregister.gov/documents/2025/01/06/2024-30983/hipaa-security-rule-to-strengthen-the-cybersecurity-of-electronic-protected-health-information) with stricter requirements for encryption, multi-factor authentication, asset inventories, and annual compliance audits. It is not final yet, and regulators now [target 2027](https://www.hipaajournal.com/final-rule-implementing-hipaa-security-rule-updates-edges-closer/), but practices that close those gaps now will not face a rushed project later.',
     ],
@@ -222,7 +222,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Do you work with healthcare organizations outside Raleigh and Durham?',
       answer: [
-        'Yes. ITSco is based in Durham with an office in Raleigh and supports healthcare organizations across North Carolina, South Carolina, and Virginia. Most compliance work, from monitoring to documentation, happens remotely, and our team is on-site in the Triangle when a project needs hands-on work.',
+        'Yes. ITSco is based in Durham with an office in Raleigh, and we work with healthcare organizations well beyond the Triangle. Most compliance work, from monitoring to documentation, happens remotely, so distance is rarely a barrier. When your organization needs on-site work, we build it into the scope based on your locations and needs.',
       ],
     },
   ],
