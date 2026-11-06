@@ -204,6 +204,6 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'Treat It Like a Sprint, Not a Binder' },
   {
     type: 'p',
-    text: "HIPAA compliance fails when it's treated as a document-collection exercise and succeeds when it's treated as a 90-day operational project with named owners and dated deliverables. The practices that get fined aren't the ones missing a form — they're the ones that never did the risk assessment and couldn't prove anything when asked. ITSco has spent 30 years serving North Carolina businesses — including healthcare deployments like our EmergeOrtho engagement — and zero ITSco clients have experienced a serious security breach in that time. The same discipline behind that record is what a 90-day compliance sprint runs on.",
+    text: "HIPAA compliance fails when it's treated as a document-collection exercise and succeeds when it's treated as a 90-day operational project with named owners and dated deliverables. The practices that get fined aren't the ones missing a form — they're the ones that never did the risk assessment and couldn't prove anything when asked. ITSco has spent 30 years serving North Carolina businesses — including healthcare deployments like our EmergeOrtho engagement — and zero ITSco clients have experienced a serious security breach in that time. The same discipline behind that record is what a 90-day compliance sprint runs on. If you would rather hand the sprint to a team that runs it every day, see our [HIPAA compliance services](/hipaa-compliance-services).",
   },
 ]

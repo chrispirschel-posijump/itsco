@@ -183,10 +183,10 @@ export const CONTENT: ServiceSubContent = {
         description: 'A clear-eyed view of your exposure and a prioritized plan to close it.',
       },
       {
-        slug: 'cybersecurity-consulting-services',
-        label: 'Cybersecurity Consulting',
-        href: '/cybersecurity-consulting-services',
-        description: 'Strategic security guidance and execution from a vendor-neutral team.',
+        slug: 'hipaa-compliance-services',
+        label: 'HIPAA Compliance',
+        href: '/hipaa-compliance-services',
+        description: 'Risk assessments, safeguards, policies, and BAAs that keep healthcare organizations compliant year-round.',
       },
     ],
   },
@@ -205,7 +205,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Which frameworks do you support?',
       answer: [
-        'The major ones: HIPAA, PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, and GDPR, plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for any business that handles government data in the cloud, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
+        'The major ones: [HIPAA](/hipaa-compliance-services), PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, and GDPR, plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for any business that handles government data in the cloud, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
       ],
     },
     {

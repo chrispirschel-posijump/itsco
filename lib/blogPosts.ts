@@ -488,6 +488,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "Use business-outcome measurement, named executive access, transparent pricing, cybersecurity depth, and a real strategic layer as your criteria — then add references: 2 clients your size at 3+ years tenure, and 1 who joined in the past 6 months. The long-tenured clients tell you what the relationship becomes; the recent one tells you what onboarding is really like.",
       },
     ],
+    calculatorCta: true,
   },
   // ── Post 3 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-08-31. Flip draft: false and redeploy on Aug 31.
