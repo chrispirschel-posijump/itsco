@@ -1,10 +1,21 @@
 'use client'
 
 import { useState } from 'react'
-import { Check } from 'lucide-react'
+import { Check, ChevronDown } from 'lucide-react'
 import { ANALYTICS_EVENTS, pushEvent } from '@/lib/analytics'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
+
+// Pilot routing field approved by Zack (Nov 6, 2026). Easy to remove if it
+// ever slows down real inquiries: delete TOPICS, the select below, and the
+// matching <select> in public/__forms.html.
+const TOPICS = [
+  'IT support',
+  'Security event or urgent issue',
+  'Consulting or strategy',
+  'Partnership or vendor inquiry',
+  'Other',
+]
 
 const FIELD =
   'w-full rounded-lg border border-[#EBEBEB] bg-white px-4 py-3 text-base text-itsco-dark placeholder:text-[#999] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-itsco-red transition-[border-color] duration-200'
@@ -31,7 +42,11 @@ export default function ContactForm() {
       // Fires only on a confirmed submission, so the conversion count
       // matches what actually reached Netlify. No personal data — see
       // lib/analytics.ts.
-      pushEvent(ANALYTICS_EVENTS.contactFormSubmit, { form_name: 'contact' })
+      // The topic is a fixed category, not personal data, so it's safe to send.
+      pushEvent(ANALYTICS_EVENTS.contactFormSubmit, {
+        form_name: 'contact',
+        topic: data.get('topic')?.toString() ?? '',
+      })
       form.reset()
     } catch {
       setStatus('error')
@@ -96,8 +111,37 @@ export default function ContactForm() {
       </div>
 
       <div className="mt-4">
+        <label htmlFor="cf-topic" className="block text-sm font-semibold text-itsco-dark mb-1.5">
+          What can we help with? <span className="text-itsco-red">*</span>
+        </label>
+        <div className="relative">
+          <select
+            id="cf-topic"
+            name="topic"
+            required
+            defaultValue=""
+            className={`${FIELD} appearance-none pr-11 cursor-pointer invalid:text-[#999]`}
+          >
+            <option value="" disabled>
+              Select one
+            </option>
+            {TOPICS.map((t) => (
+              <option key={t} value={t} className="text-itsco-dark">
+                {t}
+              </option>
+            ))}
+          </select>
+          <ChevronDown
+            size={18}
+            aria-hidden="true"
+            className="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-[#999]"
+          />
+        </div>
+      </div>
+
+      <div className="mt-4">
         <label htmlFor="cf-message" className="block text-sm font-semibold text-itsco-dark mb-1.5">
-          How can we help? <span className="text-itsco-red">*</span>
+          Tell us more <span className="text-itsco-red">*</span>
         </label>
         <textarea
           id="cf-message"
