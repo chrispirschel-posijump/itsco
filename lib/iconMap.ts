@@ -56,6 +56,7 @@ export const iconMap: Record<string, LucideIcon> = {
   'security-audits-compliance':                 ClipboardCheck,
   'compliance-management':                      BadgeCheck,
   'compliance-as-a-service':                    BadgeCheck,
+  'hipaa-compliance-services':                  Stethoscope,
   'vcaio-leadership':                           BrainCircuit,
   'caas-framework-alignment':                   BadgeCheck,
   'caas-life-sciences':                         FlaskConical,

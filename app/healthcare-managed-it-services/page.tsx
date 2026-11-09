@@ -556,12 +556,12 @@ function RelatedServices() {
             imageAlt="Medical professionals reviewing clinical imaging"
           />
           <ServiceCard
-            slug="cybersecurity"
-            title="Cybersecurity & MSSP"
-            description="24/7 SOC monitoring, MDR, firewall management, and compliance programs that reduce your risk exposure before threats become incidents."
-            href="/cybersecurity"
-            image="/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg"
-            imageAlt="Security operations engineers reviewing code on multiple monitors"
+            slug="hipaa-compliance-services"
+            title="HIPAA Compliance Services"
+            description="Security risk assessments, safeguards, policies, and Business Associate Agreements, run as an ongoing service for healthcare organizations."
+            href="/hipaa-compliance-services"
+            image="/images/supporting/industries/vitaly-gariev-2kopEHjST-g-unsplash.jpg"
+            imageAlt="Two healthcare professionals reviewing patient information on a tablet"
           />
         </div>
       </div>

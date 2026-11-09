@@ -61,6 +61,7 @@ const NAV_ITEMS = [
         href: "/compliance-as-a-service",
         children: [
           { label: "Compliance as a Service", href: "/compliance-as-a-service" },
+          { label: "HIPAA Compliance", href: "/hipaa-compliance-services" },
           { label: "Security Audits & Compliance", href: "/security-audits-compliance" },
         ],
       },

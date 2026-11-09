@@ -303,7 +303,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     calculatorCta: true,
   },
   // ── Post 8 of the editorial roadmap ──────────────────────────────────────
-  // Scheduled for 2026-11-09. Flip draft: false and redeploy on Nov 9.
+  // Published 2026-11-09.
   {
     slug: 'when-to-hire-fractional-cio',
     title: "When to Hire a Fractional CIO (And When You Don't Need One)",
@@ -335,7 +335,6 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "Apply the same test, scoped differently. If your six-figure decisions are broadly about technology — infrastructure, vendors, security — that's fractional CIO territory. If they're specifically about AI adoption, pilots, and governance, start with an AI readiness assessment, and bundle ongoing AI-leadership capacity into the fractional CIO relationship as the pilot pipeline becomes real. A separate standalone vCAIO rarely makes sense below enterprise scale.",
       },
     ],
-    draft: true,
   },
   // ── Post 7 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-10-26. Flip draft: false and redeploy on Oct 26.
@@ -488,6 +487,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
           "Use business-outcome measurement, named executive access, transparent pricing, cybersecurity depth, and a real strategic layer as your criteria — then add references: 2 clients your size at 3+ years tenure, and 1 who joined in the past 6 months. The long-tenured clients tell you what the relationship becomes; the recent one tells you what onboarding is really like.",
       },
     ],
+    calculatorCta: true,
   },
   // ── Post 3 of the editorial roadmap ──────────────────────────────────────
   // Scheduled for 2026-08-31. Flip draft: false and redeploy on Aug 31.
