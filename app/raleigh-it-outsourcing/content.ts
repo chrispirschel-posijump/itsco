@@ -7,9 +7,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 export const CONTENT: CityServiceContent = {
   serviceType: 'IT Outsourcing',
   meta: {
-    title: 'IT Outsourcing in Raleigh, NC',
+    title: 'IT Outsourcing in Raleigh, NC from a Local Team',
     description:
-      'ITSco delivers IT outsourcing in Raleigh, NC — executive consulting, cloud, security, network engineering, and compliance that maximize your IT ROI. Book a free consultation.',
+      'IT outsourcing in Raleigh from a local team trusted since 1996. Help desk, security, cloud, and network engineering with predictable pricing. Book a call.',
     canonical: 'https://www.itsco.com/raleigh-it-outsourcing',
   },
   officeLocation: 'raleigh',
@@ -44,7 +44,9 @@ export const CONTENT: CityServiceContent = {
     eyebrow: 'Real Value for Your Business',
     headlineLead: 'IT outsourcing built on',
     headlineAccent: 'three generations of expertise.',
-    paragraphs: [S[14], S[15], S[16]],
+    // S[16] said "more than 25 years"; updated to match the 30-year stat
+    // (Chris, Nov 10, 2026).
+    paragraphs: [S[14], S[15], S[16].replace('For more than 25 years', 'For 30 years')],
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
@@ -120,6 +122,39 @@ export const CONTENT: CityServiceContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Raleigh IT outsourcing,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // New buyer-question FAQs (not from _source.ts), written in a direct-answer
+    // style for People Also Ask and AI answers. Approved by Chris, Nov 10, 2026.
+    {
+      question: 'What does IT outsourcing include for a Raleigh business?',
+      answer: [
+        'IT outsourcing means handing some or all of your technology work to an outside team instead of hiring for it. For Raleigh businesses, ITSco covers help desk, cybersecurity, cloud, network engineering, systems architecture, and compliance support. You can outsource everything or only the areas your internal team cannot cover.',
+      ],
+    },
+    {
+      question: 'Should we outsource all of our IT or just part of it?',
+      answer: [
+        'It depends on what your team does well today. Companies without internal IT usually outsource everything. Companies with an IT manager or small team often keep day-to-day work in-house and outsource security, projects, or after-hours coverage. ITSco works either way. For a side-by-side look, read [staff augmentation vs. managed services](/blog/staff-augmentation-vs-managed-services).',
+      ],
+    },
+    {
+      question: 'How much does IT outsourcing cost in Raleigh?',
+      answer: [
+        'Cost depends on how many users and devices you have, which services you outsource, and your security and compliance needs. Instead of hiring for each skill, you get a full team\'s range of expertise for one monthly cost. Our [IT Investment Calculator](/it-investment-calculator) gives a monthly estimate in about two minutes.',
+      ],
+    },
+    {
+      question: 'Is your outsourced IT team local to Raleigh?',
+      answer: [
+        'Yes. ITSco has served Raleigh businesses since 1996, with an office in Raleigh and headquarters in Durham. Most work happens remotely, and our engineers come on-site across Raleigh, Durham, and RTP when a problem needs hands on equipment. Clients work directly with senior leadership, including CEO Mike Savino and CTO Greg Wassil.',
+      ],
+    },
+  ],
   citySlug: 'raleigh',
   bookingUtm: 'it-outsourcing-raleigh-bottom',
 }

@@ -72,7 +72,7 @@ export const CONTENT: ServiceSubContent = {
     links: [
       {
         slug: 'it-assessments-strategies',
-        label: 'IT Assessments & Strategies',
+        label: 'IT Assessment Services',
         href: '/it-assessments-strategies',
         description: 'In-depth evaluations of infrastructure, security, and compliance.',
       },

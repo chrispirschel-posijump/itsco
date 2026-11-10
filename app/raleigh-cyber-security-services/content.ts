@@ -82,7 +82,7 @@ export const CONTENT: CityServiceContent = {
       question: 'What should a small business in Raleigh look for in a cybersecurity company?',
       answer: [
         'Look for 24/7 monitoring backed by people who respond, not just software alerts; a track record you can verify; and help with the compliance rules your industry answers to. Ask how long clients stay, who you will actually talk to, and what happens when a threat gets through. A good partner answers all three plainly.',
-        'ITSco has protected North Carolina businesses since 1996, with offices in Durham and Raleigh. 60% of our clients have been with us for five years or more, none has experienced a serious security breach, and you work directly with senior leadership, including CEO Mike Savino and CIO Jared Thomas. If you want a baseline first, start with a [security audit](/security-audits-compliance).',
+        'ITSco has protected North Carolina businesses since 1996, with offices in Durham and Raleigh. 60% of our clients have been with us for five years or more, none has experienced a serious security breach, and you work directly with senior leadership, including CEO Mike Savino and CTO Greg Wassil. If you want a baseline first, start with a [security audit](/security-audits-compliance).',
       ],
     },
     {

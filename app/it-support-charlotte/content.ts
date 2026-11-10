@@ -8,15 +8,15 @@ export const CONTENT: CityServiceContent = {
   serviceType: 'IT Support',
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
-    title: 'IT Support in Charlotte, NC — 24/7 Monitoring',
+    title: 'IT Support in Charlotte, NC with No Surprise Bills',
     description:
-      'IT support in Charlotte, NC: 24/7 monitoring, help desk, and cybersecurity from an NC-based team since 1996. Fixed monthly pricing, no surprise bills.',
+      'IT support in Charlotte, NC with direct access to senior leadership. Full IT services, from help desk to security, on one plan. Book a free consultation.',
     canonical: 'https://www.itsco.com/it-support-charlotte',
   },
   hero: {
     eyebrow: 'IT Support · Charlotte, NC',
-    headlineLead: 'IT support in Charlotte, NC that',
-    headlineAccent: 'eliminates recurring issues.',
+    headlineLead: 'Trusted IT support in Charlotte, NC,',
+    headlineAccent: 'since 1996.',
     body: S[0],
     utmSuffix: 'it-support-charlotte-hero',
   },
@@ -43,7 +43,9 @@ export const CONTENT: CityServiceContent = {
     eyebrow: 'Small Business IT Support',
     headlineLead: 'The IT support company in Charlotte',
     headlineAccent: 'with 30 years of happy customers.',
-    paragraphs: [S[2], S[12]],
+    // S[12] said "two and a half decades"; updated to match the 30-year stat
+    // (Chris, Nov 10, 2026).
+    paragraphs: [S[2], S[12].replace('spans two and a half decades', 'spans 30 years')],
   },
   stats: [
     { value: '60%', label: 'Of our clients have been with us for 5+ years' },
@@ -54,7 +56,17 @@ export const CONTENT: CityServiceContent = {
     eyebrow: 'Why ITSco',
     headlineLead: 'Computer tech support in Charlotte',
     headlineAccent: 'that supports your growth.',
-    paragraphs: [S[16], S[17], S[18], S[19]],
+    // S[17] links its "managed IT support services" phrase to the managed IT
+    // page that owns that search (Chris, Nov 10, 2026).
+    paragraphs: [
+      S[16],
+      S[17].replace(
+        'managed IT support services',
+        '[managed IT support services](/managed-it-services-charlotte)',
+      ),
+      S[18],
+      S[19],
+    ],
     image: {
       src: '/images/hero/local/charlotte nc 3.jpg',
       alt: 'Charlotte, North Carolina at dusk',
@@ -113,6 +125,63 @@ export const CONTENT: CityServiceContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Charlotte IT support,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // New buyer-question FAQs (not from _source.ts), written in a direct-answer
+    // style for People Also Ask and AI answers. Approved by Chris, Nov 10, 2026.
+    {
+      question: 'What does IT support include for a Charlotte business?',
+      answer: [
+        'IT support for a Charlotte business covers the technology your team depends on every day: a help desk for user issues, 24/7 monitoring, cybersecurity, backups and disaster recovery, cloud services, and technology purchasing. ITSco runs it under a customized service agreement, so you know what is covered and how quickly issues get addressed.',
+      ],
+    },
+    {
+      question: 'How much does IT support cost in Charlotte?',
+      answer: [
+        'IT support cost depends on how many users and devices you have, how much security and compliance work you need, and whether you want full coverage or targeted help. ITSco offers monthly plans based on users and devices, plus hourly pricing for projects. Our [IT Investment Calculator](/it-investment-calculator) gives a monthly estimate in about two minutes.',
+      ],
+    },
+    {
+      question: 'Is ITSco a good fit for small and mid-size businesses in Charlotte?',
+      answer: [
+        'Yes. ITSco is built for small and mid-size businesses, typically 50 to 500 people, that need senior expertise without a large internal IT department. You work directly with senior leadership, including CEO Mike Savino and CTO Greg Wassil, and 60% of our clients have stayed with us for five years or more.',
+      ],
+    },
+    {
+      question: 'Do you provide on-site IT support in Charlotte?',
+      answer: [
+        'Yes. ITSco supports Charlotte businesses remotely and on-site. Remote support is usually the fastest fix, and when a problem needs hands on hardware or cabling, our engineers come to you. Critical events typically get a response in under an hour, and response times for everything else are set in your service agreement.',
+      ],
+    },
+    {
+      question: 'What is the difference between IT support and managed IT services?',
+      answer: [
+        'IT support fixes problems and keeps your systems running day to day. Managed IT services go further: one partner takes ownership of your whole environment, including monitoring, security, planning, and budgeting, for a predictable monthly cost. If you want one team accountable for all of it, see [managed IT services in Charlotte](/managed-it-services-charlotte).',
+      ],
+    },
+    {
+      question: 'Do I need a help desk or full IT support?',
+      answer: [
+        'A help desk answers employee questions and fixes user issues like passwords, email, and devices. Full IT support adds the work that stops those issues from coming back: monitoring, security, backups, network maintenance, and planning. If you already have internal IT and need extra hands for users, our [IT helpdesk in Charlotte](/charlotte-it-helpdesk) may be enough.',
+      ],
+    },
+    {
+      question: 'What industries does ITSco support in Charlotte?',
+      answer: [
+        'ITSco can support almost any business that runs on its technology. We have deep experience in healthcare, financial services, legal and accounting firms, manufacturing, professional services, and nonprofits. Healthcare clients get support built around HIPAA. See our [healthcare IT services](/healthcare-managed-it-services) for how we work with practices and healthcare organizations.',
+      ],
+    },
+    {
+      question: 'How does switching IT providers work?',
+      answer: [
+        'Switching starts with a review of your current systems, accounts, vendors, and documentation. ITSco then plans the handoff with your current provider so nothing is lost, takes over monitoring and security, and moves your help desk over last. Your team keeps working throughout, and the onboarding plan is agreed with you before anything changes.',
+      ],
+    },
+  ],
   citySlug: 'charlotte',
   bookingUtm: 'it-support-charlotte-bottom',
 }

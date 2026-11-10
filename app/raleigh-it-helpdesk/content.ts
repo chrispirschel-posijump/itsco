@@ -7,9 +7,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 export const CONTENT: CityServiceContent = {
   serviceType: 'IT Help Desk Services',
   meta: {
-    title: 'IT Helpdesk in Raleigh, NC',
+    title: 'IT Help Desk Services for Raleigh, NC Businesses',
     description:
-      'ITSco delivers IT helpdesk and service desk support in Raleigh, NC — real-time monitoring, remote and on-site troubleshooting, and sub-hour response. Book a free consultation.',
+      'IT help desk services for Raleigh businesses, with critical issues typically answered in under an hour. Remote and on-site support. Book a free call.',
     canonical: 'https://www.itsco.com/raleigh-it-helpdesk',
   },
   heroVariant: 'fullbleed',
@@ -119,6 +119,39 @@ export const CONTENT: CityServiceContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Raleigh IT help desk,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // New buyer-question FAQs (not from _source.ts), written in a direct-answer
+    // style for People Also Ask and AI answers. Approved by Chris, Nov 10, 2026.
+    {
+      question: 'What does an outsourced IT help desk do?',
+      answer: [
+        'An outsourced IT help desk is the team your employees contact when technology gets in the way: password resets, email and software problems, device issues, and access requests. ITSco\'s help desk also monitors your systems in real time to catch problems early and escalates complex issues to senior engineers instead of leaving them in a queue.',
+      ],
+    },
+    {
+      question: 'How fast does ITSco\'s help desk respond in Raleigh?',
+      answer: [
+        'Critical events typically get a response in under an hour. Response times for other requests are set in your service agreement, so you know what to expect before you sign. Most issues are resolved remotely, and for clients in Raleigh, Durham, and RTP, engineers come on-site when a problem needs hands on hardware.',
+      ],
+    },
+    {
+      question: 'Do we need a help desk or fully managed IT?',
+      answer: [
+        'A help desk fixes user issues as they come up. Managed IT goes further, taking ownership of monitoring, security, backups, planning, and budgeting for your whole environment. If you have internal IT and need help with user requests, a help desk may be enough. If not, see [managed IT services in Raleigh](/managed-it-services-raleigh).',
+      ],
+    },
+    {
+      question: 'Can the help desk support remote and hybrid employees?',
+      answer: [
+        'Yes. ITSco\'s engineers use secure remote access tools to diagnose and fix issues wherever your employees work, whether at the office, at home, or on the road. Remote support is usually the fastest fix, and security is built in, from phishing prevention to ransomware protection, so remote access never becomes the weak point.',
+      ],
+    },
+  ],
   citySlug: 'raleigh',
   bookingUtm: 'it-helpdesk-raleigh-bottom',
 }

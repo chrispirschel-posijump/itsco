@@ -89,7 +89,7 @@ const NAV_ITEMS = [
           { label: "vCIO / vCTO / vCISO / vCAIO", href: "/vcio-vcto-vciso-services" },
           { label: "Fractional CTO Services", href: "/fractional-cto-services" },
           { label: "IT Roadmap Planning", href: "/it-roadmap-planning" },
-          { label: "IT Assessments & Strategies", href: "/it-assessments-strategies" },
+          { label: "IT Assessment Services", href: "/it-assessments-strategies" },
           { label: "Tech Due Diligence", href: "/tech-due-diligence-for-businesses" },
           { label: "IT Due Diligence for M&A", href: "/it-due-diligence-mergers-acquisitions" },
           { label: "Technical Project Management", href: "/technical-project-management" },

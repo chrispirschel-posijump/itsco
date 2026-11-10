@@ -8,9 +8,9 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'vCIO, vCTO, vCISO & vCAIO Services | Virtual IT Leadership',
+    title: 'Fractional & Virtual CIO, CTO, and CISO Services',
     description:
-      'ITSco virtual executive services — vCIO, vCTO, vCISO, and vCAIO leadership that aligns IT and AI with business goals, without the cost of a full-time hire. Book a free consultation.',
+      'Fractional and virtual CIO, CTO, CISO, and CAIO leadership that aligns IT and AI with business goals, without a full-time hire. Book a free consultation.',
     canonical: 'https://www.itsco.com/vcio-vcto-vciso-services',
   },
   serviceName: 'vCIO, vCTO, vCISO & vCAIO Services',
@@ -105,5 +105,44 @@ export const CONTENT: ServiceSubContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Fractional IT leadership,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers, consistent with
+    // /blog/when-to-hire-fractional-cio. Approved by Chris, Nov 10, 2026.
+    {
+      question: 'What does a fractional or virtual CIO do for a 50 to 500 person company?',
+      answer: [
+        'A fractional CIO is a senior technology executive who works for your company part time, owning the executive side of IT: strategy, budgeting, vendor decisions, security posture, and reporting to leadership. They don\'t run the help desk. Our guide on [when to hire a fractional CIO](/blog/when-to-hire-fractional-cio) explains how to tell if you need one.',
+      ],
+    },
+    {
+      question: 'How does a vCIO engagement with ITSco start?',
+      answer: [
+        'Most engagements start with an assessment of your technology, spending, and risks, measured against your business goals. From there, the scope follows what your business needs. A typical rhythm includes regular progress updates, decision-making sessions with your leadership team, and budget planning, all tied to an [IT roadmap](/it-roadmap-planning) you can act on.',
+      ],
+    },
+    {
+      question: 'How is a vCISO different from the security work a managed IT provider does?',
+      answer: [
+        'A managed IT provider runs security day to day: monitoring, patching, endpoint protection, and response. A vCISO owns the strategy above that work: assessing risk, setting policies, meeting compliance requirements, preparing for audits, and reporting security posture to leadership. Many companies need both, and the vCISO makes sure the daily work targets the risks that matter most.',
+      ],
+    },
+    {
+      question: 'What does a vCAIO (virtual Chief AI Officer) do?',
+      answer: [
+        'A vCAIO gives your company executive AI leadership without a full-time hire: deciding where AI is worth using, overseeing pilots and rollouts, and setting governance so sensitive data stays protected. For most mid-size companies, AI leadership works best as part of a fractional CIO relationship, starting with an [AI readiness assessment](/ai-readiness-assessment).',
+      ],
+    },
+    {
+      question: 'Does ITSco offer virtual CIO services across North Carolina?',
+      answer: [
+        'Yes. ITSco provides fractional and virtual CIO, CTO, CISO, and CAIO leadership to companies across North Carolina, South Carolina, and Virginia, from our offices in Durham and Raleigh. Most of the work happens remotely, so location is rarely a constraint. Since 1996, 60% of our clients have stayed with us for five years or more.',
+      ],
+    },
+  ],
   bookingUtm: 'vcio-vcto-vciso-bottom',
 }

@@ -339,7 +339,7 @@ const SUB_SERVICES = [
   },
   {
     number: '04',
-    title: 'IT Assessments & Strategies',
+    title: 'IT Assessment Services',
     description: 'In-depth evaluations of infrastructure, security, and compliance with a roadmap.',
     href: '/it-assessments-strategies',
   },

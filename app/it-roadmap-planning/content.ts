@@ -96,7 +96,7 @@ export const CONTENT: ServiceSubContent = {
     links: [
       {
         slug: 'it-assessments-strategies',
-        label: 'IT Assessments & Strategies',
+        label: 'IT Assessment Services',
         href: '/it-assessments-strategies',
         description: 'In-depth evaluations of infrastructure, security, and compliance.',
       },
@@ -120,16 +120,36 @@ export const CONTENT: ServiceSubContent = {
     headlineAccent: 'answered.',
   },
   faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers. Approved by
+    // Chris, Nov 10, 2026.
+    {
+      question: 'What is an IT roadmap?',
+      answer: [
+        'An IT roadmap is a prioritized, costed plan for your technology over the next one to three years. It shows what to fix, replace, or add, in what order, and what each step costs, all tied to your business goals. It turns reactive IT spending into a budget leadership can plan around.',
+      ],
+    },
+    {
+      question: 'What does an IT roadmap include?',
+      answer: [
+        'A useful IT roadmap includes a review of your current systems, business priorities mapped to technology initiatives, a sequence for what happens first and next, a cost for each initiative, and plans for aging hardware, end-of-life software, and security gaps. ITSco revisits it as the business changes, so it stays a working plan.',
+      ],
+    },
     {
       question: 'How is a roadmap different from a one-time IT assessment?',
       answer: [
-        'An assessment tells you where you are today; a roadmap tells you where to go and in what order. ITSco often starts with an assessment, then builds the roadmap on top of it — and revisits it as the business evolves.',
+        'An assessment tells you where you are today; a roadmap tells you where to go and in what order. ITSco often starts with an assessment, then builds the roadmap on top of it, and revisits it as the business evolves.',
       ],
     },
     {
       question: 'How far out should an IT roadmap look?',
       answer: [
         'Typically 12 to 36 months. The near term is detailed and costed; the later horizon is directional. We revisit it regularly so it stays realistic as priorities shift.',
+      ],
+    },
+    {
+      question: 'Who should own the IT roadmap?',
+      answer: [
+        'Leadership should own the priorities, and a senior technology leader should own the plan itself. In companies without a CIO, that is often a [fractional or virtual CIO](/vcio-vcto-vciso-services) who keeps the roadmap current, ties it to the budget, and reports progress to the leadership team on a regular schedule.',
       ],
     },
   ],

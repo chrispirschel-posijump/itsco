@@ -17,6 +17,7 @@ import BackgroundOrbs from '@/components/BackgroundOrbs'
 import HeroVideo from '@/components/HeroVideo'
 import ClientLogosBand from '@/components/ClientLogosBand'
 import { TESTIMONIALS } from '@/lib/testimonials'
+import { SAME_AS_PROFILES, ALTERNATE_NAMES } from '@/lib/entity'
 
 export const metadata: Metadata = {
   // Homepage title. Root layout's title.template only applies to CHILD
@@ -52,7 +53,7 @@ const localBusinessJsonLd = {
   '@type': 'LocalBusiness',
   '@id': 'https://www.itsco.com/#organization',
   name: 'ITSco',
-  alternateName: 'ITS co',
+  alternateName: ALTERNATE_NAMES,
   description: 'Managed IT services, cybersecurity, and cloud solutions for businesses across NC, SC, and VA. Trusted since 1996.',
   url: 'https://www.itsco.com/',
   logo: 'https://www.itsco.com/images/itsco-logo.svg',
@@ -89,7 +90,7 @@ const localBusinessJsonLd = {
       availableLanguage: 'English',
     },
   ],
-  sameAs: ['https://www.linkedin.com/company/itscotech/'],
+  sameAs: SAME_AS_PROFILES,
 }
 
 // Organization schema complements LocalBusiness — the two coexist because
@@ -101,13 +102,13 @@ const organizationJsonLd = {
   '@type': 'Organization',
   '@id': 'https://www.itsco.com/#organization',
   name: 'ITSco',
-  alternateName: 'ITS co',
+  alternateName: ALTERNATE_NAMES,
   url: 'https://www.itsco.com/',
   logo: 'https://www.itsco.com/images/itsco-logo.svg',
   description:
     'ITSco is a managed IT services provider (MSP) and managed security services provider (MSSP) headquartered in Durham, North Carolina. Founded 1996.',
   foundingDate: '1996',
-  sameAs: ['https://www.linkedin.com/company/itscotech/'],
+  sameAs: SAME_AS_PROFILES,
 }
 
 // WebSite schema enables Google's site-search sitelinks box (the search bar
