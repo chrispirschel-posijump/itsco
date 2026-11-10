@@ -244,9 +244,9 @@ const SERVICES = [
   },
   {
     number: '02',
-    title: 'DevOps Services',
-    description: 'DevOps transformations for enterprise and community environments. Automation, orchestration, and containerization.',
-    href: '/ai-automation',
+    title: 'Fractional IT Leadership',
+    description: 'Fractional and virtual CIO, CTO, and CISO leadership. Technology strategy, budgeting, and security oversight without a full-time hire.',
+    href: '/vcio-vcto-vciso-services',
   },
   {
     number: '03',
@@ -268,9 +268,9 @@ const SERVICES = [
   },
   {
     number: '06',
-    title: 'Executive Consulting',
-    description: 'Fractional and interim CIO/CTO services. Strategic planning, risk mitigation, and business continuity planning.',
-    href: '/vcio-vcto-vciso-services',
+    title: 'IT Strategy & Consulting',
+    description: 'IT roadmaps, IT assessments, and IT due diligence. Strategic planning, risk mitigation, and business continuity planning.',
+    href: '/it-management-consulting',
   },
 ]
 

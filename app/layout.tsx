@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat, Prata } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
+import AttributionTracker from "@/components/AttributionTracker";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -113,6 +114,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             />
           </noscript>
         )}
+        <AttributionTracker />
         {children}
       </body>
     </html>
