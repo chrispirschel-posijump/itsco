@@ -121,16 +121,42 @@ export const CONTENT: ServiceSubContent = {
     headlineAccent: 'answered.',
   },
   faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers. Approved by
+    // Chris, Nov 10, 2026.
+    {
+      question: 'What does a fractional CTO do?',
+      answer: [
+        'A fractional CTO is a senior technology leader who works for your company part time, owning technology strategy, platform and architecture decisions, the IT roadmap and budget, and security oversight. They translate technology into business terms for your leadership team and board, so major decisions are made deliberately instead of defaulting to whatever a vendor recommends.',
+      ],
+    },
+    {
+      question: 'When does a company need a fractional CTO?',
+      answer: [
+        'When technology decisions start shaping the business but don\'t justify a full-time executive: choosing platforms, planning a major migration or acquisition, scaling an IT team, or answering board questions about risk. If those decisions are being made by default or by vendors, a fractional CTO puts senior judgment back at the leadership table.',
+      ],
+    },
     {
       question: 'How is a fractional CTO different from a vCIO?',
       answer: [
-        'They overlap, and ITSco offers both. A vCIO leans toward IT operations and alignment; a fractional CTO leans toward technology strategy, platform direction, and engineering leadership. We will help you decide which fits — or blend them.',
+        'They overlap, and ITSco offers both. A vCIO leans toward IT operations and alignment; a fractional CTO leans toward technology strategy, platform direction, and engineering leadership. We will help you decide which fits, or blend them.',
       ],
     },
     {
       question: "How much of a fractional CTO's time do we get?",
       answer: [
-        "As much as the role needs — a set number of days a month, scaled to your size and stage. It can grow as you grow, and there's no obligation to convert to a full-time hire.",
+        "As much as the role needs: a set number of days a month, scaled to your size and stage. It can grow as you grow, and there's no obligation to convert to a full-time hire.",
+      ],
+    },
+    {
+      question: 'Can a fractional CTO work with our existing IT team or MSP?',
+      answer: [
+        'Yes. A fractional CTO sets direction, and your internal team or managed IT provider carries it out. They guide priorities, review vendor and architecture choices, and help structure the team without taking over day-to-day support. If ITSco also manages your IT, strategy and execution stay with one accountable partner.',
+      ],
+    },
+    {
+      question: 'Do you provide fractional CTO services for specific industries?',
+      answer: [
+        'Yes. ITSco works with companies across industries, including healthcare, manufacturing, financial services, and professional services, where technology decisions carry compliance or operational risk. Industry context shapes the advice, from HIPAA requirements in a medical practice to uptime on a production floor. See the [industries we serve](/industries).',
       ],
     },
   ],

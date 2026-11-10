@@ -16,6 +16,7 @@ import { TESTIMONIALS } from '@/lib/testimonials'
 import { getCityName, getNearbyCities } from '@/lib/nearbyCities'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 import { renderAnswer, stripMarkdown } from '@/lib/inlineLinks'
+import { SAME_AS_PROFILES, ALTERNATE_NAMES } from '@/lib/entity'
 
 export interface CityServiceContent {
   meta: { title: string; description: string; canonical: string }
@@ -136,12 +137,6 @@ const STANDARD_OPENING_HOURS = [
   },
 ]
 
-// External profile URLs for `sameAs` — entity-verification signal to Google.
-// Add more as they're confirmed (Google Business Profile URLs per office,
-// Facebook, MSP Alliance member listing).
-const SAME_AS_PROFILES: readonly string[] = [
-  'https://www.linkedin.com/company/itscotech/',
-]
 
 // Google Business Profile aggregate review data per office. Update when
 // the review counts on the profiles materially change; the ratingValue
@@ -160,7 +155,7 @@ export function cityLocalBusinessJsonLd(content: CityServiceContent) {
     // Page-scoped @id lets the Service schema back-reference this business.
     '@id': content.meta.canonical + '#business',
     name: 'ITSco',
-    alternateName: 'ITS co',
+    alternateName: ALTERNATE_NAMES,
     description: content.meta.description,
     url: content.meta.canonical,
     logo: 'https://www.itsco.com/images/itsco-logo.svg',
@@ -422,7 +417,7 @@ function SplitNarrative({
             </h2>
             {data.paragraphs.map((p, i) => (
               <p key={i} className="text-base md:text-lg text-itsco-body leading-relaxed mb-4 last:mb-0">
-                {p}
+                {renderAnswer(p)}
               </p>
             ))}
           </FadeUp>

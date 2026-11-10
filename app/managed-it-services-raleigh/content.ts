@@ -10,7 +10,7 @@ export const CONTENT: CityServiceContent = {
   serviceType: 'Managed IT Services',
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
-    title: 'Managed IT Services in Raleigh, NC — Fixed Pricing',
+    title: 'Managed IT Services in Raleigh, NC with Fixed Pricing',
     description:
       'Managed IT services in Raleigh from a local managed services provider: monitoring, help desk, cybersecurity, and cloud at one fixed monthly cost. Since 1996.',
     canonical: 'https://www.itsco.com/managed-it-services-raleigh',
@@ -84,6 +84,32 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'answered.',
   },
   faqs: [
+    // Buyer-question FAQs added above the migrated ones for People Also Ask and
+    // AI answers. Approved by Chris, Nov 10, 2026.
+    {
+      question: 'Does ITSco offer co-managed IT for Raleigh companies that already have an IT team?',
+      answer: [
+        'Yes. Co-managed IT lets your internal IT manager or team keep ownership of daily priorities while ITSco adds what is hard to staff in-house: 24/7 monitoring, after-hours coverage, specialist tools, and senior engineers for projects. Responsibilities are split in writing, so nothing falls between teams. Our guide to [staff augmentation vs. managed services](/blog/staff-augmentation-vs-managed-services) compares the options.',
+      ],
+    },
+    {
+      question: 'Is ITSco a good fit for a 50 to 500 person company in Raleigh?',
+      answer: [
+        'Yes. ITSco is built for Raleigh companies with 50 to 500 employees that have outgrown ad hoc IT but don\'t need a large internal department. You get a full team at a predictable monthly cost, with direct access to CEO Mike Savino and CTO Greg Wassil. 60% of our clients have stayed with us five years or more.',
+      ],
+    },
+    {
+      question: 'Does ITSco manage Microsoft 365 for Raleigh businesses?',
+      answer: [
+        'Yes. ITSco manages or co-manages Microsoft 365 for Raleigh businesses: licensing, user setup, email, Teams, SharePoint, and OneDrive, plus the security and compliance settings that protect them. We also handle migrations onto Microsoft 365 and make sure you aren\'t paying for licenses you don\'t use. See our [Microsoft 365 services](/microsoft-365-services).',
+      ],
+    },
+    {
+      question: 'How should a Raleigh business choose a managed IT provider?',
+      answer: [
+        'Start with fit and accountability. Look for a provider that works with companies your size, puts response times in writing, includes security in the monthly service, explains pricing clearly, and gives you direct access to senior people. Ask to talk with long-term clients. To estimate your monthly cost first, try our [IT Investment Calculator](/it-investment-calculator).',
+      ],
+    },
     {
       question: 'How will managed IT services benefit my business compared to in-house IT management?',
       answer: [S[29], S[30], S[31]],

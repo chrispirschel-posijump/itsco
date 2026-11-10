@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Check, ChevronDown } from 'lucide-react'
 import { ANALYTICS_EVENTS, pushEvent } from '@/lib/analytics'
+import { ATTRIBUTION_FIELDS, getAttribution } from '@/lib/attribution'
 
 type Status = 'idle' | 'submitting' | 'success' | 'error'
 
@@ -30,6 +31,10 @@ export default function ContactForm() {
     const data = new FormData(form)
     const body = new URLSearchParams()
     data.forEach((value, key) => body.append(key, value.toString()))
+    // Lead source (landing page, last page viewed, referrer, campaign tags).
+    // Sent with the submission only, never to analytics.
+    const attribution = getAttribution()
+    for (const k of ATTRIBUTION_FIELDS) body.append(k, attribution[k] ?? '')
     body.append('form-name', 'contact')
     try {
       const res = await fetch('/__forms.html', {

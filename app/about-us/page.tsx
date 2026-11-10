@@ -10,6 +10,7 @@ import ClientLogosBand from '@/components/ClientLogosBand'
 import { MapPin } from 'lucide-react'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
 import { META, HERO, HERO_IMAGE, VALUES_HEADING, VALUES, SERVICE_AREA } from './content'
+import { SAME_AS_PROFILES, ALTERNATE_NAMES } from '@/lib/entity'
 
 export const metadata: Metadata = {
   title: META.title,
@@ -187,6 +188,7 @@ const orgJsonLd = {
   '@type': 'Organization',
   '@id': ORG_ID,
   name: 'ITSco',
+  alternateName: ALTERNATE_NAMES,
   url: 'https://www.itsco.com/',
   logo: 'https://www.itsco.com/images/itsco-logo.png',
   foundingDate: '1996',
@@ -203,7 +205,7 @@ const orgJsonLd = {
   },
   areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
   employee: [{ '@id': MIKE_ID }, { '@id': GREG_ID }, { '@id': GEORGE_ID }],
-  sameAs: ['https://www.linkedin.com/company/itscotech/'],
+  sameAs: SAME_AS_PROFILES,
 }
 
 // Person schema for leadership — boosts E-E-A-T and gives AI engines a

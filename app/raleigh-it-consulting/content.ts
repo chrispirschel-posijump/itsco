@@ -8,9 +8,9 @@ export const CONTENT: CityServiceContent = {
   serviceType: 'IT Consulting',
   meta: {
     // Root layout template appends " | ITSco" — do not include it here.
-    title: 'IT Consulting in Raleigh, NC — vCIO & IT Strategy',
+    title: 'IT Consulting in Raleigh, NC: vCIO and IT Strategy',
     description:
-      'IT strategy and vCIO consulting for Raleigh companies — technology roadmaps, budget planning, and security guidance from an NC firm advising since 1996.',
+      'IT strategy and vCIO consulting for Raleigh companies: technology roadmaps, budget planning, and security guidance from an NC firm advising since 1996.',
     canonical: 'https://www.itsco.com/raleigh-it-consulting',
   },
   officeLocation: 'raleigh',
@@ -114,7 +114,7 @@ export const CONTENT: CityServiceContent = {
       question: 'Does ITSco have an office in Raleigh?',
       answer: [
         'Yes. ITSco has a Raleigh office at 8480 Honeycutt Road in North Raleigh, in addition to our Durham headquarters. Our consultants work on-site with clients across Raleigh, Cary, Durham, Chapel Hill and Research Triangle Park, and we have served Triangle businesses since 1996, for 30 years.',
-        'Clients work directly with ITSco senior leadership, including CEO Mike Savino and CIO Jared Thomas, not a sales tier.',
+        'Clients work directly with ITSco senior leadership, including CEO Mike Savino and CTO Greg Wassil, not a sales tier.',
       ],
     },
     {

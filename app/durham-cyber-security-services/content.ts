@@ -72,6 +72,32 @@ export const CONTENT: CityServiceContent = {
     headlineAccent: 'answered.',
   },
   faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers. Approved by
+    // Chris, Nov 10, 2026.
+    {
+      question: 'What should a Durham business look for in a cybersecurity company?',
+      answer: [
+        'Look for people who respond around the clock, not just software that sends alerts, plus a record you can check and real help with your industry\'s compliance rules. ITSco has protected businesses from our Durham headquarters since 1996, and none of our clients has experienced a serious security breach. A [cyber risk assessment](/cyber-risk-assessment) is a good first step.',
+      ],
+    },
+    {
+      question: 'Does ITSco provide 24/7 security monitoring for Durham companies?',
+      answer: [
+        'Yes. ITSco\'s managed security operations center watches your systems around the clock, including nights and weekends, using managed SIEM, endpoint detection and response, and behavioral monitoring. When something looks wrong, analysts contain and remediate it through a defined incident response process, so you get SOC-level protection without building one. See our [managed SOC](/managed-soc) service.',
+      ],
+    },
+    {
+      question: 'Can ITSco help Durham and RTP life sciences and healthcare companies with compliance?',
+      answer: [
+        'Yes. Many Durham and Research Triangle Park organizations answer to HIPAA, FDA 21 CFR Part 11, or both. ITSco handles the technology side: risk assessments, access controls, encryption, monitoring, audit trails, and the documentation auditors ask for. Healthcare organizations can start with our [HIPAA compliance services](/hipaa-compliance-services).',
+      ],
+    },
+    {
+      question: 'What should we do if we think we\'ve had a security breach?',
+      answer: [
+        'Act quickly, and don\'t try to clean it up alone. Disconnect affected devices from the network if you can, leave them powered on so evidence is preserved, and call for help. ITSco contains the threat, recovers from malware and ransomware, and hardens your systems against the next attack. See our [security event remediation](/security-event-remediation-ip-protection) service.',
+      ],
+    },
     { question: S[31], answer: [S[32]] },
     { question: S[33], answer: [S[34]] },
     { question: S[35], answer: [S[36]] },

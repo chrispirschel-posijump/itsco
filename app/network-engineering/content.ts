@@ -95,5 +95,38 @@ export const CONTENT: ServiceSubContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'Network engineering,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers. Approved by
+    // Chris, Nov 10, 2026.
+    {
+      question: 'What do network engineering services include?',
+      answer: [
+        'Network engineering services cover the design, build, and improvement of your business network: wired and wireless access, cloud and hybrid connections, security layers such as SD-WAN and SASE, and performance tuning and capacity planning. ITSco\'s engineers handle everything from an assessment to a complete redesign and implementation, and can support the network after it goes live.',
+      ],
+    },
+    {
+      question: 'When does a business need network engineering instead of routine IT support?',
+      answer: [
+        'When the network itself is the problem, or is about to be: you are opening an office, moving to the cloud, adding many users, facing new compliance requirements, or living with slowdowns and outages that support tickets never fix. Routine support keeps a network running. Engineering redesigns it to fit where the business is going.',
+      ],
+    },
+    {
+      question: 'Do you work with our existing network equipment and vendors?',
+      answer: [
+        'Yes. ITSco is vendor-agnostic and works with all major networking equipment vendors, so recommendations are based on what fits your business rather than one brand. We integrate multi-vendor environments and recommend replacements only where they make a real difference to performance, security, or growth.',
+      ],
+    },
+    {
+      question: 'Can ITSco manage the network after it is built?',
+      answer: [
+        'Yes. Our network engineers work hand in hand with ITSco\'s service desk to provide ongoing managed network support: monitoring, maintenance, updates, and troubleshooting after the project ends. That way, the team supporting your network has its design history, and problems get solved faster. See our [managed network services](/managed-network-services).',
+      ],
+    },
+  ],
   bookingUtm: 'network-engineering-bottom',
 }

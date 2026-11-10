@@ -6,16 +6,16 @@ import { SOURCE_PARAGRAPHS as S } from './_source'
 
 export const CONTENT: ServiceSubContent = {
   meta: {
-    title: 'IT Assessments & Strategies',
+    title: 'IT Assessment Services for Security, Cloud, and AI',
     description:
-      'ITSco IT assessments and strategy — in-depth evaluations of infrastructure, security, and compliance with an actionable technology roadmap. Book a free consultation.',
+      'IT assessment services that review your infrastructure, security, cloud, and AI readiness, with prioritized recommendations. Book a free consultation.',
     canonical: 'https://www.itsco.com/it-assessments-strategies',
   },
-  serviceName: 'IT Assessments & Strategies',
+  serviceName: 'IT Assessment Services',
   parent: { name: 'IT Strategy & Consulting', href: '/it-management-consulting' },
   hero: {
     eyebrow: 'Strategy · Assessments',
-    headlineLead: 'IT assessments and strategy',
+    headlineLead: 'IT assessment services',
     headlineAccent: 'that drive smart decisions.',
     body: S[0],
     utmSuffix: 'it-assessments-strategies-hero',
@@ -98,5 +98,38 @@ export const CONTENT: ServiceSubContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'IT assessments,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers. Approved by
+    // Chris, Nov 10, 2026.
+    {
+      question: 'What is an IT assessment?',
+      answer: [
+        'An IT assessment is an in-depth review of your technology: hardware, software, networks, cloud environments, security controls, and backup and recovery plans. It shows where you are exposed, what is slowing you down, and where money is being wasted. ITSco delivers every assessment with a written report of findings, risks, and prioritized recommendations.',
+      ],
+    },
+    {
+      question: 'What types of IT assessments does ITSco offer?',
+      answer: [
+        'ITSco offers technology and infrastructure audits, cybersecurity assessments with penetration testing, AI readiness assessments, and business continuity and disaster recovery reviews. You can start with a broad technology audit or focus on the area that worries you most. If AI is on your agenda, our [AI readiness assessment](/ai-readiness-assessment) is a focused place to start.',
+      ],
+    },
+    {
+      question: 'How often should a business get an IT assessment?',
+      answer: [
+        'At least once a year, and whenever something big changes: a merger or acquisition, a new office, a move to the cloud, a new compliance requirement, or a security incident. Regular assessments catch problems while they are still cheap to fix. Buying or selling a company? See our [IT due diligence](/it-due-diligence-mergers-acquisitions) service.',
+      ],
+    },
+    {
+      question: 'What happens after an IT assessment?',
+      answer: [
+        'You get a written report with findings, risk analyses, and prioritized recommendations, followed by a conversation about what to do first. ITSco can turn those recommendations into a costed [IT roadmap](/it-roadmap-planning) and help carry out the work, or your own team can take it from there.',
+      ],
+    },
+  ],
   bookingUtm: 'it-assessments-strategies-bottom',
 }
