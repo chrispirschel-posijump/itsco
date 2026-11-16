@@ -12,8 +12,6 @@ export const CITY_PATHS: readonly string[] = [
   '/chapel-hill-cyber-security-services',
   '/charlotte-cyber-security-services',
   '/charlotte-it-consulting',
-  '/charlotte-it-helpdesk',
-  '/charlotte-it-network-support',
   '/charlotte-it-outsourcing',
   '/durham-cyber-security-services',
   '/durham-it-consulting',

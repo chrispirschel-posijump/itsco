@@ -93,18 +93,6 @@ export const CONTENT: CityServiceContent = {
         description: 'Strategic technology guidance that aligns IT with your business goals.',
       },
       {
-        slug: 'help-desk-services',
-        label: 'IT Helpdesk in Charlotte',
-        href: '/charlotte-it-helpdesk',
-        description: 'A dedicated help desk team that resolves end-user issues fast.',
-      },
-      {
-        slug: 'network-security-services',
-        label: 'IT Network Support in Charlotte',
-        href: '/charlotte-it-network-support',
-        description: 'Network design, monitoring and support that keeps your business connected.',
-      },
-      {
         slug: 'it-staff-augmentation',
         label: 'IT Outsourcing in Charlotte',
         href: '/charlotte-it-outsourcing',
