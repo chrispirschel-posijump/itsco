@@ -238,3 +238,39 @@ export const RELATED = [
 ]
 
 export const BOOKING_UTM = 'ai-readiness-assessment-bottom'
+
+// Buyer-question FAQs for People Also Ask and AI answers (FAQPage JSON-LD in
+// page.tsx). Approved by Chris, Nov 16, 2026. Kept distinct from the four
+// FAQs on /ai-strategy-consulting.
+export const FAQ_HEADING = {
+  eyebrow: 'FAQ',
+  headlineLead: 'AI readiness assessments,',
+  headlineAccent: 'answered.',
+}
+
+export const FAQS: ReadonlyArray<{ question: string; answer: readonly string[] }> = [
+  {
+    question: 'What does an AI readiness assessment include?',
+    answer: [
+      'An AI readiness assessment reviews four areas: how proposed AI uses line up with your business goals, whether your data and security are ready for AI workloads, your team\'s skills and training needs, and how to pilot and scale AI safely. ITSco turns the findings into a phased plan, so you know what to fix before you spend.',
+    ],
+  },
+  {
+    question: 'How long does an AI readiness assessment take for a 50 to 500 person company?',
+    answer: [
+      'It depends on your size, how many AI uses you are considering, and how much of your environment is already documented. ITSco sets the timeline and the deliverables in the scope before any work starts, so you know exactly when you will have answers. Most of the work happens alongside your normal operations, not instead of them.',
+    ],
+  },
+  {
+    question: 'What do we get at the end of the assessment?',
+    answer: [
+      'You get a written report of findings and risks across all four areas, a prioritized list of the foundation work to do first, a customized AI roadmap, and recommended pilot programs with measurable success criteria. When you are ready to act on it, [AI strategy consulting](/ai-strategy-consulting) turns the roadmap into a governed rollout.',
+    ],
+  },
+  {
+    question: 'Does ITSco offer AI readiness consulting across North Carolina?',
+    answer: [
+      'Yes. ITSco provides AI readiness assessments and consulting to companies across North Carolina, South Carolina, and Virginia from our offices in Durham and Raleigh. Much of the work happens remotely, with working sessions where they help. You work directly with senior leadership, including CEO Mike Savino and CTO Greg Wassil.',
+    ],
+  },
+]

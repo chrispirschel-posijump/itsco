@@ -82,5 +82,33 @@ export const CONTENT: ServiceSubContent = {
       },
     ],
   },
+  faqHeading: {
+    eyebrow: 'FAQ',
+    headlineLead: 'IT asset disposition,',
+    headlineAccent: 'answered.',
+  },
+  faqs: [
+    // Buyer-question FAQs for People Also Ask and AI answers. Approved by
+    // Chris, Nov 16, 2026. Certificates of destruction and pickup area left
+    // out until confirmed.
+    {
+      question: 'What is IT asset disposition (ITAD)?',
+      answer: [
+        'IT asset disposition is the secure, documented process of retiring old computers, servers, and network equipment. It covers removing the hardware, destroying the data on it, and recycling or reselling what remains responsibly. Done well, it protects sensitive data, keeps you compliant, and recovers value from equipment that still has some.',
+      ],
+    },
+    {
+      question: 'How does ITSco securely wipe or destroy data on retired equipment?',
+      answer: [
+        'Every retired device is either securely erased or physically destroyed, so the data on it cannot be recovered, depending on the device and your requirements. Our engineers also remove equipment from live environments carefully, so retiring old hardware does not disrupt the systems your business still depends on.',
+      ],
+    },
+    {
+      question: 'What happens to retired equipment after the data is destroyed?',
+      answer: [
+        'ITSco works with certified recycling partners, so retired equipment is recycled or repurposed in line with R2 and ISO 14001 environmental standards. We do not handle the recycling ourselves; we coordinate it and make sure it is done responsibly. See how ITAD fits into [asset lifecycle management](/asset-lifecycle-management) from purchase to retirement.',
+      ],
+    },
+  ],
   bookingUtm: 'itad-bottom',
 }
