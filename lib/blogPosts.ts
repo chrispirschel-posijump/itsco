@@ -262,7 +262,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     draft: true,
   },
   // ── Post 9 of the editorial roadmap ──────────────────────────────────────
-  // Scheduled for 2026-11-23. Flip draft: false and redeploy on Nov 23.
+  // Published 2026-11-23. Pre-publish refresh done Nov 16 (see _source.ts).
   //
   // PRE-PUBLISH REFRESH: Gartner's Q4 forecast (~mid-Oct) will carry the
   // first formal 2027 projections; swap the 2027 number in and refresh
@@ -273,7 +273,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     title: 'The 2027 IT Budget: What to Cut, Keep, and Grow',
     category: 'Managed IT',
     excerpt:
-      'A CFO-ready guide to 2027 IT budget planning — what to cut, keep, and grow across security, AI, cloud, and hardware, with the five-outcome test.',
+      'A CFO-ready guide to 2027 IT budget planning: what to cut, keep, and grow across security, AI, cloud, and hardware, with the five-outcome test.',
     heroImage: '/images/hero/blog/masjid-maba-fTRZAC-uri4-unsplash.jpg',
     publishedDate: '2026-11-23',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
@@ -281,25 +281,24 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         question: 'How much should a company budget for IT in 2027?',
         answer:
-          'Benchmark per user first: typical all-in ranges run $150–$300 per user per month for a 50-person company, declining with scale. Then adjust for 2027 specifics — roughly 15% software inflation per Gartner, any Windows 10 refresh exposure, and a small gated AI pilot line. Revenue percentage (typically 3–6% at this size) works as a cross-check, not a target.',
+          'Benchmark per user first: typical all-in ranges run $150–$300 per user per month for a 50-person company, declining with scale. That figure is the total IT budget (managed services, software, hardware, security, and projects), not a managed services fee. Then adjust for 2027 specifics: Gartner\'s forecast of 14.6% software spending growth, much of it price increases, any Windows 10 refresh exposure, and a small gated AI pilot line. Revenue percentage (typically 3–6% at this size) works as a cross-check, not a target.',
       },
       {
         question: 'Should IT budgets increase in 2027?',
         answer:
-          "For most companies, modestly, yes — but not uniformly. Gartner's forecasts show accelerating spend driven by software repricing and AI infrastructure, so a flat budget is a real-terms cut. The better question is where: security and hardware refresh typically grow, software licensing often shrinks after an honest usage audit, and the net can land close to flat when cuts fund the growth.",
+          "For most companies, modestly, yes, but not uniformly. Gartner's forecasts show accelerating spend driven by software repricing and AI infrastructure, so a flat budget is a real-terms cut. The better question is where: security and hardware refresh typically grow, software licensing often shrinks after an honest usage audit, and the net can land close to flat when cuts fund the growth.",
       },
       {
         question: 'What should we budget for AI in 2027?',
         answer:
-          'Small and gated. Fund 1–2 tightly scoped pilots with defined success metrics rather than a portfolio — published research shows 95% of enterprise AI pilots deliver no measurable P&L impact, and the failures trace to skipped evaluation, not underfunding. Budget the evaluation discipline alongside the spend, and make success trigger a funded deployment path.',
+          'Small and gated. Fund 1–2 tightly scoped pilots with defined success metrics rather than a portfolio. Published research shows 95% of enterprise AI pilots deliver no measurable P&L impact, and the failures trace to skipped evaluation, not underfunding. Budget the evaluation discipline alongside the spend, and make success trigger a funded deployment path.',
       },
       {
         question: 'Will cyber insurance costs go up in 2027?',
         answer:
-          "For companies with documented security controls, probably not — rates have been flat to declining, with Marsh recording cyber rates down about 5% in early 2026. The catch: underwriting scrutiny tightened as prices fell, so qualification now requires evidence, not attestations. Budget for the controls and the proof; the premium tends to follow.",
+          "For companies with documented security controls, probably not. Rates have been flat to declining, with Marsh recording US cyber rates flat in Q3 2026 after 13 quarters of declines. The catch: underwriting scrutiny tightened as prices fell, so qualification now requires evidence, not attestations. Budget for the controls and the proof; the premium tends to follow.",
       },
     ],
-    draft: true,
     calculatorCta: true,
   },
   // ── Post 8 of the editorial roadmap ──────────────────────────────────────
