@@ -86,6 +86,14 @@ export const CONTENT: CityServiceContent = {
   faqs: [
     // Buyer-question FAQs added above the migrated ones for People Also Ask and
     // AI answers. Approved by Chris, Nov 10, 2026.
+    // MSP question added Nov 16, 2026 ("msp raleigh" ranked #20 and the page
+    // never used the term).
+    {
+      question: 'Is ITSco a managed service provider (MSP) in Raleigh?',
+      answer: [
+        'Yes. ITSco is a managed service provider (MSP) with an office in Raleigh, serving Triangle businesses since 1996. As your MSP, we handle monitoring, help desk, backups, cloud, Microsoft 365, and IT planning for a predictable monthly cost, and you work directly with senior leadership, including CEO Mike Savino and CTO Greg Wassil.',
+      ],
+    },
     {
       question: 'Does ITSco offer co-managed IT for Raleigh companies that already have an IT team?',
       answer: [
