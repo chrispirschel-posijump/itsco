@@ -308,7 +308,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     title: "When to Hire a Fractional CIO (And When You Don't Need One)",
     category: 'Business Insights',
     excerpt:
-      "Fractional CIO or full-time hire? The test isn't headcount — it's the decisions your business is actually making. An honest guide for 50–500 person companies.",
+      "Fractional CIO or full-time hire? The test isn't headcount; it's the decisions your business is actually making. An honest guide for 50–500 person companies.",
     heroImage: '/images/hero/blog/kvalifik-5Q07sS54D0Q-unsplash.jpg',
     publishedDate: '2026-11-09',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
@@ -316,22 +316,22 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         question: 'What is a fractional CIO?',
         answer:
-          "A senior technology executive who works for your company a defined fraction of their time — typically on a monthly retainer — owning the executive layer of IT: strategy, vendor governance, security posture, budget planning, and board-level technology reporting. They don't run the helpdesk or handle incidents; that stays with your MSP or internal IT.",
+          "A senior technology executive who works for your company a defined fraction of their time, typically on a monthly retainer, owning the executive layer of IT: strategy, vendor governance, security posture, budget planning, and board-level technology reporting. They don't run the helpdesk or handle incidents; that stays with your MSP or internal IT.",
       },
       {
         question: "What's the difference between a fractional CIO and a virtual CIO?",
         answer:
-          "Fractional describes the engagement model — a defined slice of an executive's time. Virtual describes the delivery model — the work happens largely remotely. Most engagements today are both, and the terms get used interchangeably. What matters is the scope in the agreement, not the label on it.",
+          "Fractional describes the engagement model: a defined slice of an executive's time. Virtual describes the delivery model: the work happens largely remotely. Most engagements today are both, and the terms get used interchangeably. What matters is the scope in the agreement, not the label on it.",
       },
       {
         question: 'How much does a fractional CIO cost compared to a full-time CIO?',
         answer:
-          "Published benchmarks put fractional CIO retainers at $6,000–$12,000 per month ($72K–$144K annually) for typical scopes. A full-time CIO starts at $221,500–$308,000 in salary per Robert Half's 2026 guide — roughly $330K–$470K fully loaded in year one with benefits and recruiting. The caveat: fractional wins at moderate usage; consumed heavily enough, it can cost more than the hire.",
+          "Published benchmarks put fractional CIO retainers at $6,000–$12,000 per month ($72K–$144K annually) for typical scopes. A full-time CIO starts at $221,500–$308,000 in salary per Robert Half's 2026 guide, or roughly $330K–$470K fully loaded in year one with benefits and recruiting. The caveat: fractional wins at moderate usage; consumed heavily enough, it can cost more than the hire.",
       },
       {
         question: 'When does a business need a fractional CIO versus an AI advisor (vCAIO)?',
         answer:
-          "Apply the same test, scoped differently. If your six-figure decisions are broadly about technology — infrastructure, vendors, security — that's fractional CIO territory. If they're specifically about AI adoption, pilots, and governance, start with an AI readiness assessment, and bundle ongoing AI-leadership capacity into the fractional CIO relationship as the pilot pipeline becomes real. A separate standalone vCAIO rarely makes sense below enterprise scale.",
+          "Apply the same test, scoped differently. If your six-figure decisions are broadly about technology (infrastructure, vendors, security), that's fractional CIO territory. If they're specifically about AI adoption, pilots, and governance, start with an AI readiness assessment, and bundle ongoing AI-leadership capacity into the fractional CIO relationship as the pilot pipeline becomes real. A separate standalone vCAIO rarely makes sense below enterprise scale.",
       },
     ],
   },
