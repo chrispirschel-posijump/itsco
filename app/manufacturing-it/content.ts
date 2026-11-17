@@ -238,13 +238,15 @@ export const CONTENT: IndustryContent = {
   },
   relatedServices: [
     {
-      slug: 'cybersecurity',
-      title: 'Cybersecurity & Compliance',
+      // Swapped in for the general Cybersecurity card when the CMMC page
+      // launched (Nov 2026); cybersecurity stays one click away in the nav.
+      slug: 'compliance-management',
+      title: 'CMMC Compliance Services',
       description:
-        '24/7 SOC, MDR, network segmentation, and compliance programs sized to the threats manufacturers and their supply chains face.',
-      href: '/cybersecurity',
+        'NIST 800-171 gap assessments, SPRS scoring, system security plans, and year-round evidence for defense suppliers.',
+      href: '/cmmc-compliance-services',
       image: '/images/supporting/services/sigmund-Im_cQ6hQo10-unsplash-scaled.jpg',
-      imageAlt: 'Security operations engineers reviewing code on multiple monitors',
+      imageAlt: 'Security engineers reviewing compliance controls on multiple monitors',
     },
     {
       slug: 'managed-network-services',

@@ -61,6 +61,35 @@ export const CONTENT: ServiceSubContent = {
     { value: '0', label: 'Clients with a serious security breach' },
     { value: '60%', label: 'Of clients with ITSco 5+ years' },
   ],
+  // How we help: engagement in order (Zack's suggestion, Nov 17, 2026).
+  approach: {
+    eyebrow: 'How We Help',
+    headlineLead: 'From risk assessment',
+    headlineAccent: 'to audit-ready, every month.',
+    steps: [
+      {
+        title: 'Assess',
+        body:
+          'We start with a documented security risk assessment of every system that stores or moves patient data, so you get a prioritized plan instead of a generic checklist.',
+      },
+      {
+        title: 'Fix',
+        body:
+          'We close the gaps in order of risk: encryption, multi-factor authentication, endpoint protection, Microsoft 365 settings, tested backups, and the policies and Business Associate Agreements behind them. Most practices close their highest-risk gaps in about 90 days.',
+      },
+      {
+        title: 'Maintain',
+        body:
+          'Compliance becomes a monthly routine instead of an annual scramble. We monitor around the clock, reassess your risk each year and after major changes like a new EHR or office, and track staff training.',
+      },
+      {
+        title: 'Prove',
+        body:
+          'We keep an evidence package current, so you are ready whenever an auditor, insurer, or acquirer asks.',
+      },
+    ],
+    note: 'Your attorney and compliance officer decide what HIPAA requires of your organization. We make sure your systems meet it.',
+  },
   capabilitiesHeading: {
     eyebrow: "What's Included",
     headlineLead: 'Every HIPAA safeguard,',

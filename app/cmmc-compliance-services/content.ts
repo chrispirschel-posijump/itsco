@@ -1,7 +1,7 @@
 // Content for /cmmc-compliance-services
 // New page (Nov 2026). Compliance Services pillar, alongside Compliance as a
-// Service and HIPAA. DRAFT: noindex + excluded from the sitemap until Mike
-// approves.
+// Service and HIPAA. Approved by Zack Nov 17, 2026; published Nov 23, 2026
+// (CMMC status re-verified Nov 17: unchanged).
 //
 // Why this page exists: CMMC searches already reach ITSco through the
 // Charlotte consulting page and the CMMC blog post, and AI engines name a
@@ -68,6 +68,35 @@ export const CONTENT: ServiceSubContent = {
     { value: '0', label: 'Clients with a serious security breach' },
     { value: '60%', label: 'Of clients with ITSco 5+ years' },
   ],
+  // How we help: engagement in order (Zack's suggestion, Nov 17, 2026).
+  approach: {
+    eyebrow: 'How We Help',
+    headlineLead: 'From the first scoping call',
+    headlineAccent: 'to an affirmation you can sign.',
+    steps: [
+      {
+        title: 'Scope',
+        body:
+          'We map where federal contract information and CUI live and who touches them, then set the boundary so the controls apply to the right systems instead of your whole company.',
+      },
+      {
+        title: 'Assess',
+        body:
+          'A control-by-control gap assessment against NIST SP 800-171 gives you your true SPRS score before anyone else asks, plus a prioritized plan to close what is missing.',
+      },
+      {
+        title: 'Fix',
+        body:
+          'Our engineers do the hands-on work: multi-factor authentication, encryption, logging, and endpoint protection, your system security plan, and plans of action that close open items inside the 180-day window.',
+      },
+      {
+        title: 'Maintain',
+        body:
+          'We monitor your systems around the clock, collect evidence as we go, and update your documentation as users, devices, and vendors change, so each annual affirmation rests on current facts.',
+      },
+    ],
+    note: 'Your team makes the decisions. We handle the engineering and the paperwork behind them.',
+  },
   capabilitiesHeading: {
     eyebrow: "What's Included",
     headlineLead: 'Every CMMC control,',
