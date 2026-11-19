@@ -262,7 +262,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     draft: true,
   },
   // ── Post 9 of the editorial roadmap ──────────────────────────────────────
-  // Scheduled for 2026-11-23. Flip draft: false and redeploy on Nov 23.
+  // Published 2026-11-19 (moved up from Nov 23). Pre-publish refresh done Nov 16.
   //
   // PRE-PUBLISH REFRESH: Gartner's Q4 forecast (~mid-Oct) will carry the
   // first formal 2027 projections; swap the 2027 number in and refresh
@@ -273,33 +273,32 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     title: 'The 2027 IT Budget: What to Cut, Keep, and Grow',
     category: 'Managed IT',
     excerpt:
-      'A CFO-ready guide to 2027 IT budget planning — what to cut, keep, and grow across security, AI, cloud, and hardware, with the five-outcome test.',
+      'A CFO-ready guide to 2027 IT budget planning: what to cut, keep, and grow across security, AI, cloud, and hardware, with the five-outcome test.',
     heroImage: '/images/hero/blog/masjid-maba-fTRZAC-uri4-unsplash.jpg',
-    publishedDate: '2026-11-23',
+    publishedDate: '2026-11-19',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
     faqs: [
       {
         question: 'How much should a company budget for IT in 2027?',
         answer:
-          'Benchmark per user first: typical all-in ranges run $150–$300 per user per month for a 50-person company, declining with scale. Then adjust for 2027 specifics — roughly 15% software inflation per Gartner, any Windows 10 refresh exposure, and a small gated AI pilot line. Revenue percentage (typically 3–6% at this size) works as a cross-check, not a target.',
+          'Benchmark per user first: typical all-in ranges run $150–$300 per user per month for a 50-person company, declining with scale. That figure is the total IT budget (managed services, software, hardware, security, and projects), not a managed services fee. Then adjust for 2027 specifics: Gartner\'s forecast of 14.6% software spending growth, much of it price increases, any Windows 10 refresh exposure, and a small gated AI pilot line. Revenue percentage (typically 3–6% at this size) works as a cross-check, not a target.',
       },
       {
         question: 'Should IT budgets increase in 2027?',
         answer:
-          "For most companies, modestly, yes — but not uniformly. Gartner's forecasts show accelerating spend driven by software repricing and AI infrastructure, so a flat budget is a real-terms cut. The better question is where: security and hardware refresh typically grow, software licensing often shrinks after an honest usage audit, and the net can land close to flat when cuts fund the growth.",
+          "For most companies, modestly, yes, but not uniformly. Gartner's forecasts show accelerating spend driven by software repricing and AI infrastructure, so a flat budget is a real-terms cut. The better question is where: security and hardware refresh typically grow, software licensing often shrinks after an honest usage audit, and the net can land close to flat when cuts fund the growth.",
       },
       {
         question: 'What should we budget for AI in 2027?',
         answer:
-          'Small and gated. Fund 1–2 tightly scoped pilots with defined success metrics rather than a portfolio — published research shows 95% of enterprise AI pilots deliver no measurable P&L impact, and the failures trace to skipped evaluation, not underfunding. Budget the evaluation discipline alongside the spend, and make success trigger a funded deployment path.',
+          'Small and gated. Fund 1–2 tightly scoped pilots with defined success metrics rather than a portfolio. Published research shows 95% of enterprise AI pilots deliver no measurable P&L impact, and the failures trace to skipped evaluation, not underfunding. Budget the evaluation discipline alongside the spend, and make success trigger a funded deployment path.',
       },
       {
         question: 'Will cyber insurance costs go up in 2027?',
         answer:
-          "For companies with documented security controls, probably not — rates have been flat to declining, with Marsh recording cyber rates down about 5% in early 2026. The catch: underwriting scrutiny tightened as prices fell, so qualification now requires evidence, not attestations. Budget for the controls and the proof; the premium tends to follow.",
+          "For companies with documented security controls, probably not. Rates have been flat to declining, with Marsh recording US cyber rates flat in Q3 2026 after 13 quarters of declines. The catch: underwriting scrutiny tightened as prices fell, so qualification now requires evidence, not attestations. Budget for the controls and the proof; the premium tends to follow.",
       },
     ],
-    draft: true,
     calculatorCta: true,
   },
   // ── Post 8 of the editorial roadmap ──────────────────────────────────────
@@ -309,7 +308,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     title: "When to Hire a Fractional CIO (And When You Don't Need One)",
     category: 'Business Insights',
     excerpt:
-      "Fractional CIO or full-time hire? The test isn't headcount — it's the decisions your business is actually making. An honest guide for 50–500 person companies.",
+      "Fractional CIO or full-time hire? The test isn't headcount; it's the decisions your business is actually making. An honest guide for 50–500 person companies.",
     heroImage: '/images/hero/blog/kvalifik-5Q07sS54D0Q-unsplash.jpg',
     publishedDate: '2026-11-09',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
@@ -317,22 +316,22 @@ export const BLOG_POSTS: readonly BlogPost[] = [
       {
         question: 'What is a fractional CIO?',
         answer:
-          "A senior technology executive who works for your company a defined fraction of their time — typically on a monthly retainer — owning the executive layer of IT: strategy, vendor governance, security posture, budget planning, and board-level technology reporting. They don't run the helpdesk or handle incidents; that stays with your MSP or internal IT.",
+          "A senior technology executive who works for your company a defined fraction of their time, typically on a monthly retainer, owning the executive layer of IT: strategy, vendor governance, security posture, budget planning, and board-level technology reporting. They don't run the helpdesk or handle incidents; that stays with your MSP or internal IT.",
       },
       {
         question: "What's the difference between a fractional CIO and a virtual CIO?",
         answer:
-          "Fractional describes the engagement model — a defined slice of an executive's time. Virtual describes the delivery model — the work happens largely remotely. Most engagements today are both, and the terms get used interchangeably. What matters is the scope in the agreement, not the label on it.",
+          "Fractional describes the engagement model: a defined slice of an executive's time. Virtual describes the delivery model: the work happens largely remotely. Most engagements today are both, and the terms get used interchangeably. What matters is the scope in the agreement, not the label on it.",
       },
       {
         question: 'How much does a fractional CIO cost compared to a full-time CIO?',
         answer:
-          "Published benchmarks put fractional CIO retainers at $6,000–$12,000 per month ($72K–$144K annually) for typical scopes. A full-time CIO starts at $221,500–$308,000 in salary per Robert Half's 2026 guide — roughly $330K–$470K fully loaded in year one with benefits and recruiting. The caveat: fractional wins at moderate usage; consumed heavily enough, it can cost more than the hire.",
+          "Published benchmarks put fractional CIO retainers at $6,000–$12,000 per month ($72K–$144K annually) for typical scopes. A full-time CIO starts at $221,500–$308,000 in salary per Robert Half's 2026 guide, or roughly $330K–$470K fully loaded in year one with benefits and recruiting. The caveat: fractional wins at moderate usage; consumed heavily enough, it can cost more than the hire.",
       },
       {
         question: 'When does a business need a fractional CIO versus an AI advisor (vCAIO)?',
         answer:
-          "Apply the same test, scoped differently. If your six-figure decisions are broadly about technology — infrastructure, vendors, security — that's fractional CIO territory. If they're specifically about AI adoption, pilots, and governance, start with an AI readiness assessment, and bundle ongoing AI-leadership capacity into the fractional CIO relationship as the pilot pipeline becomes real. A separate standalone vCAIO rarely makes sense below enterprise scale.",
+          "Apply the same test, scoped differently. If your six-figure decisions are broadly about technology (infrastructure, vendors, security), that's fractional CIO territory. If they're specifically about AI adoption, pilots, and governance, start with an AI readiness assessment, and bundle ongoing AI-leadership capacity into the fractional CIO relationship as the pilot pipeline becomes real. A separate standalone vCAIO rarely makes sense below enterprise scale.",
       },
     ],
   },

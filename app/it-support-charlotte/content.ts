@@ -38,6 +38,14 @@ export const CONTENT: CityServiceContent = {
     { slug: 'it-project-management', title: 'Technology Procurement', description: S[8] },
     { slug: 'disaster-recovery', title: 'Disaster Recovery', description: S[9] },
     { slug: 'network-security-services', title: 'Computer Network Support', description: S[10] },
+    // Added Nov 16, 2026 when /charlotte-it-helpdesk and
+    // /charlotte-it-network-support were folded into this page.
+    {
+      slug: 'advanced-engineering',
+      title: 'Senior Engineer Escalation',
+      description:
+        'Complex problems go straight to senior engineers who fix the root cause, not just the symptom, and lead longer-term projects like network redesigns and infrastructure upgrades.',
+    },
   ],
   positioning: {
     eyebrow: 'Small Business IT Support',
@@ -106,18 +114,6 @@ export const CONTENT: CityServiceContent = {
         description: 'Layered security, monitoring and compliance support for Charlotte businesses.',
       },
       {
-        slug: 'help-desk-services',
-        label: 'IT Helpdesk in Charlotte',
-        href: '/charlotte-it-helpdesk',
-        description: 'A dedicated help desk team that resolves end-user issues fast.',
-      },
-      {
-        slug: 'network-security-services',
-        label: 'IT Network Support in Charlotte',
-        href: '/charlotte-it-network-support',
-        description: 'Network design, monitoring and support that keeps your business connected.',
-      },
-      {
         slug: 'it-staff-augmentation',
         label: 'IT Outsourcing in Charlotte',
         href: '/charlotte-it-outsourcing',
@@ -166,7 +162,7 @@ export const CONTENT: CityServiceContent = {
     {
       question: 'Do I need a help desk or full IT support?',
       answer: [
-        'A help desk answers employee questions and fixes user issues like passwords, email, and devices. Full IT support adds the work that stops those issues from coming back: monitoring, security, backups, network maintenance, and planning. If you already have internal IT and need extra hands for users, our [IT helpdesk in Charlotte](/charlotte-it-helpdesk) may be enough.',
+        'A help desk answers employee questions and fixes user issues like passwords, email, and devices. Full IT support adds the work that stops those issues from coming back: monitoring, security, backups, network maintenance, and planning. If you have internal IT and just need help with users, ITSco can run your help desk alongside your team as [co-managed IT](/blog/staff-augmentation-vs-managed-services).',
       ],
     },
     {

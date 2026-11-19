@@ -104,7 +104,7 @@ export const ARTICLE: readonly BlogBlock[] = [
   { type: 'h2', text: 'The Pause Rewards Whoever Uses It' },
   {
     type: 'p',
-    text: "CMMC's third-party machinery got suspended because the rollout math failed, not because the department stopped caring whether its supply chain leaks. Some version of verification is coming back — reformed, rescoped, or renamed — and the reform report lands this fall. Contractors who use the pause to close gaps and build evidence walk into whatever comes next with options: clean affirmations today, fast certification whenever it's required, and a [security posture that returns value](/maximize-roi-with-managed-it-services) well beyond the defense contract that forced the conversation. The ones waiting for certainty will get it — in a contract clause, on someone else's timeline.",
+    text: "CMMC's third-party machinery got suspended because the rollout math failed, not because the department stopped caring whether its supply chain leaks. Some version of verification is coming back — reformed, rescoped, or renamed — and the reform report lands this fall. Contractors who use the pause to close gaps and build evidence walk into whatever comes next with options: clean affirmations today, fast certification whenever it's required, and a [security posture that returns value](/maximize-roi-with-managed-it-services) well beyond the defense contract that forced the conversation. The ones waiting for certainty will get it — in a contract clause, on someone else's timeline. For help with the technology side, see our [CMMC compliance services](/cmmc-compliance-services).",
   },
 
   {

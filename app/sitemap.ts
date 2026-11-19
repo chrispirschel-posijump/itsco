@@ -19,7 +19,6 @@ const HIDDEN_BLOG_ROUTES = new Set(
 )
 
 const EXCLUDED_ROUTES = new Set<string>([
-  // Draft until Mike approves (Nov 2026); remove to publish.
   // Demo and sandbox pages (not promoted in nav, not for indexing)
   '/demo',
   '/demo-lite',

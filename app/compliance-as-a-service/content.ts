@@ -205,7 +205,7 @@ export const CONTENT: ServiceSubContent = {
     {
       question: 'Which frameworks do you support?',
       answer: [
-        'The major ones: [HIPAA](/hipaa-compliance-services), PCI-DSS, SOC 2, NIST CSF, ISO 27001, CMMC, and GDPR, plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for any business that handles government data in the cloud, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
+        'The major ones: [HIPAA](/hipaa-compliance-services), PCI-DSS, SOC 2, NIST CSF, ISO 27001, [CMMC](/cmmc-compliance-services), and GDPR, plus the industry-specific requirements our clients answer to: FDA 21 CFR Part 11 in life sciences, GLBA and SEC/FINRA retention in financial services, NIST 800-171 and CUI handling for defense work, GovRAMP (formerly StateRAMP) and FedRAMP for any business that handles government data in the cloud, FFIEC, HITRUST, and trust-account recordkeeping for law firms.',
       ],
     },
     {

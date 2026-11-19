@@ -89,7 +89,7 @@ export const CONTENT: CityServiceContent = {
       question: 'Does ITSco help North Carolina manufacturers with CMMC?',
       answer: [
         'Yes. ITSco helps manufacturers and other defense suppliers prepare for CMMC: confirming whether Level 1 or Level 2 applies, running a gap analysis against NIST 800-171, putting missing controls in place, securing controlled unclassified information (CUI), and building the documented evidence that your self-assessment score and any future certification depend on.',
-        'We handle the technology side. Certification assessments are performed by an authorized third-party assessor, not by ITSco. CMMC requirements are changing in 2026, so read our guide to [CMMC compliance after the suspension](/blog/cmmc-2-nc-defense-contractors) for the current status, or see how [Compliance as a Service](/compliance-as-a-service) keeps you ready.',
+        'We handle the technology side. Certification assessments are performed by an authorized third-party assessor, not by ITSco. CMMC requirements are changing in 2026, so read our guide to [CMMC compliance after the suspension](/blog/cmmc-2-nc-defense-contractors) for the current status, or see our [CMMC compliance services](/cmmc-compliance-services).',
       ],
     },
     {

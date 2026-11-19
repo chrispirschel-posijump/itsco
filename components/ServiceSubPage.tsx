@@ -35,6 +35,16 @@ export interface ServiceSubContent {
     paragraphs: readonly string[]
   }
   stats?: ReadonlyArray<{ value: string; label: string }>
+  // Optional "How we help" band: the engagement in order, shown between the
+  // intro and the capabilities grid. Steps are numbered because they are a
+  // real sequence. `note` is one closing line under the steps.
+  approach?: {
+    eyebrow: string
+    headlineLead: string
+    headlineAccent: string
+    steps: ReadonlyArray<{ title: string; body: string }>
+    note?: string
+  }
   capabilitiesHeading: { eyebrow: string; headlineLead: string; headlineAccent: string }
   capabilities: ReadonlyArray<{ slug: string; title: string; description: string }>
   outcomes?: {
@@ -151,6 +161,52 @@ function Intro({ content }: { content: ServiceSubContent }) {
                 </div>
               ))}
             </div>
+          </FadeUp>
+        )}
+      </div>
+    </section>
+  )
+}
+
+function Approach({ content }: { content: ServiceSubContent }) {
+  const { approach } = content
+  if (!approach || approach.steps.length === 0) return null
+  return (
+    <section className="relative overflow-hidden bg-[radial-gradient(ellipse_at_top,_#1a1a1a_0%,_#111111_70%)]">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 py-20 md:py-28">
+        <FadeUp>
+          <div className="max-w-3xl mb-14">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
+              {approach.eyebrow}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-white leading-[1.15] tracking-tight [text-wrap:balance]">
+              {approach.headlineLead}{' '}
+              <span className="text-itsco-red">{approach.headlineAccent}</span>
+            </h2>
+          </div>
+        </FadeUp>
+
+        <StaggerChildren stagger={80} className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+          {approach.steps.map((step, i) => (
+            <div
+              key={step.title}
+              className="h-full flex flex-col rounded-2xl border border-white/10 bg-white/[0.04] p-7 shadow-[0_8px_32px_rgba(0,0,0,0.25)]"
+            >
+              <div className="flex items-center gap-3 mb-5">
+                <span className="text-sm font-extrabold tracking-[0.12em] text-itsco-red tabular-nums">
+                  {String(i + 1).padStart(2, '0')}
+                </span>
+                <span aria-hidden="true" className="h-px flex-1 bg-white/10" />
+              </div>
+              <h3 className="text-lg font-semibold text-white leading-snug mb-3">{step.title}</h3>
+              <p className="text-sm text-white/70 leading-relaxed flex-1">{renderAnswer(step.body)}</p>
+            </div>
+          ))}
+        </StaggerChildren>
+
+        {approach.note && (
+          <FadeUp delay={120}>
+            <p className="mt-12 max-w-3xl text-base text-white/70 leading-relaxed">{approach.note}</p>
           </FadeUp>
         )}
       </div>
@@ -412,6 +468,7 @@ export default function ServiceSubPage({ content }: { content: ServiceSubContent
       <main>
         <FullBleedHero {...content.hero} image={content.heroImage} />
         <Intro content={content} />
+        <Approach content={content} />
         <Capabilities content={content} />
         <ClientLogosBand variant="section" />
         <Outcomes content={content} />

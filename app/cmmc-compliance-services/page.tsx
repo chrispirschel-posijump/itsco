@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import CityServicePage from '@/components/CityServicePage'
+import ServiceSubPage from '@/components/ServiceSubPage'
 import { CONTENT } from './content'
 
 export const metadata: Metadata = {
@@ -8,6 +8,6 @@ export const metadata: Metadata = {
   alternates: { canonical: CONTENT.meta.canonical },
 }
 
-export default function Page() {
-  return <CityServicePage content={CONTENT} />
+export default function CmmcComplianceServicesPage() {
+  return <ServiceSubPage content={CONTENT} />
 }

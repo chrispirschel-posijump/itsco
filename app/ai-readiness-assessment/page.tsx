@@ -8,6 +8,8 @@ import CTAButton from '@/components/CTAButton'
 import DynamicIcon from '@/components/DynamicIcon'
 import BackgroundOrbs from '@/components/BackgroundOrbs'
 import { FadeUp, StaggerChildren } from '@/components/ScrollAnimations'
+import { Check } from 'lucide-react'
+import { renderAnswer, stripMarkdown } from '@/lib/inlineLinks'
 import {
   META,
   HERO,
@@ -25,6 +27,8 @@ import {
   RELATED_HEADING,
   RELATED,
   BOOKING_UTM,
+  FAQ_HEADING,
+  FAQS,
 } from './content'
 
 export const metadata: Metadata = {
@@ -388,6 +392,47 @@ function RelatedSection() {
   )
 }
 
+// Same markup and styling as the city-page FAQ section (CityServicePage).
+function FaqSection() {
+  return (
+    <section style={{ background: 'linear-gradient(180deg, var(--color-itsco-blush) 0%, var(--color-itsco-paper) 100%)' }}>
+      <div className="max-w-4xl mx-auto px-6 lg:px-12 py-20 md:py-28 lg:py-32">
+        <FadeUp>
+          <div className="mb-12">
+            <p className="text-xs font-bold uppercase tracking-[0.15em] text-itsco-red mb-4">
+              {FAQ_HEADING.eyebrow}
+            </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-itsco-dark leading-[1.15] tracking-tight">
+              {FAQ_HEADING.headlineLead}{' '}
+              <span className="text-itsco-red">{FAQ_HEADING.headlineAccent}</span>
+            </h2>
+          </div>
+        </FadeUp>
+        <StaggerChildren stagger={60} className="space-y-4">
+          {FAQS.map((f) => (
+            <div
+              key={f.question}
+              className="bg-itsco-card border border-[#EBEBEB] rounded-2xl p-7 shadow-[0_2px_8px_rgba(0,0,0,0.04)]"
+            >
+              <h3 className="flex items-start gap-3 text-lg font-semibold text-itsco-dark leading-snug mb-3">
+                <Check size={20} className="text-itsco-red flex-shrink-0 mt-0.5" />
+                <span>{f.question}</span>
+              </h3>
+              <div className="pl-8">
+                {f.answer.map((a, i) => (
+                  <p key={i} className="text-base text-itsco-body leading-relaxed mb-3 last:mb-0">
+                    {renderAnswer(a)}
+                  </p>
+                ))}
+              </div>
+            </div>
+          ))}
+        </StaggerChildren>
+      </div>
+    </section>
+  )
+}
+
 export default function AIReadinessAssessmentPage() {
   return (
     <>
@@ -402,6 +447,7 @@ export default function AIReadinessAssessmentPage() {
         <WhyITScoSection />
         <MidCTA />
         <RelatedSection />
+        <FaqSection />
         <BookingCTA utmSuffix={BOOKING_UTM} />
       </main>
       <Footer />
@@ -417,6 +463,20 @@ export default function AIReadinessAssessmentPage() {
             description: META.description,
             url: META.canonical,
             areaServed: ['North Carolina', 'South Carolina', 'Virginia'],
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: FAQS.map((f) => ({
+              '@type': 'Question',
+              name: f.question,
+              acceptedAnswer: { '@type': 'Answer', text: f.answer.map(stripMarkdown).join(' ') },
+            })),
           }),
         }}
       />

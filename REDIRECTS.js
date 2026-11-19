@@ -23,105 +23,105 @@ const redirects = [
 
   {
     source:      '/services/itad',
-    destination: '/itad/',
+    destination: '/itad',
     permanent:   true,
     // Note: flatten from nested /services/managed-it-services/itad/ path
   },
   {
     source:      '/services/managed-it-services/asset-lifecycle-management',
-    destination: '/asset-lifecycle-management/',
+    destination: '/asset-lifecycle-management',
     permanent:   true,
     // Note: flatten from deeply nested path
   },
   {
     source:      '/it-asset-management-services',
-    destination: '/asset-lifecycle-management/',
+    destination: '/asset-lifecycle-management',
     permanent:   true,
     // Note: near-duplicate of asset-lifecycle-management with no GSC data —
     // consolidated to avoid keyword cannibalization (INVENTORY: "Template only").
   },
   {
     source:      '/cyber-security-consulting',
-    destination: '/cybersecurity-consulting-services/',
+    destination: '/cybersecurity-consulting-services',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — consolidated to the canonical
     // /cybersecurity-consulting-services/ page.
   },
   {
     source:      '/cloud-consulting',
-    destination: '/cloud-consulting-services/',
+    destination: '/cloud-consulting-services',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — consolidated to /cloud-consulting-services/.
   },
   {
     source:      '/virtualization',
-    destination: '/virtualization-services/',
+    destination: '/virtualization-services',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — /virtualization-services/ is canonical.
   },
   {
     source:      '/microsoft-azure-services-1',
-    destination: '/microsoft-azure-services/',
+    destination: '/microsoft-azure-services',
     permanent:   true,
     // Note: duplicate/test page — consolidated to /microsoft-azure-services/.
   },
   {
     source:      '/services-for-the-microsoft-suite',
-    destination: '/microsoft-solutions/',
+    destination: '/microsoft-solutions',
     permanent:   true,
     // Note: INVENTORY URL rename — Microsoft pillar moved to /microsoft-solutions/.
   },
   {
     source:      '/share-point-services',
-    destination: '/microsoft-sharepoint-services/',
+    destination: '/microsoft-sharepoint-services',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — 20 clicks; consolidated to the canonical page.
   },
   {
     source:      '/skype-for-business-services',
-    destination: '/microsoft-teams-services/',
+    destination: '/microsoft-teams-services',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — Skype for Business retired; Teams is the successor.
   },
   {
     source:      '/microsoft-teams-services-1',
-    destination: '/microsoft-teams-services/',
+    destination: '/microsoft-teams-services',
     permanent:   true,
     // Note: duplicate/test page — consolidated to /microsoft-teams-services/.
   },
   {
     source:      '/microsoft-365-services-1',
-    destination: '/microsoft-365-services/',
+    destination: '/microsoft-365-services',
     permanent:   true,
     // Note: duplicate/test page — consolidated to /microsoft-365-services/.
   },
   {
     source:      '/microsoft-exchange-services-1',
-    destination: '/microsoft-exchange-services/',
+    destination: '/microsoft-exchange-services',
     permanent:   true,
     // Note: duplicate/test page — consolidated to /microsoft-exchange-services/.
   },
   {
     source:      '/vcio-services',
-    destination: '/vcio-vcto-vciso-services/',
+    destination: '/vcio-vcto-vciso-services',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — 11.7k impr; consolidated to the combined page.
   },
   {
     source:      '/it-audits-and-assessments',
-    destination: '/it-assessments-strategies/',
+    destination: '/it-assessments-strategies',
     permanent:   true,
     // Note: INVENTORY "Template only", flagged as overlapping it-assessments-strategies.
   },
   {
     source:      '/it-strategy-services',
-    destination: '/it-roadmap-planning/',
+    destination: '/it-roadmap-planning',
     permanent:   true,
     // Note: INVENTORY "Template only", flagged as overlapping it-roadmap-planning.
   },
   {
     source:      '/voip-services',
-    destination: '/voip-unified-communications/',
+    destination: '/voip-unified-communications',
     permanent:   true,
     // Note: INVENTORY "Redirect only" — consolidated to /voip-unified-communications/.
   },
@@ -132,82 +132,82 @@ const redirects = [
 
   {
     source:      '/it-solutions-company-managed-it-services-chapel-hill',
-    destination: '/managed-it-services-chapel-hill/',
+    destination: '/managed-it-services-chapel-hill',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-garner',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-fayetteville',
-    destination: '/managed-it-services-fayetteville/',
+    destination: '/managed-it-services-fayetteville',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-erwin',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-morrisville',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-graham',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-mebane',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-knightdale',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-butner',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-bathesda',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-carpenter',
-    destination: '/managed-it-services-raleigh/',
+    destination: '/managed-it-services-raleigh',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-cary',
-    destination: '/managed-it-services-cary/',
+    destination: '/managed-it-services-cary',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-apex',
-    destination: '/managed-it-services-apex/',
+    destination: '/managed-it-services-apex',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-burlington',
-    destination: '/managed-it-services-burlington/',
+    destination: '/managed-it-services-burlington',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-hillsborough',
-    destination: '/managed-it-services-hillsborough/',
+    destination: '/managed-it-services-hillsborough',
     permanent:   true,
   },
   {
     source:      '/it-solutions-company-managed-it-services-rocky-mount',
-    destination: '/managed-it-services-rocky-mount/',
+    destination: '/managed-it-services-rocky-mount',
     permanent:   true,
   },
 
@@ -217,7 +217,7 @@ const redirects = [
   // evaluating redirects(), so the rule must match the post-strip path.
   {
     source:      '/about',
-    destination: '/about-us/',
+    destination: '/about-us',
     permanent:   true,
   },
 
@@ -225,7 +225,7 @@ const redirects = [
   // (stakeholder request). Preserve any organic equity from the legacy URL.
   {
     source:      '/banking-and-financial-services-it',
-    destination: '/financial-services-it/',
+    destination: '/financial-services-it',
     permanent:   true,
   },
 
@@ -234,7 +234,7 @@ const redirects = [
   // covers both the vertical industries and the by-size pages.
   {
     source:      '/it-services-by-industry',
-    destination: '/industries/',
+    destination: '/industries',
     permanent:   true,
   },
 
@@ -243,7 +243,7 @@ const redirects = [
   // preserves equity rather than splitting it across two hubs.
   {
     source:      '/resource-center',
-    destination: '/resources/',
+    destination: '/resources',
     permanent:   true,
   },
 
@@ -253,22 +253,22 @@ const redirects = [
   // a 404. The legacy WordPress posts should be deleted from CMS too.
   {
     source:      '/blog/should-students-learn-how-to-code',
-    destination: '/blog/',
+    destination: '/blog',
     permanent:   true,
   },
   {
     source:      '/blog/selenium-vs-human-testing',
-    destination: '/blog/',
+    destination: '/blog',
     permanent:   true,
   },
   {
     source:      '/blog/missing-icon-overlays-office-365-one-drive',
-    destination: '/blog/',
+    destination: '/blog',
     permanent:   true,
   },
   {
     source:      '/blog/microsoft-removes-storage-limit-for-cloud-365',
-    destination: '/blog/',
+    destination: '/blog',
     permanent:   true,
   },
 
@@ -287,85 +287,85 @@ const redirects = [
 
   {
     source:      '/services/managed-it-services',
-    destination: '/managed-it-services/',
+    destination: '/managed-it-services',
     permanent:   true,
     // Note: 13 clicks — flatten WordPress /services/ nesting.
   },
   {
     source:      '/government-it-services',
-    destination: '/industries/',
+    destination: '/industries',
     permanent:   true,
     // Note: 6 clicks — no dedicated industry page built; backlog for post-launch.
   },
   {
     source:      '/services/security',
-    destination: '/cybersecurity/',
+    destination: '/cybersecurity',
     permanent:   true,
     // Note: 5 clicks — flatten WordPress /services/ nesting.
   },
   {
     source:      '/it-support-chapel-hill',
-    destination: '/managed-it-services-chapel-hill/',
+    destination: '/managed-it-services-chapel-hill',
     permanent:   true,
     // Note: 4 clicks — nearest city page.
   },
   {
     source:      '/education-it-services',
-    destination: '/industries/',
+    destination: '/industries',
     permanent:   true,
     // Note: 4 clicks — no dedicated industry page built; backlog for post-launch.
   },
   {
     source:      '/chapel-hill-it-consulting',
-    destination: '/raleigh-it-consulting/',
+    destination: '/raleigh-it-consulting',
     permanent:   true,
     // Note: 3 clicks — nearest active consulting page.
   },
   {
     source:      '/erwin-it-consulting',
-    destination: '/raleigh-it-consulting/',
+    destination: '/raleigh-it-consulting',
     permanent:   true,
     // Note: 3 clicks — nearest active consulting page.
   },
   {
     source:      '/dealership-and-automotive-it-services',
-    destination: '/industries/',
+    destination: '/industries',
     permanent:   true,
     // Note: 2 clicks — no dedicated industry page built; backlog for post-launch.
   },
   {
     source:      '/backup-and-disaster-recovery',
-    destination: '/backup-disaster-recovery/',
+    destination: '/backup-disaster-recovery',
     permanent:   true,
     // Note: 2 clicks — slug variant of canonical page.
   },
   {
     source:      '/it-support-burlington',
-    destination: '/managed-it-services-burlington/',
+    destination: '/managed-it-services-burlington',
     permanent:   true,
     // Note: 1 click — nearest city page.
   },
   {
     source:      '/it-support-knightdale',
-    destination: '/it-company-in-knightdale/',
+    destination: '/it-company-in-knightdale',
     permanent:   true,
     // Note: 1 click — nearest city page.
   },
   {
     source:      '/fayetteville-it-consulting',
-    destination: '/managed-it-services-fayetteville/',
+    destination: '/managed-it-services-fayetteville',
     permanent:   true,
     // Note: 1 click — nearest city page.
   },
   {
     source:      '/butner-cyber-security-services',
-    destination: '/durham-cyber-security-services/',
+    destination: '/durham-cyber-security-services',
     permanent:   true,
     // Note: 1 click — nearest cyber page (Butner is Durham-adjacent).
   },
   {
     source:      '/request-our-pricing-guide',
-    destination: '/contact-us/',
+    destination: '/contact-us',
     permanent:   true,
     // Note: 1 click — form intent → contact page.
   },
@@ -400,9 +400,25 @@ const redirects = [
   },
   {
     source:      '/wp-content/uploads/2018/09/itsco-cybersecurity-monitoring-whitepaper.pdf',
-    destination: '/white-papers/',
+    destination: '/white-papers',
     permanent:   true,
     // Note: 1 click — 2018 whitepaper unavailable; redirect to hub.
+  },
+
+  // ── 5. CITY PAGE CONSOLIDATION (Nov 2026) ───────────────────────────────
+  // Thin Charlotte pages folded into /it-support-charlotte so one page owns
+  // "IT support Charlotte" searches (weekly search brief, Nov 16, 2026).
+  // Next.js strips a trailing slash before evaluating, so one source per page
+  // covers both forms in a single hop.
+  {
+    source:      '/charlotte-it-helpdesk',
+    destination: '/it-support-charlotte',
+    permanent:   true,
+  },
+  {
+    source:      '/charlotte-it-network-support',
+    destination: '/it-support-charlotte',
+    permanent:   true,
   },
 
 ]
