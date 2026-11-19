@@ -262,7 +262,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     draft: true,
   },
   // ── Post 9 of the editorial roadmap ──────────────────────────────────────
-  // Published 2026-11-23. Pre-publish refresh done Nov 16 (see _source.ts).
+  // Published 2026-11-19 (moved up from Nov 23). Pre-publish refresh done Nov 16.
   //
   // PRE-PUBLISH REFRESH: Gartner's Q4 forecast (~mid-Oct) will carry the
   // first formal 2027 projections; swap the 2027 number in and refresh
@@ -275,7 +275,7 @@ export const BLOG_POSTS: readonly BlogPost[] = [
     excerpt:
       'A CFO-ready guide to 2027 IT budget planning: what to cut, keep, and grow across security, AI, cloud, and hardware, with the five-outcome test.',
     heroImage: '/images/hero/blog/masjid-maba-fTRZAC-uri4-unsplash.jpg',
-    publishedDate: '2026-11-23',
+    publishedDate: '2026-11-19',
     author: { name: 'Mike Savino', title: 'CEO, ITSco' },
     faqs: [
       {
